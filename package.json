@@ -1,0 +1,35 @@
+{
+  "name": "ilovedoc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "inject-seo": "node scratch/inject-seo.js"
+  },
+  "dependencies": {
+    "@pdfsmaller/pdf-encrypt-lite": "^1.0.2",
+    "docx": "^9.7.0",
+    "jszip": "^3.10.1",
+    "lucide-react": "^1.16.0",
+    "mammoth": "^1.12.0",
+    "next": "16.2.6",
+    "pdf-lib": "^1.17.1",
+    "pptxgenjs": "^4.0.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-dropzone": "^15.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "puppeteer-core": "^25.1.0",
+    "typescript": "^5"
+  }
+}
