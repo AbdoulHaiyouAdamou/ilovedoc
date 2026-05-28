@@ -9,6 +9,29 @@ export async function GET(request: Request) {
   }
 
   try {
+    const parsedUrl = new URL(url);
+    if (parsedUrl.protocol !== 'http:' && parsedUrl.protocol !== 'https:') {
+      return NextResponse.json({ error: 'Seuls les protocoles HTTP et HTTPS sont autorisés.' }, { status: 400 });
+    }
+
+    const hostname = parsedUrl.hostname.toLowerCase();
+    
+    // Vérification anti-SSRF (blocage des adresses privées et locales)
+    const isPrivate = 
+      hostname === 'localhost' ||
+      hostname === '127.0.0.1' ||
+      hostname === '[::1]' ||
+      hostname === '0.0.0.0' ||
+      /^(10\.|192\.168\.|172\.(1[6-9]|2[0-9]|3[01])\.|169\.254\.|127\.)/.test(hostname);
+
+    if (isPrivate) {
+      return NextResponse.json({ error: 'Accès aux adresses locales ou privées non autorisé.' }, { status: 400 });
+    }
+  } catch (err) {
+    return NextResponse.json({ error: 'URL invalide' }, { status: 400 });
+  }
+
+  try {
     const response = await fetch(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
