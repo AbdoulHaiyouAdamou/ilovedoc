@@ -1,8 +1,71 @@
 import { NextResponse } from 'next/server';
+import { headers } from 'next/headers';
+
+/* ── In-memory rate limiter ─────────────────────────────────── */
+const WINDOW_MS = 60_000; // 1 minute
+const MAX_REQUESTS = 10;  // 10 requests per minute per IP
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+
+// Cleanup stale entries every 5 minutes
+setInterval(() => {
+  const now = Date.now();
+  for (const [key, value] of rateLimitMap.entries()) {
+    if (now > value.resetTime) rateLimitMap.delete(key);
+  }
+}, 5 * 60_000);
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+
+  if (!entry || now > entry.resetTime) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + WINDOW_MS });
+    return true;
+  }
+
+  if (entry.count >= MAX_REQUESTS) {
+    return false;
+  }
+
+  entry.count++;
+  return true;
+}
+
+/* ── Body size limit ────────────────────────────────────────── */
+const MAX_BODY_SIZE = 512_000; // 500 KB
 
 export async function POST(req: Request) {
   try {
-    const { messages, pdfText, task, tone, length, language } = await req.json();
+    // Rate limiting check
+    const headersList = await headers();
+    const forwarded = headersList.get('x-forwarded-for');
+    const ip = forwarded?.split(',')[0]?.trim() || 'unknown';
+
+    if (!checkRateLimit(ip)) {
+      return NextResponse.json(
+        { error: 'Trop de requêtes. Veuillez patienter une minute avant de réessayer.' },
+        { status: 429 }
+      );
+    }
+
+    // Body size check
+    const contentLength = parseInt(headersList.get('content-length') || '0', 10);
+    if (contentLength > MAX_BODY_SIZE) {
+      return NextResponse.json(
+        { error: 'Le contenu envoyé est trop volumineux (max 500 Ko).' },
+        { status: 413 }
+      );
+    }
+
+    const body = await req.text();
+    if (body.length > MAX_BODY_SIZE) {
+      return NextResponse.json(
+        { error: 'Le contenu envoyé est trop volumineux (max 500 Ko).' },
+        { status: 413 }
+      );
+    }
+
+    const { messages, pdfText, task, tone, length, language } = JSON.parse(body);
 
     const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) {

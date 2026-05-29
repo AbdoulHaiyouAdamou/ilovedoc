@@ -135,7 +135,7 @@ export default function Footer() {
     };
   }, []);
 
-  // Handle Google Translate cookie logic and browser detection on mount
+  // Handle Google Translate cookie logic on mount — NO auto-reload
   useEffect(() => {
     // Helper to extract cookie values
     const getCookie = (name: string) => {
@@ -146,32 +146,55 @@ export default function Footer() {
       return '';
     };
 
-    const currentGoogTrans = getCookie('googtrans'); // format: "/fr/en"
-    const currentCode = currentGoogTrans ? currentGoogTrans.split('/').pop() : 'fr';
-
-    const savedLang = localStorage.getItem('ilovedoc-lang') || '';
-    let targetLang = savedLang;
-    
-    if (!targetLang) {
-      const browserLang = navigator.language.split('-')[0]; // "en", "es", etc.
-      targetLang = CODE_TO_LANG[browserLang] || 'Français';
+    // If a reload was just triggered by us, don't do anything else
+    const reloadPending = sessionStorage.getItem('ilovedoc-lang-reload');
+    if (reloadPending) {
+      sessionStorage.removeItem('ilovedoc-lang-reload');
+      const pendingLang = localStorage.getItem('ilovedoc-lang') || 'Français';
+      setSelectedLang(pendingLang);
+      return;
     }
 
-    const targetCode = LANGUAGE_CODES[targetLang] || 'fr';
+    // Check if the user already chose a language before
+    const savedLang = localStorage.getItem('ilovedoc-lang');
 
-    // If translate cookie does not match our target language code, write cookie and reload
-    if (targetCode !== currentCode) {
-      const hostname = window.location.hostname;
-      const domainParts = hostname.split('.');
-      const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
-      
-      document.cookie = `googtrans=/fr/${targetCode}; path=/; domain=${hostname}; SameSite=Lax`;
-      document.cookie = `googtrans=/fr/${targetCode}; path=/; domain=${cookieDomain}; SameSite=Lax`;
-      document.cookie = `googtrans=/fr/${targetCode}; path=/; SameSite=Lax`;
-      localStorage.setItem('ilovedoc-lang', targetLang);
-      window.location.reload();
+    if (savedLang) {
+      // User already has a preference — just display it, no reload
+      setSelectedLang(savedLang);
+
+      // Ensure cookie matches saved preference (without reloading)
+      const savedCode = LANGUAGE_CODES[savedLang] || 'fr';
+      const currentGoogTrans = getCookie('googtrans');
+      const currentCode = currentGoogTrans ? currentGoogTrans.split('/').pop() : '';
+
+      if (currentCode !== savedCode) {
+        // Write cookie so next page navigation picks it up
+        const hostname = window.location.hostname;
+        const domainParts = hostname.split('.');
+        const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
+
+        document.cookie = `googtrans=/fr/${savedCode}; path=/; domain=${hostname}; SameSite=Lax`;
+        document.cookie = `googtrans=/fr/${savedCode}; path=/; domain=${cookieDomain}; SameSite=Lax`;
+        document.cookie = `googtrans=/fr/${savedCode}; path=/; SameSite=Lax`;
+      }
     } else {
-      setSelectedLang(targetLang);
+      // First visit ever: detect browser language
+      const browserLang = navigator.language.split('-')[0];
+      const detectedLang = CODE_TO_LANG[browserLang] || 'Français';
+      setSelectedLang(detectedLang);
+      localStorage.setItem('ilovedoc-lang', detectedLang);
+
+      // If not French, set cookie (Google Translate will use it on next navigation)
+      const detectedCode = LANGUAGE_CODES[detectedLang] || 'fr';
+      if (detectedCode !== 'fr') {
+        const hostname = window.location.hostname;
+        const domainParts = hostname.split('.');
+        const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
+
+        document.cookie = `googtrans=/fr/${detectedCode}; path=/; domain=${hostname}; SameSite=Lax`;
+        document.cookie = `googtrans=/fr/${detectedCode}; path=/; domain=${cookieDomain}; SameSite=Lax`;
+        document.cookie = `googtrans=/fr/${detectedCode}; path=/; SameSite=Lax`;
+      }
     }
   }, []);
 
@@ -190,15 +213,17 @@ export default function Footer() {
       document.cookie = `googtrans=/fr/${code}; path=/; domain=${hostname}; SameSite=Lax`;
       document.cookie = `googtrans=/fr/${code}; path=/; domain=${cookieDomain}; SameSite=Lax`;
       document.cookie = `googtrans=/fr/${code}; path=/; SameSite=Lax`;
-      
-      // Attempt triggering select event immediately, then reload to force render
+
+      // Try to trigger Google Translate directly without reload
       const selectEl = document.querySelector('.goog-te-combo') as HTMLSelectElement;
       if (selectEl) {
         selectEl.value = code;
         selectEl.dispatchEvent(new Event('change'));
+      } else {
+        // Mark that we're reloading intentionally, then reload
+        sessionStorage.setItem('ilovedoc-lang-reload', 'true');
+        window.location.reload();
       }
-      
-      window.location.reload();
     }
   };
 
