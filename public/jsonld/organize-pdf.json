@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Organiser PDF",
+      "description": "Triez et réorganisez les pages de votre PDF. Outil en ligne 100% gratuit, rapide et sécurisé. Vos documents restent locaux.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment utiliser l'outil Organiser PDF ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glissez-déposez vos documents dans la zone de dépôt de la page Organiser PDF, réglez les paramètres requis et cliquez sur le bouton d'action."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L'outil Organiser PDF est-il sécurisé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, le traitement de l'outil Organiser PDF est entièrement effectué côté client dans votre propre navigateur. Vos fichiers ne quittent jamais votre poste."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Y a-t-il des limites de taille pour Organiser PDF ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La seule limite dépend de la mémoire de votre appareil car tout se passe localement. La plupart des fichiers de taille standard sont traités en une seconde."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://ilovedoc-ten.vercel.app"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Organiser PDF",
+          "item": "https://ilovedoc-ten.vercel.app/organize-pdf"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "Comment utiliser Organiser PDF en ligne",
+      "description": "Triez et réorganisez les pages de votre PDF. Outil en ligne 100% gratuit, rapide et sécurisé. Vos documents restent locaux.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Sélectionner le document",
+          "text": "Glissez-déposez le fichier sur la page de l'outil Organiser PDF.",
+          "url": "https://ilovedoc-ten.vercel.app/organize-pdf#step-1"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Configurer les options",
+          "text": "Spécifiez les valeurs requises selon vos besoins dans le volet.",
+          "url": "https://ilovedoc-ten.vercel.app/organize-pdf#step-2"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Activer le traitement",
+          "text": "Démarrez l'opération locale pour transformer vos pages.",
+          "url": "https://ilovedoc-ten.vercel.app/organize-pdf#step-3"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Sauvegarder le résultat",
+          "text": "Téléchargez le nouveau fichier généré directement sur votre disque.",
+          "url": "https://ilovedoc-ten.vercel.app/organize-pdf#step-4"
+        }
+      ]
+    }
+  ]
+}
