@@ -155,46 +155,40 @@ export default function Footer() {
       return;
     }
 
-    // Check if the user already chose a language before
+    // Check if the user already chose a language before (manually)
+    const isManual = localStorage.getItem('ilovedoc-lang-manual') === 'true';
     const savedLang = localStorage.getItem('ilovedoc-lang');
 
-    if (savedLang) {
-      // User already has a preference — just display it, no reload
-      setSelectedLang(savedLang);
+    // Detect browser language
+    const browserLang = typeof navigator !== 'undefined' ? navigator.language.split('-')[0] : 'fr';
+    const detectedLang = CODE_TO_LANG[browserLang] || 'Français';
 
-      // Ensure cookie matches saved preference (without reloading)
-      const savedCode = LANGUAGE_CODES[savedLang] || 'fr';
-      const currentGoogTrans = getCookie('googtrans');
-      const currentCode = currentGoogTrans ? currentGoogTrans.split('/').pop() : '';
+    // If they manually chose a language, respect it. Otherwise, follow the browser language.
+    const targetLang = (isManual && savedLang) ? savedLang : detectedLang;
+    setSelectedLang(targetLang);
+    localStorage.setItem('ilovedoc-lang', targetLang);
 
-      if (currentCode !== savedCode) {
-        // Write cookie so next page navigation picks it up
-        const hostname = window.location.hostname;
-        const domainParts = hostname.split('.');
-        const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
+    // Ensure cookie matches target language
+    const targetCode = LANGUAGE_CODES[targetLang] || 'fr';
+    const currentGoogTrans = getCookie('googtrans');
+    const currentCode = currentGoogTrans ? currentGoogTrans.split('/').pop() : '';
 
-        document.cookie = `googtrans=/fr/${savedCode}; path=/; domain=${hostname}; SameSite=Lax`;
-        document.cookie = `googtrans=/fr/${savedCode}; path=/; domain=${cookieDomain}; SameSite=Lax`;
-        document.cookie = `googtrans=/fr/${savedCode}; path=/; SameSite=Lax`;
+    if (currentCode !== targetCode) {
+      // Don't trigger a reload if target language is French and it's already showing French (empty currentCode)
+      if (targetCode === 'fr' && !currentCode) {
+        return;
       }
-    } else {
-      // First visit ever: detect browser language
-      const browserLang = navigator.language.split('-')[0];
-      const detectedLang = CODE_TO_LANG[browserLang] || 'Français';
-      setSelectedLang(detectedLang);
-      localStorage.setItem('ilovedoc-lang', detectedLang);
 
-      // If not French, set cookie (Google Translate will use it on next navigation)
-      const detectedCode = LANGUAGE_CODES[detectedLang] || 'fr';
-      if (detectedCode !== 'fr') {
-        const hostname = window.location.hostname;
-        const domainParts = hostname.split('.');
-        const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
+      const hostname = window.location.hostname;
+      const domainParts = hostname.split('.');
+      const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
 
-        document.cookie = `googtrans=/fr/${detectedCode}; path=/; domain=${hostname}; SameSite=Lax`;
-        document.cookie = `googtrans=/fr/${detectedCode}; path=/; domain=${cookieDomain}; SameSite=Lax`;
-        document.cookie = `googtrans=/fr/${detectedCode}; path=/; SameSite=Lax`;
-      }
+      document.cookie = `googtrans=/fr/${targetCode}; path=/; domain=${hostname}; SameSite=Lax`;
+      document.cookie = `googtrans=/fr/${targetCode}; path=/; domain=${cookieDomain}; SameSite=Lax`;
+      document.cookie = `googtrans=/fr/${targetCode}; path=/; SameSite=Lax`;
+
+      sessionStorage.setItem('ilovedoc-lang-reload', 'true');
+      window.location.reload();
     }
   }, []);
 
@@ -202,6 +196,7 @@ export default function Footer() {
     setSelectedLang(lang);
     setIsOpen(false);
     localStorage.setItem('ilovedoc-lang', lang);
+    localStorage.setItem('ilovedoc-lang-manual', 'true'); // Flag manual selection to ignore automatic browser override
 
     const code = LANGUAGE_CODES[lang];
     if (code) {
