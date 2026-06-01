@@ -32,7 +32,10 @@ interface PdfJsLib {
 
 declare global {
   interface Window {
-    pdfjsLib?: PdfJsLib;
+    // Declared non-optional to stay compatible with the existing
+    // `pdfjsLib: any` augmentation in src/app/edit-pdf/page.tsx.
+    // We still guard against it being undefined at runtime below.
+    pdfjsLib: PdfJsLib;
   }
 }
 
