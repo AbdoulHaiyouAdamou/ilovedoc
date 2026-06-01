@@ -33,7 +33,9 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: [
           {
-            key: "Content-Security-Policy",
+            // Report-Only during rollout: reports violations without blocking.
+            // Switch the key to "Content-Security-Policy" once validated.
+            key: "Content-Security-Policy-Report-Only",
             value: cspDirectives,
           },
           {
