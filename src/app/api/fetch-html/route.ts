@@ -1,53 +1,182 @@
 import { NextResponse } from 'next/server';
+import { lookup } from 'node:dns/promises';
+import { isIP } from 'node:net';
+
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
+const FETCH_TIMEOUT_MS = 10_000; // 10s
+const MAX_RESPONSE_BYTES = 5_000_000; // 5 MB
+const MAX_REDIRECTS = 3;
+
+/**
+ * Returns true if the IP (v4 or v6) targets a private, loopback,
+ * link-local, or otherwise non-routable range.
+ */
+function isPrivateIp(ip: string): boolean {
+  const version = isIP(ip);
+
+  if (version === 4) {
+    const octets = ip.split('.').map(Number);
+    if (octets.length !== 4 || octets.some((o) => Number.isNaN(o) || o < 0 || o > 255)) {
+      return true; // malformed -> treat as unsafe
+    }
+    const [a, b] = octets;
+    return (
+      a === 0 || // 0.0.0.0/8
+      a === 10 || // 10.0.0.0/8
+      a === 127 || // loopback
+      (a === 169 && b === 254) || // link-local + cloud metadata
+      (a === 172 && b >= 16 && b <= 31) || // 172.16.0.0/12
+      (a === 192 && b === 168) || // 192.168.0.0/16
+      a >= 224 // multicast / reserved
+    );
+  }
+
+  if (version === 6) {
+    const addr = ip.toLowerCase().split('%')[0];
+    return (
+      addr === '::1' || // loopback
+      addr === '::' || // unspecified
+      addr.startsWith('fe80') || // link-local
+      addr.startsWith('fc') || // unique local fc00::/7
+      addr.startsWith('fd') ||
+      addr.startsWith('::ffff:') // IPv4-mapped -> reject (could embed private v4)
+    );
+  }
+
+  return true; // unknown format -> unsafe
+}
+
+/**
+ * Validates that a hostname does not resolve to any private address.
+ * Checks every resolved record to mitigate DNS-rebinding.
+ */
+async function assertPublicHost(hostname: string): Promise<void> {
+  if (isIP(hostname)) {
+    if (isPrivateIp(hostname)) throw new Error('blocked');
+    return;
+  }
+
+  const records = await lookup(hostname, { all: true });
+  if (records.length === 0 || records.some((r) => isPrivateIp(r.address))) {
+    throw new Error('blocked');
+  }
+}
+
+function isAllowedProtocol(url: URL): boolean {
+  return url.protocol === 'http:' || url.protocol === 'https:';
+}
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const url = searchParams.get('url');
+  const target = searchParams.get('url');
 
-  if (!url) {
+  if (!target) {
     return NextResponse.json({ error: 'URL parameter is missing' }, { status: 400 });
   }
 
+  let currentUrl: URL;
   try {
-    const parsedUrl = new URL(url);
-    if (parsedUrl.protocol !== 'http:' && parsedUrl.protocol !== 'https:') {
-      return NextResponse.json({ error: 'Seuls les protocoles HTTP et HTTPS sont autorisés.' }, { status: 400 });
-    }
-
-    const hostname = parsedUrl.hostname.toLowerCase();
-    
-    // Vérification anti-SSRF (blocage des adresses privées et locales)
-    const isPrivate = 
-      hostname === 'localhost' ||
-      hostname === '127.0.0.1' ||
-      hostname === '[::1]' ||
-      hostname === '0.0.0.0' ||
-      /^(10\.|192\.168\.|172\.(1[6-9]|2[0-9]|3[01])\.|169\.254\.|127\.)/.test(hostname);
-
-    if (isPrivate) {
-      return NextResponse.json({ error: 'Accès aux adresses locales ou privées non autorisé.' }, { status: 400 });
-    }
-  } catch (err) {
+    currentUrl = new URL(target);
+  } catch {
     return NextResponse.json({ error: 'URL invalide' }, { status: 400 });
   }
 
   try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-        'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
-      },
-    });
-    
-    if (!response.ok) {
-      throw new Error(`Erreur HTTP: ${response.status}`);
+    let response: Response | null = null;
+
+    for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+      if (!isAllowedProtocol(currentUrl)) {
+        return NextResponse.json(
+          { error: 'Seuls les protocoles HTTP et HTTPS sont autorisés.' },
+          { status: 400 }
+        );
+      }
+
+      try {
+        await assertPublicHost(currentUrl.hostname);
+      } catch {
+        return NextResponse.json(
+          { error: 'Accès aux adresses locales ou privées non autorisé.' },
+          { status: 400 }
+        );
+      }
+
+      response = await fetch(currentUrl, {
+        redirect: 'manual',
+        signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          Accept:
+            'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+          'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+        },
+      });
+
+      if (response.status >= 300 && response.status < 400) {
+        const location = response.headers.get('location');
+        if (!location) break;
+        if (hop === MAX_REDIRECTS) {
+          return NextResponse.json({ error: 'Trop de redirections.' }, { status: 502 });
+        }
+        currentUrl = new URL(location, currentUrl);
+        continue;
+      }
+
+      break;
     }
 
-    const html = await response.text();
+    if (!response) {
+      return NextResponse.json({ error: 'Impossible de récupérer la page' }, { status: 502 });
+    }
+
+    if (!response.ok) {
+      return NextResponse.json(
+        { error: `Erreur HTTP distante: ${response.status}` },
+        { status: 502 }
+      );
+    }
+
+    const reader = response.body?.getReader();
+    if (!reader) {
+      return NextResponse.json({ error: 'Réponse vide' }, { status: 502 });
+    }
+
+    const chunks: Uint8Array[] = [];
+    let received = 0;
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      if (value) {
+        received += value.length;
+        if (received > MAX_RESPONSE_BYTES) {
+          await reader.cancel();
+          return NextResponse.json(
+            { error: 'La page distante est trop volumineuse.' },
+            { status: 413 }
+          );
+        }
+        chunks.push(value);
+      }
+    }
+
+    const merged = new Uint8Array(received);
+    let offset = 0;
+    for (const chunk of chunks) {
+      merged.set(chunk, offset);
+      offset += chunk.length;
+    }
+    const html = new TextDecoder('utf-8').decode(merged);
+
     return NextResponse.json({ contents: html });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Proxy fetch error:', error);
-    return NextResponse.json({ error: error.message || 'Impossible de récupérer la page' }, { status: 500 });
+    const isTimeout = error instanceof Error && error.name === 'TimeoutError';
+    return NextResponse.json(
+      { error: isTimeout ? 'Délai dépassé lors de la récupération.' : 'Impossible de récupérer la page' },
+      { status: isTimeout ? 504 : 500 }
+    );
   }
 }
