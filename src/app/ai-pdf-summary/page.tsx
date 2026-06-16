@@ -34,6 +34,8 @@ function renderMarkdown(md: string) {
 }
 
 export default function AiPdfSummaryPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [pdfText, setPdfText] = useState<string>('');

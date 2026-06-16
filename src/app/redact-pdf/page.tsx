@@ -10,6 +10,8 @@ import { redactPDF, RedactionRect } from '@/features/pdf/redact';
 import { EyeOff, Settings, ArrowRight, Trash2, CheckCircle, Search, ZoomIn, ZoomOut, RefreshCw } from 'lucide-react';
 
 export default function RedactPDFPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [pdfDoc, setPdfDoc] = useState<any>(null);
   const [totalPages, setTotalPages] = useState<number>(0);

@@ -11,6 +11,8 @@ import { getPdfPageCount } from '@/features/pdf/split';
 import { PenTool, ArrowRight, Trash2, ChevronDown, Plus } from 'lucide-react';
 
 export default function SignPDFPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [isProcessing, setIsProcessing] = useState(false);

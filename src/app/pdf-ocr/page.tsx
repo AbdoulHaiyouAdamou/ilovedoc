@@ -9,13 +9,11 @@ import AdUnit from '@/components/common/AdUnit';
 import { runOcrOnPdf } from '@/features/pdf/ocr';
 import { ScanText, CheckCircle, ArrowRight, FileText, Copy, Download, Info } from 'lucide-react';
 
-declare global {
-  interface Window {
-    pdfjsLib: any;
-  }
-}
+
 
 export default function PdfOcrPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [language, setLanguage] = useState<string>('fra');
   const [isProcessing, setIsProcessing] = useState(false);

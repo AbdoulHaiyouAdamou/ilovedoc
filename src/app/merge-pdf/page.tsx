@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -10,6 +10,8 @@ import { mergePDFs } from '@/features/pdf/merge';
 import { FileUp, ArrowUp, ArrowDown, X, CheckCircle } from 'lucide-react';
 
 export default function MergePDFPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [files, setFiles] = useState<File[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -106,19 +108,11 @@ export default function MergePDFPage() {
     <>
       <SEO slug="merge-pdf" />
       <Header />
-          <div style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column' }}>
-      <main className="tool-page-layout" style={{ padding: 0, flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <main className="tool-page-layout" style={{ padding: 0, flex: 1, display: 'flex', flexDirection: 'column' }}>
         {/* Full-screen initial view mimicking iLovePDF */}
         {!resultUrl && files.length === 0 ? (
           <>
-            <div style={{ 
-              flex: 1, 
-              display: 'flex', 
-              flexDirection: 'column', 
-              alignItems: 'center', 
-              justifyContent: 'center',
-              padding: '2rem'
-            }}>
+            <div style={{ minHeight: 'calc(100vh - 70px)', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
               <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
                 Fusionner PDF
               </h1>
@@ -303,7 +297,6 @@ export default function MergePDFPage() {
         </div>
         )}
       </main>
-    </div>
       <Footer />
     </>
   );

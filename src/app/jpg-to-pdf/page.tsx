@@ -13,6 +13,8 @@ const ACCENT = '#f59e0b'; // Amber for Image to PDF
 const ACCENT_DARK = '#d97706';
 
 export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string }) {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [files, setFiles] = useState<File[]>([]);
   const [previews, setPreviews] = useState<Record<string, string>>({});
   

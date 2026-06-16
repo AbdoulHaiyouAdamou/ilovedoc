@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -24,6 +24,8 @@ const POSITIONS: { key: PageNumberPosition; row: number; col: number }[] = [
 ];
 
 export default function AddPageNumbersPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [isProcessing, setIsProcessing] = useState(false);

@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Lock, AlertCircle, Download, CheckCircle2, ChevronRight, Eye, EyeOff } from 'lucide-react';
 import { encryptPDF } from '@pdfsmaller/pdf-encrypt-lite';
@@ -13,6 +13,8 @@ import Footer from '@/components/common/Footer';
 const tool = getToolBySlug('protect-pdf')!;
 
 export default function ProtectPdfPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   
   const [password, setPassword] = useState('');
@@ -85,19 +87,11 @@ export default function ProtectPdfPage() {
       <SEO slug="protect-pdf" />
       <Header />
       
-      <div style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column' }}>
-        <main className="tool-page-layout" style={{ padding: 0, flex: 1, display: 'flex', flexDirection: 'column' }}>
+      <main className="tool-page-layout" style={{ padding: 0, flex: 1, display: 'flex', flexDirection: 'column' }}>
         
         {/* -- STATE 1: DROPZONE -- */}
         {!file && !isProcessing && !isDone && (
-          <div style={{ 
-            flex: 1, 
-            display: 'flex', 
-            flexDirection: 'column', 
-            alignItems: 'center', 
-            justifyContent: 'center',
-            padding: '2rem'
-          }}>
+          <div style={{ minHeight: 'calc(100vh - 70px)', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
               {tool.name}
             </h1>
@@ -268,7 +262,6 @@ export default function ProtectPdfPage() {
           <AdUnit slot="ad-protect-pdf-2" />
         </div>
         </main>
-      </div>
       <Footer />
     </>
   );

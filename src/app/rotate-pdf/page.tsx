@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -15,6 +15,8 @@ const ACCENT_DARK = '#0284c7';
 const ACCENT_GRADIENT = `linear-gradient(to right, ${ACCENT}, ${ACCENT_DARK})`;
 
 export default function RotatePDFPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [pageRotations, setPageRotations] = useState<PageRotationMap>({});

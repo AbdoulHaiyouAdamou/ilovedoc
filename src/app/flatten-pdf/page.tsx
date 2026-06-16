@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -14,6 +14,8 @@ const ACCENT_DARK = '#0891b2';
 const ACCENT_GRADIENT = `linear-gradient(to right, ${ACCENT}, ${ACCENT_DARK})`;
 
 export default function FlattenPdfPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState(0);

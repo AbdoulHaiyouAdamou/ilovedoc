@@ -2,13 +2,14 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
 import GoogleTranslate from '@/components/common/GoogleTranslate';
+import ScrollToTop from '@/components/common/ScrollToTop';
 import './globals.css';
 import './workspace.css';
 
 /* ── Google Font ────────────────────────────────────────────── */
 const inter = Inter({
   subsets: ['latin'],
-  display: 'swap',
+  display: 'block', // Prevent font flash (FOUT)
   variable: '--font-inter',
   weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
@@ -173,6 +174,15 @@ export default async function RootLayout({
             `,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof window !== 'undefined' && window.history && 'scrollRestoration' in window.history) {
+                window.history.scrollRestoration = 'manual';
+              }
+            `,
+          }}
+        />
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -209,6 +219,7 @@ export default async function RootLayout({
         {process.env.NODE_ENV === 'production' && <GoogleAdSense />}
       </head>
       <body className={inter.className}>
+        <ScrollToTop />
         {children}
         <GoogleTranslate />
       </body>

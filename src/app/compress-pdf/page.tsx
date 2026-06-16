@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -10,6 +10,8 @@ import { compressPdf } from '@/features/pdf/compress';
 import { Minimize, CheckCircle, ArrowRight, Settings, FileText } from 'lucide-react';
 
 export default function CompressPdfPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [compressionLevel, setCompressionLevel] = useState<'extreme' | 'medium' | 'low'>('medium');
   const [isProcessing, setIsProcessing] = useState(false);

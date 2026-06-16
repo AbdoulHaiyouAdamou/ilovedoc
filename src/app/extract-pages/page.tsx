@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -11,6 +11,8 @@ import { getPdfPageCount } from '@/features/pdf/split';
 import { FileOutput, Check, ArrowRight, Settings, CheckCircle, RotateCcw, CheckSquare } from 'lucide-react';
 
 export default function ExtractPagesPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [selectedPages, setSelectedPages] = useState<number[]>([]); // 0-indexed

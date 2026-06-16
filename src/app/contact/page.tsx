@@ -54,7 +54,7 @@ export default function ContactPage() {
     message: '',
   });
   const [errors, setErrors] = useState<FormErrors>({});
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   function validate(): FormErrors {
@@ -85,17 +85,46 @@ export default function ContactPage() {
     }
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-    // Simulate submission (no backend)
-    setStatus('success');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    
+    setStatus('sending');
     setErrors({});
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        })
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        
+        // Cacher le message de succès après 5 secondes
+        setTimeout(() => {
+          setStatus('idle');
+        }, 5000);
+      } else {
+        setStatus('error');
+      }
+    } catch (err) {
+      setStatus('error');
+    }
   }
 
   return (
@@ -121,13 +150,12 @@ export default function ContactPage() {
 
             {status === 'success' && (
               <div className={styles.successBanner}>
-                ✅ Merci ! Votre message a bien été envoyé. Nous vous
-                répondrons dans les meilleurs délais.
+                Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais.
               </div>
             )}
             {status === 'error' && (
               <div className={styles.errorBanner}>
-                ❌ Une erreur est survenue. Veuillez réessayer plus tard.
+                Une erreur est survenue. Veuillez réessayer plus tard.
               </div>
             )}
 
@@ -205,8 +233,8 @@ export default function ContactPage() {
                 )}
               </div>
 
-              <button type="submit" className={styles.submitBtn}>
-                Envoyer le message
+              <button type="submit" className={styles.submitBtn} disabled={status === 'sending'}>
+                {status === 'sending' ? 'Envoi en cours...' : 'Envoyer le message'}
               </button>
             </form>
           </section>
@@ -223,8 +251,8 @@ export default function ContactPage() {
                   <div>
                     <strong>Email</strong>
                     <br />
-                    <a href="mailto:contact@ilovedoc.com">
-                      contact@ilovedoc.com
+                    <a href="mailto:nexuslogic.pro@gmail.com">
+                      nexuslogic.pro@gmail.com
                     </a>
                   </div>
                 </li>

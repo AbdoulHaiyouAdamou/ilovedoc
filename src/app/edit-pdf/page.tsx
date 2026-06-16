@@ -9,13 +9,11 @@ import AdUnit from '@/components/common/AdUnit';
 import { applyEditAnnotations, PDFAnnotation } from '@/features/pdf/edit';
 import { Type, CheckCircle, ArrowRight, ChevronLeft, ChevronRight, Plus, Trash2, FileText } from 'lucide-react';
 
-declare global {
-  interface Window {
-    pdfjsLib: any;
-  }
-}
+
 
 export default function EditPdfPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState(0);

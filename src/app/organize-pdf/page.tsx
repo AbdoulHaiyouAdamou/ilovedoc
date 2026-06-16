@@ -1,7 +1,7 @@
 'use client';
 import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -14,6 +14,8 @@ const ACCENT = '#a78bfa';
 const ACCENT_DARK = '#7c3aed';
 
 export default function OrganizePdfPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [pageOrder, setPageOrder] = useState<number[]>([]); // 0-indexed

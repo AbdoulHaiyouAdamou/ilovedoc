@@ -10,6 +10,8 @@ import { convertPdfToWord } from '@/features/pdf/office';
 import { FileText, CheckCircle, ArrowRight, Info } from 'lucide-react';
 
 export default function PdfToWordPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState(0);

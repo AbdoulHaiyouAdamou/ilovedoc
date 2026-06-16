@@ -99,6 +99,8 @@ function getChanges(diff: Array<{ added?: boolean, removed?: boolean, value: str
 }
 
 export default function ComparePDFPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [fileA, setFileA] = useState<File | null>(null);
   const [fileB, setFileB] = useState<File | null>(null);
   const [pagesA, setPagesA] = useState<number>(0);

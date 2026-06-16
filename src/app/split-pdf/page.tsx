@@ -10,6 +10,8 @@ import { splitPDFAdvanced, getPdfPageCount, SplitInterval } from '@/features/pdf
 import { Scissors, Plus, X, ArrowRight, Settings } from 'lucide-react';
 
 export default function SplitPDFPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [intervals, setIntervals] = useState<SplitInterval[]>([]);

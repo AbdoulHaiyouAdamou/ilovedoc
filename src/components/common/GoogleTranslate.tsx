@@ -27,7 +27,7 @@ export default function GoogleTranslate() {
         if ((window as any).google && (window as any).google.translate) {
           new (window as any).google.translate.TranslateElement({
             pageLanguage: 'fr',
-            includedLanguages: 'en,es,fr,de,it,pt,ja,ru,ko,zh-CN,zh-TW,ar,bg,ca,nl,el,hi,id,ms,pl,sv,th,tr,uk,vi,sw',
+            includedLanguages: 'en,es,fr,de,it,pt,ja,ru,ko,zh-CN,zh-TW,ar,bg,ca,nl,el,hi,id,ms,pl,sv,th,tr,uk,vi,sw,az,cs,da,eu,fa,ga,hr,hu,ml,no,ro,sk,sl,sr',
             layout: (window as any).google.translate.TranslateElement.InlineLayout.SIMPLE,
             autoDisplay: false
           }, 'google_translate_element');

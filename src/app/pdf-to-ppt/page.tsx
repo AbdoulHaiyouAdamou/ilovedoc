@@ -12,13 +12,11 @@ import Script from 'next/script';
 
 const TOOL_COLOR: [string, string] = ['#ea580c', '#c2410c'];
 
-declare global {
-  interface Window {
-    pdfjsLib: any;
-  }
-}
+
 
 export default function PdfToPptPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState(0);

@@ -96,7 +96,7 @@ export default function Hero() {
             Tous les outils dont vous avez besoin pour utiliser les PDF, à portée de main. Ils sont tous 100% GRATUITS, sécurisés et simples d'utilisation.
           </p>
           <div className="hero-stats">
-            <span className="badge"><Sparkles size={16} /> 30+ Outils</span>
+            <span className="badge"><Sparkles size={16} /> 46 Outils</span>
             <span className="badge"><Lock size={16} /> Vie Privée Garantie</span>
             <span className="badge"><Cpu size={16} /> Traitement Local</span>
           </div>

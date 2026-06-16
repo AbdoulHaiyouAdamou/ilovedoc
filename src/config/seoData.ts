@@ -299,6 +299,146 @@ const customSEOData: Record<string, Omit<SEOInfo, 'keywords'>> = {
       { name: 'Poser vos questions', text: 'Saisissez vos questions relatives aux chapitres ou données du PDF.' },
       { name: 'Obtenir les réponses', text: 'Lisez les explications détaillées rédigées instantanément par l\'IA.' }
     ]
+  },
+  'edit-metadata': {
+    title: 'Modifier Métadonnées PDF en Ligne - Gratuit & Sécurisé',
+    description: 'Modifiez ou supprimez les métadonnées de vos fichiers PDF (Auteur, Titre, Mots-clés). Traitement 100% local et respectueux de la vie privée.',
+    faq: [
+      { question: 'Comment modifier l\'auteur d\'un PDF ?', answer: 'Ouvrez votre PDF dans notre outil, allez dans le champ "Auteur" et modifiez le texte, puis cliquez sur Mettre à jour.' },
+      { question: 'Est-ce que mes données sont sécurisées ?', answer: 'Absolument, toutes les modifications sont appliquées localement sur votre ordinateur. Vos documents ne sont jamais transférés.' }
+    ],
+    steps: [
+      { name: 'Ouvrir le PDF', text: 'Importez votre fichier PDF dans l\'interface de l\'outil.' },
+      { name: 'Éditer les données', text: 'Modifiez le titre, le créateur, l\'auteur ou les mots-clés.' },
+      { name: 'Sauvegarder', text: 'Cliquez sur le bouton de mise à jour pour appliquer les changements.' },
+      { name: 'Télécharger', text: 'Récupérez votre PDF mis à jour.' }
+    ]
+  },
+  'pdf-info': {
+    title: 'Lire Propriétés et Informations PDF en Ligne',
+    description: 'Affichez les propriétés cachées, polices, version et informations internes de n\'importe quel fichier PDF instantanément dans votre navigateur.',
+    faq: [
+      { question: 'Comment voir les métadonnées cachées ?', answer: 'Il suffit de glisser-déposer votre PDF, l\'outil extraira instantanément toutes les données invisibles (date de création, outil utilisé, etc.).' },
+      { question: 'L\'outil est-il gratuit ?', answer: 'Oui, vous pouvez analyser les propriétés de tous vos PDF gratuitement.' }
+    ],
+    steps: [
+      { name: 'Sélectionner le PDF', text: 'Glissez-déposez le document à analyser.' },
+      { name: 'Analyse locale', text: 'L\'outil lit instantanément la structure du fichier.' },
+      { name: 'Visualiser les infos', text: 'Parcourez les métadonnées, polices et propriétés détectées.' },
+      { name: 'Fermer', text: 'Aucun téléchargement n\'est nécessaire.' }
+    ]
+  },
+  'add-stamp': {
+    title: 'Ajouter un Tampon sur PDF en Ligne - Filigrane & Cachet',
+    description: 'Appliquez un tampon personnalisé, un cachet "Approuvé" ou un filigrane sur vos documents PDF en un clic.',
+    faq: [
+      { question: 'Peut-on ajouter un tampon sur toutes les pages ?', answer: 'Oui, vous pouvez choisir d\'appliquer le tampon sur la première page ou sur l\'ensemble du document.' },
+      { question: 'Quels formats d\'images sont acceptés ?', answer: 'Vous pouvez uploader des PNG (avec transparence) ou des JPG pour votre tampon.' }
+    ],
+    steps: [
+      { name: 'Charger le document', text: 'Importez le PDF que vous souhaitez tamponner.' },
+      { name: 'Configurer le tampon', text: 'Ajoutez une image ou choisissez un tampon prédéfini.' },
+      { name: 'Ajuster la position', text: 'Placez le tampon à l\'endroit souhaité.' },
+      { name: 'Appliquer', text: 'Validez pour générer le PDF tamponné.' }
+    ]
+  },
+  'add-attachments': {
+    title: 'Ajouter Pièces Jointes au PDF en Ligne',
+    description: 'Incorporez des fichiers et pièces jointes directement à l\'intérieur de votre document PDF.',
+    faq: [
+      { question: 'Est-il possible de joindre n\'importe quel fichier ?', answer: 'Oui, vous pouvez embarquer des images, du texte, du code ou d\'autres PDF à l\'intérieur de votre fichier.' },
+      { question: 'Les pièces jointes augmentent-elles la taille du PDF ?', answer: 'Oui, la taille de votre PDF inclura le poids du document principal et de toutes les pièces jointes.' }
+    ],
+    steps: [
+      { name: 'Importer le PDF', text: 'Ouvrez le fichier PDF principal.' },
+      { name: 'Ajouter les fichiers', text: 'Sélectionnez les pièces jointes à embarquer.' },
+      { name: 'Fusionner', text: 'L\'outil encapsule les fichiers dans la structure du PDF.' },
+      { name: 'Télécharger', text: 'Récupérez le PDF enrichi.' }
+    ]
+  },
+  'extract-images': {
+    title: 'Extraire Images d\'un PDF en Ligne - Sauvegarde HQ',
+    description: 'Extrayez automatiquement toutes les images et photos contenues dans un PDF en haute qualité (JPG/PNG).',
+    faq: [
+      { question: 'La qualité des images est-elle préservée ?', answer: 'Oui, les images sont extraites dans leur format et résolution d\'origine, sans compression supplémentaire.' },
+      { question: 'Comment récupérer les images extraites ?', answer: 'Une fois l\'extraction terminée, toutes les images sont compilées dans un fichier ZIP pour faciliter le téléchargement.' }
+    ],
+    steps: [
+      { name: 'Déposer le PDF', text: 'Importez le document contenant les images.' },
+      { name: 'Extraction locale', text: 'L\'outil analyse le PDF pour trouver tous les éléments graphiques.' },
+      { name: 'Prévisualisation', text: 'Visualisez le nombre d\'images détectées.' },
+      { name: 'Télécharger le ZIP', text: 'Récupérez une archive contenant toutes les photos.' }
+    ]
+  },
+  'remove-images': {
+    title: 'Supprimer Images d\'un PDF - Alléger le Fichier',
+    description: 'Enlevez toutes les images d\'un fichier PDF pour réduire sa taille et ne conserver que le texte.',
+    faq: [
+      { question: 'Pourquoi supprimer les images d\'un PDF ?', answer: 'Cela permet de réduire drastiquement la taille du fichier ou d\'optimiser le document pour l\'impression de texte seul.' },
+      { question: 'Le texte est-il altéré ?', answer: 'Non, seul le contenu visuel rasterisé (photos) est supprimé, le texte et la mise en page vectorielle restent intacts.' }
+    ],
+    steps: [
+      { name: 'Ajouter le fichier', text: 'Importez le PDF lourd.' },
+      { name: 'Lancer le nettoyage', text: 'L\'outil cible et supprime toutes les images.' },
+      { name: 'Vérification', text: 'Vérifiez la nouvelle taille allégée du fichier.' },
+      { name: 'Sauvegarder', text: 'Téléchargez le document PDF épuré.' }
+    ]
+  },
+  'multi-page-layout': {
+    title: 'Imprimer Plusieurs Pages sur une Feuille PDF',
+    description: 'Modifiez la mise en page de votre PDF pour regrouper 2, 4 ou 8 pages sur une seule feuille (N-up). Idéal pour l\'impression.',
+    faq: [
+      { question: 'Comment imprimer 4 pages sur une seule ?', answer: 'Il suffit de sélectionner l\'option "4 pages par feuille" dans l\'outil et de générer le nouveau PDF.' },
+      { question: 'Peut-on ajuster les marges ?', answer: 'L\'outil redimensionne automatiquement les pages originales en conservant leur ratio pour les faire rentrer dans la nouvelle mise en page.' }
+    ],
+    steps: [
+      { name: 'Sélectionner le PDF', text: 'Uploadez votre document standard.' },
+      { name: 'Choisir la grille', text: 'Sélectionnez 2, 4 ou plus de pages par feuille.' },
+      { name: 'Réorganisation', text: 'L\'outil réduit et place les pages sur le nouveau gabarit.' },
+      { name: 'Télécharger', text: 'Récupérez le document prêt pour l\'impression économique.' }
+    ]
+  },
+  'overlay-pdf': {
+    title: 'Superposer PDF en Ligne - Ajouter En-tête / Papier à lettre',
+    description: 'Superposez facilement un document PDF sur un autre. Idéal pour appliquer un fond de page, un logo ou du papier à en-tête.',
+    faq: [
+      { question: 'Comment ajouter un papier à en-tête sur un PDF ?', answer: 'Uploadez votre PDF de contenu en premier, puis uploadez le PDF du papier à en-tête en tant que couche (overlay).' },
+      { question: 'Peut-on superposer des PDF de tailles différentes ?', answer: 'Les documents sont centrés par défaut, il est préférable d\'utiliser des pages de même taille (A4).' }
+    ],
+    steps: [
+      { name: 'PDF Principal', text: 'Ajoutez le document contenant le texte.' },
+      { name: 'PDF de Fond', text: 'Ajoutez le PDF contenant le logo ou l\'en-tête.' },
+      { name: 'Fusion par couche', text: 'L\'outil superpose les deux documents.' },
+      { name: 'Télécharger', text: 'Obtenez votre PDF avec papier à en-tête intégré.' }
+    ]
+  },
+  'sanitize-pdf': {
+    title: 'Nettoyer PDF en Ligne - Supprimer Données Sensibles',
+    description: 'Purgez votre PDF de toutes ses données cachées, métadonnées, annotations et scripts pour garantir votre confidentialité.',
+    faq: [
+      { question: 'Qu\'est-ce qu\'un nettoyage de PDF ?', answer: 'C\'est l\'action de supprimer toutes les informations invisibles (auteur, outil de création, code JavaScript caché) pour éviter les fuites de données.' },
+      { question: 'Est-ce que cela modifie l\'apparence du document ?', answer: 'Le contenu visuel de base reste exactement le même, seules les données sous-jacentes sont effacées.' }
+    ],
+    steps: [
+      { name: 'Sélectionner', text: 'Importez le PDF à anonymiser.' },
+      { name: 'Nettoyage', text: 'Suppression automatique des métadonnées et annotations.' },
+      { name: 'Vérification', text: 'Le fichier est restructuré sans traces cachées.' },
+      { name: 'Télécharger', text: 'Récupérez la version sécurisée.' }
+    ]
+  },
+  'remove-blanks': {
+    title: 'Supprimer Pages Blanches PDF en Ligne',
+    description: 'Détectez et supprimez automatiquement toutes les pages vides ou blanches de votre document PDF.',
+    faq: [
+      { question: 'Comment l\'outil détecte-t-il les pages blanches ?', answer: 'Il scanne le contenu vectoriel et raster de chaque page. Si aucune donnée imprimable n\'est trouvée, la page est ciblée.' },
+      { question: 'Est-il possible d\'annuler une suppression ?', answer: 'Le traitement ne modifie pas votre fichier original, il crée un nouveau fichier PDF.' }
+    ],
+    steps: [
+      { name: 'Charger le fichier', text: 'Importez le document comportant des erreurs de scan.' },
+      { name: 'Analyse', text: 'L\'outil détecte instantanément les pages vides.' },
+      { name: 'Suppression', text: 'Les pages sans contenu sont retirées.' },
+      { name: 'Télécharger le résultat', text: 'Récupérez le document nettoyé de ses espaces vides.' }
+    ]
   }
 };
 
