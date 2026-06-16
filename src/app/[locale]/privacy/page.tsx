@@ -311,7 +311,7 @@ export default function PrivacyPage() {
               </ul>
               <p>
                 Pour exercer ces droits, contactez-nous à l&apos;adresse :{' '}
-                <a href="mailto:contact@ilovedoc.com">contact@ilovedoc.com</a>.
+                <a href="mailto:nexuslogic.pro@gmail.com">nexuslogic.pro@gmail.com</a>.
                 Nous répondrons à votre demande dans un délai de 30 jours.
               </p>
               <p>
@@ -385,8 +385,8 @@ export default function PrivacyPage() {
               <ul>
                 <li>
                   <strong>Par email :</strong>{' '}
-                  <a href="mailto:contact@ilovedoc.com">
-                    contact@ilovedoc.com
+                  <a href="mailto:nexuslogic.pro@gmail.com">
+                    nexuslogic.pro@gmail.com
                   </a>
                 </li>
                 <li>

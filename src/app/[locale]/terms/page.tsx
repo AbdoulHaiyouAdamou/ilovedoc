@@ -234,8 +234,8 @@ export default function TermsPage() {
               <ul>
                 <li>
                   <strong>Par email :</strong>{' '}
-                  <a href="mailto:contact@ilovedoc.com">
-                    contact@ilovedoc.com
+                  <a href="mailto:nexuslogic.pro@gmail.com">
+                    nexuslogic.pro@gmail.com
                   </a>
                 </li>
                 <li>
