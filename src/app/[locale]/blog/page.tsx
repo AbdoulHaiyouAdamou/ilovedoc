@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
@@ -35,10 +35,30 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const tTools = useTranslations('Tools');
+  const tFooter = useTranslations('Footer');
   const tCommon = useTranslations('Common');
+  const tBlog = useTranslations('Blog');
+  const tBlogPosts = useTranslations('BlogPosts');
+
   const featuredPost = blogPosts[0];
   const gridPosts = blogPosts.slice(1);
+
+  // Localize a post object helper
+  const localizePost = (post: typeof blogPosts[0]) => {
+    if (!post) return null;
+    return {
+      ...post,
+      title: tBlogPosts(`${post.slug}.title`),
+      subtitle: tBlogPosts(`${post.slug}.subtitle`),
+      description: tBlogPosts(`${post.slug}.description`),
+      date: tBlogPosts(`${post.slug}.date`),
+      category: tBlogPosts(`${post.slug}.category`),
+      readTime: tBlogPosts(`${post.slug}.readTime`),
+    };
+  };
+
+  const localizedFeatured = featuredPost ? localizePost(featuredPost) : null;
+  const localizedGridPosts = gridPosts.map(localizePost).filter(Boolean) as NonNullable<ReturnType<typeof localizePost>>[];
 
   return (
     <>
@@ -47,43 +67,40 @@ export default function BlogPage() {
         {/* Hero Banner */}
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-              {tTools('blog.name')}
-            </h1>
-          <p className={styles.heroSubtitle}>
-              {tTools('blog.description')}
-            </p>
+            {tFooter('blog')}
+          </h1>
         </section>
 
         <div className={styles.container}>
           {/* Featured Post (Article à la une) */}
-          {featuredPost && (
+          {localizedFeatured && (
             <section className={styles.featuredSection}>
               <div className={styles.featuredPost}>
                 <div
                   className={styles.featuredImage}
                   style={{
-                    background: `linear-gradient(135deg, ${featuredPost.colors[0]}, ${featuredPost.colors[1]})`
+                    background: `linear-gradient(135deg, ${localizedFeatured.colors[0]}, ${localizedFeatured.colors[1]})`
                   }}
                 >
-                  <span>{featuredPost.title.split(' : ')[0]}</span>
+                  <span>{localizedFeatured.title.split(' : ')[0]}</span>
                 </div>
                 <div className={styles.featuredContent}>
                   <div className={styles.meta}>
-                    <span className={styles.categoryTag}>{featuredPost.category}</span>
+                    <span className={styles.categoryTag}>{localizedFeatured.category}</span>
                     <span>•</span>
-                    <span>{featuredPost.date}</span>
+                    <span>{localizedFeatured.date}</span>
                     <span>•</span>
-                    <span>{featuredPost.readTime}</span>
+                    <span>{localizedFeatured.readTime}</span>
                   </div>
-                  <h2 className={styles.featuredTitle}>{featuredPost.title}</h2>
+                  <h2 className={styles.featuredTitle}>{localizedFeatured.title}</h2>
                   <p className={styles.featuredDescription}>
-                    {featuredPost.description}
+                    {localizedFeatured.description}
                   </p>
                   <Link
-                    href={`/blog/${featuredPost.slug}`}
+                    href={`/blog/${localizedFeatured.slug}`}
                     className={styles.readMoreBtn}
                   >
-                    En savoir plus
+                    {tBlog('read_more')}
                   </Link>
                 </div>
               </div>
@@ -95,9 +112,9 @@ export default function BlogPage() {
 
           {/* Grid section */}
           <section>
-            <h2 className={styles.gridTitle}>Tous les articles</h2>
+            <h2 className={styles.gridTitle}>{tBlog('all_articles')}</h2>
             <div className={styles.blogGrid}>
-              {gridPosts.map((post) => (
+              {localizedGridPosts.map((post) => (
                 <article key={post.slug} className={styles.blogCard}>
                   <div
                     className={styles.cardImage}
@@ -119,7 +136,7 @@ export default function BlogPage() {
                       href={`/blog/${post.slug}`}
                       className={styles.readMoreBtn}
                     >
-                      En savoir plus
+                      {tBlog('read_more')}
                     </Link>
                   </div>
                 </article>

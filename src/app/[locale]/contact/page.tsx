@@ -1,14 +1,14 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './contact.module.css';
 
-import { Mail, Clock, ShieldAlert } from 'lucide-react';
+import { Mail, Clock } from 'lucide-react';
 
 interface FormData {
   name: string;
@@ -24,32 +24,11 @@ interface FormErrors {
   message?: string;
 }
 
-const FAQ_ITEMS = [
-  {
-    q: 'iLoveDoc est-il vraiment gratuit ?',
-    a: 'Oui, tous nos outils sont 100 % gratuits, sans limite et sans inscription requise.',
-  },
-  {
-    q: 'Mes fichiers sont-ils envoyés sur un serveur ?',
-    a: 'Non. Tous les traitements sont effectués directement dans votre navigateur. Aucun fichier ne quitte votre appareil.',
-  },
-  {
-    q: 'Quels navigateurs sont supportés ?',
-    a: 'iLoveDoc fonctionne sur tous les navigateurs modernes : Chrome, Firefox, Safari, Edge (versions récentes).',
-  },
-  {
-    q: 'Puis-je traiter des fichiers volumineux ?',
-    a: 'Le traitement se fait côté client, donc la limite dépend de la mémoire de votre appareil. La plupart des documents de taille courante sont pris en charge sans problème.',
-  },
-  {
-    q: 'Comment signaler un bug ?',
-    a: "Utilisez le formulaire de contact ci-dessus avec le sujet « Bug / Problème technique » et décrivez le problème rencontré.",
-  },
-];
-
 export default function ContactPage() {
-  const tTools = useTranslations('Tools');
+  const tFooter = useTranslations('Footer');
   const tCommon = useTranslations('Common');
+  const tContact = useTranslations('Contact');
+  
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -60,19 +39,27 @@ export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  const FAQ_ITEMS = [
+    { q: tContact('faq_item0_q'), a: tContact('faq_item0_a') },
+    { q: tContact('faq_item1_q'), a: tContact('faq_item1_a') },
+    { q: tContact('faq_item2_q'), a: tContact('faq_item2_a') },
+    { q: tContact('faq_item3_q'), a: tContact('faq_item3_a') },
+    { q: tContact('faq_item4_q'), a: tContact('faq_item4_a') }
+  ];
+
   function validate(): FormErrors {
     const errs: FormErrors = {};
-    if (!formData.name.trim()) errs.name = 'Le nom est requis.';
+    if (!formData.name.trim()) errs.name = tContact('error_name_required');
     if (!formData.email.trim()) {
-      errs.email = "L'adresse email est requise.";
+      errs.email = tContact('error_email_required');
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      errs.email = 'Veuillez entrer une adresse email valide.';
+      errs.email = tContact('error_email_invalid');
     }
-    if (!formData.subject.trim()) errs.subject = 'Le sujet est requis.';
+    if (!formData.subject.trim()) errs.subject = tContact('error_subject_required');
     if (!formData.message.trim()) {
-      errs.message = 'Le message est requis.';
+      errs.message = tContact('error_message_required');
     } else if (formData.message.trim().length < 10) {
-      errs.message = 'Le message doit contenir au moins 10 caractères.';
+      errs.message = tContact('error_message_min');
     }
     return errs;
   }
@@ -137,11 +124,8 @@ export default function ContactPage() {
         {/* Hero */}
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-              {tTools('contact.name')}
-            </h1>
-          <p className={styles.heroSubtitle}>
-              {tTools('contact.description')}
-            </p>
+            {tFooter('contact')}
+          </h1>
         </section>
 
         {/* Top ad placement */}
@@ -150,16 +134,16 @@ export default function ContactPage() {
         <div className={styles.contentGrid}>
           {/* Form */}
           <section className={styles.formSection}>
-            <h2 className={styles.formTitle}>Envoyez-nous un message</h2>
+            <h2 className={styles.formTitle}>{tContact('form_title')}</h2>
 
             {status === 'success' && (
               <div className={styles.successBanner}>
-                Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais.
+                {tContact('success_message')}
               </div>
             )}
             {status === 'error' && (
               <div className={styles.errorBanner}>
-                Une erreur est survenue. Veuillez réessayer plus tard.
+                {tContact('error_message')}
               </div>
             )}
 
@@ -169,12 +153,12 @@ export default function ContactPage() {
               noValidate
             >
               <div className={styles.field}>
-                <label htmlFor="name">Nom complet</label>
+                <label htmlFor="name">{tContact('label_name')}</label>
                 <input
                   id="name"
                   name="name"
                   type="text"
-                  placeholder="Jean Dupont"
+                  placeholder={tContact('placeholder_name')}
                   value={formData.name}
                   onChange={handleChange}
                   className={errors.name ? styles.inputError : ''}
@@ -185,12 +169,12 @@ export default function ContactPage() {
               </div>
 
               <div className={styles.field}>
-                <label htmlFor="email">Adresse email</label>
+                <label htmlFor="email">{tContact('label_email')}</label>
                 <input
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="jean@exemple.com"
+                  placeholder={tContact('placeholder_email')}
                   value={formData.email}
                   onChange={handleChange}
                   className={errors.email ? styles.inputError : ''}
@@ -201,7 +185,7 @@ export default function ContactPage() {
               </div>
 
               <div className={styles.field}>
-                <label htmlFor="subject">Sujet</label>
+                <label htmlFor="subject">{tContact('label_subject')}</label>
                 <select
                   id="subject"
                   name="subject"
@@ -209,12 +193,12 @@ export default function ContactPage() {
                   onChange={handleChange}
                   className={errors.subject ? styles.inputError : ''}
                 >
-                  <option value="">— Choisir un sujet —</option>
-                  <option value="question">Question générale</option>
-                  <option value="bug">Bug / Problème technique</option>
-                  <option value="suggestion">Suggestion d&apos;amélioration</option>
-                  <option value="partnership">Partenariat / Collaboration</option>
-                  <option value="other">Autre</option>
+                  <option value="">{tContact('select_subject')}</option>
+                  <option value="question">{tContact('subject_option_question')}</option>
+                  <option value="bug">{tContact('subject_option_bug')}</option>
+                  <option value="suggestion">{tContact('subject_option_suggestion')}</option>
+                  <option value="partnership">{tContact('subject_option_partnership')}</option>
+                  <option value="other">{tContact('subject_option_other')}</option>
                 </select>
                 {errors.subject && (
                   <span className={styles.fieldError}>{errors.subject}</span>
@@ -222,12 +206,12 @@ export default function ContactPage() {
               </div>
 
               <div className={styles.field}>
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{tContact('label_message')}</label>
                 <textarea
                   id="message"
                   name="message"
                   rows={6}
-                  placeholder="Décrivez votre demande en détail…"
+                  placeholder={tContact('placeholder_message')}
                   value={formData.message}
                   onChange={handleChange}
                   className={errors.message ? styles.inputError : ''}
@@ -238,7 +222,7 @@ export default function ContactPage() {
               </div>
 
               <button type="submit" className={styles.submitBtn} disabled={status === 'sending'}>
-                {status === 'sending' ? 'Envoi en cours...' : 'Envoyer le message'}
+                {status === 'sending' ? tContact('btn_sending') : tContact('btn_submit')}
               </button>
             </form>
           </section>
@@ -246,14 +230,14 @@ export default function ContactPage() {
           {/* Contact Info */}
           <aside className={styles.infoSection}>
             <div className={styles.infoCard}>
-              <h3>Informations de contact</h3>
+              <h3>{tContact('info_title')}</h3>
               <ul className={styles.infoList}>
                 <li>
                   <span className={styles.infoIcon} style={{ display: 'flex', alignItems: 'center', marginTop: '4px' }}>
                     <Mail size={18} color="var(--color-primary, #7c3aed)" />
                   </span>
                   <div>
-                    <strong>Email</strong>
+                    <strong>{tContact('info_email')}</strong>
                     <br />
                     <a href="mailto:nexuslogic.pro@gmail.com">
                       nexuslogic.pro@gmail.com
@@ -265,16 +249,16 @@ export default function ContactPage() {
                     <Clock size={18} color="var(--color-primary, #7c3aed)" />
                   </span>
                   <div>
-                    <strong>Temps de réponse</strong>
+                    <strong>{tContact('info_response_time')}</strong>
                     <br />
-                    Sous 48 heures ouvrées
+                    {tContact('info_response_val')}
                   </div>
                 </li>
               </ul>
             </div>
 
             <div className={styles.infoCard}>
-              <h3>Suivez-nous</h3>
+              <h3>{tContact('info_follow')}</h3>
               <div className={styles.socialLinks}>
                 <a
                   href="https://twitter.com/ilovedoc"
@@ -296,16 +280,16 @@ export default function ContactPage() {
             </div>
 
             <div className={styles.infoCard}>
-              <h3>Liens utiles</h3>
+              <h3>{tContact('info_links')}</h3>
               <ul className={styles.usefulLinks}>
                 <li>
-                  <Link href="/privacy">Politique de confidentialité</Link>
+                  <Link href="/privacy">{tFooter('privacy')}</Link>
                 </li>
                 <li>
-                  <Link href="/terms">Conditions d&apos;utilisation</Link>
+                  <Link href="/terms">{tFooter('terms')}</Link>
                 </li>
                 <li>
-                  <Link href="/about">À propos</Link>
+                  <Link href="/about">{tFooter('about')}</Link>
                 </li>
               </ul>
             </div>
@@ -315,7 +299,7 @@ export default function ContactPage() {
         {/* FAQ */}
         <section className={styles.faqSection}>
           <div className={styles.faqContainer}>
-            <h2 className={styles.sectionTitle}>Questions Fréquentes</h2>
+            <h2 className={styles.sectionTitle}>{tContact('faq_title')}</h2>
             <div className={styles.faqList}>
               {FAQ_ITEMS.map((item, i) => (
                 <div
