@@ -1,6 +1,229 @@
 {
   "Hero": {
     "title": "All your PDF tools in one place",
-    "subtitle": "All the tools you need to use PDFs, right at your fingertips. All are 100% FREE, secure and easy to use."
+    "subtitle": "All the tools you need to use PDFs, right at your fingertips. All are 100% FREE, secure and easy to use.",
+    "badge_tools": "46 Tools",
+    "badge_privacy": "Privacy Guaranteed",
+    "badge_local": "Local Processing"
+  },
+  "Common": {
+    "select_file": "Select PDF file",
+    "or_drop": "or drop PDF here"
+  },
+  "Header": {
+    "merge": "MERGE PDF",
+    "split": "SPLIT PDF",
+    "compress": "COMPRESS PDF",
+    "convert": "CONVERT PDF",
+    "all_tools": "ALL TOOLS"
+  },
+  "Footer": {
+    "popular": "Popular Tools",
+    "convert": "Convert PDF",
+    "about": "About",
+    "legal": "Legal",
+    "about_us": "About Us",
+    "contact": "Contact Us",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Merge PDF",
+      "description": "Combine multiple PDF files into a single document."
+    },
+    "split-pdf": {
+      "name": "Split PDF",
+      "description": "Separate one page or a whole set for easy conversion into independent PDF files."
+    },
+    "remove-pages": {
+      "name": "Remove pages",
+      "description": "Remove unwanted pages from your PDF."
+    },
+    "extract-pages": {
+      "name": "Extract pages",
+      "description": "Extract specific pages to create a new PDF."
+    },
+    "organize-pdf": {
+      "name": "Organize PDF",
+      "description": "Sort, add and delete PDF pages."
+    },
+    "compress-pdf": {
+      "name": "Compress PDF",
+      "description": "Reduce file size while optimizing for maximal PDF quality."
+    },
+    "repair-pdf": {
+      "name": "Repair PDF",
+      "description": "Repair a damaged or corrupted PDF file."
+    },
+    "flatten-pdf": {
+      "name": "Flatten PDF",
+      "description": "Flatten forms and annotations in your PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF to Word",
+      "description": "Convert your PDFs to editable Word documents."
+    },
+    "pdf-to-excel": {
+      "name": "PDF to Excel",
+      "description": "Convert PDF tables into Excel spreadsheets."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF to PowerPoint",
+      "description": "Turn your PDFs into PowerPoint presentations."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF to JPG",
+      "description": "Convert each PDF page into a JPG image."
+    },
+    "pdf-to-png": {
+      "name": "PDF to PNG",
+      "description": "Export your PDF pages to high quality PNG images."
+    },
+    "pdf-to-html": {
+      "name": "PDF to HTML",
+      "description": "Convert your PDF to an HTML web page."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF to PDF/A",
+      "description": "Convert your PDF to PDF/A for long-term archiving."
+    },
+    "word-to-pdf": {
+      "name": "Word to PDF",
+      "description": "Convert your Word documents to PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel to PDF",
+      "description": "Turn your Excel spreadsheets into PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint to PDF",
+      "description": "Convert your PowerPoint presentations to PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG to PDF",
+      "description": "Combine your JPG images into a PDF document."
+    },
+    "png-to-pdf": {
+      "name": "PNG to PDF",
+      "description": "Convert your PNG images into a PDF file."
+    },
+    "html-to-pdf": {
+      "name": "HTML to PDF",
+      "description": "Convert an HTML web page into a PDF document."
+    },
+    "edit-pdf": {
+      "name": "Edit PDF",
+      "description": "Add text, images, shapes or freehand annotations to a PDF."
+    },
+    "rotate-pdf": {
+      "name": "Rotate PDF",
+      "description": "Rotate your PDFs the way you need them."
+    },
+    "add-page-numbers": {
+      "name": "Add page numbers",
+      "description": "Add page numbers into PDFs with ease."
+    },
+    "add-watermark": {
+      "name": "Add watermark",
+      "description": "Stamp an image or text over your PDF in seconds."
+    },
+    "sign-pdf": {
+      "name": "Sign PDF",
+      "description": "Sign yourself or request electronic signatures from others."
+    },
+    "fill-pdf-form": {
+      "name": "Fill PDF form",
+      "description": "Fill out PDF forms online."
+    },
+    "redact-pdf": {
+      "name": "Redact PDF",
+      "description": "Hide sensitive information in your PDF."
+    },
+    "crop-pdf": {
+      "name": "Crop PDF",
+      "description": "Crop PDF margins, change PDF page size."
+    },
+    "protect-pdf": {
+      "name": "Protect PDF",
+      "description": "Protect PDF files with a password."
+    },
+    "unlock-pdf": {
+      "name": "Unlock PDF",
+      "description": "Remove PDF password security."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Make your scanned PDF searchable."
+    },
+    "compare-pdf": {
+      "name": "Compare PDF",
+      "description": "Compare two PDF files and identify differences."
+    },
+    "ai-pdf-summary": {
+      "name": "AI Summary",
+      "description": "Get a smart summary of your PDF document."
+    },
+    "ai-pdf-chat": {
+      "name": "Chat with PDF",
+      "description": "Ask questions to your PDF using Artificial Intelligence."
+    },
+    "ai-pdf-translate": {
+      "name": "Translate PDF",
+      "description": "Translate your PDF document into another language with AI."
+    },
+    "edit-metadata": {
+      "name": "Edit metadata",
+      "description": "Edit the title, author and other metadata of your PDF."
+    },
+    "pdf-info": {
+      "name": "PDF Info",
+      "description": "View all technical information of your PDF file."
+    },
+    "add-stamp": {
+      "name": "Add stamp",
+      "description": "Add a text or image stamp to your PDF pages."
+    },
+    "add-attachments": {
+      "name": "PDF Attachments",
+      "description": "Embed files as attachments in your PDF document."
+    },
+    "extract-images": {
+      "name": "Extract images",
+      "description": "Extract all embedded images from your PDF."
+    },
+    "remove-images": {
+      "name": "Remove images",
+      "description": "Delete all images from your PDF to reduce size."
+    },
+    "multi-page-layout": {
+      "name": "N-up",
+      "description": "Arrange 2, 4, 6 or 9 PDF pages on a single sheet."
+    },
+    "overlay-pdf": {
+      "name": "Overlay PDF",
+      "description": "Overlay one PDF on another (background, header, signature)."
+    },
+    "sanitize-pdf": {
+      "name": "Sanitize PDF",
+      "description": "Remove JavaScript, links and sensitive metadata from your PDF."
+    },
+    "remove-blanks": {
+      "name": "Remove blank pages",
+      "description": "Automatically detect and remove blank pages from your PDF."
+    }
+  },
+  "Home": {
+    "why_choose": "Why choose iLoveDoc?",
+    "security_title": "Maximum Security",
+    "security_desc": "Your files never leave your device. All processing is done locally in your browser.",
+    "speed_title": "Lightning Fast",
+    "speed_desc": "With no server uploads, processing is instantaneous and doesn't depend on your internet connection.",
+    "no_signup_title": "No Signup Required",
+    "no_signup_desc": "Start immediately. No need to create an account or provide your email to use the tools."
   }
 }

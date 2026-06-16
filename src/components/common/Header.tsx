@@ -1,11 +1,14 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { useState, useEffect, useRef } from 'react';
 import { Heart, Sun, Moon, Menu, X, ChevronDown } from 'lucide-react';
 import { tools, toolCategories, getToolsByCategory } from '@/config/tools';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+  const tHeader = useTranslations('Header');
+  const tTools = useTranslations('Tools');
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [convertirOpen, setConvertirOpen] = useState(false);
@@ -157,13 +160,13 @@ export default function Header() {
             className="header-desktop-nav"
           >
             <Link href="/merge-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
-              FUSIONNER PDF
+              {tHeader('merge')}
             </Link>
             <Link href="/split-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
-              DIVISER PDF
+              {tHeader('split')}
             </Link>
             <Link href="/compress-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
-              COMPRESSER PDF
+              {tHeader('compress')}
             </Link>
 
             {/* ---- Convertir Dropdown ---- */}
@@ -191,7 +194,7 @@ export default function Header() {
                   fontFamily: 'inherit',
                 }}
               >
-                CONVERTIR PDF
+                {tHeader('convert')}
                 <ChevronDown size={14} style={{ transition: 'transform .2s', transform: convertirOpen ? 'rotate(180deg)' : 'none' }} />
               </button>
 
@@ -236,7 +239,7 @@ export default function Header() {
                     className="dropdown-item"
                   >
                     <item.icon size={18} color={item.color[0]} />
-                    {item.name}
+                    {tTools(`${item.slug}.name`)}
                   </Link>
                 ))}
               </div>
@@ -267,7 +270,7 @@ export default function Header() {
                   fontFamily: 'inherit',
                 }}
               >
-                TOUS LES OUTILS
+                {tHeader('all_tools')}
                 <ChevronDown size={14} style={{ transition: 'transform .2s', transform: megaMenuOpen ? 'rotate(180deg)' : 'none' }} />
               </button>
 
@@ -339,7 +342,7 @@ export default function Header() {
                             onClick={() => setMegaMenuOpen(false)}
                           >
                             <t.icon size={16} color={t.color[0]} />
-                            {t.name}
+                            {tTools(`${t.slug}.name`)}
                           </Link>
                         ))}
                       </div>
@@ -458,9 +461,9 @@ export default function Header() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <Link href="/merge-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>FUSIONNER PDF</Link>
-          <Link href="/split-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>DIVISER PDF</Link>
-          <Link href="/compress-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>COMPRESSER PDF</Link>
+          <Link href="/merge-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('merge')}</Link>
+          <Link href="/split-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('split')}</Link>
+          <Link href="/compress-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('compress')}</Link>
 
           {Object.entries(toolCategories).map(([key, cat]) => {
             const catTools = getToolsByCategory(key as any);
@@ -486,7 +489,7 @@ export default function Header() {
                       padding: '9px 16px',
                     }}
                   >
-                    <t.icon size={15} color={t.color[0]} /> {t.name}
+                    <t.icon size={15} color={t.color[0]} /> {tTools(`${t.slug}.name`)}
                   </Link>
                 ))}
               </div>

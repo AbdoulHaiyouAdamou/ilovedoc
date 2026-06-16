@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Bütün PDF alətləri bir yerdə",
+    "subtitle": "PDF-lərlə işləmək üçün lazım olan bütün alətlər əliniz altında. Onlar 100% PULSUZ, təhlükəsiz və asandır.",
+    "badge_tools": "46 Alət",
+    "badge_privacy": "Məxfilikə Zəmanət",
+    "badge_local": "Yerli Emal"
+  },
+  "Common": {
+    "select_file": "PDF faylını seçin",
+    "or_drop": "və ya PDF-i buraya atın"
+  },
+  "Header": {
+    "merge": "PDF-ləri Birləşdir",
+    "split": "PDF-i Ayrı",
+    "compress": "PDF-i Siqal",
+    "convert": "PDF-i Çevir",
+    "all_tools": "Bütün Alətlər"
+  },
+  "Footer": {
+    "popular": "Məşhur Alətlər",
+    "convert": "PDF-i Çevir",
+    "about": "Haqqımızda",
+    "legal": "Qanuni",
+    "about_us": "Biz Kimik",
+    "contact": "Əlaqə",
+    "blog": "Bloq",
+    "faq": "Tez-tez Verilən Suallar",
+    "terms": "İstifadə Qaydalari",
+    "privacy": "Məxfilik Siyasəti",
+    "cookies": "Kuki Siyasəti",
+    "rights": "Bütün Hüquqlar Qorunur"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "PDF-ləri Birləşdir",
+      "description": "Birdən çox PDF fayllarını bir sənəddə birləşdirin."
+    },
+    "split-pdf": {
+      "name": "PDF-i Ayrı",
+      "description": "PDF-i ayrı-ayrı fayllara və ya səhifələrə ayırın."
+    },
+    "remove-pages": {
+      "name": "Səhifələri Sil",
+      "description": "PDF-dən istəmirəm səhifələri silin."
+    },
+    "extract-pages": {
+      "name": "Səhifələri Çıxar",
+      "description": "Xüsusi səhifələri çıxararaq yeni PDF yaratın."
+    },
+    "organize-pdf": {
+      "name": "PDF-i Qur",
+      "description": "PDF səhifələrini sıralayın və yenidən təşkil edin."
+    },
+    "compress-pdf": {
+      "name": "PDF-i Siqal",
+      "description": "PDF faylının ölçüsünü keyfiyyət itirmədən azaldın."
+    },
+    "repair-pdf": {
+      "name": "PDF-i Təmir Et",
+      "description": "Zədələnmiş və ya korlanmiş PDF fayllarını təmir edin."
+    },
+    "flatten-pdf": {
+      "name": "PDF-i Hamar",
+      "description": "PDF forması və şərhələrini hamarlayın."
+    },
+    "pdf-to-word": {
+      "name": "PDF-dən Word",
+      "description": "PDF-lərinizi redaktə oluna bilən Word sənədlərinə çevirin."
+    },
+    "pdf-to-excel": {
+      "name": "PDF-dən Excel",
+      "description": "PDF cədvəllərini Excel cədvəllərinə çevirin."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF-dən PowerPoint",
+      "description": "PDF-lərinizi PowerPoint təqdimatlarına çevirin."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF-dən JPG",
+      "description": "PDF səhifələrini hər birini JPG şəklinə çevirin."
+    },
+    "pdf-to-png": {
+      "name": "PDF-dən PNG",
+      "description": "PDF səhifələrini yüksək keyfiyyətli PNG şəkillərinə çevirin."
+    },
+    "pdf-to-html": {
+      "name": "PDF-dən HTML",
+      "description": "PDF-lərinizi HTML səhifəsinə çevirin."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF-dən PDF/A",
+      "description": "PDF-lərinizi uzunmüddətli saxlamaq üçün PDF/A formatına çevirin."
+    },
+    "word-to-pdf": {
+      "name": "Word-dən PDF",
+      "description": "Word sənədlərinizi PDF-lərə çevirin."
+    },
+    "excel-to-pdf": {
+      "name": "Excel-dən PDF",
+      "description": "Excel cədvəllərini PDF-lərə çevirin."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint-dən PDF",
+      "description": "PowerPoint təqdimatlarını PDF-lərə çevirin."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG-dən PDF",
+      "description": "JPG şəkillərinizi bir PDF sənədində birləşdirin."
+    },
+    "png-to-pdf": {
+      "name": "PNG-dən PDF",
+      "description": "PNG şəkillərinizi PDF faylına çevirin."
+    },
+    "html-to-pdf": {
+      "name": "HTML-dən PDF",
+      "description": "HTML səhifəsini PDF sənədə çevirin."
+    },
+    "edit-pdf": {
+      "name": "PDF-i Redaktə Et",
+      "description": "PDF-nizə mətn, şəkillər və fiqurlar əlavə edin."
+    },
+    "rotate-pdf": {
+      "name": "PDF-i Fırlat",
+      "description": "PDF səhifələrini fırlatın."
+    },
+    "add-page-numbers": {
+      "name": "Səhifə Nömrələri Əlavə Et",
+      "description": "PDF sənədinə səhifə nömrələri əlavə edin."
+    },
+    "add-watermark": {
+      "name": "Filigran Əlavə Et",
+      "description": "PDF-nizə mətn və ya şəkil filigran əlavə edin."
+    },
+    "sign-pdf": {
+      "name": "PDF-i İmzalayın",
+      "description": "Elektron imza ilə PDF sənədlərinizi imzalayın."
+    },
+    "fill-pdf-form": {
+      "name": "Formu Doldurmaq",
+      "description": "Onlayn PDF formalarını doldurun."
+    },
+    "redact-pdf": {
+      "name": "PDF-i Qara Ləkələmək",
+      "description": "PDF-də həssas məlumatları qara ləkələyin."
+    },
+    "crop-pdf": {
+      "name": "PDF-i Kəsmək",
+      "description": "PDF səhifələrinin kənarlarını kəsin və ölçüsünü dəyişdirin."
+    },
+    "protect-pdf": {
+      "name": "PDF-i Qorumaq",
+      "description": "PDF-nizi parol ilə qoruyun."
+    },
+    "unlock-pdf": {
+      "name": "PDF-i Açmaq",
+      "description": "Qorunmuş PDF sənədinin parolunu silin."
+    },
+    "pdf-ocr": {
+      "name": "PDF OCR",
+      "description": "Skann edilmiş PDF-lərinizi oxunabilən hala gətirin."
+    },
+    "compare-pdf": {
+      "name": "PDF-ləri Müqayisə Et",
+      "description": "İki PDF faylını müqayisə edin və fərqləri tapın."
+    },
+    "ai-pdf-summary": {
+      "name": "İA İcmalı",
+      "description": "Süni intellekt sayəsində PDF sənədinizi icmal edin."
+    },
+    "ai-pdf-chat": {
+      "name": "PDF ilə Söhbət",
+      "description": "Süni intellekt sayəsində PDF-nizlə söhbət edin."
+    },
+    "ai-pdf-translate": {
+      "name": "PDF-i Tərcümə Et",
+      "description": "Süni intellekt sayəsində PDF sənədlərinizi digər dillərə tərcümə edin."
+    },
+    "edit-metadata": {
+      "name": "Meta Məlumatları Redaktə Et",
+      "description": "PDF-nin başlıq, müəllif və digər meta məlumatlarını redaktə edin."
+    },
+    "pdf-info": {
+      "name": "PDF Haqqında",
+      "description": "PDF faylınızın bütün texniki məlumatlarını göstərin."
+    },
+    "add-stamp": {
+      "name": "Möhur Əlavə Et",
+      "description": "PDF səhifələrinə mətn və ya şəkil möhür əlavə edin."
+    },
+    "add-attachments": {
+      "name": "Əlavələr",
+      "description": "PDF sənədinə faylları əlavə edin."
+    },
+    "extract-images": {
+      "name": "Şəkilləri Çıxar",
+      "description": "PDF-dən bütün daxil edilmiş şəkilləri çıxarın."
+    },
+    "remove-images": {
+      "name": "Şəkilləri Sil",
+      "description": "PDF-dən bütün şəkilləri silin ki, ölçüsünü azaldın."
+    },
+    "multi-page-layout": {
+      "name": "Çoxsəhifəli Quruluş",
+      "description": "2, 4, 6 və ya 9 PDF səhifəsini bir yarpaqda yerləşdirin."
+    },
+    "overlay-pdf": {
+      "name": "PDF-ləri Üst-Üstə",
+      "description": "Bir PDF-i digərinin üstünə yerləşdirin (fond, başlıq, imza)."
+    },
+    "sanitize-pdf": {
+      "name": "PDF-i Təmizlə",
+      "description": "PDF-dən JavaScript, linklər və həssas meta məlumatları silin."
+    },
+    "remove-blanks": {
+      "name": "Boş Səhifələri Sil",
+      "description": "PDF-dən avtomatik boş səhifələri tapıb silin."
+    }
+  },
+  "Home": {
+    "why_choose": "Niyə iLoveDoc-u seçməliyəm?",
+    "security_title": "Maksimum Təhlükəsizlik",
+    "security_desc": "Fayllarınız heç vaxt cihazınızdan kənara çıxmır. Emal lokal olaraq brauzerinizdə həyata keçirilir.",
+    "speed_title": "Çox Sürətli",
+    "speed_desc": "Serverə yükləmə olmadan emal prosesləri dərhal həyata keçir və internet bağlantınızdan asılı deyil.",
+    "no_signup_title": "Qeydiyyat Tələb Olunmur",
+    "no_signup_desc": "Dərhal başlayın. Alətlərdən istifadə etmək üçün hesab yaradmağa və ya email ünvanınızı verməyə ehtiyac yoxdur."
+  }
+}

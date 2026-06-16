@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './faq.module.css';
@@ -35,6 +36,8 @@ const FAQ_ITEMS = [
 ];
 
 export default function FAQPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   const [openIndex, setOpenIndex] = useState<number | null>(0); // First item opened by default to match screenshot
 
   const toggleAccordion = (index: number) => {
@@ -48,11 +51,11 @@ export default function FAQPage() {
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Notre équipe d&apos;assistance répond à ces questions quasiment tous les jours
-          </h1>
+              {tTools('faq.name')}
+            </h1>
           <p className={styles.heroSubtitle}>
-            Nous avons pensé que cela vous serait également utile
-          </p>
+              {tTools('faq.description')}
+            </p>
         </section>
 
         {/* Top ad placement */}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { blogPosts } from '@/config/blog';
@@ -34,6 +35,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   const featuredPost = blogPosts[0];
   const gridPosts = blogPosts.slice(1);
 
@@ -43,10 +46,12 @@ export default function BlogPage() {
       <main className={styles.main}>
         {/* Hero Banner */}
         <section className={styles.hero}>
-          <h1 className={styles.heroTitle}>Blog</h1>
+          <h1 className={styles.heroTitle}>
+              {tTools('blog.name')}
+            </h1>
           <p className={styles.heroSubtitle}>
-            Découvrez nos guides, astuces et conseils sur la gestion de vos documents PDF.
-          </p>
+              {tTools('blog.description')}
+            </p>
         </section>
 
         <div className={styles.container}>

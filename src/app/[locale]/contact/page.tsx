@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './contact.module.css';
@@ -47,6 +48,8 @@ const FAQ_ITEMS = [
 ];
 
 export default function ContactPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -133,11 +136,12 @@ export default function ContactPage() {
       <main className={styles.main}>
         {/* Hero */}
         <section className={styles.hero}>
-          <h1 className={styles.heroTitle}>Contactez-nous</h1>
+          <h1 className={styles.heroTitle}>
+              {tTools('contact.name')}
+            </h1>
           <p className={styles.heroSubtitle}>
-            Une question, une suggestion ou un problème ? Nous sommes là pour
-            vous aider.
-          </p>
+              {tTools('contact.description')}
+            </p>
         </section>
 
         {/* Top ad placement */}

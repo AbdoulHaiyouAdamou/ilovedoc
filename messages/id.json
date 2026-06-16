@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Semua Alat PDF Anda dalam Satu Tempat",
+    "subtitle": "Semua alat yang Anda butuhkan untuk menggunakan PDF, ada di sini. Mereka semua 100% GRATIS, aman, dan mudah digunakan.",
+    "badge_tools": "46 Alat",
+    "badge_privacy": "Privasi Terjamin",
+    "badge_local": "Pengolahan Lokal"
+  },
+  "Common": {
+    "select_file": "Pilih File PDF",
+    "or_drop": "atau letakkan PDF di sini"
+  },
+  "Header": {
+    "merge": "GABUNGKAN PDF",
+    "split": "PECAH PDF",
+    "compress": "KOMPRES PDF",
+    "convert": "KONVERSI PDF",
+    "all_tools": "SEMUA ALAT"
+  },
+  "Footer": {
+    "popular": "Alat Populer",
+    "convert": "Konversi PDF",
+    "about": "Tentang",
+    "legal": "Hukum",
+    "about_us": "Tentang Kami",
+    "contact": "Hubungi Kami",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "terms": "Ketentuan Penggunaan",
+    "privacy": "Kebijakan Privasi",
+    "cookies": "Kebijakan Cookie",
+    "rights": "Hak Cipta Dilindungi"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Gabungkan PDF",
+      "description": "Gabungkan beberapa file PDF menjadi satu dokumen."
+    },
+    "split-pdf": {
+      "name": "Pecah PDF",
+      "description": "Pisahkan PDF menjadi beberapa file atau ekstrak halaman."
+    },
+    "remove-pages": {
+      "name": "Hapus Halaman",
+      "description": "Hapus halaman yang tidak diinginkan dari PDF Anda."
+    },
+    "extract-pages": {
+      "name": "Ekstrak Halaman",
+      "description": "Ekstrak halaman tertentu untuk membuat PDF baru."
+    },
+    "organize-pdf": {
+      "name": "Atur PDF",
+      "description": "Atur dan reorganisir halaman PDF Anda."
+    },
+    "compress-pdf": {
+      "name": "Kompres PDF",
+      "description": "Kurangi ukuran file PDF Anda tanpa kehilangan kualitas."
+    },
+    "repair-pdf": {
+      "name": "Perbaiki PDF",
+      "description": "Perbaiki file PDF yang rusak atau korup."
+    },
+    "flatten-pdf": {
+      "name": "Ratakan PDF",
+      "description": "Ratakan formulir dan anotasi PDF Anda."
+    },
+    "pdf-to-word": {
+      "name": "PDF ke Word",
+      "description": "Konversi PDF Anda ke dokumen Word yang dapat diedit."
+    },
+    "pdf-to-excel": {
+      "name": "PDF ke Excel",
+      "description": "Konversi tabel PDF Anda ke lembar kerja Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF ke PowerPoint",
+      "description": "Ubah PDF Anda ke presentasi PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF ke JPG",
+      "description": "Konversi setiap halaman PDF Anda ke gambar JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF ke PNG",
+      "description": "Ekspor halaman PDF Anda ke gambar PNG berkualitas tinggi."
+    },
+    "pdf-to-html": {
+      "name": "PDF ke HTML",
+      "description": "Konversi PDF Anda ke halaman web HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF ke PDF/A",
+      "description": "Konversi PDF Anda ke format PDF/A untuk arsip jangka panjang."
+    },
+    "word-to-pdf": {
+      "name": "Word ke PDF",
+      "description": "Konversi dokumen Word Anda ke PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel ke PDF",
+      "description": "Ubah lembar kerja Excel Anda ke PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint ke PDF",
+      "description": "Konversi presentasi PowerPoint Anda ke PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG ke PDF",
+      "description": "Gabungkan gambar JPG Anda ke dokumen PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG ke PDF",
+      "description": "Konversi gambar PNG Anda ke file PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML ke PDF",
+      "description": "Konversi halaman web HTML ke dokumen PDF."
+    },
+    "edit-pdf": {
+      "name": "Edit PDF",
+      "description": "Tambahkan teks, gambar, dan bentuk ke PDF Anda."
+    },
+    "rotate-pdf": {
+      "name": "Putar PDF",
+      "description": "Putar halaman PDF Anda."
+    },
+    "add-page-numbers": {
+      "name": "Tambahkan Nomor Halaman",
+      "description": "Tambahkan nomor halaman ke dokumen PDF Anda."
+    },
+    "add-watermark": {
+      "name": "Tambahkan Tanda Air",
+      "description": "Tambahkan tanda air teks atau gambar ke PDF Anda."
+    },
+    "sign-pdf": {
+      "name": "Tandatangani PDF",
+      "description": "Tandatangani dokumen PDF Anda secara elektronik."
+    },
+    "fill-pdf-form": {
+      "name": "Isi Formulir",
+      "description": "Isi formulir PDF online."
+    },
+    "redact-pdf": {
+      "name": "Sunting PDF",
+      "description": "Sembunyikan informasi sensitif dalam PDF Anda."
+    },
+    "crop-pdf": {
+      "name": "Pangkas PDF",
+      "description": "Pangkas margin dan potong halaman PDF Anda."
+    },
+    "protect-pdf": {
+      "name": "Lindungi PDF",
+      "description": "Tambahkan kata sandi untuk melindungi PDF Anda."
+    },
+    "unlock-pdf": {
+      "name": "Buka Kunci PDF",
+      "description": "Hapus kata sandi dari dokumen PDF yang dilindungi."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Buat PDF yang dipindai dapat dibaca."
+    },
+    "compare-pdf": {
+      "name": "Bandinhkan PDF",
+      "description": "Bandinhkan dua file PDF dan identifikasi perbedaan."
+    },
+    "ai-pdf-summary": {
+      "name": "Ringkasan AI",
+      "description": "Dapatkan ringkasan cerdas dari dokumen PDF Anda."
+    },
+    "ai-pdf-chat": {
+      "name": "Obrolan dengan PDF",
+      "description": "Tanyakan pertanyaan kepada PDF Anda menggunakan kecerdasan buatan."
+    },
+    "ai-pdf-translate": {
+      "name": "Terjemahkan PDF",
+      "description": "Terjemahkan dokumen PDF Anda ke bahasa lain menggunakan kecerdasan buatan."
+    },
+    "edit-metadata": {
+      "name": "Edit Metadata",
+      "description": "Ubah judul, penulis, dan metadata lainnya dari PDF Anda."
+    },
+    "pdf-info": {
+      "name": "Info PDF",
+      "description": "Tampilkan semua informasi teknis dari file PDF Anda."
+    },
+    "add-stamp": {
+      "name": "Tambahkan Stempel",
+      "description": "Tambahkan stempel teks atau gambar ke halaman PDF Anda."
+    },
+    "add-attachments": {
+      "name": "Lampiran PDF",
+      "description": "Integrasikan file ke lampiran dalam dokumen PDF Anda."
+    },
+    "extract-images": {
+      "name": "Ekstrak Gambar",
+      "description": "Ekstrak semua gambar yang disematkan dalam dokumen PDF Anda."
+    },
+    "remove-images": {
+      "name": "Hapus Gambar",
+      "description": "Hapus semua gambar dari PDF Anda untuk mengurangi ukurannya."
+    },
+    "multi-page-layout": {
+      "name": "Tata Letak Multi-Halaman",
+      "description": "Atur 2, 4, 6, atau 9 halaman PDF dalam satu lembar."
+    },
+    "overlay-pdf": {
+      "name": "Tumpuk PDF",
+      "description": "Tumpuk PDF satu ke yang lain (latar belakang, header, tanda tangan)."
+    },
+    "sanitize-pdf": {
+      "name": "Bersihkan PDF",
+      "description": "Hapus JavaScript, tautan, dan metadata sensitif dari PDF Anda."
+    },
+    "remove-blanks": {
+      "name": "Hapus Halaman Kosong",
+      "description": "Deteksi dan hapus halaman kosong dari PDF Anda secara otomatis."
+    }
+  },
+  "Home": {
+    "why_choose": "Mengapa Memilih iLoveDoc?",
+    "security_title": "Keamanan Maksimal",
+    "security_desc": "File Anda tidak pernah meninggalkan perangkat Anda. Pengolahan dilakukan secara lokal di browser Anda.",
+    "speed_title": "Ultra Cepat",
+    "speed_desc": "Tanpa upload ke server, pengolahan instan dan tidak bergantung pada koneksi internet Anda.",
+    "no_signup_title": "Tanpa Pendaftaran",
+    "no_signup_desc": "Mulai sekarang. Tidak perlu membuat akun atau memberikan alamat email untuk menggunakan alat."
+  }
+}

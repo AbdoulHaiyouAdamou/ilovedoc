@@ -1,0 +1,212 @@
+{
+  "Hero": {
+    "title": "Všechny vaše nástroje PDF v jednom místě",
+    "subtitle": "Všechny nástroje, které potřebujete pro práci s PDF, jsou k dispozici v jednom místě. Jsou všechny 100% zdarma, bezpečné a jednoduché na použití.",
+    "badge_tools": "46 Nástrojů",
+    "badge_privacy": "Zajištění soukromí",
+    "badge_local": "Lokální zpracování"
+  },
+  "Common": {
+    "select_file": "Vyberte soubor PDF",
+    "or_drop": "nebo položte PDF zde"
+  },
+  "Header": {
+    "merge": "SLUČIT PDF",
+    "split": "ROZDELNUT PDF",
+    "compress": "SMAŽTE PDF",
+    "convert": "PREKONVERT PDF",
+    "all_tools": "VŠECHNY NÁSTROJE"
+  },
+  "Footer": {
+    "popular": "Návrhy",
+    "convert": "Prekonzvert PDF",
+    "about": "O nás",
+    "legal": "Právní informace",
+    "about_us": "Kdo jsme",
+    "contact": "Kontaktujte nás",
+    "blog": "Blog",
+    "faq": "Frequently Asked Questions",
+    "terms": "Podmínky používání",
+    "privacy": "Zásady ochrany osobních údajů",
+    "cookies": "Zásady používání souborů cookie",
+    "rights": "Všechna práva vyhrazena"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Sloučit PDF",
+      "description": "Sloučte několik souborů PDF do jednoho dokumentu."
+    },
+    "split-pdf": {
+      "name": "Rozdělit PDF",
+      "description": "Rozdělte PDF na několik souborů nebo vyberte stránky."
+    },
+    "remove-pages": {
+      "name": "Odstranit stránky",
+      "description": "Odstraňte nepotřebné stránky z PDF."
+    },
+    "extract-pages": {
+      "name": "Vyjmout stránky",
+      "description": "Vyjměte specifické stránky pro vytvoření nového PDF."
+    },
+    "organize-pdf": {
+      "name": "Organizovat PDF",
+      "description": "Seřaďte a zorganizujte stránky PDF."
+    },
+    "compress-pdf": {
+      "name": "Smažit PDF",
+      "description": "Zmenšte velikost PDF bez ztráty kvality."
+    },
+    "repair-pdf": {
+      "name": "Napravit PDF",
+      "description": "Napravte poškozený nebo zkorumpovaný soubor PDF."
+    },
+    "flatten-pdf": {
+      "name": "Plochý PDF",
+      "description": "Plochý formuláře a poznámky v PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF na Word",
+      "description": "Překonvertujte PDF na editovatelný dokument Word."
+    },
+    "pdf-to-excel": {
+      "name": "PDF na Excel",
+      "description": "Překonvertujte tabulky PDF na listy Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF na PowerPoint",
+      "description": "Překonvertujte PDF na prezentaci PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF na JPG",
+      "description": "Překonvertujte každou stránku PDF na obrázek JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF na PNG",
+      "description": "Exportujte stránky PDF jako obrázky PNG vysoké kvality."
+    },
+    "pdf-to-html": {
+      "name": "PDF na HTML",
+      "description": "Překonvertujte PDF na webovou stránku HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF na PDF/A",
+      "description": "Překonvertujte PDF na formát PDF/A pro dlouhodobé archivování."
+    },
+    "word-to-pdf": {
+      "name": "Word na PDF",
+      "description": "Překonvertujte dokument Word na PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel na PDF",
+      "description": "Překonvertujte listy Excel na PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint na PDF",
+      "description": "Překonvertujte prezentaci PowerPoint na PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG na PDF",
+      "description": "Sloučte obrázky JPG do jednoho dokumentu PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG na PDF",
+      "description": "Překonvertujte obrázky PNG do jednoho dokumentu PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML na PDF",
+      "description": "Překonvertujte webovou stránku HTML na dokument PDF."
+    },
+    "edit-pdf": {
+      "name": "Editovat PDF",
+      "description": "Přidejte text, obrázky a formy do PDF."
+    },
+    "rotate-pdf": {
+      "name": "Převrácení PDF",
+      "description": "Převrácení stránek PDF."
+    },
+    "add-page-numbers": {
+      "name": "Přidat číslo stránky",
+      "description": "Přidejte číslo stránky do dokumentu PDF."
+    },
+    "add-watermark": {
+      "name": "Přidat vodítko",
+      "description": "Přidejte vodítko textové nebo obrázkové do PDF."
+    },
+    "sign-pdf": {
+      "name": "Podpis PDF",
+      "description": "Podpisujte dokumenty PDF elektronicky."
+    },
+    "fill-pdf-form": {
+      "name": "Vyplnit formulář PDF",
+      "description": "Vyplňte formuláře PDF online."
+    },
+    "redact-pdf": {
+      "name": "Caviardovat PDF",
+      "description": "Zachráníte citlivé informace v PDF."
+    },
+    "crop-pdf": {
+      "name": "Rogner PDF",
+      "description": "Recadrování a rognutí stránek PDF."
+    },
+    "protect-pdf": {
+      "name": "Ochrana PDF",
+      "description": "Přidejte heslo pro ochranu PDF."
+    },
+    "unlock-pdf": {
+      "name": "Odebrat ochranu PDF",
+      "description": "Odstraněte heslo z chráněného PDF."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Zachráníte PDF sken."
+    },
+    "compare-pdf": {
+      "name": "Porovnat PDF",
+      "description": "Porovnejte dva soubory PDF a identifikujte rozdíly."
+    },
+    "ai-pdf-summary": {
+      "name": "Podrobný přehled",
+      "description": "Získejte inteligentní přehled dokumentu PDF."
+    },
+    "ai-pdf-chat": {
+      "name": "Rozhovor s PDF",
+      "description": "Zadejte otázky k PDF pomocí umělé inteligence."
+    },
+    "ai-pdf-translate": {
+      "name": "Překlad PDF",
+      "description": "Překlad dokumentu PDF do jiné jazyka pomocí umělé inteligence."
+    },
+    "edit-metadata": {
+      "name": "Upravit metadata",
+      "description": "Upravte název, autora a další metadata PDF."
+    },
+    "pdf-info": {
+      "name": "Informace o PDF",
+      "description": "Zobrazte technické informace o souboru PDF."
+    },
+    "add-stamp": {
+      "name": "Přidat razítko",
+      "description": "Přidejte textové nebo obrázkové razítko do PDF."
+    },
+    "add-attachments": {
+      "name": "Přidat přílohy",
+      "description": "Přidejte soubory přílohy do dokumentu PDF."
+    },
+    "extract-images": {
+      "name": "Vyjmout obrázky",
+      "description": "Vyjměte všechny obrázky z dokumentu PDF."
+    },
+    "remove-images": {
+      "name": "Odstranit obrázky",
+      "description": "Odstraňte všechny obrázky z PDF pro zmenšení velikosti."
+    },
+    "multi-page-layout": {
+      "name": "Mnohostránkové uspořádání",
+      "description": "Uspořádejte 2, 4, 6 nebo 9 stránek PDF na jednu listinu."
+    },
+    "overlay-pdf": {
+      "name": "Nakladat PDF",
+      "description": "Nakladat jeden PDF na druhý (fond stránky, hlavička, podpis)."
+    }
+  }
+}

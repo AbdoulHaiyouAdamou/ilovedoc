@@ -1,0 +1,208 @@
+{
+  "Hero": {
+    "title": "Alle dine PDF-verktøjer i et enkelt sted",
+    "subtitle": "Alle de verktøjer du har brug for til at bruge PDF, på hånden. De er alle 100% GRATIS, sikre og enkle at bruge.",
+    "badge_tools": "46 Verktøjer",
+    "badge_privacy": "Garantifor Privatsfæren",
+    "badge_local": "Lokal Behandling"
+  },
+  "Common": {
+    "select_file": "Vælg PDF-fil",
+    "or_drop": "eller drop PDF her"
+  },
+  "Header": {
+    "merge": "FUSE PDF",
+    "split": "DEL PDF",
+    "compress": "KOMPRESSER PDF",
+    "convert": "OMDANNE PDF",
+    "all_tools": "ALLE VERKTØJER"
+  },
+  "Footer": {
+    "popular": "Populære Verktøjer",
+    "convert": "Omdanne PDF",
+    "about": "Om",
+    "legal": "Juridisk",
+    "about_us": "Om os",
+    "contact": "Kontakt os",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "terms": "Betingelser for brug",
+    "privacy": "Privatsfærnsespolitik",
+    "cookies": "Cookiepolitik",
+    "rights": "Alle rettigheder forbeholdes"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Fuse PDF",
+      "description": "Sammenlæg flere PDF-filer til et enkelt dokument."
+    },
+    "split-pdf": {
+      "name": "Del PDF",
+      "description": "Del en PDF-fil i flere filer eller udtræk specifikke sider."
+    },
+    "remove-pages": {
+      "name": "Fjern sider",
+      "description": "Fjern sider, du ikke ønsker i din PDF-fil."
+    },
+    "extract-pages": {
+      "name": "Udtræk sider",
+      "description": "Udtræk specifikke sider til at oprette et nyt PDF-dokument."
+    },
+    "organize-pdf": {
+      "name": "Organiser PDF",
+      "description": "Sortér og organisér siderne i din PDF-fil."
+    },
+    "compress-pdf": {
+      "name": "Kompresse PDF",
+      "description": "Reducer størrelsen på dine PDF-filer uden at tabe kvalitet."
+    },
+    "repair-pdf": {
+      "name": "Reparér PDF",
+      "description": "Reparér en skadet eller korrupt PDF-fil."
+    },
+    "flatten-pdf": {
+      "name": "Aflå PDF",
+      "description": "Aflå formulær og annotations i din PDF-fil."
+    },
+    "pdf-to-word": {
+      "name": "PDF til Word",
+      "description": "Omdanne dine PDF-filer til redigerbare Word-dokumenter."
+    },
+    "pdf-to-excel": {
+      "name": "PDF til Excel",
+      "description": "Omdanne dine tabel PDF-filer til Excel-ark."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF til PowerPoint",
+      "description": "Omdanne dine PDF-filer til PowerPoint-præsentationer."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF til JPG",
+      "description": "Omdanne hver side i din PDF-fil til en JPG-billede."
+    },
+    "pdf-to-png": {
+      "name": "PDF til PNG",
+      "description": "Eksportér dine PDF-sider til højkvalitets PNG-billeder."
+    },
+    "pdf-to-html": {
+      "name": "PDF til HTML",
+      "description": "Omdanne din PDF-fil til en web-side HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF til PDF/A",
+      "description": "Omdanne din PDF-fil til PDF/A-format for langtidsarkivering."
+    },
+    "word-to-pdf": {
+      "name": "Word til PDF",
+      "description": "Omdanne dine Word-dokumenter til PDF-filer."
+    },
+    "excel-to-pdf": {
+      "name": "Excel til PDF",
+      "description": "Omdanne dine Excel-ark til PDF-filer."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint til PDF",
+      "description": "Omdanne dine PowerPoint-præsentationer til PDF-filer."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG til PDF",
+      "description": "Sammenlæg dine JPG-billeder til et enkelt PDF-dokument."
+    },
+    "png-to-pdf": {
+      "name": "PNG til PDF",
+      "description": "Omdanne dine PNG-billeder til PDF-filer."
+    },
+    "html-to-pdf": {
+      "name": "HTML til PDF",
+      "description": "Omdanne en web-side HTML til et PDF-dokument."
+    },
+    "edit-pdf": {
+      "name": "Rediger PDF",
+      "description": "Tilføj tekst, billeder og former til din PDF-fil."
+    },
+    "rotate-pdf": {
+      "name": "Rotér PDF",
+      "description": "Rotér siderne i din PDF-fil."
+    },
+    "add-page-numbers": {
+      "name": "Tilføj siderummer",
+      "description": "Tilføj siderummer til dit PDF-dokument."
+    },
+    "add-watermark": {
+      "name": "Tilføj filigran",
+      "description": "Tilføj tekst eller billeder filigran til din PDF-fil."
+    },
+    "sign-pdf": {
+      "name": "Underskriv PDF",
+      "description": "Underskriv dine PDF-dokumenter elektronisk."
+    },
+    "fill-pdf-form": {
+      "name": "Udfyld formulær",
+      "description": "Udfyld dine PDF-formulær online."
+    },
+    "redact-pdf": {
+      "name": "Caviardér PDF",
+      "description": "Maskér sensible oplysninger i din PDF-fil."
+    },
+    "crop-pdf": {
+      "name": "Rogne PDF",
+      "description": "Recadér siderne og rogne din PDF-fil."
+    },
+    "protect-pdf": {
+      "name": "Beskytt PDF",
+      "description": "Tilføj et adgangskode for at beskytte din PDF-fil."
+    },
+    "unlock-pdf": {
+      "name": "Afslut PDF",
+      "description": "Fjern adgangskoden fra en beskyttet PDF-fil."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Gør din skannet PDF-fil læsbart."
+    },
+    "compare-pdf": {
+      "name": "Sammenlign PDF",
+      "description": "Sammenlign to PDF-filer og identificer forskellene."
+    },
+    "ai-pdf-summary": {
+      "name": "Intelligent Resume",
+      "description": "Få et intelligent resume af din PDF-fil."
+    },
+    "ai-pdf-chat": {
+      "name": "Chat med PDF",
+      "description": "Spørg dine PDF-filer med hjælp af intelligens."
+    },
+    "ai-pdf-translate": {
+      "name": "Omdanne PDF",
+      "description": "Omdanne din PDF-fil til en anden sprog med hjælp af intelligens."
+    },
+    "edit-metadata": {
+      "name": "Rediger metadata",
+      "description": "Rediger titel, forfatter og andre metadata i din PDF-fil."
+    },
+    "pdf-info": {
+      "name": "PDF-info",
+      "description": "Vis alle tekniske oplysninger om din PDF-fil."
+    },
+    "add-stamp": {
+      "name": "Tilføj stempel",
+      "description": "Tilføj tekst eller billeder stempel til din PDF-fil."
+    },
+    "add-attachments": {
+      "name": "Tilføj vedhæng",
+      "description": "Tilføj filer som vedhæng til din PDF-fil."
+    },
+    "extract-images": {
+      "name": "Udtræk billeder",
+      "description": "Udtræk billeder fra din PDF-fil."
+    },
+    "remove-images": {
+      "name": "Fjern billeder",
+      "description": "Fjern billeder fra din PDF-fil for at reducere størrelsen."
+    },
+    "multi-page-layout": {
+      "name": "Mange sider layout",
+      "description": "Arranger 2, 4, 6 eller 9 sider i en enkelt side."
+    }
+  }
+}

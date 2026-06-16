@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Zana zote za PDF katika sehemu moja",
+    "subtitle": "Zana zote unazohitaji kwa ajili ya kutumia PDF, ziko karibu nawe. Zote ni 100% BURE, salama na rahisi kutumia.",
+    "badge_tools": "46 Zana",
+    "badge_privacy": "Faragha Inahakikishwa",
+    "badge_local": "Utunzaji wa Ndani"
+  },
+  "Common": {
+    "select_file": "Chagua faili ya PDF",
+    "or_drop": "au weka PDF hapa"
+  },
+  "Header": {
+    "merge": "CHANGANYA PDF",
+    "split": "GAWANYA PDF",
+    "compress": "NYONGEZA PDF",
+    "convert": "BADILISHA PDF",
+    "all_tools": "ZANA ZOTE"
+  },
+  "Footer": {
+    "popular": "Zana za Kawaida",
+    "convert": "Badilisha PDF",
+    "about": "Kuhusu",
+    "legal": "Sheria",
+    "about_us": "Kuhusu sisi",
+    "contact": "Wasiliana nasi",
+    "blog": "Blogu",
+    "faq": "MASWALI YA KAWAIDA",
+    "terms": "Masharti ya Matumizi",
+    "privacy": "Sera ya Faragha",
+    "cookies": "Sera ya Vidakuzi",
+    "rights": "Haki zote zimehifadhiwa"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Changanya PDF",
+      "description": "Changanya nyaraka nyingi za PDF kuwa moja."
+    },
+    "split-pdf": {
+      "name": "Gawanya PDF",
+      "description": "Gawanya PDF kuwa nyaraka nyingi au toa kurasa."
+    },
+    "remove-pages": {
+      "name": "Ondoa Kurasa",
+      "description": "Ondoa kurasa zisizohitajika kutoka kwa PDF yako."
+    },
+    "extract-pages": {
+      "name": "Toa Kurasa",
+      "description": "Toa kurasa mahususi ili kuunda PDF mpya."
+    },
+    "organize-pdf": {
+      "name": "Panga PDF",
+      "description": "Panga na mpangilio kurasa za PDF yako."
+    },
+    "compress-pdf": {
+      "name": "Nyongeza PDF",
+      "description": "Punguza saizi ya faili za PDF bila kupoteza ubora."
+    },
+    "repair-pdf": {
+      "name": "Tengeneza PDF",
+      "description": "Tengeneza faili ya PDF iliyoharibika au iliyofeliwa."
+    },
+    "flatten-pdf": {
+      "name": "Nyooka PDF",
+      "description": "Nyooka fomu na maelezo ya PDF yako."
+    },
+    "pdf-to-word": {
+      "name": "PDF hadi Word",
+      "description": "Badilisha PDF kuwa hati za Word zinazoweza kuhaririwa."
+    },
+    "pdf-to-excel": {
+      "name": "PDF hadi Excel",
+      "description": "Badilisha jedwali la PDF kuwa jedwali la Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF hadi PowerPoint",
+      "description": "Badilisha PDF kuwa wasilisho wa PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF hadi JPG",
+      "description": "Badilisha kila ukurasa wa PDF kuwa picha ya JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF hadi PNG",
+      "description": "Badilisha kurasa za PDF kuwa picha za PNG za ubora wa hali ya juu."
+    },
+    "pdf-to-html": {
+      "name": "PDF hadi HTML",
+      "description": "Badilisha PDF kuwa ukurasa wa HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF hadi PDF/A",
+      "description": "Badilisha PDF kuwa fomu ya PDF/A kwa ajili ya uhifadhi wa muda mrefu."
+    },
+    "word-to-pdf": {
+      "name": "Word hadi PDF",
+      "description": "Badilisha hati za Word kuwa PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel hadi PDF",
+      "description": "Badilisha jedwali la Excel kuwa PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint hadi PDF",
+      "description": "Badilisha wasilisho wa PowerPoint kuwa PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG hadi PDF",
+      "description": "Changanya picha za JPG kuwa hati ya PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG hadi PDF",
+      "description": "Badilisha picha za PNG kuwa faili ya PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML hadi PDF",
+      "description": "Badilisha ukurasa wa HTML kuwa hati ya PDF."
+    },
+    "edit-pdf": {
+      "name": "Hariri PDF",
+      "description": "Ongeza maandishi, picha na umbo kwenye PDF yako."
+    },
+    "rotate-pdf": {
+      "name": "Pinda PDF",
+      "description": "Pinda kurasa za PDF yako."
+    },
+    "add-page-numbers": {
+      "name": "Ongeza Nambari za Kurasa",
+      "description": "Ongeza nambari za kurasa kwenye hati ya PDF yako."
+    },
+    "add-watermark": {
+      "name": "Ongeza Filigrani",
+      "description": "Ongeza filigrani ya maandishi au picha kwenye PDF yako."
+    },
+    "sign-pdf": {
+      "name": "Saini PDF",
+      "description": "Saini hati za PDF yako kwa njia ya kielektroniki."
+    },
+    "fill-pdf-form": {
+      "name": "Jaza Fomu ya PDF",
+      "description": "Jaza fomu za PDF mtandaoni."
+    },
+    "redact-pdf": {
+      "name": "Ficha PDF",
+      "description": "Ficha taarifa nyeti kwenye PDF yako."
+    },
+    "crop-pdf": {
+      "name": "Kata PDF",
+      "description": "Kata kingo na kata kurasa za PDF yako."
+    },
+    "protect-pdf": {
+      "name": "Linda PDF",
+      "description": "Ongeza neno la siri ili kulinda PDF yako."
+    },
+    "unlock-pdf": {
+      "name": "Fungua PDF",
+      "description": "Ondoa neno la siri la hati ya PDF iliyolindwa."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Fanya PDF iliyoskaniwe iweze kusomwa."
+    },
+    "compare-pdf": {
+      "name": "Linganisha PDF",
+      "description": "Linganisha faili mbili za PDF na tambua tofauti."
+    },
+    "ai-pdf-summary": {
+      "name": "Maelezo ya AI",
+      "description": "Pata muhtasari wa busara wa hati yako ya PDF."
+    },
+    "ai-pdf-chat": {
+      "name": "Chat na PDF",
+      "description": "Uliza maswali kwa PDF yako kwa kutumia akili bandia."
+    },
+    "ai-pdf-translate": {
+      "name": "Tafsiri PDF",
+      "description": "Tafsiri hati yako ya PDF kwa lugha nyingine kwa kutumia akili bandia."
+    },
+    "edit-metadata": {
+      "name": "Hariri Metadata",
+      "description": "Badilisha kichwa, mwandishi na metadata nyingine za PDF yako."
+    },
+    "pdf-info": {
+      "name": "Maelezo ya PDF",
+      "description": "Onyesha maelezo yote ya kiufundi ya faili yako ya PDF."
+    },
+    "add-stamp": {
+      "name": "Ongeza Tambo",
+      "description": "Ongeza tambo la maandishi au picha kwenye kurasa za PDF yako."
+    },
+    "add-attachments": {
+      "name": "Piizi za PDF",
+      "description": "Changanya faili kama piizi kwenye hati yako ya PDF."
+    },
+    "extract-images": {
+      "name": "Toa Picha",
+      "description": "Toa picha zote zilizowekwa kwenye hati yako ya PDF."
+    },
+    "remove-images": {
+      "name": "Ondoa Picha",
+      "description": "Ondoa picha zote kutoka kwa PDF yako ili kupunguza saizi yake."
+    },
+    "multi-page-layout": {
+      "name": "Mpangilio wa Kurasa Nyingi",
+      "description": "Panga kurasa 2, 4, 6 au 9 za PDF kwenye karatasi moja."
+    },
+    "overlay-pdf": {
+      "name": "Piga Chapa kwenye PDF",
+      "description": "Piga chapa kwenye PDF moja juu ya nyingine (msingi wa ukurasa, kichwa, saini)."
+    },
+    "sanitize-pdf": {
+      "name": "Safisha PDF",
+      "description": "Ondoa JavaScript, viungo na metadata nyeti kutoka kwa PDF yako."
+    },
+    "remove-blanks": {
+      "name": "Ondoa Kurasa Zilizowekwa",
+      "description": "Gundua na ondoa kurasa tupu za PDF yako kiotomatiki."
+    }
+  },
+  "Home": {
+    "why_choose": "Kwa nini uchague iLoveDoc?",
+    "security_title": "Usalama wa Juu Zaidi",
+    "security_desc": "Faili zako haziondoki kamwe kifaa chako. Utunzaji hufanyika ndani ya kifaa chako kwenye kivinjari.",
+    "speed_title": "Kasi ya Juu Zaidi",
+    "speed_desc": "Bila kuweka faili kwenye seva, utunzaji ni wa haraka na hautegeezi na uunganisho wako wa intaneti.",
+    "no_signup_title": "Bila Kuandikisha",
+    "no_signup_desc": "Anza mara moja. Hakuna haja ya kuunda akaunti au kutoa anwani yako ya barua pepe ili kutumia zana."
+  }
+}

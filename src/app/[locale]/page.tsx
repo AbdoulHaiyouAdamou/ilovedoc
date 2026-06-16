@@ -13,7 +13,10 @@ export const metadata = {
   description: 'Fusionnez, divisez, compressez et convertissez vos fichiers PDF gratuitement. Traitement sécurisé directement dans votre navigateur sans aucune inscription.',
 };
 
+import { useTranslations } from 'next-intl';
+
 export default function Home() {
+  const tHome = useTranslations('Home');
   const faqData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -60,22 +63,22 @@ export default function Home() {
 
         <section className="features-section glass">
           <div className="container">
-            <h2 className="section-title text-center">Pourquoi choisir iLoveDoc ?</h2>
+            <h2 className="section-title text-center">{tHome('why_choose')}</h2>
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon"><Shield size={32} color="var(--primary-color, #7c3aed)" /></div>
-                <h3>Sécurité Maximale</h3>
-                <p>Vos fichiers ne quittent jamais votre appareil. Le traitement se fait localement dans votre navigateur.</p>
+                <h3>{tHome('security_title')}</h3>
+                <p>{tHome('security_desc')}</p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Zap size={32} color="var(--primary-color, #7c3aed)" /></div>
-                <h3>Ultra Rapide</h3>
-                <p>Sans upload vers un serveur, les traitements sont instantanés et ne dépendent pas de votre connexion internet.</p>
+                <h3>{tHome('speed_title')}</h3>
+                <p>{tHome('speed_desc')}</p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon"><Unlock size={32} color="var(--primary-color, #7c3aed)" /></div>
-                <h3>Sans Inscription</h3>
-                <p>Commencez immédiatement. Pas besoin de créer de compte ou de donner votre email pour utiliser les outils.</p>
+                <h3>{tHome('no_signup_title')}</h3>
+                <p>{tHome('no_signup_desc')}</p>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './about.module.css';
@@ -34,6 +35,8 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   return (
     <>
       <Header />
@@ -41,10 +44,11 @@ export default function AboutPage() {
         {/* Hero */}
         <section className={styles.hero}>
           <div className={styles.heroInner}>
-            <h1 className={styles.heroTitle}>À Propos de iLoveDoc</h1>
+            <h1 className={styles.heroTitle}>
+              {tTools('about.name')}
+            </h1>
             <p className={styles.heroSubtitle}>
-              La suite d&apos;outils PDF gratuite, sécurisée et ultra‑rapide —
-              directement dans votre navigateur.
+              {tTools('about.description')}
             </p>
           </div>
         </section>

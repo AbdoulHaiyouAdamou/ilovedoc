@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "所有PDF工具在一个地方",
+    "subtitle": "所有您需要的PDF工具都在这里，100%免费、安全、易用。",
+    "badge_tools": "46种工具",
+    "badge_privacy": "隐私保护",
+    "badge_local": "本地处理"
+  },
+  "Common": {
+    "select_file": "选择PDF文件",
+    "or_drop": "或将PDF文件拖放到这里"
+  },
+  "Header": {
+    "merge": "合并PDF",
+    "split": "拆分PDF",
+    "compress": "压缩PDF",
+    "convert": "转换PDF",
+    "all_tools": "所有工具"
+  },
+  "Footer": {
+    "popular": "热门工具",
+    "convert": "转换PDF",
+    "about": "关于",
+    "legal": "法律",
+    "about_us": "关于我们",
+    "contact": "联系我们",
+    "blog": "博客",
+    "faq": "常见问题",
+    "terms": "使用条款",
+    "privacy": "隐私政策",
+    "cookies": "Cookie政策",
+    "rights": "版权所有"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "合并PDF",
+      "description": "将多个PDF文件合并成一个文档。"
+    },
+    "split-pdf": {
+      "name": "拆分PDF",
+      "description": "将PDF文件拆分成多个文件或提取页面。"
+    },
+    "remove-pages": {
+      "name": "删除页面",
+      "description": "从PDF文件中删除不需要的页面。"
+    },
+    "extract-pages": {
+      "name": "提取页面",
+      "description": "提取特定页面创建新的PDF文件。"
+    },
+    "organize-pdf": {
+      "name": "组织PDF",
+      "description": "排序和重新组织PDF文件的页面。"
+    },
+    "compress-pdf": {
+      "name": "压缩PDF",
+      "description": "减小PDF文件大小而不失去质量。"
+    },
+    "repair-pdf": {
+      "name": "修复PDF",
+      "description": "修复损坏或腐败的PDF文件。"
+    },
+    "flatten-pdf": {
+      "name": "平面化PDF",
+      "description": "平面化PDF文件中的表单和注释。"
+    },
+    "pdf-to-word": {
+      "name": "PDF转Word",
+      "description": "将PDF文件转换为可编辑的Word文档。"
+    },
+    "pdf-to-excel": {
+      "name": "PDF转Excel",
+      "description": "将PDF表格转换为Excel电子表格。"
+    },
+    "pdf-to-ppt": {
+      "name": "PDF转PPT",
+      "description": "将PDF文件转换为PPT演示文稿。"
+    },
+    "pdf-to-jpg": {
+      "name": "PDF转JPG",
+      "description": "将每个PDF页面转换为JPG图像。"
+    },
+    "pdf-to-png": {
+      "name": "PDF转PNG",
+      "description": "将PDF页面导出为高质量的PNG图像。"
+    },
+    "pdf-to-html": {
+      "name": "PDF转HTML",
+      "description": "将PDF文件转换为HTML网页。"
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF转PDF/A",
+      "description": "将PDF文件转换为PDF/A格式用于长期存档。"
+    },
+    "word-to-pdf": {
+      "name": "Word转PDF",
+      "description": "将Word文档转换为PDF文件。"
+    },
+    "excel-to-pdf": {
+      "name": "Excel转PDF",
+      "description": "将Excel电子表格转换为PDF文件。"
+    },
+    "ppt-to-pdf": {
+      "name": "PPT转PDF",
+      "description": "将PPT演示文稿转换为PDF文件。"
+    },
+    "jpg-to-pdf": {
+      "name": "JPG转PDF",
+      "description": "将JPG图像合并为一个PDF文档。"
+    },
+    "png-to-pdf": {
+      "name": "PNG转PDF",
+      "description": "将PNG图像转换为PDF文件。"
+    },
+    "html-to-pdf": {
+      "name": "HTML转PDF",
+      "description": "将HTML网页转换为PDF文档。"
+    },
+    "edit-pdf": {
+      "name": "编辑PDF",
+      "description": "向PDF文件添加文本、图像和形状。"
+    },
+    "rotate-pdf": {
+      "name": "旋转PDF",
+      "description": "旋转PDF文件的页面。"
+    },
+    "add-page-numbers": {
+      "name": "添加页码",
+      "description": "向PDF文档添加页码。"
+    },
+    "add-watermark": {
+      "name": "添加水印",
+      "description": "向PDF文件添加文本或图像水印。"
+    },
+    "sign-pdf": {
+      "name": "签署PDF",
+      "description": "电子签署PDF文档。"
+    },
+    "fill-pdf-form": {
+      "name": "填写表单",
+      "description": "在线填写PDF表单。"
+    },
+    "redact-pdf": {
+      "name": "编辑PDF",
+      "description": "隐藏PDF文件中的敏感信息。"
+    },
+    "crop-pdf": {
+      "name": "裁剪PDF",
+      "description": "裁剪PDF文件的边距和页面。"
+    },
+    "protect-pdf": {
+      "name": "保护PDF",
+      "description": "为PDF文件添加密码保护。"
+    },
+    "unlock-pdf": {
+      "name": "解锁PDF",
+      "description": "删除受保护的PDF文件的密码。"
+    },
+    "pdf-ocr": {
+      "name": "PDF OCR",
+      "description": "使扫描的PDF文件可搜索。"
+    },
+    "compare-pdf": {
+      "name": "比较PDF",
+      "description": "比较两个PDF文件并找出差异。"
+    },
+    "ai-pdf-summary": {
+      "name": "智能摘要",
+      "description": "获取PDF文档的智能摘要。"
+    },
+    "ai-pdf-chat": {
+      "name": "与PDF聊天",
+      "description": "使用人工智能向PDF文件提问。"
+    },
+    "ai-pdf-translate": {
+      "name": "翻译PDF",
+      "description": "使用人工智能将PDF文件翻译成其他语言。"
+    },
+    "edit-metadata": {
+      "name": "编辑元数据",
+      "description": "编辑PDF文件的标题、作者和其他元数据。"
+    },
+    "pdf-info": {
+      "name": "PDF信息",
+      "description": "显示PDF文件的所有技术信息。"
+    },
+    "add-stamp": {
+      "name": "添加印章",
+      "description": "向PDF文件的页面添加文本或图像印章。"
+    },
+    "add-attachments": {
+      "name": "添加附件",
+      "description": "将文件作为附件添加到PDF文档中。"
+    },
+    "extract-images": {
+      "name": "提取图像",
+      "description": "从PDF文档中提取所有嵌入的图像。"
+    },
+    "remove-images": {
+      "name": "删除图像",
+      "description": "从PDF文件中删除所有图像以减小文件大小。"
+    },
+    "multi-page-layout": {
+      "name": "多页布局",
+      "description": "在一张纸上排列2、4、6或9个PDF页面。"
+    },
+    "overlay-pdf": {
+      "name": "叠加PDF",
+      "description": "将一个PDF文件叠加在另一个文件上（背景、页眉、签名）。"
+    },
+    "sanitize-pdf": {
+      "name": "清理PDF",
+      "description": "从PDF文件中删除JavaScript、链接和敏感元数据。"
+    },
+    "remove-blanks": {
+      "name": "删除空白页",
+      "description": "自动检测和删除PDF文件中的空白页。"
+    }
+  },
+  "Home": {
+    "why_choose": "为什么选择iLoveDoc？",
+    "security_title": "最大安全性",
+    "security_desc": "您的文件永远不会离开您的设备。处理在您的浏览器中本地进行。",
+    "speed_title": "超快速度",
+    "speed_desc": "无需上传到服务器，处理速度瞬间，不依赖于您的互联网连接。",
+    "no_signup_title": "无需注册",
+    "no_signup_desc": "立即开始使用，无需创建帐户或提供电子邮件地址即可使用工具。"
+  }
+}

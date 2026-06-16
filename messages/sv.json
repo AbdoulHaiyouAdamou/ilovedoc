@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Alla dina PDF-verktyg på ett ställe",
+    "subtitle": "Alla verktyg du behöver för att använda PDF, inom räckhåll. De är alla 100% GRATIS, säkra och enkla att använda.",
+    "badge_tools": "46 Verktyg",
+    "badge_privacy": "Integritet Garanterad",
+    "badge_local": "Lokal Bearbetning"
+  },
+  "Common": {
+    "select_file": "Välj PDF-fil",
+    "or_drop": "eller släpp PDF här"
+  },
+  "Header": {
+    "merge": "SLÅ SAMMAN PDF",
+    "split": "DELAR PDF",
+    "compress": "KOMPRIMERA PDF",
+    "convert": "OMVANDLA PDF",
+    "all_tools": "ALLA VERKTYG"
+  },
+  "Footer": {
+    "popular": "Populära Verktyg",
+    "convert": "Omändra PDF",
+    "about": "Om",
+    "legal": "Juridisk",
+    "about_us": "Vem är vi",
+    "contact": "Kontakta oss",
+    "blog": "Blogg",
+    "faq": "Vanliga frågor",
+    "terms": "Användarvillkor",
+    "privacy": "Integritetspolicy",
+    "cookies": "Cookiepolicy",
+    "rights": "Alla rättigheter förbehållna"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Slå samman PDF",
+      "description": "Kombinera flera PDF-filer till en enda fil."
+    },
+    "split-pdf": {
+      "name": "Dela PDF",
+      "description": "Dela en PDF-fil i flera filer eller extrahera sidor."
+    },
+    "remove-pages": {
+      "name": "Ta bort sidor",
+      "description": "Ta bort oönskade sidor från din PDF-fil."
+    },
+    "extract-pages": {
+      "name": "Extrahera sidor",
+      "description": "Extrahera specifika sidor för att skapa en ny PDF-fil."
+    },
+    "organize-pdf": {
+      "name": "Organisera PDF",
+      "description": "Sortera och omorganisera sidorna i din PDF-fil."
+    },
+    "compress-pdf": {
+      "name": "Komprimera PDF",
+      "description": "Minska storleken på dina PDF-filer utan kvalitetsförlust."
+    },
+    "repair-pdf": {
+      "name": "Reparera PDF",
+      "description": "Reparera en skadad eller korrupt PDF-fil."
+    },
+    "flatten-pdf": {
+      "name": " Plattforms PDF",
+      "description": " Plattforms formulär och anteckningar i din PDF-fil."
+    },
+    "pdf-to-word": {
+      "name": "PDF till Word",
+      "description": "Omändra dina PDF-filer till redigerbara Word-dokument."
+    },
+    "pdf-to-excel": {
+      "name": "PDF till Excel",
+      "description": "Omändra dina PDF-tabeller till Excel-ark."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF till PowerPoint",
+      "description": "Omändra dina PDF-filer till PowerPoint-presentationer."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF till JPG",
+      "description": "Omändra varje sida i din PDF-fil till en JPG-bild."
+    },
+    "pdf-to-png": {
+      "name": "PDF till PNG",
+      "description": "Exportera dina PDF-sidor som högkvalitativa PNG-bilder."
+    },
+    "pdf-to-html": {
+      "name": "PDF till HTML",
+      "description": "Omändra din PDF-fil till en HTML-sida."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF till PDF/A",
+      "description": "Omändra din PDF-fil till PDF/A-format för långsiktig arkivering."
+    },
+    "word-to-pdf": {
+      "name": "Word till PDF",
+      "description": "Omändra dina Word-dokument till PDF-filer."
+    },
+    "excel-to-pdf": {
+      "name": "Excel till PDF",
+      "description": "Omändra dina Excel-ark till PDF-filer."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint till PDF",
+      "description": "Omändra dina PowerPoint-presentationer till PDF-filer."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG till PDF",
+      "description": "Kombinera dina JPG-bilder till en enda PDF-fil."
+    },
+    "png-to-pdf": {
+      "name": "PNG till PDF",
+      "description": "Omändra dina PNG-bilder till en PDF-fil."
+    },
+    "html-to-pdf": {
+      "name": "HTML till PDF",
+      "description": "Omändra en HTML-sida till en PDF-fil."
+    },
+    "edit-pdf": {
+      "name": "Redigera PDF",
+      "description": "Lägg till text, bilder och former i din PDF-fil."
+    },
+    "rotate-pdf": {
+      "name": "Rotera PDF",
+      "description": "Rotera sidorna i din PDF-fil."
+    },
+    "add-page-numbers": {
+      "name": "Lägg till sidnummer",
+      "description": "Lägg till sidnummer i din PDF-fil."
+    },
+    "add-watermark": {
+      "name": "Lägg till vattenstämpel",
+      "description": "Lägg till en text- eller bildvattenstämpel i din PDF-fil."
+    },
+    "sign-pdf": {
+      "name": "Signera PDF",
+      "description": "Signera dina PDF-dokument elektroniskt."
+    },
+    "fill-pdf-form": {
+      "name": "Fyll i PDF-formulär",
+      "description": "Fyll i PDF-formulär online."
+    },
+    "redact-pdf": {
+      "name": "Svärta ut PDF",
+      "description": "Dölj känslig information i din PDF-fil."
+    },
+    "crop-pdf": {
+      "name": "Beskära PDF",
+      "description": "Beskär marginalerna och klipp ut sidorna i din PDF-fil."
+    },
+    "protect-pdf": {
+      "name": "Skydda PDF",
+      "description": "Lägg till ett lösenord för att skydda din PDF-fil."
+    },
+    "unlock-pdf": {
+      "name": "Lås upp PDF",
+      "description": "Ta bort lösenordet från en skyddad PDF-fil."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Gör din skannade PDF-fil sökbar."
+    },
+    "compare-pdf": {
+      "name": "Jämför PDF",
+      "description": "Jämför två PDF-filer och identifiera skillnader."
+    },
+    "ai-pdf-summary": {
+      "name": "Sammanfattning AI",
+      "description": "Få en intelligent sammanfattning av din PDF-fil."
+    },
+    "ai-pdf-chat": {
+      "name": "Chatta med PDF",
+      "description": "Ställ frågor till din PDF-fil med hjälp av artificiell intelligens."
+    },
+    "ai-pdf-translate": {
+      "name": "Översätt PDF",
+      "description": "Översätt din PDF-fil till ett annat språk med AI."
+    },
+    "edit-metadata": {
+      "name": "Redigera metadata",
+      "description": "Redigera titeln, författaren och andra metadata i din PDF-fil."
+    },
+    "pdf-info": {
+      "name": "PDF-info",
+      "description": "Visa all teknisk information om din PDF-fil."
+    },
+    "add-stamp": {
+      "name": "Lägg till stämpel",
+      "description": "Lägg till en text- eller bildstämpel på sidorna i din PDF-fil."
+    },
+    "add-attachments": {
+      "name": "Bifoga filer",
+      "description": "Integrera filer som bifogade filer i din PDF-fil."
+    },
+    "extract-images": {
+      "name": "Extrahera bilder",
+      "description": "Extrahera alla inbäddade bilder i din PDF-fil."
+    },
+    "remove-images": {
+      "name": "Ta bort bilder",
+      "description": "Ta bort alla bilder i din PDF-fil för att minska storleken."
+    },
+    "multi-page-layout": {
+      "name": "Flersidig layout",
+      "description": "Arrangera 2, 4, 6 eller 9 PDF-sidor på en enda sida."
+    },
+    "overlay-pdf": {
+      "name": "Överlagra PDF",
+      "description": "Överlagra en PDF-fil på en annan (bakgrund, sidhuvud, signatur)."
+    },
+    "sanitize-pdf": {
+      "name": "Sanera PDF",
+      "description": "Ta bort JavaScript, länkar och känsliga metadata från din PDF-fil."
+    },
+    "remove-blanks": {
+      "name": "Ta bort tomma sidor",
+      "description": "Upptäck och ta bort automatiskt tomma sidor i din PDF-fil."
+    }
+  },
+  "Home": {
+    "why_choose": "Varför välja iLoveDoc?",
+    "security_title": "Maximal Säkerhet",
+    "security_desc": "Dina filer lämnar aldrig din enhet. Bearbetningen sker lokalt i din webbläsare.",
+    "speed_title": "Ultra Snabb",
+    "speed_desc": "Inga uppladdningar till en server, bearbetningen är omedelbar och beror inte på din internetanslutning.",
+    "no_signup_title": "Ingen Registrering",
+    "no_signup_desc": "Börja genast. Inga konton eller e-postadresser behövs för att använda verktygen."
+  }
+}

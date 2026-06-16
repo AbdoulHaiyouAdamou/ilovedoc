@@ -4,12 +4,15 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { redactPDF, RedactionRect } from '@/features/pdf/redact';
 import { EyeOff, Settings, ArrowRight, Trash2, CheckCircle, Search, ZoomIn, ZoomOut, RefreshCw } from 'lucide-react';
 
 export default function RedactPDFPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -221,10 +224,10 @@ export default function RedactPDFPage() {
             padding: '2rem'
           }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              Caviarder PDF (Censurer)
+              {tTools('redact-pdf.name')}
             </h1>
             <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              Masquez et censurez définitivement les informations confidentielles et sensibles de votre document PDF.
+              {tTools('redact-pdf.description')}
             </p>
 
             <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
@@ -244,9 +247,9 @@ export default function RedactPDFPage() {
               onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
-                Sélectionner le fichier PDF
+                {tCommon('select_file')}
               </button>
-              <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>ou déposez le PDF ici</p>
+              <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>{tCommon('or_drop')}</p>
             </div>
           </div>
 

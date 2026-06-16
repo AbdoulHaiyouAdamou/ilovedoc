@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "جميع أدوات PDF في مكان واحد",
+    "subtitle": "جميع الأدوات التي تحتاجها لاستخدام ملفات PDF، في متناول يدك. جميعها مجانية بنسبة 100٪ وآمنة وسهلة الاستخدام.",
+    "badge_tools": "46 أداة",
+    "badge_privacy": "الخصوصية مضمونة",
+    "badge_local": "المعالجة المحلية"
+  },
+  "Common": {
+    "select_file": "حدد ملف PDF",
+    "or_drop": "أو ضع ملف PDF هنا"
+  },
+  "Header": {
+    "merge": "دمج PDF",
+    "split": "تقسيم PDF",
+    "compress": "ضغط PDF",
+    "convert": "تحويل PDF",
+    "all_tools": "جميع الأدوات"
+  },
+  "Footer": {
+    "popular": "الأدوات الشائعة",
+    "convert": "تحويل PDF",
+    "about": "معلومات عنا",
+    "legal": "الأسئلة الشائعة",
+    "about_us": "من نحن",
+    "contact": "اتصل بنا",
+    "blog": "مدونة",
+    "faq": "الأسئلة الشائعة",
+    "terms": "شروط الاستخدام",
+    "privacy": "سياسة الخصوصية",
+    "cookies": "سياسة ملفات تعريف الارتباط",
+    "rights": "جميع الحقوق محفوظة"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "دمج PDF",
+      "description": "دمج عدة ملفات PDF في مستند واحد."
+    },
+    "split-pdf": {
+      "name": "تقسيم PDF",
+      "description": "تقسيم ملف PDF إلى عدة ملفات أو استخراج صفحات."
+    },
+    "remove-pages": {
+      "name": "حذف الصفحات",
+      "description": "حذف الصفحات غير المرغوب فيها من ملف PDF الخاص بك."
+    },
+    "extract-pages": {
+      "name": "استخراج الصفحات",
+      "description": "استخراج صفحات محددة لإنشاء ملف PDF جديد."
+    },
+    "organize-pdf": {
+      "name": "تنظيم PDF",
+      "description": "فرز صفحات ملف PDF الخاص بك وإعادة تنظيمها."
+    },
+    "compress-pdf": {
+      "name": "ضغط PDF",
+      "description": "تقليل حجم ملفات PDF الخاصة بك دون فقدان الجودة."
+    },
+    "repair-pdf": {
+      "name": "إصلاح PDF",
+      "description": "إصلاح ملف PDF تالف أو معيب."
+    },
+    "flatten-pdf": {
+      "name": "تسطيح PDF",
+      "description": "تسطيح النماذج والتعليقات في ملف PDF الخاص بك."
+    },
+    "pdf-to-word": {
+      "name": "PDF إلى Word",
+      "description": "تحويل ملفات PDF الخاصة بك إلى مستندات Word قابلة للتعديل."
+    },
+    "pdf-to-excel": {
+      "name": "PDF إلى Excel",
+      "description": "تحويل جداول PDF الخاصة بك إلى أوراق عمل Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF إلى PowerPoint",
+      "description": "تحويل ملفات PDF الخاصة بك إلى عروض PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF إلى JPG",
+      "description": "تحويل كل صفحة من ملف PDF الخاص بك إلى صورة JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF إلى PNG",
+      "description": "تصدير صفحات PDF الخاصة بك إلى صور PNG عالية الجودة."
+    },
+    "pdf-to-html": {
+      "name": "PDF إلى HTML",
+      "description": "تحويل ملف PDF الخاص بك إلى صفحة ويب HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF إلى PDF/A",
+      "description": "تحويل ملف PDF الخاص بك إلى تنسيق PDF/A لتحقيق أرشفة طويلة الأمد."
+    },
+    "word-to-pdf": {
+      "name": "Word إلى PDF",
+      "description": "تحويل مستندات Word الخاصة بك إلى ملفات PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel إلى PDF",
+      "description": "تحويل أوراق العمل Excel الخاصة بك إلى ملفات PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint إلى PDF",
+      "description": "تحويل عروض PowerPoint الخاصة بك إلى ملفات PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG إلى PDF",
+      "description": "دمج صور JPG الخاصة بك في مستند PDF واحد."
+    },
+    "png-to-pdf": {
+      "name": "PNG إلى PDF",
+      "description": "تحويل صور PNG الخاصة بك إلى ملف PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML إلى PDF",
+      "description": "تحويل صفحة ويب HTML إلى مستند PDF."
+    },
+    "edit-pdf": {
+      "name": "تحرير PDF",
+      "description": "إضافة نصوص وصور وأشكال إلى ملف PDF الخاص بك."
+    },
+    "rotate-pdf": {
+      "name": "تدوير PDF",
+      "description": "تدوير صفحات ملف PDF الخاص بك."
+    },
+    "add-page-numbers": {
+      "name": "إضافة أرقام الصفحات",
+      "description": "إضافة أرقام الصفحات إلى مستند PDF الخاص بك."
+    },
+    "add-watermark": {
+      "name": "إضافة ختم مائي",
+      "description": "إضافة ختم مائي نصي أو صوري إلى ملف PDF الخاص بك."
+    },
+    "sign-pdf": {
+      "name": "توقيع PDF",
+      "description": "توقيع مستندات PDF الخاصة بك إلكترونيًا."
+    },
+    "fill-pdf-form": {
+      "name": "ملء نموذج",
+      "description": "ملء نماذج PDF عبر الإنترنت."
+    },
+    "redact-pdf": {
+      "name": "حذف المعلومات الحساسة",
+      "description": "إخفاء المعلومات الحساسة في ملف PDF الخاص بك."
+    },
+    "crop-pdf": {
+      "name": "قص PDF",
+      "description": "تقليم الهوامش وقص صفحات ملف PDF الخاص بك."
+    },
+    "protect-pdf": {
+      "name": "حماية PDF",
+      "description": "إضافة كلمة مرور لحماية ملف PDF الخاص بك."
+    },
+    "unlock-pdf": {
+      "name": "إلغاء قفل PDF",
+      "description": "إزالة كلمة المرور من مستند PDF محمي."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "جعل ملف PDF الممسوح قابل للبحث."
+    },
+    "compare-pdf": {
+      "name": "مقارنة PDF",
+      "description": "مقارنة ملفين PDF وتحديد الاختلافات."
+    },
+    "ai-pdf-summary": {
+      "name": "ملخص ذكاء اصطناعي",
+      "description": "الحصول على ملخص ذكي لمستند PDF الخاص بك."
+    },
+    "ai-pdf-chat": {
+      "name": "دردشة مع PDF",
+      "description": "طرح الأسئلة على ملف PDF الخاص بك باستخدام الذكاء الاصطناعي."
+    },
+    "ai-pdf-translate": {
+      "name": "ترجمة PDF",
+      "description": "ترجمة مستند PDF الخاص بك إلى لغة أخرى باستخدام الذكاء الاصطناعي."
+    },
+    "edit-metadata": {
+      "name": "تحرير البيانات الوصفية",
+      "description": "تحرير العنوان والمؤلف والبيانات الوصفية الأخرى لملف PDF الخاص بك."
+    },
+    "pdf-info": {
+      "name": "معلومات PDF",
+      "description": "عرض جميع المعلومات الفنية لملف PDF الخاص بك."
+    },
+    "add-stamp": {
+      "name": "إضافة طابع",
+      "description": "إضافة طابع نصي أو صوري إلى صفحات ملف PDF الخاص بك."
+    },
+    "add-attachments": {
+      "name": "مرفقات PDF",
+      "description": "دمج الملفات كملحقات في مستند PDF الخاص بك."
+    },
+    "extract-images": {
+      "name": "استخراج الصور",
+      "description": "استخراج جميع الصور المضمنة في مستند PDF الخاص بك."
+    },
+    "remove-images": {
+      "name": "حذف الصور",
+      "description": "حذف جميع الصور من ملف PDF الخاص بك لتقليل حجمه."
+    },
+    "multi-page-layout": {
+      "name": "ترتيب صفحات متعددة",
+      "description": "ترتيب 2 أو 4 أو 6 أو 9 صفحات PDF على صفحة واحدة."
+    },
+    "overlay-pdf": {
+      "name": "تخطيط PDF",
+      "description": "تخطيط ملف PDF واحد فوق الآخر (خلفية، رأس، توقيع)."
+    },
+    "sanitize-pdf": {
+      "name": "تنظيف PDF",
+      "description": "حذف JavaScript والروابط والبيانات الوصفية الحساسة من ملف PDF الخاص بك."
+    },
+    "remove-blanks": {
+      "name": "حذف الصفحات الفارغة",
+      "description": "كشف وحذف الصفحات الفارغة تلقائيًا من ملف PDF الخاص بك."
+    }
+  },
+  "Home": {
+    "why_choose": "لماذا تختار iLoveDoc؟",
+    "security_title": "أمان أقصى",
+    "security_desc": "لا يغادر ملفاتك أبدًا جهازك. يتم المعالجة محليًا في متصفحك.",
+    "speed_title": "سريع جدًا",
+    "speed_desc": "بدون تحميل إلى خادم، تكون المعالجات فورية ولا تعتمد على اتصالك بالإنترنت.",
+    "no_signup_title": "بدون تسجيل",
+    "no_signup_desc": "ابدأ على الفور. لا حاجة لإنشاء حساب أو تقديم بريدك الإلكتروني لاستخدام الأدوات."
+  }
+}

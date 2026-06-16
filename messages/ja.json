@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "PDF",
+    "subtitle": "PDF100% ",
+    "badge_tools": "46 ",
+    "badge_privacy": " ",
+    "badge_local": " "
+  },
+  "Common": {
+    "select_file": "PDF",
+    "or_drop": "PDF"
+  },
+  "Header": {
+    "merge": "PDF",
+    "split": "PDF",
+    "compress": "PDF",
+    "convert": "PDF",
+    "all_tools": " "
+  },
+  "Footer": {
+    "popular": " ",
+    "convert": "PDF",
+    "about": " ",
+    "legal": " ",
+    "about_us": " ",
+    "contact": " ",
+    "blog": " ",
+    "faq": "FAQ",
+    "terms": " ",
+    "privacy": " ",
+    "cookies": " ",
+    "rights": " "
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "split-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "remove-pages": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "extract-pages": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "organize-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "compress-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "repair-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "flatten-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "pdf-to-word": {
+      "name": "PDFWord",
+      "description": "PDFWord"
+    },
+    "pdf-to-excel": {
+      "name": "PDFExcel",
+      "description": "PDFExcel"
+    },
+    "pdf-to-ppt": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "pdf-to-jpg": {
+      "name": "PDFJPG",
+      "description": "PDFJPG"
+    },
+    "pdf-to-png": {
+      "name": "PDFPNG",
+      "description": "PDFPNG"
+    },
+    "pdf-to-html": {
+      "name": "PDFHTML",
+      "description": "PDFHTML"
+    },
+    "pdf-to-pdfa": {
+      "name": "PDFPDF/A",
+      "description": "PDFPDF/A"
+    },
+    "word-to-pdf": {
+      "name": "WordPDF",
+      "description": "WordPDF"
+    },
+    "excel-to-pdf": {
+      "name": "ExcelPDF",
+      "description": "ExcelPDF"
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPointPDF",
+      "description": "PowerPointPDF"
+    },
+    "jpg-to-pdf": {
+      "name": "JPGPDF",
+      "description": "JPGPDF"
+    },
+    "png-to-pdf": {
+      "name": "PNGPDF",
+      "description": "PNGPDF"
+    },
+    "html-to-pdf": {
+      "name": "HTMLPDF",
+      "description": "HTMLPDF"
+    },
+    "edit-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "rotate-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "add-page-numbers": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "add-watermark": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "sign-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "fill-pdf-form": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "redact-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "crop-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "protect-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "unlock-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "pdf-ocr": {
+      "name": "PDFOCR",
+      "description": "PDF"
+    },
+    "compare-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "ai-pdf-summary": {
+      "name": "AI",
+      "description": "AI"
+    },
+    "ai-pdf-chat": {
+      "name": "AIPDF",
+      "description": "AIPDF"
+    },
+    "ai-pdf-translate": {
+      "name": "PDF",
+      "description": "AI"
+    },
+    "edit-metadata": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "pdf-info": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "add-stamp": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "add-attachments": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "extract-images": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "remove-images": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "multi-page-layout": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "overlay-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "sanitize-pdf": {
+      "name": "PDF",
+      "description": "PDF"
+    },
+    "remove-blanks": {
+      "name": "PDF",
+      "description": "PDF"
+    }
+  },
+  "Home": {
+    "why_choose": "iLoveDoc",
+    "security_title": " ",
+    "security_desc": "PDF",
+    "speed_title": " ",
+    "speed_desc": "PDF",
+    "no_signup_title": " ",
+    "no_signup_desc": "PDF"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Al uw PDF-hulpmiddelen op één plek",
+    "subtitle": "Alle hulpmiddelen die u nodig heeft om PDF-bestanden te gebruiken, altijd binnen handbereik. Ze zijn allemaal 100% GRATIS, beveiligd en gemakkelijk te gebruiken.",
+    "badge_tools": "46 Hulpmiddelen",
+    "badge_privacy": "Privéleven Garantie",
+    "badge_local": "Lokale Verwerking"
+  },
+  "Common": {
+    "select_file": "Selecteer het PDF-bestand",
+    "or_drop": "of sleep het PDF-bestand hier neer"
+  },
+  "Header": {
+    "merge": "PDF-BESTANDEN SAMENVOEGEN",
+    "split": "PDF-BESTANDEN SPLITSEN",
+    "compress": "PDF-BESTANDEN COMPRESSEREN",
+    "convert": "PDF-BESTANDEN CONVERTEREN",
+    "all_tools": "ALLE HULPMIDDELEN"
+  },
+  "Footer": {
+    "popular": "Populaire Hulpmiddelen",
+    "convert": "PDF-converter",
+    "about": "Over Ons",
+    "legal": "Juridisch",
+    "about_us": "Wie zijn wij",
+    "contact": "Neem Contact Op",
+    "blog": "Blog",
+    "faq": "Veelgestelde Vragen",
+    "terms": "Gebruiksvoorwaarden",
+    "privacy": "Privébeleid",
+    "cookies": "Cookiebeleid",
+    "rights": "Alle Rechten Voorbehouden"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "PDF-bestanden Samenvoegen",
+      "description": "Voeg meerdere PDF-bestanden samen tot één document."
+    },
+    "split-pdf": {
+      "name": "PDF-bestanden Splitten",
+      "description": "Splits een PDF-bestand in meerdere bestanden of extracteer pagina's."
+    },
+    "remove-pages": {
+      "name": "Pagina's Verwijderen",
+      "description": "Verwijder ongewenste pagina's uit uw PDF-bestand."
+    },
+    "extract-pages": {
+      "name": "Pagina's Extracteren",
+      "description": "Extracteer specifieke pagina's om een nieuw PDF-bestand te maken."
+    },
+    "organize-pdf": {
+      "name": "PDF-bestand Organiseren",
+      "description": "Sorteer en reorganiseer de pagina's van uw PDF-bestand."
+    },
+    "compress-pdf": {
+      "name": "PDF-bestanden Compresseren",
+      "description": "Verklein de grootte van uw PDF-bestanden zonder kwaliteitsverlies."
+    },
+    "repair-pdf": {
+      "name": "PDF-bestand Repareren",
+      "description": "Repareer een beschadigd of corrupt PDF-bestand."
+    },
+    "flatten-pdf": {
+      "name": "PDF-bestand Plattmaken",
+      "description": "Maak formulieren en annotaties in uw PDF-bestand plat."
+    },
+    "pdf-to-word": {
+      "name": "PDF naar Word",
+      "description": "Converteer uw PDF-bestanden naar bewerkbare Word-documenten."
+    },
+    "pdf-to-excel": {
+      "name": "PDF naar Excel",
+      "description": "Converteer uw PDF-tabellen naar Excel-werkbladen."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF naar PowerPoint",
+      "description": "Verander uw PDF-bestanden in PowerPoint-presentaties."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF naar JPG",
+      "description": "Converteer elke pagina van uw PDF-bestand naar een JPG-afbeelding."
+    },
+    "pdf-to-png": {
+      "name": "PDF naar PNG",
+      "description": "Exporteer uw PDF-pagina's naar hoge kwaliteit PNG-afbeeldingen."
+    },
+    "pdf-to-html": {
+      "name": "PDF naar HTML",
+      "description": "Converteer uw PDF-bestand naar een HTML-webpagina."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF naar PDF/A",
+      "description": "Converteer uw PDF-bestand naar het PDF/A-formaat voor langetermijnarchivering."
+    },
+    "word-to-pdf": {
+      "name": "Word naar PDF",
+      "description": "Converteer uw Word-documenten naar PDF-bestanden."
+    },
+    "excel-to-pdf": {
+      "name": "Excel naar PDF",
+      "description": "Verander uw Excel-werkbladen in PDF-bestanden."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint naar PDF",
+      "description": "Converteer uw PowerPoint-presentaties naar PDF-bestanden."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG naar PDF",
+      "description": "Combineer uw JPG-afbeeldingen tot één PDF-document."
+    },
+    "png-to-pdf": {
+      "name": "PNG naar PDF",
+      "description": "Converteer uw PNG-afbeeldingen naar een PDF-bestand."
+    },
+    "html-to-pdf": {
+      "name": "HTML naar PDF",
+      "description": "Converteer een HTML-webpagina naar een PDF-document."
+    },
+    "edit-pdf": {
+      "name": "PDF-bestand Bewerken",
+      "description": "Voeg tekst, afbeeldingen en vormen toe aan uw PDF-bestand."
+    },
+    "rotate-pdf": {
+      "name": "PDF-bestand Roterend",
+      "description": "Draai de pagina's van uw PDF-bestand."
+    },
+    "add-page-numbers": {
+      "name": "Paginanummers Toevoegen",
+      "description": "Voeg paginanummers toe aan uw PDF-document."
+    },
+    "add-watermark": {
+      "name": "Watermerk Toevoegen",
+      "description": "Voeg een tekst- of afbeeldingswatermerk toe aan uw PDF-bestand."
+    },
+    "sign-pdf": {
+      "name": "PDF-bestand Ondertekenen",
+      "description": "Onderteken uw PDF-documenten elektronisch."
+    },
+    "fill-pdf-form": {
+      "name": "Formulier Invullen",
+      "description": "Vul online PDF-formulieren in."
+    },
+    "redact-pdf": {
+      "name": "PDF-bestand Caviarderen",
+      "description": "Verberg gevoelige informatie in uw PDF-bestand."
+    },
+    "crop-pdf": {
+      "name": "PDF-bestand Bijsnijden",
+      "description": "Bijsnij de marges en snij de pagina's van uw PDF-bestand bij."
+    },
+    "protect-pdf": {
+      "name": "PDF-bestand Beveiligen",
+      "description": "Voeg een wachtwoord toe om uw PDF-bestand te beveiligen."
+    },
+    "unlock-pdf": {
+      "name": "PDF-bestand Deblokkeren",
+      "description": "Verwijder het wachtwoord van een beveiligd PDF-document."
+    },
+    "pdf-ocr": {
+      "name": "PDF-OCR",
+      "description": "Maak uw gescande PDF-bestand doorzoekbaar."
+    },
+    "compare-pdf": {
+      "name": "PDF-bestanden Vergelijken",
+      "description": "Vergelijk twee PDF-bestanden en identificeer de verschillen."
+    },
+    "ai-pdf-summary": {
+      "name": "Samenvatting IA",
+      "description": "Krijg een intelligente samenvatting van uw PDF-document."
+    },
+    "ai-pdf-chat": {
+      "name": "Chat met PDF",
+      "description": "Stel vragen aan uw PDF-bestand met behulp van kunstmatige intelligentie."
+    },
+    "ai-pdf-translate": {
+      "name": "PDF Vertalen",
+      "description": "Vertaal uw PDF-document naar een andere taal met behulp van kunstmatige intelligentie."
+    },
+    "edit-metadata": {
+      "name": "Metagegevens Bewerken",
+      "description": "Wijzig de titel, auteur en andere metagegevens van uw PDF-bestand."
+    },
+    "pdf-info": {
+      "name": "PDF-informatie",
+      "description": "Toon alle technische informatie van uw PDF-bestand."
+    },
+    "add-stamp": {
+      "name": "Stempel Toevoegen",
+      "description": "Voeg een tekst- of afbeeldingsstempel toe op de pagina's van uw PDF-bestand."
+    },
+    "add-attachments": {
+      "name": "Bijlagen Toevoegen",
+      "description": "Integreer bestanden als bijlagen in uw PDF-document."
+    },
+    "extract-images": {
+      "name": "Afbeeldingen Extracteren",
+      "description": "Extracteer alle ingesloten afbeeldingen uit uw PDF-document."
+    },
+    "remove-images": {
+      "name": "Afbeeldingen Verwijderen",
+      "description": "Verwijder alle afbeeldingen uit uw PDF-bestand om de grootte te verkleinen."
+    },
+    "multi-page-layout": {
+      "name": "Meerpagina's-Indeling",
+      "description": "Schik 2, 4, 6 of 9 pagina's van uw PDF-bestand op één vel."
+    },
+    "overlay-pdf": {
+      "name": "PDF-bestanden Overlappen",
+      "description": "Overlap een PDF-bestand met een ander (achtergrond, kop, handtekening)."
+    },
+    "sanitize-pdf": {
+      "name": "PDF-bestand Saniteren",
+      "description": "Verwijder JavaScript, links en gevoelige metagegevens uit uw PDF-bestand."
+    },
+    "remove-blanks": {
+      "name": "Lege Pagina's Verwijderen",
+      "description": "Detecteer en verwijder automatisch lege pagina's uit uw PDF-bestand."
+    }
+  },
+  "Home": {
+    "why_choose": "Waarom kiest u voor iLoveDoc?",
+    "security_title": "Maximale Beveiliging",
+    "security_desc": "Uw bestanden verlaten nooit uw apparaat. De verwerking gebeurt lokaal in uw browser.",
+    "speed_title": "Ultra Snel",
+    "speed_desc": "Zonder upload naar een server, zijn de verwerkingen onmiddellijk en hangen ze niet af van uw internetverbinding.",
+    "no_signup_title": "Geen Inschrijving",
+    "no_signup_desc": "Start onmiddellijk. Geen account nodig of e-mailadres vereist om de hulpmiddelen te gebruiken."
+  }
+}

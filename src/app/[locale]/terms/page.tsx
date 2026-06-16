@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import styles from '../privacy/legal.module.css';
 
@@ -23,6 +24,8 @@ export const metadata: Metadata = {
 };
 
 export default function TermsPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   return (
     <>
       <Header />
@@ -30,10 +33,10 @@ export default function TermsPage() {
         <article className={styles.article}>
           <header className={styles.hero}>
             <h1 className={styles.heroTitle}>
-              Conditions Générales d&apos;Utilisation
+              {tTools('terms.name')}
             </h1>
             <p className={styles.lastUpdated}>
-              Dernière mise à jour : 26 mai 2026
+              {tTools('terms.description')}
             </p>
           </header>
 

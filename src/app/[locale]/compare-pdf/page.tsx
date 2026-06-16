@@ -4,6 +4,7 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { getPdfPageCount } from '@/features/pdf/split';
@@ -99,6 +100,8 @@ function getChanges(diff: Array<{ added?: boolean, removed?: boolean, value: str
 }
 
 export default function ComparePDFPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [fileA, setFileA] = useState<File | null>(null);
@@ -384,10 +387,10 @@ export default function ComparePDFPage() {
         <main className="tool-page-layout" style={{ padding: '2rem 1rem' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
             <h1 style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '1rem' }}>
-              Comparer deux fichiers PDF
+              {tTools('compare-pdf.name')}
             </h1>
             <p style={{ fontSize: '1.2rem', color: 'var(--color-text-secondary)', marginBottom: '3rem' }}>
-              Déposez vos deux fichiers PDF pour comparer leur contenu textuel ou structurel et identifier les différences.
+              {tTools('compare-pdf.description')}
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '3rem' }}>

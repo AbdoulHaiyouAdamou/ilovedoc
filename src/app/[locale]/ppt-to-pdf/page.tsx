@@ -4,12 +4,15 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { convertPptToPdf } from '@/features/pdf/office';
 import { MonitorPlay, CheckCircle, ArrowRight, FileText, Info } from 'lucide-react';
 
 export default function PptToPdfPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -86,10 +89,10 @@ export default function PptToPdfPage() {
             padding: '2rem'
           }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              PowerPoint en PDF
+              {tTools('ppt-to-pdf.name')}
             </h1>
             <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              Convertissez vos présentations PowerPoint (.pptx) en fichiers PDF. Rapide, gratuit et confidentiel.
+              {tTools('ppt-to-pdf.description')}
             </p>
 
             <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>

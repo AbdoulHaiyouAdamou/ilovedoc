@@ -4,6 +4,7 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { convertExcelToPdf } from '@/features/pdf/office';
@@ -13,6 +14,8 @@ const ACCENT = '#16a34a';
 const ACCENT_DARK = '#15803d';
 
 export default function ExcelToPdfPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -85,10 +88,10 @@ export default function ExcelToPdfPage() {
             padding: '2rem'
           }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              Excel en PDF
+              {tTools('excel-to-pdf.name')}
             </h1>
             <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              Convertissez vos classeurs Excel (.xlsx) en fichiers PDF. Tableaux et mise en page conservés.
+              {tTools('excel-to-pdf.description')}
             </p>
 
             <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>

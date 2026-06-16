@@ -8,11 +8,14 @@ import { encryptPDF } from '@pdfsmaller/pdf-encrypt-lite';
 import { getToolBySlug } from '@/config/tools';
 import AdUnit from '@/components/common/AdUnit';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 
 const tool = getToolBySlug('protect-pdf')!;
 
 export default function ProtectPdfPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -93,10 +96,10 @@ export default function ProtectPdfPage() {
         {!file && !isProcessing && !isDone && (
           <div style={{ minHeight: 'calc(100vh - 70px)', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              {tool.name}
+              {tTools('protect-pdf.name')}
             </h1>
             <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              {tool.description}
+              {tTools('protect-pdf.description')}
             </p>
             
             <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
@@ -116,7 +119,7 @@ export default function ProtectPdfPage() {
               onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
-                Sélectionner le fichier PDF
+                {tCommon('select_file')}
               </button>
             </div>
           </div>

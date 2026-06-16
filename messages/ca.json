@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Tots els teus eines PDF en un sol lloc",
+    "subtitle": "Totes les eines que necessites per utilitzar els PDF, a l'abast de la mà. Són totes 100% GRATUITES, segures i fàcils d'utilitzar.",
+    "badge_tools": "46 Eines",
+    "badge_privacy": "Privacitat Garantida",
+    "badge_local": "Tractament Local"
+  },
+  "Common": {
+    "select_file": "Selecciona l'arxiu PDF",
+    "or_drop": "o deixa anar el PDF aquí"
+  },
+  "Header": {
+    "merge": "FUSIONAR PDF",
+    "split": "DIVIDIR PDF",
+    "compress": "COMPRESSAR PDF",
+    "convert": "CONVERTIR PDF",
+    "all_tools": "TOtes les eines"
+  },
+  "Footer": {
+    "popular": "Eines Populars",
+    "convert": "Convertir PDF",
+    "about": "Sobre",
+    "legal": "Llegal",
+    "about_us": "Qui som",
+    "contact": "Contacta'ns",
+    "blog": "Bloc",
+    "faq": "Preguntes Freqüents",
+    "terms": "Condicions d'ús",
+    "privacy": "Política de privacitat",
+    "cookies": "Política de cookies",
+    "rights": "Tots els drets reservats"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Fusionar PDF",
+      "description": "Combina diverses fitxers PDF en un sol document."
+    },
+    "split-pdf": {
+      "name": "Dividir PDF",
+      "description": "Separa un PDF en diverses fitxers o extreu pàgines."
+    },
+    "remove-pages": {
+      "name": "Suprimir pàgines",
+      "description": "Suprimeix les pàgines indesitjades del teu PDF."
+    },
+    "extract-pages": {
+      "name": "Extreure pàgines",
+      "description": "Extreu pàgines específiques per crear un nou PDF."
+    },
+    "organize-pdf": {
+      "name": "Organitzar PDF",
+      "description": "Ordena i reorganitza les pàgines del teu PDF."
+    },
+    "compress-pdf": {
+      "name": "Compressar PDF",
+      "description": "Redueix la mida dels teus fitxers PDF sense pèrdua de qualitat."
+    },
+    "repair-pdf": {
+      "name": "Reparar PDF",
+      "description": "Repara un fitxer PDF danyat o corrupte."
+    },
+    "flatten-pdf": {
+      "name": "Aplanar PDF",
+      "description": "Aplana els formularis i anotacions del teu PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF a Word",
+      "description": "Converteix els teus PDF en documents Word editables."
+    },
+    "pdf-to-excel": {
+      "name": "PDF a Excel",
+      "description": "Converteix les teves taules PDF en fulls de càlcul Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF a PowerPoint",
+      "description": "Transforma els teus PDF en presentacions PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF a JPG",
+      "description": "Converteix cada pàgina del teu PDF en imatge JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF a PNG",
+      "description": "Exporta les teves pàgines PDF en imatges PNG d'alta qualitat."
+    },
+    "pdf-to-html": {
+      "name": "PDF a HTML",
+      "description": "Converteix el teu PDF en pàgina web HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF a PDF/A",
+      "description": "Converteix el teu PDF al format PDF/A per a l'arxivament a llarg termini."
+    },
+    "word-to-pdf": {
+      "name": "Word a PDF",
+      "description": "Converteix els teus documents Word en PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel a PDF",
+      "description": "Transforma les teves fulles de càlcul Excel en PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint a PDF",
+      "description": "Converteix les teves presentacions PowerPoint en PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG a PDF",
+      "description": "Combina les teves imatges JPG en un document PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG a PDF",
+      "description": "Converteix les teves imatges PNG en un fitxer PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML a PDF",
+      "description": "Converteix una pàgina web HTML en document PDF."
+    },
+    "edit-pdf": {
+      "name": "Editar PDF",
+      "description": "Afegeix text, imatges i formes al teu PDF."
+    },
+    "rotate-pdf": {
+      "name": "Girar PDF",
+      "description": "Gira les pàgines del teu PDF."
+    },
+    "add-page-numbers": {
+      "name": "Numerar pàgines",
+      "description": "Afegeix números de pàgina al teu document PDF."
+    },
+    "add-watermark": {
+      "name": "Afegir filigrana",
+      "description": "Afegeix una filigrana de text o imatge al teu PDF."
+    },
+    "sign-pdf": {
+      "name": "Signar PDF",
+      "description": "Signa els teus documents PDF electrònicament."
+    },
+    "fill-pdf-form": {
+      "name": "Omplir formulari",
+      "description": "Ompliu els formularis PDF en línia."
+    },
+    "redact-pdf": {
+      "name": "Censurar PDF",
+      "description": "Amaga les informacions sensibles del teu PDF."
+    },
+    "crop-pdf": {
+      "name": "Retallar PDF",
+      "description": "Retalla els marges i retalla les pàgines del teu PDF."
+    },
+    "protect-pdf": {
+      "name": "Protegeix PDF",
+      "description": "Afegeix una contrasenya per protegir el teu PDF."
+    },
+    "unlock-pdf": {
+      "name": "Desbloquejar PDF",
+      "description": "Suprimeix la contrasenya d'un document PDF protegit."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Fa que el teu PDF escanejat sigui legible."
+    },
+    "compare-pdf": {
+      "name": "Comparar PDF",
+      "description": "Compara dos fitxers PDF i identifica les diferències."
+    },
+    "ai-pdf-summary": {
+      "name": "Resum IA",
+      "description": "Obté un resum intel·ligent del teu document PDF."
+    },
+    "ai-pdf-chat": {
+      "name": "Xat amb PDF",
+      "description": "Fes preguntes al teu PDF gràcies a la intel·ligència artificial."
+    },
+    "ai-pdf-translate": {
+      "name": "Traduir PDF",
+      "description": "Tradueix el teu document PDF en una altra llengua amb la IA."
+    },
+    "edit-metadata": {
+      "name": "Editar metadades",
+      "description": "Edita el títol, l'autor i altres metadades del teu PDF."
+    },
+    "pdf-info": {
+      "name": "Informació del PDF",
+      "description": "Mostra totes les informacions tècniques del teu fitxer PDF."
+    },
+    "add-stamp": {
+      "name": "Afegir segell",
+      "description": "Afegeix un segell de text o imatge a les pàgines del teu PDF."
+    },
+    "add-attachments": {
+      "name": "Fitxers adjunts PDF",
+      "description": "Integra fitxers com a fitxers adjunts al teu document PDF."
+    },
+    "extract-images": {
+      "name": "Extreure imatges",
+      "description": "Extreu totes les imatges incrustades al teu document PDF."
+    },
+    "remove-images": {
+      "name": "Suprimir imatges",
+      "description": "Suprimeix totes les imatges del teu PDF per reduir la seva mida."
+    },
+    "multi-page-layout": {
+      "name": "Disseny de pàgina múltiple",
+      "description": "Organitza 2, 4, 6 o 9 pàgines PDF en una sola full."
+    },
+    "overlay-pdf": {
+      "name": "Superposar PDF",
+      "description": "Superposa un PDF sobre un altre (fons de pàgina, capçalera, signatura)."
+    },
+    "sanitize-pdf": {
+      "name": "Netejar el PDF",
+      "description": "Suprimeix el JavaScript, els enllaços i les metadades sensibles del teu PDF."
+    },
+    "remove-blanks": {
+      "name": "Suprimir pàgines en blanc",
+      "description": "Detecta i suprimeix automàticament les pàgines buides del teu PDF."
+    }
+  },
+  "Home": {
+    "why_choose": "Per què triar iLoveDoc?",
+    "security_title": "Seguretat Màxima",
+    "security_desc": "Els teus fitxers mai no abandonen el teu dispositiu. El tractament es fa localment al teu navegador.",
+    "speed_title": "Ultra Ràpid",
+    "speed_desc": "Sense pujar a un servidor, els tractaments són instantanis i no depenen de la teva connexió a Internet.",
+    "no_signup_title": "Sense Registre",
+    "no_signup_desc": "Comença immediatament. No cal crear un compte ni donar el teu correu electrònic per utilitzar les eines."
+  }
+}

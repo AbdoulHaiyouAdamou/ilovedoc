@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "เครื่องมือ PDF ทั้งหมดในจุดเดียว",
+    "subtitle": "เครื่องมือทั้งหมดที่คุณต้องการสำหรับ PDF ใช้งานง่าย 100% ฟรี มีความปลอดภัยและใช้งานง่าย",
+    "badge_tools": "46 เครื่องมือ",
+    "badge_privacy": "รับประกันความเป็นส่วนตัว",
+    "badge_local": "ประมวลผลในพื้นที่"
+  },
+  "Common": {
+    "select_file": "เลือกไฟล์ PDF",
+    "or_drop": "หรือวางไฟล์ PDF ที่นี่"
+  },
+  "Header": {
+    "merge": "รวม PDF",
+    "split": "แยก PDF",
+    "compress": "บีบอัด PDF",
+    "convert": "แปลง PDF",
+    "all_tools": "เครื่องมือทั้งหมด"
+  },
+  "Footer": {
+    "popular": "เครื่องมือยอดนิยม",
+    "convert": "แปลง PDF",
+    "about": "เกี่ยวกับ",
+    "legal": "กฎหมาย",
+    "about_us": "เกี่ยวกับเรา",
+    "contact": "ติดต่อเรา",
+    "blog": "บล็อก",
+    "faq": "คำถามที่พบบ่อย",
+    "terms": "เงื่อนไขการใช้งาน",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "cookies": "นโยบายคุกกี้",
+    "rights": "ลิขสิทธิ์ทั้งหมด"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "รวม PDF",
+      "description": "รวมไฟล์ PDF หลายไฟล์เป็นเอกสารเดียว"
+    },
+    "split-pdf": {
+      "name": "แยก PDF",
+      "description": "แยก PDF ออกเป็นหลายไฟล์หรือแยกหน้า"
+    },
+    "remove-pages": {
+      "name": "ลบหน้า",
+      "description": "ลบหน้าที่ไม่ต้องการออกจาก PDF"
+    },
+    "extract-pages": {
+      "name": "แยกหน้า",
+      "description": "แยกหน้าเฉพาะเพื่อสร้าง PDF ใหม่"
+    },
+    "organize-pdf": {
+      "name": "จัดระเบียบ PDF",
+      "description": "จัดเรียงและจัดระเบียบหน้าใน PDF"
+    },
+    "compress-pdf": {
+      "name": "บีบอัด PDF",
+      "description": "ลดขนาดไฟล์ PDF โดยไม่สูญเสียคุณภาพ"
+    },
+    "repair-pdf": {
+      "name": "ซ่อม PDF",
+      "description": "ซ่อม PDF ที่เสียหายหรือบิดเบี้ยว"
+    },
+    "flatten-pdf": {
+      "name": "ทำให้ PDF แบนราบ",
+      "description": "ทำให้แบบฟอร์มและคำอธิบายใน PDF แบนราบ"
+    },
+    "pdf-to-word": {
+      "name": "PDF เป็น Word",
+      "description": "แปลง PDF เป็นเอกสาร Word ที่สามารถแก้ไขได้"
+    },
+    "pdf-to-excel": {
+      "name": "PDF เป็น Excel",
+      "description": "แปลงตาราง PDF เป็นแผ่นงาน Excel"
+    },
+    "pdf-to-ppt": {
+      "name": "PDF เป็น PowerPoint",
+      "description": "แปลง PDF เป็น презентेशन PowerPoint"
+    },
+    "pdf-to-jpg": {
+      "name": "PDF เป็น JPG",
+      "description": "แปลงแต่ละหน้า PDF เป็นรูปภาพ JPG"
+    },
+    "pdf-to-png": {
+      "name": "PDF เป็น PNG",
+      "description": "ส่งออกหน้า PDF เป็นรูปภาพ PNG คุณภาพสูง"
+    },
+    "pdf-to-html": {
+      "name": "PDF เป็น HTML",
+      "description": "แปลง PDF เป็นหน้าเว็บ HTML"
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF เป็น PDF/A",
+      "description": "แปลง PDF เป็นรูปแบบ PDF/A สำหรับการเก็บรักษาในระยะยาว"
+    },
+    "word-to-pdf": {
+      "name": "Word เป็น PDF",
+      "description": "แปลงเอกสาร Word เป็น PDF"
+    },
+    "excel-to-pdf": {
+      "name": "Excel เป็น PDF",
+      "description": "แปลงแผ่นงาน Excel เป็น PDF"
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint เป็น PDF",
+      "description": "แปลง презентेशन PowerPoint เป็น PDF"
+    },
+    "jpg-to-pdf": {
+      "name": "JPG เป็น PDF",
+      "description": "รวมรูปภาพ JPG เป็นเอกสาร PDF"
+    },
+    "png-to-pdf": {
+      "name": "PNG เป็น PDF",
+      "description": "แปลงรูปภาพ PNG เป็นไฟล์ PDF"
+    },
+    "html-to-pdf": {
+      "name": "HTML เป็น PDF",
+      "description": "แปลงหน้าเว็บ HTML เป็นเอกสาร PDF"
+    },
+    "edit-pdf": {
+      "name": "แก้ไข PDF",
+      "description": "เพิ่มข้อความ รูปภาพ และรูปทรงใน PDF"
+    },
+    "rotate-pdf": {
+      "name": "หมุน PDF",
+      "description": "หมุนหน้าใน PDF"
+    },
+    "add-page-numbers": {
+      "name": "เพิ่มหมายเลขหน้า",
+      "description": "เพิ่มหมายเลขหน้าในเอกสาร PDF"
+    },
+    "add-watermark": {
+      "name": "เพิ่มลายน้ำ",
+      "description": "เพิ่มลายน้ำข้อความหรือรูปภาพใน PDF"
+    },
+    "sign-pdf": {
+      "name": "ลงชื่อ PDF",
+      "description": "ลงชื่อเอกสาร PDF ของคุณแบบอิเล็กทรอนิกส์"
+    },
+    "fill-pdf-form": {
+      "name": "กรอกแบบฟอร์ม",
+      "description": "กรอกแบบฟอร์ม PDF ออนไลน์"
+    },
+    "redact-pdf": {
+      "name": "ลบข้อมูล PDF",
+      "description": "ปิดบังข้อมูลที่ละเอียดอ่อนใน PDF"
+    },
+    "crop-pdf": {
+      "name": "ตัด PDF",
+      "description": "ตัดขอบและตัดหน้าใน PDF"
+    },
+    "protect-pdf": {
+      "name": "ป้องกัน PDF",
+      "description": "เพิ่มรหัสผ่านเพื่อป้องกัน PDF"
+    },
+    "unlock-pdf": {
+      "name": "ปลดล็อก PDF",
+      "description": "ลบรหัสผ่านออกจากเอกสาร PDF ที่ป้องกัน"
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "ทำให้ PDF ที่สแกนมาเป็นเอกสารที่สามารถค้นหาได้"
+    },
+    "compare-pdf": {
+      "name": "เปรียบเทียบ PDF",
+      "description": "เปรียบเทียบสองไฟล์ PDF และระบุความแตกต่าง"
+    },
+    "ai-pdf-summary": {
+      "name": "สรุป PDF ด้วย AI",
+      "description": "รับสรุปเอกสาร PDF ของคุณด้วยความฉลาดของ AI"
+    },
+    "ai-pdf-chat": {
+      "name": "สนทนากับ PDF",
+      "description": "ถามคำถามกับ PDF ของคุณด้วย AI"
+    },
+    "ai-pdf-translate": {
+      "name": "แปล PDF",
+      "description": "แปลเอกสาร PDF ของคุณเป็นอีกภาษาหนึ่งด้วย AI"
+    },
+    "edit-metadata": {
+      "name": "แก้ไขข้อมูลอธิบาย",
+      "description": "แก้ไขชื่อเรื่อง ผู้เขียน และข้อมูลอธิบายอื่นๆ ของ PDF"
+    },
+    "pdf-info": {
+      "name": "ข้อมูล PDF",
+      "description": "แสดงข้อมูลทางเทคนิคทั้งหมดของไฟล์ PDF"
+    },
+    "add-stamp": {
+      "name": "เพิ่มตรา",
+      "description": "เพิ่มตราข้อความหรือรูปภาพบนหน้า PDF"
+    },
+    "add-attachments": {
+      "name": "เพิ่มไฟล์แนบ",
+      "description": "รวมไฟล์แนบเข้ากับเอกสาร PDF"
+    },
+    "extract-images": {
+      "name": "แยกภาพ",
+      "description": "แยกภาพทั้งหมดที่ฝังในเอกสาร PDF"
+    },
+    "remove-images": {
+      "name": "ลบภาพ",
+      "description": "ลบภาพทั้งหมดออกจาก PDF เพื่อลดขนาด"
+    },
+    "multi-page-layout": {
+      "name": "จัดเรียงหลายหน้า",
+      "description": "จัดเรียง 2, 4, 6 หรือ 9 หน้า PDF บนหน้าเดียว"
+    },
+    "overlay-pdf": {
+      "name": "ทับซ้อน PDF",
+      "description": "ทับซ้อน PDF หนึ่งบนอีกหนึ่ง (พื้นหลัง หัวกระดาษ ลายเซ็น)"
+    },
+    "sanitize-pdf": {
+      "name": "ทำความสะอาด PDF",
+      "description": "ลบ JavaScript ลิงก์ และข้อมูลอธิบายที่ละเอียดอ่อนออกจาก PDF"
+    },
+    "remove-blanks": {
+      "name": "ลบหน้าเปล่า",
+      "description": "ตรวจจับและลบหน้าเปล่าออกจาก PDF อัตโนมัติ"
+    }
+  },
+  "Home": {
+    "why_choose": "ทำไมต้องเลือก iLoveDoc",
+    "security_title": "ความปลอดภัยสูงสุด",
+    "security_desc": "ไฟล์ของคุณไม่เคยออกจากอุปกรณ์ของคุณ การประมวลผลเกิดขึ้นในท้องถิ่นบนเบราว์เซอร์ของคุณ",
+    "speed_title": "ความเร็วสูงสุด",
+    "speed_desc": "ไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ การประมวลผลเกิดขึ้นทันทีและไม่ขึ้นอยู่กับการเชื่อมต่ออินเทอร์เน็ตของคุณ",
+    "no_signup_title": "ไม่ต้องสมัครสมาชิก",
+    "no_signup_desc": "เริ่มต้นได้ทันที ไม่ต้องสร้างบัญชีหรือให้ข้อมูลอีเมลของคุณเพื่อใช้เครื่องมือ"
+  }
+}

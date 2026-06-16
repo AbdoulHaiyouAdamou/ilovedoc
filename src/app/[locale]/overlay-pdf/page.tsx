@@ -3,6 +3,7 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import AdUnit from '@/components/common/AdUnit';
 import Footer from '@/components/common/Footer';
 import { overlayPdfs, OverlayMode } from '@/features/pdf/overlay';
@@ -12,6 +13,8 @@ const TOOL_COLOR = '#a855f7';
 const GRADIENT = 'linear-gradient(to right, #a855f7, #9333ea)';
 
 export default function OverlayPdfPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [baseFile, setBaseFile] = useState<File | null>(null);
@@ -49,10 +52,12 @@ export default function OverlayPdfPage() {
       <Header />
       <main className="tool-page-layout" style={{ padding: 0 }}>
         <div style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>Superposer des PDF</h1>
+          <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
+              {tTools('overlay-pdf.name')}
+            </h1>
           <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: 800, textAlign: 'center', lineHeight: 1.5 }}>
-            Superposez un PDF sur un autre : ajoutez un fond de page, un en-tête ou une signature.
-          </p>
+              {tTools('overlay-pdf.description')}
+            </p>
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <div {...dzBase.getRootProps()} style={{ cursor: 'pointer', textAlign: 'center', padding: '2rem', borderRadius: 16, border: `2px dashed ${baseFile ? TOOL_COLOR : 'var(--glass-border)'}`, minWidth: 250, background: baseFile ? `${TOOL_COLOR}10` : 'transparent' }}>
               <input {...dzBase.getInputProps()} />

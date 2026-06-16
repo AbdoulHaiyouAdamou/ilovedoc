@@ -7,11 +7,14 @@ import { getToolBySlug } from '@/config/tools';
 import AdUnit from '@/components/common/AdUnit';
 import Script from 'next/script';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 
 const tool = getToolBySlug('html-to-pdf')!;
 
 export default function HtmlToPdfPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [htmlContent, setHtmlContent] = useState<string>('');
@@ -107,10 +110,10 @@ export default function HtmlToPdfPage() {
         {!htmlContent && !isProcessing && !isDone && (
           <div style={{ minHeight: 'calc(100vh - 70px)', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              {tool.name}
+              {tTools('html-to-pdf.name')}
             </h1>
             <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              {tool.description}
+              {tTools('html-to-pdf.description')}
             </p>
             
             <div className="glass" style={{ width: '100%', maxWidth: '600px', padding: '2rem', borderRadius: '16px' }}>

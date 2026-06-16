@@ -99,9 +99,9 @@ export default function Hero() {
             {t('subtitle')}
           </p>
           <div className="hero-stats">
-            <span className="badge"><Sparkles size={16} /> 46 Outils</span>
-            <span className="badge"><Lock size={16} /> Vie Privée Garantie</span>
-            <span className="badge"><Cpu size={16} /> Traitement Local</span>
+            <span className="badge"><Sparkles size={16} /> {t('badge_tools')}</span>
+            <span className="badge"><Lock size={16} /> {t('badge_privacy')}</span>
+            <span className="badge"><Cpu size={16} /> {t('badge_local')}</span>
           </div>
         </div>
       </div>

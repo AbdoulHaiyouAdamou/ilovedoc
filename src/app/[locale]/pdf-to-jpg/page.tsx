@@ -10,11 +10,14 @@ import Head from 'next/head';
 import Script from 'next/script';
 import { convertPdfToImages } from '@/features/pdf/pdfToImage';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 
 const tool = getToolBySlug('pdf-to-jpg')!;
 
 export default function PdfToJpgPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -76,10 +79,10 @@ export default function PdfToJpgPage() {
         {!file && !isProcessing && !isDone && (
           <div style={{ minHeight: 'calc(100vh - 70px)', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              {tool.name}
+              {tTools('pdf-to-jpg.name')}
             </h1>
             <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              {tool.description}
+              {tTools('pdf-to-jpg.description')}
             </p>
             
             <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
@@ -99,7 +102,7 @@ export default function PdfToJpgPage() {
               onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
-                Sélectionner le fichier PDF
+                {tCommon('select_file')}
               </button>
               <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>
                 ou glissez-déposez le fichier ici

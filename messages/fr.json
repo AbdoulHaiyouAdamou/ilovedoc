@@ -1,6 +1,229 @@
 {
   "Hero": {
     "title": "Tous vos outils PDF en un seul endroit",
-    "subtitle": "Tous les outils dont vous avez besoin pour utiliser les PDF, à portée de main. Ils sont tous 100% GRATUITS, sécurisés et simples d'utilisation."
+    "subtitle": "Tous les outils dont vous avez besoin pour utiliser les PDF, à portée de main. Ils sont tous 100% GRATUITS, sécurisés et simples d'utilisation.",
+    "badge_tools": "46 Outils",
+    "badge_privacy": "Vie Privée Garantie",
+    "badge_local": "Traitement Local"
+  },
+  "Common": {
+    "select_file": "Sélectionner le fichier PDF",
+    "or_drop": "ou déposez le PDF ici"
+  },
+  "Header": {
+    "merge": "FUSIONNER PDF",
+    "split": "DIVISER PDF",
+    "compress": "COMPRESSER PDF",
+    "convert": "CONVERTIR PDF",
+    "all_tools": "TOUS LES OUTILS"
+  },
+  "Footer": {
+    "popular": "Outils Populaires",
+    "convert": "Convertir PDF",
+    "about": "À Propos",
+    "legal": "Légal",
+    "about_us": "Qui sommes-nous",
+    "contact": "Contactez-nous",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Politique de cookies",
+    "rights": "Tous droits réservés"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Fusionner PDF",
+      "description": "Combinez plusieurs fichiers PDF en un seul document."
+    },
+    "split-pdf": {
+      "name": "Diviser PDF",
+      "description": "Séparez un PDF en plusieurs fichiers ou extrayez des pages."
+    },
+    "remove-pages": {
+      "name": "Supprimer des pages",
+      "description": "Supprimez les pages indésirables de votre PDF."
+    },
+    "extract-pages": {
+      "name": "Extraire des pages",
+      "description": "Extrayez des pages spécifiques pour créer un nouveau PDF."
+    },
+    "organize-pdf": {
+      "name": "Organiser PDF",
+      "description": "Triez et réorganisez les pages de votre PDF."
+    },
+    "compress-pdf": {
+      "name": "Compresser PDF",
+      "description": "Réduisez la taille de vos fichiers PDF sans perte de qualité."
+    },
+    "repair-pdf": {
+      "name": "Réparer PDF",
+      "description": "Réparez un fichier PDF endommagé ou corrompu."
+    },
+    "flatten-pdf": {
+      "name": "Aplatir PDF",
+      "description": "Aplatissez les formulaires et annotations de votre PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF en Word",
+      "description": "Convertissez vos PDF en documents Word éditables."
+    },
+    "pdf-to-excel": {
+      "name": "PDF en Excel",
+      "description": "Convertissez vos tableaux PDF en feuilles de calcul Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF en PowerPoint",
+      "description": "Transformez vos PDF en présentations PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF en JPG",
+      "description": "Convertissez chaque page de votre PDF en image JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF en PNG",
+      "description": "Exportez vos pages PDF en images PNG haute qualité."
+    },
+    "pdf-to-html": {
+      "name": "PDF en HTML",
+      "description": "Convertissez votre PDF en page web HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF en PDF/A",
+      "description": "Convertissez votre PDF au format PDF/A pour l'archivage à long terme."
+    },
+    "word-to-pdf": {
+      "name": "Word en PDF",
+      "description": "Convertissez vos documents Word en PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel en PDF",
+      "description": "Transformez vos feuilles de calcul Excel en PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint en PDF",
+      "description": "Convertissez vos présentations PowerPoint en PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG en PDF",
+      "description": "Combinez vos images JPG en un document PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG en PDF",
+      "description": "Convertissez vos images PNG en un fichier PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML en PDF",
+      "description": "Convertissez une page web HTML en document PDF."
+    },
+    "edit-pdf": {
+      "name": "Éditer PDF",
+      "description": "Ajoutez du texte, des images et des formes à votre PDF."
+    },
+    "rotate-pdf": {
+      "name": "Pivoter PDF",
+      "description": "Faites pivoter les pages de votre PDF."
+    },
+    "add-page-numbers": {
+      "name": "Numéroter les pages",
+      "description": "Ajoutez des numéros de page à votre document PDF."
+    },
+    "add-watermark": {
+      "name": "Ajouter un filigrane",
+      "description": "Ajoutez un filigrane texte ou image à votre PDF."
+    },
+    "sign-pdf": {
+      "name": "Signer PDF",
+      "description": "Signez vos documents PDF électroniquement."
+    },
+    "fill-pdf-form": {
+      "name": "Remplir un formulaire",
+      "description": "Remplissez les formulaires PDF en ligne."
+    },
+    "redact-pdf": {
+      "name": "Caviarder PDF",
+      "description": "Masquez les informations sensibles dans votre PDF."
+    },
+    "crop-pdf": {
+      "name": "Rogner PDF",
+      "description": "Recadrez les marges et rognez les pages de votre PDF."
+    },
+    "protect-pdf": {
+      "name": "Protéger PDF",
+      "description": "Ajoutez un mot de passe pour protéger votre PDF."
+    },
+    "unlock-pdf": {
+      "name": "Déverrouiller PDF",
+      "description": "Supprimez le mot de passe d'un document PDF protégé."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Rendez votre PDF scanné consultable."
+    },
+    "compare-pdf": {
+      "name": "Comparer PDF",
+      "description": "Comparez deux fichiers PDF et identifiez les différences."
+    },
+    "ai-pdf-summary": {
+      "name": "Résumé IA",
+      "description": "Obtenez un résumé intelligent de votre document PDF."
+    },
+    "ai-pdf-chat": {
+      "name": "Chat avec PDF",
+      "description": "Posez des questions à votre PDF grâce à l'intelligence artificielle."
+    },
+    "ai-pdf-translate": {
+      "name": "Traduire PDF",
+      "description": "Traduisez votre document PDF dans une autre langue avec l'IA."
+    },
+    "edit-metadata": {
+      "name": "Modifier les métadonnées",
+      "description": "Modifiez le titre, l'auteur et les autres métadonnées de votre PDF."
+    },
+    "pdf-info": {
+      "name": "Infos du PDF",
+      "description": "Affichez toutes les informations techniques de votre fichier PDF."
+    },
+    "add-stamp": {
+      "name": "Ajouter un tampon",
+      "description": "Ajoutez un tampon texte ou image sur les pages de votre PDF."
+    },
+    "add-attachments": {
+      "name": "Pièces jointes PDF",
+      "description": "Intégrez des fichiers en pièces jointes dans votre document PDF."
+    },
+    "extract-images": {
+      "name": "Extraire les images",
+      "description": "Extrayez toutes les images intégrées dans votre document PDF."
+    },
+    "remove-images": {
+      "name": "Supprimer les images",
+      "description": "Supprimez toutes les images de votre PDF pour réduire sa taille."
+    },
+    "multi-page-layout": {
+      "name": "Mise en page multiple",
+      "description": "Arrangez 2, 4, 6 ou 9 pages PDF sur une seule feuille."
+    },
+    "overlay-pdf": {
+      "name": "Superposer des PDF",
+      "description": "Superposez un PDF sur un autre (fond de page, en-tête, signature)."
+    },
+    "sanitize-pdf": {
+      "name": "Nettoyer le PDF",
+      "description": "Supprimez le JavaScript, les liens et les métadonnées sensibles de votre PDF."
+    },
+    "remove-blanks": {
+      "name": "Supprimer pages blanches",
+      "description": "Détectez et supprimez automatiquement les pages vides de votre PDF."
+    }
+  },
+  "Home": {
+    "why_choose": "Pourquoi choisir iLoveDoc ?",
+    "security_title": "Sécurité Maximale",
+    "security_desc": "Vos fichiers ne quittent jamais votre appareil. Le traitement se fait localement dans votre navigateur.",
+    "speed_title": "Ultra Rapide",
+    "speed_desc": "Sans upload vers un serveur, les traitements sont instantanés et ne dépendent pas de votre connexion internet.",
+    "no_signup_title": "Sans Inscription",
+    "no_signup_desc": "Commencez immédiatement. Pas besoin de créer de compte ou de donner votre email pour utiliser les outils."
   }
 }

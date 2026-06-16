@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Wszystkie narzędzia PDF w jednym miejscu",
+    "subtitle": "Wszystkie narzędzia, których potrzebujesz do pracy z plikami PDF, dostępne zawsze. Są one 100% BEZPŁATNE, bezpieczne i proste w użyciu.",
+    "badge_tools": "46 Narzędzi",
+    "badge_privacy": "Prywatność Gwarantowana",
+    "badge_local": "Przetwarzanie Lokalne"
+  },
+  "Common": {
+    "select_file": "Wybierz plik PDF",
+    "or_drop": "lub upuść plik PDF tutaj"
+  },
+  "Header": {
+    "merge": "POŁĄCZ PDF",
+    "split": "PODZIEL PDF",
+    "compress": "KOMPRESUJ PDF",
+    "convert": "PRZEKONWERUJ PDF",
+    "all_tools": "WSZYSTKIE NARZĘDZIA"
+  },
+  "Footer": {
+    "popular": "Popularne Narzędzia",
+    "convert": "Konwertuj PDF",
+    "about": "O Nas",
+    "legal": "Prawne",
+    "about_us": "Kim Jesteśmy",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "faq": "Często Zadawane Pytania",
+    "terms": "Warunki Korzystania",
+    "privacy": "Polityka Prywatności",
+    "cookies": "Polityka Cookies",
+    "rights": "Wszelkie Prawa Zastrzeżone"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Połącz PDF",
+      "description": "Połącz wiele plików PDF w jeden dokument."
+    },
+    "split-pdf": {
+      "name": "Podziel PDF",
+      "description": "Podziel plik PDF na wiele plików lub wyodrębnij strony."
+    },
+    "remove-pages": {
+      "name": "Usuń Strony",
+      "description": "Usuń niepożądane strony z Twojego pliku PDF."
+    },
+    "extract-pages": {
+      "name": "Wyodrębnij Strony",
+      "description": "Wyodrębnij określone strony, aby utworzyć nowy plik PDF."
+    },
+    "organize-pdf": {
+      "name": "Zorganizuj PDF",
+      "description": "Uporządkuj i zreorganizuj strony Twojego pliku PDF."
+    },
+    "compress-pdf": {
+      "name": "Kompresuj PDF",
+      "description": "Zmniejsz rozmiar plików PDF bez utraty jakości."
+    },
+    "repair-pdf": {
+      "name": "Napraw PDF",
+      "description": "Napraw uszkodzony lub uszkodzony plik PDF."
+    },
+    "flatten-pdf": {
+      "name": "Spłaszcz PDF",
+      "description": "Spłaszcz formularze i adnotacje w Twoim pliku PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF do Word",
+      "description": "Konwertuj pliki PDF na edytowalne dokumenty Word."
+    },
+    "pdf-to-excel": {
+      "name": "PDF do Excel",
+      "description": "Konwertuj tabele PDF na arkusze kalkulacyjne Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF do PowerPoint",
+      "description": "Przekształć pliki PDF w prezentacje PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF do JPG",
+      "description": "Konwertuj każdą stronę pliku PDF na obraz JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF do PNG",
+      "description": "Eksportuj strony pliku PDF jako obrazy PNG o wysokiej jakości."
+    },
+    "pdf-to-html": {
+      "name": "PDF do HTML",
+      "description": "Konwertuj plik PDF na stronę internetową HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF do PDF/A",
+      "description": "Konwertuj plik PDF na format PDF/A do długoterminowego przechowywania."
+    },
+    "word-to-pdf": {
+      "name": "Word do PDF",
+      "description": "Konwertuj dokumenty Word na pliki PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel do PDF",
+      "description": "Przekształć arkusze kalkulacyjne Excel w pliki PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint do PDF",
+      "description": "Konwertuj prezentacje PowerPoint na pliki PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG do PDF",
+      "description": "Połącz obrazy JPG w jeden dokument PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG do PDF",
+      "description": "Konwertuj obrazy PNG na plik PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML do PDF",
+      "description": "Konwertuj stronę internetową HTML na dokument PDF."
+    },
+    "edit-pdf": {
+      "name": "Edytuj PDF",
+      "description": "Dodaj tekst, obrazy i kształty do pliku PDF."
+    },
+    "rotate-pdf": {
+      "name": "Obróć PDF",
+      "description": "Obróć strony pliku PDF."
+    },
+    "add-page-numbers": {
+      "name": "Dodaj Numer Strony",
+      "description": "Dodaj numery stron do dokumentu PDF."
+    },
+    "add-watermark": {
+      "name": "Dodaj Filigran",
+      "description": "Dodaj filigran tekstowy lub obrazkowy do pliku PDF."
+    },
+    "sign-pdf": {
+      "name": "Podpisz PDF",
+      "description": "Podpisz dokumenty PDF elektronicznie."
+    },
+    "fill-pdf-form": {
+      "name": "Wypełnij Formularz",
+      "description": "Wypełnij formularze PDF online."
+    },
+    "redact-pdf": {
+      "name": "Zacienij PDF",
+      "description": "Zacienij wrażliwe informacje w pliku PDF."
+    },
+    "crop-pdf": {
+      "name": "Przytnij PDF",
+      "description": "Przytnij marginesy i obramowanie stron pliku PDF."
+    },
+    "protect-pdf": {
+      "name": "Zabezpiecz PDF",
+      "description": "Dodaj hasło, aby zabezpieczyć plik PDF."
+    },
+    "unlock-pdf": {
+      "name": "Odblokuj PDF",
+      "description": "Usuń hasło zabezpieczające plik PDF."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Nadaj plikowi PDF zdolność do przeszukiwania."
+    },
+    "compare-pdf": {
+      "name": "Porównaj PDF",
+      "description": "Porównaj dwa pliki PDF i zidentyfikuj różnice."
+    },
+    "ai-pdf-summary": {
+      "name": "Podsumowanie IA",
+      "description": "Uzyskaj inteligentne podsumowanie dokumentu PDF."
+    },
+    "ai-pdf-chat": {
+      "name": "Czat z PDF",
+      "description": "Zadaj pytania plikowi PDF za pomocą sztucznej inteligencji."
+    },
+    "ai-pdf-translate": {
+      "name": "Tłumacz PDF",
+      "description": "Przetłumacz dokument PDF na inny język za pomocą sztucznej inteligencji."
+    },
+    "edit-metadata": {
+      "name": "Edytuj Metadane",
+      "description": "Edytuj tytuł, autora i inne metadane pliku PDF."
+    },
+    "pdf-info": {
+      "name": "Informacje o PDF",
+      "description": "Wyświetl wszystkie informacje techniczne o pliku PDF."
+    },
+    "add-stamp": {
+      "name": "Dodaj Stempel",
+      "description": "Dodaj stempel tekstowy lub obrazkowy na strony pliku PDF."
+    },
+    "add-attachments": {
+      "name": "Załączniki PDF",
+      "description": "Wgraj pliki jako załączniki do dokumentu PDF."
+    },
+    "extract-images": {
+      "name": "Wyodrębnij Obrazy",
+      "description": "Wyodrębnij wszystkie obrazy osadzone w dokumencie PDF."
+    },
+    "remove-images": {
+      "name": "Usuń Obrazy",
+      "description": "Usuń wszystkie obrazy z pliku PDF, aby zmniejszyć jego rozmiar."
+    },
+    "multi-page-layout": {
+      "name": "Układ Wielostronicowy",
+      "description": "Układaj 2, 4, 6 lub 9 stron PDF na jednej stronie."
+    },
+    "overlay-pdf": {
+      "name": "Naniesienie PDF",
+      "description": "Naniesienie jednego pliku PDF na inny (tło strony, nagłówek, podpis)."
+    },
+    "sanitize-pdf": {
+      "name": "Oczyszczanie PDF",
+      "description": "Usuń JavaScript, linki i wrażliwe metadane z pliku PDF."
+    },
+    "remove-blanks": {
+      "name": "Usuń Puste Strony",
+      "description": "Wykryj i usuń automatycznie puste strony z pliku PDF."
+    }
+  },
+  "Home": {
+    "why_choose": "Dlaczego Wybrać iLoveDoc?",
+    "security_title": "Maksymalna Bezpieczeństwo",
+    "security_desc": "Twoje pliki nigdy nie opuszczają urządzenia. Przetwarzanie odbywa się lokalnie w przeglądarce.",
+    "speed_title": "Ultra Szybko",
+    "speed_desc": "Bez przesyłania plików na serwer, przetwarzanie jest natychmiastowe i nie zależy od połączenia internetowego.",
+    "no_signup_title": "Bez Rejestracji",
+    "no_signup_desc": "Rozpocznij od razu. Nie musisz tworzyć konta ani podawać adresu e-mail, aby korzystać z narzędzi."
+  }
+}

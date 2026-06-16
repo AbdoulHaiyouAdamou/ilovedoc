@@ -1,6 +1,229 @@
 {
   "Hero": {
-    "title": "Alle Ihre PDF-Tools an einem Ort",
-    "subtitle": "Alle Tools, die Sie zur Verwendung von PDFs benötigen, direkt zur Hand. Alle sind 100% KOSTENLOS, sicher und einfach zu bedienen."
+    "title": "Alle deine PDF-Tools an einem Ort",
+    "subtitle": "Alle Werkzeuge, die du für PDFs brauchst, immer griffbereit. 100% KOSTENLOS, sicher und einfach zu bedienen.",
+    "badge_tools": "46 Werkzeuge",
+    "badge_privacy": "Datenschutz Garantiert",
+    "badge_local": "Lokale Verarbeitung"
+  },
+  "Common": {
+    "select_file": "PDF-Datei auswählen",
+    "or_drop": "oder PDF hier ablegen"
+  },
+  "Header": {
+    "merge": "PDF ZUSAMMENFÜHREN",
+    "split": "PDF TEILEN",
+    "compress": "PDF KOMPRIMIEREN",
+    "convert": "PDF KONVERTIEREN",
+    "all_tools": "ALLE TOOLS"
+  },
+  "Footer": {
+    "popular": "Beliebte Tools",
+    "convert": "PDF konvertieren",
+    "about": "Über uns",
+    "legal": "Rechtliches",
+    "about_us": "Wer wir sind",
+    "contact": "Kontaktiere uns",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "cookies": "Cookie-Richtlinie",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "PDF zusammenführen",
+      "description": "Kombinieren Sie mehrere PDF-Dateien zu einem einzigen Dokument."
+    },
+    "split-pdf": {
+      "name": "PDF teilen",
+      "description": "Trennen Sie eine Seite oder ein ganzes Set zur einfachen Konvertierung in unabhängige PDF-Dateien."
+    },
+    "remove-pages": {
+      "name": "Seiten entfernen",
+      "description": "Entfernen Sie unerwünschte Seiten aus Ihrem PDF."
+    },
+    "extract-pages": {
+      "name": "Seiten extrahieren",
+      "description": "Extrahieren Sie bestimmte Seiten, um ein neues PDF zu erstellen."
+    },
+    "organize-pdf": {
+      "name": "PDF organisieren",
+      "description": "Sortieren, Hinzufügen und Löschen von PDF-Seiten."
+    },
+    "compress-pdf": {
+      "name": "PDF komprimieren",
+      "description": "Reduzieren Sie die Dateigröße bei optimaler PDF-Qualität."
+    },
+    "repair-pdf": {
+      "name": "PDF reparieren",
+      "description": "Reparieren Sie eine beschädigte oder fehlerhafte PDF-Datei."
+    },
+    "flatten-pdf": {
+      "name": "PDF reduzieren",
+      "description": "Reduzieren Sie Formulare und Anmerkungen in Ihrem PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF in Word",
+      "description": "Konvertieren Sie Ihre PDFs in bearbeitbare Word-Dokumente."
+    },
+    "pdf-to-excel": {
+      "name": "PDF in Excel",
+      "description": "Konvertieren Sie PDF-Tabellen in Excel-Tabellen."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF in PowerPoint",
+      "description": "Verwandeln Sie Ihre PDFs in PowerPoint-Präsentationen."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF in JPG",
+      "description": "Konvertieren Sie jede PDF-Seite in ein JPG-Bild."
+    },
+    "pdf-to-png": {
+      "name": "PDF in PNG",
+      "description": "Exportieren Sie Ihre PDF-Seiten in hochwertige PNG-Bilder."
+    },
+    "pdf-to-html": {
+      "name": "PDF in HTML",
+      "description": "Konvertieren Sie Ihr PDF in eine HTML-Webseite."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF in PDF/A",
+      "description": "Konvertieren Sie Ihr PDF für die Langzeitarchivierung in PDF/A."
+    },
+    "word-to-pdf": {
+      "name": "Word in PDF",
+      "description": "Konvertieren Sie Ihre Word-Dokumente in PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel in PDF",
+      "description": "Verwandeln Sie Ihre Excel-Tabellen in PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint in PDF",
+      "description": "Konvertieren Sie Ihre PowerPoint-Präsentationen in PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG in PDF",
+      "description": "Kombinieren Sie Ihre JPG-Bilder zu einem PDF-Dokument."
+    },
+    "png-to-pdf": {
+      "name": "PNG in PDF",
+      "description": "Konvertieren Sie Ihre PNG-Bilder in eine PDF-Datei."
+    },
+    "html-to-pdf": {
+      "name": "HTML in PDF",
+      "description": "Konvertieren Sie eine HTML-Webseite in ein PDF-Dokument."
+    },
+    "edit-pdf": {
+      "name": "PDF bearbeiten",
+      "description": "Fügen Sie Text, Bilder, Formen oder Freihandanmerkungen zu einem PDF hinzu."
+    },
+    "rotate-pdf": {
+      "name": "PDF drehen",
+      "description": "Drehen Sie Ihre PDFs so, wie Sie sie benötigen."
+    },
+    "add-page-numbers": {
+      "name": "Seitenzahlen hinzufügen",
+      "description": "Fügen Sie problemlos Seitenzahlen in PDFs ein."
+    },
+    "add-watermark": {
+      "name": "Wasserzeichen hinzufügen",
+      "description": "Stempeln Sie in Sekundenschnelle ein Bild oder Text über Ihr PDF."
+    },
+    "sign-pdf": {
+      "name": "PDF unterschreiben",
+      "description": "Unterschreiben Sie PDF-Dokumente elektronisch."
+    },
+    "fill-pdf-form": {
+      "name": "Formular ausfüllen",
+      "description": "Füllen Sie PDF-Formulare online aus."
+    },
+    "redact-pdf": {
+      "name": "PDF schwärzen",
+      "description": "Verbergen Sie vertrauliche Informationen in Ihrem PDF."
+    },
+    "crop-pdf": {
+      "name": "PDF zuschneiden",
+      "description": "PDF-Ränder zuschneiden, PDF-Seitengröße ändern."
+    },
+    "protect-pdf": {
+      "name": "PDF schützen",
+      "description": "Schützen Sie PDF-Dateien mit einem Passwort."
+    },
+    "unlock-pdf": {
+      "name": "PDF entsperren",
+      "description": "Entfernen Sie die PDF-Passwortsicherheit."
+    },
+    "pdf-ocr": {
+      "name": "PDF OCR",
+      "description": "Machen Sie Ihr gescanntes PDF durchsuchbar."
+    },
+    "compare-pdf": {
+      "name": "PDF vergleichen",
+      "description": "Vergleichen Sie zwei PDF-Dateien und identifizieren Sie Unterschiede."
+    },
+    "ai-pdf-summary": {
+      "name": "KI-Zusammenfassung",
+      "description": "Erhalten Sie eine intelligente Zusammenfassung Ihres PDF-Dokuments."
+    },
+    "ai-pdf-chat": {
+      "name": "Chat mit PDF",
+      "description": "Stellen Sie Ihrem PDF Fragen mithilfe Künstlicher Intelligenz."
+    },
+    "ai-pdf-translate": {
+      "name": "PDF übersetzen",
+      "description": "Übersetzen Sie Ihr PDF-Dokument mit KI in eine andere Sprache."
+    },
+    "edit-metadata": {
+      "name": "Metadaten bearbeiten",
+      "description": "Bearbeiten Sie Titel, Autor und andere Metadaten Ihres PDFs."
+    },
+    "pdf-info": {
+      "name": "PDF-Info",
+      "description": "Alle technischen Informationen Ihrer PDF-Datei anzeigen."
+    },
+    "add-stamp": {
+      "name": "Stempel hinzufügen",
+      "description": "Fügen Sie Ihren PDF-Seiten einen Text- oder Bildstempel hinzu."
+    },
+    "add-attachments": {
+      "name": "PDF-Anhänge",
+      "description": "Betten Sie Dateien als Anhänge in Ihr PDF-Dokument ein."
+    },
+    "extract-images": {
+      "name": "Bilder extrahieren",
+      "description": "Extrahieren Sie alle eingebetteten Bilder aus Ihrem PDF."
+    },
+    "remove-images": {
+      "name": "Bilder entfernen",
+      "description": "Löschen Sie alle Bilder aus Ihrem PDF, um die Größe zu reduzieren."
+    },
+    "multi-page-layout": {
+      "name": "Mehrseitiges Layout",
+      "description": "Ordnen Sie 2, 4, 6 oder 9 PDF-Seiten auf einem einzigen Blatt an."
+    },
+    "overlay-pdf": {
+      "name": "PDF überlagern",
+      "description": "Überlagern Sie ein PDF auf ein anderes (Hintergrund, Kopfzeile, Unterschrift)."
+    },
+    "sanitize-pdf": {
+      "name": "PDF bereinigen",
+      "description": "Entfernen Sie JavaScript, Links und vertrauliche Metadaten aus Ihrem PDF."
+    },
+    "remove-blanks": {
+      "name": "Leere Seiten entfernen",
+      "description": "Erkennen und entfernen Sie automatisch leere Seiten aus Ihrem PDF."
+    }
+  },
+  "Home": {
+    "why_choose": "Warum iLoveDoc wählen?",
+    "security_title": "Maximale Sicherheit",
+    "security_desc": "Ihre Dateien verlassen niemals Ihr Gerät. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser.",
+    "speed_title": "Blitzschnell",
+    "speed_desc": "Ohne Server-Uploads ist die Verarbeitung sofort und nicht auf Ihre Internetverbindung angewiesen.",
+    "no_signup_title": "Ohne Anmeldung",
+    "no_signup_desc": "Beginnen Sie sofort. Keine Kontoerstellung oder E-Mail-Adresse erforderlich, um die Werkzeuge zu nutzen."
   }
 }

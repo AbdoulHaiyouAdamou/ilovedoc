@@ -4,6 +4,7 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { addPageNumbersToPDF, PageNumberPosition, PageNumberFormat } from '@/features/pdf/pageNumbers';
@@ -24,6 +25,8 @@ const POSITIONS: { key: PageNumberPosition; row: number; col: number }[] = [
 ];
 
 export default function AddPageNumbersPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -126,7 +129,7 @@ export default function AddPageNumbersPage() {
             padding: '2rem'
           }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              Ajouter des numéros de pages
+              {tTools('add-page-numbers.name')}
             </h1>
             <p style={{
               fontSize: '1.3rem',
@@ -136,7 +139,7 @@ export default function AddPageNumbersPage() {
               textAlign: 'center',
               lineHeight: '1.5'
             }}>
-              Numérotez facilement les pages de vos documents PDF avec un positionnement et un format personnalisés.
+              {tTools('add-page-numbers.description')}
             </p>
 
             <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
@@ -156,10 +159,10 @@ export default function AddPageNumbersPage() {
                 onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                 onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
-                Sélectionner le fichier PDF
+                {tCommon('select_file')}
               </button>
               <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>
-                ou déposez le PDF ici
+                {tCommon('or_drop')}
               </p>
             </div>
           </div>

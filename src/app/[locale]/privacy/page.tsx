@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import styles from './legal.module.css';
 
@@ -23,15 +24,19 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   return (
     <>
       <Header />
       <main className={styles.main}>
         <article className={styles.article}>
           <header className={styles.hero}>
-            <h1 className={styles.heroTitle}>Politique de Confidentialité</h1>
+            <h1 className={styles.heroTitle}>
+              {tTools('privacy.name')}
+            </h1>
             <p className={styles.lastUpdated}>
-              Dernière mise à jour : 26 mai 2026
+              {tTools('privacy.description')}
             </p>
           </header>
 

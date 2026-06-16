@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Tüm PDF Araçlarınızı Tek Bir Yerden Kullanın",
+    "subtitle": "PDF'leri kullanmak için ihtiyacınız olan tüm araçlar elinizin altında. Hepsi %100 ÜCRETSİZ, güvenli ve kullanımı kolay.",
+    "badge_tools": "46 Araç",
+    "badge_privacy": "Gizlilik Garantili",
+    "badge_local": "Yerel İşlem"
+  },
+  "Common": {
+    "select_file": "PDF Dosyasını Seçin",
+    "or_drop": "veya buraya PDF dosyasını bırakın"
+  },
+  "Header": {
+    "merge": "PDF'LERİ BİRLEŞTİR",
+    "split": "PDF'LERİ AYIR",
+    "compress": "PDF'LERİ SIKIŞTIR",
+    "convert": "PDF'LERİ DÖNÜŞTÜR",
+    "all_tools": "TÜM ARAÇLAR"
+  },
+  "Footer": {
+    "popular": "Popüler Araçlar",
+    "convert": "PDF Dönüştür",
+    "about": "Hakkımızda",
+    "legal": "Hukuki",
+    "about_us": "Kimiz",
+    "contact": "Bize Ulaşın",
+    "blog": "Blog",
+    "faq": "SSS",
+    "terms": "Kullanım Koşulları",
+    "privacy": "Gizlilik Politikası",
+    "cookies": "Çerez Politikası",
+    "rights": "Tüm Hakları Saklıdır"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "PDF'leri Birleştir",
+      "description": "Birden fazla PDF dosyasını tek bir belgeye birleştirin."
+    },
+    "split-pdf": {
+      "name": "PDF'leri Ayır",
+      "description": "Tek bir PDF dosyasını birden fazla dosyaya ayırın veya sayfaları çıkarın."
+    },
+    "remove-pages": {
+      "name": "Sayfaları Kaldır",
+      "description": "PDF'nizden istenmeyen sayfaları kaldırın."
+    },
+    "extract-pages": {
+      "name": "Sayfaları Çıkar",
+      "description": "Belirli sayfaları çıkararak yeni bir PDF oluşturun."
+    },
+    "organize-pdf": {
+      "name": "PDF'yi Düzenle",
+      "description": "PDF'nizin sayfalarını sıralayın ve yeniden düzenleyin."
+    },
+    "compress-pdf": {
+      "name": "PDF'yi Sıkıştır",
+      "description": "PDF dosyalarınızın boyutunu kalite kaybetmeden azaltın."
+    },
+    "repair-pdf": {
+      "name": "PDF'yi Onar",
+      "description": "Hasarlı veya bozuk bir PDF dosyasını onarın."
+    },
+    "flatten-pdf": {
+      "name": "PDF'yi Düzleştir",
+      "description": "PDF'nizdeki formları ve notları düzleştirin."
+    },
+    "pdf-to-word": {
+      "name": "PDF'yi Word'e Dönüştür",
+      "description": "PDF'nizi düzenlenebilir Word belgelerine dönüştürün."
+    },
+    "pdf-to-excel": {
+      "name": "PDF'yi Excel'e Dönüştür",
+      "description": "PDF tablolarınızı Excel elektronik tablolarına dönüştürün."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF'yi PowerPoint'e Dönüştür",
+      "description": "PDF'nizi PowerPoint sunumlarına dönüştürün."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF'yi JPG'ye Dönüştür",
+      "description": "PDF'nizin her sayfasını JPG resmine dönüştürün."
+    },
+    "pdf-to-png": {
+      "name": "PDF'yi PNG'ye Dönüştür",
+      "description": "PDF'nizin sayfalarını yüksek kaliteli PNG resimlerine dönüştürün."
+    },
+    "pdf-to-html": {
+      "name": "PDF'yi HTML'ye Dönüştür",
+      "description": "PDF'nizi HTML web sayfasına dönüştürün."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF'yi PDF/A'ya Dönüştür",
+      "description": "PDF'nizi uzun süreli arşivleme için PDF/A formatına dönüştürün."
+    },
+    "word-to-pdf": {
+      "name": "Word'ü PDF'ye Dönüştür",
+      "description": "Word belgelerinizi PDF'lere dönüştürün."
+    },
+    "excel-to-pdf": {
+      "name": "Excel'i PDF'ye Dönüştür",
+      "description": "Excel elektronik tablolarınızı PDF'lere dönüştürün."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint'i PDF'ye Dönüştür",
+      "description": "PowerPoint sunumlarınızı PDF'lere dönüştürün."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG'yi PDF'ye Dönüştür",
+      "description": "JPG resimlerinizi tek bir PDF belgesine birleştirin."
+    },
+    "png-to-pdf": {
+      "name": "PNG'yi PDF'ye Dönüştür",
+      "description": "PNG resimlerinizi PDF dosyasına dönüştürün."
+    },
+    "html-to-pdf": {
+      "name": "HTML'yi PDF'ye Dönüştür",
+      "description": "HTML web sayfasını PDF belgesine dönüştürün."
+    },
+    "edit-pdf": {
+      "name": "PDF'yi Düzenle",
+      "description": "PDF'nize metin, resim ve şekiller ekleyin."
+    },
+    "rotate-pdf": {
+      "name": "PDF'yi Döndür",
+      "description": "PDF'nizin sayfalarını döndürün."
+    },
+    "add-page-numbers": {
+      "name": "Sayfa Numaraları Ekle",
+      "description": "PDF'nize sayfa numaraları ekleyin."
+    },
+    "add-watermark": {
+      "name": "Filigran Ekle",
+      "description": "PDF'nize metin veya resim filigran ekleyin."
+    },
+    "sign-pdf": {
+      "name": "PDF'yi İmzala",
+      "description": "PDF belgelerinizi elektronik olarak imzalayın."
+    },
+    "fill-pdf-form": {
+      "name": "PDF Formunu Doldur",
+      "description": "PDF formlarını çevrimiçi doldurun."
+    },
+    "redact-pdf": {
+      "name": "PDF'yi Karart",
+      "description": "PDF'nizdeki hassas bilgileri gizleyin."
+    },
+    "crop-pdf": {
+      "name": "PDF'yi Kırp",
+      "description": "PDF'nizin kenarlarını ayarlayın ve sayfalarını kırpın."
+    },
+    "protect-pdf": {
+      "name": "PDF'yi Korumak",
+      "description": "PDF'nizi parola ile koruyun."
+    },
+    "unlock-pdf": {
+      "name": "PDF'yi Kilidini Aç",
+      "description": "Korunan bir PDF dosyasının parolasını kaldırın."
+    },
+    "pdf-ocr": {
+      "name": "PDF OCR",
+      "description": "Taranan PDF'nizi aranabilir hale getirin."
+    },
+    "compare-pdf": {
+      "name": "PDF'leri Karşılaştır",
+      "description": "İki PDF dosyasını karşılaştırın ve farklılıkları belirleyin."
+    },
+    "ai-pdf-summary": {
+      "name": "Yapay Zeka Özeti",
+      "description": "PDF belgenizin akıllı bir özeti alın."
+    },
+    "ai-pdf-chat": {
+      "name": "PDF ile Sohbet",
+      "description": "Yapay zeka ile PDF'nize sorular sorun."
+    },
+    "ai-pdf-translate": {
+      "name": "PDF'yi Çevir",
+      "description": "PDF'nizi başka bir dile yapay zeka ile çevirin."
+    },
+    "edit-metadata": {
+      "name": "Meta Verileri Düzenle",
+      "description": "PDF'nizin başlığını, yazarını ve diğer meta verilerini düzenleyin."
+    },
+    "pdf-info": {
+      "name": "PDF Bilgisi",
+      "description": "PDF dosyanızın tüm teknik bilgilerini görüntüleyin."
+    },
+    "add-stamp": {
+      "name": "Damga Ekle",
+      "description": "PDF'nizin sayfalarına metin veya resim damgası ekleyin."
+    },
+    "add-attachments": {
+      "name": "Ekleri Ekle",
+      "description": "PDF belgenize dosyaları ekleyin."
+    },
+    "extract-images": {
+      "name": "Resimleri Çıkar",
+      "description": "PDF'nizdeki tüm resimleri çıkarın."
+    },
+    "remove-images": {
+      "name": "Resimleri Kaldır",
+      "description": "PDF'nizdeki tüm resimleri kaldırarak boyutunu azaltın."
+    },
+    "multi-page-layout": {
+      "name": "Çok Sayfalı Düzen",
+      "description": "2, 4, 6 veya 9 sayfa PDF'yi tek bir sayfaya düzenleyin."
+    },
+    "overlay-pdf": {
+      "name": "PDF'leri Üzerine Yerleştir",
+      "description": "Bir PDF'yi başka bir PDF'nin üzerine yerleştirin (arka plan, başlık, imza)."
+    },
+    "sanitize-pdf": {
+      "name": "PDF'yi Temizle",
+      "description": "PDF'nizden JavaScript, bağlantılar ve hassas meta verileri kaldırın."
+    },
+    "remove-blanks": {
+      "name": "Boş Sayfaları Kaldır",
+      "description": "PDF'nizdeki boş sayfaları otomatik olarak tespit edin ve kaldırın."
+    }
+  },
+  "Home": {
+    "why_choose": "Neden iLoveDoc'u Seçmelisiniz?",
+    "security_title": "Maksimum Güvenlik",
+    "security_desc": "Dosyalarınız hiçbir zaman cihazınızdan ayrılmaz. İşlem yerel olarak tarayıcınızda yapılır.",
+    "speed_title": "Ultra Hızlı",
+    "speed_desc": "Sunucuya yükleme olmadan işlemler anlık ve internet bağlantınızdan bağımsız olarak gerçekleşir.",
+    "no_signup_title": "Kayıt Gerektirmez",
+    "no_signup_desc": "Hemen başlayın. Araçları kullanmak için hesap oluşturmanıza veya e-posta adresinizi vermenize gerek yoktur."
+  }
+}

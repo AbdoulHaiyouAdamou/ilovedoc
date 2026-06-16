@@ -4,12 +4,15 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { mergePDFs } from '@/features/pdf/merge';
 import { FileUp, ArrowUp, ArrowDown, X, CheckCircle } from 'lucide-react';
 
 export default function MergePDFPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [files, setFiles] = useState<File[]>([]);
@@ -114,11 +117,11 @@ export default function MergePDFPage() {
           <>
             <div style={{ minHeight: 'calc(100vh - 70px)', flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
               <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-                Fusionner PDF
-              </h1>
+              {tTools('merge-pdf.name')}
+            </h1>
               <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-                Combinez plusieurs fichiers PDF en un seul document. C'est rapide, gratuit et sécurisé.
-              </p>
+              {tTools('merge-pdf.description')}
+            </p>
               
               <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
                 <input {...getInputProps()} />
@@ -137,9 +140,9 @@ export default function MergePDFPage() {
                 onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                 onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 >
-                  Sélectionner les fichiers PDF
+                  {tCommon('select_file')}
                 </button>
-                <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>ou déposez les PDF ici</p>
+                <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>{tCommon('or_drop')}</p>
               </div>
             </div>
 

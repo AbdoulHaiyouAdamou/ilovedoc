@@ -3,12 +3,14 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { getToolBySlug } from '@/config/tools';
+import { useTranslations } from 'next-intl';
 
 interface ToolCardProps {
   slug: string;
 }
 
 export default function ToolCard({ slug }: ToolCardProps) {
+  const tTools = useTranslations('Tools');
   const tool = getToolBySlug(slug);
   if (!tool) return null;
   const [hovered, setHovered] = useState(false);
@@ -81,7 +83,7 @@ export default function ToolCard({ slug }: ToolCardProps) {
           lineHeight: 1.3,
         }}
       >
-        {tool.name}
+        {tTools(`${tool.slug}.name`)}
       </h3>
 
       <p
@@ -95,7 +97,7 @@ export default function ToolCard({ slug }: ToolCardProps) {
           flex: 1,
         }}
       >
-        {tool.description}
+        {tTools(`${tool.slug}.description`)}
       </p>
 
       {!tool.isAvailable && (

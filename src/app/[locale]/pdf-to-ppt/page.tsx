@@ -4,6 +4,7 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useCallback, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { convertPdfToPpt } from '@/features/pdf/office';
@@ -15,6 +16,8 @@ const TOOL_COLOR: [string, string] = ['#ea580c', '#c2410c'];
 
 
 export default function PdfToPptPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -113,10 +116,10 @@ export default function PdfToPptPage() {
             padding: '2rem'
           }}>
             <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              PDF en PowerPoint
+              {tTools('pdf-to-ppt.name')}
             </h1>
             <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              Convertissez vos fichiers PDF en présentations PowerPoint (.pptx). Structure et textes préservés.
+              {tTools('pdf-to-ppt.description')}
             </p>
 
             <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
@@ -137,7 +140,7 @@ export default function PdfToPptPage() {
               onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
-                Sélectionner le fichier PDF
+                {tCommon('select_file')}
               </button>
               <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>
                 ou glissez-déposez le fichier ici

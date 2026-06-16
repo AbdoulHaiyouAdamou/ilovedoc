@@ -1,0 +1,229 @@
+{
+  "Hero": {
+    "title": "Tất cả các công cụ PDF ở một nơi",
+    "subtitle": "Tất cả các công cụ bạn cần để sử dụng PDF, trong tầm tay. Chúng đều 100% MIỄN PHÍ, bảo mật và dễ sử dụng.",
+    "badge_tools": "46 Công cụ",
+    "badge_privacy": "Bảo mật Được Đảm bảo",
+    "badge_local": "Xử lý Địa phương"
+  },
+  "Common": {
+    "select_file": "Chọn tệp PDF",
+    "or_drop": "hoặc thả PDF tại đây"
+  },
+  "Header": {
+    "merge": "NHẬP PDF",
+    "split": "CHIA PDF",
+    "compress": "NÉN PDF",
+    "convert": "CHUYỂN ĐỔI PDF",
+    "all_tools": "TẤT CẢ CÁC CÔNG CỤ"
+  },
+  "Footer": {
+    "popular": "Công cụ Phổ biến",
+    "convert": "Chuyển đổi PDF",
+    "about": "Về chúng tôi",
+    "legal": "Pháp lý",
+    "about_us": "Ai là chúng tôi",
+    "contact": "Liên hệ với chúng tôi",
+    "blog": "Blog",
+    "faq": "Câu hỏi thường gặp",
+    "terms": "Điều khoản sử dụng",
+    "privacy": "Chính sách bảo mật",
+    "cookies": "Chính sách cookie",
+    "rights": "Bản quyền thuộc về"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Nhập PDF",
+      "description": "Kết hợp nhiều tệp PDF thành một tài liệu duy nhất."
+    },
+    "split-pdf": {
+      "name": "Chia PDF",
+      "description": "Chia một PDF thành nhiều tệp hoặc trích xuất các trang."
+    },
+    "remove-pages": {
+      "name": "Xóa trang",
+      "description": "Xóa các trang không mong muốn khỏi PDF của bạn."
+    },
+    "extract-pages": {
+      "name": "Trích xuất trang",
+      "description": "Trích xuất các trang cụ thể để tạo một PDF mới."
+    },
+    "organize-pdf": {
+      "name": "Tổ chức PDF",
+      "description": "Sắp xếp và tái tổ chức các trang của PDF của bạn."
+    },
+    "compress-pdf": {
+      "name": "Nén PDF",
+      "description": "Giảm kích thước của các tệp PDF của bạn mà không mất chất lượng."
+    },
+    "repair-pdf": {
+      "name": "Sửa chữa PDF",
+      "description": "Sửa chữa một tệp PDF bị hỏng hoặc bị lỗi."
+    },
+    "flatten-pdf": {
+      "name": "Làm phẳng PDF",
+      "description": "Làm phẳng các biểu mẫu và chú thích trong PDF của bạn."
+    },
+    "pdf-to-word": {
+      "name": "PDF sang Word",
+      "description": "Chuyển đổi PDF của bạn thành tài liệu Word có thể chỉnh sửa."
+    },
+    "pdf-to-excel": {
+      "name": "PDF sang Excel",
+      "description": "Chuyển đổi bảng PDF của bạn thành bảng tính Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF sang PowerPoint",
+      "description": "Chuyển đổi PDF của bạn thành trình bày PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF sang JPG",
+      "description": "Chuyển đổi mỗi trang của PDF của bạn thành hình ảnh JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF sang PNG",
+      "description": "Xuất các trang PDF của bạn thành hình ảnh PNG chất lượng cao."
+    },
+    "pdf-to-html": {
+      "name": "PDF sang HTML",
+      "description": "Chuyển đổi PDF của bạn thành trang web HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF sang PDF/A",
+      "description": "Chuyển đổi PDF của bạn sang định dạng PDF/A để lưu trữ lâu dài."
+    },
+    "word-to-pdf": {
+      "name": "Word sang PDF",
+      "description": "Chuyển đổi tài liệu Word của bạn thành PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel sang PDF",
+      "description": "Chuyển đổi bảng tính Excel của bạn thành PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint sang PDF",
+      "description": "Chuyển đổi trình bày PowerPoint của bạn thành PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG sang PDF",
+      "description": "Kết hợp hình ảnh JPG của bạn thành một tài liệu PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG sang PDF",
+      "description": "Chuyển đổi hình ảnh PNG của bạn thành tệp PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML sang PDF",
+      "description": "Chuyển đổi trang web HTML thành tài liệu PDF."
+    },
+    "edit-pdf": {
+      "name": "Chỉnh sửa PDF",
+      "description": "Thêm văn bản, hình ảnh và hình dạng vào PDF của bạn."
+    },
+    "rotate-pdf": {
+      "name": "Xoay PDF",
+      "description": "Xoay các trang của PDF của bạn."
+    },
+    "add-page-numbers": {
+      "name": "Thêm số trang",
+      "description": "Thêm số trang vào tài liệu PDF của bạn."
+    },
+    "add-watermark": {
+      "name": "Thêm dấu nước",
+      "description": "Thêm dấu nước văn bản hoặc hình ảnh vào PDF của bạn."
+    },
+    "sign-pdf": {
+      "name": "Ký PDF",
+      "description": "Ký tài liệu PDF của bạn điện tử."
+    },
+    "fill-pdf-form": {
+      "name": "Điền biểu mẫu",
+      "description": "Điền biểu mẫu PDF trực tuyến."
+    },
+    "redact-pdf": {
+      "name": "Che dấu PDF",
+      "description": "Che giấu thông tin nhạy cảm trong PDF của bạn."
+    },
+    "crop-pdf": {
+      "name": "Cắt PDF",
+      "description": "Cắt lề và cắt các trang của PDF của bạn."
+    },
+    "protect-pdf": {
+      "name": "Bảo vệ PDF",
+      "description": "Thêm mật khẩu để bảo vệ PDF của bạn."
+    },
+    "unlock-pdf": {
+      "name": "Mở khóa PDF",
+      "description": "Xóa mật khẩu của tài liệu PDF được bảo vệ."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Làm cho PDF quét của bạn có thể tìm kiếm được."
+    },
+    "compare-pdf": {
+      "name": "So sánh PDF",
+      "description": "So sánh hai tệp PDF và xác định sự khác biệt."
+    },
+    "ai-pdf-summary": {
+      "name": "Tóm tắt AI",
+      "description": "Nhận được tóm tắt thông minh của tài liệu PDF của bạn."
+    },
+    "ai-pdf-chat": {
+      "name": "Trò chuyện với PDF",
+      "description": "Đặt câu hỏi cho PDF của bạn bằng trí tuệ nhân tạo."
+    },
+    "ai-pdf-translate": {
+      "name": "Dịch PDF",
+      "description": "Dịch tài liệu PDF của bạn sang ngôn ngữ khác bằng trí tuệ nhân tạo."
+    },
+    "edit-metadata": {
+      "name": "Chỉnh sửa siêu dữ liệu",
+      "description": "Chỉnh sửa tiêu đề, tác giả và các siêu dữ liệu khác của PDF của bạn."
+    },
+    "pdf-info": {
+      "name": "Thông tin PDF",
+      "description": "Hiển thị tất cả thông tin kỹ thuật của tệp PDF của bạn."
+    },
+    "add-stamp": {
+      "name": "Thêm dấu",
+      "description": "Thêm dấu văn bản hoặc hình ảnh vào các trang của PDF của bạn."
+    },
+    "add-attachments": {
+      "name": "Tệp đính kèm PDF",
+      "description": "Tích hợp các tệp vào tài liệu PDF của bạn."
+    },
+    "extract-images": {
+      "name": "Trích xuất hình ảnh",
+      "description": "Trích xuất tất cả hình ảnh được nhúng trong tài liệu PDF của bạn."
+    },
+    "remove-images": {
+      "name": "Xóa hình ảnh",
+      "description": "Xóa tất cả hình ảnh khỏi PDF của bạn để giảm kích thước."
+    },
+    "multi-page-layout": {
+      "name": "Bố cục nhiều trang",
+      "description": "Sắp xếp 2, 4, 6 hoặc 9 trang PDF trên một tờ giấy."
+    },
+    "overlay-pdf": {
+      "name": "Đặt chồng PDF",
+      "description": "Đặt chồng một PDF lên một PDF khác (phông nền, tiêu đề, chữ ký)."
+    },
+    "sanitize-pdf": {
+      "name": "Làm sạch PDF",
+      "description": "Xóa JavaScript, liên kết và siêu dữ liệu nhạy cảm khỏi PDF của bạn."
+    },
+    "remove-blanks": {
+      "name": "Xóa trang trống",
+      "description": "Tự động phát hiện và xóa các trang trống khỏi PDF của bạn."
+    }
+  },
+  "Home": {
+    "why_choose": "Tại sao chọn iLoveDoc?",
+    "security_title": "Bảo mật Tối đa",
+    "security_desc": "Tệp của bạn không bao giờ rời khỏi thiết bị của bạn. Xử lý được thực hiện cục bộ trong trình duyệt của bạn.",
+    "speed_title": "Siêu Nhanh",
+    "speed_desc": "Không cần tải lên máy chủ, xử lý tức thời và không phụ thuộc vào kết nối internet của bạn.",
+    "no_signup_title": "Không cần Đăng ký",
+    "no_signup_desc": "Bắt đầu ngay. Không cần tạo tài khoản hoặc cung cấp email để sử dụng các công cụ."
+  }
+}

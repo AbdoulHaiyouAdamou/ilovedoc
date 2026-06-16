@@ -6,50 +6,7 @@ import { AtSign, Code, Briefcase, Video, Heart, Globe, ChevronUp, Check } from '
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
 
-const columns = [
-  {
-    title: 'Outils Populaires',
-    links: [
-      { href: '/merge-pdf', label: 'Fusionner PDF' },
-      { href: '/split-pdf', label: 'Diviser PDF' },
-      { href: '/compress-pdf', label: 'Compresser PDF' },
-      { href: '/rotate-pdf', label: 'Rotation PDF' },
-      { href: '/remove-pages', label: 'Supprimer des pages' },
-      { href: '/organize-pdf', label: 'Organiser PDF' },
-    ],
-  },
-  {
-    title: 'Convertir PDF',
-    links: [
-      { href: '/pdf-to-word', label: 'PDF en Word' },
-      { href: '/pdf-to-excel', label: 'PDF en Excel' },
-      { href: '/pdf-to-jpg', label: 'PDF en JPG' },
-      { href: '/pdf-to-ppt', label: 'PDF en PowerPoint' },
-      { href: '/word-to-pdf', label: 'Word en PDF' },
-      { href: '/jpg-to-pdf', label: 'JPG en PDF' },
-      { href: '/excel-to-pdf', label: 'Excel en PDF' },
-    ],
-  },
-  {
-    title: 'À Propos',
-    links: [
-      { href: '/about', label: 'Qui sommes-nous' },
-      { href: '/contact', label: 'Contactez-nous' },
-      { href: '/blog', label: 'Blog' },
-      { href: '/faq', label: 'FAQ' },
-    ],
-  },
-  {
-    title: 'Légal',
-    links: [
-      { href: '/terms', label: 'Mentions légales' },
-      { href: '/privacy', label: 'Politique de confidentialité' },
-      { href: '/terms', label: "Conditions d'utilisation" },
-      { href: '/privacy', label: 'Politique de cookies' },
-    ],
-  },
-];
-
+// Columns array moved inside the component to access translations
 const socials = [
   { label: 'Twitter / X', icon: <AtSign size={18} />, href: 'https://x.com' },
   { label: 'GitHub', icon: <Code size={18} />, href: 'https://github.com' },
@@ -149,7 +106,56 @@ const CODE_TO_LANG: Record<string, string> = {
   'sr': 'Српски'
 };
 
+import { useTranslations } from 'next-intl';
+
 export default function Footer() {
+  const tFooter = useTranslations('Footer');
+  const tTools = useTranslations('Tools');
+  const tHero = useTranslations('Hero');
+
+  const columns = [
+    {
+      title: tFooter('popular'),
+      links: [
+        { href: '/merge-pdf', label: tTools('merge-pdf.name') },
+        { href: '/split-pdf', label: tTools('split-pdf.name') },
+        { href: '/compress-pdf', label: tTools('compress-pdf.name') },
+        { href: '/rotate-pdf', label: tTools('rotate-pdf.name') },
+        { href: '/remove-pages', label: tTools('remove-pages.name') },
+        { href: '/organize-pdf', label: tTools('organize-pdf.name') },
+      ],
+    },
+    {
+      title: tFooter('convert'),
+      links: [
+        { href: '/pdf-to-word', label: tTools('pdf-to-word.name') },
+        { href: '/pdf-to-excel', label: tTools('pdf-to-excel.name') },
+        { href: '/pdf-to-jpg', label: tTools('pdf-to-jpg.name') },
+        { href: '/pdf-to-ppt', label: tTools('pdf-to-ppt.name') },
+        { href: '/word-to-pdf', label: tTools('word-to-pdf.name') },
+        { href: '/jpg-to-pdf', label: tTools('jpg-to-pdf.name') },
+        { href: '/excel-to-pdf', label: tTools('excel-to-pdf.name') },
+      ],
+    },
+    {
+      title: tFooter('about'),
+      links: [
+        { href: '/about', label: tFooter('about_us') },
+        { href: '/contact', label: tFooter('contact') },
+        { href: '/blog', label: tFooter('blog') },
+        { href: '/faq', label: tFooter('faq') },
+      ],
+    },
+    {
+      title: tFooter('legal'),
+      links: [
+        { href: '/terms', label: tFooter('terms') },
+        { href: '/privacy', label: tFooter('privacy') },
+        { href: '/privacy', label: tFooter('cookies') },
+      ],
+    },
+  ];
+
   const locale = useLocale();
   const selectedLang = CODE_TO_LANG[locale] || 'Français';
   const [isOpen, setIsOpen] = useState(false);
@@ -226,9 +232,7 @@ export default function Footer() {
                 maxWidth: 260,
               }}
             >
-              Tous vos outils PDF en un seul endroit.
-              Gratuit, sécurisé, 100&nbsp;% en ligne.
-              Aucune inscription requise.
+              {tHero('subtitle')}
             </p>
 
             {/* Socials */}
@@ -317,7 +321,7 @@ export default function Footer() {
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexWrap: 'wrap' }}>
             <span style={{ fontSize: 13, color: '#6b6b82' }}>
-              © {new Date().getFullYear()} iLoveDoc. Tous droits réservés.
+              © {new Date().getFullYear()} iLoveDoc. {tFooter('rights')}
             </span>
 
             {/* Language Dropdown */}

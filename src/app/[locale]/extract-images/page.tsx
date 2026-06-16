@@ -3,6 +3,7 @@ import SEO from '@/components/common/SEO';
 import React, { useState, useCallback , useEffect} from 'react';
 import { useDropzone } from 'react-dropzone';
 import Header from '@/components/common/Header';
+import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { extractImagesFromPdf, ExtractedImage } from '@/features/pdf/extractImages';
@@ -12,6 +13,8 @@ const TOOL_COLOR = '#ec4899';
 const GRADIENT = 'linear-gradient(to right, #ec4899, #db2777)';
 
 export default function ExtractImagesPage() {
+  const tTools = useTranslations('Tools');
+  const tCommon = useTranslations('Common');
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [file, setFile] = useState<File | null>(null);
@@ -49,17 +52,19 @@ export default function ExtractImagesPage() {
       <Header />
       <main className="tool-page-layout" style={{ padding: 0 }}>
         <div style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>Extraire les images</h1>
+          <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
+              {tTools('extract-images.name')}
+            </h1>
           <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: 800, textAlign: 'center', lineHeight: 1.5 }}>
-            Extrayez toutes les images intégrées dans votre document PDF.
-          </p>
+              {tTools('extract-images.description')}
+            </p>
           <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
             <input {...getInputProps()} />
             <button style={{ backgroundColor: TOOL_COLOR, color: 'white', border: 'none', padding: '1.8rem 4rem', fontSize: '1.8rem', fontWeight: 'bold', borderRadius: 12, boxShadow: `0 10px 25px ${TOOL_COLOR}66`, cursor: 'pointer', transition: 'transform 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
-              Sélectionner le fichier PDF
+              {tCommon('select_file')}
             </button>
-            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>ou déposez le PDF ici</p>
+            <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>{tCommon('or_drop')}</p>
           </div>
         </div>
         <div className="container" style={{ padding: '4rem 2rem' }}>
