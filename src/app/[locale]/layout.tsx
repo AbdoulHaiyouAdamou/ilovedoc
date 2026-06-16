@@ -1,12 +1,14 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import GoogleTranslate from '@/components/common/GoogleTranslate';
 import ScrollToTop from '@/components/common/ScrollToTop';
-import './globals.css';
-import './workspace.css';
+import '../globals.css';
+import '../workspace.css';
 
-/* ── Google Font ────────────────────────────────────────────── */
+
 const inter = Inter({
   subsets: ['latin'],
   display: 'block', // Prevent font flash (FOUT)
@@ -14,7 +16,7 @@ const inter = Inter({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
 
-/* ── Metadata ───────────────────────────────────────────────── */
+
 export const metadata: Metadata = {
   title: {
     default: 'iLoveDoc - Outils PDF en Ligne Gratuits',
@@ -90,7 +92,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-/* ── JSON-LD Structured Data ────────────────────────────────── */
+
 function JsonLd() {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -124,7 +126,7 @@ function JsonLd() {
   );
 }
 
-/* ── Google AdSense (production only) ───────────────────────── */
+
 function GoogleAdSense() {
   const publisherId = process.env.NEXT_PUBLIC_ADSENSE_ID;
   if (!publisherId) return null;
@@ -138,17 +140,21 @@ function GoogleAdSense() {
   );
 }
 
-/* ── Root Layout ────────────────────────────────────────────── */
+
 export default async function RootLayout({
   children,
+  params
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const cookieStore = await cookies();
   const theme = cookieStore.get('ilovedoc-theme')?.value || '';
+  const messages = await getMessages();
 
   return (
-    <html lang="fr" className={`${inter.variable} ${theme}`} suppressHydrationWarning>
+    <html lang={locale} className={`${inter.variable} ${theme}`} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -219,9 +225,10 @@ export default async function RootLayout({
         {process.env.NODE_ENV === 'production' && <GoogleAdSense />}
       </head>
       <body className={inter.className}>
-        <ScrollToTop />
-        {children}
-        <GoogleTranslate />
+        <NextIntlClientProvider messages={messages}>
+          <ScrollToTop />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

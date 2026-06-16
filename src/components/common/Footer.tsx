@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { AtSign, Code, Briefcase, Video, Heart, Globe, ChevronUp, Check } from 'lucide-react';
+import { useLocale } from 'next-intl';
+import { usePathname, useRouter } from '@/i18n/routing';
 
 const columns = [
   {
@@ -148,9 +150,12 @@ const CODE_TO_LANG: Record<string, string> = {
 };
 
 export default function Footer() {
-  const [selectedLang, setSelectedLang] = useState('Français');
+  const locale = useLocale();
+  const selectedLang = CODE_TO_LANG[locale] || 'Français';
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -164,91 +169,12 @@ export default function Footer() {
     };
   }, []);
 
-  // Handle Google Translate cookie logic on mount — NO auto-reload
-  useEffect(() => {
-    // Helper to extract cookie values
-    const getCookie = (name: string) => {
-      if (typeof document === 'undefined') return '';
-      const value = `; ${document.cookie}`;
-      const parts = value.split(`; ${name}=`);
-      if (parts.length === 2) return parts.pop()?.split(';').shift() || '';
-      return '';
-    };
-
-    // If a reload was just triggered by us, don't do anything else
-    const reloadPending = sessionStorage.getItem('ilovedoc-lang-reload');
-    if (reloadPending) {
-      sessionStorage.removeItem('ilovedoc-lang-reload');
-      const pendingLang = localStorage.getItem('ilovedoc-lang') || 'Français';
-      setSelectedLang(pendingLang);
-      return;
+  const selectLanguage = (langName: string) => {
+    const code = LANGUAGE_CODES[langName];
+    if (code && code !== locale) {
+      router.replace(pathname, { locale: code });
     }
-
-    // Check if the user already chose a language before (manually)
-    const isManual = localStorage.getItem('ilovedoc-lang-manual') === 'true';
-    const savedLang = localStorage.getItem('ilovedoc-lang');
-
-    // Detect browser language
-    const browserLang = typeof navigator !== 'undefined' ? navigator.language.split('-')[0] : 'fr';
-    const detectedLang = CODE_TO_LANG[browserLang] || 'Français';
-
-    // If they manually chose a language, respect it. Otherwise, follow the browser language.
-    const targetLang = (isManual && savedLang) ? savedLang : detectedLang;
-    setSelectedLang(targetLang);
-    localStorage.setItem('ilovedoc-lang', targetLang);
-
-    // Ensure cookie matches target language
-    const targetCode = LANGUAGE_CODES[targetLang] || 'fr';
-    const currentGoogTrans = getCookie('googtrans');
-    const currentCode = currentGoogTrans ? currentGoogTrans.split('/').pop() : '';
-
-    if (currentCode !== targetCode) {
-      // Don't trigger a reload if target language is French and it's already showing French (empty currentCode)
-      if (targetCode === 'fr' && !currentCode) {
-        return;
-      }
-
-      const hostname = window.location.hostname;
-      const domainParts = hostname.split('.');
-      const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
-
-      document.cookie = `googtrans=/fr/${targetCode}; path=/; domain=${hostname}; SameSite=Lax`;
-      document.cookie = `googtrans=/fr/${targetCode}; path=/; domain=${cookieDomain}; SameSite=Lax`;
-      document.cookie = `googtrans=/fr/${targetCode}; path=/; SameSite=Lax`;
-
-      sessionStorage.setItem('ilovedoc-lang-reload', 'true');
-      window.location.reload();
-    }
-  }, []);
-
-  const selectLanguage = (lang: string) => {
-    setSelectedLang(lang);
     setIsOpen(false);
-    localStorage.setItem('ilovedoc-lang', lang);
-    localStorage.setItem('ilovedoc-lang-manual', 'true'); // Flag manual selection to ignore automatic browser override
-
-    const code = LANGUAGE_CODES[lang];
-    if (code) {
-      const hostname = window.location.hostname;
-      const domainParts = hostname.split('.');
-      const cookieDomain = domainParts.length > 1 ? `.${domainParts.slice(-2).join('.')}` : hostname;
-
-      // Set target language translate cookie
-      document.cookie = `googtrans=/fr/${code}; path=/; domain=${hostname}; SameSite=Lax`;
-      document.cookie = `googtrans=/fr/${code}; path=/; domain=${cookieDomain}; SameSite=Lax`;
-      document.cookie = `googtrans=/fr/${code}; path=/; SameSite=Lax`;
-
-      // Try to trigger Google Translate directly without reload
-      const selectEl = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-      if (selectEl) {
-        selectEl.value = code;
-        selectEl.dispatchEvent(new Event('change'));
-      } else {
-        // Mark that we're reloading intentionally, then reload
-        sessionStorage.setItem('ilovedoc-lang-reload', 'true');
-        window.location.reload();
-      }
-    }
   };
 
   return (

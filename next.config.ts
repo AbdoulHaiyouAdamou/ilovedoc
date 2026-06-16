@@ -26,6 +26,12 @@ const cspDirectives = [
   "upgrade-insecure-requests",
 ].join('; ');
 
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin(
+  './src/i18n/request.ts'
+);
+
 const nextConfig: NextConfig = {
   async headers() {
     return [
@@ -33,8 +39,6 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: [
           {
-            // Report-Only during rollout: reports violations without blocking.
-            // Switch the key to "Content-Security-Policy" once validated.
             key: "Content-Security-Policy-Report-Only",
             value: cspDirectives,
           },
@@ -68,4 +72,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

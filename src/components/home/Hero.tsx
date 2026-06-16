@@ -20,8 +20,11 @@ const filesData = [
   { type: 'DOC', icon: '📝', color: '#2563eb', side: 'right', x: 9, top: 80 },
 ];
 
+import { useTranslations } from 'next-intl';
+
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations('Hero');
 
   useEffect(() => {
     const container = containerRef.current;
@@ -90,10 +93,10 @@ export default function Hero() {
       <div className="container" style={{ position: 'relative', zIndex: 5 }}>
         <div className="hero-content">
           <h1 className="hero-title hero-title-shimmer">
-            Tous vos outils PDF en un seul endroit
+            {t('title')}
           </h1>
           <p className="hero-subtitle">
-            Tous les outils dont vous avez besoin pour utiliser les PDF, à portée de main. Ils sont tous 100% GRATUITS, sécurisés et simples d'utilisation.
+            {t('subtitle')}
           </p>
           <div className="hero-stats">
             <span className="badge"><Sparkles size={16} /> 46 Outils</span>
