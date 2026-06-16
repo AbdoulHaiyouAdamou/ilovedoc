@@ -225,5 +225,11 @@
     "speed_desc": "无需上传到服务器，处理速度瞬间，不依赖于您的互联网连接。",
     "no_signup_title": "无需注册",
     "no_signup_desc": "立即开始使用，无需创建帐户或提供电子邮件地址即可使用工具。"
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

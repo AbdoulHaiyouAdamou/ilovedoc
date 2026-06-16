@@ -225,5 +225,11 @@
     "speed_desc": "Bila kuweka faili kwenye seva, utunzaji ni wa haraka na hautegeezi na uunganisho wako wa intaneti.",
     "no_signup_title": "Bila Kuandikisha",
     "no_signup_desc": "Anza mara moja. Hakuna haja ya kuunda akaunti au kutoa anwani yako ya barua pepe ili kutumia zana."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

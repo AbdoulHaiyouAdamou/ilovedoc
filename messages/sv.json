@@ -225,5 +225,11 @@
     "speed_desc": "Inga uppladdningar till en server, bearbetningen är omedelbar och beror inte på din internetanslutning.",
     "no_signup_title": "Ingen Registrering",
     "no_signup_desc": "Börja genast. Inga konton eller e-postadresser behövs för att använda verktygen."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

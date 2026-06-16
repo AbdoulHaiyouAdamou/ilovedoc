@@ -1,14 +1,235 @@
 {
-  "Hero": { "title": "Сви ваши PDF алати на једном месту", "subtitle": "Сви алати који су вам потребни за рад са PDF фајловима, надохват руке. Сви су 100% БЕСПЛАТНИ, сигурни и једноставни за коришћење.", "badge_tools": "46 Алата", "badge_privacy": "Приватност Гарантована", "badge_local": "Локална Обрада" },
-  "Common": { "select_file": "Изаберите PDF фајл", "or_drop": "или превуците PDF овде" },
-  "Header": { "merge": "СПОЈИ PDF", "split": "ПОДЕЛИ PDF", "compress": "КОМПРИМУЈ PDF", "convert": "КОНВЕРТУЈ PDF", "all_tools": "СВИ АЛАТИ" },
-  "Footer": { "popular": "Популарни Алати", "convert": "Конвертуј PDF", "about": "О Нама", "legal": "Правно", "about_us": "Ко смо ми", "contact": "Контактирајте нас", "blog": "Блог", "faq": "FAQ", "terms": "Услови коришћења", "privacy": "Политика приватности", "cookies": "Политика колачића", "rights": "Сва права задржана" },
-  "Tools": {
-    "merge-pdf": { "name": "Споји PDF", "description": "Комбинујте више PDF фајлова у један документ." }, "split-pdf": { "name": "Подели PDF", "description": "Раздвојте PDF на више фајлова или извуците стране." }, "remove-pages": { "name": "Уклони стране", "description": "Уклоните нежељене стране из PDF-а." }, "extract-pages": { "name": "Извуци стране", "description": "Извуците одређене стране за креирање новог PDF-а." }, "organize-pdf": { "name": "Организуј PDF", "description": "Сортирајте и реорганизујте стране PDF-а." }, "compress-pdf": { "name": "Компримуј PDF", "description": "Смањите величину PDF фајлова без губитка квалитета." }, "repair-pdf": { "name": "Поправи PDF", "description": "Поправите оштећени PDF фајл." }, "flatten-pdf": { "name": "Изравнај PDF", "description": "Изравнајте обрасце и белешке у PDF-у." },
-    "pdf-to-word": { "name": "PDF у Word", "description": "Конвертујте PDF-ове у Word документе које можете уређивати." }, "pdf-to-excel": { "name": "PDF у Excel", "description": "Конвертујте PDF табеле у Excel табеле." }, "pdf-to-ppt": { "name": "PDF у PowerPoint", "description": "Конвертујте PDF-ове у PowerPoint презентације." }, "pdf-to-jpg": { "name": "PDF у JPG", "description": "Конвертујте сваку страну PDF-а у JPG слику." }, "pdf-to-png": { "name": "PDF у PNG", "description": "Извезите стране PDF-а у PNG слике високог квалитета." }, "pdf-to-html": { "name": "PDF у HTML", "description": "Конвертујте PDF у HTML веб страницу." }, "pdf-to-pdfa": { "name": "PDF у PDF/A", "description": "Конвертујте PDF у PDF/A формат за дугорочно архивирање." },
-    "word-to-pdf": { "name": "Word у PDF", "description": "Конвертујте Word документе у PDF." }, "excel-to-pdf": { "name": "Excel у PDF", "description": "Конвертујте Excel табеле у PDF." }, "ppt-to-pdf": { "name": "PowerPoint у PDF", "description": "Конвертујте PowerPoint презентације у PDF." }, "jpg-to-pdf": { "name": "JPG у PDF", "description": "Комбинујте JPG слике у PDF документ." }, "png-to-pdf": { "name": "PNG у PDF", "description": "Конвертујте PNG слике у PDF фајл." }, "html-to-pdf": { "name": "HTML у PDF", "description": "Конвертујте HTML веб страницу у PDF документ." },
-    "edit-pdf": { "name": "Уреди PDF", "description": "Додајте текст, слике и облике у PDF." }, "rotate-pdf": { "name": "Ротирај PDF", "description": "Ротирајте стране PDF-а." }, "add-page-numbers": { "name": "Нумерисање страна", "description": "Додајте бројеве страна у PDF документ." }, "add-watermark": { "name": "Водени жиг", "description": "Додајте текстуални или сликовни водени жиг на PDF." }, "sign-pdf": { "name": "Потпиши PDF", "description": "Електронски потпишите PDF документе." }, "fill-pdf-form": { "name": "Попуни образац", "description": "Попуните PDF обрасце онлајн." }, "redact-pdf": { "name": "Цензуриши PDF", "description": "Сакријте осетљиве информације у PDF-у." }, "crop-pdf": { "name": "Исеци PDF", "description": "Исеците маргине и промените величину страна PDF-а." }, "protect-pdf": { "name": "Заштити PDF", "description": "Заштитите PDF лозинком." }, "unlock-pdf": { "name": "Откључај PDF", "description": "Уклоните лозинку са заштићеног PDF-а." }, "pdf-ocr": { "name": "OCR PDF", "description": "Учините скенирани PDF претраживим." }, "compare-pdf": { "name": "Упореди PDF", "description": "Упоредите два PDF фајла и идентификујте разлике." },
-    "ai-pdf-summary": { "name": "АИ Резиме", "description": "Добијте паметан резиме PDF документа." }, "ai-pdf-chat": { "name": "Ћаскање са PDF", "description": "Постављајте питања свом PDF-у користећи вештачку интелигенцију." }, "ai-pdf-translate": { "name": "Преведи PDF", "description": "Преведите PDF документ на други језик помоћу АИ." }, "edit-metadata": { "name": "Уреди метаподатке", "description": "Уредите наслов, аутора и друге метаподатке PDF-а." }, "pdf-info": { "name": "PDF Инфо", "description": "Погледајте све техничке информације PDF фајла." }, "add-stamp": { "name": "Додај печат", "description": "Додајте текстуални или сликовни печат на стране PDF-а." }, "add-attachments": { "name": "PDF Прилози", "description": "Уградите фајлове као прилоге у PDF документ." }, "extract-images": { "name": "Извуци слике", "description": "Извуците све уграђене слике из PDF-а." }, "remove-images": { "name": "Уклони слике", "description": "Обришите све слике из PDF-а за смањење величине." }, "multi-page-layout": { "name": "Вишеструки распоред", "description": "Распоредите 2, 4, 6 или 9 страна PDF-а на један лист." }, "overlay-pdf": { "name": "Преклопи PDF", "description": "Преклопите PDF преко другог (позадина, заглавље, потпис)." }, "sanitize-pdf": { "name": "Очисти PDF", "description": "Уклоните JavaScript, линкове и осетљиве метаподатке из PDF-а." }, "remove-blanks": { "name": "Уклони празне стране", "description": "Аутоматски откријте и уклоните празне стране из PDF-а." }
+  "Hero": {
+    "title": "Сви ваши PDF алати на једном месту",
+    "subtitle": "Сви алати који су вам потребни за рад са PDF фајловима, надохват руке. Сви су 100% БЕСПЛАТНИ, сигурни и једноставни за коришћење.",
+    "badge_tools": "46 Алата",
+    "badge_privacy": "Приватност Гарантована",
+    "badge_local": "Локална Обрада"
   },
-  "Home": { "why_choose": "Зашто изабрати iLoveDoc?", "security_title": "Максимална Сигурност", "security_desc": "Ваши фајлови никада не напуштају ваш уређај. Обрада се врши локално у вашем прегледачу.", "speed_title": "Ултра Брзо", "speed_desc": "Без учитавања на сервер, обрада је тренутна и не зависи од ваше интернет везе.", "no_signup_title": "Без Регистрације", "no_signup_desc": "Почните одмах. Није потребно креирати налог или давати емаил за коришћење алата." }
+  "Common": {
+    "select_file": "Изаберите PDF фајл",
+    "or_drop": "или превуците PDF овде"
+  },
+  "Header": {
+    "merge": "СПОЈИ PDF",
+    "split": "ПОДЕЛИ PDF",
+    "compress": "КОМПРИМУЈ PDF",
+    "convert": "КОНВЕРТУЈ PDF",
+    "all_tools": "СВИ АЛАТИ"
+  },
+  "Footer": {
+    "popular": "Популарни Алати",
+    "convert": "Конвертуј PDF",
+    "about": "О Нама",
+    "legal": "Правно",
+    "about_us": "Ко смо ми",
+    "contact": "Контактирајте нас",
+    "blog": "Блог",
+    "faq": "FAQ",
+    "terms": "Услови коришћења",
+    "privacy": "Политика приватности",
+    "cookies": "Политика колачића",
+    "rights": "Сва права задржана"
+  },
+  "Tools": {
+    "merge-pdf": {
+      "name": "Споји PDF",
+      "description": "Комбинујте више PDF фајлова у један документ."
+    },
+    "split-pdf": {
+      "name": "Подели PDF",
+      "description": "Раздвојте PDF на више фајлова или извуците стране."
+    },
+    "remove-pages": {
+      "name": "Уклони стране",
+      "description": "Уклоните нежељене стране из PDF-а."
+    },
+    "extract-pages": {
+      "name": "Извуци стране",
+      "description": "Извуците одређене стране за креирање новог PDF-а."
+    },
+    "organize-pdf": {
+      "name": "Организуј PDF",
+      "description": "Сортирајте и реорганизујте стране PDF-а."
+    },
+    "compress-pdf": {
+      "name": "Компримуј PDF",
+      "description": "Смањите величину PDF фајлова без губитка квалитета."
+    },
+    "repair-pdf": {
+      "name": "Поправи PDF",
+      "description": "Поправите оштећени PDF фајл."
+    },
+    "flatten-pdf": {
+      "name": "Изравнај PDF",
+      "description": "Изравнајте обрасце и белешке у PDF-у."
+    },
+    "pdf-to-word": {
+      "name": "PDF у Word",
+      "description": "Конвертујте PDF-ове у Word документе које можете уређивати."
+    },
+    "pdf-to-excel": {
+      "name": "PDF у Excel",
+      "description": "Конвертујте PDF табеле у Excel табеле."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF у PowerPoint",
+      "description": "Конвертујте PDF-ове у PowerPoint презентације."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF у JPG",
+      "description": "Конвертујте сваку страну PDF-а у JPG слику."
+    },
+    "pdf-to-png": {
+      "name": "PDF у PNG",
+      "description": "Извезите стране PDF-а у PNG слике високог квалитета."
+    },
+    "pdf-to-html": {
+      "name": "PDF у HTML",
+      "description": "Конвертујте PDF у HTML веб страницу."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF у PDF/A",
+      "description": "Конвертујте PDF у PDF/A формат за дугорочно архивирање."
+    },
+    "word-to-pdf": {
+      "name": "Word у PDF",
+      "description": "Конвертујте Word документе у PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel у PDF",
+      "description": "Конвертујте Excel табеле у PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint у PDF",
+      "description": "Конвертујте PowerPoint презентације у PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG у PDF",
+      "description": "Комбинујте JPG слике у PDF документ."
+    },
+    "png-to-pdf": {
+      "name": "PNG у PDF",
+      "description": "Конвертујте PNG слике у PDF фајл."
+    },
+    "html-to-pdf": {
+      "name": "HTML у PDF",
+      "description": "Конвертујте HTML веб страницу у PDF документ."
+    },
+    "edit-pdf": {
+      "name": "Уреди PDF",
+      "description": "Додајте текст, слике и облике у PDF."
+    },
+    "rotate-pdf": {
+      "name": "Ротирај PDF",
+      "description": "Ротирајте стране PDF-а."
+    },
+    "add-page-numbers": {
+      "name": "Нумерисање страна",
+      "description": "Додајте бројеве страна у PDF документ."
+    },
+    "add-watermark": {
+      "name": "Водени жиг",
+      "description": "Додајте текстуални или сликовни водени жиг на PDF."
+    },
+    "sign-pdf": {
+      "name": "Потпиши PDF",
+      "description": "Електронски потпишите PDF документе."
+    },
+    "fill-pdf-form": {
+      "name": "Попуни образац",
+      "description": "Попуните PDF обрасце онлајн."
+    },
+    "redact-pdf": {
+      "name": "Цензуриши PDF",
+      "description": "Сакријте осетљиве информације у PDF-у."
+    },
+    "crop-pdf": {
+      "name": "Исеци PDF",
+      "description": "Исеците маргине и промените величину страна PDF-а."
+    },
+    "protect-pdf": {
+      "name": "Заштити PDF",
+      "description": "Заштитите PDF лозинком."
+    },
+    "unlock-pdf": {
+      "name": "Откључај PDF",
+      "description": "Уклоните лозинку са заштићеног PDF-а."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Учините скенирани PDF претраживим."
+    },
+    "compare-pdf": {
+      "name": "Упореди PDF",
+      "description": "Упоредите два PDF фајла и идентификујте разлике."
+    },
+    "ai-pdf-summary": {
+      "name": "АИ Резиме",
+      "description": "Добијте паметан резиме PDF документа."
+    },
+    "ai-pdf-chat": {
+      "name": "Ћаскање са PDF",
+      "description": "Постављајте питања свом PDF-у користећи вештачку интелигенцију."
+    },
+    "ai-pdf-translate": {
+      "name": "Преведи PDF",
+      "description": "Преведите PDF документ на други језик помоћу АИ."
+    },
+    "edit-metadata": {
+      "name": "Уреди метаподатке",
+      "description": "Уредите наслов, аутора и друге метаподатке PDF-а."
+    },
+    "pdf-info": {
+      "name": "PDF Инфо",
+      "description": "Погледајте све техничке информације PDF фајла."
+    },
+    "add-stamp": {
+      "name": "Додај печат",
+      "description": "Додајте текстуални или сликовни печат на стране PDF-а."
+    },
+    "add-attachments": {
+      "name": "PDF Прилози",
+      "description": "Уградите фајлове као прилоге у PDF документ."
+    },
+    "extract-images": {
+      "name": "Извуци слике",
+      "description": "Извуците све уграђене слике из PDF-а."
+    },
+    "remove-images": {
+      "name": "Уклони слике",
+      "description": "Обришите све слике из PDF-а за смањење величине."
+    },
+    "multi-page-layout": {
+      "name": "Вишеструки распоред",
+      "description": "Распоредите 2, 4, 6 или 9 страна PDF-а на један лист."
+    },
+    "overlay-pdf": {
+      "name": "Преклопи PDF",
+      "description": "Преклопите PDF преко другог (позадина, заглавље, потпис)."
+    },
+    "sanitize-pdf": {
+      "name": "Очисти PDF",
+      "description": "Уклоните JavaScript, линкове и осетљиве метаподатке из PDF-а."
+    },
+    "remove-blanks": {
+      "name": "Уклони празне стране",
+      "description": "Аутоматски откријте и уклоните празне стране из PDF-а."
+    }
+  },
+  "Home": {
+    "why_choose": "Зашто изабрати iLoveDoc?",
+    "security_title": "Максимална Сигурност",
+    "security_desc": "Ваши фајлови никада не напуштају ваш уређај. Обрада се врши локално у вашем прегледачу.",
+    "speed_title": "Ултра Брзо",
+    "speed_desc": "Без учитавања на сервер, обрада је тренутна и не зависи од ваше интернет везе.",
+    "no_signup_title": "Без Регистрације",
+    "no_signup_desc": "Почните одмах. Није потребно креирати налог или давати емаил за коришћење алата."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
+  }
 }

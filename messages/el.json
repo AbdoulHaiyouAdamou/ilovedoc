@@ -225,5 +225,11 @@
     "speed_desc": "Χωρίς ανέβασμα σε сервер, οι επεξεργασίες είναι άμεσες και δεν εξαρτώνται από τη σύνδεσή σας στο διαδίκτυο.",
     "no_signup_title": "Χωρίς Εγγραφή",
     "no_signup_desc": "Ξεκινήστε αμέσως. Δεν χρειάζεται να δημιουργήσετε λογαριασμό ή να δώσετε το email σας για να χρησιμοποιήσετε τα εργαλεία."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

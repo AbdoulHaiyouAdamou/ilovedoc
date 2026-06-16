@@ -6,56 +6,216 @@
     "badge_privacy": "Confidențialitate Garantată",
     "badge_local": "Procesare Locală"
   },
-  "Common": { "select_file": "Selectați fișierul PDF", "or_drop": "sau trageți PDF-ul aici" },
-  "Header": { "merge": "UNEȘTE PDF", "split": "ÎMPARTE PDF", "compress": "COMPRIMĂ PDF", "convert": "CONVERTEȘTE PDF", "all_tools": "TOATE INSTRUMENTELE" },
-  "Footer": { "popular": "Instrumente Populare", "convert": "Convertește PDF", "about": "Despre Noi", "legal": "Legal", "about_us": "Cine suntem", "contact": "Contactați-ne", "blog": "Blog", "faq": "FAQ", "terms": "Termeni de utilizare", "privacy": "Politica de confidențialitate", "cookies": "Politica de cookie-uri", "rights": "Toate drepturile rezervate" },
+  "Common": {
+    "select_file": "Selectați fișierul PDF",
+    "or_drop": "sau trageți PDF-ul aici"
+  },
+  "Header": {
+    "merge": "UNEȘTE PDF",
+    "split": "ÎMPARTE PDF",
+    "compress": "COMPRIMĂ PDF",
+    "convert": "CONVERTEȘTE PDF",
+    "all_tools": "TOATE INSTRUMENTELE"
+  },
+  "Footer": {
+    "popular": "Instrumente Populare",
+    "convert": "Convertește PDF",
+    "about": "Despre Noi",
+    "legal": "Legal",
+    "about_us": "Cine suntem",
+    "contact": "Contactați-ne",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "terms": "Termeni de utilizare",
+    "privacy": "Politica de confidențialitate",
+    "cookies": "Politica de cookie-uri",
+    "rights": "Toate drepturile rezervate"
+  },
   "Tools": {
-    "merge-pdf": { "name": "Unește PDF", "description": "Combinați mai multe fișiere PDF într-un singur document." },
-    "split-pdf": { "name": "Împarte PDF", "description": "Separați un PDF în mai multe fișiere sau extrageți pagini." },
-    "remove-pages": { "name": "Șterge pagini", "description": "Eliminați paginile nedorite din PDF-ul dvs." },
-    "extract-pages": { "name": "Extrage pagini", "description": "Extrageți pagini specifice pentru a crea un PDF nou." },
-    "organize-pdf": { "name": "Organizează PDF", "description": "Sortați și reorganizați paginile PDF-ului dvs." },
-    "compress-pdf": { "name": "Comprimă PDF", "description": "Reduceți dimensiunea fișierelor PDF fără pierderi de calitate." },
-    "repair-pdf": { "name": "Repară PDF", "description": "Reparați un fișier PDF deteriorat." },
-    "flatten-pdf": { "name": "Aplatizează PDF", "description": "Aplatizați formularele și adnotările din PDF." },
-    "pdf-to-word": { "name": "PDF în Word", "description": "Convertiți PDF-urile în documente Word editabile." },
-    "pdf-to-excel": { "name": "PDF în Excel", "description": "Convertiți tabelele PDF în foi de calcul Excel." },
-    "pdf-to-ppt": { "name": "PDF în PowerPoint", "description": "Convertiți PDF-urile în prezentări PowerPoint." },
-    "pdf-to-jpg": { "name": "PDF în JPG", "description": "Convertiți fiecare pagină PDF într-o imagine JPG." },
-    "pdf-to-png": { "name": "PDF în PNG", "description": "Exportați paginile PDF în imagini PNG de înaltă calitate." },
-    "pdf-to-html": { "name": "PDF în HTML", "description": "Convertiți PDF-ul într-o pagină web HTML." },
-    "pdf-to-pdfa": { "name": "PDF în PDF/A", "description": "Convertiți PDF-ul în format PDF/A pentru arhivare pe termen lung." },
-    "word-to-pdf": { "name": "Word în PDF", "description": "Convertiți documentele Word în PDF." },
-    "excel-to-pdf": { "name": "Excel în PDF", "description": "Convertiți foile de calcul Excel în PDF." },
-    "ppt-to-pdf": { "name": "PowerPoint în PDF", "description": "Convertiți prezentările PowerPoint în PDF." },
-    "jpg-to-pdf": { "name": "JPG în PDF", "description": "Combinați imaginile JPG într-un document PDF." },
-    "png-to-pdf": { "name": "PNG în PDF", "description": "Convertiți imaginile PNG într-un fișier PDF." },
-    "html-to-pdf": { "name": "HTML în PDF", "description": "Convertiți o pagină web HTML într-un document PDF." },
-    "edit-pdf": { "name": "Editează PDF", "description": "Adăugați text, imagini și forme în PDF-ul dvs." },
-    "rotate-pdf": { "name": "Rotește PDF", "description": "Rotiți paginile PDF-ului dvs." },
-    "add-page-numbers": { "name": "Numerotare pagini", "description": "Adăugați numere de pagină în documentul PDF." },
-    "add-watermark": { "name": "Filigran", "description": "Adăugați un filigran text sau imagine pe PDF." },
-    "sign-pdf": { "name": "Semnează PDF", "description": "Semnați electronic documentele PDF." },
-    "fill-pdf-form": { "name": "Completează formular", "description": "Completați formularele PDF online." },
-    "redact-pdf": { "name": "Cenzurează PDF", "description": "Ascundeți informațiile sensibile din PDF." },
-    "crop-pdf": { "name": "Decupează PDF", "description": "Decupați marginile și modificați dimensiunea paginilor PDF." },
-    "protect-pdf": { "name": "Protejează PDF", "description": "Protejați PDF-ul cu o parolă." },
-    "unlock-pdf": { "name": "Deblochează PDF", "description": "Eliminați parola unui PDF protejat." },
-    "pdf-ocr": { "name": "OCR PDF", "description": "Faceți PDF-ul scanat căutabil." },
-    "compare-pdf": { "name": "Compară PDF", "description": "Comparați două fișiere PDF și identificați diferențele." },
-    "ai-pdf-summary": { "name": "Rezumat AI", "description": "Obțineți un rezumat inteligent al documentului PDF." },
-    "ai-pdf-chat": { "name": "Chat cu PDF", "description": "Puneți întrebări PDF-ului dvs. folosind inteligența artificială." },
-    "ai-pdf-translate": { "name": "Traduce PDF", "description": "Traduceți documentul PDF într-o altă limbă cu AI." },
-    "edit-metadata": { "name": "Editează metadate", "description": "Editați titlul, autorul și alte metadate ale PDF-ului." },
-    "pdf-info": { "name": "Info PDF", "description": "Vizualizați toate informațiile tehnice ale fișierului PDF." },
-    "add-stamp": { "name": "Adaugă ștampilă", "description": "Adăugați o ștampilă text sau imagine pe paginile PDF." },
-    "add-attachments": { "name": "Atașamente PDF", "description": "Încorporați fișiere ca atașamente în documentul PDF." },
-    "extract-images": { "name": "Extrage imagini", "description": "Extrageți toate imaginile încorporate din PDF." },
-    "remove-images": { "name": "Șterge imagini", "description": "Ștergeți toate imaginile din PDF pentru a reduce dimensiunea." },
-    "multi-page-layout": { "name": "Layout multiplu", "description": "Aranjați 2, 4, 6 sau 9 pagini PDF pe o singură foaie." },
-    "overlay-pdf": { "name": "Suprapune PDF", "description": "Suprapuneți un PDF peste altul (fundal, antet, semnătură)." },
-    "sanitize-pdf": { "name": "Curăță PDF", "description": "Eliminați JavaScript, linkuri și metadate sensibile din PDF." },
-    "remove-blanks": { "name": "Șterge pagini goale", "description": "Detectați și eliminați automat paginile goale din PDF." }
+    "merge-pdf": {
+      "name": "Unește PDF",
+      "description": "Combinați mai multe fișiere PDF într-un singur document."
+    },
+    "split-pdf": {
+      "name": "Împarte PDF",
+      "description": "Separați un PDF în mai multe fișiere sau extrageți pagini."
+    },
+    "remove-pages": {
+      "name": "Șterge pagini",
+      "description": "Eliminați paginile nedorite din PDF-ul dvs."
+    },
+    "extract-pages": {
+      "name": "Extrage pagini",
+      "description": "Extrageți pagini specifice pentru a crea un PDF nou."
+    },
+    "organize-pdf": {
+      "name": "Organizează PDF",
+      "description": "Sortați și reorganizați paginile PDF-ului dvs."
+    },
+    "compress-pdf": {
+      "name": "Comprimă PDF",
+      "description": "Reduceți dimensiunea fișierelor PDF fără pierderi de calitate."
+    },
+    "repair-pdf": {
+      "name": "Repară PDF",
+      "description": "Reparați un fișier PDF deteriorat."
+    },
+    "flatten-pdf": {
+      "name": "Aplatizează PDF",
+      "description": "Aplatizați formularele și adnotările din PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF în Word",
+      "description": "Convertiți PDF-urile în documente Word editabile."
+    },
+    "pdf-to-excel": {
+      "name": "PDF în Excel",
+      "description": "Convertiți tabelele PDF în foi de calcul Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF în PowerPoint",
+      "description": "Convertiți PDF-urile în prezentări PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF în JPG",
+      "description": "Convertiți fiecare pagină PDF într-o imagine JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF în PNG",
+      "description": "Exportați paginile PDF în imagini PNG de înaltă calitate."
+    },
+    "pdf-to-html": {
+      "name": "PDF în HTML",
+      "description": "Convertiți PDF-ul într-o pagină web HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF în PDF/A",
+      "description": "Convertiți PDF-ul în format PDF/A pentru arhivare pe termen lung."
+    },
+    "word-to-pdf": {
+      "name": "Word în PDF",
+      "description": "Convertiți documentele Word în PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel în PDF",
+      "description": "Convertiți foile de calcul Excel în PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint în PDF",
+      "description": "Convertiți prezentările PowerPoint în PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG în PDF",
+      "description": "Combinați imaginile JPG într-un document PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG în PDF",
+      "description": "Convertiți imaginile PNG într-un fișier PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML în PDF",
+      "description": "Convertiți o pagină web HTML într-un document PDF."
+    },
+    "edit-pdf": {
+      "name": "Editează PDF",
+      "description": "Adăugați text, imagini și forme în PDF-ul dvs."
+    },
+    "rotate-pdf": {
+      "name": "Rotește PDF",
+      "description": "Rotiți paginile PDF-ului dvs."
+    },
+    "add-page-numbers": {
+      "name": "Numerotare pagini",
+      "description": "Adăugați numere de pagină în documentul PDF."
+    },
+    "add-watermark": {
+      "name": "Filigran",
+      "description": "Adăugați un filigran text sau imagine pe PDF."
+    },
+    "sign-pdf": {
+      "name": "Semnează PDF",
+      "description": "Semnați electronic documentele PDF."
+    },
+    "fill-pdf-form": {
+      "name": "Completează formular",
+      "description": "Completați formularele PDF online."
+    },
+    "redact-pdf": {
+      "name": "Cenzurează PDF",
+      "description": "Ascundeți informațiile sensibile din PDF."
+    },
+    "crop-pdf": {
+      "name": "Decupează PDF",
+      "description": "Decupați marginile și modificați dimensiunea paginilor PDF."
+    },
+    "protect-pdf": {
+      "name": "Protejează PDF",
+      "description": "Protejați PDF-ul cu o parolă."
+    },
+    "unlock-pdf": {
+      "name": "Deblochează PDF",
+      "description": "Eliminați parola unui PDF protejat."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Faceți PDF-ul scanat căutabil."
+    },
+    "compare-pdf": {
+      "name": "Compară PDF",
+      "description": "Comparați două fișiere PDF și identificați diferențele."
+    },
+    "ai-pdf-summary": {
+      "name": "Rezumat AI",
+      "description": "Obțineți un rezumat inteligent al documentului PDF."
+    },
+    "ai-pdf-chat": {
+      "name": "Chat cu PDF",
+      "description": "Puneți întrebări PDF-ului dvs. folosind inteligența artificială."
+    },
+    "ai-pdf-translate": {
+      "name": "Traduce PDF",
+      "description": "Traduceți documentul PDF într-o altă limbă cu AI."
+    },
+    "edit-metadata": {
+      "name": "Editează metadate",
+      "description": "Editați titlul, autorul și alte metadate ale PDF-ului."
+    },
+    "pdf-info": {
+      "name": "Info PDF",
+      "description": "Vizualizați toate informațiile tehnice ale fișierului PDF."
+    },
+    "add-stamp": {
+      "name": "Adaugă ștampilă",
+      "description": "Adăugați o ștampilă text sau imagine pe paginile PDF."
+    },
+    "add-attachments": {
+      "name": "Atașamente PDF",
+      "description": "Încorporați fișiere ca atașamente în documentul PDF."
+    },
+    "extract-images": {
+      "name": "Extrage imagini",
+      "description": "Extrageți toate imaginile încorporate din PDF."
+    },
+    "remove-images": {
+      "name": "Șterge imagini",
+      "description": "Ștergeți toate imaginile din PDF pentru a reduce dimensiunea."
+    },
+    "multi-page-layout": {
+      "name": "Layout multiplu",
+      "description": "Aranjați 2, 4, 6 sau 9 pagini PDF pe o singură foaie."
+    },
+    "overlay-pdf": {
+      "name": "Suprapune PDF",
+      "description": "Suprapuneți un PDF peste altul (fundal, antet, semnătură)."
+    },
+    "sanitize-pdf": {
+      "name": "Curăță PDF",
+      "description": "Eliminați JavaScript, linkuri și metadate sensibile din PDF."
+    },
+    "remove-blanks": {
+      "name": "Șterge pagini goale",
+      "description": "Detectați și eliminați automat paginile goale din PDF."
+    }
   },
   "Home": {
     "why_choose": "De ce să alegeți iLoveDoc?",
@@ -65,5 +225,11 @@
     "speed_desc": "Fără încărcare pe server, procesarea este instantanee și nu depinde de conexiunea la internet.",
     "no_signup_title": "Fără Înregistrare",
     "no_signup_desc": "Începeți imediat. Nu trebuie să creați un cont sau să furnizați emailul pentru a utiliza instrumentele."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

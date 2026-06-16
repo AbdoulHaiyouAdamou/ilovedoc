@@ -32,52 +32,190 @@
     "rights": "Gach ceart ar cosaint"
   },
   "Tools": {
-    "merge-pdf": { "name": "Cumasc PDF", "description": "Comhcheangail comhaid PDF iolracha in aon doiciméad amháin." },
-    "split-pdf": { "name": "Scoilt PDF", "description": "Scar PDF ina chomhaid iolracha nó bain leathanaigh amach." },
-    "remove-pages": { "name": "Bain leathanaigh", "description": "Bain leathanaigh neamhriachtanacha as do PDF." },
-    "extract-pages": { "name": "Bain leathanaigh amach", "description": "Bain leathanaigh ar leith amach chun PDF nua a chruthú." },
-    "organize-pdf": { "name": "Eagraigh PDF", "description": "Sórtáil agus atheagraigh leathanaigh do PDF." },
-    "compress-pdf": { "name": "Comhbhrúigh PDF", "description": "Laghdaigh méid do chomhaid PDF gan cáilíocht a chailleadh." },
-    "repair-pdf": { "name": "Deisigh PDF", "description": "Deisigh comhad PDF damáistithe nó truaillithe." },
-    "flatten-pdf": { "name": "Réitigh PDF", "description": "Réitigh foirmeacha agus nótaí i do PDF." },
-    "pdf-to-word": { "name": "PDF go Word", "description": "Tiontaigh do chuid PDFanna go doiciméid Word in-eagarthóireachta." },
-    "pdf-to-excel": { "name": "PDF go Excel", "description": "Tiontaigh táblaí PDF go scarbhileoga Excel." },
-    "pdf-to-ppt": { "name": "PDF go PowerPoint", "description": "Tiontaigh do chuid PDFanna go cur i láthair PowerPoint." },
-    "pdf-to-jpg": { "name": "PDF go JPG", "description": "Tiontaigh gach leathanach PDF go híomhá JPG." },
-    "pdf-to-png": { "name": "PDF go PNG", "description": "Easpórtáil do leathanaigh PDF go híomhánna PNG ardcháilíochta." },
-    "pdf-to-html": { "name": "PDF go HTML", "description": "Tiontaigh do PDF go leathanach gréasáin HTML." },
-    "pdf-to-pdfa": { "name": "PDF go PDF/A", "description": "Tiontaigh do PDF go formáid PDF/A le haghaidh cartlannú fadtéarmach." },
-    "word-to-pdf": { "name": "Word go PDF", "description": "Tiontaigh do dhoiciméid Word go PDF." },
-    "excel-to-pdf": { "name": "Excel go PDF", "description": "Tiontaigh do scarbhileoga Excel go PDF." },
-    "ppt-to-pdf": { "name": "PowerPoint go PDF", "description": "Tiontaigh do chur i láthair PowerPoint go PDF." },
-    "jpg-to-pdf": { "name": "JPG go PDF", "description": "Comhcheangail do chuid íomhánna JPG i ndoiciméad PDF." },
-    "png-to-pdf": { "name": "PNG go PDF", "description": "Tiontaigh do chuid íomhánna PNG go comhad PDF." },
-    "html-to-pdf": { "name": "HTML go PDF", "description": "Tiontaigh leathanach gréasáin HTML go doiciméad PDF." },
-    "edit-pdf": { "name": "Cuir PDF in eagar", "description": "Cuir téacs, íomhánna agus cruthanna le do PDF." },
-    "rotate-pdf": { "name": "Rothlaigh PDF", "description": "Rothlaigh leathanaigh do PDF." },
-    "add-page-numbers": { "name": "Uimhreacha leathanach", "description": "Cuir uimhreacha leathanach le do dhoiciméad PDF." },
-    "add-watermark": { "name": "Cuir comhartha uisce leis", "description": "Cuir comhartha uisce téacs nó íomhá le do PDF." },
-    "sign-pdf": { "name": "Sínigh PDF", "description": "Sínigh do dhoiciméid PDF go leictreonach." },
-    "fill-pdf-form": { "name": "Líon foirm", "description": "Líon foirmeacha PDF ar líne." },
-    "redact-pdf": { "name": "Ceilt PDF", "description": "Folaigh faisnéis íogair i do PDF." },
-    "crop-pdf": { "name": "Bearr PDF", "description": "Bearr imeallchríocha agus athraigh méid leathanaigh PDF." },
-    "protect-pdf": { "name": "Cosain PDF", "description": "Cosain do PDF le pasfhocal." },
-    "unlock-pdf": { "name": "Díghlasáil PDF", "description": "Bain an pasfhocal de PDF cosanta." },
-    "pdf-ocr": { "name": "OCR PDF", "description": "Déan do PDF scanáilte inchurtha." },
-    "compare-pdf": { "name": "Cuir PDFanna i gcomparáid", "description": "Cuir dhá chomhad PDF i gcomparáid agus aimsigh na difríochtaí." },
-    "ai-pdf-summary": { "name": "Achoimre IA", "description": "Faigh achoimre chliste ar do dhoiciméad PDF." },
-    "ai-pdf-chat": { "name": "Comhrá le PDF", "description": "Cuir ceisteanna ar do PDF le hintleacht shaorga." },
-    "ai-pdf-translate": { "name": "Aistrigh PDF", "description": "Aistrigh do dhoiciméad PDF go teanga eile le IA." },
-    "edit-metadata": { "name": "Cuir meiteashonraí in eagar", "description": "Cuir teideal, údar agus meiteashonraí eile do PDF in eagar." },
-    "pdf-info": { "name": "Eolas PDF", "description": "Féach ar gach faisnéis theicniúil de do chomhad PDF." },
-    "add-stamp": { "name": "Cuir stampa leis", "description": "Cuir stampa téacs nó íomhá le leathanaigh do PDF." },
-    "add-attachments": { "name": "Ceangaltáin PDF", "description": "Leabaigh comhaid mar cheangaltáin i do dhoiciméad PDF." },
-    "extract-images": { "name": "Bain íomhánna amach", "description": "Bain gach íomhá leabaithe amach as do PDF." },
-    "remove-images": { "name": "Bain íomhánna", "description": "Scrios gach íomhá as do PDF chun méid a laghdú." },
-    "multi-page-layout": { "name": "Leagan amach illeathanaigh", "description": "Eagraigh 2, 4, 6 nó 9 leathanach PDF ar bhileog amháin." },
-    "overlay-pdf": { "name": "Forleagan PDF", "description": "Cuir PDF os cionn ceann eile (cúlra, ceanntásc, síniú)." },
-    "sanitize-pdf": { "name": "Glan PDF", "description": "Bain JavaScript, naisc agus meiteashonraí íogaire as do PDF." },
-    "remove-blanks": { "name": "Bain leathanaigh bhána", "description": "Aimsigh agus bain leathanaigh bhána go huathoibríoch as do PDF." }
+    "merge-pdf": {
+      "name": "Cumasc PDF",
+      "description": "Comhcheangail comhaid PDF iolracha in aon doiciméad amháin."
+    },
+    "split-pdf": {
+      "name": "Scoilt PDF",
+      "description": "Scar PDF ina chomhaid iolracha nó bain leathanaigh amach."
+    },
+    "remove-pages": {
+      "name": "Bain leathanaigh",
+      "description": "Bain leathanaigh neamhriachtanacha as do PDF."
+    },
+    "extract-pages": {
+      "name": "Bain leathanaigh amach",
+      "description": "Bain leathanaigh ar leith amach chun PDF nua a chruthú."
+    },
+    "organize-pdf": {
+      "name": "Eagraigh PDF",
+      "description": "Sórtáil agus atheagraigh leathanaigh do PDF."
+    },
+    "compress-pdf": {
+      "name": "Comhbhrúigh PDF",
+      "description": "Laghdaigh méid do chomhaid PDF gan cáilíocht a chailleadh."
+    },
+    "repair-pdf": {
+      "name": "Deisigh PDF",
+      "description": "Deisigh comhad PDF damáistithe nó truaillithe."
+    },
+    "flatten-pdf": {
+      "name": "Réitigh PDF",
+      "description": "Réitigh foirmeacha agus nótaí i do PDF."
+    },
+    "pdf-to-word": {
+      "name": "PDF go Word",
+      "description": "Tiontaigh do chuid PDFanna go doiciméid Word in-eagarthóireachta."
+    },
+    "pdf-to-excel": {
+      "name": "PDF go Excel",
+      "description": "Tiontaigh táblaí PDF go scarbhileoga Excel."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF go PowerPoint",
+      "description": "Tiontaigh do chuid PDFanna go cur i láthair PowerPoint."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF go JPG",
+      "description": "Tiontaigh gach leathanach PDF go híomhá JPG."
+    },
+    "pdf-to-png": {
+      "name": "PDF go PNG",
+      "description": "Easpórtáil do leathanaigh PDF go híomhánna PNG ardcháilíochta."
+    },
+    "pdf-to-html": {
+      "name": "PDF go HTML",
+      "description": "Tiontaigh do PDF go leathanach gréasáin HTML."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF go PDF/A",
+      "description": "Tiontaigh do PDF go formáid PDF/A le haghaidh cartlannú fadtéarmach."
+    },
+    "word-to-pdf": {
+      "name": "Word go PDF",
+      "description": "Tiontaigh do dhoiciméid Word go PDF."
+    },
+    "excel-to-pdf": {
+      "name": "Excel go PDF",
+      "description": "Tiontaigh do scarbhileoga Excel go PDF."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint go PDF",
+      "description": "Tiontaigh do chur i láthair PowerPoint go PDF."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG go PDF",
+      "description": "Comhcheangail do chuid íomhánna JPG i ndoiciméad PDF."
+    },
+    "png-to-pdf": {
+      "name": "PNG go PDF",
+      "description": "Tiontaigh do chuid íomhánna PNG go comhad PDF."
+    },
+    "html-to-pdf": {
+      "name": "HTML go PDF",
+      "description": "Tiontaigh leathanach gréasáin HTML go doiciméad PDF."
+    },
+    "edit-pdf": {
+      "name": "Cuir PDF in eagar",
+      "description": "Cuir téacs, íomhánna agus cruthanna le do PDF."
+    },
+    "rotate-pdf": {
+      "name": "Rothlaigh PDF",
+      "description": "Rothlaigh leathanaigh do PDF."
+    },
+    "add-page-numbers": {
+      "name": "Uimhreacha leathanach",
+      "description": "Cuir uimhreacha leathanach le do dhoiciméad PDF."
+    },
+    "add-watermark": {
+      "name": "Cuir comhartha uisce leis",
+      "description": "Cuir comhartha uisce téacs nó íomhá le do PDF."
+    },
+    "sign-pdf": {
+      "name": "Sínigh PDF",
+      "description": "Sínigh do dhoiciméid PDF go leictreonach."
+    },
+    "fill-pdf-form": {
+      "name": "Líon foirm",
+      "description": "Líon foirmeacha PDF ar líne."
+    },
+    "redact-pdf": {
+      "name": "Ceilt PDF",
+      "description": "Folaigh faisnéis íogair i do PDF."
+    },
+    "crop-pdf": {
+      "name": "Bearr PDF",
+      "description": "Bearr imeallchríocha agus athraigh méid leathanaigh PDF."
+    },
+    "protect-pdf": {
+      "name": "Cosain PDF",
+      "description": "Cosain do PDF le pasfhocal."
+    },
+    "unlock-pdf": {
+      "name": "Díghlasáil PDF",
+      "description": "Bain an pasfhocal de PDF cosanta."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Déan do PDF scanáilte inchurtha."
+    },
+    "compare-pdf": {
+      "name": "Cuir PDFanna i gcomparáid",
+      "description": "Cuir dhá chomhad PDF i gcomparáid agus aimsigh na difríochtaí."
+    },
+    "ai-pdf-summary": {
+      "name": "Achoimre IA",
+      "description": "Faigh achoimre chliste ar do dhoiciméad PDF."
+    },
+    "ai-pdf-chat": {
+      "name": "Comhrá le PDF",
+      "description": "Cuir ceisteanna ar do PDF le hintleacht shaorga."
+    },
+    "ai-pdf-translate": {
+      "name": "Aistrigh PDF",
+      "description": "Aistrigh do dhoiciméad PDF go teanga eile le IA."
+    },
+    "edit-metadata": {
+      "name": "Cuir meiteashonraí in eagar",
+      "description": "Cuir teideal, údar agus meiteashonraí eile do PDF in eagar."
+    },
+    "pdf-info": {
+      "name": "Eolas PDF",
+      "description": "Féach ar gach faisnéis theicniúil de do chomhad PDF."
+    },
+    "add-stamp": {
+      "name": "Cuir stampa leis",
+      "description": "Cuir stampa téacs nó íomhá le leathanaigh do PDF."
+    },
+    "add-attachments": {
+      "name": "Ceangaltáin PDF",
+      "description": "Leabaigh comhaid mar cheangaltáin i do dhoiciméad PDF."
+    },
+    "extract-images": {
+      "name": "Bain íomhánna amach",
+      "description": "Bain gach íomhá leabaithe amach as do PDF."
+    },
+    "remove-images": {
+      "name": "Bain íomhánna",
+      "description": "Scrios gach íomhá as do PDF chun méid a laghdú."
+    },
+    "multi-page-layout": {
+      "name": "Leagan amach illeathanaigh",
+      "description": "Eagraigh 2, 4, 6 nó 9 leathanach PDF ar bhileog amháin."
+    },
+    "overlay-pdf": {
+      "name": "Forleagan PDF",
+      "description": "Cuir PDF os cionn ceann eile (cúlra, ceanntásc, síniú)."
+    },
+    "sanitize-pdf": {
+      "name": "Glan PDF",
+      "description": "Bain JavaScript, naisc agus meiteashonraí íogaire as do PDF."
+    },
+    "remove-blanks": {
+      "name": "Bain leathanaigh bhána",
+      "description": "Aimsigh agus bain leathanaigh bhána go huathoibríoch as do PDF."
+    }
   },
   "Home": {
     "why_choose": "Cén fáth iLoveDoc a roghnú?",
@@ -87,5 +225,11 @@
     "speed_desc": "Gan uaslódáil chuig freastalaí, tá na próisis láithreach agus ní bhraitheann siad ar do nasc idirlín.",
     "no_signup_title": "Gan Clárú",
     "no_signup_desc": "Tosaigh láithreach. Níl gá le cuntas a chruthú ná do ríomhphost a thabhairt chun na huirlisí a úsáid."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

@@ -225,5 +225,11 @@
     "speed_desc": "Senza upload su un server, l'elaborazione è istantanea e non dipende dalla tua connessione internet.",
     "no_signup_title": "Nessuna registrazione",
     "no_signup_desc": "Inizia subito. Non è necessario creare un account o fornire il tuo indirizzo email per utilizzare gli strumenti."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

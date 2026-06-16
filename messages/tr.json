@@ -225,5 +225,11 @@
     "speed_desc": "Sunucuya yükleme olmadan işlemler anlık ve internet bağlantınızdan bağımsız olarak gerçekleşir.",
     "no_signup_title": "Kayıt Gerektirmez",
     "no_signup_desc": "Hemen başlayın. Araçları kullanmak için hesap oluşturmanıza veya e-posta adresinizi vermenize gerek yoktur."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

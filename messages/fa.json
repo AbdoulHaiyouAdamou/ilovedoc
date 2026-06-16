@@ -32,52 +32,190 @@
     "rights": "تمامی حقوق محفوظ است"
   },
   "Tools": {
-    "merge-pdf": { "name": "ادغام PDF", "description": "چندین فایل PDF را در یک سند ترکیب کنید." },
-    "split-pdf": { "name": "تقسیم PDF", "description": "یک PDF را به چندین فایل تقسیم کنید یا صفحات را استخراج کنید." },
-    "remove-pages": { "name": "حذف صفحات", "description": "صفحات ناخواسته را از PDF خود حذف کنید." },
-    "extract-pages": { "name": "استخراج صفحات", "description": "صفحات خاصی را برای ایجاد PDF جدید استخراج کنید." },
-    "organize-pdf": { "name": "سازماندهی PDF", "description": "صفحات PDF خود را مرتب و سازماندهی کنید." },
-    "compress-pdf": { "name": "فشرده‌سازی PDF", "description": "حجم فایل‌های PDF خود را بدون افت کیفیت کاهش دهید." },
-    "repair-pdf": { "name": "تعمیر PDF", "description": "فایل PDF آسیب‌دیده یا خراب را تعمیر کنید." },
-    "flatten-pdf": { "name": "مسطح‌سازی PDF", "description": "فرم‌ها و حاشیه‌نویسی‌های PDF خود را مسطح کنید." },
-    "pdf-to-word": { "name": "PDF به Word", "description": "فایل‌های PDF خود را به اسناد Word قابل ویرایش تبدیل کنید." },
-    "pdf-to-excel": { "name": "PDF به Excel", "description": "جداول PDF را به صفحات گسترده Excel تبدیل کنید." },
-    "pdf-to-ppt": { "name": "PDF به PowerPoint", "description": "فایل‌های PDF خود را به ارائه‌های PowerPoint تبدیل کنید." },
-    "pdf-to-jpg": { "name": "PDF به JPG", "description": "هر صفحه PDF خود را به تصویر JPG تبدیل کنید." },
-    "pdf-to-png": { "name": "PDF به PNG", "description": "صفحات PDF خود را به تصاویر PNG با کیفیت بالا صادر کنید." },
-    "pdf-to-html": { "name": "PDF به HTML", "description": "PDF خود را به صفحه وب HTML تبدیل کنید." },
-    "pdf-to-pdfa": { "name": "PDF به PDF/A", "description": "PDF خود را برای بایگانی بلندمدت به فرمت PDF/A تبدیل کنید." },
-    "word-to-pdf": { "name": "Word به PDF", "description": "اسناد Word خود را به PDF تبدیل کنید." },
-    "excel-to-pdf": { "name": "Excel به PDF", "description": "صفحات گسترده Excel خود را به PDF تبدیل کنید." },
-    "ppt-to-pdf": { "name": "PowerPoint به PDF", "description": "ارائه‌های PowerPoint خود را به PDF تبدیل کنید." },
-    "jpg-to-pdf": { "name": "JPG به PDF", "description": "تصاویر JPG خود را در یک سند PDF ترکیب کنید." },
-    "png-to-pdf": { "name": "PNG به PDF", "description": "تصاویر PNG خود را به فایل PDF تبدیل کنید." },
-    "html-to-pdf": { "name": "HTML به PDF", "description": "یک صفحه وب HTML را به سند PDF تبدیل کنید." },
-    "edit-pdf": { "name": "ویرایش PDF", "description": "متن، تصاویر و اشکال را به PDF خود اضافه کنید." },
-    "rotate-pdf": { "name": "چرخش PDF", "description": "صفحات PDF خود را بچرخانید." },
-    "add-page-numbers": { "name": "شماره‌گذاری صفحات", "description": "شماره صفحه به سند PDF خود اضافه کنید." },
-    "add-watermark": { "name": "افزودن واترمارک", "description": "واترمارک متنی یا تصویری به PDF خود اضافه کنید." },
-    "sign-pdf": { "name": "امضای PDF", "description": "اسناد PDF خود را به صورت الکترونیکی امضا کنید." },
-    "fill-pdf-form": { "name": "پر کردن فرم", "description": "فرم‌های PDF را به صورت آنلاین پر کنید." },
-    "redact-pdf": { "name": "سانسور PDF", "description": "اطلاعات حساس را در PDF خود پنهان کنید." },
-    "crop-pdf": { "name": "برش PDF", "description": "حاشیه‌ها را برش دهید و اندازه صفحات PDF را تغییر دهید." },
-    "protect-pdf": { "name": "محافظت PDF", "description": "PDF خود را با رمز عبور محافظت کنید." },
-    "unlock-pdf": { "name": "باز کردن قفل PDF", "description": "رمز عبور را از PDF محافظت‌شده حذف کنید." },
-    "pdf-ocr": { "name": "OCR PDF", "description": "PDF اسکن‌شده خود را قابل جستجو کنید." },
-    "compare-pdf": { "name": "مقایسه PDF", "description": "دو فایل PDF را مقایسه کنید و تفاوت‌ها را شناسایی کنید." },
-    "ai-pdf-summary": { "name": "خلاصه هوش مصنوعی", "description": "خلاصه هوشمندی از سند PDF خود دریافت کنید." },
-    "ai-pdf-chat": { "name": "چت با PDF", "description": "با استفاده از هوش مصنوعی از PDF خود سوال بپرسید." },
-    "ai-pdf-translate": { "name": "ترجمه PDF", "description": "سند PDF خود را با هوش مصنوعی به زبان دیگری ترجمه کنید." },
-    "edit-metadata": { "name": "ویرایش فراداده", "description": "عنوان، نویسنده و سایر فراداده‌های PDF خود را ویرایش کنید." },
-    "pdf-info": { "name": "اطلاعات PDF", "description": "تمام اطلاعات فنی فایل PDF خود را مشاهده کنید." },
-    "add-stamp": { "name": "افزودن مهر", "description": "مهر متنی یا تصویری به صفحات PDF خود اضافه کنید." },
-    "add-attachments": { "name": "پیوست‌های PDF", "description": "فایل‌ها را به عنوان پیوست در سند PDF خود جاسازی کنید." },
-    "extract-images": { "name": "استخراج تصاویر", "description": "تمام تصاویر جاسازی‌شده را از PDF خود استخراج کنید." },
-    "remove-images": { "name": "حذف تصاویر", "description": "تمام تصاویر را از PDF خود حذف کنید تا حجم کاهش یابد." },
-    "multi-page-layout": { "name": "چیدمان چند صفحه‌ای", "description": "۲، ۴، ۶ یا ۹ صفحه PDF را در یک برگه مرتب کنید." },
-    "overlay-pdf": { "name": "روی‌هم‌گذاری PDF", "description": "یک PDF را روی دیگری قرار دهید (پس‌زمینه، سرصفحه، امضا)." },
-    "sanitize-pdf": { "name": "پاکسازی PDF", "description": "جاوا اسکریپت، لینک‌ها و فراداده‌های حساس را از PDF خود حذف کنید." },
-    "remove-blanks": { "name": "حذف صفحات خالی", "description": "صفحات خالی را به طور خودکار شناسایی و از PDF خود حذف کنید." }
+    "merge-pdf": {
+      "name": "ادغام PDF",
+      "description": "چندین فایل PDF را در یک سند ترکیب کنید."
+    },
+    "split-pdf": {
+      "name": "تقسیم PDF",
+      "description": "یک PDF را به چندین فایل تقسیم کنید یا صفحات را استخراج کنید."
+    },
+    "remove-pages": {
+      "name": "حذف صفحات",
+      "description": "صفحات ناخواسته را از PDF خود حذف کنید."
+    },
+    "extract-pages": {
+      "name": "استخراج صفحات",
+      "description": "صفحات خاصی را برای ایجاد PDF جدید استخراج کنید."
+    },
+    "organize-pdf": {
+      "name": "سازماندهی PDF",
+      "description": "صفحات PDF خود را مرتب و سازماندهی کنید."
+    },
+    "compress-pdf": {
+      "name": "فشرده‌سازی PDF",
+      "description": "حجم فایل‌های PDF خود را بدون افت کیفیت کاهش دهید."
+    },
+    "repair-pdf": {
+      "name": "تعمیر PDF",
+      "description": "فایل PDF آسیب‌دیده یا خراب را تعمیر کنید."
+    },
+    "flatten-pdf": {
+      "name": "مسطح‌سازی PDF",
+      "description": "فرم‌ها و حاشیه‌نویسی‌های PDF خود را مسطح کنید."
+    },
+    "pdf-to-word": {
+      "name": "PDF به Word",
+      "description": "فایل‌های PDF خود را به اسناد Word قابل ویرایش تبدیل کنید."
+    },
+    "pdf-to-excel": {
+      "name": "PDF به Excel",
+      "description": "جداول PDF را به صفحات گسترده Excel تبدیل کنید."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF به PowerPoint",
+      "description": "فایل‌های PDF خود را به ارائه‌های PowerPoint تبدیل کنید."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF به JPG",
+      "description": "هر صفحه PDF خود را به تصویر JPG تبدیل کنید."
+    },
+    "pdf-to-png": {
+      "name": "PDF به PNG",
+      "description": "صفحات PDF خود را به تصاویر PNG با کیفیت بالا صادر کنید."
+    },
+    "pdf-to-html": {
+      "name": "PDF به HTML",
+      "description": "PDF خود را به صفحه وب HTML تبدیل کنید."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF به PDF/A",
+      "description": "PDF خود را برای بایگانی بلندمدت به فرمت PDF/A تبدیل کنید."
+    },
+    "word-to-pdf": {
+      "name": "Word به PDF",
+      "description": "اسناد Word خود را به PDF تبدیل کنید."
+    },
+    "excel-to-pdf": {
+      "name": "Excel به PDF",
+      "description": "صفحات گسترده Excel خود را به PDF تبدیل کنید."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint به PDF",
+      "description": "ارائه‌های PowerPoint خود را به PDF تبدیل کنید."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG به PDF",
+      "description": "تصاویر JPG خود را در یک سند PDF ترکیب کنید."
+    },
+    "png-to-pdf": {
+      "name": "PNG به PDF",
+      "description": "تصاویر PNG خود را به فایل PDF تبدیل کنید."
+    },
+    "html-to-pdf": {
+      "name": "HTML به PDF",
+      "description": "یک صفحه وب HTML را به سند PDF تبدیل کنید."
+    },
+    "edit-pdf": {
+      "name": "ویرایش PDF",
+      "description": "متن، تصاویر و اشکال را به PDF خود اضافه کنید."
+    },
+    "rotate-pdf": {
+      "name": "چرخش PDF",
+      "description": "صفحات PDF خود را بچرخانید."
+    },
+    "add-page-numbers": {
+      "name": "شماره‌گذاری صفحات",
+      "description": "شماره صفحه به سند PDF خود اضافه کنید."
+    },
+    "add-watermark": {
+      "name": "افزودن واترمارک",
+      "description": "واترمارک متنی یا تصویری به PDF خود اضافه کنید."
+    },
+    "sign-pdf": {
+      "name": "امضای PDF",
+      "description": "اسناد PDF خود را به صورت الکترونیکی امضا کنید."
+    },
+    "fill-pdf-form": {
+      "name": "پر کردن فرم",
+      "description": "فرم‌های PDF را به صورت آنلاین پر کنید."
+    },
+    "redact-pdf": {
+      "name": "سانسور PDF",
+      "description": "اطلاعات حساس را در PDF خود پنهان کنید."
+    },
+    "crop-pdf": {
+      "name": "برش PDF",
+      "description": "حاشیه‌ها را برش دهید و اندازه صفحات PDF را تغییر دهید."
+    },
+    "protect-pdf": {
+      "name": "محافظت PDF",
+      "description": "PDF خود را با رمز عبور محافظت کنید."
+    },
+    "unlock-pdf": {
+      "name": "باز کردن قفل PDF",
+      "description": "رمز عبور را از PDF محافظت‌شده حذف کنید."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "PDF اسکن‌شده خود را قابل جستجو کنید."
+    },
+    "compare-pdf": {
+      "name": "مقایسه PDF",
+      "description": "دو فایل PDF را مقایسه کنید و تفاوت‌ها را شناسایی کنید."
+    },
+    "ai-pdf-summary": {
+      "name": "خلاصه هوش مصنوعی",
+      "description": "خلاصه هوشمندی از سند PDF خود دریافت کنید."
+    },
+    "ai-pdf-chat": {
+      "name": "چت با PDF",
+      "description": "با استفاده از هوش مصنوعی از PDF خود سوال بپرسید."
+    },
+    "ai-pdf-translate": {
+      "name": "ترجمه PDF",
+      "description": "سند PDF خود را با هوش مصنوعی به زبان دیگری ترجمه کنید."
+    },
+    "edit-metadata": {
+      "name": "ویرایش فراداده",
+      "description": "عنوان، نویسنده و سایر فراداده‌های PDF خود را ویرایش کنید."
+    },
+    "pdf-info": {
+      "name": "اطلاعات PDF",
+      "description": "تمام اطلاعات فنی فایل PDF خود را مشاهده کنید."
+    },
+    "add-stamp": {
+      "name": "افزودن مهر",
+      "description": "مهر متنی یا تصویری به صفحات PDF خود اضافه کنید."
+    },
+    "add-attachments": {
+      "name": "پیوست‌های PDF",
+      "description": "فایل‌ها را به عنوان پیوست در سند PDF خود جاسازی کنید."
+    },
+    "extract-images": {
+      "name": "استخراج تصاویر",
+      "description": "تمام تصاویر جاسازی‌شده را از PDF خود استخراج کنید."
+    },
+    "remove-images": {
+      "name": "حذف تصاویر",
+      "description": "تمام تصاویر را از PDF خود حذف کنید تا حجم کاهش یابد."
+    },
+    "multi-page-layout": {
+      "name": "چیدمان چند صفحه‌ای",
+      "description": "۲، ۴، ۶ یا ۹ صفحه PDF را در یک برگه مرتب کنید."
+    },
+    "overlay-pdf": {
+      "name": "روی‌هم‌گذاری PDF",
+      "description": "یک PDF را روی دیگری قرار دهید (پس‌زمینه، سرصفحه، امضا)."
+    },
+    "sanitize-pdf": {
+      "name": "پاکسازی PDF",
+      "description": "جاوا اسکریپت، لینک‌ها و فراداده‌های حساس را از PDF خود حذف کنید."
+    },
+    "remove-blanks": {
+      "name": "حذف صفحات خالی",
+      "description": "صفحات خالی را به طور خودکار شناسایی و از PDF خود حذف کنید."
+    }
   },
   "Home": {
     "why_choose": "چرا iLoveDoc را انتخاب کنید؟",
@@ -87,5 +225,11 @@
     "speed_desc": "بدون آپلود به سرور، پردازش‌ها فوری هستند و به اتصال اینترنت شما بستگی ندارند.",
     "no_signup_title": "بدون ثبت‌نام",
     "no_signup_desc": "فوراً شروع کنید. نیازی به ایجاد حساب یا ارائه ایمیل برای استفاده از ابزارها نیست."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

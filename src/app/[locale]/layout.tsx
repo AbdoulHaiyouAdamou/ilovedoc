@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import GoogleTranslate from '@/components/common/GoogleTranslate';
 import ScrollToTop from '@/components/common/ScrollToTop';
+import CookieConsent from '@/components/common/CookieConsent';
 import '../globals.css';
 import '../workspace.css';
 
@@ -315,6 +316,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ScrollToTop />
           {children}
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>

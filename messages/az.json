@@ -225,5 +225,11 @@
     "speed_desc": "Serverə yükləmə olmadan emal prosesləri dərhal həyata keçir və internet bağlantınızdan asılı deyil.",
     "no_signup_title": "Qeydiyyat Tələb Olunmur",
     "no_signup_desc": "Dərhal başlayın. Alətlərdən istifadə etmək üçün hesab yaradmağa və ya email ünvanınızı verməyə ehtiyac yoxdur."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

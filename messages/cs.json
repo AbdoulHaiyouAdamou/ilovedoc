@@ -208,5 +208,11 @@
       "name": "Nakladat PDF",
       "description": "Nakladat jeden PDF na druhý (fond stránky, hlavička, podpis)."
     }
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

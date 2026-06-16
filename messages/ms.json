@@ -212,5 +212,11 @@
       "name": "Menghilangkan PDF",
       "description": "Hapus JavaScript, tautan, dan metadata sensitif dari PDF Anda."
     }
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

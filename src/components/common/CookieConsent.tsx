@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 declare global {
   interface Window {
@@ -12,23 +14,20 @@ declare global {
 const CONSENT_KEY = 'ilovedoc-cookie-consent';
 
 export default function CookieConsent() {
+  const t = useTranslations('Cookies');
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem(CONSENT_KEY);
     if (!stored) {
-      // Show banner after a short delay for smooth entrance
       const timer = setTimeout(() => setVisible(true), 1200);
       return () => clearTimeout(timer);
     }
-    // Apply stored consent on load
     applyConsent(stored === 'granted');
   }, []);
 
   const applyConsent = (granted: boolean) => {
     const status = granted ? 'granted' : 'denied';
-
-    // Google Consent Mode v2
     if (typeof window.gtag === 'function') {
       window.gtag('consent', 'update', {
         ad_storage: status,
@@ -84,10 +83,8 @@ export default function CookieConsent() {
           flexWrap: 'wrap' as const,
         }}
       >
-        {/* Icon */}
         <span style={{ fontSize: 28, flexShrink: 0 }}>🍪</span>
 
-        {/* Text */}
         <div style={{ flex: 1, minWidth: 220 }}>
           <p
             style={{
@@ -97,24 +94,22 @@ export default function CookieConsent() {
               color: 'var(--text-primary, #1a1a2e)',
             }}
           >
-            Nous utilisons des cookies pour améliorer votre expérience et afficher des publicités
-            pertinentes. En cliquant sur &laquo;&nbsp;Accepter&nbsp;&raquo;, vous consentez à
-            l&apos;utilisation de cookies conformément à notre{' '}
-            <a
-              href="/politique-confidentialite"
+            {t('message')}
+            {' '}
+            <Link
+              href="/privacy"
               style={{
                 color: 'var(--primary, #6345d7)',
                 textDecoration: 'underline',
                 textUnderlineOffset: 2,
               }}
             >
-              politique de confidentialité
-            </a>
+              {t('policy_link')}
+            </Link>
             .
           </p>
         </div>
 
-        {/* Buttons */}
         <div style={{ display: 'flex', gap: 10, flexShrink: 0 }}>
           <button
             onClick={handleReject}
@@ -131,7 +126,7 @@ export default function CookieConsent() {
               fontFamily: 'inherit',
             }}
           >
-            Refuser
+            {t('reject')}
           </button>
           <button
             onClick={handleAccept}
@@ -149,12 +144,11 @@ export default function CookieConsent() {
               fontFamily: 'inherit',
             }}
           >
-            Accepter
+            {t('accept')}
           </button>
         </div>
       </div>
 
-      {/* Dark mode overrides */}
       <style jsx>{`
         [data-theme='dark'] div[role='dialog'] > div {
           background: rgba(26, 26, 46, 0.88) !important;

@@ -32,52 +32,190 @@
     "rights": "Eskubide guztiak erreserbatuta"
   },
   "Tools": {
-    "merge-pdf": { "name": "PDF Batu", "description": "Konbinatu hainbat PDF fitxategi dokumentu bakarrean." },
-    "split-pdf": { "name": "PDF Zatitu", "description": "Banatu PDF bat hainbat fitxategitan edo atera orriak." },
-    "remove-pages": { "name": "Orriak kendu", "description": "Kendu nahi ez dituzun orriak zure PDFtik." },
-    "extract-pages": { "name": "Orriak atera", "description": "Atera orri zehatzak PDF berri bat sortzeko." },
-    "organize-pdf": { "name": "PDF Antolatu", "description": "Ordenatu eta berrantolatu zure PDFko orriak." },
-    "compress-pdf": { "name": "PDF Konprimitu", "description": "Murriztu zure PDF fitxategien tamaina kalitatea galdu gabe." },
-    "repair-pdf": { "name": "PDF Konpondu", "description": "Konpondu hondatutako PDF fitxategia." },
-    "flatten-pdf": { "name": "PDF Lautu", "description": "Lautu zure PDFko formularioak eta oharpenak." },
-    "pdf-to-word": { "name": "PDF Word-era", "description": "Bihurtu zure PDFak Word dokumentu editagarrietara." },
-    "pdf-to-excel": { "name": "PDF Excel-era", "description": "Bihurtu PDF taulak Excel kalkulu-orrietara." },
-    "pdf-to-ppt": { "name": "PDF PowerPoint-era", "description": "Bihurtu zure PDFak PowerPoint aurkezpenetara." },
-    "pdf-to-jpg": { "name": "PDF JPG-ra", "description": "Bihurtu zure PDFko orri bakoitza JPG irudira." },
-    "pdf-to-png": { "name": "PDF PNG-ra", "description": "Esportatu zure PDF orriak kalitate handiko PNG irudietan." },
-    "pdf-to-html": { "name": "PDF HTML-ra", "description": "Bihurtu zure PDFa HTML web orrira." },
-    "pdf-to-pdfa": { "name": "PDF PDF/A-ra", "description": "Bihurtu zure PDFa PDF/A formatura epe luzeko artxibatzeko." },
-    "word-to-pdf": { "name": "Word PDF-ra", "description": "Bihurtu zure Word dokumentuak PDFra." },
-    "excel-to-pdf": { "name": "Excel PDF-ra", "description": "Bihurtu zure Excel kalkulu-orriak PDFra." },
-    "ppt-to-pdf": { "name": "PowerPoint PDF-ra", "description": "Bihurtu zure PowerPoint aurkezpenak PDFra." },
-    "jpg-to-pdf": { "name": "JPG PDF-ra", "description": "Konbinatu zure JPG irudiak PDF dokumentu batean." },
-    "png-to-pdf": { "name": "PNG PDF-ra", "description": "Bihurtu zure PNG irudiak PDF fitxategi batean." },
-    "html-to-pdf": { "name": "HTML PDF-ra", "description": "Bihurtu HTML web orri bat PDF dokumentura." },
-    "edit-pdf": { "name": "PDF Editatu", "description": "Gehitu testua, irudiak eta formak zure PDFari." },
-    "rotate-pdf": { "name": "PDF Biratu", "description": "Biratu zure PDFko orriak." },
-    "add-page-numbers": { "name": "Orri-zenbakiak gehitu", "description": "Gehitu orri-zenbakiak zure PDF dokumentuari." },
-    "add-watermark": { "name": "Ur-marka gehitu", "description": "Gehitu testu edo irudi ur-marka zure PDFari." },
-    "sign-pdf": { "name": "PDF Sinatu", "description": "Sinatu zure PDF dokumentuak elektronikoki." },
-    "fill-pdf-form": { "name": "Formularioa bete", "description": "Bete PDF formularioak sarean." },
-    "redact-pdf": { "name": "PDF Ezkutatu", "description": "Ezkutatu informazio sentikorra zure PDFan." },
-    "crop-pdf": { "name": "PDF Moztu", "description": "Moztu marjinak eta aldatu zure PDF orrien tamaina." },
-    "protect-pdf": { "name": "PDF Babestu", "description": "Babestu zure PDFa pasahitz batekin." },
-    "unlock-pdf": { "name": "PDF Desblokeatu", "description": "Kendu pasahitza babestutako PDF batetik." },
-    "pdf-ocr": { "name": "OCR PDF", "description": "Egin zure eskaneatutako PDFa bilatzeko modukoa." },
-    "compare-pdf": { "name": "PDF Konparatu", "description": "Konparatu bi PDF fitxategi eta identifikatu desberdintasunak." },
-    "ai-pdf-summary": { "name": "AA Laburpena", "description": "Lortu zure PDF dokumentuaren laburpen adimentsua." },
-    "ai-pdf-chat": { "name": "PDFrekin txateatu", "description": "Egin galderak zure PDFari adimen artifizialarekin." },
-    "ai-pdf-translate": { "name": "PDF Itzuli", "description": "Itzuli zure PDF dokumentua beste hizkuntza batera AArekin." },
-    "edit-metadata": { "name": "Metadatuak editatu", "description": "Editatu zure PDFaren izenburua, egilea eta beste metadatuak." },
-    "pdf-info": { "name": "PDF Informazioa", "description": "Ikusi zure PDF fitxategiaren informazio tekniko guztia." },
-    "add-stamp": { "name": "Zigilua gehitu", "description": "Gehitu testu edo irudi zigilua zure PDF orriei." },
-    "add-attachments": { "name": "PDF Eranskinak", "description": "Txertatu fitxategiak eranskin gisa zure PDF dokumentuan." },
-    "extract-images": { "name": "Irudiak atera", "description": "Atera txertatutako irudi guztiak zure PDFtik." },
-    "remove-images": { "name": "Irudiak kendu", "description": "Ezabatu irudi guztiak zure PDFtik tamaina murrizteko." },
-    "multi-page-layout": { "name": "Orri anitzeko diseinua", "description": "Antolatu 2, 4, 6 edo 9 PDF orri orri bakarrean." },
-    "overlay-pdf": { "name": "PDF Gainjarri", "description": "Gainjarri PDF bat beste baten gainean (atzealdea, goiburua, sinadura)." },
-    "sanitize-pdf": { "name": "PDF Garbitu", "description": "Kendu JavaScript, estekak eta metadatu sentikorrak zure PDFtik." },
-    "remove-blanks": { "name": "Orri zuriak kendu", "description": "Detektatu eta kendu automatikoki orri zuriak zure PDFtik." }
+    "merge-pdf": {
+      "name": "PDF Batu",
+      "description": "Konbinatu hainbat PDF fitxategi dokumentu bakarrean."
+    },
+    "split-pdf": {
+      "name": "PDF Zatitu",
+      "description": "Banatu PDF bat hainbat fitxategitan edo atera orriak."
+    },
+    "remove-pages": {
+      "name": "Orriak kendu",
+      "description": "Kendu nahi ez dituzun orriak zure PDFtik."
+    },
+    "extract-pages": {
+      "name": "Orriak atera",
+      "description": "Atera orri zehatzak PDF berri bat sortzeko."
+    },
+    "organize-pdf": {
+      "name": "PDF Antolatu",
+      "description": "Ordenatu eta berrantolatu zure PDFko orriak."
+    },
+    "compress-pdf": {
+      "name": "PDF Konprimitu",
+      "description": "Murriztu zure PDF fitxategien tamaina kalitatea galdu gabe."
+    },
+    "repair-pdf": {
+      "name": "PDF Konpondu",
+      "description": "Konpondu hondatutako PDF fitxategia."
+    },
+    "flatten-pdf": {
+      "name": "PDF Lautu",
+      "description": "Lautu zure PDFko formularioak eta oharpenak."
+    },
+    "pdf-to-word": {
+      "name": "PDF Word-era",
+      "description": "Bihurtu zure PDFak Word dokumentu editagarrietara."
+    },
+    "pdf-to-excel": {
+      "name": "PDF Excel-era",
+      "description": "Bihurtu PDF taulak Excel kalkulu-orrietara."
+    },
+    "pdf-to-ppt": {
+      "name": "PDF PowerPoint-era",
+      "description": "Bihurtu zure PDFak PowerPoint aurkezpenetara."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF JPG-ra",
+      "description": "Bihurtu zure PDFko orri bakoitza JPG irudira."
+    },
+    "pdf-to-png": {
+      "name": "PDF PNG-ra",
+      "description": "Esportatu zure PDF orriak kalitate handiko PNG irudietan."
+    },
+    "pdf-to-html": {
+      "name": "PDF HTML-ra",
+      "description": "Bihurtu zure PDFa HTML web orrira."
+    },
+    "pdf-to-pdfa": {
+      "name": "PDF PDF/A-ra",
+      "description": "Bihurtu zure PDFa PDF/A formatura epe luzeko artxibatzeko."
+    },
+    "word-to-pdf": {
+      "name": "Word PDF-ra",
+      "description": "Bihurtu zure Word dokumentuak PDFra."
+    },
+    "excel-to-pdf": {
+      "name": "Excel PDF-ra",
+      "description": "Bihurtu zure Excel kalkulu-orriak PDFra."
+    },
+    "ppt-to-pdf": {
+      "name": "PowerPoint PDF-ra",
+      "description": "Bihurtu zure PowerPoint aurkezpenak PDFra."
+    },
+    "jpg-to-pdf": {
+      "name": "JPG PDF-ra",
+      "description": "Konbinatu zure JPG irudiak PDF dokumentu batean."
+    },
+    "png-to-pdf": {
+      "name": "PNG PDF-ra",
+      "description": "Bihurtu zure PNG irudiak PDF fitxategi batean."
+    },
+    "html-to-pdf": {
+      "name": "HTML PDF-ra",
+      "description": "Bihurtu HTML web orri bat PDF dokumentura."
+    },
+    "edit-pdf": {
+      "name": "PDF Editatu",
+      "description": "Gehitu testua, irudiak eta formak zure PDFari."
+    },
+    "rotate-pdf": {
+      "name": "PDF Biratu",
+      "description": "Biratu zure PDFko orriak."
+    },
+    "add-page-numbers": {
+      "name": "Orri-zenbakiak gehitu",
+      "description": "Gehitu orri-zenbakiak zure PDF dokumentuari."
+    },
+    "add-watermark": {
+      "name": "Ur-marka gehitu",
+      "description": "Gehitu testu edo irudi ur-marka zure PDFari."
+    },
+    "sign-pdf": {
+      "name": "PDF Sinatu",
+      "description": "Sinatu zure PDF dokumentuak elektronikoki."
+    },
+    "fill-pdf-form": {
+      "name": "Formularioa bete",
+      "description": "Bete PDF formularioak sarean."
+    },
+    "redact-pdf": {
+      "name": "PDF Ezkutatu",
+      "description": "Ezkutatu informazio sentikorra zure PDFan."
+    },
+    "crop-pdf": {
+      "name": "PDF Moztu",
+      "description": "Moztu marjinak eta aldatu zure PDF orrien tamaina."
+    },
+    "protect-pdf": {
+      "name": "PDF Babestu",
+      "description": "Babestu zure PDFa pasahitz batekin."
+    },
+    "unlock-pdf": {
+      "name": "PDF Desblokeatu",
+      "description": "Kendu pasahitza babestutako PDF batetik."
+    },
+    "pdf-ocr": {
+      "name": "OCR PDF",
+      "description": "Egin zure eskaneatutako PDFa bilatzeko modukoa."
+    },
+    "compare-pdf": {
+      "name": "PDF Konparatu",
+      "description": "Konparatu bi PDF fitxategi eta identifikatu desberdintasunak."
+    },
+    "ai-pdf-summary": {
+      "name": "AA Laburpena",
+      "description": "Lortu zure PDF dokumentuaren laburpen adimentsua."
+    },
+    "ai-pdf-chat": {
+      "name": "PDFrekin txateatu",
+      "description": "Egin galderak zure PDFari adimen artifizialarekin."
+    },
+    "ai-pdf-translate": {
+      "name": "PDF Itzuli",
+      "description": "Itzuli zure PDF dokumentua beste hizkuntza batera AArekin."
+    },
+    "edit-metadata": {
+      "name": "Metadatuak editatu",
+      "description": "Editatu zure PDFaren izenburua, egilea eta beste metadatuak."
+    },
+    "pdf-info": {
+      "name": "PDF Informazioa",
+      "description": "Ikusi zure PDF fitxategiaren informazio tekniko guztia."
+    },
+    "add-stamp": {
+      "name": "Zigilua gehitu",
+      "description": "Gehitu testu edo irudi zigilua zure PDF orriei."
+    },
+    "add-attachments": {
+      "name": "PDF Eranskinak",
+      "description": "Txertatu fitxategiak eranskin gisa zure PDF dokumentuan."
+    },
+    "extract-images": {
+      "name": "Irudiak atera",
+      "description": "Atera txertatutako irudi guztiak zure PDFtik."
+    },
+    "remove-images": {
+      "name": "Irudiak kendu",
+      "description": "Ezabatu irudi guztiak zure PDFtik tamaina murrizteko."
+    },
+    "multi-page-layout": {
+      "name": "Orri anitzeko diseinua",
+      "description": "Antolatu 2, 4, 6 edo 9 PDF orri orri bakarrean."
+    },
+    "overlay-pdf": {
+      "name": "PDF Gainjarri",
+      "description": "Gainjarri PDF bat beste baten gainean (atzealdea, goiburua, sinadura)."
+    },
+    "sanitize-pdf": {
+      "name": "PDF Garbitu",
+      "description": "Kendu JavaScript, estekak eta metadatu sentikorrak zure PDFtik."
+    },
+    "remove-blanks": {
+      "name": "Orri zuriak kendu",
+      "description": "Detektatu eta kendu automatikoki orri zuriak zure PDFtik."
+    }
   },
   "Home": {
     "why_choose": "Zergatik aukeratu iLoveDoc?",
@@ -87,5 +225,11 @@
     "speed_desc": "Zerbitzarira igo gabe, prozesuak berehalakoak dira eta ez dute zure internet konexioaren mende.",
     "no_signup_title": "Erregistrorik Gabe",
     "no_signup_desc": "Hasi berehala. Ez duzu konturik sortu edo emailik eman behar tresnak erabiltzeko."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

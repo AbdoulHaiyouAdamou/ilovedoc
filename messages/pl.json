@@ -225,5 +225,11 @@
     "speed_desc": "Bez przesyłania plików na serwer, przetwarzanie jest natychmiastowe i nie zależy od połączenia internetowego.",
     "no_signup_title": "Bez Rejestracji",
     "no_signup_desc": "Rozpocznij od razu. Nie musisz tworzyć konta ani podawać adresu e-mail, aby korzystać z narzędzi."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

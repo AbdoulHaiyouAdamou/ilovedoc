@@ -225,5 +225,11 @@
     "speed_desc": "Sense pujar a un servidor, els tractaments són instantanis i no depenen de la teva connexió a Internet.",
     "no_signup_title": "Sense Registre",
     "no_signup_desc": "Comença immediatament. No cal crear un compte ni donar el teu correu electrònic per utilitzar les eines."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

@@ -225,5 +225,11 @@
     "speed_desc": "Không cần tải lên máy chủ, xử lý tức thời và không phụ thuộc vào kết nối internet của bạn.",
     "no_signup_title": "Không cần Đăng ký",
     "no_signup_desc": "Bắt đầu ngay. Không cần tạo tài khoản hoặc cung cấp email để sử dụng các công cụ."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

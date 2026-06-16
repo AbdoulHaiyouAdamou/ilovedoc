@@ -225,5 +225,11 @@
     "speed_desc": "Без завантаження на сервер, обробка відбувається миттєво та не залежить від вашої інтернет-з'єднання.",
     "no_signup_title": "Без Реєстрації",
     "no_signup_desc": "Почніть одразу. Не потрібно створювати обліковий запис чи надавати вашу електронну адресу для використання інструментів."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

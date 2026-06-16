@@ -225,5 +225,11 @@
     "speed_desc": "Sans upload vers un serveur, les traitements sont instantanés et ne dépendent pas de votre connexion internet.",
     "no_signup_title": "Sans Inscription",
     "no_signup_desc": "Commencez immédiatement. Pas besoin de créer de compte ou de donner votre email pour utiliser les outils."
+  },
+  "Cookies": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience et afficher des publicités pertinentes. En cliquant sur « Accepter », vous consentez à l'utilisation de cookies conformément à notre",
+    "policy_link": "politique de confidentialité",
+    "reject": "Refuser",
+    "accept": "Accepter"
   }
 }

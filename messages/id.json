@@ -225,5 +225,11 @@
     "speed_desc": "Tanpa upload ke server, pengolahan instan dan tidak bergantung pada koneksi internet Anda.",
     "no_signup_title": "Tanpa Pendaftaran",
     "no_signup_desc": "Mulai sekarang. Tidak perlu membuat akun atau memberikan alamat email untuk menggunakan alat."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

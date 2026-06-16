@@ -204,5 +204,11 @@
       "name": "Mange sider layout",
       "description": "Arranger 2, 4, 6 eller 9 sider i en enkelt side."
     }
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

@@ -225,5 +225,11 @@
     "speed_desc": "ไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ การประมวลผลเกิดขึ้นทันทีและไม่ขึ้นอยู่กับการเชื่อมต่ออินเทอร์เน็ตของคุณ",
     "no_signup_title": "ไม่ต้องสมัครสมาชิก",
     "no_signup_desc": "เริ่มต้นได้ทันที ไม่ต้องสร้างบัญชีหรือให้ข้อมูลอีเมลของคุณเพื่อใช้เครื่องมือ"
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

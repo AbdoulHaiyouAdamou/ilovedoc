@@ -225,5 +225,11 @@
     "speed_desc": ". .",
     "no_signup_title": "",
     "no_signup_desc": ". ."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

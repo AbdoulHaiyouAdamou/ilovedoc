@@ -225,5 +225,11 @@
     "speed_desc": "Без качване на сървър, обработките са моментални и не зависят от интернет връзката ви.",
     "no_signup_title": "Без Регистрация",
     "no_signup_desc": "Започнете веднага. Няма нужда да създавате акаунт или да давате имейл адрес, за да използвате инструментите."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }

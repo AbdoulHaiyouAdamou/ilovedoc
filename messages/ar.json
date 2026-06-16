@@ -225,5 +225,11 @@
     "speed_desc": "بدون تحميل إلى خادم، تكون المعالجات فورية ولا تعتمد على اتصالك بالإنترنت.",
     "no_signup_title": "بدون تسجيل",
     "no_signup_desc": "ابدأ على الفور. لا حاجة لإنشاء حساب أو تقديم بريدك الإلكتروني لاستخدام الأدوات."
+  },
+  "Cookies": {
+    "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
+    "policy_link": "privacy policy",
+    "reject": "Reject",
+    "accept": "Accept"
   }
 }
