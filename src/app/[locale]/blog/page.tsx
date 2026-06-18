@@ -2,37 +2,38 @@ import type { Metadata } from 'next';
 import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { blogPosts } from '@/config/blog';
 import styles from './blog.module.css';
 
-export const metadata: Metadata = {
-  title: 'Blog iLoveDoc - Guides et Astuces PDF en Ligne',
-  description:
-    'Découvrez tous nos guides pratiques, conseils et astuces pour éditer, fusionner, convertir et sécuriser vos fichiers PDF en toute simplicité.',
-  keywords: [
-    'blog pdf',
-    'astuces pdf',
-    'guides pdf',
-    'iLoveDoc',
-    'signatures électroniques légales',
-    'fusionner pdf et jpg',
-    'modifier pdf sans adobe'
-  ],
-  openGraph: {
-    title: 'Blog iLoveDoc - Guides et Astuces PDF en Ligne',
-    description:
-      'Guides pratiques, conseils et astuces pour simplifier la gestion de vos fichiers PDF.',
-    url: 'https://ilovedoc.com/blog',
-    siteName: 'iLoveDoc',
-    type: 'website',
-    locale: 'fr_FR',
-  },
-  alternates: {
-    canonical: 'https://ilovedoc.com/blog',
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Footer' });
+  const tBlog = await getTranslations({ locale, namespace: 'Blog' });
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+
+  const title = `${t('blog')} | iLoveDoc`;
+  const description = tBlog('title') + ' - ' + tBlog('subtitle');
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${baseUrl}/${locale}/blog`,
+      siteName: 'iLoveDoc',
+      type: 'website',
+      locale,
+    },
+  };
+}
 
 export default function BlogPage() {
   const tFooter = useTranslations('Footer');

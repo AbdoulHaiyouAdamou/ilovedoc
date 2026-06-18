@@ -1,230 +1,230 @@
 {
   "Hero": {
-    "title": "",
-    "subtitle": " , 100% , , .",
-    "badge_tools": "46 ",
-    "badge_privacy": "",
-    "badge_local": ""
+    "title": "PDF 모든 도구가 한 곳에",
+    "subtitle": "PDF를 사용하기 위해 필요한 모든 도구가 손에 달려 있습니다. 모두 100% 무료, 보안 강화 및 사용하기 쉬운 도구입니다.",
+    "badge_tools": "46 도구",
+    "badge_privacy": "개인정보 보호 보장",
+    "badge_local": "로컬 처리"
   },
   "Common": {
-    "select_file": "PDF ",
-    "or_drop": " PDF "
+    "select_file": "PDF 파일을 선택하세요",
+    "or_drop": "&lt;p&gt;PDF를 드롭하세요&lt;/p&gt;"
   },
   "Header": {
-    "merge": "PDF ",
-    "split": "PDF ",
-    "compress": "PDF ",
-    "convert": "PDF ",
-    "all_tools": " "
+    "merge": "PDF 병합",
+    "split": "PDF 분할",
+    "compress": "PDF 압축",
+    "convert": "PDF 변환",
+    "all_tools": "모든 도구"
   },
   "Footer": {
-    "popular": "",
-    "convert": "PDF ",
-    "about": "",
-    "legal": "",
-    "about_us": "",
-    "contact": "",
-    "blog": "",
-    "faq": "",
-    "terms": "",
-    "privacy": "",
-    "cookies": "",
-    "rights": ""
+    "popular": "인기 도구",
+    "convert": "PDF 변환",
+    "about": "회사 소개",
+    "legal": "법적",
+    "about_us": "우리는 누구인가",
+    "contact": "연락처",
+    "blog": "블로그",
+    "faq": "FAQ",
+    "terms": "이용 약관",
+    "privacy": "개인 정보 보호 정책",
+    "cookies": "쿠키 정책",
+    "rights": "전체 권리 보유"
   },
   "Tools": {
     "merge-pdf": {
-      "name": "PDF ",
-      "description": " ."
+      "name": "PDF 결합",
+      "description": "여러 PDF 파일을 하나의 문서로 결합합니다."
     },
     "split-pdf": {
-      "name": "PDF ",
-      "description": " ."
+      "name": "PDF 분할",
+      "description": "PDF를 여러 파일로 분리하거나 페이지를 추출합니다."
     },
     "remove-pages": {
-      "name": "",
-      "description": "PDF ."
+      "name": "페이지 삭제",
+      "description": "PDF에서 불필요한 페이지를 삭제합니다."
     },
     "extract-pages": {
-      "name": "",
-      "description": " ."
+      "name": "페이지 추출",
+      "description": "특정 페이지를 추출하여 새 PDF를 생성합니다."
     },
     "organize-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 구성",
+      "description": "PDF의 페이지를 정렬하고 재구성합니다."
     },
     "compress-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 압축",
+      "description": "품질 손실 없이 PDF 파일 크기를 줄입니다."
     },
     "repair-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 복구",
+      "description": "손상되거나 손상된 PDF 파일을 복구합니다."
     },
     "flatten-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 평탄화",
+      "description": "PDF의 양식 및 주석을 평탄화합니다."
     },
     "pdf-to-word": {
-      "name": "PDF Word",
-      "description": "PDF Word ."
+      "name": "PDF 으로 Word",
+      "description": "어뒤정하세요 PDF를 초안하는 Word 문서로 변환하세요."
     },
     "pdf-to-excel": {
-      "name": "PDF Excel",
-      "description": "PDF Excel ."
+      "name": "PDF 으로 Excel",
+      "description": "아버 PDF 탈정이를 Excel 홌수식으로 변환하세요."
     },
     "pdf-to-ppt": {
-      "name": "PDF PowerPoint",
-      "description": "PDF PowerPoint ."
+      "name": "PDF 으로 PowerPoint",
+      "description": "아버 PDF를 PowerPoint 전수로 변환하세요."
     },
     "pdf-to-jpg": {
-      "name": "PDF JPG",
-      "description": "PDF JPG ."
+      "name": "PDF 으로 JPG",
+      "description": "아버 PDF의 모들 페이지를 JPG 영상으로 변환하세요."
     },
     "pdf-to-png": {
-      "name": "PDF PNG",
-      "description": "PDF PNG ."
+      "name": "PDF 으로 PNG",
+      "description": "아버 PDF 페이지를 초안하는 PNG 영상으로 번출하세요."
     },
     "pdf-to-html": {
-      "name": "PDF HTML",
-      "description": "PDF HTML ."
+      "name": "PDF 으로 HTML",
+      "description": "아버 PDF를 HTML 웰ebeb 페이지를 변환하세요."
     },
     "pdf-to-pdfa": {
-      "name": "PDF PDF/A",
-      "description": "PDF PDF/A ."
+      "name": "PDF 으로 PDF/A",
+      "description": "장기 초안를 위하세요 PDF를 PDF/A 형식으로 변환하세요."
     },
     "word-to-pdf": {
-      "name": "Word PDF",
-      "description": "Word PDF ."
+      "name": "Word 으로 PDF",
+      "description": "초안하는 Word 문서를 PDF를 변환하세요."
     },
     "excel-to-pdf": {
-      "name": "Excel PDF",
-      "description": "Excel PDF ."
+      "name": "Excel을 PDF로",
+      "description": "Excel 스프레드시트를 PDF로 변환하세요."
     },
     "ppt-to-pdf": {
-      "name": "PowerPoint PDF",
-      "description": "PowerPoint PDF ."
+      "name": "PowerPoint를 PDF로",
+      "description": "PowerPoint 프레젠테이션을 PDF로 변환하세요."
     },
     "jpg-to-pdf": {
-      "name": "JPG PDF",
-      "description": "JPG PDF ."
+      "name": "JPG를 PDF로",
+      "description": "JPG 이미지를 하나의 PDF 문서로 결합하세요."
     },
     "png-to-pdf": {
-      "name": "PNG PDF",
-      "description": "PNG PDF ."
+      "name": "PNG를 PDF로",
+      "description": "PNG 이미지를 PDF 파일로 변환하세요."
     },
     "html-to-pdf": {
-      "name": "HTML PDF",
-      "description": "HTML PDF ."
+      "name": "HTML을 PDF로",
+      "description": "HTML 웹 페이지를 PDF 문서로 변환하세요."
     },
     "edit-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 편집",
+      "description": "PDF에 텍스트, 이미지 및 도형을 추가하세요."
     },
     "rotate-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 회전",
+      "description": "PDF 페이지를 회전하세요."
     },
     "add-page-numbers": {
-      "name": "",
-      "description": "PDF ."
+      "name": "페이지 번호 추가",
+      "description": "PDF 문서에 페이지 번호를 추가하세요."
     },
     "add-watermark": {
-      "name": "",
-      "description": "PDF ."
+      "name": "PDF에 필그란을 추가하기",
+      "description": "텍스트 또는 이미지 필그란을 PDF에 추가합니다."
     },
     "sign-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 서명",
+      "description": "전자 문서 PDF를 서명합니다."
     },
     "fill-pdf-form": {
-      "name": "",
-      "description": "PDF ."
+      "name": "PDF 양식을 채우기",
+      "description": "&lt;strong&gt;온라인&lt;/strong&gt;으로 PDF 양식을 채우세요."
     },
     "redact-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF를 검열하기",
+      "description": "PDF에서 민감한 정보를 숨깁니다."
     },
     "crop-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF를 자르기",
+      "description": "PDF의 여백을 조절하고 페이지를 자릅니다."
     },
     "protect-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF를 보호하기",
+      "description": "PDF를 암호로 보호합니다."
     },
     "unlock-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF를 해제하기",
+      "description": "암호가 걸린 PDF를 해제합니다."
     },
     "pdf-ocr": {
       "name": "PDF OCR",
-      "description": "PDF ."
+      "description": "스캔된 PDF를 읽을 수 있도록 만듭니다."
     },
     "compare-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 비교",
+      "description": "두 개의 PDF 파일을 비교하고 차이점을 식별합니다."
     },
     "ai-pdf-summary": {
-      "name": "AI ",
-      "description": "PDF ."
+      "name": "AI 요약",
+      "description": "PDF 문서의 스마트 요약을 얻습니다."
     },
     "ai-pdf-chat": {
-      "name": "AI PDF",
-      "description": "PDF AI ."
+      "name": "PDF와 채팅",
+      "description": "인공지능을 통해 PDF에 질문을 던집니다."
     },
     "ai-pdf-translate": {
-      "name": "PDF ",
-      "description": "PDF AI ."
+      "name": "PDF 번역",
+      "description": "인공지능을 사용하여 PDF 문서를 다른 언어로 번역합니다."
     },
     "edit-metadata": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "메타데이터 수정",
+      "description": "PDF의 제목, 작성자 및 기타 메타데이터를 수정합니다."
     },
     "pdf-info": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 정보",
+      "description": "PDF 파일의 모든 기술 정보를 표시합니다."
     },
     "add-stamp": {
-      "name": "",
-      "description": "PDF ."
+      "name": "스탬프 추가",
+      "description": "PDF 페이지에 텍스트 또는 이미지 스탬프를 추가합니다."
     },
     "add-attachments": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 첨부 파일",
+      "description": "PDF 문서에 파일 첨부로 통합합니다."
     },
     "extract-images": {
-      "name": "",
-      "description": "PDF ."
+      "name": "이미지 추출",
+      "description": "PDF 문서에 포함된 모든 이미지를 추출합니다."
     },
     "remove-images": {
-      "name": "",
-      "description": "PDF ."
+      "name": "이미지 삭제",
+      "description": "PDF에서 모든 이미지를 제거하여 파일 크기를 줄입니다."
     },
     "multi-page-layout": {
-      "name": "",
-      "description": "PDF ."
+      "name": "다중 페이지 레이아웃",
+      "description": "한 장의 시트에 2, 4, 6 또는 9개의 PDF 페이지를 배열합니다."
     },
     "overlay-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 오버레이",
+      "description": "다른 PDF 위에 PDF를 오버레이합니다 (페이지 배경, 머리글, 서명)."
     },
     "sanitize-pdf": {
-      "name": "PDF ",
-      "description": "PDF ."
+      "name": "PDF 정리",
+      "description": "PDF에서 자바스크립트, 링크 및 민감한 메타데이터를 제거합니다."
     },
     "remove-blanks": {
-      "name": "",
-      "description": "PDF ."
+      "name": "빈 페이지 제거",
+      "description": "PDF에서 빈 페이지를 자동으로 감지하고 제거합니다."
     }
   },
   "Home": {
-    "why_choose": "?",
-    "security_title": "",
-    "security_desc": ". .",
-    "speed_title": "",
-    "speed_desc": ". .",
-    "no_signup_title": "",
-    "no_signup_desc": ". ."
+    "why_choose": "왜 iLoveDoc를 선택해야 하나요?",
+    "security_title": "최대 보안",
+    "security_desc": "당신의 파일은 절대 당신의 기기를 떠나지 않습니다. 처리는 당신의 브라우저에서 로컬로 이루어집니다.",
+    "speed_title": "초고속",
+    "speed_desc": "서버에 업로드할 필요 없이, 처리 속도는 즉시 이루어지며 인터넷 연결에 의존하지 않습니다.",
+    "no_signup_title": "가입 필요 없음",
+    "no_signup_desc": "즉시 시작하세요. 계정을 만들거나 이메일을 제공할 필요 없이 도구를 사용할 수 있습니다."
   },
   "Cookies": {
     "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
@@ -299,5 +299,417 @@
     "contact_title": "9. 연락처",
     "contact_p1": "이 약관에 대한 모든 질문에 대해, 다음 연락처를 사용하십시오:",
     "contact_email": "<strong>이메일 :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Faq": {
+    "item0_q": "파일을 처리한 후에는 파일을 보관하나요?",
+    "item0_a": "아니요. iLoveDoc은 모든 처리를 클라이언트 측에서 수행하므로, 파일은 절대 서버에 전송되지 않습니다. 파일은 100% 클라이언트 측에서 안전하게 유지됩니다.",
+    "item1_q": "기업 파일은 서비스에서 안전합니까?",
+    "item1_a": "네. 처리는 클라이언트 측에서 수행되므로, 파일은 절대 서버에 전송되지 않습니다. 따라서 RGPD와 기업의 엄격한 비밀을 유지할 수 있습니다.",
+    "item2_q": "최소 시스템 구성은 무엇입니까?",
+    "item2_a": "최신 브라우저(Chrome, Firefox, Safari, Edge)와 인터넷 연결이 필요합니다. 클라이언트 측에서 처리되므로, 파일이 매우 크면 충분한 RAM이 필요합니다.",
+    "item3_q": "파일을 다운로드하는 방법은 무엇입니까?",
+    "item3_a": "파일 처리가 완료되면, 파일을 다운로드할 수 있는 버튼이 나타납니다.",
+    "item4_q": "스캔된 PDF를 편집 가능한 문서로 변환할 수 있나요?",
+    "item4_a": "네. OCR(광학 문자 인식)과 편집 도구를 사용하여 PDF에서 텍스트를 추출하여 편집할 수 있습니다.",
+    "item5_q": "변환 시간이 왜 오래 걸리나요?",
+    "item5_a": "변환 시간은 클라이언트 측의 처리 시간과 파일 크기에 따라 달라집니다. 서버에 의존하지 않기 때문에 처리 시간이 오래 걸릴 수 있습니다."
+  },
+  "Contact": {
+    "form_title": "쪽지 보내기",
+    "success_message": "쪽지가 성공적으로 전송되었습니다. 우리는 가능한 한 빨리 답변을 드리겠습니다.",
+    "error_message": "오류가 발생했습니다. 다시 시도해 주세요.",
+    "label_name": "이름",
+    "placeholder_name": "Jean Dupont",
+    "error_name_required": "이름은 필수입니다.",
+    "label_email": "이메일",
+    "placeholder_email": "jean@exemple.com",
+    "error_email_required": "이메일은 필수입니다.",
+    "error_email_invalid": "유효한 이메일 주소를 입력하세요.",
+    "label_subject": "주제",
+    "select_subject": "— 주제 선택 —",
+    "error_subject_required": "주제는 필수입니다.",
+    "subject_option_question": "일반적인 질문",
+    "subject_option_bug": "버그/기술 문제",
+    "subject_option_suggestion": "개선 제안",
+    "subject_option_partnership": "파트너십/협력",
+    "subject_option_other": "기타",
+    "label_message": "쪽지",
+    "placeholder_message": "요청에 대한 자세한 내용을 설명하세요…",
+    "error_message_required": "쪽지는 필수입니다.",
+    "error_message_min": "쪽지는 최소 10자 이상이어야 합니다.",
+    "btn_submit": "쪽지 보내기",
+    "btn_sending": "쪽지 전송 중…",
+    "info_title": "연락처 정보",
+    "info_email": "이메일",
+    "info_response_time": "응답 시간",
+    "info_response_val": "48시간 이내",
+    "info_follow": "우리를 팔로우하세요",
+    "info_links": "유용한 링크",
+    "faq_title": "자주 묻는 질문",
+    "faq_item0_q": "iLoveDoc은 정말 무료인가요?",
+    "faq_item0_a": "네, 모든 도구는 100% 무료이며, 등록이 필요하지 않습니다.",
+    "faq_item1_q": "파일은 서버에 전송되나요?",
+    "faq_item1_a": "아니요. 모든 처리는 클라이언트 측에서 수행됩니다. 파일은 절대 서버에 전송되지 않습니다.",
+    "faq_item2_q": "지원하는 브라우저는 무엇입니까?",
+    "faq_item2_a": "iLoveDoc은 최신 브라우저(Chrome, Firefox, Safari, Edge)에서 작동합니다.",
+    "faq_item3_q": "파일이 매우 크면 처리할 수 있나요?",
+    "faq_item3_a": "처리 시간은 클라이언트 측의 처리 시간과 파일 크기에 따라 달라집니다. 대부분의 문서는 문제없이 처리할 수 있습니다.",
+    "faq_item4_q": "버그를 신고하는 방법은 무엇입니까?",
+    "faq_item4_a": "위쪽의 연락처 양식을 사용하여 '버그/기술 문제'라는 주제를 선택하고 문제를 설명하세요."
+  },
+  "Blog": {
+    "all_articles": "모든 글",
+    "recommended_articles": "추천 글",
+    "read_more": "더 읽기",
+    "back_to_blog": "블로그로 돌아가기",
+    "read_time_suffix": "분",
+    "share": "공유 :",
+    "back_home": "홈",
+    "title_not_found": "글을 찾을 수 없습니다",
+    "fb_label": "Facebook에 공유하기",
+    "x_label": "X에 공유하기",
+    "li_label": "LinkedIn에 공유하기"
+  },
+  "BlogPosts": {
+    "signatures-numeriques-legales": {
+      "title": "법적 서명에 대한 이해 : 온라인 서명이 법적 효력을 가지는 이유는 무엇인가?",
+      "subtitle": "온라인 문서 서명의 법적 프레임워크와 법적 가치를 이해하는 방법",
+      "description": "온라인 서명의 법적 강제성을 부여하는 요소, 국가별 법률 차이, 온라인 문서를 보호하는 방법을 알아보세요.",
+      "category": "보안",
+      "date": "2025년 5월 20일",
+      "readTime": "5분",
+      "content": {
+        "0": "거리 근무와 프로세스 디지털화 시대에, 온라인으로 문서를 서명하는 일은 일상적인 일로 변했습니다. 그러나 온라인 서명의 법적 가치가 무엇인지, 서명이 수동 서명과 동등한가? 간단히 말해, 서명이 수동 서명과 동등한 것은 맞지만, 특정 규칙을 준수해야 합니다.",
+        "1": "온라인 서명이란 무엇인가?",
+        "2": "온라인 서명(전자 서명)은 단순히 수동 서명의 스캔이 아닙니다. 이는 암호화 프로세스를 통해 서명자의 신원과 문서를 불변적으로 연결하는 것입니다. 이는 두 가지 중요한 요소를 보장합니다: 인증(서명자가 누구인지)과 무결성(서명 후 문서가 변경되지 않았는지).",
+        "3": "유럽과 세계의 법적 프레임워크",
+        "4": "유럽 연합에서, eIDAS 규정은 전자 서명을 규정합니다. 이 규정은 세 가지 서명 수준을 정의합니다.",
+        "6": "iLoveDoc를 사용하여 문서를 관리하는 이유는 무엇인가?",
+        "7": "iLoveDoc는 브라우저 내에서 문서에 서명할 수 있도록 해줍니다. 우리 서버에 파일을 업로드하지 않기 때문에, 정보는 완전히 비밀로 유지됩니다. 웹의 최고 관행에 맞는 빠른, 안전한, 규정 준수 서명 도구입니다.",
+        "8": "결론적으로, 온라인 서명은 법적 효력을 가지는 것은 물론, 서명이 안전하고 신뢰할 수 있는 서명이되도록 올바른 도구를 사용하면, 수동 서명보다 더 안전합니다. 온라인 서명을 오늘부터 사용하세요!",
+        "5_item0": "간단한 서명(예: 체크박스 또는 서명 이미지 입력). 법적 효력은 있지만 증거력은 제한적입니다.",
+        "5_item1": "고급 서명, 더 엄격한 식별 기준과 서명자와의 안전한 연결을 요구합니다.",
+        "5_item2": "인증 서명(QES), 법적 효력이 100% 수동 서명과 동일하고, 인증된 신원 인증서를 사용합니다."
+      }
+    },
+    "fusionner-pdf-et-jpg": {
+      "title": "파일 합치기: PDF와 JPG를 하나의 문서로",
+      "subtitle": "PDF와 이미지 파일을 한 번에 합치기 — 빠르고 쉽게, 다운로드 없이.",
+      "description": "iLoveDoc을 사용하여 PDF와 JPG를 하나의 문서로 합치세요. 빠르고 쉽게, 바로 브라우저에서.",
+      "category": "합치기",
+      "date": "2025년 5월 20일",
+      "readTime": "3분",
+      "content": {
+        "0": "PDF와 JPG를 하나의 파일로 합치려면? 보고서를 준비하거나 행정 문서를 제출하거나 단순히 하나의 파일로 모으고 싶다면, 이 가이드에서 설명하는 대로 진행하세요.",
+        "1": "다양한 파일 형식을 합치려면 복잡해 보일 수 있지만, 실제로는 매우 간단합니다. 이 가이드에서는 iLoveDoc을 사용하여 합치기 방법을 설명합니다. 다운로드 없이, 매우 간단하게.",
+        "2": "단계 1: JPG를 PDF로 변환하기",
+        "3": "합치기 전에 JPG를 PDF로 변환하는 것이 가장 간단합니다. iLoveDoc에서 'JPG를 PDF로' 도구로 이동하여 이미지 파일을 업로드하고 필요에 따라 방향이나 여백을 조정한 후 '변환' 버튼을 클릭하세요. JPG 이미지를 포함하는 PDF 파일이 생성됩니다.",
+        "4": "단계 2: 두 개의 PDF를 합치기",
+        "5": "이미지를 PDF로 변환한 후 'PDF 합치기' 도구로 이동하여 원본 문서와 새 PDF 파일을 업로드하세요. 파일을 순서대로 변경하려면 단순히 드래그 앤 드롭하세요. 'PDF 합치기' 버튼을 클릭하여 최종 합쳐진 파일을 다운로드하세요.",
+        "6": "그의 끝! 두 단계를 빠르게 완료하여 브라우저에서 데이터를 보호한 채로, 전문적으로 파일을 합쳤습니다."
+      }
+    },
+    "modifier-pdf-sans-adobe": {
+      "title": "Adobe Acrobat 없이 PDF를 수정할 수 있나요? iLoveDoc를 사용하는 방법",
+      "subtitle": "온라인으로 100% 무료로 텍스트 및 주석을 편집할 수 있는 솔루션",
+      "description": "Adobe Acrobat이 없다면 PDF를 수정해야 하는데, 무료로 iLoveDoc를 사용하는 방법을 알려드리겠습니다. 다운로드나 기술적인 지식이 필요하지 않습니다.",
+      "category": "편집",
+      "date": "2025년 5월 20일",
+      "readTime": "4분",
+      "content": {
+        "0": "Adobe Acrobat은 PDF 편집의 역사적인 참조였지만, 월별 구독료가 일시적인 필요에 따라 비용이 많이 들 수 있습니다. 다행히도 무료이고 현대적인 대안이 있습니다.",
+        "1": "PDF를 수정하는 것이 왜 어려울까요?",
+        "2": "PDF는 디지털 인쇄 형식으로 고정된 형식으로 설계되었습니다. Word 문서와 달리, 유동적인 텍스트 흐름 구조가 없고, 대신 각 문자에 고정된 좌표가 있습니다. 따라서 PDF 편집은 전문적인 도구가 필요합니다.",
+        "3": "편집 도구 iLoveDoc",
+        "4": "iLoveDoc의 'PDF 편집' 도구를 사용하면, 직접 텍스트 영역을 추가하거나, 도형을 그려, 이미지로 덮어씌울 수 있습니다. 이 프로세스는 클라이언트 측에서 실행되므로, 즉시 반응성과 최적의 보안을 제공합니다.",
+        "6": "무료로 모든 필수 도구를 사용할 수 있습니다. iLoveDoc는 무거운 라이센스에 돈을 쓰지 않아도 됩니다.",
+        "5_item0": "동료들과 명확한 주석을 추가하세요.",
+        "5_item1": "필요하지 않은 텍스트 부분을 숨기세요.",
+        "5_item2": "몇 번 클릭으로 서명이나 로고를 첨부하세요."
+      }
+    },
+    "reduire-taille-pdf-100ko": {
+      "title": "PDF 크기를 100KB 이하로 줄이는 방법",
+      "subtitle": "행정 및 교육 포털에서 제출할 때 파일 크기를 줄일 수 있는 방법",
+      "description": "100KB 이하의 PDF를 보내고 싶다면? Diviser par taille 도구 또는 우리의 압축기를 사용하여 파일 크기를 줄일 수 있습니다.",
+      "category": "최적화",
+      "date": "2025년 5월 20일",
+      "readTime": "3분",
+      "content": {
+        "0": "많은 행정 및 교육 포털은 파일 업로드에 대한 크기 제한을 설정합니다. (일반적으로 100KB 또는 200KB). PDF가 너무 크다면, 걱정하지 마세요. 여러 간단한 방법이 있습니다.",
+        "1": "방법 1: 지능적인 압축",
+        "2": "iLoveDoc의 'PDF 압축' 도구는 이미지 및 리소스를 분석하여 해상도를 줄이면서 텍스트의 읽기성을 유지합니다. 이 방법은 파일의 전체성을 유지하면서 크기를 크게 줄일 수 있습니다.",
+        "3": "방법 2: 불필요한 페이지 삭제",
+        "4": "문서에 표지 또는 부록이 포함되어 있지만 필요하지 않은 경우, '페이지 삭제' 도구를 사용하여 불필요한 페이지를 삭제하여 파일 크기를 줄일 수 있습니다.",
+        "5": "우리의 최적화된 도구를 사용하여 100KB 이하의 파일 크기를 유지하고 모든 행정 포털에 제출할 수 있습니다."
+      }
+    },
+    "trois-methodes-editer-pdf": {
+      "title": "PDF 편집의 3 가지 방법",
+      "subtitle": "당신의 요구에 맞는 방법을 찾아보세요.",
+      "description": "정확하게 PDF를 편집하는 방법을 알아보세요. 온라인 도구, PDF 변환, 원본 파일의 내용 수정을 통해 PDF를 편집하는 방법을 알아보세요.",
+      "category": "편집",
+      "date": "2024년 3월 13일",
+      "readTime": "4분",
+      "content": {
+        "0": "PDF 편집은 원하는 결과에 따라 다양한 방법으로 접근할 수 있습니다. 다음은 주요 3 가지 방법입니다.",
+        "1": "방법 1: 직접 편집 (주석 및 추가)",
+        "2": "비활성화된 양식填充, 주석 추가, 계획에 그림 그리기 등에 적합합니다. iLoveDoc의 온라인 에디터를 사용하여 기존 요소 위에 글을 쓰실 수 있습니다.",
+        "3": "방법 2: Word로 변환",
+        "4": "문단 전체를 다시 쓰거나 문서 구조를 변경해야 하는 경우 PDF를 Word로 변환하는 것이 좋습니다. Word에서 수정을 완료한 후 PDF로 다시 내보내실 수 있습니다.",
+        "5": "방법 3: 평탄화 및 병합",
+        "6": "수정 사항을 보안하고 다른 사람의 필드 편집을 방지하려면 평탄화 (flattening) 를 적용하세요.",
+        "7": "당신의 워크플로에 적합한 방법을 선택하고 일상에서 효율성을 높이세요!"
+      }
+    },
+    "convertir-jpg-en-word": {
+      "title": "JPG를 편집 가능한 Word로 변환하는 방법",
+      "subtitle": "이미지에서 텍스트를 추출하여 몇 초만에 편집할 수 있는 방법입니다.",
+      "description": "iLoveDoc의 변환 도구를 사용하여 이미지 파일을 편집 가능한 Word 파일로 변환하는 방법을 배워보세요.",
+      "category": "변환",
+      "date": "2024년 2월 28일",
+      "readTime": "3분",
+      "content": {
+        "0": "이미지에 텍스트가 포함된 JPG 파일을 편집 가능한 Word (.docx) 파일로 변환하는 것은 스캔 또는 사진으로 된 텍스트를 다시 사용하거나 수정하려는 경우 필수적입니다.",
+        "1": "텍스트 인식은 어떻게 작동하는가?",
+        "2": "이 작업은 OCR (Optical Character Recognition, 광학 문자 인식) 알고리즘을 사용합니다. 알고리즘은 이미지의 픽셀을 분석하고 글자의 형태를 식별하여 숫자로 된 텍스트 코드로 변환합니다.",
+        "3": "iLoveDoc의 절차",
+        "4": "변환 이미지 도구에 JPG 파일을 업로드하면 텍스트 콘텐츠를 추출하고 Word 문서를 생성합니다. 이 문서는 Word, LibreOffice 또는 Google Docs에서 즉시 열고 편집할 수 있습니다.",
+        "5": "인쇄된 문서를 수동으로 다시 입력하는 시간을 절약하세요!"
+      }
+    },
+    "convertir-jpg-en-excel": {
+      "title": "JPG를 Excel로 변환하는 무료 도구",
+      "subtitle": "이미지 스캔된 표를 직접 Excel 형식으로 가져오세요.",
+      "description": "이 가이드는 iLoveDoc를 사용하여 JPG를 편집 가능한 Excel 시트로 변환하는 방법을 보여줍니다.",
+      "category": "변환",
+      "date": "2024년 2월 21일",
+      "readTime": "4분",
+      "content": {
+        "0": "인쇄된 표 또는 데이터가 암호화된 스크린샷을 가지고 있으며 Excel에서 분석하고 싶으십니까? 숫자를 하나씩 복사하는 것은 지루하고 오류가 발생하는 작업입니다. 여기서 해결책이 있습니다.",
+        "1": "인공지능 기반의 행과 열 추출",
+        "2": "추출 알고리즘은 표의 구조를 식별하여 (행과 열의 경계, 열 분리 및 헤더) 정확하게 계산 그리드를 재구성합니다.",
+        "3": "Excel로 내보내기",
+        "4": "이미지 파일을 iLoveDoc의 JPG를 Excel로 변환하는 도구에 드래그 앤 드롭하세요. 데이터 그리드는 .xlsx 형식으로 다운로드되어 계산, 정렬 또는 그래프를 적용할 수 있습니다.",
+        "5": "iLoveDoc의 지능형 변환을 사용하여 암호화된 데이터 처리 및 계산을 간소화하세요!"
+      }
+    },
+    "reparer-pdf-corrompu": {
+      "title": "PDF 파일이 손상되거나 오류가 발생했을 때 무료로 어떻게 고칠 수 있을까요?",
+      "subtitle": "PDF 파일이 읽을 수 없을 때 온라인으로 문서를 복원하는 방법을 알아보세요.",
+      "description": "PDF 파일이 열리지 않으면 어떻게 해야 하나요? PDF 파일을 온라인에서 무료로 고치고 데이터를 안전하게 복원하는 방법을 알아보세요.",
+      "category": "고치기",
+      "date": "2026년 5월 28일",
+      "readTime": "4분",
+      "content": {
+        "0": "PDF 파일이 손상되어 열리지 않는다는 오류 메시지를 받는 것은 매우 짜증스러운 일입니다. 다행히도 온라인에서 무료로 데이터를 복원하는 방법이 있습니다.",
+        "1": "PDF 파일이 왜 읽을 수 없을까요?",
+        "2": "인터넷 연결이 끊기는 동안 다운로드 중이거나 워드 프로세서의 시스템 버그 또는 USB 키 전송 중 문제가 발생하는 경우 주로 손상됩니다. 대부분의 경우 내부 데이터는 손상되지 않았지만 파일 헤더가 손상됩니다.",
+        "3": "iLoveDoc를 사용한 온라인 고침",
+        "4": "iLoveDoc 고침 도구는 손상된 파일의 이진 구조를 분석하고 몇 초안에 브라우저에서 바로 고침 헤더를 재구성하여 절대적인 안전성을 보장합니다.",
+        "5": "잃어버린 파일을 포기하지 마세요! 무료 고침 도구를 사용하여 즉시 정보에 접근하세요."
+      }
+    },
+    "modifier-texte-pdf-gratuit": {
+      "title": "PDF를 무료로 및 소프트웨어 없이 텍스트를 수정하는 방법",
+      "subtitle": "온라인에서 직접 PDF 문서의 텍스트를 편집하는 실용적인 가이드.",
+      "description": "온라인에서 PDF를 무료로 편집하는 실용적인 가이드. Adobe Acrobat Pro를 설치하지 않고도 텍스트를 수정, 추가 또는 삭제할 수 있습니다.",
+      "category": "총다총세요",
+      "date": "2026려 28일",
+      "readTime": "5번시",
+      "content": {
+        "0": "PDF 문서 내에서 직접 텍스트를 수정하는 것은 자주 발생하는 요구지만, 사무실 소프트웨어인 Acrobat Pro는 비싼 가격에 오릅니다. 이 제한을 피하는 방법을 보여드리겠습니다.",
+        "1": "iLoveDoc의 무료 온라인 편집기",
+        "2": "온라인 편집 도구를 사용하면 원본 문서 위에 텍스트를 자유롭게 입력할 수 있으며, 데이터를 보호하기 위해 불투명한 사각형을 사용하거나 이미지 및 로고를 삽입할 수 있습니다.",
+        "3": "중요한 수정을 위해 Word로 변환",
+        "4": "문단 전체를 다시 쓰는 경우 PDF를 Word 형식 (.docx)으로 변환하고, 텍스트 편집기를 사용하여 수정한 후 PDF로 다시 내보내는 것이 좋습니다.",
+        "5": "iLoveDoc에서 직접 편집하는 도구 또는 Word 변환을 선택하여 문서를 편집하세요."
+      }
+    },
+    "impression-pdf-caracteres-bizarres": {
+      "title": "PDF가 이상한 문자로 인쇄되는 이유는 무엇인가? (해결)",
+      "subtitle": "PDF 인쇄 중 이상한 문자, 기호 및 글꼴 버그를 수정하는 방법",
+      "description": "인쇄기가 이상한 기호, hieroglyphs 또는 사각형으로 가득 찬 종이를 내뱉는지요? PDF 인쇄 문제를 해결하는 방법을 알아보세요.",
+      "category": "도움말",
+      "date": "2026년 5월 28일",
+      "readTime": "3분",
+      "content": {
+        "0": "PDF 문서를 인쇄할 때 종종 이상한 기호나 흰색 사각형이 대신 나타나는 경우가 있습니다. 이 문제는 글꼴과 관련이 있습니다.",
+        "1": "글꼴이 포함되지 않은 문제",
+        "2": "PDF의 생성자가 파일에 글꼴을 포함하지 않았을 때, 인쇄기가 글꼴을 대체하려고 합니다. 만약 대체할 수 없으면 hieroglyphs를 인쇄합니다.",
+        "3": "universal한 해결책: 평면화 또는 이미지 인쇄",
+        "4": "이 버그를 해결하려면, '이미지로 인쇄' 옵션을 선택하거나, iLoveDoc의 'PDF 평면화' 도구를 사용하여 파일을 변환한 후 인쇄를 시작하세요.",
+        "5": "문자열을 기하학적 형태로 변환하여 (평면화) 인쇄할 때, 모든 인쇄기 모델에서 완벽한 인쇄를 보장할 수 있습니다."
+      }
+    },
+    "compresser-pdf-sans-perte": {
+      "title": "이메일로 PDF 압축하기: 질감 손실 없이",
+      "subtitle": "파일 크기를 줄이면서도 최상의 명암을 유지하세요.",
+      "description": "이메일로 PDF 보내기 위해 파일 크기를 줄이세요. 질감 손실 없이 온라인 무료 압축 방법을 소개합니다.",
+      "category": "최적화",
+      "date": "2026년 5월 28일",
+      "readTime": "4분",
+      "content": {
+        "0": "이메일 수신함은 10 또는 20MB 이상의 첨부 파일을 거부하기 때문에 PDF 압축이 필수적입니다.",
+        "1": "지능적인 최적화 vs 단순한 감소",
+        "2": "텍스트는 변경되지 않습니다. 이미지 통합을 대상으로 해서 해상도(DPI)를 조정하고 오래된 메타데이터를 삭제합니다.",
+        "3": "어떤 수준의 압축을 선택해야 하나요?",
+        "4": "우리는 세 가지 모드를 제공합니다: 강력한 압축(파일 크기 최소화), 권장 압축(균형이 좋음), 가벼운 압축(질감 최적화).",
+        "5": "브라우저에서 로컬로 압축하여 파일 크기와 질감의 균형을 유지할 수 있습니다."
+      }
+    },
+    "copier-texte-pdf-scanne": {
+      "title": "PDF 스캔 또는 이미지에서 텍스트를 복사하는 방법",
+      "subtitle": "텍스트 인식 (OCR) 사용하여 텍스트 복사",
+      "description": "PDF에서 텍스트를 선택하거나 복사할 수 없나요? PDF 스캔을 편집 가능한 텍스트로 변환하는 무료 OCR를 사용하여 배워보세요.",
+      "category": "OCR",
+      "date": "2026년 5월 28일",
+      "readTime": "4분",
+      "content": {
+        "0": "문서의 텍스트를 선택하거나 복사할 수 없다면, 이는 단순한 이미지 문서 스캔 또는 복사 금지 잠금으로 인해 발생하는 것입니다.",
+        "1": "문자 인식 활성화",
+        "2": "OCR (Optical Character Recognition)는 PDF의 픽셀을 시각적으로 스캔하여 단어를 추출하고 인덱스할 수 있는 컴퓨터 문자로 변환하는 기술입니다.",
+        "3": "iLoveDoc의 간단한 방법",
+        "4": "우리 'OCR PDF' 도구에 스캔을 업로드하세요. 알고리즘은 로컬에서 실행되어 편집 가능한 새 PDF를 생성하여 모든 문단을 복사-붙여넣기가 가능합니다.",
+        "5": "스캔을 동적 작업 문서로 변환하고 일상 생활에서 시간을 절약하세요."
+      }
+    },
+    "convertir-pdf-word-mise-en-page": {
+      "title": "PDF를 Word로 변환하는 방법",
+      "subtitle": "페이지 레이아웃을 변경하지 않고 PDF를 Word로 변환하는 방법",
+      "description": "PDF를 Word로 변환하는 경우 텍스트와 표가 왜곡되는 것을 피하고 싶다면, 원본 형식을 유지하는 방법을 알려드리겠습니다.",
+      "category": "Convertir",
+      "date": "2026년 5월 28일",
+      "readTime": "5분",
+      "content": {
+        "0": "PDF를 Word로 변환하는 경우 텍스트가 겹쳐서 나타나거나 표가 깨지는 경우가 있습니다. 이러한 왜곡은 PDF 형식에 마진의 유동적인 참조점이 없기 때문입니다.",
+        "1": "고해상도 변환 엔진을 선택하세요",
+        "2": "iLoveDoc의 변환기는 원본 문서의 시각적 지형을 분석하여 Word에서 원래의 문단 구조와 표 그리드 구조를 재생성하여 가능한 한 수동 조정을 최소화합니다.",
+        "3": "변환 후의 실용적인 팁",
+        "4": "작은 오류가 발생하는 경우, 탭 규칙을 사용하여 텍스트 블록을 정렬하고, 이미지의 정렬을 확인하세요.",
+        "5": "iLoveDoc에서 로컬 변환을 사용하면 .docx 형식의 문서가 즉시 편집할 수 있는 상태로 생성됩니다."
+      }
+    },
+    "mot-de-passe-pdf-oublie": {
+      "title": "PDF 비밀번호를 잃어버렸습니다 : PDF 잠금을 해제하는 방법",
+      "subtitle": "법적 솔루션과 도구를 사용하여 보호된 PDF 파일을 해제하는 방법",
+      "description": "자신의 PDF 문서의 비밀번호를 잊어버렸나요? 법적으로 PDF 보호를 해제하고 파일에 접근하는 방법을 알아보세요.",
+      "category": "보안",
+      "date": "2026년 5월 28일",
+      "readTime": "4분",
+      "content": {
+        "0": "PDF를 암호화하는 것은 보안을 강화하는 좋은 방법이지만, 자신의 비밀번호를 잊어버리면 자신의 공식 보고서나 개인 문서에 접근할 수 없습니다.",
+        "1": "사용 제한 삭제",
+        "2": "편집 제한(소유자 비밀번호)과 같은 경우, 'PDF 잠금 해제' 도구를 사용하여 즉시 로컬에서 잠금을 해제하여 복사 및 인쇄 권한을 부여합니다.",
+        "3": "열기 비밀번호(AES 암호화)가 있는 경우 어떻게 하나요?",
+        "4": "암호화된 문서를 열기 위해서는 사용자 키가 필수적입니다. 첫 번째로 안전한 플랫폼에서 키를 입력한 후, 도구는 키를 영구적으로 삭제하여 다음 읽기 시에 다시 입력할 필요가 없습니다.",
+        "5": "반복적인 입력 요구 사항을 제거하고 안전한 해제를 사용하여 문서를 자유롭게 전달하세요."
+      }
+    },
+    "bug-previsualisation-pdf-windows": {
+      "title": "윈도우에서 PDF 미리보기 패널 버그를 해결하는 방법",
+      "subtitle": "파일 탐색기를 통해 PDF 미리보기 화면을 다시 표시하세요.",
+      "description": "윈도우 파일 탐색기가 PDF 파일 미리보기 화면을 표시하지 않거나 오류를 표시하는 경우? 이 글을 통해 빠르게 PDF 미리보기 기능을 활성화하세요.",
+      "category": "도움말",
+      "date": "2026년 5월 28일",
+      "readTime": "4분",
+      "content": {
+        "0": "파일 탐색기 미리보기 패널은 문서 요약을 빠르게 확인할 수 있는 편리한 기능입니다. 그러나 패널이 자주 멈추거나 검은 화면을 표시하는 경우가 있습니다.",
+        "1": "미리보기 패널이 왜 멈추는지 이유는 무엇인가요?",
+        "2": "세계적인 뷰어 설치 또는 업데이트가 시스템 연결을 변경하여 Windows가 여러 렌더링 엔진 간의 충돌을 겪게 됩니다.",
+        "3": "미리보기 패널 문제를 해결하는 방법은 무엇인가요?",
+        "4": "파일 옵션을 열고 '미리보기 핸들러 표시' 체크란을 확인한 후 Windows 기본 렌더러를 다시 설정하세요.",
+        "5": "정확한 시스템 설정은 일상적인 작업을 빠르게 처리할 수 있도록 도와줍니다."
+      }
+    },
+    "signer-pdf-sans-imprimante": {
+      "title": "PDF 문서를 인쇄하지 않고도 어떻게 서명할 수 있을까요?",
+      "subtitle": "전자적으로 무료로 서명하고 계약서를 작성하세요.",
+      "description": "인쇄할 필요가 없습니다! 2026년 온라인에서 무료로 PDF 문서를 작성하고 서명하는 방법을 알아보세요.",
+      "category": "서명",
+      "date": "2026년 5월 28일",
+      "readTime": "4분",
+      "content": {
+        "0": "계약서를 인쇄하고 수동으로 서명한 후 스캔하여 다시 보내는 것은 시간, 종이 및 잉크 낭비입니다. 오늘날 100% 디지털로 수행하는 것은 매우 간단합니다.",
+        "1": "전자 서명의 법적 성립",
+        "2": "프랑스와 유럽 (eIDAS 규정)에서 전자적으로 서명한 서명은 상업 거래의 대부분의 경우 전통적인 종이 서명과 동일한 법적 가치를 가집니다.",
+        "3": "일로브도크에서 몇 번의 클릭으로 서명",
+        "4": "계약서를 임포트하고 화면 터치스크린에서 서명을 그려보거나 사진을 업로드하여 서명 위치에 끌어당겨보세요. 최종 문서는 서버 전송 없이 안전하게 컴파일됩니다.",
+        "5": "0 종이로 전환하고 전문가용 견적서 및 계약서 서명을 간소화하세요."
+      }
+    },
+    "fusionner-pdf-sur-smartphone": {
+      "title": "스마트폰에서 PDF를 합치고 재배치하는 방법",
+      "subtitle": "스마트폰에서 직접 PDF 문서를 결합하고 관리하세요.",
+      "description": "휴대폰에서 PDF를 결합해야 하는 경우? 아이폰과 안드로이드에서 무료로 합치고 정렬하고 PDF 파일을 결합하는 방법을 알아보세요.",
+      "category": "모바일",
+      "date": "2026년 5월 28일",
+      "readTime": "3분",
+      "content": {
+        "0": "긴급 상황에서 증빙서류나 보고서를 조립해야 하는 경우가 종종 있습니다. 다행히도 스마트폰만으로 충분합니다.",
+        "1": "외부 앱 없이 모바일 합치기",
+        "2": "결합 앱을 설치하지 않아도 됩니다. 아이폰의 Safari나 안드로이드의 Chrome에서 iLoveDoc 사이트에 접속하세요.",
+        "3": "터치스크린으로 드래그 앤 드롭",
+        "4": "터치스크린 반응 인터페이스는 손가락으로 페이지를 재배치하고 PDF를 즉시 100% 안전하게 컴파일할 수 있도록 해줍니다.",
+        "5": "모든 문서 흐름을 빠르게 관리하세요. 어디서든, 손바닥에 있는 스마트폰에서."
+      }
+    }
+  },
+  "Privacy": {
+    "intro_title": "1. 한안세요",
+    "intro_p1": "Bienvenue sur <strong>iLoveDoc</strong> (ci-après “ le Site ”), accessible à l'adresse <a href=\"https://ilovedoc.com\">https://ilovedoc.com</a>. La protection de vos données personnelles est une priorité pour nous. La présente politique de confidentialité décrit quelles informations nous collectons, comment nous les utilisons et quels sont vos droits.",
+    "intro_p2": "En utilisant le Site, vous acceptez les pratiques décrites dans cette politique. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser le Site.",
+    "data_title": "2. 한안세요",
+    "data_nav_title": "2.1 한안세요",
+    "data_nav_desc": "Lorsque vous visitez le Site, nous pouvons collecter automatiquement certaines informations techniques via des cookies et technologies similaires :",
+    "data_nav_list": "<ul><li>한안세요 IP (총세요)</li><li>총안세요사시세요 사시세요 사시세요</li><li>사시세요 사시세요</li><li>사시세요 사시세요 사시세요</li><li>사시세요 사시세요 (사시세요)</li><li>사시세요 사시세요 사시세요</li></ul>",
+    "data_form_title": "2.2 한안세요",
+    "data_form_desc": "당신이 우리의 연락처 양식을 사용할 때, 우리는 당신이 자발적으로 제공한 정보를 수집합니다 : 이름, 이메일 주소, 주제 및 메시지 내용. 이 데이터는 단지 당신의 요청에 대한 답변을 위해 사용됩니다.",
+    "data_pdf_title": "2.3 PDF 파일",
+    "data_pdf_desc": "<strong>iLoveDoc는 PDF 파일을 수집, 저장, 전송하지 않습니다.</strong> 문서 처리 (합병, 압축, 변환 등)는 클라이언트 측에서 브라우저에서 <code>pdf-lib</code> 라이브러리를 사용하여 완전히 수행됩니다. 파일은 우리 서버나 제 3의 서버로 전송되지 않습니다.",
+    "cookies_title": "3. 쿠키 사용",
+    "cookies_desc": "사이트는 다음 유형의 쿠키를 사용합니다:",
+    "cookies_ess_title": "3.1 필수 쿠키",
+    "cookies_ess_desc": "이 쿠키는 사이트의 작동을 위해 필요합니다 (예 : 표시 설정, 어두운 모드). 이 쿠키는 식별 가능한 개인 데이터를 수집하지 않습니다.",
+    "cookies_ana_title": "3.2 분석 쿠키",
+    "cookies_ana_desc": "우리는 <strong>Google Analytics</strong>를 사용하여 방문자가 사이트와 어떻게 상호 작용하는지 이해하기 위해 사용합니다. Google Analytics는 익명화된 정보(방문한 페이지, 세션 시간 등)를 수집하기 위해 쿠키를 사용합니다. 이러한 데이터는 사용자 경험을 개선하는 데 도움이 됩니다.",
+    "cookies_ana_link": "Google이 데이터를 어떻게 사용하는지 알아보려면 <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">https://policies.google.com/technologies/partner-sites</a>를 참조하세요.",
+    "cookies_ads_title": "3.3 광고 쿠키 (Google AdSense)",
+    "cookies_ads_p1": "사이트는 <strong>Google AdSense</strong>를 사용하여 광고를 표시합니다. Google AdSense와 제3의 광고 파트너는 이전에 방문한 사이트 또는 다른 사이트에서 방문한 사용자에 대한 광고를 표시하기 위해 쿠키를 사용할 수 있습니다.",
+    "cookies_ads_p2": "<strong>Google은 제3의 제공자로써 쿠키를 사용하여 사이트에 광고를 표시합니다.</strong> Google이 DART 쿠키를 사용하여 사용자가 사이트와 다른 인터넷 사이트를 방문한 후에 사용자에게 광고를 표시할 수 있습니다.",
+    "cookies_ads_p3": "제3의 제공자, Google 포함하여 쿠키를 사용하여 사용자가 이전에 방문한 사이트 또는 다른 사이트를 방문한 후에 광고를 표시합니다.",
+    "cookies_ads_p4": "Google이 광고 쿠키를 사용하여 Google과 제3의 파트너가 사용자가 사이트와/또는 다른 인터넷 사이트를 방문한 후에 사용자에게 광고를 표시할 수 있습니다.",
+    "cookies_opt_title": "3.4 쿠키 차단",
+    "cookies_opt_desc": "쿠키 설정을 여러 가지 방법으로 관리할 수 있습니다 :",
+    "cookies_opt_list": "<ul><li><strong>브라우저 설정 :</strong> 대부분의 브라우저는 개인 정보 설정에서 쿠키를 거부하거나 삭제할 수 있습니다.</li><li><strong>Google Ads Opt-out :</strong> 개인화 광고를 비활성화하려면 <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Google 광고 설정</a>을 방문하세요.</li><li><strong>Opt-out 일반 :</strong> 광고 쿠키를 비활성화하려면 <a href=\"https://www.aboutads.info/choices/\" target=\"_blank\" rel=\"noopener noreferrer\">www.aboutads.info/choices/</a> 또는 <a href=\"https://www.youronlinechoices.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">www.youronlinechoices.eu/</a>를 방문하세요.</li><li><strong>NAI Opt-out :</strong> <a href=\"https://optout.networkadvertising.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Network Advertising Initiative</a> 사이트를 방문하여 네트워크 광고 쿠키를 비활성화하세요.</li></ul>",
+    "cookies_opt_note": "쿠키를 비활성화하면 사이트의 일부 기능이 영향을 받을 수 있습니다.",
+    "adsense_title": "4. Google AdSense 및 제 3자 제공자",
+    "adsense_desc": "iLoveDoc은 <strong>Google AdSense</strong> 프로그램을 통해 광고를 표시합니다. 이 경우:",
+    "adsense_list": "<ul><li>제 3자 제공자, Google 포함,는 이전 방문자의 방문 기록을 기반으로 광고를 표시하기 위해 쿠키를 사용합니다.</li><li>Google은 DoubleClick (DART) 쿠키를 사용하여 사용자가 사이트와/또는 다른 사이트를 방문했을 때 광고를 표시할 수 있도록 허용합니다.</li><li>사용자는 <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Google 광고 설정</a>을 방문하여 DART 쿠키를 비활성화할 수 있습니다.</li></ul>",
+    "adsense_note": "Google이 제품 광고에서 데이터를 처리하는 방법에 대한 자세한 내용은 <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Google 개인 정보 보호 정책</a>을 참조하세요.",
+    "rgpd_title": "5. 귀하의 권리 (RGPD)",
+    "rgpd_desc": "RGPD 및 정보통신망 이용 및 보호에 관한 법률에 따라 귀하의 개인정보에 대한 권리를 다음과 같이 행사하실 수 있습니다 :",
+    "rgpd_list": "<ul><li><strong>접근권 :</strong> 귀하가 처리되는 개인정보가 있는지 여부를 확인하고, 처리되는 경우 해당 개인정보에 접근할 수 있습니다.</li><li><strong>정정권 :</strong> 귀하가 처리되는 개인정보가 정확하지 않거나 부족한 경우 정정을 요청할 수 있습니다.</li><li><strong>삭제권 :</strong> 법적 규정에 따라 삭제할 수 있는 경우 귀하의 개인정보를 삭제할 수 있습니다.</li><li><strong>처리제한권 :</strong> 특정한 경우 귀하의 개인정보의 처리를 제한할 수 있습니다.</li><li><strong>포르타빌리티권 :</strong> 귀하가 처리되는 개인정보를 구조화된 형식으로, 기계가 읽을 수 있는 형식으로 제공받을 수 있습니다.</li><li><strong>거부권 :</strong> 귀하가 처리되는 개인정보의 처리에 대한 거부를 할 수 있습니다.</li></ul>",
+    "rgpd_contact": "귀하의 권리를 행사하려면 <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>으로 연락하시기 바랍니다. 우리는 귀하의 요청에 대해 30일 이내에 답변드리겠습니다.",
+    "rgpd_cnil": "귀하께서는 또한 <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">Commission Nationale de l'Informatique et des Libertés (CNIL)</a>에 대한 불만을 제기할 수 있습니다.",
+    "retention_title": "6. 데이터 보관",
+    "retention_desc": "수집된 데이터는 수집 목적에 따라 필요한 기간 동안 보관됩니다 :",
+    "retention_list": "<ul><li><strong>분석 데이터 :</strong> CNIL의 권장 사항에 따라 최대 26개월 동안 보관됩니다.</li><li><strong>연락처 데이터 :</strong> 마지막 연락 후 3년 동안 보관됩니다.</li><li><strong>쿠키 :</strong> 법적 규정에 따라 13개월 이내에 만료됩니다.</li><li><strong>PDF 파일 :</strong> 브라우저에서 파일이 떠나지 않습니다.</li></ul>",
+    "modifications_title": "7. 정책 변경",
+    "modifications_p1": "이 개인정보 보호정책은 언제든지 변경될 수 있습니다. 변경 사항은 이 페이지에 업데이트된 날짜와 함께 게시됩니다. 데이터 보호 관행에 대한 최신 정보를 얻기 위해 이 페이지를 정기적으로 확인하는 것을 권장합니다.",
+    "modifications_p2": "중요한 변경 사항이 발생할 경우, 사이트에 표시되는 알림을 통해 변경 사항을 알려드립니다.",
+    "contact_title": "8. Contact",
+    "contact_desc": "이 개인정보 보호정책에 대한 질문이나 권리 행사에 대한 문의는 아래의 연락처로 주시면 됩니다.",
+    "contact_email": "<strong>이메일 :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - 무료 온라인 PDF 도구",
+    "home_desc": "PDF 파일을 무료로 병합, 분할, 압축 및 변환하세요. 브라우저에서 직접 안전하게 처리되며 가입이 필요 없습니다.",
+    "about_title": "iLoveDoc 소개 - 무료 온라인 PDF 도구",
+    "about_desc": "iLoveDoc을 소개합니다: 무료, 안전하고 빠른 PDF 도구. 클라이언트 측에서 100% 처리되며 서버에 파일이 전송되지 않습니다. PDF를 병합, 압축 및 변환하여 기밀성을 유지하세요.",
+    "privacy_title": "iLoveDoc 개인정보 보호정책",
+    "privacy_desc": "iLoveDoc의 개인정보 보호정책. 개인 데이터를 보호하는 방법, 쿠키 사용 및 GDPR 권한에 대해 알아보세요.",
+    "terms_title": "iLoveDoc 서비스 이용 약관",
+    "terms_desc": "iLoveDoc 웹사이트의 서비스 이용 약관. 무료 온라인 PDF 도구에 대한 접근 및 사용 규칙을 확인하세요."
   }
 }

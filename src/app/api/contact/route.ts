@@ -1,8 +1,35 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+function escapeHtml(unsafe: string) {
+  return (unsafe || '').replace(/[&<"'>]/g, function (match) {
+    switch (match) {
+      case '&': return '&amp;';
+      case '<': return '&lt;';
+      case '>': return '&gt;';
+      case '"': return '&quot;';
+      case "'": return '&#39;';
+      default: return match;
+    }
+  });
+}
+
 export async function POST(request: Request) {
   try {
+    // Basic Origin/Referer check
+    const headersList = request.headers;
+    const referer = headersList.get('referer') || '';
+    const origin = headersList.get('origin') || '';
+    const host = headersList.get('host') || '';
+    
+    // In production, require strict matching of origin or referer
+    if (process.env.NODE_ENV === 'production') {
+      const isAllowed = referer.includes(host) || origin.includes(host);
+      if (!isAllowed) {
+        return NextResponse.json({ error: 'Accès interdit.' }, { status: 403 });
+      }
+    }
+
     const { name, email, subject, message } = await request.json();
 
     if (!name || !email || !subject || !message) {
@@ -11,6 +38,18 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    if (name.length > 100 || subject.length > 200 || message.length > 5000 || email.length > 150) {
+      return NextResponse.json(
+        { error: 'Le contenu envoyé est trop volumineux.' },
+        { status: 413 }
+      );
+    }
+
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safeSubject = escapeHtml(subject);
+    const safeMessage = escapeHtml(message);
 
     const emailUser = process.env.EMAIL_USER || 'nexuslogic.pro@gmail.com';
     const emailPass = process.env.EMAIL_PASS;
@@ -114,13 +153,13 @@ export async function POST(request: Request) {
           </div>
           <div class="content">
             <div class="label">Envoyé par</div>
-            <div class="value"><strong>${name}</strong> (<a href="mailto:${email}" class="highlight">${email}</a>)</div>
+            <div class="value"><strong>${safeName}</strong> (<a href="mailto:${safeEmail}" class="highlight">${safeEmail}</a>)</div>
             
             <div class="label">Sujet</div>
-            <div class="value">${subject}</div>
+            <div class="value">${safeSubject}</div>
             
             <div class="label">Message</div>
-            <div class="message-box">${message}</div>
+            <div class="message-box">${safeMessage}</div>
           </div>
           <div class="footer">
             Cet e-mail a été envoyé depuis le formulaire de contact de votre site <strong>iLoveDoc</strong>.
@@ -134,10 +173,10 @@ export async function POST(request: Request) {
     // Envoyer l'e-mail
     await transporter.sendMail({
       from: `"iLoveDoc Contact" <${emailUser}>`, // expéditeur (le serveur)
-      replyTo: email, // Permet de répondre directement au client
+      replyTo: safeEmail, // Permet de répondre directement au client
       to: emailUser, // destinataire (vous-même)
-      subject: `Nouveau message de ${name} : ${subject}`,
-      text: `Nom: ${name}\nEmail: ${email}\nSujet: ${subject}\n\nMessage:\n${message}`,
+      subject: `Nouveau message de ${safeName} : ${safeSubject}`,
+      text: `Nom: ${safeName}\nEmail: ${safeEmail}\nSujet: ${safeSubject}\n\nMessage:\n${safeMessage}`,
       html: htmlTemplate,
     });
 

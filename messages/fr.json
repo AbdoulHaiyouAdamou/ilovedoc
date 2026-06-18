@@ -701,5 +701,15 @@
         "5": "Gérez tous vos flux de documents rapidement, n'importe où, directement depuis le creux de votre main."
       }
     }
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - Outils PDF en ligne gratuits",
+    "home_desc": "Fusionnez, divisez, compressez et convertissez vos fichiers PDF gratuitement. Traitement sécurisé directement dans votre navigateur sans aucune inscription.",
+    "about_title": "À Propos de iLoveDoc – Outils PDF Gratuits en Ligne",
+    "about_desc": "Découvrez iLoveDoc : des outils PDF gratuits, sécurisés et rapides. Traitement 100% côté client, sans envoi de fichiers sur un serveur. Fusionnez, compressez, convertissez vos PDF en toute confidentialité.",
+    "privacy_title": "Politique de Confidentialité – iLoveDoc",
+    "privacy_desc": "Politique de confidentialité de iLoveDoc. Découvrez comment nous protégeons vos données personnelles, notre utilisation des cookies et vos droits RGPD.",
+    "terms_title": "Conditions Générales d'Utilisation – iLoveDoc",
+    "terms_desc": "Conditions générales d'utilisation du site iLoveDoc. Consultez les règles d'accès et d'utilisation de nos outils PDF gratuits en ligne."
   }
 }

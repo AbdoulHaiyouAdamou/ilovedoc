@@ -299,5 +299,417 @@
     "contact_title": "9. Contact",
     "contact_p1": "Voor elke vraag over de AVG kunt u contact opnemen met:",
     "contact_email": "<strong>Per e-mail:</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Privacy": {
+    "intro_title": "1. Inleiding",
+    "intro_p1": "Welkom op <strong>iLoveDoc</strong> (hierna &quot;de Website&quot;), te bereiken via <a href=\"https://ilovedoc.com\">https://ilovedoc.com</a>. De bescherming van uw persoonsgegevens is voor ons een prioriteit. De huidige privacyverklaring beschrijft welke gegevens wij verzamelen, hoe wij ze gebruiken en welke rechten u heeft.",
+    "intro_p2": "Door de Website te gebruiken, gaat u akkoord met de praktijken beschreven in deze verklaring. Als u deze voorwaarden niet accepteert, vragen wij u de Website niet te gebruiken.",
+    "data_title": "2. Verzamelde gegevens",
+    "data_nav_title": "2.1 Navigatiegegevens",
+    "data_nav_desc": "Wanneer u de Website bezoekt, kunnen wij automatisch bepaalde technische gegevens verzamelen via cookies en soortgelijke technologie:",
+    "data_nav_list": "<ul><li>IP-adres (anoniem)</li><li>Type en versie van de browser</li><li>Besturingssysteem</li><li>Bezochte pagina's en consultatietijd</li><li>Verkeersbron (referrer)</li><li>Resolutie van het scherm en taal van de browser</li></ul>",
+    "data_form_title": "2.2 Gegevens van formulieren",
+    "data_form_desc": "Als u onze contactformulier gebruikt, verzamelen wij de informatie die u vrijwillig verstrekt: naam, e-mailadres, onderwerp en inhoud van de bericht. Deze gegevens worden uitsluitend gebruikt om uw verzoek te beantwoorden.",
+    "data_pdf_title": "2.3 PDF-bestanden",
+    "data_pdf_desc": "<strong>iLoveDoc verzamelt, slaat en verstuurt geen enkel PDF-bestand.</strong> Alle documentbehandelingen (samenvoegen, comprimeren, converteren, etc.) worden volledig uitgevoerd in uw browser, op client-side, dankzij de bibliotheek <code>pdf-lib</code>. Geen enkel bestand wordt verzonden naar onze servers of naar derde partij-servers.",
+    "cookies_title": "3. Gebruik van Cookies",
+    "cookies_desc": "De Website gebruikt verschillende soorten cookies :",
+    "cookies_ess_title": "3.1 Essentiële cookies",
+    "cookies_ess_desc": "Deze cookies zijn noodzakelijk voor het functioneren van de Website (bijv. weergavevoorkeuren, donkere modus). Ze verzamelen geen persoonsgegevens die herleidbaar zijn.",
+    "cookies_ana_title": "3.2 Analytische cookies",
+    "cookies_ana_desc": "Wij gebruiken <strong>Google Analytics</strong> om te begrijpen hoe bezoekers interactie hebben met de Website. Google Analytics gebruikt cookies om anonieme informatie te verzamelen (bezochte pagina's, sessieduur, etc.). Deze gegevens helpen ons om de gebruikerservaring te verbeteren.",
+    "cookies_ana_link": "Voor meer informatie over de manier waarop Google gegevens gebruikt: <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">https://policies.google.com/technologies/partner-sites</a>",
+    "cookies_ads_title": "3.3 Reclamecookies (Google AdSense)",
+    "cookies_ads_p1": "De Website gebruikt <strong>Google AdSense</strong> om reclame te tonen. Google AdSense en zijn derde-partijreclamepartners kunnen cookies gebruiken om reclame te tonen op basis van uw eerdere bezoeken aan deze website of andere websites.",
+    "cookies_ads_p2": "<strong>Google, als derde partij, gebruikt cookies om reclame te tonen op de Website.</strong> De cookie DART van Google maakt het mogelijk om reclame te tonen aan gebruikers op basis van hun bezoek aan de Website en andere websites op het internet.",
+    "cookies_ads_p3": "Derde partijen, waaronder Google, gebruiken cookies om reclame te tonen op basis van eerdere bezoeken van de gebruiker aan uw website of andere websites.",
+    "cookies_ads_p4": "Het gebruik van reclamecookies door Google maakt het mogelijk voor Google en zijn partners om reclame te tonen aan uw gebruikers op basis van hun bezoek aan uw websites en/of andere websites op het internet.",
+    "cookies_opt_title": "3.4 Uitschakelen van cookies",
+    "cookies_opt_desc": "U kunt uw voorkeuren voor cookies beheren op verschillende manieren :",
+    "cookies_opt_list": "<ul><li><strong>Browser-instellingen :</strong> De meeste browsers laten u toe om cookies te weigeren of te verwijderen via hun instellingen voor privacy.</li><li><strong>Opt-out Google Ads :</strong> U kunt de gepersonaliseerde advertenties uitschakelen door <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">de Google-ads-instellingen</a> te bezoeken.</li><li><strong>Algemeen opt-out :</strong> U kunt de advertentiecookies van derden uitschakelen door <a href=\"https://www.aboutads.info/choices/\" target=\"_blank\" rel=\"noopener noreferrer\">www.aboutads.info/choices/</a> of <a href=\"https://www.youronlinechoices.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">www.youronlinechoices.eu/</a> te bezoeken.</li><li><strong>NAI Opt-out :</strong> Bezoek de website van de <a href=\"https://optout.networkadvertising.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Network Advertising Initiative</a> om de cookies van deelnemende advertentienetwerken uit te schakelen.</li></ul>",
+    "cookies_opt_note": "Let op dat het uitschakelen van cookies bepaalde functies van de Website kan beïnvloeden.",
+    "adsense_title": "4. Google AdSense en Derde Partijen",
+    "adsense_desc": "iLoveDoc toont advertenties via het <strong>Google AdSense</strong>-programma. In dit kader :",
+    "adsense_list": "<ul><li>Derde partijen, waaronder Google, gebruiken cookies om advertenties te tonen op basis van eerdere bezoeken van de gebruiker aan de Website of aan andere websites.</li><li>Google gebruikt het DoubleClick-cookie (DART) om, samen met zijn partners, advertenties te tonen op basis van bezoeken van gebruikers aan de Website en/of aan andere websites.</li><li>Gebruikers kunnen het gebruik van het DART-cookie uitschakelen door <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">de Google-ads-instellingen</a> te bezoeken.</li></ul>",
+    "adsense_note": "Voor meer informatie over de manier waarop Google de gegevens in zijn advertentieproducten beheert, raadpleegt u de <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">privacyverklaring van Google</a>.",
+    "rgpd_title": "5. Uw Rechten (RGPD)",
+    "rgpd_desc": "Overeenkomstig het Algemene Reglement Gegevensbescherming (AVG) en de wet Informatie en Overheid, hebt u de volgende rechten met betrekking tot uw persoonlijke gegevens:",
+    "rgpd_list": "<ul><li><strong>Recht op toegang:</strong> U kunt bevestigen of uw gegevens worden verwerkt en, wanneer dat het geval is, toegang krijgen tot deze gegevens.</li><li><strong>Recht op correctie:</strong> U kunt uw gegevens laten corrigeren als deze onjuist of onvolledig zijn.</li><li><strong>Recht op verwijdering:</strong> U kunt uw gegevens laten verwijderen in overeenstemming met de regelgeving.</li><li><strong>Recht op beperking van de verwerking:</strong> U kunt de verwerking van uw gegevens vragen te beperken in bepaalde omstandigheden.</li><li><strong>Recht op gegevensoverdracht:</strong> U kunt uw gegevens ontvangen in een gestructureerd formaat, dat gebruikelijk is en door machines kan worden gelezen.</li><li><strong>Recht van bezwaar:</strong> U kunt uw gegevens weigeren voor rechtvaardige redenen.</li></ul>",
+    "rgpd_contact": "Om deze rechten uit te oefenen, neem contact met ons op via het volgende e-mailadres: <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>. Wij zullen uw verzoek binnen 30 dagen beantwoorden.",
+    "rgpd_cnil": "U hebt ook het recht een klacht in te dienen bij de <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">Commissie voor de bescherming van persoonsgegevens (CNIL)</a>.",
+    "retention_title": "6. Gegevensbehoud",
+    "retention_desc": "De verzamelde gegevens worden bewaard voor de duur die nodig is voor de doelstelling waarvoor ze zijn verzameld:",
+    "retention_list": "<ul><li><strong>Navigatiegegevens (analyse):</strong> Bewaard voor maximaal 26 maanden, in overeenstemming met de aanbevelingen van de CNIL.</li><li><strong>Contactgegevens:</strong> Bewaard voor 3 jaar vanaf het laatste contact.</li><li><strong>Cookies:</strong> De levensduur van de cookies overschrijdt niet 13 maanden in overeenstemming met de geldende regelgeving.</li><li><strong>Pdf-bestanden:</strong> Geen bewaring — de bestanden verlaten nooit uw browser.</li></ul>",
+    "modifications_title": "7. Wijzigingen aan deze Privacybeleid",
+    "modifications_p1": "Wij behouden ons het recht voor om deze privacybeleid op elk moment te wijzigen. Elke wijziging wordt gepubliceerd op deze pagina met een bijgewerkte datum van update. Wij adviseren u om regelmatig deze pagina te raadplegen om op de hoogte te blijven van onze gegevensbeschermingspraktijken.",
+    "modifications_p2": "Indien er substantiële wijzigingen zijn aangebracht, zullen wij een zichtbaar bericht op het Site tonen om u hierover te informeren.",
+    "contact_title": "8. Contact",
+    "contact_desc": "Voor alle vragen met betrekking tot deze privacybeleid of om uw rechten uit te oefenen, kunt u contact met ons opnemen :",
+    "contact_email": "<strong>Per e-mail :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Faq": {
+    "item0_q": "Bewaren jullie een kopie van mijn bestanden na behandeling?",
+    "item0_a": "Geen enkel. iLoveDoc voert alle behandelingen rechtstreeks uit in uw browser (klantkant). Uw bestanden verlaten uw apparaat nooit en worden nooit verzonden naar een afstandelijk server. Zij blijven 100% onder uw controle en veilig.",
+    "item1_q": "Zijn bedrijfsbestanden veilig met uw dienst?",
+    "item1_a": "Ja. Aangezien de behandeling plaatsvindt op locatie in uw eigen browser, kan geen derde partij (inclusief wijzelf) toegang krijgen tot uw zakelijke documenten. Dit is de ideale oplossing voor het respecteren van de RGPD en de strikte bedrijfsgeheimhouding.",
+    "item2_q": "Wat is de minimale systeemconfiguratie?",
+    "item2_a": "Een moderne browser (Chrome, Firefox, Safari of Edge) met internetverbinding. Aangezien de berekeningen plaatsvinden op locatie door uw apparaat, wordt een voldoende grote werkgeheugen aanbevolen voor zeer omvangrijke documenten.",
+    "item3_q": "Hoe kan ik mijn bestanden downloaden?",
+    "item3_a": "Zodra de documentbehandelingsoperatie is voltooid, verschijnt een downloadknop om het gegenereerde bestand rechtstreeks op uw apparaat op te slaan.",
+    "item4_q": "Kan ik mijn gescande PDF's omzetten in bewerkbare documenten?",
+    "item4_a": "Ja. Onze OCR- en bewerkingsinstrumenten extraheren het tekst van uw gescande PDF's om het selecteerbaar en direct bewerkbaar te maken.",
+    "item5_q": "Waarom duurt mijn conversie zo lang?",
+    "item5_a": "De snelheid hangt af van de rekenkracht van uw apparaat en de grootte van het bestand, aangezien de behandeling plaatsvindt op locatie op uw computer zonder afhankelijkheid van externe servers."
+  },
+  "Contact": {
+    "form_title": "Stuur ons een bericht",
+    "success_message": "Bedankt! Uw bericht is succesvol verzonden. Wij zullen zo snel mogelijk antwoord geven.",
+    "error_message": "Er is een fout opgetreden. Probeer het later opnieuw.",
+    "label_name": "Volledige naam",
+    "placeholder_name": "Jean Dupont",
+    "error_name_required": "Uw naam is verplicht.",
+    "label_email": "E-mailadres",
+    "placeholder_email": "jean@voorbeeld.com",
+    "error_email_required": "Uw e-mailadres is verplicht.",
+    "error_email_invalid": "Voer een geldig e-mailadres in.",
+    "label_subject": "Onderwerp",
+    "select_subject": "— Kies een onderwerp —",
+    "error_subject_required": "Het onderwerp is verplicht.",
+    "subject_option_question": "Algemene vraag",
+    "subject_option_bug": "Bug / Technisch probleem",
+    "subject_option_suggestion": "Verbeteringsvoorstel",
+    "subject_option_partnership": "Samenwerking / Samenwerking",
+    "subject_option_other": "Anders",
+    "label_message": "Bericht",
+    "placeholder_message": "Beschrijf uw verzoek in detail…",
+    "error_message_required": "Het bericht is verplicht.",
+    "error_message_min": "Het bericht moet minimaal 10 tekens bevatten.",
+    "btn_submit": "Verstuur het bericht",
+    "btn_sending": "Verzending in gang…",
+    "info_title": "Contactinformatie",
+    "info_email": "E-mail",
+    "info_response_time": "Antwoordtijd",
+    "info_response_val": "Minder dan 48 uur werktijd",
+    "info_follow": "Volg ons",
+    "info_links": "Handige links",
+    "faq_title": "Veelgestelde vragen",
+    "faq_item0_q": "Is iLoveDoc echt gratis?",
+    "faq_item0_a": "Ja, alle onze tools zijn 100% gratis, zonder limieten en zonder inschrijving vereist.",
+    "faq_item1_q": "Worden mijn bestanden naar een server gestuurd?",
+    "faq_item1_a": "Nee. Alle behandelingen worden rechtstreeks in uw browser uitgevoerd. Geen bestand verlaat uw apparaat.",
+    "faq_item2_q": "Welke browsers worden ondersteund?",
+    "faq_item2_a": "iLoveDoc werkt op alle moderne browsers: Chrome, Firefox, Safari, Edge (recente versies).",
+    "faq_item3_q": "Kan ik grote bestanden behandelen?",
+    "faq_item3_a": "De behandeling vindt plaats op de clientzijde, dus de limiet hangt af van de geheugen van uw apparaat. De meeste documenten van gemiddelde grootte worden zonder problemen ondersteund.",
+    "faq_item4_q": "Hoe meld ik een bug?",
+    "faq_item4_a": "Gebruik het contactformulier hierboven met het onderwerp &quot;Bug / Technisch probleem&quot; en beschrijf het probleem dat u heeft ontdekt."
+  },
+  "Blog": {
+    "all_articles": "Alle artikelen",
+    "recommended_articles": "Aanbevolen artikelen",
+    "read_more": "Lees verder",
+    "back_to_blog": "Terug naar het blog",
+    "read_time_suffix": "leestijd",
+    "share": "Deel :",
+    "back_home": "Startpagina",
+    "title_not_found": "Artikel niet gevonden",
+    "fb_label": "Deel op Facebook",
+    "x_label": "Deel op X",
+    "li_label": "Deel op LinkedIn"
+  },
+  "BlogPosts": {
+    "signatures-numeriques-legales": {
+      "title": "De geldigheid van elektronische handtekeningen verklaard: Wat maakt ze wettelijk bindend?",
+      "subtitle": "Begrijp het wettelijke kader en de juridische waarde van een online documenthandtekening.",
+      "description": "Ontdek wat elektronische handtekeningen wettelijk bindend maakt, hoe wetgeving per land verschilt en hoe u uw online documenten kunt beschermen.",
+      "category": "Veiligheid",
+      "date": "20 mei 2025",
+      "readTime": "5 min",
+      "content": {
+        "0": "In de tijd van remote werken en de digitalisering van processen is het ondertekenen van documenten online een dagelijkse handeling geworden. Maar wat is de wettelijke waarde van deze handtekeningen? Zijn ze evenwaardig aan een handtekening op papier? De korte antwoord is ja, mits bepaalde regels in acht worden genomen.",
+        "1": "Wat is een elektronische handtekening?",
+        "2": "Een elektronische handtekening (of digitale handtekening) is niet zomaar een scan van uw handtekening op papier. Het gaat om een cryptografisch proces dat de identiteit van de ondertekenaar aan het document koppelt op een onvervalsbaar manier. Dit garandeert twee cruciale aspecten: authenticiteit (wie heeft getekend) en integriteit (het document is niet gewijzigd sinds de handtekening).",
+        "3": "Het wettelijke kader in Europa en wereldwijd",
+        "4": "In de Europese Unie is het eIDAS-verordening het wettelijke kader voor elektronische handtekeningen. Het definieert drie niveaus van handtekeningen:",
+        "6": "Waarom gebruikt u iLoveDoc voor uw documenten?",
+        "7": "iLoveDoc laat u toe om handtekeningen toe te voegen aan uw documenten rechtstreeks in uw webbrowser. Aangezien geen bestand wordt geüpload naar onze servers, blijven uw gegevens geheel vertrouwelijk. Het is de perfecte tool voor uw snelle, beveiligde en webbest practices-compliantere handtekeningen.",
+        "8": "In conclusie, elektronisch ondertekenen is niet alleen wettelijk bindend, maar het is ook veel veiliger dan een handtekening op papier als u de juiste tools gebruikt. Ga over tot elektronische handtekeningen vandaag nog!",
+        "5_item0": "De eenvoudige handtekening (bv. een checkbox of een afbeelding van uw handtekening). Het is wettelijk bindend, maar de waarde van het bewijs is beperkt.",
+        "5_item1": "De geavanceerde handtekening, die strengere identificatiecriteria vereist en een beveiligde link met de ondertekenaar.",
+        "5_item2": "De geverifieerde handtekening (QES), die wettelijk evenwaardig is aan een handtekening op papier en een geverifieerd identiteitscertificaat gebruikt."
+      }
+    },
+    "fusionner-pdf-et-jpg": {
+      "title": "Hoe PDF-bestanden en JPG-beelden samen te voegen in één document (eenvoudig)",
+      "subtitle": "Combineer PDF-bestanden en afbeeldingen in één document — snel, gemakkelijk, en zonder download.",
+      "description": "Ontdek hoe je PDF-bestanden en JPG-beelden samen kunt voegen in één document met iLoveDoc. Snel, gemakkelijk, en rechtstreeks vanuit uw browser.",
+      "category": "Samenvoegen",
+      "date": "20 mei 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Hebt u behoefte om een PDF-bestand en een JPG-beeld samen te voegen? Of bent u bezig met een rapport, wilt u administratieve documenten indienen of wilt u alles gewoon in één bestand bundelen? We leggen het u uit.",
+        "1": "Samenvoegen van verschillende bestandstypen lijkt misschien ingewikkeld, maar het is in feite heel eenvoudig. In deze gids leggen we uit hoe u dit kunt doen met iLoveDoc — zonder download en heel eenvoudig.",
+        "2": "Stap 1: JPG-beelden omzetten naar PDF",
+        "3": "Voordat u samenvoegt, is het handig om uw JPG-beelden om te zetten naar PDF. Op iLoveDoc gaat u naar het hulpmiddel 'JPG naar PDF'. Plaats uw beelden, pas de oriëntatie of marge aan als nodig en klik op 'Omzetten'. U krijgt een PDF-bestand met uw beelden.",
+        "4": "Stap 2: Samenvoegen van de twee PDF-bestanden",
+        "5": "Eenmaal uw beeld omgezet naar PDF, gaat u naar het hulpmiddel 'Samenvoegen van PDF-bestanden'. Importeert u uw oorspronkelijke document en het nieuwe PDF-bestand met de afbeelding. U kunt de bestanden gemakkelijk sorteren door ze te slepen en neer te zetten. Klik op 'Samenvoegen van PDF-bestanden' om het eindresultaat te downloaden.",
+        "6": "En dat is het! In twee snelle stappen, volledig uitgevoerd in uw browser zonder risico voor uw gegevens, hebt u uw bestanden professioneel samengevoegd."
+      }
+    },
+    "modifier-pdf-sans-adobe": {
+      "title": "Kan ik een PDF zonder Adobe Acrobat aanpassen? Hier is hoe je dat doet met iLoveDoc",
+      "subtitle": "De online-oplossing die 100% gratis is en geen dure licentie vereist voor het bewerken van tekst en annotaties.",
+      "description": "Je moet een PDF aanpassen maar hebt geen Adobe Acrobat? Hier is hoe je iLoveDoc gratis kunt gebruiken zonder download of technische kennis.",
+      "category": "Bewerken",
+      "date": "20 mei 2025",
+      "readTime": "4 min",
+      "content": {
+        "0": "Adobe Acrobat is de historische referentie voor het bewerken van PDF, maar de maandelijkse abonnementskosten kunnen prohibitief zijn voor incidentele behoeften. Gelukkig bestaan er moderne en gratis alternatieven.",
+        "1": "Waarom is het PDF-formaat moeilijk aan te passen?",
+        "2": "PDF is ontworpen als een digitaal impressieformaat dat vastligt. In tegenstelling tot een Word-document bevat het geen vloeibare tekststroomstructuur, maar in plaats daarvan vaste coördinaten voor elk karakter. Daarom vereist het bewerken van PDF gespecialiseerde tools.",
+        "3": "Het bewerkingshulpmiddel iLoveDoc",
+        "4": "Met het 'PDF bewerken'-hulpmiddel van iLoveDoc kun je direct tekstzones toevoegen, vormen tekenen of afbeeldingen invoegen bovenop je PDF. Het proces wordt uitgevoerd op de clientzijde, wat een onmiddellijke reactiviteit en optimale beveiliging garandeert.",
+        "6": "Geen fortuin hoeven uitgeven aan zware licenties. iLoveDoc biedt alle essentiële tools gratis en zonder beperkingen.",
+        "5_item0": "Voeg duidelijke annotaties toe voor je collega's.",
+        "5_item1": "Verberg onnodige tekstdelen.",
+        "5_item2": "Plaats handtekeningen of logo's in enkele klikken."
+      }
+    },
+    "reduire-taille-pdf-100ko": {
+      "title": "Hoe een PDF kleiner dan 100 Ko te maken",
+      "subtitle": "Tips en oplossingen om uw documenten te comprimer zonder kwaliteitsverlies voor administratieve formulieren.",
+      "description": "Hebt u een PDF nodig die kleiner is dan 100 Ko? Gebruik dan de tool 'Door grootte delen' of onze compressor om uw bestanden te comprimeren zonder kwaliteitsverlies.",
+      "category": "Optimiser",
+      "date": "20 mei 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Veel administratieve en scholierenportalen stellen een strikte bestandsgroottebeperking voor uploads (vaak 100 Ko of 200 Ko). Als uw PDF te zwaar is, geen paniek, er zijn verschillende eenvoudige methoden.",
+        "1": "Methode 1: Intelligent compresseren",
+        "2": "De 'PDF comprimeren' tool van iLoveDoc analyseert de afbeeldingen en bronnen van uw document en vermindert hun resolutie zonder de leesbaarheid van de tekst te veranderen. Dit is de ideale methode om de integriteit van het bestand te behouden terwijl de grootte aanzienlijk wordt verminderd.",
+        "3": "Methode 2: Onnodige pagina's verwijderen",
+        "4": "Soms bevat het document pagina's van de omslag of annexen die niet vereist zijn. Door de 'Pagina's verwijderen' tool te gebruiken, kunt u het bestand lichter maken door alleen het essentiële te behouden.",
+        "5": "Met onze geoptimaliseerde set tools blijft u onder de 100 Ko en kunt u uw bestanden zonder problemen uploaden op alle administratieve websites!"
+      }
+    },
+    "trois-methodes-editer-pdf": {
+      "title": "Drie methoden om een PDF te bewerken",
+      "subtitle": "Ontdek de methode die het beste bij uw behoefte past.",
+      "description": "Ontdek de beste manieren om een PDF met precisie te wijzigen met behulp van online tools, van PDF-conversie tot het wijzigen van de inhoud van het originele bestand.",
+      "category": "Bewerken",
+      "date": "13 maart 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "De bewerking van een PDF kan op verschillende manieren worden benaderd, afhankelijk van het gewenste resultaat. Hier zijn de drie hoofdmethoden om op te merken.",
+        "1": "Methode 1: Direct bewerken (annotaties en toevoegingen)",
+        "2": "Ideaal voor het invullen van niet-interactieve formulieren, het toevoegen van opmerkingen of het tekenen op een plattegrond. U kunt het online-editor van iLoveDoc gebruiken om over de bestaande elementen te schrijven.",
+        "3": "Methode 2: Conversie naar Word",
+        "4": "Als u hele paragrafen moet herschrijven of de structuur van het document moet wijzigen, is het beter om het PDF om te zetten in Word. Eenmaal de wijzigingen zijn aangebracht in Word, kunt u het opnieuw exporteren als PDF.",
+        "5": "Methode 3: Flattening en samenvoeging",
+        "6": "Om uw wijzigingen te beveiligen en anderen te voorkomen dat ze de velden bewerken, moet u een flattening (flattening) toepassen op uw gewijzigde bestand.",
+        "7": "Kies de methode die het beste bij uw workflow past en verbeter uw efficiëntie elke dag!"
+      }
+    },
+    "convertir-jpg-en-word": {
+      "title": "Hoe een JPG omzetten in een bewerkbare Word-document",
+      "subtitle": "Haal het tekstuele inhoud uit uw afbeeldingen om het in enkele seconden bewerkbaar te maken.",
+      "description": "Ontdek hoe u de conversie-tools van iLoveDoc kunt gebruiken om afbeeldingsbestanden om te zetten in bewerkbare Word-documenten.",
+      "category": "Omzetten",
+      "date": "28 feb. 2024",
+      "readTime": "3 min",
+      "content": {
+        "0": "Het omzetten van een afbeelding JPG met tekst in een bewerkbaar Word-document (.docx) is essentieel als u een gescande of gefotografeerde tekst wilt hergebruiken of corrigeren.",
+        "1": "Hoe werkt tekstherkenning?",
+        "2": "Dit proces maakt gebruik van OCR (Optische Karakterherkenning). Het algoritme analyseert de pixels van de afbeelding, identificeert de vormen van de letters en converteert ze in numeriek gekodeerde teksttekens.",
+        "3": "De procedure op iLoveDoc",
+        "4": "U hoeft alleen maar uw JPG-bestand te uploaden in de afbeeldingsconversie-tool. Ons hulpmiddel extrahert het tekstuele inhoud en genereert een net Word-document dat u direct kunt openen en bewerken in Word, LibreOffice of Google Docs.",
+        "5": "Bespaar kostbare tijd door de handmatige herhaling van uw gedrukte documenten te vermijden!"
+      }
+    },
+    "convertir-jpg-en-excel": {
+      "title": "Een JPG omzetten naar Excel met deze gratis tools",
+      "subtitle": "Haal de tabellen uit uw gescande afbeeldingen rechtstreeks in het Excel-formaat.",
+      "description": "Dit gids laat zien hoe u de tools van iLoveDoc kunt gebruiken om een JPG om te zetten in een aanpasbare Excel-blad.",
+      "category": "Omzetten",
+      "date": "21 feb. 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "Hebt u een afdruk van een tabel of een schermopname van gegevens en wilt u ze analyseren in Excel? De gegevens kopiëren, één voor één, is tijdrovend en foutgevoelig. Hier is de oplossing.",
+        "1": "Intelligente lijnen en kolommen extraheren",
+        "2": "Naast het herkennen van tekens identificeert het extractiealgoritme de structuur van de tabel (randen, kolomafscheidingen en koppen) om de berekeningstabel nauwkeurig te reconstrueren.",
+        "3": "Exporteren naar Excel",
+        "4": "Sleep en neerzet het afbeeldingsbestand op onze JPG-omzettool naar Excel. De gegevensmatrix wordt hersteld en kan worden gedownload in het .xlsx-formaat. U kunt vervolgens uw sommen, sorteringen of grafieken normaal toepassen.",
+        "5": "Verkort uw administratie en gegevensverwerking met de intelligente omzetting van iLoveDoc!"
+      }
+    },
+    "reparer-pdf-corrompu": {
+      "title": "Hoe een beschadigd of corrupt PDF-bestand gratis te repareren?",
+      "subtitle": "Ontdek hoe je je onleesbare PDF-documenten online kunt herstellen.",
+      "description": "Je PDF-bestand wil niet openen? Ontdek hoe je een corrupt PDF-bestand gratis online kunt repareren en je gegevens zonder risico kunt herstellen.",
+      "category": "Herstellen",
+      "date": "28 mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Er is niets vervelender dan een foutmelding te ontvangen die aangeeft dat een belangrijk PDF-document is beschadigd en niet kan worden geopend. Gelukkig zijn er gratis online-oplossingen beschikbaar om je gegevens te herstellen.",
+        "1": "Waarom wordt een PDF onleesbaar?",
+        "2": "Een onderbroken internetverbinding tijdens het downloaden, een systeemfout in je tekstverwerker of een probleem met het overdragen van bestanden naar een USB-stick zijn de voornaamste oorzaken van beschadiging. In de meeste gevallen zijn de interne gegevens van het document intact, maar de bestandskop is beschadigd.",
+        "3": "Online-reparatie met iLoveDoc",
+        "4": "Het reparatietool iLoveDoc analyseert de binair structuur van je beschadigde bestand en reconstrueert de beschadigde bestandskop in enkele seconden rechtstreeks in je browser, waarbij absolute veiligheid wordt gegarandeerd.",
+        "5": "Geef je verloren bestanden niet op! Gebruik de gratis reparatietool om onmiddellijk toegang te krijgen tot je informatie."
+      }
+    },
+    "modifier-texte-pdf-gratuit": {
+      "title": "Hoe gratis en zonder software het tekst van een PDF te wijzigen?",
+      "subtitle": "Praktische gids voor het rechtstreeks online bewerken van de tekst van uw PDF-documenten.",
+      "description": "Praktische gids voor het gratis online bewerken van uw PDF-documenten. Wijzig, voeg of verwijder tekst zonder Adobe Acrobat Pro te hoeven installeren.",
+      "category": "Bewerken",
+      "date": "28 mei 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "Het rechtstreeks in een PDF-document wijzigen van tekst is een veelvoorkomend probleem, maar bureaubladsoftware zoals Acrobat Pro is duur. We laten zien hoe u deze beperking kunt omzeilen.",
+        "1": "De gratis online bewerkingsfunctie van iLoveDoc",
+        "2": "Met onze online bewerkingsfunctie kunt u tekst vrijelijk bovenop het originele document schrijven, gevoelige gegevens maskeren met transparante rechthoeken of afbeeldingen en logo's invoegen.",
+        "3": "Het omzetten van Word voor belangrijke wijzigingen",
+        "4": "Als u hele paragrafen moet herschrijven, adviseren we eerst uw PDF om te zetten naar Word-formaat (.docx), vervolgens de wijzigingen aan te brengen in uw favoriete tekstverwerker en het vervolgens opnieuw om te zetten naar PDF.",
+        "5": "Wijzig uw documenten naar wens door de directe bewerkingsfunctie of het omzetten van Word op iLoveDoc te kiezen."
+      }
+    },
+    "impression-pdf-caracteres-bizarres": {
+      "title": "Waarom print ik mijn PDF met vreemde tekens?",
+      "subtitle": "Corriger onderscheidingstekens, symbolen en lettertypfouten bij het printen van PDF.",
+      "description": "Uw printer print een bladzijde vol met vreemde symbolen, hiëroglyfen of vierkanten? Ontdek hoe u dit PDF-printprobleem kunt oplossen.",
+      "category": "Hulp",
+      "date": "28 mei 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "Soms kan het printen van een PDF-document leiden tot een reeks onbegrijpelijke symbolen of witte vierkanten in plaats van de oorspronkelijke letters. Dit probleem is gerelateerd aan lettertypen.",
+        "1": "Een probleem met niet-geïncorporeerde lettertypen",
+        "2": "Als de auteur van het PDF niet de lettertypen heeft geïncorporeerd in het bestand, probeert uw printer ze te vervangen. Als hij er geen equivalenten voor vindt, print hij hiëroglyfen.",
+        "3": "De universele oplossing: plattegrond of afbeelding printen",
+        "4": "Om dit bug op te lossen, selecteert u de optie 'Als afbeelding printen' in de opties van uw viewer, of voert u het bestand in het 'PDF plattegrond' hulpmiddel van iLoveDoc voordat u de print start.",
+        "5": "Door tekstuele vectorinformatie om te zetten in vaste geometrische vormen (plattegrond), garandeert u een perfecte print op elke printer."
+      }
+    },
+    "compresser-pdf-sans-perte": {
+      "title": "Hoe PDF-bestanden zonder kwaliteitsverlies te comprimer voor e-mail?",
+      "subtitle": "Verklein de grootte van uw PDF-bestanden terwijl u de maximale scherpte behoudt.",
+      "description": "Verklein de grootte van uw PDF-bestanden om ze per e-mail te sturen zonder de leesbaarheid te verstoren. 100% gratis online compressie-trucs.",
+      "category": "Optimiser",
+      "date": "28 mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "E-mailpostbusjes weigeren vaak bijlagen van meer dan 10 of 20 Mo. Het comprimeren van uw PDF is noodzakelijk om zijn aflevering te garanderen.",
+        "1": "Slimme optimalisatie versus brute degradatie",
+        "2": "Ons compressietool verandert geen tekst. Het richt zich specifiek op ingebouwde afbeeldingen door hun resolutie (DPI) aan te passen en verouderde metadata te verwijderen die zijn opgebouwd tijdens wijzigingen.",
+        "3": "Welk niveau van compressie moet u kiezen?",
+        "4": "We bieden drie modi aan: sterke compressie (voor een extreem licht bestand), aanbevolen compressie (ideale balans) en lichte compressie (maximale kwaliteit).",
+        "5": "Comprimeer uw bestanden lokaal in uw browser terwijl u de volledige controle behoudt over de grootte/kwaliteitverhouding."
+      }
+    },
+    "copier-texte-pdf-scanne": {
+      "title": "Hoe tekst uit een gescande PDF of afbeelding te kopiëren?",
+      "subtitle": "Gebruik de optische karakterherkenning (OCR) om tekst te kopiëren.",
+      "description": "Kan je geen tekst selecteren of kopiëren uit een PDF? Leer hoe je een gescande PDF omzet in een bewerkbare tekst met gratis OCR.",
+      "category": "OCR",
+      "date": "28 mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Als je niet in staat bent om tekst te selecteren of te kopiëren uit een document, is dat waarschijnlijk omdat het een eenvoudige afbeelding van een gescande document (scan) is of omdat een beveiligingsblok de kopiëring verhindert.",
+        "1": "Optische karakterherkenning (OCR) inschakelen",
+        "2": "De OCR (Optical Character Recognition) is een technologie die de pixels van de PDF visueel scant om de woorden te extraheren en om te zetten in indexeerbare informatieve tekens.",
+        "3": "De eenvoudige methode op iLoveDoc",
+        "4": "Plaats uw scan in onze tool 'OCR PDF'. Het algoritme wordt lokaal uitgevoerd om een nieuw volledig leesbaar PDF te genereren waarin u alle paragrafen kunt kopiëren en plakken.",
+        "5": "Zet uw scans om in dynamische werkdocumenten en bespaar kostbare tijd elke dag."
+      }
+    },
+    "convertir-pdf-word-mise-en-page": {
+      "title": "Een PDF omzetten naar Word zonder de lay-out aan te passen",
+      "subtitle": "Conversie tips om tekst- en tabelverschuivingen te voorkomen.",
+      "description": "Moet je je verzoeken omgaan met verschoven tabellen en onregelmatig tekst? Hier lees je hoe je een PDF omzet naar Word zonder de oorspronkelijke lay-out aan te passen.",
+      "category": "Omzetten",
+      "date": "28 mei 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "De omzetting van een PDF naar Word kan soms leiden tot overlappende regels of gebroken tabellen. Deze verschuivingen zijn te wijten aan het ontbreken van flexibele randen in het PDF-formaat.",
+        "1": "Een hoogwaardige conversiemotor kiezen",
+        "2": "De conversie-tool van iLoveDoc analyseert de visuele topografie van het originele document en creëert een native structuur van paragrafen en tabelgrids in Word om de minimale handmatige aanpassingen te beperken.",
+        "3": "Praktische tips na conversie",
+        "4": "Als je kleine afwijkingen ziet, gebruik dan de tabregel in plaats van de spatie om je tekstblokken te aligneren en controleer of de afbeeldingen correct zijn aangebracht.",
+        "5": "De lokale conversie op iLoveDoc biedt je een schone .docx-bestand dat direct klaar is voor bewerking."
+      }
+    },
+    "mot-de-passe-pdf-oublie": {
+      "title": "Verloren wachtwoord PDF: Hoe open je een beveiligd PDF?",
+      "subtitle": "Wettelijke oplossingen en tools voor het ontgrendelen van uw beveiligde PDF-bestanden.",
+      "description": "Hebt u uw eigen PDF-documenten wachtwoord vergeten? Ontdek hoe u ze wettelijk kunt ontgrendelen en de beveiliging kunt verwijderen.",
+      "category": "Veiligheid",
+      "date": "28 mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Een PDF beveiligen is een goede idee om hem te beschermen, maar uw eigen wachtwoord vergeten blokkeert de toegang tot uw officiële rapporten of persoonlijke documenten.",
+        "1": "Verwijder de gebruiksbeperking",
+        "2": "Onze tool 'PDF ontgrendelen' verwijdert de beveiliging direct op uw lokale computer, waardoor u de rechten om te kopiëren en te printen krijgt.",
+        "3": "Wat te doen bij een wachtwoord voor het openen (AES-chiffre)?",
+        "4": "Om een beveiligd document te openen, is de gebruikers sleutel noodzakelijk. Eenmaal ingevoerd op onze beveiligde platform, wordt deze definitief verwijderd voor uw toekomstige leesbeurten.",
+        "5": "Vrij uw documenten van de herhaalde inlogplicht dankzij het veilige ontgrendelen."
+      }
+    },
+    "bug-previsualisation-pdf-windows": {
+      "title": "De PDF-previewpane bug oplossen op Windows",
+      "subtitle": "Herstel de PDF-preview in uw Bestandsverkenner.",
+      "description": "Uw Windows Bestandsverkenner toont geen PDF-preview meer of geeft een foutmelding? Hier leest u hoe u de PDF-preview snel weer kunt activeren.",
+      "category": "Hulp",
+      "date": "28 mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "De previewpane in uw Windows Bestandsverkenner is erg handig om snel een documentoverzicht te bekijken, maar het gebeurt regelmatig dat deze paneel vastloopt of een zwart scherm toont.",
+        "1": "Waarom loopt de previewpane vast?",
+        "2": "De installatie of update van externe PDF-viewers wijzigt de systeemverbindingen (handlers). Windows krijgt dan meerdere conflicterende renderers om de weergave te tonen.",
+        "3": "Hoe corrigeer je het previewprobleem?",
+        "4": "Open de mapopties, controleer of het vakje 'Weergave van preview-handlers' is aangevinkt, en herstel vervolgens uw standaardlezer in de Windows-instellingen.",
+        "5": "Een goed geconfigureerd systeem maakt uw dagelijkse navigatie in uw professionele mappen soepel."
+      }
+    },
+    "signer-pdf-sans-imprimante": {
+      "title": "Hoe een PDF-document in te vullen en te ondertekenen zonder printer?",
+      "subtitle": "Onderteken uw documenten en contracten elektronisch en gratis.",
+      "description": "Geen printer meer nodig! Ontdek hoe u een formulier in kunt vullen en uw handtekening toevoegt aan een PDF online gratis in 2026.",
+      "category": "Ondertekenen",
+      "date": "28 mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Een contract afdrukken, met de hand ondertekenen en vervolgens scannen om het terug te sturen is een verlies van tijd, papier en inkt. Het is vandaag de dag extreem eenvoudig om het volledig digitaal te doen.",
+        "1": "De wettigheid van de elektronische handtekening",
+        "2": "In Frankrijk en Europa (eIDAS-verordening), hebben elektronisch opgegeven handtekeningen dezelfde juridische waarde als traditionele papieren handtekeningen voor de meeste commerciële overeenkomsten.",
+        "3": "Ondertekenen op iLoveDoc in enkele klikken",
+        "4": "Importeer het contract, teken uw handtekening op het touchscreen of laad een foto van uw handtekening en sleur hem naar de overeenkomst. Het einddocument wordt veilig samengesteld zonder servertransitie.",
+        "5": "Ga over op nul papier en vereenvoudig de handtekening van uw offertes en professionele contracten."
+      }
+    },
+    "fusionner-pdf-sur-smartphone": {
+      "title": "Hoe PDF's combineren en herstructureren op je smartphone?",
+      "subtitle": "Combineer en beheer je PDF-documenten rechtstreeks vanuit je smartphone.",
+      "description": "Ben je op zoek naar manieren om PDF's samen te voegen vanuit je telefoon? Ontdek hoe je gratis PDF-bestanden kunt combineren, sorteren en samenvoegen op iPhone en Android.",
+      "category": "Mobiel",
+      "date": "28 mei 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "Het samenstellen van bijlagen of rapporten moet soms snel gebeuren in een mobiele situatie. Gelukkig is je smartphone voldoende.",
+        "1": "Mobiel combineren zonder externe app",
+        "2": "Je hoeft je telefoon niet te overbelasten met betaalde apps. Ga naar iLoveDoc vanuit je mobiele browser (Safari op iPhone, Chrome op Android).",
+        "3": "Glijden en neerzetten op het scherm",
+        "4": "Onze interactieve interface maakt het mogelijk om de pagina's te herordeneren door ze met je vinger te slepen, en de PDF's direct en volledig veilig samen te stellen.",
+        "5": "Beheer je documentstromen snel, overal en rechtstreeks vanuit je hand."
+      }
+    }
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - Gratis online PDF-hulpprogramma's",
+    "home_desc": "Voeg samen, verdeel, comprimeer en converteer uw PDF-bestanden gratis. Veilige verwerking rechtstreeks in uw browser zonder enige registratie.",
+    "about_title": "Over iLoveDoc – Gratis online PDF-hulpprogramma's",
+    "about_desc": "Ontdek iLoveDoc: gratis, veilige en snelle PDF-hulpprogramma's. 100% client-side verwerking, zonder het uploaden van bestanden naar een server. Voeg samen, comprimeer en converteer uw PDF's met volledige vertrouwelijkheid.",
+    "privacy_title": "Privacybeleid – iLoveDoc",
+    "privacy_desc": "iLoveDoc's privacybeleid. Ontdek hoe wij uw persoonlijke gegevens beschermen, ons gebruik van cookies en uw RGPD-rechten.",
+    "terms_title": "Algemene gebruiksvoorwaarden – iLoveDoc",
+    "terms_desc": "Algemene gebruiksvoorwaarden van de iLoveDoc-website. Raadpleeg de regels voor toegang en gebruik van onze gratis online PDF-hulpprogramma's."
   }
 }

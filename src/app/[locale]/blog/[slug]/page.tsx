@@ -59,9 +59,9 @@ export default async function BlogDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const tFooter = useTranslations('Footer');
-  const tBlog = useTranslations('Blog');
-  const tBlogPosts = useTranslations('BlogPosts');
+  const tFooter = await getTranslations({ locale: (await params).locale, namespace: 'Footer' });
+  const tBlog = await getTranslations({ locale: (await params).locale, namespace: 'Blog' });
+  const tBlogPosts = await getTranslations({ locale: (await params).locale, namespace: 'BlogPosts' });
 
   // Get 3 recommended posts (excluding the current one)
   const recommended = blogPosts

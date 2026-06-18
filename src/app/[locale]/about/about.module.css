@@ -4,11 +4,10 @@
   flex: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  .main {
+:global(.dark) .main {
     color: #e2e8f0;
   }
-}
+
 
 /* ── Hero ── */
 .hero {
@@ -63,11 +62,10 @@
   background: linear-gradient(180deg, #f8f7ff 0%, #fff 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  .sectionAlt {
+:global(.dark) .sectionAlt {
     background: linear-gradient(180deg, #1a1230 0%, #0f0b1a 100%);
   }
-}
+
 
 .container {
   max-width: 1100px;
@@ -103,13 +101,12 @@
   box-shadow: 0 8px 32px rgba(108, 60, 224, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  .missionCard {
+:global(.dark) .missionCard {
     background: rgba(30, 20, 55, 0.7);
     border-color: rgba(124, 58, 237, 0.2);
     color: #f7fafc;
   }
-}
+
 
 /* ── Advantages Grid ── */
 .advantagesGrid {
@@ -135,13 +132,12 @@
   box-shadow: 0 12px 36px rgba(108, 60, 224, 0.14);
 }
 
-@media (prefers-color-scheme: dark) {
-  .advantageCard {
+:global(.dark) .advantageCard {
     background: rgba(30, 20, 55, 0.6);
     border-color: rgba(124, 58, 237, 0.18);
     color: #f7fafc;
   }
-}
+
 
 .advantageIcon {
   font-size: 2.5rem;
@@ -183,13 +179,12 @@
   box-shadow: 0 10px 30px rgba(108, 60, 224, 0.12);
 }
 
-@media (prefers-color-scheme: dark) {
-  .expertiseCard {
+:global(.dark) .expertiseCard {
     background: rgba(30, 20, 55, 0.6);
     border-color: rgba(124, 58, 237, 0.18);
     color: #f7fafc;
   }
-}
+
 
 .expertiseCard h3 {
   font-size: 1.1rem;
@@ -226,13 +221,12 @@
   align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  .techCard {
+:global(.dark) .techCard {
     background: rgba(30, 20, 55, 0.7);
     border-color: rgba(124, 58, 237, 0.2);
     color: #f7fafc;
   }
-}
+
 
 @media (max-width: 768px) {
   .techCard {

@@ -69,6 +69,20 @@ function isAllowedProtocol(url: URL): boolean {
 }
 
 export async function GET(request: Request) {
+  // Basic Origin/Referer check to prevent public open-proxy abuse
+  const headersList = request.headers;
+  const referer = headersList.get('referer') || '';
+  const origin = headersList.get('origin') || '';
+  const host = headersList.get('host') || '';
+  
+  // In production, require strict matching of origin or referer
+  if (process.env.NODE_ENV === 'production') {
+    const isAllowed = referer.includes(host) || origin.includes(host);
+    if (!isAllowed) {
+      return NextResponse.json({ error: 'Accès interdit. Seule l\'application iLoveDoc peut utiliser ce proxy.' }, { status: 403 });
+    }
+  }
+
   const { searchParams } = new URL(request.url);
   const target = searchParams.get('url');
 

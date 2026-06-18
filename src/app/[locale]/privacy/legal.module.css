@@ -79,10 +79,8 @@
   color: #4f46e5;
 }
 
-@media (prefers-color-scheme: dark) {
-  .section h3 {
-    color: #a78bfa;
-  }
+:global(.dark) .section h3 {
+  color: #a78bfa;
 }
 
 .section p {
@@ -116,10 +114,8 @@
   opacity: 0.7;
 }
 
-@media (prefers-color-scheme: dark) {
-  .section a {
-    color: #a78bfa;
-  }
+:global(.dark) .section a {
+  color: #a78bfa;
 }
 
 .section code {

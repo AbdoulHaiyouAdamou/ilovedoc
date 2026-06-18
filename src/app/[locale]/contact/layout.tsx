@@ -1,22 +1,36 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
 
-export const metadata: Metadata = {
-  title: 'Contact – iLoveDoc | Outils PDF Gratuits',
-  description:
-    "Contactez l'équipe iLoveDoc pour toute question, suggestion ou problème technique. Nous répondons sous 48 heures.",
-  openGraph: {
-    title: 'Contact – iLoveDoc',
-    description:
-      'Contactez-nous pour toute question ou suggestion concernant nos outils PDF gratuits.',
-    url: 'https://ilovedoc.com/contact',
-    siteName: 'iLoveDoc',
-    type: 'website',
-    locale: 'fr_FR',
-  },
-  alternates: {
-    canonical: 'https://ilovedoc.com/contact',
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Footer' });
+  const tMeta = await getTranslations({ locale, namespace: 'Metadata' });
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+
+  const title = `${t('contact')} – iLoveDoc`;
+  const description = tMeta('home_desc'); // Fallback description
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${baseUrl}/${locale}/contact`,
+      siteName: 'iLoveDoc',
+      type: 'website',
+      locale,
+    },
+    alternates: {
+      canonical: `${baseUrl}/${locale === routing.defaultLocale ? '' : locale + '/'}contact`,
+    },
+  };
+}
 
 export default function ContactLayout({
   children,

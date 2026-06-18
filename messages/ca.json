@@ -299,5 +299,417 @@
     "contact_title": "9. Contacte",
     "contact_p1": "Per qualsevol qüestió relativa a les presents CGU, podeu contactar-nos :",
     "contact_email": "<strong>Per correu electrònic :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Privacy": {
+    "intro_title": "1. Introducció",
+    "intro_p1": "Benvinguda a <strong>iLoveDoc</strong> (en endavant &quot;el Lloc&quot;), accessible a l'adreça <a href=\"https://ilovedoc.com\">https://ilovedoc.com</a>. La protecció de les vostres dades personals és una prioritat per a nosaltres. La present política de confidencialitat descriu quines informacions recollim, com les utilitzem i quins són els vostres drets.",
+    "intro_p2": "En utilitzar el Lloc, accepteu les pràctiques descrites en aquesta política. Si no accepteu aquestes condicions, no us feu servir el Lloc.",
+    "data_title": "2. Dades Recollides",
+    "data_nav_title": "2.1 Dades de navegació",
+    "data_nav_desc": "Quan visitau el Lloc, podem recollir automàticament certes informacions tècniques via cookies i tecnologies similars :",
+    "data_nav_list": "<ul><li>Adreça IP (anònim)</li><li>Tipus i versió del navegador</li><li>Sistema d'execució</li><li>Pàgines visitades i temps de consulta</li><li>Font de trànsit (referrer)</li><li>Résolució de pantalla i llengua del navegador</li></ul>",
+    "data_form_title": "2.2 Dades de formulari",
+    "data_form_desc": "Si vous utilisez notre formulaire de contact, nous collectons les informations que vous fournissez volontairement : nom, adresse email, sujet et contenu du message. Ces données sont utilisées exclusivement pour répondre à votre demande.",
+    "data_pdf_title": "2.3 Fichiers PDF",
+    "data_pdf_desc": "<strong>iLoveDoc no col·lecta, emmagatzema ni transfereix cap arxiu PDF.</strong> Tots els tractaments de documents (fusió, compressió, conversió, etc.) són efectuats íntegrament al seu navegador, costat client, gràcies a la biblioteca <code>pdf-lib</code>. Cap arxiu no és enviat als nostres servidors ni a servidors tercers.",
+    "cookies_title": "3. Utilització de les galetes",
+    "cookies_desc": "El lloc utilitza diferents tipus de galetes :",
+    "cookies_ess_title": "3.1 Galetes essencials",
+    "cookies_ess_desc": "Aquestes galetes són necessàries per al funcionament del lloc (per exemple, preferències d'afichage, mode fosc). No col·lecten dades personals identificables.",
+    "cookies_ana_title": "3.2 Galetes analítiques",
+    "cookies_ana_desc": "Utilitzem <strong>Google Analytics</strong> per entendre com els visitants interactuen amb el lloc. Google Analytics utilitza cookies per recopilar informació de manera anònima (pàgines visitades, durada de les sessions, etc.). Aquests dades ens ajuden a millorar l'experiència de l'usuari.",
+    "cookies_ana_link": "Per saber més sobre com Google utilitza les dades: <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">https://policies.google.com/technologies/partner-sites</a>",
+    "cookies_ads_title": "3.3 Cookies publicitàries (Google AdSense)",
+    "cookies_ads_p1": "El lloc utilitza <strong>Google AdSense</strong> per mostrar anuncis publicitàris. Google AdSense i els seus socis publicitàris tercers poden utilitzar cookies per difondre anuncis basats en les vostres visites anteriors en aquest lloc o en altres llocs.",
+    "cookies_ads_p2": "<strong>Google, com a proveïdor tercer, utilitza cookies per difondre anuncis en el lloc.</strong> L'ús per part de Google de la cookie DART li permet difondre anuncis als usuaris segons la seva visita al lloc i a altres llocs de Internet.",
+    "cookies_ads_p3": "Els proveïdors tercers, inclòs Google, utilitzen cookies per difondre anuncis segons les visites anteriors de l'usuari al vostre lloc web o a altres llocs web.",
+    "cookies_ads_p4": "L'ús de cookies publicitàries per part de Google permet a Google i als seus socis difondre anuncis als vostres usuaris segons la seva visita als vostres llocs i/o altres llocs de Internet.",
+    "cookies_opt_title": "3.4 Desactivació de les cookies",
+    "cookies_opt_desc": "Podeu gestionar les vostres preferències de galetes de diverses maneres:",
+    "cookies_opt_list": "<ul><li><strong>Paràmetres del navegador:</strong> La majoria dels navegadors us permeten refusar o suprimir les galetes mitjançant els seus paràmetres de privacitat.</li><li><strong>Opt-out de Google Ads:</strong> Podeu desactivar la publicitat personalitzada visitant els <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Paràmetres d'anuncis de Google</a>.</li><li><strong>Opt-out general:</strong> Podeu desactivar les galetes publicitàries de tercers visitant <a href=\"https://www.aboutads.info/choices/\" target=\"_blank\" rel=\"noopener noreferrer\">www.aboutads.info/choices/</a> o <a href=\"https://www.youronlinechoices.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">www.youronlinechoices.eu/</a>.</li><li><strong>NAI Opt-out:</strong> Visiteu el lloc de la <a href=\"https://optout.networkadvertising.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Network Advertising Initiative</a> per desactivar les galetes de xarxes publicitàries participants.</li></ul>",
+    "cookies_opt_note": "Si us plau, tingueu en compte que la desactivació de les galetes pot afectar certes funcionalitats del lloc.",
+    "adsense_title": "4. Google AdSense i Proveïdors Tercers",
+    "adsense_desc": "iLoveDoc mostra anuncis mitjançant el programa <strong>Google AdSense</strong>. En aquest marc:",
+    "adsense_list": "<ul><li>Els proveïdors tercers, inclòs Google, utilitzen galetes per difondre anuncis en funció de les visites anteriors de l'usuari al lloc o a altres llocs.</li><li>Google utilitza la galeta DoubleClick (DART) per permetre, a ell mateix i als seus socis, difondre anuncis basats en la visita dels usuaris al lloc i/o a altres llocs de la Internet.</li><li>Els usuaris poden desactivar l'ús de la galeta DART accedint als <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">paràmetres de publicitat de Google</a>.</li></ul>",
+    "adsense_note": "Per obtenir més informació sobre com Google gestiona les dades als seus productes publicitaris, consulteu la <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">política de privacitat de Google</a>.",
+    "rgpd_title": "5. Els vostres drets (RGPD)",
+    "rgpd_desc": "Segons el Reglament General de Protecció de Dades (RGPD) i la llei Informàtica i Llibertats, teniu els drets següents respecte a les vostres dades personals:",
+    "rgpd_list": "<ul><li><strong>Dret d'accés:</strong> Podeu obtenir la confirmació que es processen o no es processen dades vostres i, quan es processin, el dret d'accedir-hi.</li><li><strong>Dret de rectificació:</strong> Podeu obtenir la rectificació de dades inexactes o incompletes.</li><li><strong>Dret a l'efacement:</strong> Podeu obtenir l'efacement de les vostres dades en els casos previstos per la regulació.</li><li><strong>Dret a la limitació del processament:</strong> Podeu sol·licitar la limitació del processament de les vostres dades en certes circumstàncies.</li><li><strong>Dret a la portabilitat:</strong> Podeu rebre les vostres dades en un format estructurat, habitualment utilitzat i llegible per màquina.</li><li><strong>Dret d'oposició:</strong> Podeu oposar-vos al processament de les vostres dades per motius legítims.</li></ul>",
+    "rgpd_contact": "Per exercir aquests drets, poseu-vos en contacte amb nosaltres a l'adreça: <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>. Respondrem a la vostra sol·licitud en un termini de 30 dies.",
+    "rgpd_cnil": "També teniu el dret de presentar una queixa davant la <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">Comissió Nacional d'Informàtica i Llibertats (CNIL)</a>.",
+    "retention_title": "6. Conservació de les Dades",
+    "retention_desc": "Les dades recopilades es conserven durant el període necessari per a la finalitat per la qual s'han recopilat:",
+    "retention_list": "<ul><li><strong>Dades de navegació (analytics):</strong> Conservades durant un màxim de 26 mesos, segons les recomanacions de la CNIL.</li><li><strong>Dades de contacte:</strong> Conservades durant 3 anys des del darrer contacte.</li><li><strong> Cookies:</strong> La durada de vida de les cookies no supera els 13 mesos segons la regulació vigent.</li><li><strong>Fitxers PDF:</strong> Cap conservació — els fitxers no abandonen mai el vostre navegador.</li></ul>",
+    "modifications_title": "7. Modificacions d'aquesta Política",
+    "modifications_p1": "Ens reservem el dret de modificar aquesta política de privacitat en qualsevol moment. Tota modificació serà publicada en aquesta pàgina amb una data de revisió actualitzada. Us recomanem que consulteu aquesta pàgina regularment per estar informat sobre les nostres pràctiques en matèria de protecció de dades.",
+    "modifications_p2": "En cas de modificacions substancials, ens mostrarà un avís visible en el lloc web per informar-vos.",
+    "contact_title": "8. Contacte",
+    "contact_desc": "Per qualsevol pregunta relativa a aquesta política de privacitat o per exercir els vostres drets, podeu contactar-nos :",
+    "contact_email": "<strong>Per correu electrònic :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Faq": {
+    "item0_q": "Conserveu una còpia dels meus arxius una vegada tractats?",
+    "item0_a": "Absolutament no. iLoveDoc efectua tots els tractaments directament al vostre navegador (cara client). Vos arxius no enllacen mai la vostra aparell i no s'envien mai a un servidor distant. Romandran 100 % sota el vostre control i en seguretat.",
+    "item1_q": "Els arxius de l'empresa són segurs amb el vostre servei?",
+    "item1_a": "Sí. Puisque el tractament es realitza localment al vostre propi navegador, cap tercer (incloent-hi nosaltres mateixos) no pot accedir als vostres documents professionals. Aixó és la solució ideal per al respecte del RGPD i la estricta confidencialitat de l'empresa.",
+    "item2_q": "Quina és la configuració del sistema mínima?",
+    "item2_a": "Un navegador modern (Chrome, Firefox, Safari o Edge) amb connexió a Internet. Com que els càlculs es realitzen localment pel vostre aparell, una memòria RAM suficient és recomanada per als documents molt voluminosos.",
+    "item3_q": "Com puc descarregar els meus arxius?",
+    "item3_a": "Des que l'operació de tractament de document estigui finalitzada, un botò de descarregar apareix per enregistrar el fitxer generat directament al vostre aparell.",
+    "item4_q": "Puc convertir els meus PDF numèrics en documents modificables?",
+    "item4_a": "Sí. Les nostres eines d'OCR (Reconeixement Òptic de Caràcters) i d'edició extreuen el text dels vostres PDF escanejats per fer-lo seleccionable i editable directament.",
+    "item5_q": "Per qué la meva conversió és tan llarga?",
+    "item5_a": "La velocitat depèn principalment de la potència de càlcul del vostre aparell i del tamany del fitxer, ja que el tractament es realitza localment al vostre ordinador sense dependre de serveis externs."
+  },
+  "Contact": {
+    "form_title": "Envia-nos un missatge",
+    "success_message": "Gràcies ! El vostre missatge s'ha enviat correctament. Us respondrem tan aviat com sigui possible.",
+    "error_message": "Ha ocorregut un error. Si us plau, torni a intentar-ho més tard.",
+    "label_name": "Nom complet",
+    "placeholder_name": "Jean Dupont",
+    "error_name_required": "El nom és obligatori.",
+    "label_email": "Adreça email",
+    "placeholder_email": "jean@exemple.com",
+    "error_email_required": "L'adreça email és obligatòria.",
+    "error_email_invalid": "Si us plau, introdueixi una adreça email vàlida.",
+    "label_subject": "Assumpte",
+    "select_subject": "— Seleccionar un assumpte —",
+    "error_subject_required": "L'assumpte és obligatori.",
+    "subject_option_question": "Qüestió general",
+    "subject_option_bug": "Bug / Problema tècnic",
+    "subject_option_suggestion": "Suggeriment d'ampliació",
+    "subject_option_partnership": "Col·laboració / Associació",
+    "subject_option_other": "Altres",
+    "label_message": "Missatge",
+    "placeholder_message": "Descriu la vostra demanda en detall…",
+    "error_message_required": "El missatge és obligatori.",
+    "error_message_min": "El missatge ha de contenir com a mínim 10 caràcters.",
+    "btn_submit": "Enviar el missatge",
+    "btn_sending": "Enviament en curs...",
+    "info_title": "Informació de contacte",
+    "info_email": "Adreça email",
+    "info_response_time": "Temps de resposta",
+    "info_response_val": "Menys de 48 hores laborables",
+    "info_follow": "Seguiu-nos",
+    "info_links": "Enllaços útils",
+    "faq_title": "Preguntes freqüents",
+    "faq_item0_q": "iLoveDoc és realment gratuït?",
+    "faq_item0_a": "Sí, tots els nostres eines són 100 % gratuïtes, sense límit i sense inscripció requerida.",
+    "faq_item1_q": "Els meus fitxers s'envien a un servidor?",
+    "faq_item1_a": "No. Tots els tractaments es realitzen directament al navegador. Cap fitxer no deixa el seu dispositiu.",
+    "faq_item2_q": "Quins navegadors són compatibles?",
+    "faq_item2_a": "iLoveDoc funciona en tots els navegadors moderns: Chrome, Firefox, Safari, Edge (versions recents).",
+    "faq_item3_q": "Puc tractar fitxers voluminosos?",
+    "faq_item3_a": "El tractament es realitza al costat del client, per tant la limitació depèn de la memòria del seu dispositiu. La majoria dels documents de mida corrent són compatibles sense cap problema.",
+    "faq_item4_q": "Com informar un bug?",
+    "faq_item4_a": "Utilitzeu el formulari de contacte anterior amb l'assumpte « Bug / Problema tècnic » i descriu el problema que ha ocorregut."
+  },
+  "Blog": {
+    "all_articles": "Tots els articles",
+    "recommended_articles": "Articles recomanats",
+    "read_more": "En sap més",
+    "back_to_blog": "Tornar al blog",
+    "read_time_suffix": "de lectura",
+    "share": "Compartir :",
+    "back_home": "Inici",
+    "title_not_found": "Article no trobat",
+    "fb_label": "Compartir a Facebook",
+    "x_label": "Compartir a X",
+    "li_label": "Compartir a LinkedIn"
+  },
+  "BlogPosts": {
+    "signatures-numeriques-legales": {
+      "title": "La validesa de les signatures numèriques explicada: Què és el que les fa legals?",
+      "subtitle": "Comprendre el marc legal i la valor jurídica d'una signatura de document en línia.",
+      "description": "Descobriu què és el que fa que una signatura numèrica sigui jurídicament obligatòria, com les lleis varien segons els països, i com protegir els vostres documents en línia.",
+      "category": "Seguretat",
+      "date": "20 maig 2025",
+      "readTime": "5 min",
+      "content": {
+        "0": "A l'era del treball a distància i de la numrització dels processos, signar un document en línia és esdevingut un gest quotidien. Però què en és del valor legal de les signatures? Són equivalents a una signatura manuscrita? La resposta curta és sí, a condició de respectar certes regles.",
+        "1": "Què és una signatura numèrica?",
+        "2": "Una signatura numèrica (o electrònica) no és un simple escaneig de la signatura manuscrita. Es tracta d'un procés criptogràfic que lliga l'identitat del signant al document de manera infalsificable. Això garanteix dos elements crucials: l'autenticitat (qui ha signat) i l'integritat (el document no ha estat modificat des de la signatura).",
+        "3": "El marc legal a Europa i al món",
+        "4": "A l'Unió Europea, és el reglament eIDAS qui encadena les signatures electròniques. Defineix tres nivells de signatura:",
+        "6": "Per què utilitzar iLoveDoc per als vostres documents?",
+        "7": "iLoveDoc us permet d'afegir signatures als vostres documents directament al navegador. Com cap fitxer no és carregat als nostres serveis, les vostres dades romanen enterament confidencials. És l'estrument perfecte per a les vostres signatures quotidianes ràpides, segures i conformes a les millors pràctiques del web.",
+        "8": "En conclusió, signar numèricament és no només legal, sinó que és també molt més segur que una signatura manuscrita de paper si us feu servir els bons estruments. Adopteu la signatura electrònica des de avui!",
+        "5_item0": "La signatura simple (ex: marcar una casella o inserir una imatge de la signatura). És legal però la seva valor de prova és limitada.",
+        "5_item1": "La signatura avançada, que requereix criteris d'identificació més estrictes i un enllaç segur amb el signant.",
+        "5_item2": "La signatura qualificada (QES), que és legalment equivalent a 100% a una signatura manuscrita i utilitza un certificat d'identitat verificat."
+      }
+    },
+    "fusionner-pdf-et-jpg": {
+      "title": "Combinar arxius PDF i JPG en un sol document (de manera senzilla)",
+      "subtitle": "Combina arxius PDF i imatges en un mateix document — ràpidament, fàcilment, i sense descàrrega.",
+      "description": "Descobreix com combinar arxius PDF i JPG en un sol document amb iLoveDoc. Ràpidament, fàcilment, i directament des de el teu navegador.",
+      "category": "Combinar",
+      "date": "20 maig 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Necessites combinar un arxiu PDF i una imatge JPG ? Que estiguis preparant un informe, presentant documents administratius o volguessis simplement agrupar tot en un sol arxiu, ens ho explicarem tot.",
+        "1": "Combinar diferents tipus d'arxius pot semblar complicat, però és molt senzill de fet. En aquest guia, ens explicarem com procedir amb iLoveDoc — sense descàrrega i de manera molt senzilla.",
+        "2": "Pas 1: Convertir les imatges JPG en PDF",
+        "3": "Abans de combinar, el més senzill és convertir les imatges JPG al format PDF. En iLoveDoc, anem a l'erramienta 'JPG en PDF'. Deposeu les imatges, ajusteu l'orientació o la marge si cal, i cliqueu en Convertir. Obteniu un arxiu PDF que conté les imatges.",
+        "4": "Pas 2: Combinar els dos PDF",
+        "5": "Una vegada la imatge s'ha convertit en PDF, anem a l'erramienta 'Combinar PDF'. Importeu el document original i el nou PDF que conté l'imatge. Podeu reorganitzar els arxius mitjançant un simple arrastre i deixar anar. Cliqueu en 'Combinar PDF' per descarregar el document final combinat.",
+        "6": "I aquí teniu-ho! En dues etapes ràpides, realitzades sencerament en el teu navegador sense perill per les teves dades, has combinat els arxius de manera professional."
+      }
+    },
+    "modifier-pdf-sans-adobe": {
+      "title": "Puc modificar un PDF sense Adobe Acrobat ? Aquí com fer-ho amb iLoveDoc",
+      "subtitle": "La solució en línia i 100% gratuïta per editar els vostres textos i anotacions sense llicència onerosa.",
+      "description": "Deu modificar un PDF però no té Adobe Acrobat ? Aquí com utilitzar iLoveDoc gratuïtament, sense descàrrega ni coneixements tècnics.",
+      "category": "Editar",
+      "date": "20 maig 2025",
+      "readTime": "4 min",
+      "content": {
+        "0": "Adobe Acrobat és la referència històrica per a l'edició de PDF, però el seu cost d'abonament mensual pot ser prohibitiu per a necessitats puntuals. Afortunadament, hi ha alternatives modernes i gratuïtes.",
+        "1": "Per què el format PDF és difícil de modificar?",
+        "2": "El PDF va ser dissenyat com un format d'impressió numèrica fix. A diferència d'un document Word, no conté una estructura de flux de text fluix, sinó més aviat coordenades fixes per a cada caràcter. És per això que l'edició de PDF requereix eines especialitzades.",
+        "3": "L'equip d'edició iLoveDoc",
+        "4": "Amb l'equip 'Editar PDF' d'iLoveDoc, pot afegir directament zones de text, dibuixar formes o inserir imatges per sobre del seu PDF. El procés es realitza al costat del client, el que garanteix una reactivitat instantània i una seguretat òptima.",
+        "6": "Inútil de gastar fortunes en llicències pesades. iLoveDoc posa a la seva disposició tots els eines essencials gratuïtament i sense restriccions.",
+        "5_item0": "Afegiu anotacions clares per als vostres col·legues.",
+        "5_item1": "Amagueu parts de text inútils.",
+        "5_item2": "Afegiu signatures o logotips en alguns clics."
+      }
+    },
+    "reduire-taille-pdf-100ko": {
+      "title": "Compressar un PDF a menys de 100 Ko",
+      "subtitle": "Tècniques i solucions per compressar els vostres documents per als formularis administratius sense pèrdua de qualitat.",
+      "description": "Necessiteu enviar un PDF de menys de 100 Ko? Utilitzeu l'outil Dividir per mida o el nostre compresor per reduir els vostres arxius sense pèrdua de qualitat.",
+      "category": "Optimitzar",
+      "date": "20 maig 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Molts portals administratius i escolars imposen una límit estricte de mida de fitxer per als càrregues (sovint 100 Ko o 200 Ko). Si el vostre PDF és massa pesant, no us alarmeu, hi ha diverses mètodes senzills.",
+        "1": "Mètode 1: La compressió intel·ligent",
+        "2": "L'outil 'Comprimir PDF' de iLoveDoc analitza les imatges i recursos del vostre document i redueix la seva resolució sense alterar la legibilitat dels textos. És la mètode ideal per conservar la integritat del fitxer tot i reduir considerablement el seu pes.",
+        "3": "Mètode 2: Suprimir les pàgines innecessàries",
+        "4": "De vegades, el document conté pàgines de coberta o annexos que no són requerits. Utilitzant l'outil 'Suprimir pàgines', podeu allèger el fitxer conservant només l'essencial.",
+        "5": "Gràcies a la nostra suite d'errills optimitzats, romanereu sota la barra dels 100 Ko i podeu presentar els vostres fitxers sense cap problema en tots els llocs administratius !"
+      }
+    },
+    "trois-methodes-editer-pdf": {
+      "title": "Tres mètodes d'editar un PDF",
+      "subtitle": "Descobreix la mètica que correspon més a la teva necessitat.",
+      "description": "Descobreix els millors mitjans de modificar un PDF amb precisió a l'ajuda d'eines en línia, de la conversió PDF a la modificació del contingut del fitxer original.",
+      "category": "Editar",
+      "date": "13 març 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "La modificació d'un PDF pot ser abordada de diferents maneres segons el resultat desitjat. Aquí tenim les tres principals mètodes a retenir.",
+        "1": "Mètode 1: Edició directa (Annotations i afegits)",
+        "2": "Ideal per omplir formularis no interactius, afegir comentaris o dibuixar sobre un pla. Pots utilitzar l'editor en línia de iLoveDoc per escriure per sobre dels elements existents.",
+        "3": "Mètode 2: Conversió en Word",
+        "4": "Si has de reescriure paràgrafs sencers o modificar la estructura del document, el millor és convertir el PDF en Word. Una vegada les modificacions fetes en Word, pots exportar-lo de nou en PDF.",
+        "5": "Mètode 3: Aplataniment i fusió",
+        "6": "Per fixar les teves modificacions i impedir que altres persones editin els camps, apliqueix un aplataniment (flattening) sobre el teu fitxer modificat.",
+        "7": "Escull la mètode adaptada al teu flux de treball i guanya en eficiència al dia a dia !"
+      }
+    },
+    "convertir-jpg-en-word": {
+      "title": "Com convertir un JPG en Word modifiable",
+      "subtitle": "Extraiu el text de les vostres imatges perquè puguis editar-lo en alguns segons.",
+      "description": "Aprengueu a utilitzar els eines de conversió iLoveDoc per convertir els fitxers d'imatge en Word editables.",
+      "category": "Convertir",
+      "date": "28 febr. 2024",
+      "readTime": "3 min",
+      "content": {
+        "0": "Convertir una imatge JPG que conté text en un fitxer Word (.docx) modifiable és indispensable si voleu reutilitzar o corregir un text escanejat o fotografiat.",
+        "1": "Com funciona la reconeixement de text ?",
+        "2": "Aquesta operació fa referència a l'OCR (Reconeixement Òptic de Caràcters). L'algorisme analitza els píxels de l'imatge, identifica les formes de les lletres i les converteix en caràcters de text codificats numèricament.",
+        "3": "La tasca a iLoveDoc",
+        "4": "Suffit de carregar el vostre fitxer JPG a l'eina de conversió d'imatge. La nostra eina extreu el contingut textual i genera un document Word net que podeu obrir i editar immediatament a Word, LibreOffice o Google Docs.",
+        "5": "Ganeu temps preciós evitant de retipus manualment els vostres documents imprimits !"
+      }
+    },
+    "convertir-jpg-en-excel": {
+      "title": "Converteix un JPG a Excel amb aquests eines gratuïtes",
+      "subtitle": "Recupereu les taules de les vostres imatges numèritzades directament al format Excel.",
+      "description": "Aquesta guia us mostrarà com utilitzar les eines iLoveDoc per transformar un JPG en una plana de càlcul Excel modificable.",
+      "category": "Converteix",
+      "date": "21 febr. 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "Disposeu d'un quadre imprès o d'una captura d'imatge de dades xifrades i voleu analitzar-les a Excel ? Recopiar els dígits un per un és fastigós i font d'errors. Aquí teniu la solució.",
+        "1": "Extracció intel·ligent de les línies i columnes",
+        "2": "A més de reconèixer els caràcters, l'algorisme d'extracció identifica la estructura del quadre (les bordures, les separacions de columnes i els títols) per reconstruir fidelment la xarxa de càlcul.",
+        "3": "Exportar a Excel",
+        "4": "Arrastreu i deixeu anar el fitxer d'imatge sobre la nostra eina de conversió JPG a Excel. La xarxa de dades es recria i es descarrega al format .xlsx. Podeu aplicar llavors les vostres fórmules de suma, tria o gràfiques normalment.",
+        "5": "Simplifiqueu-vos la comptabilitat i el tractament de dades xifrades gràcies a la conversió intel·ligent d'iLoveDoc !"
+      }
+    },
+    "reparer-pdf-corrompu": {
+      "title": "Com reparar un fitxer PDF corromput o danyat gratuïtament?",
+      "subtitle": "Descobriu com recuperar els vostres documents PDF no llegibles en línia.",
+      "description": "El vostre fitxer PDF s'hi nega a obrir-se? Descobriu com reparar un PDF corromput en línia gratuïtament i recuperar les vostres dades sense risc.",
+      "category": "Reparar",
+      "date": "28 maig 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "No hi ha res més frustrant que rebre un missatge d'error que indica que un document PDF important està corromput i no pot ser obert. Per sort, hi ha solucions gratuïtes en línia per restaurar les vostres dades.",
+        "1": "Per què un PDF esdevé no llegible?",
+        "2": "Una interrupció de la xarxa durant el descàrrega, un bug del sistema del vostre processador de text o un problema de transferència a clau USB són les causes principals de la corrupció. En la majoria dels casos, les dades internes del document estan intactes, però l'en-titulat del fitxer està danyat.",
+        "3": "La reparació en línia amb iLoveDoc",
+        "4": "L'erradiu de reparació iLoveDoc analitza la estructura binària del vostre fitxer danyat i reconstrueix l'en-titulat corromput en alguns segons directament al vostre navegador, garantint una seguretat absoluta.",
+        "5": "No abandoniïu els vostres fitxers perduts! Utilitzeu el reparador gratuït per recuperar l'accés a les vostres informacions instantàniament."
+      }
+    },
+    "modifier-texte-pdf-gratuit": {
+      "title": "Com modificar el text d'un PDF gratuïtament i sense programari?",
+      "subtitle": "Guia pràctica per editar el text dels vostres documents PDF directament en línia.",
+      "description": "Guia pràctica per editar el text dels vostres PDF en línia gratuïtament. Modifiqueu, feu servir o suprimiu text sense instal·lar Acrobat Pro d'Adobe.",
+      "category": "Editar",
+      "date": "28 maig 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "Modificar el text directament a l'interior d'un document PDF és un requisit freqüent, però els programaris de despatx com Acrobat Pro són molt cars. Ens mostrem com superar aquesta limitació.",
+        "1": "L'editor en línia gratuït d'iLoveDoc",
+        "2": "Gràcies a la nostra eina d'edició en línia, podeu escriure text lliure sobre el document original, amagar les dades confidencials mitjançant rectangles opacs o inserir imatges i logotips.",
+        "3": "La conversió Word per les modificacions importants",
+        "4": "Si heu de reescriure paràgrafs sencers, és recomanable convertir primer el vostre PDF al format Word (.docx), fer les modificacions al vostre processador de text preferit i després exportar-lo de nou al PDF.",
+        "5": "Modifiqueu els vostres documents segons les vostres necessitats triant l'eina d'edició directa o la conversió Word a iLoveDoc."
+      }
+    },
+    "impression-pdf-caracteres-bizarres": {
+      "title": "Per què el meu PDF s'imprimeix amb caràcters estranys? (Resolt)",
+      "subtitle": "Corregir els jeroglífics, símbols i errors de tipus de lletra en la impressió de PDF.",
+      "description": "La vostra impressora imprimeix fulls plens de símbols estranys, jeroglífics o quadrats? Descobriu com corregir aquest problema d'impressió de PDF.",
+      "category": "Ajuda",
+      "date": "28 maig 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "De vegades, la impressió d'un document PDF genera una sèrie de símbols incomprensibles o quadrats blancs en lloc de les lletres originals. Aquest problema està relacionat amb les tipus de lletra.",
+        "1": "Un problema de tipus de lletra no inclosos",
+        "2": "Si el creador del PDF no ha inclòs (incorporat) les tipus de lletra en el fitxer, la vostra impressora intenta reemplaçar-les. Si no troba cap equivalent, imprimeix jeroglífics.",
+        "3": "La solució universal: Aplanar o imprimir com a imatge",
+        "4": "Per resoldre aquest error, marqueu l'opció 'Imprimir com a imatge' a les opcions del vostre visor, o passeu el fitxer a l'eina 'Aplanar PDF' de iLoveDoc abans de llançar la impressió.",
+        "5": "En convertir els textos vectorials en formes geomètriques fixes (aplanament), garanteu una impressió perfecta en qualsevol model d'impressora."
+      }
+    },
+    "compresser-pdf-sans-perte": {
+      "title": "Compressar un PDF sense pèrdua de qualitat per correu electrònic?",
+      "subtitle": "Redueixi el pes dels vostres fitxers PDF mentre manteneu una netedat màxima.",
+      "description": "Redueixi el pes dels vostres fitxers PDF per enviar-los per correu electrònic sense degradar la legibilitat. Astuces de compressió en línia 100% gratuïtes.",
+      "category": "Optimitzar",
+      "date": "28 maig 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Les caixes de recepció de correu electrònic rebutgen sovint les anexos de més de 10 o 20 Mo. Compressar el vostre PDF és indispensable per assegurar la seva entrega.",
+        "1": "Optimització intel·ligent vs degradació bruta",
+        "2": "El nostre eina de compressió no altera els textos. Cuida específicament les imatges integrades adaptant la seva resolució (DPI) i suprimeix les metadades obsoletes acumulades al llarg de les modificacions.",
+        "3": "Quin nivell de compressió triar?",
+        "4": "Ofereixem tres modes: compressió forta (per un fitxer ultra lleuger), compressió recomanada (equilibri ideal) i compressió lleugera (qualitat màxima).",
+        "5": "Comprimeu els vostres fitxers en local al vostre navegador mentre manteneu un control total sobre la relació pes/qualitat."
+      }
+    },
+    "copier-texte-pdf-scanne": {
+      "title": "Com copiar el text d'un PDF escanejat o d'una imatge?",
+      "subtitle": "Utilitzeu la reconeixement òptic de caràcters (OCR) per copiar text.",
+      "description": "No podeu seleccionar ni copiar el text d'un PDF? Apreneu a transformar un PDF escanejat en text editable gràcies a l'OCR gratuït.",
+      "category": "OCR",
+      "date": "28 maig 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Si no podeu surbrillar ni copiar el text d'un document, és perquè es tracta d'una simple imatge de document numèric (escanejat) o que un verro de protecció impedeix la còpia.",
+        "1": "Activar la reconeixement de caràcters (OCR)",
+        "2": "L'OCR (Reconeixement òptic de caràcters) és una tecnologia que escaneja visualment els píxels del PDF per extreure les paraules i transformar-les en caràcters informàtics indexables.",
+        "3": "La mètode simple a iLoveDoc",
+        "4": "Poseu el vostre escaneig a l'estrument 'OCR PDF' de la nostra plataforma. L'algorisme s'executa localment per generar un nou PDF completament consultable on podeu copiar i enganxar tots els paràgrafs.",
+        "5": "Converteix les vostres escaneigs en documents de treball dinàmics i guanyeu temps preciós al dia a dia."
+      }
+    },
+    "convertir-pdf-word-mise-en-page": {
+      "title": "Convertir un PDF en Word sense modificar la disposició",
+      "subtitle": "Consejos de conversió per evitar els desplaçaments de textos i taules.",
+      "description": "Marre de les taules desplaçades i del text desalineat durant les conversió? Aquí trobareu com convertir un PDF en Word conservant el format original.",
+      "category": "Convertir",
+      "date": "28 maig 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "La conversió d'un PDF a Word pot generar a vegades línies de text superposades o taules trencades. Aquest desplaçament és degut a l'absència de repères de marges fluides en el format PDF.",
+        "1": "Elegir un motor de conversió de gran fidelitat",
+        "2": "El convertidor d'iLoveDoc analitza la topografia visual del document original i recria una estructura de paràgrafs i taules natives sota Word per limitar al màxim les retocades manuals.",
+        "3": "Consejos pràctics després de la conversió",
+        "4": "Si observeu petits desplaçaments, utilitzeu la regla de tabulació en lloc de la tecla espai per alinear els blocs de text, i comproveu que les imatges estan ancrades correctament.",
+        "5": "La conversió local a iLoveDoc us ofereix un document .docx net i immediatament preparat per a la edició."
+      }
+    },
+    "mot-de-passe-pdf-oublie": {
+      "title": "Mot de passe PDF perdut: Com començar a obrir un PDF bloquejat?",
+      "subtitle": "Les solucions i eines legals per desbloquejar els vostres fitxers PDF protegits.",
+      "description": "Heu oblidat el mot de passe del vostre propi document PDF? Descobriu com desbloquejar i suprimir la protecció d'un PDF de manera legal.",
+      "category": "Seguretat",
+      "date": "28 maig 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Criar un PDF és una bona idea per a segellar-lo, però perdre el propi mot de passe d'obertura bloqueja l'accés als vostres propis informes oficials o documents personals.",
+        "1": "Suprimir la restricció d'ús",
+        "2": "Per les restriccions d'edició (mot de passe propietari), la nostra eina 'Desbloquejar PDF' suprimeix instantàniament el bloqueig en local perquè us rendeixi els drets de còpia i impressió.",
+        "3": "Què fer per un mot de passe d'obertura (criptografia AES) ?",
+        "4": "Per obrir un document criptat, la clau de l'usuari roman obligatòria. Una vegada introduïda una primera vegada a la nostra plataforma segura, l'eina l'elimina definitivament per a les vostres futures lectures.",
+        "5": "Lliureu els vostres documents de les restriccions de la introducció repetida gràcies al desbloqueig segur."
+      }
+    },
+    "bug-previsualisation-pdf-windows": {
+      "title": "Resoldre el bug del panell de visualització PDF sota Windows",
+      "subtitle": "Restableix l'exhibició del panell de visualització PDF a l'Explorador de fitxers.",
+      "description": "L'Explorador Windows ja no mostra la visualització dels vostres fitxers PDF o mostra un error? Aquí teniu com reactivar la visualització PDF ràpidament.",
+      "category": "Ajuda",
+      "date": "28 maig 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "El panell de visualització de l'Explorador Windows és molt pràctic per consultar ràpidament el resum d'un document, però arriba regularment que es bloqueja o mostra una pantalla negra.",
+        "1": "Per què el panell de visualització es bloqueja?",
+        "2": "L'instal·lació o la actualització de visores de terceres parts modifica les connexions del sistema (manejadors). Windows es queda llavors amb diversos motors en conflicte per mostrar el rendiment.",
+        "3": "Com corregir el problema de visualització?",
+        "4": "Obriu les opcions de carpetes, comproveu que la casella 'Mostrar els manejadors de visualització' estigui marcat, i redifineu el vostre lector per defecte principal als paràmetres de Windows.",
+        "5": "Un sistema bé configurat fluidifica la vostra navegació diària al mig dels vostres arxius professionals."
+      }
+    },
+    "signer-pdf-sans-imprimante": {
+      "title": "Com signar i omplir un document PDF sense impressora?",
+      "subtitle": "Signeu els vostres documents i contractes electrònicament i de franc.",
+      "description": "Ja no cal imprimir per signar! Descobreix com omplir un formulari i afegir la teva signatura sobre un PDF en línia de franc el 2026.",
+      "category": "Signar",
+      "date": "28 maig 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Imprimir un contracte, signar-ho a mà, i llavors escanejar-ho per tornar-lo és un temps, paper i tinta perduts. Avui dia és molt senzill fer-ho de manera 100% digital.",
+        "1": "La legalitat de la signatura electrònica",
+        "2": "A França i a Europa (reglament eIDAS), les signatures aplicades electrònicament tenen el mateix valor jurídic que les signatures de paper tradicionals per a la majoria dels actes comercials.",
+        "3": "Signar a iLoveDoc en alguns clics",
+        "4": "Importeu el contracte, dibuixeu la vostra signatura a l' pantalla tàctil o carregueu una fotografia d'ella, i arrastreu-la fins a la línia d'acord. El document final es compila de manera segura sense trànsit de servidor.",
+        "5": "Passeu al zero de paper i simplifiqueu la signatura dels vostres ofertes i contractes professionals."
+      }
+    },
+    "fusionner-pdf-sur-smartphone": {
+      "title": "Combinar i reorganitzar PDFs en un smartphone",
+      "subtitle": "Combina i gestiona els teus documents PDF directament des de la teva xarxa mòbil.",
+      "description": "Necessites assemblar PDFs des de la teva telèfon? Descobreix com combinar, classificar i unir fitxers PDF en iPhone i Android de franc.",
+      "category": "Mòbil",
+      "date": "28 maig 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "L'assemblatge de documents justificatius o de relats ha de fer-se sovint d'urgència en situació de mobilitat. Per sort, el teu smartphone és suficient.",
+        "1": "La unió mòbil sense aplicació externa",
+        "2": "No cal saturar l'espai de dipòsit del teu telèfon amb aplicacions de pagament. Accedeix al lloc web iLoveDoc des de la teva navegadora mòbil (Safari en iPhone, Chrome en Android).",
+        "3": "Arrastre i deixar anar a l'escaneig de pantalla",
+        "4": "La nostra interfície de pantalla tàctil reactiva et permet reorganitzar les pàgines fent-les arrastrar amb el dit, i compilar els PDF de manera instantània i segura al 100%.",
+        "5": "Gestiona tots els teus fluxos de documents ràpidament, enlloc, directament des de la teva mà."
+      }
+    }
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - Eines gratuïts en línia de PDF",
+    "home_desc": "Fusiona, divideix, comprimeix i converteix els teus arxius PDF de forma gratuïta. Tractament segur directament al teu navegador sense cap registre.",
+    "about_title": "Sobre iLoveDoc – Eines Gratuïtes en Línia de PDF",
+    "about_desc": "Descobreix iLoveDoc: eines PDF gratuïtes, segures i ràpides. Tractament 100% al costat del client, sense enviament d'arxius a un servidor. Fusiona, comprimeix, converteix els teus PDF amb tota confidencialitat.",
+    "privacy_title": "Política de Privacitat – iLoveDoc",
+    "privacy_desc": "Política de privacitat de iLoveDoc. Descobreix com protegim les teves dades personals, el nostre ús de les galetes i els teus drets RGPD.",
+    "terms_title": "Condicions Generals d'Ús – iLoveDoc",
+    "terms_desc": "Condicions generals d'ús del lloc iLoveDoc. Consulta les regles d'accés i d'ús de les nostres eines PDF gratuïtes en línia."
   }
 }

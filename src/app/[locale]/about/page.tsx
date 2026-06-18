@@ -1,38 +1,32 @@
-import type { Metadata } from 'next';
 import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './about.module.css';
 import { Gift, Lock, Zap, UserX, FileText, Globe, CheckCircle } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'À Propos de iLoveDoc – Outils PDF Gratuits en Ligne',
-  description:
-    'Découvrez iLoveDoc : des outils PDF gratuits, sécurisés et rapides. Traitement 100% côté client, sans envoi de fichiers sur un serveur. Fusionnez, compressez, convertissez vos PDF en toute confidentialité.',
-  keywords: [
-    'iLoveDoc',
-    'outils PDF gratuits',
-    'fusionner PDF',
-    'compresser PDF',
-    'convertir PDF',
-    'traitement PDF en ligne',
-    'PDF sécurisé',
-  ],
-  openGraph: {
-    title: 'À Propos de iLoveDoc – Outils PDF Gratuits en Ligne',
-    description:
-      'Des outils PDF puissants, gratuits et 100% sécurisés. Aucun fichier envoyé sur un serveur.',
-    url: 'https://ilovedoc.com/about',
-    siteName: 'iLoveDoc',
-    type: 'website',
-    locale: 'fr_FR',
-  },
-  alternates: {
-    canonical: 'https://ilovedoc.com/about',
-  },
-};
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
+  const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  return {
+    title: t('about_title'),
+    description: t('about_desc'),
+    openGraph: {
+      title: t('about_title'),
+      description: t('about_desc'),
+      url: `https://ilovedoc.com/${locale}/about`,
+      siteName: 'iLoveDoc',
+      type: 'website',
+      locale: locale,
+    },
+    alternates: {
+      canonical: `https://ilovedoc.com/${locale}/about`,
+    },
+  };
+}
 
 export default function AboutPage() {
   const tFooter = useTranslations('Footer');

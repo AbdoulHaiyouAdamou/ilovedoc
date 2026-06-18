@@ -7,11 +7,17 @@ import AdUnit from '@/components/common/AdUnit';
 import JsonLd from '@/components/common/JsonLd';
 import Hero from '@/components/home/Hero';
 import { tools } from '@/config/tools';
+import { getTranslations } from 'next-intl/server';
 
-export const metadata = {
-  title: 'iLoveDoc - Outils PDF en ligne gratuits',
-  description: 'Fusionnez, divisez, compressez et convertissez vos fichiers PDF gratuitement. Traitement sécurisé directement dans votre navigateur sans aucune inscription.',
-};
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
+  const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  return {
+    title: t('home_title'),
+    description: t('home_desc'),
+  };
+}
 
 import { useTranslations } from 'next-intl';
 

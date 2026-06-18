@@ -1,230 +1,230 @@
 {
   "Hero": {
-    "title": "PDF",
-    "subtitle": "PDF100% ",
-    "badge_tools": "46 ",
-    "badge_privacy": " ",
-    "badge_local": " "
+    "title": "すべてのPDFツールは1つの場所にあります",
+    "subtitle": "必要なすべてのPDFツールは、手の届くところにあります。すべて100%無料、安全、簡単に使用できます。",
+    "badge_tools": "46ツール",
+    "badge_privacy": "プライバシーを保証する",
+    "badge_local": "ローカル処理"
   },
   "Common": {
-    "select_file": "PDF",
-    "or_drop": "PDF"
+    "select_file": "PDFを選択",
+    "or_drop": "またはここにPDFをドロップ"
   },
   "Header": {
-    "merge": "PDF",
-    "split": "PDF",
-    "compress": "PDF",
-    "convert": "PDF",
-    "all_tools": " "
+    "merge": "PDFをマージ",
+    "split": "PDFを分割",
+    "compress": "PDFを圧縮",
+    "convert": "PDFを変換",
+    "all_tools": "すべてのツール"
   },
   "Footer": {
-    "popular": " ",
-    "convert": "PDF",
-    "about": " ",
-    "legal": " ",
-    "about_us": " ",
-    "contact": " ",
-    "blog": " ",
+    "popular": "人気ツール",
+    "convert": "PDFを変換",
+    "about": "会社概要",
+    "legal": "法的",
+    "about_us": "会社について",
+    "contact": "お問い合わせ",
+    "blog": "ブログ",
     "faq": "FAQ",
-    "terms": " ",
-    "privacy": " ",
-    "cookies": " ",
-    "rights": " "
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "cookies": "クッキーポリシー",
+    "rights": "全権利保留"
   },
   "Tools": {
     "merge-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFをマージ",
+      "description": "複数のPDFファイルを1つのドキュメントに結合します。"
     },
     "split-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを分割",
+      "description": "PDFを複数のファイルまたはページに分割します。"
     },
     "remove-pages": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "ページを削除",
+      "description": "不必要なページを削除します。"
     },
     "extract-pages": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "ページを抽出",
+      "description": "特定のページを抽出して新しいPDFを作成します。"
     },
     "organize-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを整理",
+      "description": "PDFのページを整理して並べ替えます。"
     },
     "compress-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを圧縮",
+      "description": "PDFのサイズを小さくすることができます。"
     },
     "repair-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを修復",
+      "description": "損傷したまたは破損したPDFを修復します。"
     },
     "flatten-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを平坦化",
+      "description": "PDFのフォームと注釈を平坦化します。"
     },
     "pdf-to-word": {
-      "name": "PDFWord",
-      "description": "PDFWord"
+      "name": "PDFをWordに変換",
+      "description": "PDFを編集可能なWordドキュメントに変換します。"
     },
     "pdf-to-excel": {
-      "name": "PDFExcel",
-      "description": "PDFExcel"
+      "name": "PDFをExcelに変換",
+      "description": "PDFの表をExcelシートに変換します。"
     },
     "pdf-to-ppt": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFをPowerPointに変換",
+      "description": "PDFをPowerPointプレゼンテーションに変換します。"
     },
     "pdf-to-jpg": {
-      "name": "PDFJPG",
-      "description": "PDFJPG"
+      "name": "PDFをJPGに変換",
+      "description": "PDFの各ページをJPG画像に変換します。"
     },
     "pdf-to-png": {
-      "name": "PDFPNG",
-      "description": "PDFPNG"
+      "name": "PDFをPNGに変換",
+      "description": "PDFのページを高品質のPNG画像に変換します。"
     },
     "pdf-to-html": {
-      "name": "PDFHTML",
-      "description": "PDFHTML"
+      "name": "PDFをHTMLに変換",
+      "description": "PDFをWebページのHTMLに変換します。"
     },
     "pdf-to-pdfa": {
-      "name": "PDFPDF/A",
-      "description": "PDFPDF/A"
+      "name": "PDFをPDF/Aに変換",
+      "description": "PDFを長期保存用のPDF/Aに変換します。"
     },
     "word-to-pdf": {
-      "name": "WordPDF",
-      "description": "WordPDF"
+      "name": "WordをPDFに変換",
+      "description": "WordドキュメントをPDFに変換します。"
     },
     "excel-to-pdf": {
-      "name": "ExcelPDF",
-      "description": "ExcelPDF"
+      "name": "ExcelをPDFに変換",
+      "description": "ExcelシートをPDFに変換します。"
     },
     "ppt-to-pdf": {
-      "name": "PowerPointPDF",
-      "description": "PowerPointPDF"
+      "name": "PowerPointをPDFに変換",
+      "description": "PowerPointプレゼンテーションをPDFに変換します。"
     },
     "jpg-to-pdf": {
-      "name": "JPGPDF",
-      "description": "JPGPDF"
+      "name": "JPGをPDFに変換",
+      "description": "JPG画像をPDFに結合します。"
     },
     "png-to-pdf": {
-      "name": "PNGPDF",
-      "description": "PNGPDF"
+      "name": "PNGをPDFに変換",
+      "description": "PNG画像をPDFに結合します。"
     },
     "html-to-pdf": {
-      "name": "HTMLPDF",
-      "description": "HTMLPDF"
+      "name": "HTMLをPDFに変換",
+      "description": "WebページのHTMLをPDFに変換します。"
     },
     "edit-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを編集",
+      "description": "PDFにテキスト、画像、フォームを追加します。"
     },
     "rotate-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを回転",
+      "description": "PDFのページを回転します。"
     },
     "add-page-numbers": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "ページ番号を追加",
+      "description": "PDFにページ番号を追加します。"
     },
     "add-watermark": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "水印を追加",
+      "description": "PDFにテキストまたは画像の水印を追加します。"
     },
     "sign-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFに署名",
+      "description": "PDFに電子署名を追加します。"
     },
     "fill-pdf-form": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "フォームを埋め替え",
+      "description": "PDFのフォームをオンラインで埋め替えます。"
     },
     "redact-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを暗号化",
+      "description": "PDFの情報を暗号化します。"
     },
     "crop-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを切り取る",
+      "description": "PDFのページを切り取ります。"
     },
     "protect-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを保護",
+      "description": "PDFにパスワードを設定します。"
     },
     "unlock-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFをアンロック",
+      "description": "PDFのパスワードを解除します。"
     },
     "pdf-ocr": {
-      "name": "PDFOCR",
-      "description": "PDF"
+      "name": "PDFのOCR",
+      "description": "スキャンしたPDFを読み取ることができます。"
     },
     "compare-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを比較",
+      "description": "2つのPDFを比較して差異を検出します。"
     },
     "ai-pdf-summary": {
-      "name": "AI",
-      "description": "AI"
+      "name": "PDFの要約",
+      "description": "PDFの要約を生成します。"
     },
     "ai-pdf-chat": {
-      "name": "AIPDF",
-      "description": "AIPDF"
+      "name": "PDFと対話",
+      "description": "PDFに質問を投げて答えを得ます。"
     },
     "ai-pdf-translate": {
-      "name": "PDF",
-      "description": "AI"
+      "name": "PDFを翻訳",
+      "description": "PDFを別の言語に翻訳します。"
     },
     "edit-metadata": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "メタデータを編集",
+      "description": "PDFのタイトル、著者、メタデータを編集します。"
     },
     "pdf-info": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFの情報",
+      "description": "PDFの技術情報を表示します。"
     },
     "add-stamp": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "スタンプを追加",
+      "description": "PDFにテキストまたは画像のスタンプを追加します。"
     },
     "add-attachments": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFに添付ファイル",
+      "description": "PDFにファイルを添付します。"
     },
     "extract-images": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "画像を抽出",
+      "description": "PDFから画像を抽出します。"
     },
     "remove-images": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "画像を削除",
+      "description": "PDFから画像を削除します。"
     },
     "multi-page-layout": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "複数ページレイアウト",
+      "description": "2、4、6、または9ページのPDFを1枚の紙に配置します。"
     },
     "overlay-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを重ねる",
+      "description": "PDFを重ねて背景、ヘッダー、署名を作成します。"
     },
     "sanitize-pdf": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "PDFを清浄化",
+      "description": "PDFからJavaScript、リンク、敏感なメタデータを削除します。"
     },
     "remove-blanks": {
-      "name": "PDF",
-      "description": "PDF"
+      "name": "白紙を削除",
+      "description": "PDFから自動的に白紙を検出して削除します。"
     }
   },
   "Home": {
-    "why_choose": "iLoveDoc",
-    "security_title": " ",
-    "security_desc": "PDF",
-    "speed_title": " ",
-    "speed_desc": "PDF",
-    "no_signup_title": " ",
-    "no_signup_desc": "PDF"
+    "why_choose": "iLoveDocを選択する理由",
+    "security_title": "最大のセキュリティ",
+    "security_desc": "ファイルはあなたのデバイスを離れません。処理はあなたのブラウザ内でローカルに実行されます。",
+    "speed_title": "超高速",
+    "speed_desc": "サーバーへのアップロードなしで、処理は即時でインターネット接続に依存しません。",
+    "no_signup_title": "サインアップ不要",
+    "no_signup_desc": "すぐに始められます。アカウントを作成したり、メールアドレスを提供したりする必要はありません。"
   },
   "Cookies": {
     "message": "We use cookies to enhance your experience and show relevant ads. By clicking \"Accept\", you consent to the use of cookies in accordance with our",
@@ -617,5 +617,99 @@
         "5": "ドキュメントのフローを迅速に管理することができます。どこからでも、手のひらの中から直接操作できます。"
       }
     }
+  },
+  "Privacy": {
+    "intro_title": "1. トミスター",
+    "intro_p1": "Bienvenue sur <strong>iLoveDoc</strong> (ci-après “ le Site ”), accessible à l'adresse <a href=\"https://ilovedoc.com\">https://ilovedoc.com</a>. La protection de vos données personnelles est une priorité pour nous. La présente politique de confidentialité décrit quelles informations nous collectons, comment nous les utilisons et quels sont vos droits.",
+    "intro_p2": "En utilisant le Site, vous acceptez les pratiques décrites dans cette politique. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser le Site.",
+    "data_title": "2. トミターター",
+    "data_nav_title": "2.1 トミターター",
+    "data_nav_desc": "Lorsque vous visitez le Site, nous pouvons collecter automatiquement certaines informations techniques via des cookies et technologies similaires :",
+    "data_nav_list": "<ul><li>アストエクター (anonymisée)</li><li>コントエタータートル</li><li>コントエターター</li><li>バーターターターター</li><li>バーターターターター</li><li>バーターターターター</li></ul>",
+    "data_form_title": "2.2 トミターター",
+    "data_form_desc": "フォームを使用すると、次の情報を自ら入力して送信することになります: 氏名、メールアドレス、件名、メッセージ本文。これらの情報は、ご要望に対応するためにのみ使用されます。",
+    "data_pdf_title": "2.3 PDFファイル",
+    "data_pdf_desc": "<strong>iLoveDocは、PDFファイルの収集、保存、転送を行いません。</strong> ドキュメントの処理 (マージ、圧縮、変換など) は、すべてクライアントサイドのブラウザ内で、<code>pdf-lib</code>ライブラリを使用して行われます。ファイルは、サーバーに送信されることも、サードパーティのサーバーに送信されることもありません。",
+    "cookies_title": "3. Cookieの使用",
+    "cookies_desc": "サイトは、次の種類のCookieを使用します:",
+    "cookies_ess_title": "3.1 必要なCookie",
+    "cookies_ess_desc": "これらのCookieは、サイトの正常な動作に必要です (例: 表示設定、ダークモード)。これらのCookieは、個人情報を収集しません。",
+    "cookies_ana_title": "3.2 分析Cookie",
+    "cookies_ana_desc": "私たちは、<strong>Google Analytics</strong>を使用して、サイトへの訪問者の行動を理解しています。Google Analyticsは、匿名化された情報（訪問されたページ、セッションの長さなど）を収集するために、Cookieを使用しています。これらのデータは、ユーザー体験を改善するために役立ちます。",
+    "cookies_ana_link": "Googleがデータをどのように使用するかについては、以下のリンクを参照してください：<a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">https://policies.google.com/technologies/partner-sites</a>",
+    "cookies_ads_title": "3.3 Cookie (Google AdSense)",
+    "cookies_ads_p1": "サイトでは、<strong>Google AdSense</strong>を使用して、広告を表示しています。Google AdSenseとそのパートナーの第三者は、Cookieを使用して、ユーザーが以前サイトや他のサイトで訪問した内容に基づいて、広告を配信することができます。",
+    "cookies_ads_p2": "<strong>Googleは、第三者としてCookieを使用して、サイトに広告を配信しています。</strong> GoogleがDART Cookieを使用することで、ユーザーに、サイトと他のインターネットサイトで訪問した内容に基づいて、広告を配信することができます。",
+    "cookies_ads_p3": "第三者、Googleを含む、Cookieを使用して、ユーザーが以前サイトまたは他のサイトで訪問した内容に基づいて、広告を配信することができます。",
+    "cookies_ads_p4": "Googleが使用するCookieを使用して、Googleとそのパートナーは、ユーザーがサイトと/または他のインターネットサイトで訪問した内容に基づいて、広告を配信することができます。",
+    "cookies_opt_title": "3.4 Cookieの無効化",
+    "cookies_opt_desc": "Cookieの設定を管理する方法は複数あります:",
+    "cookies_opt_list": "<ul><li><strong>ブラウザの設定 :</strong> 最も多くのブラウザは、プライバシー設定からCookieを拒否または削除する機能を提供しています。</li><li><strong>Google Adsのオプアウト :</strong> <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Googleアドセンスの設定</a>を訪問して、カスタマイズされた広告を無効にできます。</li><li><strong>一般的なオプアウト :</strong> <a href=\"https://www.aboutads.info/choices/\" target=\"_blank\" rel=\"noopener noreferrer\">www.aboutads.info/choices/</a>または<a href=\"https://www.youronlinechoices.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">www.youronlinechoices.eu/</a>を訪問して、第三者の広告Cookieを無効にできます。</li><li><strong>NAIオプアウト :</strong> <a href=\"https://optout.networkadvertising.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Network Advertising Initiative</a>のサイトを訪問して、参加するネットワーク広告Cookieを無効にできます。</li></ul>",
+    "cookies_opt_note": "Cookieを無効にすると、サイトの機能が影響を受ける可能性があることをご了承ください。",
+    "adsense_title": "4. Google AdSenseと第三者提供者",
+    "adsense_desc": "iLoveDocは、<strong>Google AdSense</strong>プログラムを使用して広告を表示しています。この場合:",
+    "adsense_list": "<ul><li>第三者、Googleを含む、Cookieを使用して、ユーザーがサイトまたは他のサイトを訪問した履歴に基づいて広告を表示します。</li><li>Googleは、ユーザーがサイトと/または他のサイトを訪問した履歴に基づいて広告を表示するために、DoubleClick (DART) Cookieを使用します。</li><li>ユーザーは、<a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Google広告の設定</a>にアクセスして、DART Cookieを無効にできます。</li></ul>",
+    "adsense_note": "Googleが広告製品でどのようにデータを管理するかについての詳細は、<a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Googleのプライバシーポリシー</a>を参照してください。",
+    "rgpd_title": "5. ご利用者の権利 (RGPD)",
+    "rgpd_desc": "RGPDと情報の自由に関する法律に基づいて、次の権利を有することができます :",
+    "rgpd_list": "<ul><li><strong>アクセス権 :</strong> ご自身に関連するデータが処理されているかどうか、処理されている場合にはデータへのアクセス権を取得できます。</li><li><strong>修正権 :</strong> 不正または不完全なデータを修正できます。</li><li><strong>削除権 :</strong> 法的規制に基づいてデータの削除を求めることができます。</li><li><strong>処理制限権 :</strong> 以下の状況では、データの処理を制限することができます : </li><li><strong>データの移転権 :</strong> ご自身のデータをマシンが読み取れる形式で、構造化されたファイルで取得できます。</li><li><strong>反対権 :</strong> 有効な理由でご自身のデータの処理に反対することができます。</li></ul>",
+    "rgpd_contact": "これらの権利を行使するには、以下のアドレスにご連絡ください : <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>。ご連絡を受け取った後、30日以内にご返信させていただきます。",
+    "rgpd_cnil": "また、<a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">Commission Nationale de l'Informatique et des Libertés (CNIL)</a> に苦情を申し立てる権利があります。",
+    "retention_title": "6. データの保存",
+    "retention_desc": "収集されたデータは、収集された目的のために必要な期間限り保存されます :",
+    "retention_list": "<ul><li><strong>ナビゲーションデータ (分析) :</strong> CNIL の推奨事項に従って最大 26 か月保存されます。</li><li><strong>連絡先データ :</strong> 最終連絡から 3 年間保存されます。</li><li><strong>クッキー :</strong> 有効期間は 13 か月以内です。</li><li><strong>PDF ファイル :</strong> 保存されません — ファイルはブラウザから離れません。</li></ul>",
+    "modifications_title": "7. このポリシーの変更",
+    "modifications_p1": "私たちは、このプライバシーポリシーの変更権をいつでも留保します。すべての変更は、このページに更新された更新日とともに公開されます。このページを定期的にご確認いただくことで、私たちのデータ保護の慣行について最新情報を入手することができます。",
+    "modifications_p2": "重大な変更の場合、サイトに通知を表示してお知らせします。",
+    "contact_title": "8. お問い合わせ",
+    "contact_desc": "このプライバシーポリシーに関する質問や、お問い合わせ、または権利の行使については、以下の連絡先までお問い合わせください。",
+    "contact_email": "<strong>メールで:</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Terms": {
+    "intro_title": "1. 目的",
+    "intro_p1": "以下の利用規約 (以下「利用規約」といいます。) は、<strong>iLoveDoc</strong> サイト (以下「サイト」といいます。) にアクセスし、利用することに関して定めるものです。サイトは、https://ilovedoc.com (以下「サイトのURL」といいます。) でご利用いただけます。",
+    "intro_p2": "サイトの利用に際しては、これらの利用規約に同意することを条件として、ご利用いただく必要があります。同意しない場合は、サイトの利用を即時停止する必要があります。",
+    "access_title": "2. サービスへのアクセス",
+    "access_p1": "サイトは、インターネット接続と最新のウェブブラウザが必要です。サイトのツールを利用するには、登録やアカウントの作成は必要ありません。",
+    "access_p2": "サイトの運営者は、任意の理由で、サイトまたはサイトのサービスへのアクセスを一時的に停止したり、変更したり、または中断したりする権利を留保します。この場合、損害賠償の請求は認められません。",
+    "access_p3": "ユーザーは、自身のコンピューターエquipmentとインターネット接続の互換性を確認する責任があります。",
+    "ip_title": "3. 知的財産権",
+    "ip_p1": "サイトのすべての要素 (テキスト、グラフィック、画像、ロゴ、アイコン、音、ソフトウェア、レイアウト、データベース、ソースコード、etc.) は、知的財産権に関する法律の規定と国際知的財産権に関する条約によって保護されています。",
+    "ip_p2": "これらの要素の全または部分の複製、表現、変更、公開、適合、どのような手段や方法を用いても、許可なくは行ってはなりません。",
+    "ip_p3": "ユーザーがサイトのツールを使用して処理したPDFドキュメントは、その著作者または権利者が所有するものであり、iLoveDocはこれらのドキュメントに対して権利を取得しません。",
+    "resp_title": "4. 責任",
+    "resp_lim_title": "4.1 責任制限",
+    "resp_lim_p1": "サイトとそのツールは、明示的または黙示的保証なしで提供されており、エディターは、サービスがエラー、欠陥、またはウイルスから自由であることを保証できません。また、取得された結果が正確または信頼性のあるものであることを保証できません。",
+    "resp_lim_p2": "利用または利用できないことによる直接または間接的な損害については、エディターは責任を負わないものとします。これには、データ、利益、ビジネス機会の喪失などが含まれます。",
+    "resp_client_title": "4.2 クライアントサイド処理",
+    "resp_client_p1": "ユーザーのブラウザ内でPDF処理はすべてローカルで行われます。サイトのエディターは、ブラウザ、OS、または第三者のソフトウェアの障害によりファイルの喪失については責任を負わない。",
+    "resp_client_p2": "ユーザーは、すべての処理前にドキュメントのバックアップコピーを保存することを推奨される。",
+    "resp_links_title": "4.3 ハイパーリンク",
+    "resp_links_p1": "サイト内には、第三者のサイトへのリンクが含まれる場合があります。エディターは、これらのサイトのコンテンツやデータ収集方法については責任を負わない。",
+    "privacy_title": "5. 個人情報",
+    "privacy_p1": "サイトを利用する上での個人情報の処理は、<a href=\"https://example.com/privacy-policy\">プライバシーポリシー</a>に従うものであり、これは本規約の重要な部分です。",
+    "privacy_p2": "サイトを利用することにより、ユーザーは本ポリシーを読了し、その内容に同意することになります。",
+    "acceptable_title": "6. 可用性の条件",
+    "acceptable_p1": "ユーザーは、以下の目的でサイトを使用しないよう同意する:",
+    "acceptable_list": "<ul><li>法令に違反する行為や社会通念に反する行為を行うこと。</li><li>第三者の知的財産権を侵害すること。</li><li>サイトの安全性や機能を損なうことを目的とした攻撃（DDoS攻撃、コードの挿入など）を行うこと。</li><li>非公式なアクセスを許可されていないサイトのコンテンツにアクセスするためにロボット、スクラッパー、またはその他の自動ツールを使用すること。</li><li>差別的、差別的、または暴力的な内容を広めること。</li></ul>",
+    "mod_title": "7. CGUの変更",
+    "mod_p1": "編集者は、いつでもCGUを変更する権利を留保します。変更はサイト上で公開された時点から有効になります。最終更新日はこのページの上部に表示されています。",
+    "mod_p2": "サイトを使用し続けることは、新しいCGUの受け入れを意味します。ユーザーは、定期的にこのページを確認することをお勧めします。",
+    "law_title": "8. 適用する法令と管轄",
+    "law_p1": "CGUはフランス法によって規定されます。CGUの解釈または実施に関して紛争が生じた場合、当事者は紛争を解決するために法的措置をとる前に友好的に解決することを取り決めます。",
+    "law_p2": "友好的に解決できない場合、パリ（フランス）の専門の裁判所が紛争を処理する権限を有することになります。",
+    "contact_title": "9. Contact",
+    "contact_p1": "すべての質問については、以下の連絡先までお問い合わせください。",
+    "contact_email": "<strong>メール :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - 無料のオンラインPDFツール",
+    "home_desc": "PDFの結合、分割、圧縮、変換を無料でご利用いただけます。ブラウザ内で安全に処理を行い、登録は一切不要です。",
+    "about_title": "iLoveDocについて – 無料のオンラインPDFツール",
+    "about_desc": "iLoveDocをご紹介します：無料、セキュリティ重視、迅速なPDFツール。クライアント側で100%処理を行い、ファイルをサーバーに送信することはありません。PDFの結合、圧縮、変換を完全に機密性の高い環境で行うことができます。",
+    "privacy_title": "プライバシーポリシー – iLoveDoc",
+    "privacy_desc": "iLoveDocのプライバシーポリシー。個人データの保護方法、Cookieの使用方法、RGPDに基づく権利についてご覧ください。",
+    "terms_title": "利用規約 – iLoveDoc",
+    "terms_desc": "iLoveDocサイトの利用規約。無料のオンラインPDFツールのアクセスおよび利用ルールをご確認ください。"
   }
 }

@@ -33,184 +33,188 @@
   },
   "Tools": {
     "merge-pdf": {
-      "name": "Mengombinasikan PDF",
-      "description": "Gabungkan beberapa file PDF menjadi satu dokumen."
+      "name": "Gabungkan PDF",
+      "description": "Gabungkan beberapa fail PDF menjadi satu dokumen."
     },
     "split-pdf": {
-      "name": "Memisahkan PDF",
-      "description": "Sisihkan PDF menjadi beberapa file atau ambil halaman tertentu."
+      "name": "Bahagikan PDF",
+      "description": "Pisahkan PDF kepada beberapa fail atau keluarkan halaman."
     },
     "remove-pages": {
-      "name": "Menghapus Halaman",
-      "description": "Hapus halaman yang tidak diinginkan dari PDF Anda."
+      "name": "Buang halaman",
+      "description": "Buang halaman yang tidak diingini dari PDF anda."
     },
     "extract-pages": {
-      "name": "Mengambil Halaman",
-      "description": "Ambil halaman tertentu untuk membuat PDF baru."
+      "name": "Keluarkan halaman",
+      "description": "Keluarkan halaman tertentu untuk membuat PDF baru."
     },
     "organize-pdf": {
-      "name": "Mengatur PDF",
-      "description": "Urutkan dan atur halaman PDF Anda."
+      "name": "Atur PDF",
+      "description": "Isih dan atur semula halaman PDF anda."
     },
     "compress-pdf": {
-      "name": "Memperkecil PDF",
-      "description": "Kurangi ukuran file PDF tanpa kehilangan kualitas."
+      "name": "Mampatkan PDF",
+      "description": "Kurangkan saiz fail PDF anda tanpa kehilangan kualiti."
     },
     "repair-pdf": {
-      "name": "Mereparasi PDF",
-      "description": "Perbaiki file PDF yang rusak atau rusak."
+      "name": "Baiki PDF",
+      "description": "Baiki fail PDF yang rosak atau terganggu."
     },
     "flatten-pdf": {
-      "name": "Mengaplikasikan PDF",
-      "description": "Aplikasikan formulir dan catatan pada PDF Anda."
+      "name": "Ratakan PDF",
+      "description": "Ratakan borang dan anotasi PDF anda."
     },
     "pdf-to-word": {
-      "name": "Mengubah PDF ke Word",
-      "description": "Ubah PDF ke dokumen Word yang dapat diedit."
+      "name": "PDF ke Word",
+      "description": "Tukar PDF anda kepada dokumen Word yang boleh diedit."
     },
     "pdf-to-excel": {
-      "name": "Mengubah PDF ke Excel",
-      "description": "Ubah tabel PDF ke lembar kerja Excel."
+      "name": "PDF ke Excel",
+      "description": "Tukar jadual PDF anda kepada lembaran kira Excel."
     },
     "pdf-to-ppt": {
-      "name": "Mengubah PDF ke PowerPoint",
-      "description": "Ubah PDF ke presentasi PowerPoint."
+      "name": "PDF ke PowerPoint",
+      "description": "Tukar PDF anda kepada slaid PowerPoint."
     },
     "pdf-to-jpg": {
-      "name": "Mengubah PDF ke JPG",
-      "description": "Ubah setiap halaman PDF ke gambar JPG."
+      "name": "PDF ke JPG",
+      "description": "Tukar setiap halaman PDF anda kepada imej JPG."
     },
     "pdf-to-png": {
-      "name": "Mengubah PDF ke PNG",
-      "description": "Eksport halaman PDF ke gambar PNG dengan kualitas tinggi."
+      "name": "PDF ke PNG",
+      "description": "Eksport halaman PDF anda kepada imej PNG berkualiti tinggi."
     },
     "pdf-to-html": {
-      "name": "Mengubah PDF ke HTML",
-      "description": "Ubah PDF ke halaman web HTML."
+      "name": "PDF ke HTML",
+      "description": "Tukar PDF anda kepada halaman web HTML."
     },
     "pdf-to-pdfa": {
-      "name": "Mengubah PDF ke PDF/A",
-      "description": "Ubah PDF ke format PDF/A untuk arsip jangka panjang."
+      "name": "PDF ke PDF/A",
+      "description": "Tukar PDF anda kepada format PDF/A untuk arkib jangka panjang."
     },
     "word-to-pdf": {
-      "name": "Mengubah Word ke PDF",
-      "description": "Ubah dokumen Word ke PDF."
+      "name": "Word ke PDF",
+      "description": "Tukar dokumen Word anda kepada PDF."
     },
     "excel-to-pdf": {
-      "name": "Mengubah Excel ke PDF",
-      "description": "Ubah lembar kerja Excel ke PDF."
+      "name": "Excel ke PDF",
+      "description": "Transformasi lembaran Excel anda ke PDF."
     },
     "ppt-to-pdf": {
-      "name": "Mengubah PowerPoint ke PDF",
-      "description": "Ubah presentasi PowerPoint ke PDF."
+      "name": "PowerPoint ke PDF",
+      "description": "Bukukan presentasi PowerPoint anda ke PDF."
     },
     "jpg-to-pdf": {
-      "name": "Mengubah JPG ke PDF",
-      "description": "Gabungkan gambar JPG ke dokumen PDF."
+      "name": "JPG ke PDF",
+      "description": "Gabungkan imej JPG anda ke dalam dokumen PDF."
     },
     "png-to-pdf": {
-      "name": "Mengubah PNG ke PDF",
-      "description": "Ubah gambar PNG ke file PDF."
+      "name": "PNG ke PDF",
+      "description": "Bukukan imej PNG anda ke dalam fail PDF."
     },
     "html-to-pdf": {
-      "name": "Mengubah HTML ke PDF",
-      "description": "Ubah halaman web HTML ke dokumen PDF."
+      "name": "HTML ke PDF",
+      "description": "Bukukan laman web HTML anda ke dalam dokumen PDF."
     },
     "edit-pdf": {
-      "name": "Mengedit PDF",
-      "description": "Tambahkan teks, gambar, dan bentuk ke PDF Anda."
+      "name": "Sunting PDF",
+      "description": "Tambahkan teks, imej dan bentuk ke dalam PDF anda."
     },
     "rotate-pdf": {
-      "name": "Menggulung PDF",
-      "description": "Gulung halaman PDF Anda."
+      "name": "Pusingkan PDF",
+      "description": "Pusingkan halaman dalam PDF anda."
     },
     "add-page-numbers": {
-      "name": "Menambahkan Nomor Halaman",
-      "description": "Tambahkan nomor halaman ke dokumen PDF Anda."
+      "name": "Tetapkan Nombor Halaman",
+      "description": "Tambahkan nombor halaman ke dalam dokumen PDF anda."
     },
     "add-watermark": {
-      "name": "Menambahkan Filigran",
-      "description": "Tambahkan filigran teks atau gambar ke PDF Anda."
+      "name": "Tambah Tanda Air",
+      "description": "Tambahkan tanda air teks atau gambar pada PDF anda."
     },
     "sign-pdf": {
-      "name": "Menandatangani PDF",
-      "description": "Tandatangani dokumen PDF secara elektronik."
+      "name": "Tandatangan PDF",
+      "description": "Tandatangani dokumen PDF anda secara elektronik."
     },
     "fill-pdf-form": {
-      "name": "Mengisi Formulir PDF",
-      "description": "Isi formulir PDF secara online."
+      "name": "Isi Borang",
+      "description": "Isi borang PDF secara dalam talian."
     },
     "redact-pdf": {
-      "name": "Mengcaviar PDF",
-      "description": "Tutup informasi sensitif dalam PDF Anda."
+      "name": "Redact PDF",
+      "description": "Sembunyikan maklumat sensitif dalam PDF anda."
     },
     "crop-pdf": {
-      "name": "Menggunting PDF",
-      "description": "Recadruk margin dan gunting halaman PDF Anda."
+      "name": "Pangkas PDF",
+      "description": "Pangkas margin dan potong halaman PDF anda."
     },
     "protect-pdf": {
-      "name": "Mengunci PDF",
-      "description": "Tambahkan kata sandi untuk mengunci PDF Anda."
+      "name": "Lindungi PDF",
+      "description": "Tambahkan kata laluan untuk melindungi PDF anda."
     },
     "unlock-pdf": {
-      "name": "Membuka PDF",
-      "description": "Hapus kata sandi dari dokumen PDF yang terkunci."
+      "name": "Buka Kunci PDF",
+      "description": "Hapus kata laluan dari dokumen PDF yang dilindungi."
     },
     "pdf-ocr": {
       "name": "OCR PDF",
-      "description": "Buat PDF scan dapat dibaca."
+      "description": "Buat PDF yang diimbas boleh dicari."
     },
     "compare-pdf": {
-      "name": "Mengumpulkan PDF",
-      "description": "Bandingkan dua file PDF dan identifikasi perbedaan."
+      "name": "Bandingkan PDF",
+      "description": "Bandingkan dua fail PDF dan kenal pasti perbezaan."
     },
     "ai-pdf-summary": {
       "name": "Ringkasan AI",
-      "description": "Dapatkan ringkasan cerdas dari dokumen PDF Anda."
+      "description": "Dapatkan ringkasan pintar dokumen PDF anda."
     },
     "ai-pdf-chat": {
-      "name": "Chat dengan PDF",
-      "description": "Tanyakan pertanyaan ke PDF Anda menggunakan kecerdasan buatan."
+      "name": "Sembang dengan PDF",
+      "description": "Tanyakan soalan kepada PDF anda menggunakan kecerdasan buatan."
     },
     "ai-pdf-translate": {
-      "name": "Mengubah PDF",
-      "description": "Ubah dokumen PDF ke bahasa lain menggunakan AI."
+      "name": "Terjemah PDF",
+      "description": "Terjemahkan dokumen PDF anda ke bahasa lain dengan AI."
     },
     "edit-metadata": {
-      "name": "Mengedit Metadata",
-      "description": "Ubah judul, penulis, dan metadata lainnya dari PDF Anda."
+      "name": "Edit Metadata",
+      "description": "Edit tajuk, pengarang dan metadata lain PDF anda."
     },
     "pdf-info": {
-      "name": "Informasi PDF",
-      "description": "Tampilkan semua informasi teknis dari file PDF Anda."
+      "name": "Maklumat PDF",
+      "description": "Tunjukkan semua maklumat teknikal fail PDF anda."
     },
     "add-stamp": {
-      "name": "Menambahkan Tampon",
-      "description": "Tambahkan tampon teks atau gambar ke halaman PDF Anda."
+      "name": "Tambah setem",
+      "description": "Tambah setem teks atau imej pada halaman PDF anda."
     },
     "add-attachments": {
-      "name": "Menambahkan Lampiran",
-      "description": "Integrasikan file lampiran ke dokumen PDF Anda."
+      "name": "Lampiran PDF",
+      "description": "Integrasikan fail sebagai lampiran dalam dokumen PDF anda."
     },
     "extract-images": {
-      "name": "Mengambil Gambar",
-      "description": "Ambil semua gambar yang terintegrasi dalam dokumen PDF Anda."
+      "name": "Ekstrak imej",
+      "description": "Ekstrak semua imej yang tertanam dalam dokumen PDF anda."
     },
     "remove-images": {
-      "name": "Menghapus Gambar",
-      "description": "Hapus semua gambar dari PDF Anda untuk mengurangi ukurannya."
+      "name": "Buang imej",
+      "description": "Hapus semua imej dari PDF anda untuk mengurangkan saiznya."
     },
     "multi-page-layout": {
-      "name": "Mengatur Halaman Banyak",
-      "description": "Susun 2, 4, 6, atau 9 halaman PDF ke satu halaman."
+      "name": "Tataletak berbilang halaman",
+      "description": "Atur 2, 4, 6 atau 9 halaman PDF pada satu helaian."
     },
     "overlay-pdf": {
-      "name": "Mengoverlay PDF",
-      "description": "Overlay PDF satu ke PDF lainnya (latar belakang halaman, kepala, tanda tangan)."
+      "name": "Tindih PDF",
+      "description": "Tindih satu PDF ke atas yang lain (halaman latar belakang, pengepala, tandatangan)."
     },
     "sanitize-pdf": {
-      "name": "Menghilangkan PDF",
-      "description": "Hapus JavaScript, tautan, dan metadata sensitif dari PDF Anda."
+      "name": "Bersihkan PDF",
+      "description": "Hapus JavaScript, pautan dan metadata sensitif dari PDF anda."
+    },
+    "remove-blanks": {
+      "name": "Hapus halaman kosong",
+      "description": "Kesan dan hapus secara automatik halaman kosong dalam PDF anda."
     }
   },
   "Cookies": {
@@ -286,5 +290,426 @@
     "contact_title": "9. Kontak",
     "contact_p1": "Untuk pertanyaan-pertanyaan terkait CGU ini, Anda dapat menghubungi kami :",
     "contact_email": "<strong>Dengan email :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Home": {
+    "why_choose": "Mengapakah memilih iLoveDoc?",
+    "security_title": "Keselamatan Maksimum",
+    "security_desc": "Fail anda tidak pernah meninggalkan peranti anda. Pemprosesan dilakukan secara tempatan dalam pelayar anda.",
+    "speed_title": "Laju Ultra",
+    "speed_desc": "Tanpa muat naik ke server, pemprosesan adalah serta-merta dan tidak bergantung pada sambungan internet anda.",
+    "no_signup_title": "Tanpa Pendaftaran",
+    "no_signup_desc": "Mula terus. Tiada keperluan untuk membuat akaun atau memberi emel anda untuk menggunakan alat-alat ini."
+  },
+  "Privacy": {
+    "intro_title": "1. Introduction",
+    "intro_p1": "Selamat datang di <strong>iLoveDoc</strong> (disebut \"Laman\" di sini), yang boleh diakses di alamat <a href=\"https://ilovedoc.com\">https://ilovedoc.com</a>. Perlindungan data peribadi anda adalah prioriti kami. Politik privasi ini menjelaskan maklumat yang kami kumpulkan, bagaimana kami menggunakannya dan hak-hak anda.",
+    "intro_p2": "Dengan menggunakan Laman, anda bersetuju dengan praktik yang dijelaskan dalam politik ini. Jika anda tidak bersetuju dengan syarat-syarat ini, sila jangan menggunakan Laman.",
+    "data_title": "2. Maklumat yang Dikumpulkan",
+    "data_nav_title": "2.1 Maklumat Pelayaran",
+    "data_nav_desc": "Apabila anda mengunjungi Laman, kami mungkin mengumpulkan automatik beberapa maklumat teknikal melalui cookies dan teknologi yang serupa :",
+    "data_nav_list": "<ul><li>Alamat IP (dianonimkan)</li><li>Jenis dan versi pelayar</li><li>Sistem pengendalian</li><li>Halaman yang dikunjungi dan masa pelayaran</li><li>Sumber trafik (referrer)</li><li>Resolusi skrin dan bahasa pelayar</li></ul>",
+    "data_form_title": "2.2 Maklumat Borang",
+    "data_form_desc": "Jika anda menggunakan borang hubungan kami, kami mengumpulkan maklumat yang anda berikan secara sukarela : nama, alamat emel, subjek dan isi mesej. Maklumat ini digunakan secara eksklusif untuk menjawab permintaan anda.",
+    "data_pdf_title": "2.3 Fail PDF",
+    "data_pdf_desc": "<strong>iLoveDoc tidak mengumpulkan, menyimpan dan mentransfer fail PDF.</strong> Semua proses dokumen (penyatuan, kompresi, konversi, dll.) dilakukan sepenuhnya di dalam pelayar anda, di sisi klien, dengan bantuan perpustakaan <code>pdf-lib</code>. Tiada fail yang dihantar ke pelayan kami atau pelayan pihak ketiga.",
+    "cookies_title": "3. Penggunaan Cookies",
+    "cookies_desc": "Laman ini menggunakan pelbagai jenis cookies :",
+    "cookies_ess_title": "3.1 Cookies Asas",
+    "cookies_ess_desc": "Cookies ini diperlukan untuk fungsi Laman (contohnya, pilihan tampilan, mod gelap). Mereka tidak mengumpulkan maklumat peribadi yang dapat diidentifikasi.",
+    "cookies_ana_title": "3.2 Cookies Analitik",
+    "cookies_ana_desc": "Kami menggunakan <strong>Google Analytics</strong> untuk memahami bagaimana pengunjung berinteraksi dengan Laman. Google Analytics menggunakan cookies untuk mengumpulkan maklumat secara dianonimkan (halaman yang dikunjungi, masa pelayaran, dll.). Maklumat ini membantu kami meningkatkan pengalaman pengguna.",
+    "cookies_ana_link": "Untuk mengetahui lebih lanjut tentang cara Google menggunakan data : <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">https://policies.google.com/technologies/partner-sites</a>",
+    "cookies_ads_title": "3.3 Cookies Iklan (Google AdSense)",
+    "cookies_ads_p1": "Laman ini menggunakan <strong>Google AdSense</strong> untuk menampilkan iklan. Google AdSense dan rakan kongsi iklan pihak ketiga mungkin menggunakan cookies untuk menyiarkan iklan berdasarkan lawatan anda sebelumnya ke laman ini atau ke laman lain.",
+    "cookies_ads_p2": "<strong>Google, sebagai penyedia pihak ketiga, menggunakan cookies untuk menyiarkan iklan di Laman.</strong> Penggunaan cookie DART oleh Google memungkinkan mereka menyiarkan iklan kepada pengguna berdasarkan lawatan mereka ke Laman dan ke laman lain.",
+    "cookies_ads_p3": "Rakan kongsi pihak ketiga, termasuk Google, menggunakan cookies untuk menyiarkan iklan berdasarkan lawatan sebelumnya pengguna ke laman web anda atau ke laman web lain.",
+    "cookies_ads_p4": "Penggunaan cookies iklan oleh Google memungkinkan Google dan rakan kongsi mereka menyiarkan iklan kepada pengguna anda berdasarkan lawatan mereka ke laman web anda dan/atau ke laman web lain.",
+    "cookies_opt_title": "3.4 Cookie Pengecualian",
+    "cookies_opt_desc": "Anda boleh menguruskan preferensi cookie anda dengan beberapa cara :",
+    "cookies_opt_list": "<ul><li><strong>Pengaturan Pelayar :</strong> Sebagian besar pelayar memungkinkan anda menolak atau menghapus cookie melalui pengaturan privasi mereka.</li><li><strong>Opt-out Google Ads :</strong> Anda dapat menonaktifkan iklan yang disesuaikan dengan mengunjungi <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Pengaturan Iklan Google</a>.</li><li><strong>Opt-out umum :</strong> Anda dapat menonaktifkan cookie iklan pihak ketiga dengan mengunjungi <a href=\"https://www.aboutads.info/choices/\" target=\"_blank\" rel=\"noopener noreferrer\">www.aboutads.info/choices/</a> atau <a href=\"https://www.youronlinechoices.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">www.youronlinechoices.eu/</a>.</li><li><strong>NAI Opt-out :</strong> Kunjungi situs <a href=\"https://optout.networkadvertising.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Network Advertising Initiative</a> untuk menonaktifkan cookie jaringan iklan yang berpartisipasi.</li></ul>",
+    "cookies_opt_note": "Perlu diingat bahwa menonaktifkan cookie dapat mempengaruhi beberapa fungsi situs.",
+    "adsense_title": "4. Google AdSense dan Pemasok Tertentu",
+    "adsense_desc": "iLoveDoc menampilkan iklan melalui program <strong>Google AdSense</strong>. Dalam hal ini :",
+    "adsense_list": "<ul><li>Pemasok pihak ketiga, termasuk Google, menggunakan cookie untuk menampilkan iklan berdasarkan kunjungan sebelumnya pengguna ke situs atau situs lain.</li><li>Google menggunakan cookie DoubleClick (DART) untuk memungkinkan, baik kepada dirinya sendiri dan mitranya, menampilkan iklan berdasarkan kunjungan pengguna ke situs dan/atau situs lain internet.</li><li>Pengguna dapat menonaktifkan penggunaan cookie DART dengan mengunjungi <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Pengaturan Iklan Google</a>.</li></ul>",
+    "adsense_note": "Untuk informasi lebih lanjut tentang cara Google mengelola data dalam produk iklan, silakan lihat <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Kebijakan Privasi Google</a>.",
+    "rgpd_title": "5. Hak Anda (RGPD)",
+    "rgpd_desc": "Menurut Peraturan Umum Perlindungan Data (RGPD) dan Undang-Undang Informatika dan Kebebasan, Anda memiliki hak-hak berikut terkait data pribadi Anda :",
+    "rgpd_list": "<ul><li><strong>Hak Akses :</strong> Anda dapat memperoleh konfirmasi bahwa data yang berkaitan dengan Anda sedang diproses atau tidak, dan, jika sedang diproses, akses ke data tersebut.</li><li><strong>Hak Pembaruan :</strong> Anda dapat memperoleh pembaruan data yang tidak akurat atau tidak lengkap.</li><li><strong>Hak Penghapusan :</strong> Anda dapat memperoleh penghapusan data Anda dalam kasus yang ditentukan oleh peraturan.</li><li><strong>Hak Pengurangan Pengolahan :</strong> Anda dapat meminta pengurangan pengolahan data Anda dalam beberapa keadaan.</li><li><strong>Hak Portabilitas :</strong> Anda dapat menerima data Anda dalam format struktur, umum digunakan, dan dapat dibaca oleh mesin.</li><li><strong>Hak Oposisi :</strong> Anda dapat menolak pengolahan data Anda untuk alasan yang sah.</li></ul>",
+    "rgpd_contact": "Untuk menegakkan hak-hak ini, silakan menghubungi kami di alamat : <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>. Kami akan menjawab permintaan Anda dalam waktu 30 hari.",
+    "rgpd_cnil": "Anda juga memiliki hak untuk mengajukan keluhan kepada <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">Komisi Nasional Perlindungan Data dan Kebebasan (CNIL)</a>.",
+    "retention_title": "6. Konservasi Data",
+    "retention_desc": "Data yang dikumpulkan disimpan selama waktu yang diperlukan untuk tujuan yang dikumpulkan :",
+    "retention_list": "<ul><li><strong>Data Navigasi (analitik) :</strong> Disimpan selama 26 bulan maksimum, sesuai dengan rekomendasi CNIL.</li><li><strong>Data Kontak :</strong> Disimpan selama 3 tahun sejak kontak terakhir.</li><li><strong>Cookies :</strong> Umur cookie tidak melebihi 13 bulan sesuai dengan peraturan yang berlaku.</li><li><strong>Fichier PDF :</strong> Tidak ada konservasi — file tidak pernah meninggalkan browser.</li></ul>",
+    "modifications_title": "7. Modifikasi Kebijakan Privasi",
+    "modifications_p1": "Kami memiliki hak untuk memodifikasi kebijakan privasi ini kapan saja. Modifikasi apa pun akan dipublikasikan di halaman ini dengan tanggal revisi yang diperbarui. Kami mendorong Anda untuk mengunjungi halaman ini secara teratur untuk tetap terinformasi tentang praktik kami dalam perlindungan data.",
+    "modifications_p2": "Jika ada modifikasi yang signifikan, kami akan menampilkan peringatan yang jelas di situs untuk memberitahu Anda.",
+    "contact_title": "8. Kontak",
+    "contact_desc": "Untuk pertanyaan apa pun terkait kebijakan privasi ini atau untuk menegakkan hak Anda, Anda dapat menghubungi kami :",
+    "contact_email": "<strong>Dengan Email :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Faq": {
+    "item0_q": "Adakah anda menyimpan salinan fail saya selepas proses pengurusan?",
+    "item0_a": "Tidak sama sekali. iLoveDoc melakukan semua proses pengurusan secara langsung di dalam pelayar anda (pada sisi klien). Fail anda tidak pernah meninggalkan peranti anda dan tidak pernah dihantar ke server jauh. Mereka tetap 100% di bawah kawalan anda dan selamat.",
+    "item1_q": "Adakah fail perniagaan selamat dengan perkhidmatan anda?",
+    "item1_a": "Ya. Karena proses pengurusan dilakukan secara tempatan di dalam pelayar anda sendiri, tidak ada pihak ketiga (termasuk kami) yang dapat mengakses dokumen profesional anda. Ini adalah penyelesaian yang ideal untuk menghormati RGPD dan ketatnya kerahsiaan perniagaan.",
+    "item2_q": "Apa konfigurasi sistem minimum?",
+    "item2_a": "Pelayar moden (Chrome, Firefox, Safari atau Edge) dengan koneksi internet. Karena perhitungan dilakukan secara tempatan oleh peranti anda, memori yang cukup disarankan untuk dokumen yang sangat besar.",
+    "item3_q": "Bagaimana saya boleh muat turun fail saya?",
+    "item3_a": "Sekiranya operasi pengurusan dokumen telah selesai, butang muat turun akan muncul untuk menyimpan fail yang dihasilkan secara langsung ke peranti anda.",
+    "item4_q": "Adakah saya boleh mengubah PDF yang diberikan ke dalam dokumen yang boleh diedit?",
+    "item4_a": "Ya. Alat OCR (Pengenalan Optik Karakter) dan alat penyunting kami mengeluarkan teks dari PDF yang diskaun untuk menjadikannya boleh dipilih dan diedit secara langsung.",
+    "item5_q": "Mengapa proses pengubahan saya begitu lama?",
+    "item5_a": "Kemacetan bergantung pada kekuatan penghitungan peranti anda dan saiz fail, kerana proses pengurusan dilakukan secara tempatan di peranti anda tanpa bergantung pada server luaran."
+  },
+  "Contact": {
+    "form_title": "Hantar Kami Sebuah Pesanan",
+    "success_message": "Terima kasih ! Pesanan anda telah dihantar dengan jayanya. Kami akan menjawab anda dalam masa yang singkat.",
+    "error_message": "Sila cuba lagi kemudian. Terdapat masalah dalam proses penghantaran.",
+    "label_name": "Nama Penuh",
+    "placeholder_name": "Jean Dupont",
+    "error_name_required": "Nama diperlukan.",
+    "label_email": "Alamat E-mel",
+    "placeholder_email": "jean@contoh.com",
+    "error_email_required": "Alamat e-mel diperlukan.",
+    "error_email_invalid": "Sila masukkan alamat e-mel yang sah.",
+    "label_subject": "Tajuk",
+    "select_subject": "— Pilih Tajuk —",
+    "error_subject_required": "Tajuk diperlukan.",
+    "subject_option_question": "Soalan Am",
+    "subject_option_bug": "Bugs / Masalah Teknologi",
+    "subject_option_suggestion": "Saran Peningkatan",
+    "subject_option_partnership": "Kerjasama / Kerjasama",
+    "subject_option_other": "Lain-lain",
+    "label_message": "Pesan",
+    "placeholder_message": "Jelaskan permohonan anda secara terperinci…",
+    "error_message_required": "Pesan diperlukan.",
+    "error_message_min": "Pesan mestilah mengandungi sekurang-kurangnya 10 aksara.",
+    "btn_submit": "Hantar Pesanan",
+    "btn_sending": "Sedang Menghantar…",
+    "info_title": "Maklumat Hubungan",
+    "info_email": "E-mel",
+    "info_response_time": "Masa Jawapan",
+    "info_response_val": "Dalam masa 48 jam",
+    "info_follow": "Ikuti Kami",
+    "info_links": "Pautan Berguna",
+    "faq_title": "Soalan Lazim",
+    "faq_item0_q": "iLoveDoc benar-benar percuma?",
+    "faq_item0_a": "Ya, semua alat kami percuma sepenuhnya, tanpa had dan tanpa pendaftaran diperlukan.",
+    "faq_item1_q": "Apakah fail saya dihantar ke server?",
+    "faq_item1_a": "Tidak. Semua proses dilakukan secara langsung dalam pelayar anda. Tiada fail keluar dari peranti anda.",
+    "faq_item2_q": "Apa-apa pelayar yang disokong?",
+    "faq_item2_a": "iLoveDoc berfungsi pada semua pelayar moden: Chrome, Firefox, Safari, Edge (versi terkini).",
+    "faq_item3_q": "Bolehkah saya mengendalikan fail yang besar?",
+    "faq_item3_a": "Proses dilakukan di sisi klien, jadi hadnya bergantung pada memori peranti anda. Dokumen kebanyakan saiz biasa dapat ditangani tanpa masalah.",
+    "faq_item4_q": "Bagaimana saya boleh melaporkan bug?",
+    "faq_item4_a": "Gunakan borang hubungan di atas dengan tajuk \"Bugs / Masalah Teknologi\" dan jelaskan masalah yang dihadapi."
+  },
+  "Blog": {
+    "all_articles": "Semua artikel",
+    "recommended_articles": "Artikel yang disarankan",
+    "read_more": "Baca lebih lanjut",
+    "back_to_blog": "Kembali ke blog",
+    "read_time_suffix": "waktu membaca",
+    "share": "Bagikan :",
+    "back_home": "Halaman Utama",
+    "title_not_found": "Artikel tidak ditemukan",
+    "fb_label": "Bagikan di Facebook",
+    "x_label": "Bagikan di X",
+    "li_label": "Bagikan di LinkedIn"
+  },
+  "BlogPosts": {
+    "signatures-numeriques-legales": {
+      "title": "Keberkesanan tanda tangan digital dijelaskan : Apa yang menjadikannya sah?",
+      "subtitle": "Fahami kerangka hukum dan nilai hukum tanda tangan dokumen secara online.",
+      "description": "Cari tahu apa yang menjadikan tanda tangan digital sah secara hukum, bagaimana undang-undang berubah mengikut negara, dan bagaimana melindungi dokumen secara online.",
+      "category": "Sécurité",
+      "date": "20 Mei 2025",
+      "readTime": "5 min",
+      "content": {
+        "0": "Dalam era kerja jarak jauh dan penggunaan proses digital, menandatangani dokumen secara online telah menjadi tindakan harian. Tetapi apa tentang nilai hukum tanda tangan ini? Adakah mereka setara dengan tanda tangan tanganan tangan?",
+        "1": "Apa itu tanda tangan digital?",
+        "2": "Tanda tangan digital (atau elektronik) bukanlah hanya sken tanda tangan tanganan tangan. Ia adalah proses kriptografi yang mengikat identiti tanda tanganan tangan ke dokumen secara tidak boleh dipalsukan. Ini menjamin dua elemen penting: autentikasi (siapa yang menandatangani) dan integriti (dokumen tidak telah dipinda pada masa tanda tanganan tangan).",
+        "3": "Kerangka hukum di Eropah dan di seluruh dunia",
+        "4": "Di Kesatuan Eropah, iaitu peraturan eIDAS yang mengawal tanda tangan elektronik. Ia menetapkan tiga tahap tanda tangan:",
+        "6": "Mengapa menggunakan iLoveDoc untuk dokumen anda?",
+        "7": "iLoveDoc membenarkan anda menambah tanda tangan ke dokumen secara langsung dalam pelayar anda. Seperti tiada fail yang dihantar ke pelayan kami, maklumat anda tetap selamat. Ia adalah alat yang sempurna untuk tanda tangan harian anda yang cepat, selamat, dan mematuhi praktik terbaik web.",
+        "8": "Dalam kesimpulan, menandatangani secara digital bukan sahaja sah secara hukum, tetapi juga lebih selamat daripada tanda tangan tanganan tangan kertas jika anda menggunakan alat yang betul. Teruskan menggunakan tanda tangan elektronik hari ini!",
+        "5_item0": "Tanda tangan sederhana (contohnya: memeriksa kotak atau memasukkan imej tanda tangan). Ia sah secara hukum tetapi nilai buktiannya terhad.",
+        "5_item1": "Tanda tangan maju, yang memerlukan kriteria pengenalan yang lebih ketat dan hubungan selamat dengan tanda tanganan tangan.",
+        "5_item2": "Tanda tangan berkualifikasi (QES), yang setara secara hukum dengan 100% tanda tangan tanganan tangan dan menggunakan sijil identiti yang dipastikan."
+      }
+    },
+    "fusionner-pdf-et-jpg": {
+      "title": "Bagaimana menggabungkan fail PDF dan JPG dalam satu dokumen (dengan cara yang mudah)",
+      "subtitle": "Gabungkan fail PDF dan imej dalam satu dokumen — dengan cepat, mudah, dan tanpa muat turun.",
+      "description": "Cari tahu bagaimana menggabungkan fail PDF dan JPG dalam satu dokumen dengan iLoveDoc. Cepat, mudah, dan langsung dari pelayar anda.",
+      "category": "Gabung",
+      "date": "20 Mei 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Perlu menggabungkan fail PDF dan imej JPG? Apa sahaja yang anda lakukan, dari membuat laporan hingga menghantar dokumen penting, kami akan menjelaskan segalanya.",
+        "1": "Menggabungkan jenis fail yang berbeza mungkin kelihatan sukar, tetapi sebenarnya sangat mudah. Dalam panduan ini, kami akan menjelaskan bagaimana untuk melakukannya dengan iLoveDoc — tanpa muat turun dan dengan cara yang sangat mudah.",
+        "2": "Langkah 1: Membuat imej JPG menjadi PDF",
+        "3": "Sebelum menggabungkan, yang paling mudah adalah membuat imej JPG menjadi PDF. Di iLoveDoc, pergi ke alat 'JPG ke PDF'. Muat turun imej anda, atur orientasi atau margin jika perlu, dan klik 'Convert'. Anda akan mendapat fail PDF yang mengandungi imej.",
+        "4": "Langkah 2: Menggabungkan dua PDF",
+        "5": "Seterusnya, muat turun imej yang telah diubah menjadi PDF ke alat 'Gabung PDF'. Muat turun dokumen asal dan PDF baru yang mengandungi imej. Anda boleh mengatur semula dokumen dengan mudah dengan menggeser-geser. Klik 'Gabung PDF' untuk muat turun dokumen akhir yang digabungkan.",
+        "6": "Dan itulah! Dalam dua langkah yang cepat, sepenuhnya dilakukan dalam pelayar anda tanpa risiko untuk data anda, anda telah menggabungkan fail anda dengan profesional."
+      }
+    },
+    "modifier-pdf-sans-adobe": {
+      "title": "Bolehkah saya ubah PDF tanpa Adobe Acrobat? Berikut cara melakukannya dengan iLoveDoc",
+      "subtitle": "Solutions en lini dan 100% percuma untuk mengedit teks dan anotasi tanpa lesen yang mahal.",
+      "description": "Saya perlu mengubah PDF tetapi saya tidak memiliki Adobe Acrobat? Berikut cara menggunakan iLoveDoc secara percuma, tanpa muat turun atau kemahiran teknikal.",
+      "category": "Éditer",
+      "date": "20 Mei 2025",
+      "readTime": "4 min",
+      "content": {
+        "0": "Adobe Acrobat adalah rujukan sejarah untuk mengedit PDF, tetapi kos langganan bulanan mungkin terlalu mahal untuk keperluan sementara. Beruntungnya, ada alternatif moden dan percuma.",
+        "1": "Mengapa format PDF sukar untuk diubah?",
+        "2": "PDF telah dirancang sebagai format cetakan digital yang tetap. Berbeza dengan dokumen Word, ia tidak mengandungi struktur aliran teks yang fleksibel, tetapi hanya koordinat tetap untuk setiap karakter. Itulah mengapa pengeditan PDF memerlukan alat khusus.",
+        "3": "Alat pengeditan iLoveDoc",
+        "4": "Dengan alat 'Éditer PDF' iLoveDoc, anda boleh menambahkan zon teks, menggambar bentuk atau memasukkan imej di atas PDF. Proses ini dilakukan di sisi klien, yang memastikan reaksi yang segera dan keamanan yang optimum.",
+        "6": "Tidak perlu menghabiskan banyak wang dalam lesen yang berat. iLoveDoc menyediakan semua alat yang diperlukan secara percuma dan tanpa keterbatan.",
+        "5_item0": "Tambahkan anotasi jelas untuk rakan-rakan.",
+        "5_item1": "Sembunyikan bahagian teks yang tidak perlu.",
+        "5_item2": "Tandatangan atau logo dengan beberapa klik."
+      }
+    },
+    "reduire-taille-pdf-100ko": {
+      "title": "Bagaimana mengurangkan saiz PDF ke bawah 100 Ko",
+      "subtitle": "Tips dan solusi untuk mengompresi dokumen untuk formulir pentadbiran tanpa kehilangan kualiti.",
+      "description": "Saya memerlukan menghantar PDF di bawah 100 Ko? Gunakan alat Pembahagian oleh Saiz atau kompresor kami untuk mengurangkan fail tanpa kehilangan kualiti.",
+      "category": "Optimiser",
+      "date": "20 Mei 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Banyak portal pentadbiran dan sekolah memerlukan had saiz fail yang ketat untuk muat naik (biasanya 100 Ko atau 200 Ko). Jika PDF anda terlalu berat, jangan risau, ada beberapa cara mudah.",
+        "1": "Cara 1: Kompresi yang pintar",
+        "2": "Alat 'Kompresi PDF' iLoveDoc menganalisis imej dan sumber daya dokumen dan mengurangkan resolusi tanpa mengubah ketelitian teks. Ini adalah cara yang ideal untuk menjaga keseluruhan fail tanpa mengurangkan beratnya.",
+        "3": "Cara 2: Hapuskan halaman yang tidak perlu",
+        "4": "Kadang-kadang dokumen mengandungi halaman kulit atau lampiran yang tidak diperlukan. Dengan menggunakan alat 'Hapuskan halaman', anda boleh mengurangkan berat fail dengan hanya menyimpan yang paling penting.",
+        "5": "Dengan suite alat yang diperbaiki, tinggalkan garis bawah 100 Ko dan muat naik fail tanpa gangguan di semua portal pentadbiran!"
+      }
+    },
+    "trois-methodes-editer-pdf": {
+      "title": "Tiga Kaedah Mengedit PDF",
+      "subtitle": "Cari kaedah yang paling sesuai dengan keperluan anda.",
+      "description": "Cari kaedah terbaik untuk mengubah PDF dengan tepat menggunakan alat dalam talian, dari penukaran PDF ke pengeditan kandungan fail asal.",
+      "category": "Mengedit",
+      "date": "13 Mac 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "Pengeditan PDF boleh dijalankan dengan pelbagai cara bergantung pada hasil yang diinginkan. Berikut adalah tiga kaedah utama yang perlu diingat.",
+        "1": "Kaedah 1: Pengeditan Langsung (Annotasi dan tambahan)",
+        "2": "Ideal untuk mengisi borang tidak interaktif, menambah komen atau melukis pada pelan. Anda boleh menggunakan penyunting dalam talian iLoveDoc untuk menulis di atas elemen sedia ada.",
+        "3": "Kaedah 2: Penukaran ke Word",
+        "4": "Jika anda perlu menulis semula perenggan keseluruhan atau mengubah struktur dokumen, yang terbaik adalah menukar PDF ke Word. Setelah pengeditan dibuat pada Word, anda boleh mengeksportnya semula sebagai PDF.",
+        "5": "Kaedah 3: Pemadatan dan Penggabungan",
+        "6": "Untuk mengunci pengeditan anda dan mencegah orang lain mengedit medan, terapkan pemadatan (flattening) pada fail yang diedit.",
+        "7": "Pilih kaedah yang sesuai dengan aliran kerja anda dan meningkatkan keberkesanan harian!"
+      }
+    },
+    "convertir-jpg-en-word": {
+      "title": "Cara Mengubah JPG ke Word Boleh Diedit",
+      "subtitle": "Ekstrak teks dari gambar anda untuk membuatnya boleh diedit dalam beberapa saat.",
+      "description": "Pelajari cara menggunakan alat penukaran iLoveDoc untuk mengubah fail gambar ke Word boleh diedit.",
+      "category": "Menukar",
+      "date": "28 Feb 2024",
+      "readTime": "3 min",
+      "content": {
+        "0": "Mengubah gambar JPG yang mengandungi teks ke fail Word (.docx) boleh diedit adalah penting jika anda ingin menggunakan semula atau membetulkan teks yang discan atau difotografi.",
+        "1": "Bagaimana pengenalan teks berfungsi?",
+        "2": "Operasi ini menggunakan OCR (Pengenalan Optik Karakter). Algoritma menganalisis piksel gambar, mengenal pasti bentuk huruf dan menukarnya ke karakter teks yang dikodkan secara digital.",
+        "3": "Pendekatan pada iLoveDoc",
+        "4": "Cukup muat naik fail JPG anda ke alat penukaran gambar. Alat kami mengekstrak kandungan teks dan menghasilkan dokumen Word yang bersih yang boleh anda buka dan edit dengan segera dalam Word, LibreOffice atau Google Docs.",
+        "5": "Jimatkan masa berharga dengan mengelakkan menaip semula dokumen cetak anda!"
+      }
+    },
+    "convertir-jpg-en-excel": {
+      "title": "Convertir un JPG ke dalam Excel dengan alat percuma ini",
+      "subtitle": "Paparkan carta kandungan anda secara langsung dalam format Excel.",
+      "description": "Panduan ini akan menunjukkan bagaimana menggunakan alat iLoveDoc untuk mengubah JPG ke dalam lembaran Excel yang boleh diedit.",
+      "category": "Convertir",
+      "date": "21 Feb 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "Anda mempunyai carta cetak atau skrin tangkapan data yang dienkripsi dan ingin menganalisisnya dalam Excel? Mencopikan nombor-nombor secara berasingan adalah membuang masa dan menyebabkan kesilapan. Berikut adalah penyelesaian.",
+        "1": "Pengenalpastian garis dan kolom yang canggih",
+        "2": "Selain mengiktiraf huruf-huruf, algoritma pengenalpastian mengenalpasti struktur carta (bordir, pemisahan kolom dan kepala) untuk merekonstruksi grid pengiraan dengan setepatnya.",
+        "3": "Eksport ke Excel",
+        "4": "Geser dan letakkan fail imej ke dalam alat penukaran JPG ke Excel. Grid data telah dibina semula dan boleh dimuat turun dalam format .xlsx. Anda boleh kemudian menerapkan formula jum, susun dan grafik secara normal.",
+        "5": "Sederhanakan akaun dan pengurusan data yang dienkripsi dengan penukaran canggih iLoveDoc!"
+      }
+    },
+    "reparer-pdf-corrompu": {
+      "title": "Bagaimana untuk memulihkan fail PDF rosak atau rosak secara percuma?",
+      "subtitle": "Cari tahu bagaimana untuk memulihkan dokumen PDF yang tidak dapat dibaca secara dalam talian.",
+      "description": "Fail PDF anda enggan dibuka? Cari tahu bagaimana untuk memulihkan fail PDF rosak secara percuma dalam talian dan memulihkan data tanpa risiko.",
+      "category": "Réparer",
+      "date": "28 Mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Tiada yang lebih frustrasi daripada menerima pesanan kesalahan yang menunjukkan dokumen PDF penting rosak dan tidak dapat dibuka. Beruntungnya, terdapat penyelesaian percuma dalam talian untuk memulihkan data.",
+        "1": "Mengapa PDF menjadi tidak dapat dibaca?",
+        "2": "Pemotongan internet semasa muat turun, bug sistem pengolah kata atau masalah pemindahan ke USB adalah punca utama kerosakan. Dalam kebanyakan kes, data dalaman dokumen tetap utuh, tetapi kepala fail rosak.",
+        "3": "Pemulihan dalam talian dengan iLoveDoc",
+        "4": "Alat pemulihan iLoveDoc menganalisis struktur binari fail rosak dan merekonstruksi kepala rosak dalam beberapa saat secara langsung dalam pelayar, menjamin keselamatan yang penuh.",
+        "5": "Jangan tinggalkan fail hilang! Gunakan pemulihara percuma untuk mendapatkan akses semula ke maklumat anda secara segera."
+      }
+    },
+    "modifier-texte-pdf-gratuit": {
+      "title": "Bagaimana mengubah teks PDF secara percuma dan tanpa perisian?",
+      "subtitle": "Panduan praktikal untuk mengedit teks dokumen PDF secara dalam talian.",
+      "description": "Panduan praktikal untuk mengedit teks PDF secara dalam talian secara percuma. Ubah, tambah atau hapus teks tanpa memasang Adobe Acrobat Pro.",
+      "category": "Mengedit",
+      "date": "28 Mei 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "Mengubah teks secara langsung di dalam dokumen PDF adalah keperluan yang kerap, tetapi perisian kantin seperti Acrobat Pro mahal. Kami menunjukkan bagaimana mengelakkan had ini.",
+        "1": "Pengedit dalam talian percuma iLoveDoc",
+        "2": "Dengan alat pengedit dalam talian kami, anda boleh menulis teks bebas di atas dokumen asal, menyembunyikan data berikut dengan menggunakan persegi gelap atau memasukkan imej dan logo.",
+        "3": "Pengubahan Word untuk perubahan penting",
+        "4": "Jika anda perlu menulis semula paragraf, disarankan untuk mengubah dahulu PDF anda ke format Word (.docx), kemudian membuat perubahan di dalam papan tulis anda, dan kemudian mengimport semula ke PDF.",
+        "5": "Ubah dokumen anda mengikut keperluan anda dengan memilih alat pengedit langsung atau pengubahan Word di iLoveDoc."
+      }
+    },
+    "impression-pdf-caracteres-bizarres": {
+      "title": "Mengapa PDF saya cetak dengan karakter-karakter aneh? (Dijawab)",
+      "subtitle": "Memperbaiki hieroglif, simbol dan bug fonetik semasa mencetak PDF.",
+      "description": "Percetakan anda keluar dengan kertas penuh simbol aneh, hieroglif atau kotak-kotak? Dapatkan tahu bagaimana memperbaiki masalah cetakan PDF.",
+      "category": "Bantuan",
+      "date": "28 Mei 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "Sekaligus, percetakan dokumen PDF menghasilkan siri simbol yang tidak difahami atau kotak-kotak putih di tempat huruf asal. Masalah ini berkaitan dengan fonetik.",
+        "1": "Masalah fonetik yang tidak diintegrasikan",
+        "2": "Jika pembuat PDF tidak mengintegrasikan fonetik dalam fail, percetakan anda akan mencari ganti. Jika ia tidak menemui ganti, ia mencetak hieroglif.",
+        "3": "Pemecahan universal: Aplas atau cetak sebagai imej",
+        "4": "Untuk memperbaiki bug ini, pilih pilihan 'Cetak sebagai imej' dalam pilihan percetakan anda, atau pasang fail ke dalam alat 'Aplas PDF' di iLoveDoc sebelum mencetak.",
+        "5": "Dengan mengubah teks vektor ke bentuk geometri tetap (aplasan), anda memastikan percetakan yang sempurna pada mana-mana model percetakan."
+      }
+    },
+    "compresser-pdf-sans-perte": {
+      "title": "How to compress a PDF without losing quality for email?",
+      "subtitle": "Reduce the weight of your PDF files while keeping the maximum sharpness.",
+      "description": "Reduce the weight of your PDF files to send by email without degrading readability. 100% free online compression tips.",
+      "category": "Optimiser",
+      "date": "28 May 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Email inboxes often reject attached files over 10 or 20 MB. Compressing your PDF is essential to ensure its delivery.",
+        "1": "Intelligent optimization vs brute degradation",
+        "2": "Our compression tool does not alter texts. It specifically targets integrated images by adapting their resolution (DPI) and removes obsolete metadata accumulated over modifications.",
+        "3": "What compression level to choose?",
+        "4": "We offer three modes: strong compression (for an ultra-light file), recommended compression (ideal balance) and light compression (maximum quality).",
+        "5": "Compress your files locally in your browser while keeping total control over the size/quality ratio."
+      }
+    },
+    "copier-texte-pdf-scanne": {
+      "title": "How to copy text from a scanned PDF or image?",
+      "subtitle": "Use Optical Character Recognition (OCR) to copy text.",
+      "description": "Impossible to select or copy text from a PDF? Learn to transform a scanned PDF into editable text using free OCR.",
+      "category": "OCR",
+      "date": "28 May 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "If you can't highlight or copy text from a document, it's because it's a simple image of a document (scan) or a protection lock prevents copying.",
+        "1": "Enable character recognition (OCR)",
+        "2": "OCR (Optical Character Recognition) is a technology that visually scans pixels of the PDF to extract words and transform them into indexable computer characters.",
+        "3": "The simple method on iLoveDoc",
+        "4": "Upload your scan to our 'OCR PDF' tool. The algorithm runs locally to generate a new fully readable PDF where you can copy-paste all paragraphs.",
+        "5": "Convert your scans into dynamic working documents and save precious time daily."
+      }
+    },
+    "convertir-pdf-word-mise-en-page": {
+      "title": "Convertir un PDF en Word tanpa mengubah tata letak",
+      "subtitle": "Tips konversi untuk menghindari pergeseran teks dan tabel.",
+      "description": "Marah dengan tabel yang tergeser dan teks yang tidak beraturan selama konversi? Berikut cara mengubah PDF ke Word dengan menjaga format asli.",
+      "category": "Convertir",
+      "date": "28 Mei 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "Konversi PDF ke Word kadang-kadang menghasilkan garis teks yang menumpuk atau tabel yang rusak. Pergeseran ini disebabkan oleh kekurangan referensi margin yang fleksibel dalam format PDF.",
+        "1": "Pilih motor konversi dengan keakuratan tinggi",
+        "2": "Konverter iLoveDoc menganalisis topografi visual dokumen asli dan menciptakan struktur paragraf dan tabel yang native di bawah Word untuk meminimalkan perubahan manual.",
+        "3": "Tips praktis setelah konversi",
+        "4": "Jika Anda melihat perbedaan kecil, gunakan aturan tabulasi daripada tombol spasi untuk mengatur blok teks, dan pastikan gambar terancang dengan benar.",
+        "5": "Konversi lokal di iLoveDoc memberikan dokumen .docx yang bersih dan siap untuk diedit."
+      }
+    },
+    "mot-de-passe-pdf-oublie": {
+      "title": "Kata sandi PDF hilang: Bagaimana membuka PDF yang terkunci?",
+      "subtitle": "Solusi dan alat hukum untuk melepaskan file PDF yang dilindungi.",
+      "description": "Anda telah lupa kata sandi dokumen PDF sendiri? Cari tahu bagaimana melepaskan dan menghapus perlindungan PDF secara hukum.",
+      "category": "Sécurité",
+      "date": "28 Mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Mengenkripsi PDF adalah ide yang baik untuk melindunginya, tetapi kehilangan kata sandi sendiri menghalangi akses ke dokumen resmi atau dokumen pribadi Anda.",
+        "1": "Menghapus pembatasan penggunaan",
+        "2": "Untuk pembatasan penyuntingan (kata sandi pemilik), alat 'Melepaskan PDF' kami menghapus verifikasi secara instan di lokasi untuk memberikan Anda hak untuk mencetak dan menyalin.",
+        "3": "Apa yang harus dilakukan untuk kata sandi pembuka (enkripsi AES)?",
+        "4": "Untuk membuka dokumen yang dienkripsi, kunci pengguna tetap diperlukan. Setelah diisi pertama kali di platform yang aman, alat menghapusnya secara permanen untuk membaca dokumen Anda.",
+        "5": "Bebaskan dokumen Anda dari keterbatasan pengisian yang berulang dengan melepaskan secara aman."
+      }
+    },
+    "bug-previsualisation-pdf-windows": {
+      "title": "Pecahkan Masalah Jendela Previsualisasi PDF di Windows",
+      "subtitle": "Tetapkan Tampilan Previsualisasi PDF di Pencarian File Anda.",
+      "description": "Jika Pencarian File Windows tidak menampilkan previsualisasi file PDF atau menampilkan kesalahan, lihat cara mengaktifkan kembali previsualisasi PDF dengan cepat.",
+      "category": "Bantuan",
+      "date": "28 Mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Jendela previsualisasi Pencarian File Windows sangat berguna untuk memeriksa ringkasan dokumen dengan cepat, tetapi sering kali jendela tersebut bermasalah atau menampilkan layar hitam.",
+        "1": "Mengapa Jendela Previsualisasi Bermasalah?",
+        "2": "Pemasangan atau pembaruan perangkat lunak pihak ketiga dapat mengubah hubungan sistem (handlers). Windows kemudian mengalami konflik antara beberapa pengendali untuk menampilkan rendering.",
+        "3": "Bagaimana Mengatasi Masalah Previsualisasi?",
+        "4": "Buka pengaturan folder, pastikan kotak &quot;Tampilkan pengendali previsualisasi&quot; ditekan, lalu ubah pengaturan baca file default Anda di Pengaturan Windows.",
+        "5": "Sistem yang terkonfigurasi dengan baik akan memudahkan navigasi harian Anda di tengah-tengah folder profesional Anda."
+      }
+    },
+    "signer-pdf-sans-imprimante": {
+      "title": "Bagaimana Mengisi dan Menandatangani Dokumen PDF Tanpa Printer?",
+      "subtitle": "Tandatangani Dokumen dan Kontrak Elektronik secara Gratis.",
+      "description": "Tidak perlu mencetak untuk menandatangani! Pelajari cara mengisi formulir dan menambahkan tandatangan pada PDF secara online secara gratis pada tahun 2026.",
+      "category": "Tandatangan",
+      "date": "28 Mei 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Mencetak kontrak, menandatangani dengan tangan, lalu memindai untuk mengembalikannya adalah kehilangan waktu, kertas, dan tinta. Sekarang ini sangat mudah dilakukan secara 100% digital.",
+        "1": "Keseluruhan Kekuatan Tanda Tangan Elektronik",
+        "2": "Di Perancis dan Eropa (peraturan eIDAS), tandatangan yang ditempatkan secara elektronik memiliki nilai hukum yang sama dengan tandatangan kertas tradisional untuk kebanyakan transaksi bisnis.",
+        "3": "Menandatangani di iLoveDoc dalam beberapa klik",
+        "4": "Impor kontrak, gambar tandatangan Anda di layar sentuh atau muat foto tandatangan Anda, lalu geser ke garis kesepakatan. Dokumen akhir dikompilasi secara aman tanpa transit server.",
+        "5": "Pindah ke nol kertas dan sederhanakan tandatangan kontrak dan proposal profesional Anda."
+      }
+    },
+    "fusionner-pdf-sur-smartphone": {
+      "title": "How to merge and reorganize PDFs on smartphone?",
+      "subtitle": "Combine and manage your PDF documents directly from your smartphone.",
+      "description": "Need to assemble PDFs from your phone? Discover how to combine, sort and merge PDF files on iPhone and Android for free.",
+      "category": "Mobile",
+      "date": "28 May 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "Assembling supporting documents or reports sometimes needs to be done urgently in a mobile situation. Fortunately, your smartphone is more than enough.",
+        "1": "Mobile fusion without external application",
+        "2": "No need to saturate your phone's storage space with paid applications. Access the iLoveDoc site from your mobile browser (Safari on iPhone, Chrome on Android).",
+        "3": "Drag and drop on touchscreen",
+        "4": "Our reactive touchscreen interface allows you to reorder pages by dragging your finger, and compile PDFs instantly and 100% securely.",
+        "5": "Manage all your document flows quickly, anywhere, directly from the palm of your hand."
+      }
+    }
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - Alat PDF dalam talian percuma",
+    "home_desc": "Gabungkan, bahagikan, kompres, dan ubah fail PDF secara percuma. Proses keselamatan secara langsung dalam pelayar anda tanpa pendaftaran apa-apa.",
+    "about_title": "Tentang iLoveDoc – Alat PDF Percuma dalam Talian",
+    "about_desc": "Cari tahu tentang iLoveDoc: alat PDF percuma, selamat, dan cepat. Proses 100% di sisi klien, tanpa menghantar fail ke server. Gabungkan, kompres, ubah fail PDF anda dengan selamat.",
+    "privacy_title": "Dasar Privasi – iLoveDoc",
+    "privacy_desc": "Dasar privasi iLoveDoc. Cari tahu bagaimana kami melindungi data peribadi anda, penggunaan kuki kami dan hak anda di bawah RGPD.",
+    "terms_title": "Syarat-Syarat Penggunaan – iLoveDoc",
+    "terms_desc": "Syarat-syarat penggunaan laman web iLoveDoc. Cari tahu tentang peraturan akses dan penggunaan alat-alat PDF percuma dalam talian kami."
   }
 }

@@ -701,5 +701,15 @@
     "contact_title": "8. Contacto",
     "contact_desc": "Para cualquier pregunta relacionada con esta política de privacidad o para ejercer sus derechos, puede contactarnos :",
     "contact_email": "<strong>Por correo electrónico :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - Herramientas PDF en línea gratuitas",
+    "home_desc": "Fusiona, divide, comprime y convierte tus archivos PDF de forma gratuita. Procesamiento seguro directamente en tu navegador sin necesidad de registro.",
+    "about_title": "Acerca de iLoveDoc – Herramientas PDF Gratuitas en Línea",
+    "about_desc": "Descubre iLoveDoc: herramientas PDF gratuitas, seguras y rápidas. Procesamiento 100% del lado del cliente, sin envío de archivos a un servidor. Fusiona, comprime, convierte tus PDF con total confidencialidad.",
+    "privacy_title": "Política de Privacidad – iLoveDoc",
+    "privacy_desc": "Política de privacidad de iLoveDoc. Descubre cómo protegemos tus datos personales, nuestro uso de cookies y tus derechos RGPD.",
+    "terms_title": "Condiciones Generales de Uso – iLoveDoc",
+    "terms_desc": "Condiciones generales de uso del sitio iLoveDoc. Consulta las reglas de acceso y uso de nuestras herramientas PDF gratuitas en línea."
   }
 }

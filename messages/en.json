@@ -701,5 +701,15 @@
         "5": "Manage all your document flows quickly, anywhere, directly from the palm of your hand."
       }
     }
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - Free Online PDF Tools",
+    "home_desc": "Merge, split, compress, and convert your PDF files for free. Secure processing directly in your browser without any registration.",
+    "about_title": "About iLoveDoc – Free Online PDF Tools",
+    "about_desc": "Discover iLoveDoc: free, secure, and fast PDF tools. 100% client-side processing, no file upload to a server. Merge, compress, convert your PDFs with confidentiality.",
+    "privacy_title": "Privacy Policy – iLoveDoc",
+    "privacy_desc": "iLoveDoc Privacy Policy. Learn how we protect your personal data, our use of cookies, and your RGPD rights.",
+    "terms_title": "Terms of Use – iLoveDoc",
+    "terms_desc": "iLoveDoc Terms of Use. Review the access and usage rules for our free online PDF tools."
   }
 }

@@ -299,5 +299,417 @@
     "contact_title": "9. Kontakt",
     "contact_p1": "Jeśli masz jakiekolwiek pytania dotyczące niniejszych Warunków, możesz skontaktować się z nami:",
     "contact_email": "<strong>Poprzez email :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Privacy": {
+    "intro_title": "1. Wprowadzenie",
+    "intro_p1": "Powitamy na <strong>iLoveDoc</strong> (dalej zwanej \"Stronie\"), dostępnej pod adresem <a href=\"https://ilovedoc.com\">https://ilovedoc.com</a>. Ochrona Twoich danych osobowych jest dla nas priorytetem. Poniższa polityka prywatności opisuje jakie informacje zbieramy, jak je wykorzystujemy i jakie są Twoje prawa.",
+    "intro_p2": "Korzystając z Strony, akceptujesz praktyki opisane w tej polityce. Jeśli nie akceptujesz tych warunków, prosimy nie korzystaj z Strony.",
+    "data_title": "2. Dane Zbierane",
+    "data_nav_title": "2.1 Dane nawigacyjne",
+    "data_nav_desc": "Podczas wizyty na Stronie, możemy automatycznie zbierać pewne informacje techniczne za pomocą plików cookie i technologii podobnych :",
+    "data_nav_list": "<ul><li>Adres IP (anonimizowany)</li><li>Typ i wersja przeglądarki</li><li>Sistema operacyjne</li><li>Strony odwiedzone i czas ich przeglądania</li><li>Źródło ruchu (referrer)</li><li>Rozdzielczość ekranu i język przeglądarki</li></ul>",
+    "data_form_title": "2.2 Dane formularza",
+    "data_form_desc": "Jeśli korzystasz z naszego formularza kontaktowego, zbieramy informacje, które podajesz dobrowolnie : imię, adres e-mail, temat i treść wiadomości. Te dane są wykorzystywane wyłącznie do odpowiedzi na Twoją prośbę.",
+    "data_pdf_title": "2.3 Pliki PDF",
+    "data_pdf_desc": "<strong>iLoveDoc nie zbiera, nie przechowuje i nie przekazuje żadnych plików PDF.</strong> Wszystkie operacje na dokumentach (łączenie, kompresja, konwersja itp.) są wykonywane w całości w Twojej przeglądarce, na stronie klienta, dzięki bibliotece <code>pdf-lib</code>. Nie jest wysyłany żaden plik na nasze serwery ani na serwery trzecie.",
+    "cookies_title": "3. Użycie plików cookie",
+    "cookies_desc": "Strona używa różnych typów plików cookie :",
+    "cookies_ess_title": "3.1 Pliki cookie niezbędne",
+    "cookies_ess_desc": "Te pliki cookie są niezbędne do działania Strony (np. preferencje wyświetlania, tryb ciemny). Nie zbierają one danych osobowych identyfikowalnych.",
+    "cookies_ana_title": "3.2 Pliki cookie analityczne",
+    "cookies_ana_desc": "Używamy <strong>Google Analytics</strong> do zrozumienia, jak użytkownicy interagują z Stroną. Google Analytics używa plików cookie do zbierania informacji w sposób anonimizowany (strony odwiedzane, czas sesji itp.). Te dane pomagają nam poprawić doświadczenie użytkownika.",
+    "cookies_ana_link": "Aby dowiedzieć się więcej o sposobie, w jaki Google używa danych : <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener noreferrer\">https://policies.google.com/technologies/partner-sites</a>",
+    "cookies_ads_title": "3.3 Pliki cookie reklamowe (Google AdSense)",
+    "cookies_ads_p1": "Strona używa <strong>Google AdSense</strong> do wyświetlania reklam publicznych. Google AdSense i jego partnerzy reklamowi trzeci mogą używać plików cookie do wyświetlania reklam opartych na Twoich wizytach w przeszłości na tej stronie lub na innych stronach.",
+    "cookies_ads_p2": "<strong>Google, jako dostawca trzeci, używa plików cookie do wyświetlania reklam na Stronie.</strong> Użycie przez Google pliku cookie DART pozwala mu wyświetlać reklamy dla użytkowników w oparciu o ich wizyty na Stronie i na innych stronach internetowych.",
+    "cookies_ads_p3": "Dostawcy trzeci, w tym Google, używają plików cookie do wyświetlania reklam w oparciu o wizyty użytkownika w przeszłości na Twojej stronie internetowej lub na innych stronach internetowych.",
+    "cookies_ads_p4": "Użycie plików cookie reklamowych przez Google pozwala Google i jego partnerom wyświetlać reklamy dla Twoich użytkowników w oparciu o ich wizyty na Twojej stronie i/lub na innych stronach internetowych.",
+    "cookies_opt_title": "3.4 Wyłączenie plików cookie",
+    "cookies_opt_desc": "Możesz zarządzać swoimi preferencjami dotyczącymi plików cookie w kilku sposobach :",
+    "cookies_opt_list": "<ul><li><strong>Ustawienia przeglądarki :</strong> Większość przeglądarek pozwala na odrzucenie lub usunięcie plików cookie za pomocą ustawień prywatności.</li><li><strong>Wyłączenie reklam Google :</strong> Możesz wyłączyć reklamę personalizowaną odwiedzając <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">Ustawienia reklam Google</a>.</li><li><strong>Wyłączenie ogólne :</strong> Możesz wyłączyć pliki cookie reklamowe zewnętrzne odwiedzając <a href=\"https://www.aboutads.info/choices/\" target=\"_blank\" rel=\"noopener noreferrer\">www.aboutads.info/choices/</a> lub <a href=\"https://www.youronlinechoices.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">www.youronlinechoices.eu/</a>.</li><li><strong>NAI Wyłączenie :</strong> Odwiedź stronę <a href=\"https://optout.networkadvertising.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Inicjatywa Reklamowa Sieci</a> aby wyłączyć pliki cookie reklamowych uczestniczących w sieci.</li></ul>",
+    "cookies_opt_note": "Proszę zauważyć, że wyłączenie plików cookie może wpłynąć na niektóre funkcje strony.",
+    "adsense_title": "4. Google AdSense i Dostawcy Zewnętrzni",
+    "adsense_desc": "iLoveDoc wyświetla reklamy za pomocą programu <strong>Google AdSense</strong>. W tym zakresie :",
+    "adsense_list": "<ul><li> Dostawcy zewnętrzni, w tym Google, używają plików cookie do wyświetlania reklam w oparciu o wizyty użytkownika na stronie lub na innych stronach.</li><li>Google używa pliku cookie DoubleClick (DART) do umożliwienia, dla siebie i dla swoich partnerów, wyświetlania reklam opartych na wizytach użytkowników na stronie i/lub na innych stronach internetowych.</li><li>Użytkownicy mogą wyłączyć użycie pliku cookie DART odwiedzając <a href=\"https://www.google.com/settings/ads\" target=\"_blank\" rel=\"noopener noreferrer\">ustawienia reklam Google</a>.</li></ul>",
+    "adsense_note": "Aby uzyskać więcej informacji na temat sposobu, w jaki Google zarządza danymi w swoich produktach reklamowych, odwiedź <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">politykę prywatności Google</a>.",
+    "rgpd_title": "5. Twoje Prawa (RGPD)",
+    "rgpd_desc": "Zgodnie z Rozporządzeniem Ochrony Danych Osobowych (RGPD) i ustawą o informatyce i swobodzie, masz następujące prawa dotyczące swoich danych osobowych :",
+    "rgpd_list": "<ul><li><strong>Prawo dostępu :</strong> Możesz uzyskać potwierdzenie, że dane dotyczące Ciebie są lub nie są przetwarzane, oraz, w przypadku gdy są, dostęp do tych danych.</li><li><strong>Prawo do korekty :</strong> Możesz uzyskać korektę danych nieprawidłowych lub niespełniających.</li><li><strong>Prawo do usunięcia :</strong> Możesz uzyskać usunięcie swoich danych w przypadkach przewidzianych w regulaminie.</li><li><strong>Prawo do ograniczenia przetwarzania :</strong> Możesz zapytać o ograniczenie przetwarzania swoich danych w niektórych okolicznościach.</li><li><strong>Prawo do przenoszenia :</strong> Możesz otrzymać swoje dane w formacie strukturyzowanym, powszechnie używanym i czytelnym przez maszynę.</li><li><strong>Prawo do sprzeciwu :</strong> Możesz się sprzeciwić przetwarzaniu swoich danych z powodów uzasadnionych.</li></ul>",
+    "rgpd_contact": "Aby wykonać te prawa, skontaktuj się z nami na adres : <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>. Odpowiedziemy na Twoją prośbę w ciągu 30 dni.",
+    "rgpd_cnil": "Masz również prawo do złożenia skargi do <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\">Komisji Narodowej ds. Informatyki i Swobód</a>.",
+    "retention_title": "6. Zachowanie Danych",
+    "retention_desc": "Zbierane dane są przechowywane przez czas niezbędny do osiągnięcia celu, dla którego zostały zebrane :",
+    "retention_list": "<ul><li><strong>Dane nawigacyjne (analizy) :</strong> Zachowane przez maksymalnie 26 miesięcy, zgodnie z zaleceniami CNIL.</li><li><strong>Dane kontaktowe :</strong> Zachowane przez 3 lata od ostatniego kontaktu.</li><li><strong>Pliki cookie :</strong> Czas życia plików cookie nie przekracza 13 miesięcy zgodnie z obowiązującymi przepisami.</li><li><strong>Pliki PDF :</strong> Brak przechowywania — pliki nie opuszczają Twojej przeglądarki.</li></ul>",
+    "modifications_title": "7. Modyfikacje niniejszej Polityki",
+    "modifications_p1": "Zastrzegamy sobie prawo do modyfikacji niniejszej polityki prywatności w dowolnym momencie. Każda modyfikacja zostanie opublikowana na tej stronie z odnowioną datą modyfikacji. Zachęcamy do regularnego sprawdzania tej strony, aby pozostać informowanym o naszych praktykach dotyczących ochrony danych.",
+    "modifications_p2": "W przypadku istotnych zmian, będziemy wyświetlać widoczny komunikat na stronie, aby poinformować Cię.",
+    "contact_title": "8. Kontakt",
+    "contact_desc": "Aby dowiedzieć się więcej o niniejszej polityce prywatności lub wykonać swoje prawa, możesz skontaktować się z nami :",
+    "contact_email": "<strong>Poprzez e-mail :</strong> <a href=\"mailto:nexuslogic.pro@gmail.com\">nexuslogic.pro@gmail.com</a>"
+  },
+  "Faq": {
+    "item0_q": "Czy zapisujecie kopię moich plików po ich przetworzeniu?",
+    "item0_a": "Zdecydowanie nie. iLoveDoc przetwarza wszystkie operacje bezpośrednio w Twoim przeglądarce (na stronie klienta). Twoje pliki nigdy nie opuszczają Twojego urządzenia i nie są wysyłane na zdalny serwer. Zostają one 100% pod Twoim kontrolą i w bezpieczeństwie.",
+    "item1_q": "Czy pliki firmowe są bezpieczne wraz z naszym usługą?",
+    "item1_a": "Tak. Póki proces jest przetwarzany lokalnie w Twojej własnej przeglądarce, żaden zewnętrzny podmiot (w tym my sami) nie może uzyskać dostępu do Twoich dokumentów biznesowych. To idealna rozwiązanie dla przestrzegania RGPD i ścisłej poufności biznesowej.",
+    "item2_q": "Jaka jest minimalna konfiguracja systemu?",
+    "item2_a": "Nowoczesna przeglądarka (Chrome, Firefox, Safari lub Edge) z połączeniem z Internetem. Póki obliczenia są przetwarzane lokalnie przez Twoje urządzenie, zalecana jest wystarczająca ilość pamięci RAM dla dokumentów o dużych rozmiarach.",
+    "item3_q": "Jak mogę pobrać moje pliki?",
+    "item3_a": "Jednocześnie z zakończeniem operacji przetwarzania dokumentu pojawia się przycisk pobierania, który umożliwia zapisanie utworzonego pliku bezpośrednio na Twoim urządzeniu.",
+    "item4_q": "Czy mogę przekształcić moje pliki PDF w dokumenty edytowalne?",
+    "item4_a": "Tak. Nasze narzędzia OCR (Rekognicja Optyczna Kodów) i edycji wydobywają tekst z Twoich skanowanych plików PDF, aby uczynić go wybieralnym i edytowalnym bezpośrednio.",
+    "item5_q": "Dlaczego moja konwersja jest tak długa?",
+    "item5_a": "Szybkość zależy głównie od mocy obliczeniowej Twojego urządzenia i rozmiaru pliku, ponieważ przetwarzanie odbywa się lokalnie na Twoim komputerze bez zależności od serwerów zewnętrznych."
+  },
+  "Contact": {
+    "form_title": "Wyślij nam wiadomość",
+    "success_message": "Dziękujemy! Twoja wiadomość została pomyślnie wysłana. Odpowiemy w najkrótszym czasie.",
+    "error_message": "Wystąpił błąd. Spróbuj ponownie później.",
+    "label_name": "Pełne imię",
+    "placeholder_name": "Jan Kowalski",
+    "error_name_required": "Imię jest wymagane.",
+    "label_email": "Adres e-mail",
+    "placeholder_email": "jan@przyklad.pl",
+    "error_email_required": "Adres e-mail jest wymagany.",
+    "error_email_invalid": "Wpisz poprawny adres e-mail.",
+    "label_subject": "Temat",
+    "select_subject": "— Wybierz temat —",
+    "error_subject_required": "Temat jest wymagany.",
+    "subject_option_question": "Pytanie ogólne",
+    "subject_option_bug": "Błąd / Problem techniczny",
+    "subject_option_suggestion": "Propozycja poprawy",
+    "subject_option_partnership": "Partnerstwo / Współpraca",
+    "subject_option_other": "Inne",
+    "label_message": "Wiadomość",
+    "placeholder_message": "Opisz swoją prośbę w szczegółach…",
+    "error_message_required": "Wiadomość jest wymagana.",
+    "error_message_min": "Wiadomość musi zawierać co najmniej 10 znaków.",
+    "btn_submit": "Wyślij wiadomość",
+    "btn_sending": "Wysyłanie w toku…",
+    "info_title": "Informacje kontaktowe",
+    "info_email": "E-mail",
+    "info_response_time": "Czas odpowiedzi",
+    "info_response_val": "W ciągu 48 godzin roboczych",
+    "info_follow": "Zobacz nas",
+    "info_links": "Przydatne linki",
+    "faq_title": "Często zadawane pytania",
+    "faq_item0_q": "iLoveDoc jest naprawdę bezpłatny?",
+    "faq_item0_a": "Tak, wszystkie nasze narzędzia są 100% bezpłatne, bez ograniczeń i bez wymaganej rejestracji.",
+    "faq_item1_q": "Czy moje pliki są wysyłane na serwer?",
+    "faq_item1_a": "Nie. Wszystkie operacje są wykonywane bezpośrednio w przeglądarce. żadne pliki nie opuszczają urządzenia.",
+    "faq_item2_q": "Jaki jest obsługiwany przez iLoveDoc przeglądarka?",
+    "faq_item2_a": "iLoveDoc działa na wszystkich współczesnych przeglądarkach: Chrome, Firefox, Safari, Edge (wersje najnowsze).",
+    "faq_item3_q": "Czy mogę obsługiwać duże pliki?",
+    "faq_item3_a": "Obsługa odbywa się na stronie klienta, więc granica zależy od pamięci urządzenia. Większość dokumentów o rozmiarze typowym jest obsługiwana bez problemów.",
+    "faq_item4_q": "Jak zgłosić błąd?",
+    "faq_item4_a": "Użyj powyższego formularza kontaktowego z tematem \"Błąd / Problem techniczny\" i opisz problem, który napotkałeś."
+  },
+  "Blog": {
+    "all_articles": "Wszystkie artykuły",
+    "recommended_articles": "Artykuły zalecane",
+    "read_more": "Zobacz więcej",
+    "back_to_blog": "Powrót do bloga",
+    "read_time_suffix": "minuty czytania",
+    "share": "Udostępnij :",
+    "back_home": "Strona główna",
+    "title_not_found": "Artykuł nie znaleziony",
+    "fb_label": "Udostępnij na Facebooku",
+    "x_label": "Udostępnij na X",
+    "li_label": "Udostępnij na LinkedIn"
+  },
+  "BlogPosts": {
+    "signatures-numeriques-legales": {
+      "title": "Wartość prawna podpisów elektronicznych wyjaśniona: Co czyni je prawomocnym?",
+      "subtitle": "Zrozumienie ramowego prawnego i wartości prawnej podpisu dokumentu elektronicznego.",
+      "description": "Odkryj, co czyni podpis elektroniczny prawnie wiążący, jak zmieniają się prawo w zależności od kraju, oraz jak chronić swoje dokumenty elektroniczne.",
+      "category": "Sécurité",
+      "date": "20 maja 2025",
+      "readTime": "5 min",
+      "content": {
+        "0": "W wieku pracy zdalnej i numeryzacji procesów, podpisywanie dokumentów elektronicznie stało się codziennością. Ale co o tym myśleć w kwestii wartości prawnej tych podpisów? Są one równoważne podpisowi ręcznemu? Krótko mówiąc, tak, pod warunkiem przestrzegania pewnych zasad.",
+        "1": "Co to jest podpis elektroniczny?",
+        "2": "Podpis elektroniczny (lub cyfrowy) nie jest prostym skanem podpisu ręcznego. Jest to procedura kryptograficzna, która łączy tożsamość podpisującego z dokumentem w sposób niemożliwy do podrobienia. Gwarantuje to dwa kluczowe elementy: autentyczność (kto podpisał) i integralność (dokument nie został zmodyfikowany od momentu podpisania).",
+        "3": "Ram prawny w Europie i na świecie",
+        "4": "W Unii Europejskiej, to rozporządzenie eIDAS określa podpisy elektroniczne. Definiuje ono trzy poziomy podpisu:",
+        "6": "Dlaczego używać iLoveDoc do dokumentów?",
+        "7": "iLoveDoc pozwala dodawać podpisy do dokumentów bezpośrednio w przeglądarce. Ponieważ żaden plik nie jest przesyłany na nasze serwery, informacje pozostają całkowicie poufne. Jest to idealny narzędzie dla szybkich, bezpiecznych i zgodnych z najlepszymi praktykami sieciowych podpisów.",
+        "8": "Podsumowanie, podpisywanie elektronicznie nie tylko jest prawne, ale jest również znacznie bezpieczniejsze niż podpis ręczny papierowy, jeśli używa się odpowiednich narzędzi. Zastąp podpis elektroniczny od dziś!",
+        "5_item0": "Podpis prosty (np. zaznaczenie pola lub wprowadzenie obrazu podpisu). Jest prawny, ale jego wartość dowodowa jest ograniczona.",
+        "5_item1": "Podpis zaawansowany, który wymaga bardziej rygorystycznych kryteriów identyfikacji i połączenia z podpisującym.",
+        "5_item2": "Podpis z jakością (QES), który jest prawnie równoważny 100% z podpisem ręcznym i używa weryfikowanego certyfikatu tożsamości."
+      }
+    },
+    "fusionner-pdf-et-jpg": {
+      "title": "Jak połączyć pliki PDF i JPG w jeden dokument (w sposób prosty)",
+      "subtitle": "Połącz pliki PDF i obrazy JPG w jednym dokumencie — szybko, łatwo i bez pobierania.",
+      "description": "Odkryj, jak połączyć pliki PDF i JPG w jeden dokument z iLoveDoc. Szybko, łatwo i bezpośrednio z Twojej przeglądarki.",
+      "category": "Połączenie",
+      "date": "20 maja 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Potrzebujesz połączyć plik PDF i obraz JPG? Czy przygotowujesz raport, składasz dokumenty administracyjne lub chcesz po prostu wszystko zebrać w jednym pliku, wyjaśnimy wszystko.",
+        "1": "Połączenie różnych typów plików może wydawać się skomplikowane, ale w rzeczywistości jest to bardzo proste. W tym przewodniku wyjaśnimy, jak postąpić z iLoveDoc — bez pobierania i w sposób bardzo prosty.",
+        "2": "Krok 1: Przekształcanie obrazów JPG w PDF",
+        "3": "Przed połączeniem, najłatwiej jest przekształcić obrazy JPG w format PDF. Na iLoveDoc, przejdź do narzędzia 'JPG w PDF'. Złóż swoje obrazy, dostosuj orientację lub marginesy, jeśli to konieczne, i kliknij Przekształć. Otrzymasz plik PDF zawierający obrazy.",
+        "4": "Krok 2: Połączenie dwóch PDF",
+        "5": "Po przekształceniu swojego obrazu w PDF, przejdź do narzędzia 'Połącz PDF'. Wprowadź swój dokument oryginalny i nowy PDF zawierający obraz. Możesz uporządkować pliki przez prosty przeciągnięcie i upuszczanie. Kliknij 'Połącz PDF' aby pobrać plik końcowy połączony.",
+        "6": "I to wszystko! W dwóch szybkich krokach, całkowicie przeprowadzonych w Twojej przeglądarce bez ryzyka dla Twoich danych, połączyłeś swoje pliki w sposób profesjonalny."
+      }
+    },
+    "modifier-pdf-sans-adobe": {
+      "title": "Czy mogę zmodyfikować plik PDF bez Adobe Acrobat ? Oto jak to zrobić z pomocą iLoveDoc",
+      "subtitle": "W pełni darmowa i bezpłatna wersja online do edycji tekstu i anotacji bez kosztownych licencji.",
+      "description": "Musisz zmodyfikować plik PDF, ale nie masz Adobe Acrobat ? Oto jak używać iLoveDoc za darmo, bez pobierania i bez specjalistycznych umiejętności.",
+      "category": "Edytuj",
+      "date": "20 maja 2025",
+      "readTime": "4 min",
+      "content": {
+        "0": "Adobe Acrobat jest od dawna uważany za standard do edycji plików PDF, ale koszt miesięcznej subskrypcji może być zbyt wysoki dla potrzeb krótkoterminowych. Na szczęście istnieją nowoczesne i darmowe alternatywy.",
+        "1": "Dlaczego format PDF jest trudny do modyfikacji ?",
+        "2": "Plik PDF został zaprojektowany jako format drukowania numerycznego, który jest zamrożony. W przeciwieństwie do dokumentu Word, nie zawiera struktury przepływu tekstu płynnego, ale zamiast tego zawiera stałe współrzędne dla każdego znaku. Dlatego edycja plików PDF wymaga specjalistycznych narzędzi.",
+        "3": "Narzędzie edycyjne iLoveDoc",
+        "4": "Z narzędziem 'Edytuj PDF' w iLoveDoc możesz bezpośrednio dodać obszary tekstu, rysować formy lub wstawić obrazy na powierzchnię pliku PDF. Proces jest wykonywany na kliencie, co gwarantuje natychmiastową reakcję i optymalną bezpieczeństwo.",
+        "6": "Nie musisz wydawać fortun na drogie licencje. iLoveDoc udostępnia wszystkie niezbędne narzędzia za darmo i bez ograniczeń.",
+        "5_item0": "Dodaj klarowne anotacje dla swoich współpracowników.",
+        "5_item1": "Zakryj niepotrzebne partie tekstu.",
+        "5_item2": "Nadaj podpis lub logo w kilku kliknięciach."
+      }
+    },
+    "reduire-taille-pdf-100ko": {
+      "title": "Jak zmniejszyć rozmiar pliku PDF do mniej niż 100 Ko",
+      "subtitle": "Porady i rozwiązania do kompresji dokumentów bez utraty jakości, aby umożliwić przesyłanie formularzy administracyjnych.",
+      "description": "Potrzebujesz wysłać plik PDF o rozmiarze mniejszym niż 100 Ko ? Użyj narzędzia 'Podziel według rozmiaru' lub naszego kompresora, aby zmniejszyć pliki bez utraty jakości.",
+      "category": "Optymalizuj",
+      "date": "20 maja 2025",
+      "readTime": "3 min",
+      "content": {
+        "0": "Wiele portali administracyjnych i szkolnych nakłada ograniczenie rozmiaru pliku do 100 Ko lub 200 Ko. Jeśli Twój plik PDF jest zbyt ciężki, nie martw się, istnieją proste metody.",
+        "1": "Metoda 1: Kompresja inteligentna",
+        "2": "Narzędzie 'Kompresuj PDF' w iLoveDoc analizuje obrazy i zasoby pliku i zmniejsza ich rozdzielczość bez zmiany czytelności tekstu. Jest to idealna metoda do zachowania integralności pliku i zmniejszenia jego rozmiaru.",
+        "3": "Metoda 2: Usuwanie stron niepotrzebnych",
+        "4": "Czasami dokument zawiera strony zabezpieczające lub aneksy, które nie są wymagane. Używając narzędzia 'Usuń strony', możesz zmniejszyć rozmiar pliku, zachowując tylko niezbędne informacje.",
+        "5": "Dzięki naszej optymalizacji, możesz pozostać poniżej 100 Ko i przesyłać pliki bez problemów na wszystkie strony administracyjne."
+      }
+    },
+    "trois-methodes-editer-pdf": {
+      "title": "Trzy metody edycji PDF",
+      "subtitle": "Odkryj metodę, która najlepiej odpowiada Twoim potrzebom.",
+      "description": "Odkryj najlepsze sposoby modyfikowania PDF z dokładnością przy użyciu narzędzi online, od konwersji PDF do modyfikacji zawartości oryginalnego pliku.",
+      "category": "Edycja",
+      "date": "13 marca 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "Modyfikacja PDF może być podejmowana w różny sposób w zależności od oczekiwanego wyniku. Oto trzy główne metody, które warto rozważyć.",
+        "1": "Metoda 1: Edycja bezpośrednia (odnotowania i dodatki)",
+        "2": "Idealna do wypełniania niestandardowych formularzy, dodawania komentarzy lub rysowania na mapie. Możesz użyć online edytora z iLoveDoc, aby napisac na powyżej istniejących elementów.",
+        "3": "Metoda 2: Konwersja na Word",
+        "4": "Jeśli musisz ponownie napisac całe akapity lub zmienic strukturę dokumentu, najlepiej jest przekonwertować PDF na Word. Po dokonaniu zmian w Word, możesz ponownie wyeksportować go w formacie PDF.",
+        "5": "Metoda 3: Spłaszczenie i połączenie",
+        "6": "Aby zabezpieczyć swoje zmiany i uniemożliwić innym osobom edytowanie pól, zastosuj spłaszczenie (flattening) na swoim modyfikowanym pliku.",
+        "7": "Wybierz metodę dostosowaną do Twojego przepływu pracy i zyskaj w efektywności codziennie!"
+      }
+    },
+    "convertir-jpg-en-word": {
+      "title": "Jak przekonwertować JPG na Word edytowalny",
+      "subtitle": "Wydobywaj tekst z Twoich zdjęć, aby uczynić go edytowalnym w kilka sekund.",
+      "description": "Naucz się korzystać z narzędzi konwersji z iLoveDoc, aby przekonwertować pliki graficzne na edytowalne pliki Word.",
+      "category": "Konwersja",
+      "date": "28 lutego 2024",
+      "readTime": "3 min",
+      "content": {
+        "0": "Przekonwertowanie zdjęcia JPG zawierającego tekst na edytowalny plik Word (.docx) jest niezbędne, jeśli chcesz ponownie wykorzystać lub poprawić tekst skanowany lub fotografowany.",
+        "1": "Jak działa rozpoznawanie tekstu?",
+        "2": "Ten proces wykorzystuje OCR (Rekognicja Optyczna Kodów). Algoritmy analizują piksele zdjęcia, identyfikują kształty liter i konwertują je na kodowane numerycznie znaki tekstu.",
+        "3": "Działanie na iLoveDoc",
+        "4": "Wystarczy przesłać swój plik JPG do narzędzia konwersji obrazu. Nasz narzędzie wydobywa zawartość tekstową i generuje dokument Word, który można natychmiast otworzyć i edytować w Word, LibreOffice lub Google Docs.",
+        "5": "Zyskaj cenny czas, unikając ręcznego ponownego wpisywania Twoich dokumentów drukowanych!"
+      }
+    },
+    "convertir-jpg-en-excel": {
+      "title": "Przekształcanie JPG w Excel z tych bezpłatnych narzędzi",
+      "subtitle": "Pobierz tabele z Twoich obrazów numerycznych bezpośrednio w formacie Excel.",
+      "description": "Ten przewodnik pokaże, jak korzystać z narzędzi iLoveDoc, aby przekształcić JPG w modyfikowalną arkusz kalkulacyjny Excel.",
+      "category": "Convertir",
+      "date": "21 lut 2024",
+      "readTime": "4 min",
+      "content": {
+        "0": "Masz drukowany lub zrzut ekranu tabeli danych i chcesz je przeanalizować w Excelie? Kopiowanie cyfr jeden po drugim jest uciążliwe i źródłem błędów. Oto rozwiązanie.",
+        "1": "Inteligentna ekstrakcja wierszy i kolumn",
+        "2": "Obok rozpoznawania znaków, algorytm ekstrakcji identyfikuje strukturę tabeli (ramki, oddzielanie kolumn i nagłówki) w celu odwzorowania wiernie siatki kalkulacyjnej.",
+        "3": "Eksport do Excela",
+        "4": "Przeciągnij i upuść obrazek na naszym narzędziu konwertującym JPG w Excel. Siatka danych zostaje odtworzona i jest dostępna w formacie .xlsx. Możesz następnie zastosować swoje formuły sumy, sortowania lub grafiki normalnie.",
+        "5": "Uproszczone rozrachunki i przetwarzanie danych cyfrowych dzięki inteligentnemu przekształcaniu iLoveDoc!"
+      }
+    },
+    "reparer-pdf-corrompu": {
+      "title": "Jak naprawić zepsuty plik PDF za darmo?",
+      "subtitle": "Odkryj, jak odzyskać swoje dokumenty PDF niedostępne w sieci.",
+      "description": "Twój plik PDF odmówił otwarcia? Odkryj, jak naprawić zepsuty PDF w sieci za darmo i odzyskać swoje dane bez ryzyka.",
+      "category": "Réparer",
+      "date": "28 maj 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Nie ma nic gorszego niż otrzymanie komunikatu o błędzie informującego, że ważny dokument PDF jest zepsuty i nie może być otwarty. Na szczęście istnieją bezpłatne rozwiązania w sieci, które mogą przywrócić Twoje dane.",
+        "1": "Dlaczego PDF staje się niedostępny?",
+        "2": "Przerwa w sieci podczas pobierania, błąd systemowy Twojego programu do edycji tekstu lub problem z przenoszeniem na klawisz USB są głównymi przyczynami zepsucia. W większości przypadków dane wewnętrzne dokumentu są niezmienione, ale nagłówek pliku jest uszkodzony.",
+        "3": "Naprawa w sieci z iLoveDoc",
+        "4": "Narzędzie naprawcze iLoveDoc analizuje strukturę binarną Twojego zepsutego pliku i odtwarza uszkodzony nagłówek w kilka sekund w Twoim przeglądarce, gwarantując bezpieczeństwo absolutne.",
+        "5": "Nie oddawaj swoich utraconych plików! Użyj darmowego naprawcę, aby odzyskać dostęp do Twoich informacji natychmiast."
+      }
+    },
+    "modifier-texte-pdf-gratuit": {
+      "title": "Jak zmodyfikować tekst PDF za darmo bez instalacji oprogramowania?",
+      "subtitle": "Praktyczny przewodnik do edycji tekstu dokumentów PDF bezpośrednio w sieci.",
+      "description": "Praktyczny przewodnik do edycji tekstu dokumentów PDF w sieci za darmo. Zmień, dodaj lub usunij tekst bez instalacji Adobe Acrobat Pro.",
+      "category": "Edytowanie",
+      "date": "28 maja 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "Zmiana tekstu bezpośrednio wewnątrz dokumentu PDF jest częstym potrzebą, ale oprogramowanie biurowe takie jak Acrobat Pro kosztuje dużo. Pokażemy, jak ominąć tę granicę.",
+        "1": "Bezpłatny edytor w sieci iLoveDoc",
+        "2": "Dzięki naszemu narzędziowi do edycji w sieci możesz pisać tekst bezpośrednio na powyżej dokumentu oryginalnego, ukryć dane poufne za pomocą prostokątów przeźroczystych lub wstawić obrazy i logo.",
+        "3": "Konwersja Word dla ważnych zmian",
+        "4": "Jeśli musisz ponownie napisac całe akapity, zaleca się najpierw przekonwertować swój PDF na format Word (.docx), wykonać zmiany na swoim ulubionym edytorze tekstu, a następnie wyeksportować go ponownie w formacie PDF.",
+        "5": "Zmień dokumenty według swoich potrzeb, wybierając narzędzie do edycji bezpośrednio lub konwersję Word na iLoveDoc."
+      }
+    },
+    "impression-pdf-caracteres-bizarres": {
+      "title": "Dlaczego moje PDF drukuje się z dziwnymi znakami?",
+      "subtitle": "Poprawienie hieroglifów, symboli i błędów w polskach podczas drukowania PDF.",
+      "description": "Twoja drukarka wypuszcza arkusze wypełnione dziwnymi symbolami, hieroglifami lub prostokątami? Dowiedz się, jak poprawić ten problem z drukowaniem PDF.",
+      "category": "Pomoc",
+      "date": "28 maja 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "Czasami drukowanie dokumentu PDF powoduje wydrukowanie szeregu niezrozumiałych symboli lub prostokątów białych zamiast oryginalnych liter. Ten problem jest związany z polskami.",
+        "1": "Problem z polskami niezaincorporowanymi",
+        "2": "Jeśli twórca PDF nie włączył (zaincorporował) polsków w pliku, drukarka próbuje je zastąpić. Jeśli nie znajduje odpowiednika, drukuje hieroglify.",
+        "3": "Ogólna rozwiązanie: Aplasowanie lub drukowanie jako obraz",
+        "4": "Aby rozwiązać ten błąd, zaznacz opcję 'Drukuj jako obraz' w ustawieniach Twojej przeglądarki lub przesłać plik do narzędzia 'Aplasowanie PDF' na iLoveDoc przed uruchomieniem drukowania.",
+        "5": "Przekształcając teksty wektorowe w geometryczne, stałe formy (aplasywanie), zapewniasz drukowanie idealne na dowolnym modelu drukarki."
+      }
+    },
+    "compresser-pdf-sans-perte": {
+      "title": "Jak skompresować plik PDF bez utraty jakości do wysłania pocztą elektroniczną?",
+      "subtitle": "Zmniejsz rozmiar swoich plików PDF, zachowując maksymalną wyrazistość.",
+      "description": "Zmniejsz rozmiar swoich plików PDF, aby móc wysłać je pocztą elektroniczną bez pogorszenia czytelności. Przykłady skompresowania online 100% bezpłatne.",
+      "category": "Optymalizacja",
+      "date": "28 maja 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Poczty elektroniczne często odrzucają załączniki przekraczające 10 lub 20 MB. Skompresowanie pliku PDF jest niezbędne, aby zapewnić jego dostarczenie.",
+        "1": "Optymalizacja inteligentna vs degradacja bezpośrednia",
+        "2": "Nasz narzędzie kompresji nie zmienia tekstów. Celem jest skompresowanie wyłącznie wstawionych obrazów, dostosowując ich rozdzielczość (DPI) i usuwając nieaktualne metadane gromadzone w trakcie modyfikacji.",
+        "3": "Jaki poziom kompresji wybrać?",
+        "4": "Ofiarujemy trzy tryby: silna kompresja (dla pliku ekstremalnie lekkiego), kompresja zalecana (optymalny balans) oraz lekka kompresja (jakość maksymalna).",
+        "5": "Kompresuj pliki lokalnie w przeglądarce, zachowując pełny kontrolę nad stosunkiem rozmiaru do jakości."
+      }
+    },
+    "copier-texte-pdf-scanne": {
+      "title": "Jak skopiować tekst z pliku PDF skanowanego lub obrazu?",
+      "subtitle": "Użyj rozpoznawania optycznego znaków (OCR) do skopiowania tekstu.",
+      "description": "Nie możesz wybrnąć lub skopiować tekstu z pliku PDF? Naucz się przekształcić plik PDF skanowany w tekst edytowalny dzięki OCR bezpłatnemu.",
+      "category": "OCR",
+      "date": "28 maja 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Jeśli nie możesz wybrnąć lub skopiować tekstu dokumentu, to prawdopodobnie jest to tylko obraz dokumentu numeryczny (scan) lub blokada ochronna uniemożliwiająca kopiowanie.",
+        "1": "Aktywuj rozpoznawanie znaków (OCR)",
+        "2": "OCR (Rozpoznawanie Optyczne Znaku) to technologia, która skanuje wizualnie piksele pliku PDF, aby wydobyć słowa i przekształcić je w znaki informatyczne indeksowane.",
+        "3": "Prosta metoda na iLoveDoc",
+        "4": "Wstaw swój skan w nasze narzędzie 'OCR PDF'. Algoritmus wykonuje się lokalnie, aby wygenerować nowy plik PDF w pełni czytelny, w którym możesz skopiować i wkleić wszystkie akapity.",
+        "5": "Przekształcaj swoje skany w dokumenty pracy dynamiczne i oszczędź czas w codziennych czynnościach."
+      }
+    },
+    "convertir-pdf-word-mise-en-page": {
+      "title": "Konwertowanie PDF na Word bez zmiany układu",
+      "subtitle": "Porady konwersji, aby uniknąć przesunięć tekstu i tabel.",
+      "description": "Nudzi Cię to, że podczas konwersji pojawiają się przesunięte tabelki i niezrównoważony tekst? Oto, jak konwertować PDF na Word, zachowując oryginalny format.",
+      "category": "Konwertuj",
+      "date": "28 maja 2026",
+      "readTime": "5 min",
+      "content": {
+        "0": "Konwersja PDF na Word może czasem powodować przesunięcia linii tekstu lub zerwanie tabel. Przesunięcie to wynika z braku wskazówek marginesów elastycznych w formacie PDF.",
+        "1": "Wybierz silnik konwersji o wysokiej wierności",
+        "2": "Konwerter iLoveDoc analizuje wizualną topografię oryginalnego dokumentu i tworzy strukturę akapitów i tabel native w Word, aby zmniejszyć do minimum ręczne poprawy.",
+        "3": "Porady praktyczne po konwersji",
+        "4": "Jeśli obserwujesz małe błędy, użyj reguły tabulacji zamiast przycisku spację, aby zrównoważyć bloki tekstu, a następnie sprawdź, czy obrazy są poprawnie przypisane.",
+        "5": "Konwersja lokalna na iLoveDoc oferuje czysty dokument .docx gotowy do edycji."
+      }
+    },
+    "mot-de-passe-pdf-oublie": {
+      "title": "Zapomniany hasło PDF: Jak otworzyć zablokowany plik?",
+      "subtitle": "Pomocne rozwiązania i narzędzia prawne do odblokowania plików PDF.",
+      "description": "Zapomniałeś hasła do swojego własnego dokumentu PDF? Dowiedz się, jak odblokować i usunąć ochronę pliku PDF w sposób legalny.",
+      "category": "Bezpieczeństwo",
+      "date": "28 maja 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Szyfrowanie PDF jest dobrym pomysłem, aby go zabezpieczyć, ale zapomnienie własnego hasła zablokuje dostęp do własnych raportów oficjalnych lub dokumentów osobistych.",
+        "1": "Usuń ograniczenia korzystania",
+        "2": "Dla ograniczeń edycji (hasło właściciela), nasz narzędzie 'Odblokuj PDF' natychmiast usuwa zablokowanie lokalne, aby dać Ci prawa do kopiowania i drukowania.",
+        "3": "Co zrobić w przypadku hasła otwarcia (szyfrowania AES)?",
+        "4": "Aby otworzyć dokument zabezpieczony, klucz użytkownika pozostaje obowiązkowy. Po raz pierwszy wprowadzony na naszej platformie bezpieczeństwa, narzędzie go usunie na zawsze dla Twoich kolejnych odczytów.",
+        "5": "Dostarczaj swoje dokumenty z ograniczeniami powtarzania wprowadzania hasła dzięki odblokowaniu bezpiecznemu."
+      }
+    },
+    "bug-previsualisation-pdf-windows": {
+      "title": "Rozwiązywanie błędu okna prewizualizacji PDF na Windowsie",
+      "subtitle": "Przywróć wyświetlanie prewizualizacji PDF w Twoim Eksploratorze plików.",
+      "description": "Jeśli Eksplorator Windows nie wyświetla już prewizualizacji Twoich plików PDF lub wyświetla błąd, oto jak szybko aktywować prewizualizację PDF.",
+      "category": "Pomoc",
+      "date": "28 maja 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Okno prewizualizacji Eksploratora Windows jest bardzo przydatne do szybkiego sprawdzenia zawartości dokumentu, ale czasami zdarza się, że zatrzymuje się lub wyświetla czarny ekran.",
+        "1": "Dlaczego okno prewizualizacji zatrzymuje się?",
+        "2": "Instalacja lub aktualizacja oprogramowania do odtwarzania mediów zmienia ustawienia systemowe (handlers). Windows zostaje wtedy zmuszony do pracy z kilkoma silnikami, które konkurują o wyświetlanie renderowania.",
+        "3": "Jak poprawić problem z prewizualizacją?",
+        "4": "Otwórz ustawienia folderów, sprawdź, czy pole 'Pokaż zarządców prewizualizacji' jest zaznaczone, a następnie zresetuj domyślny odtwarzacz w ustawieniach Windows.",
+        "5": "Dobrze skonfigurowany system ułatwia codzienne nawigowanie wśród Twoich folderów zawierających dokumenty."
+      }
+    },
+    "signer-pdf-sans-imprimante": {
+      "title": "Jak wypełnić i podpisać dokument PDF bez drukarki?",
+      "subtitle": "Podpisuj swoje dokumenty i umowy elektronicznie i za darmo.",
+      "description": "Drukowanie nie jest już potrzebne! Dowiedz się, jak wypełnić formularz i dodać swoją podpis na PDF online za darmo w 2026 roku.",
+      "category": "Podpisywanie",
+      "date": "28 maja 2026",
+      "readTime": "4 min",
+      "content": {
+        "0": "Drukowanie kontraktu, podpisowanie go ręcznie, a następnie skanowanie, aby go wysłać, jest stracony czasem, papierem i tuszem. Dziś jest to bardzo proste do zrobienia w 100% w formie cyfrowej.",
+        "1": "Prawo o podpisie elektronicznym",
+        "2": "W Europie (rozporządzenie eIDAS) i we Francji podpisane elektronicznie mają taką samą wartość prawną jak podpis papierowy w większości umów handlowych.",
+        "3": "Podpisywanie na iLoveDoc w kilku krokach",
+        "4": "Importuj kontrakt, narysuj swoją podpis na ekranie dotykowym lub załaduj zdjęcie podpisu, a następnie przeciągnij go do linii porozumienia. Dokument końcowy jest skompilowany w sposób bezpieczny bez przechodzenia przez serwer.",
+        "5": "Pasa do zera papieru i uproszczone podpisywanie Twoich ofert i umów zawodowych."
+      }
+    },
+    "fusionner-pdf-sur-smartphone": {
+      "title": "Jak połączyć i uporządkować pliki PDF na smartfonie?",
+      "subtitle": "Kombinuj i zarządzaj swoimi dokumentami PDF bezpośrednio z smartfonem.",
+      "description": "Potrzebujesz połączyć pliki PDF z telefonu? Dowiedz się, jak połączyć, posortować i połączyć pliki PDF na iPhone i Android za darmo.",
+      "category": "Mobile",
+      "date": "28 maja 2026",
+      "readTime": "3 min",
+      "content": {
+        "0": "Montaż części potwierdzających lub raportów musi czasami być wykonany w nagłych wypadkach w sytuacji mobilności. Na szczęście, telefon wystarcza.",
+        "1": "Połączenie mobilne bez zewnętrznej aplikacji",
+        "2": "Nie ma potrzeby nadmiernego obciążania pamięci telefonu aplikacjami płatnymi. Zaloguj się na stronę iLoveDoc z telefonu komórkowego (Safari na iPhone, Chrome na Android).",
+        "3": "Przeciągnij i upuść na ekranie dotykowym",
+        "4": "Nasza interaktywna powierzchnia dotykowa pozwala na ponowne uporządkowanie stron, przeciągając je palcem, i kompilowanie plików PDF natychmiast i w sposób 100% bezpieczny.",
+        "5": "Zarządzaj wszystkimi przepływami dokumentów szybko, gdziekolwiek, bezpośrednio z kieszeni ręki."
+      }
+    }
+  },
+  "Metadata": {
+    "home_title": "iLoveDoc - Narzędzia PDF w przeglądarce bezpłatnie",
+    "home_desc": "Łącz, dziel, kompresuj i konwertuj swoje pliki PDF za darmo. Bezpieczny proces w przeglądarce bez rejestracji.",
+    "about_title": "O iLoveDoc – Narzędzia PDF Darmowe w Internecie",
+    "about_desc": "Zobacz, co oferuje iLoveDoc: bezpłatne, bezpieczne i szybkie narzędzia PDF. Cały proces odbywa się na kliencie, bez wysyłania plików na serwer. Łącz, kompresuj, konwertuj swoje pliki PDF z pełną poufnością.",
+    "privacy_title": "Polityka Prywatności – iLoveDoc",
+    "privacy_desc": "Polityka prywatności iLoveDoc. Dowiedz się, jak chronimy Twoje dane osobowe, naszą użycie plików cookie i Twoje prawa RGPD.",
+    "terms_title": "Warunki Użytkowania – iLoveDoc",
+    "terms_desc": "Warunki korzystania z witryny iLoveDoc. Zobacz zasady dostępu i korzystania z naszych bezpłatnych narzędzi PDF w Internecie."
   }
 }

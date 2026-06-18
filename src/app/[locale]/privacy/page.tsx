@@ -1,27 +1,30 @@
-import type { Metadata } from 'next';
 import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import styles from './legal.module.css';
 
-export const metadata: Metadata = {
-  title: 'Politique de Confidentialité – iLoveDoc',
-  description:
-    'Politique de confidentialité de iLoveDoc. Découvrez comment nous protégeons vos données personnelles, notre utilisation des cookies et vos droits RGPD.',
-  openGraph: {
-    title: 'Politique de Confidentialité – iLoveDoc',
-    description:
-      'Politique de confidentialité et protection des données personnelles.',
-    url: 'https://ilovedoc.com/privacy',
-    siteName: 'iLoveDoc',
-    type: 'website',
-    locale: 'fr_FR',
-  },
-  alternates: {
-    canonical: 'https://ilovedoc.com/privacy',
-  },
-};
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
+  const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  return {
+    title: t('privacy_title'),
+    description: t('privacy_desc'),
+    openGraph: {
+      title: t('privacy_title'),
+      description: t('privacy_desc'),
+      url: `https://ilovedoc.com/${locale}/privacy`,
+      siteName: 'iLoveDoc',
+      type: 'website',
+      locale: locale,
+    },
+    alternates: {
+      canonical: `https://ilovedoc.com/${locale}/privacy`,
+    },
+  };
+}
 
 export default function PrivacyPage() {
   const tFooter = useTranslations('Footer');

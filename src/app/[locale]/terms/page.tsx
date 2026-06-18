@@ -1,27 +1,30 @@
-import type { Metadata } from 'next';
 import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import styles from '../privacy/legal.module.css';
 
-export const metadata: Metadata = {
-  title: "Conditions Générales d'Utilisation – iLoveDoc",
-  description:
-    "Conditions générales d'utilisation du site iLoveDoc. Consultez les règles d'accès et d'utilisation de nos outils PDF gratuits en ligne.",
-  openGraph: {
-    title: "Conditions Générales d'Utilisation – iLoveDoc",
-    description:
-      "Conditions générales d'utilisation de nos outils PDF gratuits.",
-    url: 'https://ilovedoc.com/terms',
-    siteName: 'iLoveDoc',
-    type: 'website',
-    locale: 'fr_FR',
-  },
-  alternates: {
-    canonical: 'https://ilovedoc.com/terms',
-  },
-};
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
+  const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  return {
+    title: t('terms_title'),
+    description: t('terms_desc'),
+    openGraph: {
+      title: t('terms_title'),
+      description: t('terms_desc'),
+      url: `https://ilovedoc.com/${locale}/terms`,
+      siteName: 'iLoveDoc',
+      type: 'website',
+      locale: locale,
+    },
+    alternates: {
+      canonical: `https://ilovedoc.com/${locale}/terms`,
+    },
+  };
+}
 
 export default function TermsPage() {
   const tFooter = useTranslations('Footer');

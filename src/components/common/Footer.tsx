@@ -16,7 +16,7 @@ const socials = [
 
 const LANGUAGES = [
   'English', 'Español', 'Français', 'Deutsch', 'Italiano', 'Português', '日本語', 'Русский', '한국어',
-  '中文 (简体)', '中文 (繁體)', 'العربية', 'Български', 'Català', 'Nederlands', 'Ελληνικά', 'हिन्दी', 'Bahasa Indonesia',
+  '中文 (简体)', 'العربية', 'Български', 'Català', 'Nederlands', 'Ελληνικά', 'हिन्दी', 'Bahasa Indonesia',
   'Bahasa Melayu', 'Polski', 'Svenska', 'ภาษาไทย', 'Türkçe', 'Українська', 'Tiếng Việt', 'Kiswahili',
   'Azərbaycan', 'Čeština', 'Dansk', 'Euskara', 'فارسی', 'Gaeilge', 'Hrvatski', 'Magyar', 'മലയാളം', 'Norsk', 'Română', 'Slovenčina', 'Slovenščina', 'Српски'
 ];
@@ -31,8 +31,7 @@ const LANGUAGE_CODES: Record<string, string> = {
   '日本語': 'ja',
   'Русский': 'ru',
   '한국어': 'ko',
-  '中文 (简体)': 'zh-CN',
-  '中文 (繁體)': 'zh-TW',
+  '中文 (简体)': 'zh',
   'العربية': 'ar',
   'Български': 'bg',
   'Català': 'ca',

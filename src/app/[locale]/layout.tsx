@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import GoogleTranslate from '@/components/common/GoogleTranslate';
 import ScrollToTop from '@/components/common/ScrollToTop';
 import CookieConsent from '@/components/common/CookieConsent';
@@ -107,6 +107,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
   const seo = seoData[locale] || defaultSeo;
 
+  let title = 'iLoveDoc';
+  let description = '';
+  try {
+    const t = await getTranslations({ locale, namespace: 'Metadata' });
+    title = t('home_title');
+    description = t('home_desc');
+  } catch (e) {
+    // Fallback if translations fail
+  }
+
   // Build hreflang alternates for all locales
   const languages: Record<string, string> = {};
   for (const loc of routing.locales) {
@@ -116,11 +126,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return {
     title: {
-      default: seo.title,
+      default: title,
       template: '%s | iLoveDoc',
     },
-    description: seo.description,
-    keywords: seo.keywords,
+    description: description,
     authors: [{ name: 'iLoveDoc' }],
     creator: 'iLoveDoc',
     publisher: 'iLoveDoc',
@@ -133,8 +142,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: 'website',
       locale: locale,
       url: locale === routing.defaultLocale ? '/' : `/${locale}`,
-      title: seo.title,
-      description: seo.description,
+      title: title,
+      description: description,
       siteName: 'iLoveDoc',
       images: [
         {
@@ -147,8 +156,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     twitter: {
       card: 'summary_large_image',
-      title: seo.title,
-      description: seo.description,
+      title: title,
+      description: description,
       images: ['/og-image.png'],
     },
     robots: {
@@ -176,20 +185,20 @@ export const viewport: Viewport = {
 };
 
 
-function JsonLd() {
+function JsonLd({ description }: { description: string }) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'iLoveDoc',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com',
     logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com'}/logo.png`,
-    description:
-      'Outils PDF en ligne gratuits : fusionner, compresser, convertir et éditer des fichiers PDF.',
+    description: description,
     sameAs: [],
     contactPoint: {
       '@type': 'ContactPoint',
+      telephone: '',
       contactType: 'customer service',
-      availableLanguage: ['French', 'English'],
+      email: 'contact@ilovedoc.com',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -309,7 +318,7 @@ export default async function RootLayout({
             `,
           }}
         />
-        <JsonLd />
+        <JsonLd description={messages?.Metadata?.home_desc || ''} />
         {process.env.NODE_ENV === 'production' && <GoogleAdSense />}
       </head>
       <body className={inter.className}>
