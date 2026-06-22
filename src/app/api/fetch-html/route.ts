@@ -9,6 +9,25 @@ const FETCH_TIMEOUT_MS = 10_000; // 10s
 const MAX_RESPONSE_BYTES = 5_000_000; // 5 MB
 const MAX_REDIRECTS = 3;
 
+/* ── Rate Limiter (in-memory) ───────────────────────── */
+const WINDOW_MS = 60_000; // 1 minute
+const MAX_REQUESTS = 50;  // 50 requests per minute per IP
+
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || now > entry.resetTime) {
+    // start a new window
+    rateLimitMap.set(ip, { count: 1, resetTime: now + WINDOW_MS });
+    return true;
+  }
+  if (entry.count >= MAX_REQUESTS) return false;
+  entry.count++;
+  return true;
+}
+
 /**
  * Returns true if the IP (v4 or v6) targets a private, loopback,
  * link-local, or otherwise non-routable range.
@@ -74,7 +93,17 @@ export async function GET(request: Request) {
   const referer = headersList.get('referer') || '';
   const origin = headersList.get('origin') || '';
   const host = headersList.get('host') || '';
-  
+  const forwarded = headersList.get('x-forwarded-for') || headersList.get('x-real-ip') || '';
+  const clientIp = forwarded.split(',')[0].trim() || 'unknown';
+
+  // Rate limiting check
+  if (!checkRateLimit(clientIp)) {
+    return NextResponse.json(
+      { error: 'Trop de requêtes. Veuillez patienter avant de réessayer.' },
+      { status: 429, headers: { 'Retry-After': String(Math.ceil(WINDOW_MS / 1000)) } }
+    );
+  }
+
   // In production, require strict matching of origin or referer
   if (process.env.NODE_ENV === 'production') {
     const isAllowed = referer.includes(host) || origin.includes(host);

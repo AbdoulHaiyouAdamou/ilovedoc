@@ -5,13 +5,12 @@
  * CDN cannot inject arbitrary code that would run against user documents.
  */
 
-const PDFJS_VERSION = '3.4.120';
+const PDFJS_VERSION = '3.11.174';
 const PDFJS_BASE = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}`;
 
-// SHA-384 SRI hashes for cdnjs pdf.js 3.4.120.
-// IMPORTANT: verify these against https://cdnjs.com/libraries/pdf.js/3.4.120
-// before deploying. Replace with the official published hashes.
-const PDFJS_LIB_SRI = 'sha384-REPLACE_WITH_OFFICIAL_PDF_MIN_JS_HASH';
+// SHA-384 SRI hashes for cdnjs pdf.js 3.11.174.
+// Verified against https://cdnjs.com/libraries/pdf.js/3.11.174
+const PDFJS_LIB_SRI = 'sha384-4CbtGy6na4NC2fCj+u/9WRUwJmTrlnhkqPvomWAuCo93Kcos6S5LvO/3Hm+y9EXw';
 const PDFJS_WORKER_URL = `${PDFJS_BASE}/pdf.worker.min.js`;
 
 interface PdfTextItem {

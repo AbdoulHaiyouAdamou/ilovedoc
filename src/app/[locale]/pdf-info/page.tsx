@@ -1,14 +1,10 @@
 'use client';
-import SEO from '@/components/common/SEO';
 
-import React, { useState, useCallback , useEffect} from 'react';
-import { useDropzone } from 'react-dropzone';
-import Header from '@/components/common/Header';
+import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import Footer from '@/components/common/Footer';
-import AdUnit from '@/components/common/AdUnit';
+import { FileText, Lock, Unlock } from 'lucide-react';
 import { getPdfInfo, PdfInfo } from '@/features/pdf/pdfInfo';
-import { FileText, CheckCircle, Lock, Unlock } from 'lucide-react';
+import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#6366f1';
 const GRADIENT = 'linear-gradient(to right, #6366f1, #4f46e5)';
@@ -16,19 +12,23 @@ const GRADIENT = 'linear-gradient(to right, #6366f1, #4f46e5)';
 export default function PdfInfoPage() {
   const tTools = useTranslations('Tools');
   const tCommon = useTranslations('Common');
-  useEffect(() => { window.scrollTo(0, 0); }, []);
+  const {
+    file,
+    phase,
+    onDrop,
+    reset,
+  } = useToolState();
 
-  const [file, setFile] = useState<File | null>(null);
   const [info, setInfo] = useState<PdfInfo | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const onDrop = useCallback(async (acceptedFiles: File[]) => {
+  const handleDrop = async (acceptedFiles: File[]) => {
     if (acceptedFiles.length > 0) {
       const f = acceptedFiles[0];
-      setFile(f);
       setError(null);
       setLoading(true);
+      setInfo(null);
       try {
         const result = await getPdfInfo(f);
         setInfo(result);
@@ -38,43 +38,13 @@ export default function PdfInfoPage() {
         setLoading(false);
       }
     }
-  }, []);
+  };
 
-  const { getRootProps, getInputProps } = useDropzone({
-    onDrop, accept: { 'application/pdf': ['.pdf'] }, maxFiles: 1,
-  });
-
-  if (!file) {
-    return (
-      <>
-        <SEO slug="pdf-info" />
-        <Header />
-        <main className="tool-page-layout" style={{ padding: 0 }}>
-          <div style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-            <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
-              {tTools('pdf-info.name')}
-            </h1>
-            <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: 800, textAlign: 'center', lineHeight: 1.5 }}>
-              {tTools('pdf-info.description')}
-            </p>
-            <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
-              <input {...getInputProps()} />
-              <button style={{ backgroundColor: TOOL_COLOR, color: 'white', border: 'none', padding: '1.8rem 4rem', fontSize: '1.8rem', fontWeight: 'bold', borderRadius: 12, boxShadow: `0 10px 25px ${TOOL_COLOR}66`, cursor: 'pointer', transition: 'transform 0.2s' }}
-                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
-                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
-                {tCommon('select_file')}
-              </button>
-              <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>{tCommon('or_drop')}</p>
-            </div>
-          </div>
-          <div className="container" style={{ padding: '4rem 2rem' }}>
-            <AdUnit slot="ad-top" format="horizontal" />
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
-  }
+  useEffect(() => {
+    if (file) {
+      handleDrop([file]);
+    }
+  }, [file]);
 
   const infoRows: { label: string; value: string; icon?: React.ReactNode }[] = info ? [
     { label: 'Nom du fichier', value: info.fileName },
@@ -94,42 +64,70 @@ export default function PdfInfoPage() {
     { label: 'Date de modification', value: info.modificationDate || '—' },
   ] : [];
 
-  return (
+  const workspacePreview = file && (
+    <div className="pdf-page-card" style={{ width: '300px', height: '420px', position: 'relative', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.15)', border: '1px solid var(--glass-border)' }}>
+      <div className="pdf-page-header" style={{ backgroundColor: TOOL_COLOR }}>
+        {file.name}
+      </div>
+      <div className="pdf-page-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+        <FileText size={80} color={TOOL_COLOR} style={{ opacity: 0.5 }} />
+      </div>
+    </div>
+  );
+
+  const workspaceSidebar = (
     <>
-      <Header />
-      <main className="tool-page-layout">
-        <div className="container" style={{ maxWidth: 900, margin: '2rem auto', padding: '0 1rem' }}>
-          {loading ? (
-            <div className="glass" style={{ padding: '4rem', borderRadius: '1rem', textAlign: 'center' }}>
-              <h2>Analyse en cours...</h2>
+      {info ? (
+        <div style={{ padding: '1.5rem', borderRadius: '12px', border: `2px solid ${TOOL_COLOR}4d`, background: `${TOOL_COLOR}0d` }}>
+          <h3 style={{ marginBottom: '1rem', color: TOOL_COLOR }}>Propriétés du PDF</h3>
+          {infoRows.map((row, idx) => (
+            <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.5rem 0', borderBottom: '1px solid var(--glass-border)' }}>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-color)' }}>{row.label}</span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--color-text-secondary)', fontSize: '0.85rem', maxWidth: '55%', textAlign: 'right', wordBreak: 'break-all' }}>
+                {row.icon} {row.value}
+              </span>
             </div>
-          ) : error ? (
-            <div className="glass" style={{ padding: '4rem', borderRadius: '1rem', textAlign: 'center' }}>
-              <p className="text-danger" style={{ fontWeight: 'bold' }}>{error}</p>
-            </div>
-          ) : info ? (
-            <div className="glass" style={{ padding: '2rem', borderRadius: '1rem' }}>
-              <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: 10, color: TOOL_COLOR }}>
-                <FileText size={28} /> Propriétés du PDF
-              </h2>
-              <div style={{ display: 'grid', gap: 0 }}>
-                {infoRows.map((row, idx) => (
-                  <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.9rem 0.5rem', borderBottom: '1px solid var(--glass-border)' }}>
-                    <span style={{ fontWeight: 600, color: 'var(--text-color)' }}>{row.label}</span>
-                    <span style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--color-text-secondary)', maxWidth: '55%', textAlign: 'right', wordBreak: 'break-all' }}>
-                      {row.icon} {row.value}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-                <button className="btn btn-outline" onClick={() => { setFile(null); setInfo(null); }}>Analyser un autre fichier</button>
-              </div>
-            </div>
-          ) : null}
+          ))}
         </div>
-      </main>
-      <Footer />
+      ) : (
+        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          Chargement des informations du PDF...
+        </p>
+      )}
     </>
+  );
+
+  return (
+    <div>
+      <ToolLayout
+        slug="pdf-info"
+        phase={phase}
+        file={file}
+        isProcessing={false}
+        progress={0}
+        resultUrl={null}
+        error={error}
+        onReset={() => { reset(); setInfo(null); setError(null); }}
+        onDrop={(files) => {
+          onDrop(files);
+          handleDrop(files);
+        }}
+        workspacePreview={workspacePreview}
+        workspaceSidebar={workspaceSidebar}
+        processingLabel="Analyse en cours..."
+        successMessage=""
+        successSubtitle=""
+        actionLabel="OK"
+        onAction={() => {}}
+        seoSection={
+          <div style={{ margin: '4rem auto', textAlign: 'center', maxWidth: '800px' }}>
+            <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Pourquoi utiliser notre outil d'informations ?</h2>
+            <p style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8', fontSize: '1.1rem' }}>
+              Comprendre la structure technique de vos documents PDF vous aide à les optimiser correctement. Notre outil analyse votre fichier et affiche toutes les métadonnées importantes : taille, nombre de pages, version, dimensions, et bien plus. Entièrement côté client pour préserver votre confidentialité.
+            </p>
+          </div>
+        }
+      />
+    </div>
   );
 }
