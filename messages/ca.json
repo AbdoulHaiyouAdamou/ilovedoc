@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Selecciona l'arxiu PDF",
-    "or_drop": "o deixa anar el PDF aquí"
+    "or_drop": "o deixa anar el PDF aquí",
+    "download_file": "Descarregar fitxer",
+    "process_another": "Processar un altre"
   },
   "Header": {
     "merge": "FUSIONAR PDF",

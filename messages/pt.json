@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Selecione o arquivo PDF",
-    "or_drop": "ou solte o PDF aqui"
+    "or_drop": "ou solte o PDF aqui",
+    "download_file": "Baixar arquivo",
+    "process_another": "Processar outro"
   },
   "Header": {
     "merge": "MESCLAR PDF",

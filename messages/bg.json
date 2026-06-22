@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Изберете PDF файл",
-    "or_drop": "или пуснете PDF тук"
+    "or_drop": "или пуснете PDF тук",
+    "download_file": "Изтегляне на файл",
+    "process_another": "Обработка на друг"
   },
   "Header": {
     "merge": "ОБЕДИНЯВАНЕ НА PDF",

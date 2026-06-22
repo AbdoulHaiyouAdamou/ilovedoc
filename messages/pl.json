@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Wybierz plik PDF",
-    "or_drop": "lub upuść plik PDF tutaj"
+    "or_drop": "lub upuść plik PDF tutaj",
+    "download_file": "Pobierz plik",
+    "process_another": "Przetwórz kolejny"
   },
   "Header": {
     "merge": "POŁĄCZ PDF",

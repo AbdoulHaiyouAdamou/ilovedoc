@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "PDF fitxategia hautatu",
-    "or_drop": "edo utzi PDF hemen"
+    "or_drop": "edo utzi PDF hemen",
+    "download_file": "Deskargatu fitxategia",
+    "process_another": "Prozesatu beste bat"
   },
   "Header": {
     "merge": "BATU PDF",

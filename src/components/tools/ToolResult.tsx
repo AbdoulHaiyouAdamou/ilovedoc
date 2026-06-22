@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Download } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface ToolResultProps {
   accentColor: string;
@@ -24,6 +25,7 @@ export default function ToolResult({
   resetLabel,
   onReset,
 }: ToolResultProps) {
+  const tCommon = useTranslations('Common');
   const gradientEnd = accentColorDark || accentColor;
 
   return (
@@ -46,13 +48,19 @@ export default function ToolResult({
           backgroundColor: accentColor,
           borderColor: accentColor,
           backgroundImage: `linear-gradient(to right, ${accentColor}, ${gradientEnd})`,
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '10px'
         }}
       >
-        {downloadName}
+        <Download size={24} /> {tCommon('download_file')}
       </a>
+      <div style={{ marginTop: '0.8rem', fontSize: '13px', color: 'var(--color-text-tertiary)', fontWeight: 'bold' }}>
+        {downloadName}
+      </div>
       <div style={{ marginTop: '2rem' }}>
         <button className="btn btn-outline" onClick={onReset}>
-          {resetLabel || 'Again'}
+          {resetLabel || tCommon('process_another')}
         </button>
       </div>
     </div>

@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Seleziona il file PDF",
-    "or_drop": "o rilascia il PDF qui"
+    "or_drop": "o rilascia il PDF qui",
+    "download_file": "Scarica file",
+    "process_another": "Elabora un altro"
   },
   "Header": {
     "merge": "UNIRE PDF",

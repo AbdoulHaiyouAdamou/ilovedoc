@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "حدد ملف PDF",
-    "or_drop": "أو ضع ملف PDF هنا"
+    "or_drop": "أو ضع ملف PDF هنا",
+    "download_file": "تحميل الملف",
+    "process_another": "معالجة ملف آخر"
   },
   "Header": {
     "merge": "دمج PDF",

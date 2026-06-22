@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Pilih File PDF",
-    "or_drop": "atau letakkan PDF di sini"
+    "or_drop": "atau letakkan PDF di sini",
+    "download_file": "Unduh file",
+    "process_another": "Proses yang lain"
   },
   "Header": {
     "merge": "GABUNGKAN PDF",

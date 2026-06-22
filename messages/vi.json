@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Chọn tệp PDF",
-    "or_drop": "hoặc thả PDF tại đây"
+    "or_drop": "hoặc thả PDF tại đây",
+    "download_file": "Tải tập tin",
+    "process_another": "Xử lý tệp khác"
   },
   "Header": {
     "merge": "NHẬP PDF",

@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Selecteer het PDF-bestand",
-    "or_drop": "of sleep het PDF-bestand hier neer"
+    "or_drop": "of sleep het PDF-bestand hier neer",
+    "download_file": "Bestand downloaden",
+    "process_another": "Nog een verwerken"
   },
   "Header": {
     "merge": "PDF-BESTANDEN SAMENVOEGEN",

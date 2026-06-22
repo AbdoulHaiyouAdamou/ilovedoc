@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "PDF ഫയൽ തിരഞ്ഞെടുക്കുക",
-    "or_drop": "അല്ലെങ്കിൽ PDF ഇവിടെ ഇടുക"
+    "or_drop": "അല്ലെങ്കിൽ PDF ഇവിടെ ഇടുക",
+    "download_file": "ഫയൽ ഡൗൺലോഡ് ചെയ്യുക",
+    "process_another": "മറ്റൊന്ന് പ്രോസസ്സ് ചെയ്യുക"
   },
   "Header": {
     "merge": "PDF ലയിപ്പിക്കുക",

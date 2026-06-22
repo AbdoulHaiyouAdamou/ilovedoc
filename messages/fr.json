@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Sélectionner le fichier PDF",
-    "or_drop": "ou déposez le PDF ici"
+    "or_drop": "ou déposez le PDF ici",
+    "download_file": "Télécharger le fichier",
+    "process_another": "Traiter un autre document"
   },
   "Header": {
     "merge": "FUSIONNER PDF",

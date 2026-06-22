@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Chagua faili ya PDF",
-    "or_drop": "au weka PDF hapa"
+    "or_drop": "au weka PDF hapa",
+    "download_file": "Pakua faili",
+    "process_another": "Chakata nyingine"
   },
   "Header": {
     "merge": "CHANGANYA PDF",

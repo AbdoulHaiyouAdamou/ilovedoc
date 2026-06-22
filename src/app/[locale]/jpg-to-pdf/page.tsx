@@ -1,24 +1,17 @@
 'use client';
-import SEO from '@/components/common/SEO';
 
 import React, { useState, useCallback, useRef, useEffect } from 'react';
-import { useDropzone } from 'react-dropzone';
-import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
-import Footer from '@/components/common/Footer';
-import AdUnit from '@/components/common/AdUnit';
+import { useDropzone } from 'react-dropzone';
 import { imagesToPdf } from '@/features/pdf/jpgToPdf';
-import { Image as ImageIcon, ArrowRight, GripVertical, X, CheckCircle } from 'lucide-react';
+import { Image as ImageIcon, GripVertical, X } from 'lucide-react';
+import { ToolLayout } from '@/components/tools';
 
-const ACCENT = '#f59e0b'; // Amber for Image to PDF
-const ACCENT_DARK = '#d97706';
+const ACCENT = '#f59e0b';
 
 export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string }) {
   const tTools = useTranslations('Tools');
-  const tCommon = useTranslations('Common');
   
-  useEffect(() => { window.scrollTo(0, 0); }, []);
-
   const [files, setFiles] = useState<File[]>([]);
   const [previews, setPreviews] = useState<Record<string, string>>({});
 
@@ -31,14 +24,12 @@ export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string })
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // Drag & drop state for reordering
   const dragItem = useRef<number | null>(null);
   const dragOverItem = useRef<number | null>(null);
   const [draggedState, setDraggedState] = useState<number | null>(null);
   const [dragOverState, setDragOverState] = useState<number | null>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  // Clean up object URLs when files change or component unmounts
   useEffect(() => {
     return () => {
       Object.values(previews).forEach(url => URL.revokeObjectURL(url));
@@ -56,7 +47,6 @@ export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string })
 
       const newPreviews = { ...previews };
       acceptedFiles.forEach(file => {
-        // use file.name + file.lastModified + file.size as unique key
         const key = `${file.name}-${file.lastModified}-${file.size}`;
         if (!newPreviews[key]) {
           newPreviews[key] = URL.createObjectURL(file);
@@ -72,10 +62,9 @@ export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string })
       'image/jpeg': ['.jpeg', '.jpg'],
       'image/png': ['.png']
     },
-    noClick: files.length > 0 // Disable click on root dropzone when in workspace mode
+    noClick: files.length > 0
   });
 
-  // --- HTML5 Drag & Drop for reordering ---
   const handleDragStart = (e: React.DragEvent, index: number) => {
     dragItem.current = index;
     setDraggedState(index);
@@ -126,13 +115,11 @@ export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string })
     setDragOverState(null);
   };
 
-  // --- Deletion and Movement ---
   const removeImage = (index: number) => {
     const newFiles = [...files];
     const removed = newFiles.splice(index, 1)[0];
     setFiles(newFiles);
     
-    // Optionally revoke object URL, but can leave to useEffect cleanup
     const key = `${removed.name}-${removed.lastModified}-${removed.size}`;
     if (previews[key]) {
       URL.revokeObjectURL(previews[key]);
@@ -169,14 +156,13 @@ export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string })
         orientation,
         pageSize,
         margin,
-        onProgress: (p) => setProgress(p)
+        onProgress: setProgress
       });
 
       const blob = new Blob([pdfBytes as any], { type: 'application/pdf' });
       const url = URL.createObjectURL(blob);
       setResultUrl(url);
 
-      // Auto download
       const a = document.createElement('a');
       a.href = url;
       a.download = `ilovedoc_images.pdf`;
@@ -190,472 +176,237 @@ export default function JpgToPdfPage({ slug = 'jpg-to-pdf' }: { slug?: string })
     }
   };
 
-  // ─── State 1: No file selected ──────────────────────────────────
-  if (files.length === 0 && !resultUrl) {
-    return (
-      <>
-        <SEO slug={slug} />
-      <Header />
-        <main className="tool-page-layout" style={{ padding: 0, flex: 1, display: 'flex', flexDirection: 'column' }}>
-          <div style={{
-            minHeight: 'calc(100vh - 70px)',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '2rem'
-          }}>
-            <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1rem', textAlign: 'center' }}>
-              {tTools('jpg-to-pdf.name')}
-            </h1>
-            <p style={{ fontSize: '1.3rem', color: 'var(--color-text-secondary)', marginBottom: '3rem', maxWidth: '800px', textAlign: 'center', lineHeight: '1.5' }}>
-              {tTools('jpg-to-pdf.description')}
-            </p>
+  const phase = files.length === 0 
+    ? 'select' 
+    : (isProcessing ? 'processing' : (resultUrl ? 'result' : 'workspace'));
 
-            <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
-              <input {...getInputProps()} />
-              <button style={{
-                backgroundColor: ACCENT,
-                color: 'white',
-                border: 'none',
-                padding: '1.8rem 4rem',
-                fontSize: '1.8rem',
-                fontWeight: 'bold',
-                borderRadius: '12px',
-                boxShadow: `0 10px 25px rgba(245, 158, 11, 0.4)`,
-                cursor: 'pointer',
-                transition: 'transform 0.2s'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-              >
-                Sélectionner des images
-              </button>
-              <p style={{ marginTop: '1.5rem', color: 'var(--color-text-tertiary)', fontSize: '1.1rem' }}>ou déposez les images ici</p>
-            </div>
-          </div>
+  const workspacePreview = (
+    <div className="workspace-preview" {...getRootProps()} style={{
+      padding: '2rem',
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
+      gap: '2rem',
+      alignContent: 'start',
+      flex: 1,
+      outline: 'none',
+      overflowY: 'auto'
+    }}>
+      <input {...getInputProps()} />
+      {files.map((file, displayIndex) => {
+        const isDragging = draggedState === displayIndex;
+        const isDragOver = dragOverState === displayIndex;
+        const key = `${file.name}-${file.lastModified}-${file.size}`;
+        const previewUrl = previews[key];
 
-          {/* Below the fold: SEO and Ads */}
-          <div className="container" style={{ padding: '4rem 2rem' }}>
-            <AdUnit slot="ad-top" format="horizontal" />
-
-            <section className="seo-content glass" style={{ margin: '4rem auto', maxWidth: '800px', textAlign: 'left' }}>
-              <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Comment convertir des images en PDF</h2>
-              <ol className="steps-list">
-                <li>Sélectionnez vos images JPG ou PNG ou glissez-déposez-les.</li>
-                <li>Réorganisez l'ordre des images si nécessaire.</li>
-                <li>Configurez les options d'orientation, de taille de page et de marges.</li>
-                <li>Cliquez sur « Convertir en PDF » pour générer votre document.</li>
-                <li>Le téléchargement de votre fichier PDF commencera automatiquement.</li>
-              </ol>
-            </section>
-
-            <AdUnit slot="ad-bottom" format="horizontal" />
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
-  }
-
-  // ─── State 3: Processing / Result ───────────────────────────────
-  if (isProcessing || resultUrl) {
-    return (
-      <>
-        <Header />
-        <main className="tool-page-layout">
-          <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            {isProcessing ? (
-              <div className="glass" style={{ padding: '4rem', borderRadius: '1rem' }}>
-                <h2>Conversion en cours...</h2>
-                <div className="progress-container" style={{ marginTop: '2rem' }}>
-                  <div className="progress">
-                    <div className="progress-bar gradient-bg" style={{ width: `${progress}%`, backgroundImage: `linear-gradient(to right, ${ACCENT}, ${ACCENT_DARK})` }}></div>
-                  </div>
-                  <p style={{ marginTop: '1rem', fontWeight: 'bold' }}>{progress}%</p>
-                </div>
-              </div>
-            ) : (
-              <div className="result-container glass" style={{ padding: '4rem', borderRadius: '1rem' }}>
-                <div className="success-icon animation-bounce" style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-                  <CheckCircle size={64} color="#10b981" />
-                </div>
-                <h2>🎉 Les images ont été converties !</h2>
-                <p style={{ marginBottom: '2rem' }}>Votre document PDF est prêt.</p>
-                <a href={resultUrl!} download={`ilovedoc_images.pdf`} className="btn btn-primary btn-xl" style={{ backgroundColor: ACCENT, borderColor: ACCENT, backgroundImage: `linear-gradient(to right, ${ACCENT}, ${ACCENT_DARK})` }}>
-                  Télécharger le PDF
-                </a>
-                <div style={{ marginTop: '2rem' }}>
-                  <button className="btn btn-outline" onClick={() => { setFiles([]); setResultUrl(null); }}>Convertir d'autres images</button>
-                </div>
-              </div>
-            )}
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
-  }
-
-  // ─── State 2: Workspace ─────────────────────────────────────────
-  return (
-    <>
-      <Header />
-      <div style={{ backgroundColor: 'var(--bg-color)', padding: '10px 0', borderBottom: '1px solid var(--glass-border)' }}>
-        <div className="container" style={{ maxWidth: '728px', margin: '0 auto' }}>
-          <AdUnit slot="ad-workspace-top" format="horizontal" />
-        </div>
-      </div>
-      
-      <div className="workspace" {...getRootProps()} style={{ outline: 'none' }}>
-        <input {...getInputProps()} />
-        
-        {/* LEFT: Page thumbnails grid with drag & drop */}
-        <div className="workspace-preview" style={{
-          padding: '2rem',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))',
-          gap: '2rem',
-          alignContent: 'start'
-        }}>
-          {files.map((file, displayIndex) => {
-            const isDragging = draggedState === displayIndex;
-            const isDragOver = dragOverState === displayIndex;
-            const key = `${file.name}-${file.lastModified}-${file.size}`;
-            const previewUrl = previews[key];
-
-            return (
-              <div
-                key={`img-${displayIndex}-${key}`}
-                draggable
-                onDragStart={(e) => handleDragStart(e, displayIndex)}
-                onDragOver={handleDragOver}
-                onDragEnter={(e) => handleDragEnter(e, displayIndex)}
-                onDrop={(e) => handleDrop(e, displayIndex)}
-                onDragEnd={handleDragEnd}
-                onMouseEnter={() => setHoveredIndex(displayIndex)}
-                onMouseLeave={() => setHoveredIndex(null)}
-                className="pdf-page-card"
-                style={{
-                  cursor: 'grab',
-                  width: '100%',
-                  height: '220px',
-                  opacity: isDragging ? 0.4 : 1,
-                  transform: isDragging ? 'scale(0.95)' : isDragOver ? 'scale(1.05)' : 'none',
-                  border: isDragOver ? `3px solid ${ACCENT}` : '2px solid transparent',
-                  boxShadow: isDragOver
-                    ? `0 0 0 3px rgba(245, 158, 11, 0.3), 0 10px 25px rgba(0,0,0,0.15)`
-                    : undefined,
-                  transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
-                  position: 'relative',
-                  userSelect: 'none',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  backgroundColor: 'white',
-                }}
-                onClick={(e) => e.stopPropagation()} // Prevent triggering dropzone click
-              >
-                {/* Delete overlay on hover */}
-                {hoveredIndex === displayIndex && (
-                  <div 
-                    onClick={(e) => { e.stopPropagation(); removeImage(displayIndex); }}
-                    style={{
-                      position: 'absolute',
-                      top: '6px',
-                      right: '6px',
-                      zIndex: 20,
-                      backgroundColor: 'white',
-                      border: '1px solid #e2e8f0',
-                      borderRadius: '50%',
-                      padding: '4px',
-                      color: '#ef4444',
-                      cursor: 'pointer',
-                      boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      transition: 'transform 0.1s'
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
-                    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                    title="Supprimer l'image"
-                  >
-                    <X size={16} />
-                  </div>
-                )}
-
-                {/* Drag handle indicator */}
-                <div style={{
-                  position: 'absolute',
-                  top: '6px',
-                  right: '6px',
-                  zIndex: 10,
-                  color: 'white',
-                  textShadow: '0 0 2px black',
-                  opacity: 0.8,
-                  display: hoveredIndex === displayIndex ? 'none' : 'block'
-                }}>
-                  <GripVertical size={16} />
-                </div>
-
-                {/* Order badge */}
-                <div style={{
-                  position: 'absolute',
-                  top: '6px',
-                  left: '6px',
-                  zIndex: 10,
-                  backgroundColor: ACCENT,
-                  color: 'white',
-                  width: '24px',
-                  height: '24px',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '0.7rem',
-                  fontWeight: 'bold',
-                  boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
-                }}>
-                  {displayIndex + 1}
-                </div>
-
-                <div style={{
-                  flex: 1,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '1rem',
-                  overflow: 'hidden'
-                }}>
-                  {previewUrl ? (
-                    <img 
-                      src={previewUrl} 
-                      alt={file.name} 
-                      style={{ 
-                        maxWidth: '100%', 
-                        maxHeight: '100%', 
-                        objectFit: 'contain',
-                        pointerEvents: 'none'
-                      }} 
-                    />
-                  ) : (
-                    <div style={{ color: 'var(--color-text-tertiary)' }}><ImageIcon size={48} /></div>
-                  )}
-                </div>
-
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px', background: 'var(--glass-bg)', borderTop: '1px solid var(--glass-border)' }}>
-                  <button
-                    onClick={(e) => { e.stopPropagation(); moveImage(displayIndex, 'left'); }}
-                    disabled={displayIndex === 0}
-                    style={{ background: 'none', border: 'none', cursor: displayIndex === 0 ? 'not-allowed' : 'pointer', color: displayIndex === 0 ? '#cbd5e1' : ACCENT, fontSize: '1.2rem' }}
-                    title="Déplacer vers la gauche"
-                  >
-                    ◀
-                  </button>
-                  <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: 'var(--color-text-secondary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '80px' }}>
-                    {file.name}
-                  </span>
-                  <button
-                    onClick={(e) => { e.stopPropagation(); moveImage(displayIndex, 'right'); }}
-                    disabled={displayIndex === files.length - 1}
-                    style={{ background: 'none', border: 'none', cursor: displayIndex === files.length - 1 ? 'not-allowed' : 'pointer', color: displayIndex === files.length - 1 ? '#cbd5e1' : ACCENT, fontSize: '1.2rem' }}
-                    title="Déplacer vers la droite"
-                  >
-                    ▶
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-
-          {/* Add more button */}
+        return (
           <div
-            onClick={(e) => {
-              e.stopPropagation();
-              open();
-            }}
+            key={`img-${displayIndex}-${key}`}
+            draggable
+            onDragStart={(e) => handleDragStart(e, displayIndex)}
+            onDragOver={handleDragOver}
+            onDragEnter={(e) => handleDragEnter(e, displayIndex)}
+            onDrop={(e) => handleDrop(e, displayIndex)}
+            onDragEnd={handleDragEnd}
+            onMouseEnter={() => setHoveredIndex(displayIndex)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            className="pdf-page-card"
             style={{
+              cursor: 'grab',
               width: '100%',
               height: '220px',
-              border: `2px dashed var(--glass-border)`,
-              borderRadius: '12px',
+              opacity: isDragging ? 0.4 : 1,
+              transform: isDragging ? 'scale(0.95)' : isDragOver ? 'scale(1.05)' : 'none',
+              border: isDragOver ? `3px solid ${ACCENT}` : '2px solid transparent',
+              boxShadow: isDragOver
+                ? `0 0 0 3px rgba(245, 158, 11, 0.3), 0 10px 25px rgba(0,0,0,0.15)`
+                : undefined,
+              transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+              position: 'relative',
+              userSelect: 'none',
               display: 'flex',
               flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              cursor: 'pointer',
-              color: 'var(--color-text-tertiary)',
-              backgroundColor: 'var(--glass-bg)',
-              transition: 'all 0.2s',
+              backgroundColor: 'white',
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = ACCENT;
-              e.currentTarget.style.color = ACCENT;
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = 'var(--glass-border)';
-              e.currentTarget.style.color = 'var(--color-text-tertiary)';
-            }}
+            onClick={(e) => e.stopPropagation()}
           >
-            <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>+</div>
-            <div style={{ fontWeight: '600' }}>Ajouter</div>
+            {hoveredIndex === displayIndex && (
+              <div 
+                onClick={(e) => { e.stopPropagation(); removeImage(displayIndex); }}
+                style={{
+                  position: 'absolute', top: '6px', right: '6px', zIndex: 20,
+                  backgroundColor: 'white', border: '1px solid #e2e8f0', borderRadius: '50%',
+                  padding: '4px', color: '#ef4444', cursor: 'pointer',
+                  boxShadow: '0 2px 5px rgba(0,0,0,0.2)', display: 'flex',
+                  alignItems: 'center', justifyContent: 'center', transition: 'transform 0.1s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                title="Supprimer l'image"
+              >
+                <X size={16} />
+              </div>
+            )}
+
+            <div style={{
+              position: 'absolute', top: '6px', right: '6px', zIndex: 10,
+              color: 'white', textShadow: '0 0 2px black', opacity: 0.8,
+              display: hoveredIndex === displayIndex ? 'none' : 'block'
+            }}>
+              <GripVertical size={16} />
+            </div>
+
+            <div style={{
+              position: 'absolute', top: '6px', left: '6px', zIndex: 10,
+              backgroundColor: ACCENT, color: 'white', width: '24px', height: '24px',
+              borderRadius: '50%', display: 'flex', alignItems: 'center',
+              justifyContent: 'center', fontSize: '0.7rem', fontWeight: 'bold',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
+            }}>
+              {displayIndex + 1}
+            </div>
+
+            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', overflow: 'hidden' }}>
+              {previewUrl ? (
+                <img src={previewUrl} alt={file.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', pointerEvents: 'none' }} />
+              ) : (
+                <div style={{ color: 'var(--color-text-tertiary)' }}><ImageIcon size={48} /></div>
+              )}
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px', background: 'var(--glass-bg)', borderTop: '1px solid var(--glass-border)' }}>
+              <button
+                onClick={(e) => { e.stopPropagation(); moveImage(displayIndex, 'left'); }}
+                disabled={displayIndex === 0}
+                style={{ background: 'none', border: 'none', cursor: displayIndex === 0 ? 'not-allowed' : 'pointer', color: displayIndex === 0 ? '#cbd5e1' : ACCENT, fontSize: '1.2rem' }}
+                title="Déplacer vers la gauche"
+              >◀</button>
+              <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: 'var(--color-text-secondary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '80px' }}>
+                {file.name}
+              </span>
+              <button
+                onClick={(e) => { e.stopPropagation(); moveImage(displayIndex, 'right'); }}
+                disabled={displayIndex === files.length - 1}
+                style={{ background: 'none', border: 'none', cursor: displayIndex === files.length - 1 ? 'not-allowed' : 'pointer', color: displayIndex === files.length - 1 ? '#cbd5e1' : ACCENT, fontSize: '1.2rem' }}
+                title="Déplacer vers la droite"
+              >▶</button>
+            </div>
+          </div>
+        );
+      })}
+
+      <div
+        onClick={(e) => { e.stopPropagation(); open(); }}
+        style={{
+          width: '100%', height: '220px', border: `2px dashed var(--glass-border)`,
+          borderRadius: '12px', display: 'flex', flexDirection: 'column',
+          alignItems: 'center', justifyContent: 'center', cursor: 'pointer',
+          color: 'var(--color-text-tertiary)', backgroundColor: 'var(--glass-bg)',
+          transition: 'all 0.2s',
+        }}
+        onMouseEnter={(e) => { e.currentTarget.style.borderColor = ACCENT; e.currentTarget.style.color = ACCENT; }}
+        onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--glass-border)'; e.currentTarget.style.color = 'var(--color-text-tertiary)'; }}
+      >
+        <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>+</div>
+        <div style={{ fontWeight: '600' }}>Ajouter</div>
+      </div>
+    </div>
+  );
+
+  const workspaceSidebar = (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', height: '100%' }}>
+      <div className="workspace-sidebar-header">
+        <h2 style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', color: ACCENT }}>
+          <ImageIcon size={24} /> Options pour Image en PDF
+        </h2>
+      </div>
+
+      <div className="workspace-sidebar-content" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', flex: 1, overflowY: 'auto' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span style={{ fontWeight: '600', color: 'var(--color-text-secondary)' }}>Images sélectionnées:</span>
+          <span style={{ fontWeight: 'bold', color: ACCENT, fontSize: '1.1rem' }}>{files.length}</span>
+        </div>
+
+        <div className="form-group">
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--color-text-secondary)' }}>Orientation de la page</label>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <button
+              style={{ flex: 1, padding: '10px', borderRadius: '8px', border: orientation === 'portrait' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)', backgroundColor: orientation === 'portrait' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)', color: orientation === 'portrait' ? ACCENT : 'var(--color-text-secondary)', fontWeight: orientation === 'portrait' ? 'bold' : 'normal', cursor: 'pointer' }}
+              onClick={() => setOrientation('portrait')}
+            >Portrait</button>
+            <button
+              style={{ flex: 1, padding: '10px', borderRadius: '8px', border: orientation === 'landscape' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)', backgroundColor: orientation === 'landscape' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)', color: orientation === 'landscape' ? ACCENT : 'var(--color-text-secondary)', fontWeight: orientation === 'landscape' ? 'bold' : 'normal', cursor: 'pointer' }}
+              onClick={() => setOrientation('landscape')}
+            >Paysage</button>
           </div>
         </div>
 
-        {/* RIGHT: Sidebar */}
-        <div className="workspace-sidebar" onClick={(e) => e.stopPropagation()}>
-          <div className="workspace-sidebar-header">
-            <h2 style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', color: ACCENT }}>
-              <ImageIcon size={24} /> Options pour Image en PDF
-            </h2>
-          </div>
+        <div className="form-group">
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--color-text-secondary)' }}>Taille de la page</label>
+          <select 
+            value={pageSize} onChange={(e) => setPageSize(e.target.value as any)}
+            style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid var(--glass-border)', backgroundColor: 'var(--glass-bg)', color: 'var(--color-text-primary)', fontSize: '1rem', outline: 'none' }}
+          >
+            <option value="a4">A4 (297x210 mm)</option>
+            <option value="letter">Lettre US (215x279 mm)</option>
+            <option value="fit">Ajusté à l'image</option>
+          </select>
+        </div>
 
-          <div className="workspace-sidebar-content" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            {/* File count */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontWeight: '600', color: 'var(--color-text-secondary)' }}>Images sélectionnées:</span>
-              <span style={{ fontWeight: 'bold', color: ACCENT, fontSize: '1.1rem' }}>{files.length}</span>
-            </div>
-
-            {/* Orientation */}
-            <div className="form-group">
-              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--color-text-secondary)' }}>Orientation de la page</label>
-              <div style={{ display: 'flex', gap: '10px' }}>
-                <button
-                  style={{
-                    flex: 1,
-                    padding: '10px',
-                    borderRadius: '8px',
-                    border: orientation === 'portrait' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)',
-                    backgroundColor: orientation === 'portrait' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)',
-                    color: orientation === 'portrait' ? ACCENT : 'var(--color-text-secondary)',
-                    fontWeight: orientation === 'portrait' ? 'bold' : 'normal',
-                    cursor: 'pointer'
-                  }}
-                  onClick={() => setOrientation('portrait')}
-                >
-                  Portrait
-                </button>
-                <button
-                  style={{
-                    flex: 1,
-                    padding: '10px',
-                    borderRadius: '8px',
-                    border: orientation === 'landscape' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)',
-                    backgroundColor: orientation === 'landscape' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)',
-                    color: orientation === 'landscape' ? ACCENT : 'var(--color-text-secondary)',
-                    fontWeight: orientation === 'landscape' ? 'bold' : 'normal',
-                    cursor: 'pointer'
-                  }}
-                  onClick={() => setOrientation('landscape')}
-                >
-                  Paysage
-                </button>
-              </div>
-            </div>
-
-            {/* Page Size */}
-            <div className="form-group">
-              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--color-text-secondary)' }}>Taille de la page</label>
-              <select 
-                value={pageSize}
-                onChange={(e) => setPageSize(e.target.value as any)}
-                style={{
-                  width: '100%',
-                  padding: '10px',
-                  borderRadius: '8px',
-                  border: '1px solid var(--glass-border)',
-                  backgroundColor: 'var(--glass-bg)',
-                  color: 'var(--color-text-primary)',
-                  fontSize: '1rem',
-                  outline: 'none',
-                }}
-              >
-                <option value="a4">A4 (297x210 mm)</option>
-                <option value="letter">Lettre US (215x279 mm)</option>
-                <option value="fit">Ajusté à l'image</option>
-              </select>
-            </div>
-
-            {/* Margins */}
-            <div className="form-group">
-              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--color-text-secondary)' }}>Marge</label>
-              <div style={{ display: 'flex', gap: '5px' }}>
-                <button
-                  style={{
-                    flex: 1,
-                    padding: '8px 5px',
-                    borderRadius: '8px',
-                    border: margin === 'none' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)',
-                    backgroundColor: margin === 'none' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)',
-                    color: margin === 'none' ? ACCENT : 'var(--color-text-secondary)',
-                    fontWeight: margin === 'none' ? 'bold' : 'normal',
-                    fontSize: '0.9rem',
-                    cursor: 'pointer'
-                  }}
-                  onClick={() => setMargin('none')}
-                >
-                  Aucune
-                </button>
-                <button
-                  style={{
-                    flex: 1,
-                    padding: '8px 5px',
-                    borderRadius: '8px',
-                    border: margin === 'small' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)',
-                    backgroundColor: margin === 'small' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)',
-                    color: margin === 'small' ? ACCENT : 'var(--color-text-secondary)',
-                    fontWeight: margin === 'small' ? 'bold' : 'normal',
-                    fontSize: '0.9rem',
-                    cursor: 'pointer'
-                  }}
-                  onClick={() => setMargin('small')}
-                >
-                  Petite
-                </button>
-                <button
-                  style={{
-                    flex: 1,
-                    padding: '8px 5px',
-                    borderRadius: '8px',
-                    border: margin === 'big' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)',
-                    backgroundColor: margin === 'big' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)',
-                    color: margin === 'big' ? ACCENT : 'var(--color-text-secondary)',
-                    fontWeight: margin === 'big' ? 'bold' : 'normal',
-                    fontSize: '0.9rem',
-                    cursor: 'pointer'
-                  }}
-                  onClick={() => setMargin('big')}
-                >
-                  Grande
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="workspace-sidebar-footer">
-            {error && <div className="text-danger" style={{ fontSize: '0.9rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>{error}</div>}
-
+        <div className="form-group">
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--color-text-secondary)' }}>Marge</label>
+          <div style={{ display: 'flex', gap: '5px' }}>
             <button
-              className="btn btn-primary btn-xl"
-              style={{
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                gap: '10px',
-                fontSize: '1.2rem',
-                padding: '1rem',
-                backgroundColor: ACCENT,
-                borderColor: ACCENT,
-                backgroundImage: `linear-gradient(to right, ${ACCENT}, ${ACCENT_DARK})`,
-              }}
-              onClick={handleConvert}
-            >
-              Convertir en PDF <ArrowRight size={24} />
-            </button>
+              style={{ flex: 1, padding: '8px 5px', borderRadius: '8px', border: margin === 'none' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)', backgroundColor: margin === 'none' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)', color: margin === 'none' ? ACCENT : 'var(--color-text-secondary)', fontWeight: margin === 'none' ? 'bold' : 'normal', fontSize: '0.9rem', cursor: 'pointer' }}
+              onClick={() => setMargin('none')}
+            >Aucune</button>
+            <button
+              style={{ flex: 1, padding: '8px 5px', borderRadius: '8px', border: margin === 'small' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)', backgroundColor: margin === 'small' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)', color: margin === 'small' ? ACCENT : 'var(--color-text-secondary)', fontWeight: margin === 'small' ? 'bold' : 'normal', fontSize: '0.9rem', cursor: 'pointer' }}
+              onClick={() => setMargin('small')}
+            >Petite</button>
+            <button
+              style={{ flex: 1, padding: '8px 5px', borderRadius: '8px', border: margin === 'big' ? `2px solid ${ACCENT}` : '1px solid var(--glass-border)', backgroundColor: margin === 'big' ? `rgba(245, 158, 11, 0.1)` : 'var(--glass-bg)', color: margin === 'big' ? ACCENT : 'var(--color-text-secondary)', fontWeight: margin === 'big' ? 'bold' : 'normal', fontSize: '0.9rem', cursor: 'pointer' }}
+              onClick={() => setMargin('big')}
+            >Grande</button>
           </div>
         </div>
       </div>
-    </>
+    </div>
+  );
+
+  return (
+    <ToolLayout
+      slug="jpg-to-pdf"
+      phase={phase}
+      file={files[0] || null} // Used as dummy to satisfy type if needed, though 'phase' overrides
+      isProcessing={isProcessing}
+      progress={progress}
+      resultUrl={resultUrl}
+      error={error}
+      onReset={() => { setFiles([]); setResultUrl(null); }}
+      onDrop={onDrop}
+      accept={{ 'image/jpeg': ['.jpeg', '.jpg'], 'image/png': ['.png'] }}
+      maxFiles={50} // Multiple files
+      workspacePreview={workspacePreview}
+      workspaceSidebar={workspaceSidebar}
+      processingLabel="Conversion en cours..."
+      successMessage="🎉 Les images ont été converties !"
+      successSubtitle="Votre document PDF est prêt."
+      downloadName="ilovedoc_images.pdf"
+      actionLabel="Convertir en PDF"
+      onAction={handleConvert}
+      actionDisabled={files.length === 0}
+      seoSection={
+        <div style={{ margin: '4rem auto', maxWidth: '800px', textAlign: 'left' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Comment convertir des images en PDF</h2>
+          <ol className="steps-list">
+            <li>Sélectionnez vos images JPG ou PNG ou glissez-déposez-les.</li>
+            <li>Réorganisez l'ordre des images si nécessaire.</li>
+            <li>Configurez les options d'orientation, de taille de page et de marges.</li>
+            <li>Cliquez sur « Convertir en PDF » pour générer votre document.</li>
+            <li>Le téléchargement de votre fichier PDF commencera automatiquement.</li>
+          </ol>
+        </div>
+      }
+    />
   );
 }

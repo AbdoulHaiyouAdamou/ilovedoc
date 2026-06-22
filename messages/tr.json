@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "PDF Dosyasını Seçin",
-    "or_drop": "veya buraya PDF dosyasını bırakın"
+    "or_drop": "veya buraya PDF dosyasını bırakın",
+    "download_file": "Dosyayı indir",
+    "process_another": "Başka bir tane işle"
   },
   "Header": {
     "merge": "PDF'LERİ BİRLEŞTİR",

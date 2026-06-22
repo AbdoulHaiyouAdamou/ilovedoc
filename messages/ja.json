@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "PDFを選択",
-    "or_drop": "またはここにPDFをドロップ"
+    "or_drop": "またはここにPDFをドロップ",
+    "download_file": "ファイルをダウンロード",
+    "process_another": "別のファイルを処理する"
   },
   "Header": {
     "merge": "PDFをマージ",

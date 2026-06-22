@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Pilih File PDF",
-    "or_drop": "atau Tunggu File PDF di Sini"
+    "or_drop": "atau Tunggu File PDF di Sini",
+    "download_file": "Muat turun fail",
+    "process_another": "Proses fail lain"
   },
   "Header": {
     "merge": "MENGOMBINASIKAN PDF",

@@ -28,6 +28,7 @@ interface ToolLayoutProps {
   accept?: Record<string, string[]>;
   maxFiles?: number;
   seoSection?: React.ReactNode;
+  customSelectDropzone?: React.ReactNode;
   workspacePreview?: React.ReactNode;
   workspaceSidebar?: React.ReactNode;
   processingLabel: string;
@@ -35,8 +36,10 @@ interface ToolLayoutProps {
   successSubtitle?: string;
   downloadName?: string;
   actionLabel?: string;
+  actionDisabled?: boolean;
   onAction?: () => void;
   children?: React.ReactNode;
+  customResult?: React.ReactNode;
 }
 
 export default function ToolLayout({
@@ -59,7 +62,10 @@ export default function ToolLayout({
   successSubtitle,
   downloadName,
   actionLabel,
+  actionDisabled,
   onAction,
+  customSelectDropzone,
+  customResult,
   children,
 }: ToolLayoutProps) {
   const tool = getToolBySlug(slug);
@@ -78,16 +84,18 @@ export default function ToolLayout({
         <SEO slug={slug} />
         <Header />
         <main className="tool-page-layout" style={{ padding: 0 }}>
-          <FileDropzone
-            accentColor={ACCENT}
-            title={tTools(`${slug}.name`)}
-            description={tTools(`${slug}.description`)}
-            selectLabel={tCommon('select_file')}
-            dropLabel={tCommon('or_drop')}
-            onDrop={onDrop}
-            accept={accept}
-            maxFiles={maxFiles}
-          />
+          {customSelectDropzone || (
+            <FileDropzone
+              accentColor={ACCENT}
+              title={tTools(`${slug}.name`)}
+              description={tTools(`${slug}.description`)}
+              selectLabel={tCommon('select_file')}
+              dropLabel={tCommon('or_drop')}
+              onDrop={onDrop}
+              accept={accept}
+              maxFiles={maxFiles}
+            />
+          )}
           {seoSection && (
             <div className="container" style={{ padding: '4rem 2rem' }}>
               <AdUnit slot="ad-top" format="horizontal" />
@@ -115,7 +123,9 @@ export default function ToolLayout({
                 accentColorDark={ACCENT_DARK}
               />
             ) : (
-              resultUrl && (
+              customResult ? (
+                customResult
+              ) : resultUrl && (
                 <ToolResult
                   accentColor={ACCENT}
                   accentColorDark={ACCENT_DARK}
@@ -123,7 +133,7 @@ export default function ToolLayout({
                   subtitle={successSubtitle}
                   resultUrl={resultUrl}
                   downloadName={downloadName || `${slug}-result.pdf`}
-                  resetLabel={tCommon('process_another') || actionLabel}
+                  resetLabel={tCommon('process_another') !== 'Common.process_another' ? tCommon('process_another') : actionLabel}
                   onReset={onReset}
                 />
               )
@@ -152,6 +162,7 @@ export default function ToolLayout({
             icon={tool?.icon}
             error={error}
             actionLabel={actionLabel}
+            actionDisabled={actionDisabled}
             onAction={onAction}
             preview={workspacePreview}
             sidebar={workspaceSidebar}

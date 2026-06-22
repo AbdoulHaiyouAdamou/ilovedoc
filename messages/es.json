@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Seleccionar archivo PDF",
-    "or_drop": "o suelta el PDF aquí"
+    "or_drop": "o suelta el PDF aquí",
+    "download_file": "Descargar archivo",
+    "process_another": "Procesar otro"
   },
   "Header": {
     "merge": "UNIR PDF",

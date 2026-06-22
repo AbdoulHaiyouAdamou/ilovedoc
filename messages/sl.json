@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Izberite PDF datoteko",
-    "or_drop": "ali spustite PDF sem"
+    "or_drop": "ali spustite PDF sem",
+    "download_file": "Prenesi datoteko",
+    "process_another": "Obdelaj drugo"
   },
   "Header": {
     "merge": "ZDRUŽI PDF",

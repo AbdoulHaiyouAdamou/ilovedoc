@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "选择PDF文件",
-    "or_drop": "或将PDF文件拖放到这里"
+    "or_drop": "或将PDF文件拖放到这里",
+    "download_file": "下载文件",
+    "process_another": "处理另一个文件"
   },
   "Header": {
     "merge": "合并PDF",

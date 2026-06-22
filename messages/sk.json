@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Vyberte PDF súbor",
-    "or_drop": "alebo sem presuňte PDF"
+    "or_drop": "alebo sem presuňte PDF",
+    "download_file": "Stiahnuť súbor",
+    "process_another": "Spracovať ďalší"
   },
   "Header": {
     "merge": "ZLÚČIŤ PDF",

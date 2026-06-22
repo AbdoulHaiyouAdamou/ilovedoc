@@ -11,6 +11,7 @@ interface WorkspaceLayoutProps {
   icon?: any;
   error?: string | null;
   actionLabel?: string;
+  actionDisabled?: boolean;
   onAction?: () => void;
   preview?: React.ReactNode;
   sidebar?: React.ReactNode;
@@ -24,6 +25,7 @@ export default function WorkspaceLayout({
   icon: Icon,
   error,
   actionLabel,
+  actionDisabled,
   onAction,
   preview,
   sidebar,
@@ -88,6 +90,7 @@ export default function WorkspaceLayout({
           )}
           <button
             className="btn btn-primary btn-xl"
+            disabled={actionDisabled}
             style={{
               width: '100%',
               display: 'flex',
@@ -98,7 +101,9 @@ export default function WorkspaceLayout({
               marginTop: '0.5rem',
               backgroundColor: accentColor,
               borderColor: accentColor,
-              backgroundImage: `linear-gradient(to right, ${accentColor}, ${gradientEnd})`,
+              backgroundImage: actionDisabled ? 'none' : `linear-gradient(to right, ${accentColor}, ${gradientEnd})`,
+              opacity: actionDisabled ? 0.5 : 1,
+              cursor: actionDisabled ? 'not-allowed' : 'pointer',
             }}
             onClick={onAction}
           >

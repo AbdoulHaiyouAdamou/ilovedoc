@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Επιλέξτε το αρχείο PDF",
-    "or_drop": "ή αποθέστε το PDF εδώ"
+    "or_drop": "ή αποθέστε το PDF εδώ",
+    "download_file": "Λήψη αρχείου",
+    "process_another": "Επεξεργασία άλλου"
   },
   "Header": {
     "merge": "ΣΥΝΕΝΩΣΗ PDF",

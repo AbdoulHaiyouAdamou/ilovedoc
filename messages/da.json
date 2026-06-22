@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Vælg PDF-fil",
-    "or_drop": "eller drop PDF her"
+    "or_drop": "eller drop PDF her",
+    "download_file": "Download fil",
+    "process_another": "Behandl en anden"
   },
   "Header": {
     "merge": "FUSE PDF",

@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "PDF-Datei auswählen",
-    "or_drop": "oder PDF hier ablegen"
+    "or_drop": "oder PDF hier ablegen",
+    "download_file": "Datei herunterladen",
+    "process_another": "Weitere Datei bearbeiten"
   },
   "Header": {
     "merge": "PDF ZUSAMMENFÜHREN",

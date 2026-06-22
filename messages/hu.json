@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "PDF fájl kiválasztása",
-    "or_drop": "vagy húzd ide a PDF-et"
+    "or_drop": "vagy húzd ide a PDF-et",
+    "download_file": "Fájl letöltése",
+    "process_another": "Másik feldolgozása"
   },
   "Header": {
     "merge": "PDF ÖSSZEFŰZÉS",

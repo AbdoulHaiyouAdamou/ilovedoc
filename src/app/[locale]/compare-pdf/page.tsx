@@ -1,15 +1,13 @@
 'use client';
-import SEO from '@/components/common/SEO';
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
-import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { getPdfPageCount } from '@/features/pdf/split';
 import { GitCompare, ArrowRight, Upload, AlignLeft, Layers, Search } from 'lucide-react';
 import type { DiffChange } from '@/features/pdf/compare';
+import { ToolLayout } from '@/components/tools';
 
 // Word-level diff helper using LCS (Longest Common Subsequence)
 function diffWords(textA: string, textB: string): Array<{ added?: boolean, removed?: boolean, value: string }> {
@@ -99,10 +97,10 @@ function getChanges(diff: Array<{ added?: boolean, removed?: boolean, value: str
   return changes;
 }
 
+const ACCENT = '#ef4444';
+
 export default function ComparePDFPage() {
   const tTools = useTranslations('Tools');
-  const tCommon = useTranslations('Common');
-  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const [fileA, setFileA] = useState<File | null>(null);
   const [fileB, setFileB] = useState<File | null>(null);
@@ -119,6 +117,7 @@ export default function ComparePDFPage() {
   const [error, setError] = useState<string | null>(null);
   const [diffChanges, setDiffChanges] = useState<DiffChange[]>([]);
   const [isComparing, setIsComparing] = useState(false);
+  const [isGenerating, setIsGenerating] = useState(false);
 
   const [canvasNodeA, setCanvasNodeA] = useState<HTMLCanvasElement | null>(null);
   const [canvasNodeB, setCanvasNodeB] = useState<HTMLCanvasElement | null>(null);
@@ -337,7 +336,7 @@ export default function ComparePDFPage() {
   // Generate comparison PDF report
   const generateReport = async () => {
     if (!fileA || !fileB) return;
-    setIsComparing(true);
+    setIsGenerating(true);
     try {
       const { generateComparisonPdf } = await import('@/features/pdf/compare');
       const pdfBytes = await generateComparisonPdf(
@@ -359,15 +358,25 @@ export default function ComparePDFPage() {
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     } catch (err) {
       console.error(err);
       setError("Une erreur est survenue lors de la génération du rapport PDF.");
     } finally {
-      setIsComparing(false);
+      setIsGenerating(false);
     }
   };
 
   const isReady = fileA && fileB;
+  const phase = !isReady ? 'select' : 'workspace';
+
+  const reset = () => {
+    setFileA(null);
+    setFileB(null);
+    setPdfDocA(null);
+    setPdfDocB(null);
+    setDiffChanges([]);
+  };
 
   // Filter changes based on search query
   const filteredChanges = diffChanges.filter(c => {
@@ -378,390 +387,384 @@ export default function ComparePDFPage() {
     return matchesText || matchesOriginal;
   });
 
-  return (
-    <>
-      <SEO slug="compare-pdf" />
-      <Header />
+  const customSelectDropzone = (
+    <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center', padding: '2rem' }}>
+      <h1 style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '1rem' }}>
+        {tTools('compare-pdf.name')}
+      </h1>
+      <p style={{ fontSize: '1.2rem', color: 'var(--color-text-secondary)', marginBottom: '3rem' }}>
+        {tTools('compare-pdf.description')}
+      </p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '3rem' }}>
+        
+        {/* Dropzone A */}
+        <div
+          {...dropzoneA.getRootProps()}
+          style={{
+            border: `3px dashed ${ACCENT}`,
+            borderRadius: '16px',
+            padding: '4rem 2rem',
+            cursor: 'pointer',
+            backgroundColor: 'var(--color-surface)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '1rem',
+            transition: 'transform 0.2s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
+          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+        >
+          <input {...dropzoneA.getInputProps()} />
+          <Upload size={48} color={ACCENT} />
+          <h3 style={{ fontSize: '1.4rem' }}>{fileA ? fileA.name : 'Sélectionner le PDF principal'}</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            {fileA ? `${(fileA.size / 1024).toFixed(1)} KB` : 'ou glissez-déposez le fichier ici'}
+          </p>
+        </div>
+
+        {/* Dropzone B */}
+        <div
+          {...dropzoneB.getRootProps()}
+          style={{
+            border: `3px dashed ${ACCENT}`,
+            borderRadius: '16px',
+            padding: '4rem 2rem',
+            cursor: 'pointer',
+            backgroundColor: 'var(--color-surface)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '1rem',
+            transition: 'transform 0.2s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
+          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+        >
+          <input {...dropzoneB.getInputProps()} />
+          <Upload size={48} color={ACCENT} />
+          <h3 style={{ fontSize: '1.4rem' }}>{fileB ? fileB.name : 'Sélectionner le PDF à comparer'}</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            {fileB ? `${(fileB.size / 1024).toFixed(1)} KB` : 'ou glissez-déposez le fichier ici'}
+          </p>
+        </div>
+
+      </div>
+
+      {error && <p style={{ color: '#ef4444', fontWeight: 'bold' }}>{error}</p>}
+    </div>
+  );
+
+  const workspacePreview = (
+    <div className="workspace-preview" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flex: 1, gap: '1.5rem', overflowY: 'auto' }}>
       
-      {!isReady ? (
-        <main className="tool-page-layout" style={{ padding: '2rem 1rem' }}>
-          <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-            <h1 style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '1rem' }}>
-              {tTools('compare-pdf.name')}
-            </h1>
-            <p style={{ fontSize: '1.2rem', color: 'var(--color-text-secondary)', marginBottom: '3rem' }}>
-              {tTools('compare-pdf.description')}
+      {/* Pagination controls */}
+      <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center' }}>
+        <button
+          className="btn btn-outline"
+          onClick={() => setCurrentPageIndex(p => Math.max(0, p - 1))}
+          disabled={currentPageIndex === 0}
+        >
+          Précédent
+        </button>
+        <span style={{ fontWeight: 'bold' }}>
+          Page {currentPageIndex + 1} / {maxPages}
+        </span>
+        <button
+          className="btn btn-outline"
+          onClick={() => setCurrentPageIndex(p => Math.min(maxPages - 1, p + 1))}
+          disabled={currentPageIndex === maxPages - 1}
+        >
+          Suivant
+        </button>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', width: '100%', alignItems: 'start' }}>
+        {/* Column A */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <h4 style={{ marginBottom: '8px', color: 'var(--color-text-secondary)', fontSize: '0.9rem', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+            A: {fileA?.name}
+          </h4>
+          <div style={{
+            boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+            borderRadius: '4px',
+            border: '1px solid rgba(0,0,0,0.1)',
+            overflow: 'hidden',
+            backgroundColor: 'white',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '0px',
+            width: '100%',
+            aspectRatio: '1 / 1.414'
+          }}>
+            <canvas ref={setCanvasNodeA} style={{ display: 'block', maxWidth: '100%', height: 'auto' }} />
+          </div>
+        </div>
+
+        {/* Column B */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <h4 style={{ marginBottom: '8px', color: 'var(--color-text-secondary)', fontSize: '0.9rem', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+            B: {fileB?.name}
+          </h4>
+          <div style={{
+            boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+            borderRadius: '4px',
+            border: '1px solid rgba(0,0,0,0.1)',
+            overflow: 'hidden',
+            backgroundColor: 'white',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '0px',
+            width: '100%',
+            aspectRatio: '1 / 1.414'
+          }}>
+            <canvas ref={setCanvasNodeB} style={{ display: 'block', maxWidth: '100%', height: 'auto' }} />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
+
+  const workspaceSidebar = (
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+      <div className="workspace-sidebar-header">
+        <h2 style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', color: ACCENT }}>
+          <GitCompare size={24} /> Comparer PDF
+        </h2>
+      </div>
+
+      <div className="workspace-sidebar-content" style={{ flex: 1, overflowY: 'auto', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+        {/* Compare Mode Tabs */}
+        <div style={{ display: 'flex', border: '1px solid var(--glass-border)', borderRadius: '8px', overflow: 'hidden' }}>
+          <button
+            onClick={() => setCompareMode('text')}
+            style={{
+              flex: 1,
+              padding: '10px',
+              border: 'none',
+              backgroundColor: compareMode === 'text' ? `rgba(239, 68, 68, 0.1)` : 'transparent',
+              color: compareMode === 'text' ? ACCENT : 'var(--color-text-secondary)',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '6px'
+            }}
+          >
+            <AlignLeft size={16} /> Texte
+          </button>
+          <button
+            onClick={() => setCompareMode('visual')}
+            style={{
+              flex: 1,
+              padding: '10px',
+              border: 'none',
+              backgroundColor: compareMode === 'visual' ? `rgba(239, 68, 68, 0.1)` : 'transparent',
+              color: compareMode === 'visual' ? ACCENT : 'var(--color-text-secondary)',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '6px'
+            }}
+          >
+            <Layers size={16} /> Visuel
+          </button>
+        </div>
+
+        <div style={{
+          padding: '0.8rem',
+          backgroundColor: `rgba(239, 68, 68, 0.05)`,
+          border: `1px solid rgba(239, 68, 68, 0.2)`,
+          borderRadius: '8px',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)'
+        }}>
+          {compareMode === 'text'
+            ? "Comparer les modifications de texte entre deux PDF."
+            : "Superposez visuellement les pages des deux PDF pour identifier les déplacements de blocs."}
+        </div>
+
+        <div>
+          <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 'bold', marginBottom: '6px' }}>
+            Chercher dans le texte
+          </label>
+          <div style={{ position: 'relative' }}>
+            <input
+              type="text"
+              placeholder="Chercher dans les documents..."
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '8px 8px 8px 32px',
+                borderRadius: '8px',
+                border: '1px solid var(--glass-border)',
+                background: 'var(--bg-color)',
+                color: 'var(--color-text)',
+                fontSize: '0.9rem'
+              }}
+            />
+            <Search size={16} style={{ position: 'absolute', left: '10px', top: '10px', color: 'var(--color-text-tertiary)' }} />
+          </div>
+        </div>
+
+        {/* Change Report List */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 'bold', borderBottom: '1px solid var(--glass-border)', paddingBottom: '6px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span>Changements ({filteredChanges.length})</span>
+            {isComparing && <span style={{ fontSize: '0.75rem', color: ACCENT }}>Analyse...</span>}
+          </h3>
+
+          {filteredChanges.length === 0 ? (
+            <p style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)', fontStyle: 'italic', marginTop: '5px' }}>
+              {isComparing ? 'Analyse du contenu des documents...' : 'Aucune différence de texte détectée.'}
             </p>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '3rem' }}>
-              
-              {/* Dropzone A */}
-              <div
-                {...dropzoneA.getRootProps()}
-                style={{
-                  border: '3px dashed #ef4444',
-                  borderRadius: '16px',
-                  padding: '4rem 2rem',
-                  cursor: 'pointer',
-                  backgroundColor: 'var(--color-surface)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  gap: '1rem',
-                  transition: 'transform 0.2s'
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
-                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-              >
-                <input {...dropzoneA.getInputProps()} />
-                <Upload size={48} color="#ef4444" />
-                <h3 style={{ fontSize: '1.4rem' }}>{fileA ? fileA.name : 'Sélectionner le PDF principal'}</h3>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  {fileA ? `${(fileA.size / 1024).toFixed(1)} KB` : 'ou glissez-déposez le fichier ici'}
-                </p>
-              </div>
-
-              {/* Dropzone B */}
-              <div
-                {...dropzoneB.getRootProps()}
-                style={{
-                  border: '3px dashed #ef4444',
-                  borderRadius: '16px',
-                  padding: '4rem 2rem',
-                  cursor: 'pointer',
-                  backgroundColor: 'var(--color-surface)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  gap: '1rem',
-                  transition: 'transform 0.2s'
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
-                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-              >
-                <input {...dropzoneB.getInputProps()} />
-                <Upload size={48} color="#ef4444" />
-                <h3 style={{ fontSize: '1.4rem' }}>{fileB ? fileB.name : 'Sélectionner le PDF à comparer'}</h3>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  {fileB ? `${(fileB.size / 1024).toFixed(1)} KB` : 'ou glissez-déposez le fichier ici'}
-                </p>
-              </div>
-
-            </div>
-
-            {error && <p style={{ color: '#ef4444', fontWeight: 'bold' }}>{error}</p>}
-
-            <AdUnit slot="ad-top" format="horizontal" />
-
-            {/* SEO section */}
-            <section className="seo-content glass" style={{ margin: '4rem auto', maxWidth: '800px', textAlign: 'left' }}>
-              <h2>Comment comparer deux fichiers PDF ?</h2>
-              <ol className="steps-list">
-                <li>Sélectionnez ou glissez-déposez votre document PDF principal dans la zone gauche.</li>
-                <li>Sélectionnez ou glissez-déposez le PDF modifié ou à comparer dans la zone droite.</li>
-                <li>Le système va synchroniser le défilement et lancer automatiquement l'analyse textuelle sémantique.</li>
-                <li>Consultez la liste des modifications détectées en temps réel dans la barre latérale.</li>
-                <li>Téléchargez le rapport final détaillé des différences sous forme de fichier PDF.</li>
-              </ol>
-            </section>
-
-          </div>
-        </main>
-      ) : (
-        /* Workspace layout */
-        <>
-          <div style={{ backgroundColor: 'var(--bg-color)', padding: '10px 0', borderBottom: '1px solid var(--glass-border)' }}>
-            <div className="container" style={{ maxWidth: '728px', margin: '0 auto' }}>
-              <AdUnit slot="ad-workspace-top" format="horizontal" />
-            </div>
-          </div>
-
-          <div className="workspace">
-            {/* Side-by-Side viewer */}
-            <div className="workspace-preview" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flex: 1, gap: '1.5rem', overflowY: 'auto' }}>
-              
-              {/* Pagination controls */}
-              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center' }}>
-                <button
-                  className="btn btn-outline"
-                  onClick={() => setCurrentPageIndex(p => Math.max(0, p - 1))}
-                  disabled={currentPageIndex === 0}
-                >
-                  Précédent
-                </button>
-                <span style={{ fontWeight: 'bold' }}>
-                  Page {currentPageIndex + 1} / {maxPages}
-                </span>
-                <button
-                  className="btn btn-outline"
-                  onClick={() => setCurrentPageIndex(p => Math.min(maxPages - 1, p + 1))}
-                  disabled={currentPageIndex === maxPages - 1}
-                >
-                  Suivant
-                </button>
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', width: '100%', alignItems: 'start' }}>
-                {/* Column A */}
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <h4 style={{ marginBottom: '8px', color: 'var(--color-text-secondary)', fontSize: '0.9rem', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                    A: {fileA.name}
+          ) : (
+            <div style={{ maxHeight: '250px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', paddingRight: '4px' }}>
+              {Array.from(new Set(filteredChanges.map(c => c.page))).sort((a,b) => a-b).map(pageNum => (
+                <div key={pageNum} style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                  <h4 style={{ fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--color-text-secondary)', marginTop: '4px' }}>
+                    Page {pageNum}
                   </h4>
-                  <div style={{
-                    boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                    borderRadius: '4px',
-                    border: '1px solid rgba(0,0,0,0.1)',
-                    overflow: 'hidden',
-                    backgroundColor: 'white',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '0px',
-                    width: '100%',
-                    aspectRatio: '1 / 1.414'
-                  }}>
-                    <canvas ref={setCanvasNodeA} style={{ display: 'block', maxWidth: '100%', height: 'auto' }} />
-                  </div>
-                </div>
+                  
+                  {filteredChanges.filter(c => c.page === pageNum).map((change, cIdx) => (
+                    <div key={cIdx} style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '8px', background: 'var(--color-surface)', borderRadius: '6px', border: '1px solid var(--glass-border)' }}>
+                      <div style={{ fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', color: change.type === 'addition' ? '#10b981' : change.type === 'deletion' ? '#ef4444' : '#3b82f6' }}>
+                        {change.type === 'addition' ? 'Ajouter' : change.type === 'deletion' ? 'Supprimer' : 'Modifier'}
+                      </div>
 
-                {/* Column B */}
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <h4 style={{ marginBottom: '8px', color: 'var(--color-text-secondary)', fontSize: '0.9rem', width: '100%', textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                    B: {fileB.name}
-                  </h4>
-                  <div style={{
-                    boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                    borderRadius: '4px',
-                    border: '1px solid rgba(0,0,0,0.1)',
-                    overflow: 'hidden',
-                    backgroundColor: 'white',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    padding: '0px',
-                    width: '100%',
-                    aspectRatio: '1 / 1.414'
-                  }}>
-                    <canvas ref={setCanvasNodeB} style={{ display: 'block', maxWidth: '100%', height: 'auto' }} />
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            {/* Sidebar controls */}
-            <div className="workspace-sidebar" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-              <div className="workspace-sidebar-header">
-                <h2 style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-                  <GitCompare size={24} /> Comparer PDF
-                </h2>
-              </div>
-
-              <div className="workspace-sidebar-content" style={{ flex: 1, overflowY: 'auto', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
-                {/* Compare Mode Tabs */}
-                <div style={{ display: 'flex', border: '1px solid var(--glass-border)', borderRadius: '8px', overflow: 'hidden' }}>
-                  <button
-                    onClick={() => setCompareMode('text')}
-                    style={{
-                      flex: 1,
-                      padding: '10px',
-                      border: 'none',
-                      backgroundColor: compareMode === 'text' ? 'rgba(239, 68, 68, 0.1)' : 'transparent',
-                      color: compareMode === 'text' ? '#ef4444' : 'var(--color-text-secondary)',
-                      fontWeight: 'bold',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '6px'
-                    }}
-                  >
-                    <AlignLeft size={16} /> Texte sémantique
-                  </button>
-                  <button
-                    onClick={() => setCompareMode('visual')}
-                    style={{
-                      flex: 1,
-                      padding: '10px',
-                      border: 'none',
-                      backgroundColor: compareMode === 'visual' ? 'rgba(239, 68, 68, 0.1)' : 'transparent',
-                      color: compareMode === 'visual' ? '#ef4444' : 'var(--color-text-secondary)',
-                      fontWeight: 'bold',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '6px'
-                    }}
-                  >
-                    <Layers size={16} /> Superposition
-                  </button>
-                </div>
-
-                <div style={{
-                  padding: '0.8rem',
-                  backgroundColor: 'rgba(239, 68, 68, 0.05)',
-                  border: '1px solid rgba(239, 68, 68, 0.2)',
-                  borderRadius: '8px',
-                  fontSize: '0.85rem',
-                  color: 'var(--color-text-secondary)'
-                }}>
-                  {compareMode === 'text'
-                    ? "Comparer les modifications de texte entre deux PDF."
-                    : "Superposez visuellement les pages des deux PDF pour identifier les déplacements de blocs."}
-                </div>
-
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 'bold', marginBottom: '6px' }}>
-                    Chercher dans le texte
-                  </label>
-                  <div style={{ position: 'relative' }}>
-                    <input
-                      type="text"
-                      placeholder="Chercher dans les documents..."
-                      value={searchText}
-                      onChange={(e) => setSearchText(e.target.value)}
-                      style={{
-                        width: '100%',
-                        padding: '8px 8px 8px 32px',
-                        borderRadius: '8px',
-                        border: '1px solid var(--glass-border)',
-                        background: 'var(--bg-color)',
-                        color: 'var(--color-text)',
-                        fontSize: '0.9rem'
-                      }}
-                    />
-                    <Search size={16} style={{ position: 'absolute', left: '10px', top: '10px', color: 'var(--color-text-tertiary)' }} />
-                  </div>
-                </div>
-
-                {/* Change Report List */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  <h3 style={{ fontSize: '1rem', fontWeight: 'bold', borderBottom: '1px solid var(--glass-border)', paddingBottom: '6px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span>Rapport de changement ({filteredChanges.length})</span>
-                    {isComparing && <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>Analyse...</span>}
-                  </h3>
-
-                  {filteredChanges.length === 0 ? (
-                    <p style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)', fontStyle: 'italic', marginTop: '5px' }}>
-                      {isComparing ? 'Analyse du contenu des documents...' : 'Aucune différence de texte détectée.'}
-                    </p>
-                  ) : (
-                    <div style={{ maxHeight: '250px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', paddingRight: '4px' }}>
-                      {Array.from(new Set(filteredChanges.map(c => c.page))).sort((a,b) => a-b).map(pageNum => (
-                        <div key={pageNum} style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                          <h4 style={{ fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--color-text-secondary)', marginTop: '4px' }}>
-                            Page {pageNum}
-                          </h4>
-                          
-                          {filteredChanges.filter(c => c.page === pageNum).map((change, cIdx) => (
-                            <div key={cIdx} style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '8px', background: 'var(--color-surface)', borderRadius: '6px', border: '1px solid var(--glass-border)' }}>
-                              <div style={{ fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase', color: change.type === 'addition' ? '#10b981' : change.type === 'deletion' ? '#ef4444' : '#3b82f6' }}>
-                                {change.type === 'addition' ? 'Ajouter' : change.type === 'deletion' ? 'Supprimer' : 'Modifier'}
-                              </div>
-
-                              {(change.type === 'deletion' || change.type === 'modification') && (
-                                <div style={{
-                                  backgroundColor: '#fef2f2',
-                                  borderLeft: '3px solid #ef4444',
-                                  padding: '5px 8px',
-                                  borderRadius: '0 4px 4px 0',
-                                  fontSize: '0.75rem',
-                                  color: '#991b1b',
-                                  display: 'flex',
-                                  justifyContent: 'space-between',
-                                  alignItems: 'center'
-                                }}>
-                                  <span style={{ overflowWrap: 'anywhere' }}>
-                                    <strong>Existant</strong><br />
-                                    {change.type === 'modification' ? change.originalText : change.text}
-                                  </span>
-                                  <span style={{ fontSize: '0.65rem', color: '#ef4444', fontWeight: 'bold', marginLeft: '5px' }}>
-                                    -{change.type === 'modification' ? change.originalText?.length : change.text.length}
-                                  </span>
-                                </div>
-                              )}
-
-                              {(change.type === 'addition' || change.type === 'modification') && (
-                                <div style={{
-                                  backgroundColor: '#f0fdf4',
-                                  borderLeft: '3px solid #10b981',
-                                  padding: '5px 8px',
-                                  borderRadius: '0 4px 4px 0',
-                                  fontSize: '0.75rem',
-                                  color: '#166534',
-                                  display: 'flex',
-                                  justifyContent: 'space-between',
-                                  alignItems: 'center'
-                                }}>
-                                  <span style={{ overflowWrap: 'anywhere' }}>
-                                    <strong>Nouveau</strong><br />
-                                    {change.text}
-                                  </span>
-                                  <span style={{ fontSize: '0.65rem', color: '#10b981', fontWeight: 'bold', marginLeft: '5px' }}>
-                                    +{change.text.length}
-                                  </span>
-                                </div>
-                              )}
-                            </div>
-                          ))}
+                      {(change.type === 'deletion' || change.type === 'modification') && (
+                        <div style={{
+                          backgroundColor: '#fef2f2',
+                          borderLeft: '3px solid #ef4444',
+                          padding: '5px 8px',
+                          borderRadius: '0 4px 4px 0',
+                          fontSize: '0.75rem',
+                          color: '#991b1b',
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center'
+                        }}>
+                          <span style={{ overflowWrap: 'anywhere' }}>
+                            <strong>Existant</strong><br />
+                            {change.type === 'modification' ? change.originalText : change.text}
+                          </span>
+                          <span style={{ fontSize: '0.65rem', color: '#ef4444', fontWeight: 'bold', marginLeft: '5px' }}>
+                            -{change.type === 'modification' ? change.originalText?.length : change.text.length}
+                          </span>
                         </div>
-                      ))}
+                      )}
+
+                      {(change.type === 'addition' || change.type === 'modification') && (
+                        <div style={{
+                          backgroundColor: '#f0fdf4',
+                          borderLeft: '3px solid #10b981',
+                          padding: '5px 8px',
+                          borderRadius: '0 4px 4px 0',
+                          fontSize: '0.75rem',
+                          color: '#166534',
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center'
+                        }}>
+                          <span style={{ overflowWrap: 'anywhere' }}>
+                            <strong>Nouveau</strong><br />
+                            {change.text}
+                          </span>
+                          <span style={{ fontSize: '0.65rem', color: '#10b981', fontWeight: 'bold', marginLeft: '5px' }}>
+                            +{change.text.length}
+                          </span>
+                        </div>
+                      )}
                     </div>
-                  )}
+                  ))}
                 </div>
-
-                {/* Ads Unit */}
-                <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
-                  <AdUnit slot="ad-workspace-sidebar" format="rectangle" />
-                </div>
-              </div>
-
-              <div className="workspace-sidebar-footer" style={{ padding: '1rem', borderTop: '1px solid var(--glass-border)' }}>
-                {error && <p style={{ color: '#ef4444', fontSize: '0.85rem', fontWeight: 'bold', marginBottom: '8px' }}>{error}</p>}
-                
-                <button
-                  className="btn btn-xl"
-                  onClick={generateReport}
-                  disabled={isComparing}
-                  style={{
-                    width: '100%',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gap: '10px',
-                    fontSize: '1.1rem',
-                    padding: '0.8rem',
-                    backgroundColor: '#ef4444',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '8px',
-                    cursor: 'pointer',
-                    fontWeight: 'bold'
-                  }}
-                >
-                  Télécharger le rapport <ArrowRight size={20} />
-                </button>
-                <button
-                  className="btn btn-outline"
-                  onClick={() => {
-                    setFileA(null);
-                    setFileB(null);
-                    setPdfDocA(null);
-                    setPdfDocB(null);
-                    setDiffChanges([]);
-                  }}
-                  style={{ width: '100%', marginTop: '8px', padding: '0.6rem' }}
-                >
-                  Comparer d'autres fichiers
-                </button>
-              </div>
+              ))}
             </div>
-          </div>
-        </>
-      )}
+          )}
+        </div>
 
-      <Footer />
-    </>
+        {/* Ads Unit */}
+        <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
+          <AdUnit slot="ad-workspace-sidebar" format="rectangle" />
+        </div>
+      </div>
+
+      <div className="workspace-sidebar-footer" style={{ padding: '1rem', borderTop: '1px solid var(--glass-border)' }}>
+        {error && <p style={{ color: '#ef4444', fontSize: '0.85rem', fontWeight: 'bold', marginBottom: '8px' }}>{error}</p>}
+        
+        <button
+          className="btn btn-xl"
+          onClick={generateReport}
+          disabled={isComparing || isGenerating}
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '10px',
+            fontSize: '1.1rem',
+            padding: '0.8rem',
+            background: `linear-gradient(135deg, ${ACCENT}, #b91c1c)`,
+            color: 'white',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            fontWeight: 'bold'
+          }}
+        >
+          {isGenerating ? 'Génération...' : 'Télécharger le rapport'} <ArrowRight size={20} />
+        </button>
+        <button
+          className="btn btn-outline"
+          onClick={reset}
+          style={{ width: '100%', marginTop: '8px', padding: '0.6rem' }}
+        >
+          Comparer d'autres fichiers
+        </button>
+      </div>
+    </div>
+  );
+
+  return (
+    <ToolLayout
+      slug="compare-pdf"
+      phase={phase}
+      file={null} // Controlled manually
+      isProcessing={false} // Compare is an interactive tool
+      progress={0}
+      resultUrl={null}
+      error={error}
+      onReset={reset}
+      onDrop={() => {}} // Controlled manually
+      accept={{}} // Controlled manually
+      maxFiles={2} // Handled custom
+      customSelectDropzone={customSelectDropzone}
+      workspacePreview={workspacePreview}
+      workspaceSidebar={workspaceSidebar}
+      processingLabel="Comparaison en cours..."
+      successMessage="🎉 Rapport de comparaison généré !"
+      actionLabel="Télécharger le rapport"
+      onAction={generateReport}
+      seoSection={
+        <div style={{ margin: '4rem auto', maxWidth: '800px', textAlign: 'left' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Comment comparer deux fichiers PDF ?</h2>
+          <ol className="steps-list">
+            <li>Sélectionnez ou glissez-déposez votre document PDF principal dans la zone gauche.</li>
+            <li>Sélectionnez ou glissez-déposez le PDF modifié ou à comparer dans la zone droite.</li>
+            <li>Le système va synchroniser le défilement et lancer automatiquement l'analyse textuelle sémantique.</li>
+            <li>Consultez la liste des modifications détectées en temps réel dans la barre latérale.</li>
+            <li>Téléchargez le rapport final détaillé des différences sous forme de fichier PDF.</li>
+          </ol>
+        </div>
+      }
+    />
   );
 }

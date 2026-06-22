@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Selectați fișierul PDF",
-    "or_drop": "sau trageți PDF-ul aici"
+    "or_drop": "sau trageți PDF-ul aici",
+    "download_file": "Descărcați fișierul",
+    "process_another": "Procesați altul"
   },
   "Header": {
     "merge": "UNEȘTE PDF",

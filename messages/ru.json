@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Выберите файл PDF",
-    "or_drop": "или перетащите PDF сюда"
+    "or_drop": "или перетащите PDF сюда",
+    "download_file": "Скачать файл",
+    "process_another": "Обработать другой"
   },
   "Header": {
     "merge": "ОБЪЕДИНИТЬ PDF",

@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Velg PDF-fil",
-    "or_drop": "eller slipp PDF her"
+    "or_drop": "eller slipp PDF her",
+    "download_file": "Last ned fil",
+    "process_another": "Behandle en annen"
   },
   "Header": {
     "merge": "SLÅ SAMMEN PDF",

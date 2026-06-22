@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "Select PDF file",
-    "or_drop": "or drop PDF here"
+    "or_drop": "or drop PDF here",
+    "download_file": "Download file",
+    "process_another": "Process another"
   },
   "Header": {
     "merge": "MERGE PDF",

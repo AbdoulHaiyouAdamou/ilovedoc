@@ -8,7 +8,9 @@
   },
   "Common": {
     "select_file": "PDF faylını seçin",
-    "or_drop": "və ya PDF-i buraya atın"
+    "or_drop": "və ya PDF-i buraya atın",
+    "download_file": "Faylı yüklə",
+    "process_another": "Başqa birini işlə"
   },
   "Header": {
     "merge": "PDF-ləri Birləşdir",
