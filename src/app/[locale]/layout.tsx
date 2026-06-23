@@ -221,7 +221,7 @@ function JsonLd({ description }: { description: string }) {
 
 
 function GoogleAdSense() {
-  const publisherId = process.env.NEXT_PUBLIC_ADSENSE_ID;
+  const publisherId = process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-4390649114589142';
   if (!publisherId) return null;
 
   return (
