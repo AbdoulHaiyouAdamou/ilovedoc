@@ -122,8 +122,11 @@ export default function Header() {
       <header
         className="header"
         style={{
-          position: 'sticky',
+          position: 'fixed',
           top: 0,
+          left: 0,
+          right: 0,
+          width: '100%',
           zIndex: 1000,
           transition: 'background .3s, box-shadow .3s, backdrop-filter .3s',
           background: isScrolled
@@ -532,6 +535,7 @@ export default function Header() {
         }
         [data-theme='dark'] .header-nav-link:hover { color: #a78bfa !important; }
       `}</style>
+      <div style={{ height: 65, width: '100%' }} aria-hidden="true" />
     </>
   );
 }
