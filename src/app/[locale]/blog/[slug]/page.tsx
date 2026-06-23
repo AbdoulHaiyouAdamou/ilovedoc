@@ -40,13 +40,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${title} | Blog iLoveDoc`,
       description: description,
-      url: `https://ilovedoc.com/blog/${post.slug}`,
+      url: `https://ilove-doc.com/blog/${post.slug}`,
       type: 'article',
       publishedTime: post.date,
       authors: ['iLoveDoc'],
     },
     alternates: {
-      canonical: `https://ilovedoc.com/blog/${post.slug}`,
+      canonical: `https://ilove-doc.com/blog/${post.slug}`,
     },
   };
 }
@@ -126,7 +126,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
                 {tBlog('share')}
               </span>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=https://ilovedoc.com/blog/${post.slug}`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=https://ilove-doc.com/blog/${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles.shareBtn} ${styles.shareBtnFb}`}
@@ -135,7 +135,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
                 <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
               <a
-                href={`https://twitter.com/intent/tweet?url=https://ilovedoc.com/blog/${post.slug}&text=${encodeURIComponent(localizedPost.title)}`}
+                href={`https://twitter.com/intent/tweet?url=https://ilove-doc.com/blog/${post.slug}&text=${encodeURIComponent(localizedPost.title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles.shareBtn} ${styles.shareBtnTw}`}
@@ -144,7 +144,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
                 <span style={{ fontSize: '14px', fontWeight: 'bold', fontFamily: 'sans-serif' }}>𝕏</span>
               </a>
               <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://ilovedoc.com/blog/${post.slug}`}
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://ilove-doc.com/blog/${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${styles.shareBtn} ${styles.shareBtnLi}`}

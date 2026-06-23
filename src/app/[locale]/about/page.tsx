@@ -17,13 +17,13 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     openGraph: {
       title: t('about_title'),
       description: t('about_desc'),
-      url: `https://ilovedoc.com/${locale}/about`,
+      url: `https://ilove-doc.com/${locale}/about`,
       siteName: 'iLoveDoc',
       type: 'website',
       locale: locale,
     },
     alternates: {
-      canonical: `https://ilovedoc.com/${locale}/about`,
+      canonical: `https://ilove-doc.com/${locale}/about`,
     },
   };
 }

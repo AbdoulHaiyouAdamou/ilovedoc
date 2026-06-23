@@ -79,7 +79,7 @@ export async function removePagesFromPDF(
 
   resultPdf.setTitle(`Document modifié - iLoveDoc`);
   resultPdf.setCreator('iLoveDoc');
-  resultPdf.setProducer('iLoveDoc - https://ilovedoc.com');
+  resultPdf.setProducer('iLoveDoc - https://ilove-doc.com');
   resultPdf.setCreationDate(new Date());
   resultPdf.setModificationDate(new Date());
 

@@ -9,7 +9,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Tools' });
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
 
   const title = `${t('merge-pdf.name')} | iLoveDoc`;
   const description = t('merge-pdf.description');

@@ -9,7 +9,7 @@ import type { Tool } from './tools';
 /* ── Constants ───────────────────────────────────────────────── */
 const SITE_NAME = 'iLoveDoc';
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 /* ── Default Metadata ────────────────────────────────────────── */

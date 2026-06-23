@@ -104,7 +104,7 @@ import { routing } from '@/i18n/routing';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
   const seo = seoData[locale] || defaultSeo;
 
   let title = 'iLoveDoc';
@@ -190,21 +190,21 @@ function JsonLd({ description }: { description: string }) {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'iLoveDoc',
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com',
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com'}/logo.png`,
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com',
+    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com'}/logo.png`,
     description: description,
     sameAs: [],
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '',
       contactType: 'customer service',
-      email: 'contact@ilovedoc.com',
+      email: 'contact@ilove-doc.com',
     },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com'}/search?q={search_term_string}`,
+        urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com'}/search?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },

@@ -10,7 +10,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Footer' });
   const tMeta = await getTranslations({ locale, namespace: 'Metadata' });
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
 
   const title = `${t('contact')} – iLoveDoc`;
   const description = tMeta('home_desc'); // Fallback description

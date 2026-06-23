@@ -15,13 +15,13 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     openGraph: {
       title: t('privacy_title'),
       description: t('privacy_desc'),
-      url: `https://ilovedoc.com/${locale}/privacy`,
+      url: `https://ilove-doc.com/${locale}/privacy`,
       siteName: 'iLoveDoc',
       type: 'website',
       locale: locale,
     },
     alternates: {
-      canonical: `https://ilovedoc.com/${locale}/privacy`,
+      canonical: `https://ilove-doc.com/${locale}/privacy`,
     },
   };
 }

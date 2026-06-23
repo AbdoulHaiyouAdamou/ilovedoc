@@ -94,7 +94,7 @@ export async function mergePDFs(
   // Set merged PDF metadata
   mergedPdf.setTitle('Document fusionné - iLoveDoc');
   mergedPdf.setCreator('iLoveDoc');
-  mergedPdf.setProducer('iLoveDoc - https://ilovedoc.com');
+  mergedPdf.setProducer('iLoveDoc - https://ilove-doc.com');
   mergedPdf.setCreationDate(new Date());
   mergedPdf.setModificationDate(new Date());
 

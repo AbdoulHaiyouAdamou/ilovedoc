@@ -60,7 +60,7 @@ export async function cropPDF(file: File, options: CropOptions): Promise<Uint8Ar
 
   pdfDoc.setTitle('Document rogné - iLoveDoc');
   pdfDoc.setCreator('iLoveDoc');
-  pdfDoc.setProducer('iLoveDoc - https://ilovedoc.com');
+  pdfDoc.setProducer('iLoveDoc - https://ilove-doc.com');
   pdfDoc.setCreationDate(new Date());
   pdfDoc.setModificationDate(new Date());
 

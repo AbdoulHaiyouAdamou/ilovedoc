@@ -60,7 +60,7 @@ export async function signPDF(file: File, options: SignOptions): Promise<Uint8Ar
   
   pdfDoc.setTitle('Document signé - iLoveDoc');
   pdfDoc.setCreator('iLoveDoc');
-  pdfDoc.setProducer('iLoveDoc - https://ilovedoc.com');
+  pdfDoc.setProducer('iLoveDoc - https://ilove-doc.com');
   pdfDoc.setCreationDate(new Date());
   pdfDoc.setModificationDate(new Date());
   

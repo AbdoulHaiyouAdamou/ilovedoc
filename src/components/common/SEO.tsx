@@ -11,7 +11,7 @@ export default function SEO({ slug }: SEOProps) {
   if (!tool) return null;
 
   const seo = getSEOData(slug);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
   const toolUrl = `${baseUrl}/${slug}`;
 
   // Build Structured Data @graph linking all schemas together

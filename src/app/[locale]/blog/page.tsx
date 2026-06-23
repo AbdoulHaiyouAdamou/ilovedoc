@@ -16,7 +16,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Footer' });
   const tBlog = await getTranslations({ locale, namespace: 'Blog' });
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilovedoc.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
 
   const title = `${t('blog')} | iLoveDoc`;
   const description = tBlog('title') + ' - ' + tBlog('subtitle');

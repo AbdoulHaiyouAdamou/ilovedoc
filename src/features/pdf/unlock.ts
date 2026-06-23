@@ -37,7 +37,7 @@ export async function unlockPDF(file: File, options?: UnlockOptions): Promise<Ui
   // Set metadata
   pdfDoc.setTitle('Document déverrouillé - iLoveDoc');
   pdfDoc.setCreator('iLoveDoc');
-  pdfDoc.setProducer('iLoveDoc - https://ilovedoc.com');
+  pdfDoc.setProducer('iLoveDoc - https://ilove-doc.com');
   pdfDoc.setModificationDate(new Date());
 
   if (options?.onProgress) {

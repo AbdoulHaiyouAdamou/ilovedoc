@@ -24,7 +24,7 @@ export async function repairPDF(file: File, options?: RepairOptions): Promise<Ui
   // Save the document to rebuild the XRef table and fix broken structure
   sourcePdf.setTitle('Document réparé - iLoveDoc');
   sourcePdf.setCreator('iLoveDoc');
-  sourcePdf.setProducer('iLoveDoc - https://ilovedoc.com');
+  sourcePdf.setProducer('iLoveDoc - https://ilove-doc.com');
   sourcePdf.setCreationDate(new Date());
   sourcePdf.setModificationDate(new Date());
   

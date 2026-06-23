@@ -72,7 +72,7 @@ export async function rotatePDFPages(
   // Set metadata
   pdfDoc.setTitle('Document modifié - iLoveDoc');
   pdfDoc.setCreator('iLoveDoc');
-  pdfDoc.setProducer('iLoveDoc - https://ilovedoc.com');
+  pdfDoc.setProducer('iLoveDoc - https://ilove-doc.com');
   pdfDoc.setCreationDate(new Date());
   pdfDoc.setModificationDate(new Date());
 
@@ -136,7 +136,7 @@ export async function rotateAllPages(
 
   pdfDoc.setTitle('Document modifié - iLoveDoc');
   pdfDoc.setCreator('iLoveDoc');
-  pdfDoc.setProducer('iLoveDoc - https://ilovedoc.com');
+  pdfDoc.setProducer('iLoveDoc - https://ilove-doc.com');
   pdfDoc.setCreationDate(new Date());
   pdfDoc.setModificationDate(new Date());
 
