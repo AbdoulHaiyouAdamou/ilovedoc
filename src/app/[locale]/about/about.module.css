@@ -111,7 +111,7 @@
 /* ── Advantages Grid ── */
 .advantagesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 1.5rem;
 }
 
@@ -159,7 +159,7 @@
 /* ── Expertise ── */
 .expertiseGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 1.5rem;
 }
 
@@ -281,6 +281,7 @@
   justify-content: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .diagramStep {
@@ -359,5 +360,14 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+  .missionCard, .advantageCard, .expertiseCard, .techCard {
+    padding: 1.5rem;
   }
 }
