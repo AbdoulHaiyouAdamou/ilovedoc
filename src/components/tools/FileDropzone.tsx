@@ -49,46 +49,20 @@ export default function FileDropzone({
         padding: '2rem',
       }}
     >
-      <h1
-        style={{
-          fontSize: '3.5rem',
-          fontWeight: 800,
-          marginBottom: '1rem',
-          textAlign: 'center',
-        }}
-      >
+      <h1 className="dropzone-title">
         {title}
       </h1>
-      <p
-        style={{
-          fontSize: '1.3rem',
-          color: 'var(--color-text-secondary)',
-          marginBottom: '3rem',
-          maxWidth: '800px',
-          textAlign: 'center',
-          lineHeight: 1.5,
-        }}
-      >
+      <p className="dropzone-desc">
         {description}
       </p>
 
       <div {...getRootProps()} style={{ cursor: 'pointer', textAlign: 'center' }}>
         <input {...getInputProps()} />
         <button
+          className="dropzone-btn"
           style={{
             backgroundColor: accentColor,
-            color: 'white',
-            border: 'none',
-            padding: '1.8rem 4rem',
-            fontSize: '1.8rem',
-            fontWeight: 'bold',
-            borderRadius: '12px',
             boxShadow: `0 10px 25px ${accentColor}66`,
-            cursor: 'pointer',
-            transition: 'transform 0.2s, box-shadow 0.2s',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '12px',
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'scale(1.05)';

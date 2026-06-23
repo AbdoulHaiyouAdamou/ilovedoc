@@ -2030,3 +2030,52 @@ nextjs-portal {
     display: none !important;
   }
 }
+
+/* -- File Dropzone Responsive -------------------------- */
+.dropzone-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.dropzone-desc {
+  font-size: 1.3rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.dropzone-btn {
+  color: white;
+  border: none;
+  padding: 1.8rem 4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .dropzone-title {
+    font-size: 2.2rem;
+  }
+  .dropzone-desc {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .dropzone-btn {
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 320px;
+  }
+}
