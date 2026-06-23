@@ -13,6 +13,7 @@
     "@google/generative-ai": "^0.24.1",
     "@pdfsmaller/pdf-encrypt-lite": "^1.0.2",
     "@types/nodemailer": "^8.0.1",
+    "@vercel/analytics": "^2.0.1",
     "@vercel/kv": "^3.0.0",
     "@vitalets/google-translate-api": "^9.2.1",
     "docx": "^9.7.0",

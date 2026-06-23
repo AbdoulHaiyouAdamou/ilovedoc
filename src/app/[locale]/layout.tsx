@@ -6,6 +6,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import GoogleTranslate from '@/components/common/GoogleTranslate';
 import ScrollToTop from '@/components/common/ScrollToTop';
 import CookieConsent from '@/components/common/CookieConsent';
+import { Analytics } from '@vercel/analytics/react';
 import '../globals.css';
 import '../workspace.css';
 
@@ -326,6 +327,7 @@ export default async function RootLayout({
           <ScrollToTop />
           {children}
           <CookieConsent />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
