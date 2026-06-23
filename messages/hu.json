@@ -713,5 +713,14 @@
     "privacy_desc": "Politique de confidentialité de iLoveDoc. Découvrez comment nous protégeons vos données personnelles, notre utilisation des cookies et vos droits RGPD.",
     "terms_title": "Fogyasztói Általános Szerződési Feltételek – iLoveDoc",
     "terms_desc": "Conditions générales d'utilisation du site iLoveDoc. Consultez les règles d'accès et d'utilisation de nos outils PDF gratuits en ligne."
+  },
+  "Categories": {
+    "organize": "Rendszerezés",
+    "optimize": "Optimalizálás",
+    "convert_to": "Konvertálás erre",
+    "convert_from": "Konvertálás erről",
+    "edit": "Szerkesztés",
+    "security": "Biztonság",
+    "ai": "MI"
   }
 }

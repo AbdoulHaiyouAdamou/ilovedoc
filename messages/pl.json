@@ -713,5 +713,14 @@
     "privacy_desc": "Polityka prywatności iLoveDoc. Dowiedz się, jak chronimy Twoje dane osobowe, naszą użycie plików cookie i Twoje prawa RGPD.",
     "terms_title": "Warunki Użytkowania – iLoveDoc",
     "terms_desc": "Warunki korzystania z witryny iLoveDoc. Zobacz zasady dostępu i korzystania z naszych bezpłatnych narzędzi PDF w Internecie."
+  },
+  "Categories": {
+    "organize": "Organizuj",
+    "optimize": "Optymalizuj",
+    "convert_to": "Konwertuj na",
+    "convert_from": "Konwertuj z",
+    "edit": "Edytuj",
+    "security": "Bezpieczeństwo",
+    "ai": "AI"
   }
 }

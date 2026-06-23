@@ -713,5 +713,14 @@
     "privacy_desc": "Kebijakan privasi iLoveDoc. Temukan bagaimana kami melindungi data pribadi Anda, penggunaan cookie kami, dan hak RGPD Anda.",
     "terms_title": "Syarat dan Ketentuan Penggunaan – iLoveDoc",
     "terms_desc": "Syarat dan ketentuan penggunaan situs iLoveDoc. Konsultasikan aturan akses dan penggunaan alat PDF gratis online kami."
+  },
+  "Categories": {
+    "organize": "Atur",
+    "optimize": "Optimasi",
+    "convert_to": "Konversi ke",
+    "convert_from": "Konversi dari",
+    "edit": "Edit",
+    "security": "Keamanan",
+    "ai": "AI"
   }
 }

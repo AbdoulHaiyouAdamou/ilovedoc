@@ -30,14 +30,14 @@ export interface Tool {
   keywords?: string[];
 }
 
-export const toolCategories: Record<ToolCategory, { label: string; icon: any }> = {
-  organize:     { label: 'Organiser',       icon: FolderOpen },
-  optimize:     { label: 'Optimiser',       icon: Zap },
-  'convert-to': { label: 'Convertir en',    icon: Import },
-  'convert-from':{ label: 'Convertir depuis',icon: Download },
-  edit:         { label: 'Éditer',          icon: PenTool },
-  security:     { label: 'Sécurité',        icon: Lock },
-  ai:           { label: 'IA',              icon: Bot },
+export const toolCategories: Record<ToolCategory, { labelKey: string; icon: any }> = {
+  organize:     { labelKey: 'organize',       icon: FolderOpen },
+  optimize:     { labelKey: 'optimize',       icon: Zap },
+  'convert-to': { labelKey: 'convert_to',     icon: Import },
+  'convert-from':{ labelKey: 'convert_from',  icon: Download },
+  edit:         { labelKey: 'edit',           icon: PenTool },
+  security:     { labelKey: 'security',       icon: Lock },
+  ai:           { labelKey: 'ai',             icon: Bot },
 };
 
 export const tools: Tool[] = [

@@ -713,5 +713,14 @@
     "privacy_desc": "iLoveDoc's privacybeleid. Ontdek hoe wij uw persoonlijke gegevens beschermen, ons gebruik van cookies en uw RGPD-rechten.",
     "terms_title": "Algemene gebruiksvoorwaarden – iLoveDoc",
     "terms_desc": "Algemene gebruiksvoorwaarden van de iLoveDoc-website. Raadpleeg de regels voor toegang en gebruik van onze gratis online PDF-hulpprogramma's."
+  },
+  "Categories": {
+    "organize": "Organiseren",
+    "optimize": "Optimaliseren",
+    "convert_to": "Converteren naar",
+    "convert_from": "Converteren van",
+    "edit": "Bewerken",
+    "security": "Beveiliging",
+    "ai": "AI"
   }
 }

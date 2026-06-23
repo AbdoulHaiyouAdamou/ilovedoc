@@ -713,5 +713,14 @@
     "privacy_desc": "Personvernpolicy for iLoveDoc. Les om hvordan vi beskytter dine personlige data, vår bruk av informasjonskapsler og dine RGPD-rettigheter.",
     "terms_title": "Vilkår for bruk – iLoveDoc",
     "terms_desc": "Vilkår for bruk av iLoveDoc-nettstedet. Les reglene for å få tilgang til og bruke våre gratis PDF-verktøy på nettet."
+  },
+  "Categories": {
+    "organize": "Organiser",
+    "optimize": "Optimaliser",
+    "convert_to": "Konverter til",
+    "convert_from": "Konverter fra",
+    "edit": "Rediger",
+    "security": "Sikkerhet",
+    "ai": "AI"
   }
 }

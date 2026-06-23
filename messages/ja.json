@@ -713,5 +713,14 @@
     "privacy_desc": "iLoveDocのプライバシーポリシー。個人データの保護方法、Cookieの使用方法、RGPDに基づく権利についてご覧ください。",
     "terms_title": "利用規約 – iLoveDoc",
     "terms_desc": "iLoveDocサイトの利用規約。無料のオンラインPDFツールのアクセスおよび利用ルールをご確認ください。"
+  },
+  "Categories": {
+    "organize": "整理",
+    "optimize": "最適化",
+    "convert_to": "変換先",
+    "convert_from": "変換元",
+    "edit": "編集",
+    "security": "セキュリティ",
+    "ai": "AI"
   }
 }

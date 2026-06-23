@@ -713,5 +713,14 @@
     "privacy_desc": "Integritetspolicy för iLoveDoc. Upptäck hur vi skyddar dina personuppgifter, vår användning av kakor och dina rättigheter enligt RGPD.",
     "terms_title": "Allmänna villkor för användning – iLoveDoc",
     "terms_desc": "Allmänna villkor för användning av webbplatsen iLoveDoc. Se reglerna för åtkomst och användning av våra gratis PDF-verktyg online."
+  },
+  "Categories": {
+    "organize": "Organisera",
+    "optimize": "Optimera",
+    "convert_to": "Konvertera till",
+    "convert_from": "Konvertera från",
+    "edit": "Redigera",
+    "security": "Säkerhet",
+    "ai": "AI"
   }
 }

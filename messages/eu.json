@@ -713,5 +713,14 @@
     "privacy_desc": "Izasketa eta datuak iLoveDocen politika. Ikusi noiz eta nola babesten ditugu datu pertsonalak, cookieak erabiltzen ditugu eta nola babesten ditugu datuak RGPDren arabera.",
     "terms_title": "Aurrezkiak eta Erabiltzailearen Zerbitzuak – iLoveDoc",
     "terms_desc": "Aurrezkiak eta erabiltzailearen zerbitzuak iLoveDocen erabiltzailearen zerbitzuak. Ikusi erabiltzailearen zerbitzuak eta zerbitzuak PDF erabiltzen duten zerbitzuak eskubidezkoak eta seguruak."
+  },
+  "Categories": {
+    "organize": "Antolatu",
+    "optimize": "Optimizatu",
+    "convert_to": "Bihurtu hona",
+    "convert_from": "Bihurtu hemendik",
+    "edit": "Editatu",
+    "security": "Segurtasuna",
+    "ai": "AA"
   }
 }

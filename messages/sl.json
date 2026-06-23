@@ -713,5 +713,14 @@
     "privacy_desc": "Pravilnik o zasebnosti za iLoveDoc. Odkrijte, kako varujemo vaše osebne podatke, kako uporabljamo piškotke in vaše pravice po RGPD.",
     "terms_title": "Splošni pogoji uporabe – iLoveDoc",
     "terms_desc": "Splošni pogoji uporabe spletnega mesta iLoveDoc. Oglejte si pravila dostopa in uporabe naših brezplačnih spletnih orodij za PDF."
+  },
+  "Categories": {
+    "organize": "Organiziraj",
+    "optimize": "Optimiziraj",
+    "convert_to": "Pretvori v",
+    "convert_from": "Pretvori iz",
+    "edit": "Uredi",
+    "security": "Varnost",
+    "ai": "UI"
   }
 }

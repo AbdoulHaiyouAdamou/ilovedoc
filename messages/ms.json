@@ -713,5 +713,14 @@
     "privacy_desc": "Dasar privasi iLoveDoc. Cari tahu bagaimana kami melindungi data peribadi anda, penggunaan kuki kami dan hak anda di bawah RGPD.",
     "terms_title": "Syarat-Syarat Penggunaan – iLoveDoc",
     "terms_desc": "Syarat-syarat penggunaan laman web iLoveDoc. Cari tahu tentang peraturan akses dan penggunaan alat-alat PDF percuma dalam talian kami."
+  },
+  "Categories": {
+    "organize": "Susun",
+    "optimize": "Optimumkan",
+    "convert_to": "Tukar ke",
+    "convert_from": "Tukar dari",
+    "edit": "Edit",
+    "security": "Keselamatan",
+    "ai": "AI"
   }
 }

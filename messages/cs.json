@@ -713,5 +713,14 @@
     "privacy_desc": "Zásady ochrany osobních údajů iLoveDoc. Zjistěte, jak chráníme vaše osobní údaje, naše používání cookies a vaše práva v souladu s nařízením RGPD.",
     "terms_title": "Obecné podmínky použití – iLoveDoc",
     "terms_desc": "Obecné podmínky použití webové stránky iLoveDoc. Projděte si pravidla přístupu a používání našich nástrojů pro PDF zdarma online."
+  },
+  "Categories": {
+    "organize": "Organizovat",
+    "optimize": "Optimalizovat",
+    "convert_to": "Převést na",
+    "convert_from": "Převést z",
+    "edit": "Upravit",
+    "security": "Zabezpečení",
+    "ai": "AI"
   }
 }

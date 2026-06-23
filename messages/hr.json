@@ -713,5 +713,14 @@
     "privacy_desc": "Politika privatnosti iLoveDoc-a. Otkrijte kako zaštitimo vaše lične podatke, našu upotrebu kolačića i vaša prava po RGPD-u.",
     "terms_title": "Uvjeti korištenja – iLoveDoc",
     "terms_desc": "Uvjeti korištenja stranice iLoveDoc-a. Pogledajte pravila pristupa i korištenja naših besplatnih PDF alata online."
+  },
+  "Categories": {
+    "organize": "Organiziraj",
+    "optimize": "Optimiziraj",
+    "convert_to": "Pretvori u",
+    "convert_from": "Pretvori iz",
+    "edit": "Uredi",
+    "security": "Sigurnost",
+    "ai": "AI"
   }
 }

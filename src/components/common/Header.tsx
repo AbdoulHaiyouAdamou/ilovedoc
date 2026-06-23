@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl';
 export default function Header() {
   const tHeader = useTranslations('Header');
   const tTools = useTranslations('Tools');
+  const tCategories = useTranslations('Categories');
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [convertirOpen, setConvertirOpen] = useState(false);
@@ -296,7 +297,7 @@ export default function Header() {
                   maxWidth: 1300,
                   zIndex: 999,
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                  gridTemplateColumns: 'repeat(7, 1fr)',
                   gap: 24,
                 }}
               >
@@ -319,7 +320,7 @@ export default function Header() {
                         }}
                       >
                         <cat.icon size={16} />
-                        {cat.label}
+                        {tCategories(cat.labelKey)}
                       </div>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                         {catTools.map((t) => (
@@ -471,7 +472,7 @@ export default function Header() {
             return (
               <div key={key} style={{ marginTop: 12 }}>
                 <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--primary, #6345d7)', textTransform: 'uppercase', padding: '0 16px', marginBottom: 4, display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <cat.icon size={14} /> {cat.label}
+                  <cat.icon size={14} /> {tCategories(cat.labelKey)}
                 </div>
                 {catTools.map((t) => (
                   <Link

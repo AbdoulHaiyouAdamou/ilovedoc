@@ -713,5 +713,14 @@
     "privacy_desc": "iLoveDoc-nun şəxsi məlumatların qorunması haqqında məlumatı. Şəxsi məlumatlarınızı qorumaq, şəxsi məlumatların istifadəsi və RGPD haqqında məlumatı.",
     "terms_title": "İstifadə qaydaları",
     "terms_desc": "iLoveDoc-nun istifadə qaydaları. Mükəmməl PDF alətlərinin istifadə qaydaları və şərtləri haqqında məlumat."
+  },
+  "Categories": {
+    "organize": "Təşkil et",
+    "optimize": "Optimallaşdır",
+    "convert_to": "Çevir",
+    "convert_from": "Dönüştür",
+    "edit": "Redaktə",
+    "security": "Təhlükəsizlik",
+    "ai": "Süni İntellekt"
   }
 }

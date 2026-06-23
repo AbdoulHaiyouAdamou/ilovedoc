@@ -713,5 +713,14 @@
     "privacy_desc": "iLoveDoc Privacy Policy. Learn how we protect your personal data, our cookie usage and your RGPD rights.",
     "terms_title": "Terms of Use – iLoveDoc",
     "terms_desc": "iLoveDoc Terms of Use. Check the access and usage rules of our free online PDF tools."
+  },
+  "Categories": {
+    "organize": "Düzenle",
+    "optimize": "Optimize et",
+    "convert_to": "Dönüştür",
+    "convert_from": "Şuradan dönüştür",
+    "edit": "Düzenle",
+    "security": "Güvenlik",
+    "ai": "YZ"
   }
 }

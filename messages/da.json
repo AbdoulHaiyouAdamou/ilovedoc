@@ -713,5 +713,14 @@
     "privacy_desc": "Privatlivspolitik for iLoveDoc. Lær hvordan vi beskytter dine personlige data, vores brug af cookies og dine rettigheder ifølge RGPD.",
     "terms_title": "Betingelser for brug – iLoveDoc",
     "terms_desc": "Betingelser for brug af hjemmesiden iLoveDoc. Se reglerne for adgang og brug af vores frit tilgængelige online PDF-verktøjer."
+  },
+  "Categories": {
+    "organize": "Organiser",
+    "optimize": "Optimer",
+    "convert_to": "Konverter til",
+    "convert_from": "Konverter fra",
+    "edit": "Rediger",
+    "security": "Sikkerhed",
+    "ai": "AI"
   }
 }

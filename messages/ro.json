@@ -713,5 +713,14 @@
     "privacy_desc": "Politica de confidențialitate a iLoveDoc. Descoperiți cum protejăm datele dvs. personale, utilizarea noastră a cookie-urilor și drepturile dvs. RGPD.",
     "terms_title": "Condiții Generale de Utilizare – iLoveDoc",
     "terms_desc": "Condiții generale de utilizare a site-ului iLoveDoc. Consultați regulile de acces și utilizare a uneltelor noastre PDF gratuite online."
+  },
+  "Categories": {
+    "organize": "Organizare",
+    "optimize": "Optimizare",
+    "convert_to": "Conversie în",
+    "convert_from": "Conversie din",
+    "edit": "Editare",
+    "security": "Securitate",
+    "ai": "IA"
   }
 }

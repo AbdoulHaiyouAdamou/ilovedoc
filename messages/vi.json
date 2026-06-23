@@ -713,5 +713,14 @@
     "privacy_desc": "Chính sách bảo mật của iLoveDoc. Khám phá cách chúng tôi bảo vệ thông tin cá nhân của bạn, việc sử dụng cookie và quyền của bạn theo quy định RGPD.",
     "terms_title": "Điều Kiện Sử Dụng – iLoveDoc",
     "terms_desc": "Điều kiện sử dụng trang web iLoveDoc. Xem xét các quy tắc truy cập và sử dụng các công cụ PDF miễn phí trực tuyến của chúng tôi."
+  },
+  "Categories": {
+    "organize": "Sắp xếp",
+    "optimize": "Tối ưu hóa",
+    "convert_to": "Chuyển đổi sang",
+    "convert_from": "Chuyển đổi từ",
+    "edit": "Chỉnh sửa",
+    "security": "Bảo mật",
+    "ai": "AI"
   }
 }

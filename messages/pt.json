@@ -713,5 +713,14 @@
     "privacy_desc": "Política de privacidade do iLoveDoc. Descubra como protegemos seus dados pessoais, nosso uso de cookies e seus direitos sob a LGPD.",
     "terms_title": "Termos e Condições de Uso – iLoveDoc",
     "terms_desc": "Termos e condições de uso do site iLoveDoc. Consulte as regras de acesso e utilização de nossas ferramentas PDF gratuitas online."
+  },
+  "Categories": {
+    "organize": "Organizar",
+    "optimize": "Otimizar",
+    "convert_to": "Converter para",
+    "convert_from": "Converter de",
+    "edit": "Editar",
+    "security": "Segurança",
+    "ai": "IA"
   }
 }

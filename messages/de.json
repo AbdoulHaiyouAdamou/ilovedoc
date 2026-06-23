@@ -713,5 +713,14 @@
     "privacy_desc": "Datenschutzrichtlinie von iLoveDoc. Erfahren Sie, wie wir Ihre persönlichen Daten schützen, wie wir Cookies verwenden und welche DSGVO-Rechte Sie haben.",
     "terms_title": "Allgemeine Nutzungsbedingungen – iLoveDoc",
     "terms_desc": "Allgemeine Nutzungsbedingungen der iLoveDoc-Website. Lesen Sie die Regeln für den Zugriff und die Nutzung unserer kostenlosen Online-PDF-Tools."
+  },
+  "Categories": {
+    "organize": "Organisieren",
+    "optimize": "Optimieren",
+    "convert_to": "Konvertieren in",
+    "convert_from": "Konvertieren von",
+    "edit": "Bearbeiten",
+    "security": "Sicherheit",
+    "ai": "KI"
   }
 }

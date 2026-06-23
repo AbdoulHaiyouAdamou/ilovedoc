@@ -713,5 +713,14 @@
     "privacy_desc": "iLoveDoc隐私政策。了解我们如何保护您的个人数据、Cookie使用政策以及您的GDPR权利。",
     "terms_title": "使用条款 – iLoveDoc",
     "terms_desc": "iLoveDoc网站使用条款。查阅使用我们免费在线PDF工具的访问和使用规则。"
+  },
+  "Categories": {
+    "organize": "整理",
+    "optimize": "优化",
+    "convert_to": "转换为",
+    "convert_from": "从…转换",
+    "edit": "编辑",
+    "security": "安全",
+    "ai": "AI"
   }
 }

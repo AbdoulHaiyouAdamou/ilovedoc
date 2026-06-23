@@ -713,5 +713,14 @@
     "privacy_desc": "Beartas príobháideachta iLoveDoc. Faigh eolas ar conas a chosnaímid do shonraí pearsanta, conas a úsáidimid fianáin agus do chearta RGPD.",
     "terms_title": "Coinníollacha Ginearálta Úsáide – iLoveDoc",
     "terms_desc": "Coinníollacha ginearálta úsáide suíomh iLoveDoc. Féach na rialacha rochtana agus úsáide d'ár gcuid cuideachtaí PDF saor in aisce ar líne."
+  },
+  "Categories": {
+    "organize": "Eagraigh",
+    "optimize": "Optamaigh",
+    "convert_to": "Tiontaigh go",
+    "convert_from": "Tiontaigh ó",
+    "edit": "Cuir in Eagar",
+    "security": "Slándáil",
+    "ai": "IS"
   }
 }

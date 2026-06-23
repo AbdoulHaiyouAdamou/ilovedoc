@@ -713,5 +713,14 @@
     "privacy_desc": "Sera ya faragha ya iLoveDoc. Gundua jinsi tunavyolinda data yako ya kibinafsi, matumizi yetu ya vidakuzi na haki zako za RGPD.",
     "terms_title": "Masharti ya Matumizi – iLoveDoc",
     "terms_desc": "Masharti ya matumizi ya tovuti ya iLoveDoc. Tazama sheria za ufikiaji na matumizi ya zana zetu za PDF za bure mtandaoni."
+  },
+  "Categories": {
+    "organize": "Panga",
+    "optimize": "Boresha",
+    "convert_to": "Badilisha kuwa",
+    "convert_from": "Badilisha kutoka",
+    "edit": "Hariri",
+    "security": "Usalama",
+    "ai": "AI"
   }
 }
