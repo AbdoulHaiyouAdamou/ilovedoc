@@ -85,6 +85,18 @@ export default function Header() {
     return () => document.removeEventListener('mousedown', handler);
   }, []);
 
+  /* ---- lock body scroll when mega menu or mobile menu is open ---- */
+  useEffect(() => {
+    if (megaMenuOpen || mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [megaMenuOpen, mobileMenuOpen]);
+
   const openConvertir = () => {
     if (convertirTimeout.current) clearTimeout(convertirTimeout.current);
     setConvertirOpen(true);
