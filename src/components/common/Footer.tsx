@@ -363,6 +363,8 @@ export default function Footer() {
                     left: 0,
                     width: '600px',
                     maxWidth: '90vw',
+                    maxHeight: '60vh',
+                    overflowY: 'auto',
                     background: '#16162a',
                     border: '1px solid rgba(167,139,250,0.25)',
                     borderRadius: 12,

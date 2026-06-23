@@ -295,6 +295,8 @@ export default function Header() {
                   padding: '28px 36px 32px',
                   width: '100%',
                   maxWidth: 1300,
+                  maxHeight: 'calc(100vh - 80px)',
+                  overflowY: 'auto',
                   zIndex: 999,
                   display: 'grid',
                   gridTemplateColumns: 'repeat(7, 1fr)',
