@@ -105,7 +105,7 @@ import { routing } from '@/i18n/routing';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
+  const baseUrl = 'https://ilove-doc.com';
   const seo = seoData[locale] || defaultSeo;
 
   let title = 'iLoveDoc';
@@ -191,7 +191,7 @@ export const viewport: Viewport = {
 
 
 function JsonLd({ description }: { description: string }) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
+  const baseUrl = 'https://ilove-doc.com';
   
   const structuredData = [
     {

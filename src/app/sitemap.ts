@@ -3,7 +3,7 @@ import { tools } from '@/config/tools';
 import { routing } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
+  const baseUrl = 'https://ilove-doc.com';
   const locales = routing.locales;
   const defaultLocale = routing.defaultLocale;
 
