@@ -135,6 +135,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     creator: 'iLoveDoc',
     publisher: 'iLoveDoc',
     metadataBase: new URL(baseUrl),
+    icons: {
+      icon: '/icon.svg',
+      shortcut: '/favicon.ico',
+    },
     alternates: {
       canonical: locale === routing.defaultLocale ? '/' : `/${locale}`,
       languages,
@@ -187,29 +191,39 @@ export const viewport: Viewport = {
 
 
 function JsonLd({ description }: { description: string }) {
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'iLoveDoc',
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com',
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com'}/logo.png`,
-    description: description,
-    sameAs: [],
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '',
-      contactType: 'customer service',
-      email: 'contact@ilove-doc.com',
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com'}/search?q={search_term_string}`,
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
+  
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'iLoveDoc',
+      url: baseUrl,
+      logo: `${baseUrl}/logo.png`,
+      description: description,
+      sameAs: [],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '',
+        contactType: 'customer service',
+        email: 'contact@ilove-doc.com',
       },
-      'query-input': 'required name=search_term_string',
     },
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'iLoveDoc',
+      url: baseUrl,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${baseUrl}/search?q={search_term_string}`,
+        },
+        'query-input': 'required name=search_term_string',
+      },
+    }
+  ];
 
   return (
     <script
