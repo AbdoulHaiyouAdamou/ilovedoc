@@ -10,7 +10,11 @@
     "select_file": "Изаберите PDF фајл",
     "or_drop": "или превуците PDF овде",
     "download_file": "Preuzmi datoteku",
-    "process_another": "Obradi još jedan"
+    "process_another": "Obradi još jedan",
+    "trust_private": "100% Private",
+    "trust_local": "Procesirano Lokalno",
+    "trust_no_upload": "Fajlovi nikada ne uploaduju se na bilo koji server",
+    "trust_fast": "Brži procesiranje, bez ograničenja veličine"
   },
   "Header": {
     "merge": "СПОЈИ PDF",

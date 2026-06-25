@@ -10,7 +10,11 @@
     "select_file": "PDF-Datei auswählen",
     "or_drop": "oder PDF hier ablegen",
     "download_file": "Datei herunterladen",
-    "process_another": "Weitere Datei bearbeiten"
+    "process_another": "Weitere Datei bearbeiten",
+    "trust_private": "100 % privat",
+    "trust_local": "Lokal verarbeitet",
+    "trust_no_upload": "Dateien wurden nie auf einen Server hochgeladen",
+    "trust_fast": "Schnellere Verarbeitung, keine Größenbeschränkungen"
   },
   "Header": {
     "merge": "PDF ZUSAMMENFÜHREN",

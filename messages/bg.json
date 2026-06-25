@@ -10,7 +10,11 @@
     "select_file": "Изберете PDF файл",
     "or_drop": "или пуснете PDF тук",
     "download_file": "Изтегляне на файл",
-    "process_another": "Обработка на друг"
+    "process_another": "Обработка на друг",
+    "trust_private": "100% лично",
+    "trust_local": "Обработено локално",
+    "trust_no_upload": "Файлове никога не са качвани на сървър",
+    "trust_fast": "По-бърза обработка, без ограничения на размера"
   },
   "Header": {
     "merge": "ОБЕДИНЯВАНЕ НА PDF",

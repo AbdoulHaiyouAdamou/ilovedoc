@@ -10,7 +10,11 @@
     "select_file": "Odaberite PDF datoteku",
     "or_drop": "ili ispustite PDF ovdje",
     "download_file": "Preuzmi datoteku",
-    "process_another": "Obradi još jedan"
+    "process_another": "Obradi još jedan",
+    "trust_private": "100% privatno",
+    "trust_local": "Obrađeno lokalno",
+    "trust_no_upload": "Datoteke nikad nisu učitane ni na jedan poslužitelj",
+    "trust_fast": "Brža obrada, nema ograničenja veličine"
   },
   "Header": {
     "merge": "SPOJI PDF",

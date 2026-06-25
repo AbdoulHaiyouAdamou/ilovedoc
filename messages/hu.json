@@ -10,7 +10,11 @@
     "select_file": "PDF fájl kiválasztása",
     "or_drop": "vagy húzd ide a PDF-et",
     "download_file": "Fájl letöltése",
-    "process_another": "Másik feldolgozása"
+    "process_another": "Másik feldolgozása",
+    "trust_private": "100% privát",
+    "trust_local": "Helyben feldolgozva",
+    "trust_no_upload": "A fájlok soha nem lettek feltöltve egyetlen szerverre sem",
+    "trust_fast": "Gyorsabb feldolgozás, méretkorlátozás nélkül"
   },
   "Header": {
     "merge": "PDF ÖSSZEFŰZÉS",

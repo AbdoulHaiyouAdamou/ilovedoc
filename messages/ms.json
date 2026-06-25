@@ -10,7 +10,11 @@
     "select_file": "Pilih File PDF",
     "or_drop": "atau Tunggu File PDF di Sini",
     "download_file": "Muat turun fail",
-    "process_another": "Proses fail lain"
+    "process_another": "Proses fail lain",
+    "trust_private": "100% Privasi",
+    "trust_local": "Proses Lokal",
+    "trust_no_upload": "Fail tidak pernah dihantar ke mana-mana server",
+    "trust_fast": "Proses yang lebih pantas, tiada had penggunaan saiz"
   },
   "Header": {
     "merge": "MENGOMBINASIKAN PDF",

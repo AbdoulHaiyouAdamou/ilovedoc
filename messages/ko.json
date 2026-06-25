@@ -10,7 +10,11 @@
     "select_file": "PDF 파일을 선택하세요",
     "or_drop": "&lt;p&gt;PDF를 드롭하세요&lt;/p&gt;",
     "download_file": "파일 다운로드",
-    "process_another": "다른 파일 처리하기"
+    "process_another": "다른 파일 처리하기",
+    "trust_private": "100% 비공개",
+    "trust_local": "로컬에서 처리됨",
+    "trust_no_upload": "어떤 서버에도 업로드되지 않은 파일",
+    "trust_fast": "더 빠른 처리, 크기 제한 없음"
   },
   "Header": {
     "merge": "PDF 병합",

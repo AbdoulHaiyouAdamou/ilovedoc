@@ -10,7 +10,11 @@
     "select_file": "PDFを選択",
     "or_drop": "またはここにPDFをドロップ",
     "download_file": "ファイルをダウンロード",
-    "process_another": "別のファイルを処理する"
+    "process_another": "別のファイルを処理する",
+    "trust_private": "100% プライベート",
+    "trust_local": "ローカルで処理",
+    "trust_no_upload": "ファイルはどのサーバーにもアップロードされません",
+    "trust_fast": "より高速な処理、サイズ制限なし"
   },
   "Header": {
     "merge": "PDFをマージ",

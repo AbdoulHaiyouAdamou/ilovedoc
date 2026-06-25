@@ -10,7 +10,11 @@
     "select_file": "Wybierz plik PDF",
     "or_drop": "lub upuść plik PDF tutaj",
     "download_file": "Pobierz plik",
-    "process_another": "Przetwórz kolejny"
+    "process_another": "Przetwórz kolejny",
+    "trust_private": "100% Prywatne",
+    "trust_local": "Przetwarzane Lokalnie",
+    "trust_no_upload": "Pliki nigdy nie są wysyłane na żaden serwer",
+    "trust_fast": "Szybsze przetwarzanie, brak ograniczeń rozmiaru"
   },
   "Header": {
     "merge": "POŁĄCZ PDF",

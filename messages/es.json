@@ -10,7 +10,11 @@
     "select_file": "Seleccionar archivo PDF",
     "or_drop": "o suelta el PDF aquí",
     "download_file": "Descargar archivo",
-    "process_another": "Procesar otro"
+    "process_another": "Procesar otro",
+    "trust_private": "100% Privado",
+    "trust_local": "Procesado localmente",
+    "trust_no_upload": "Archivos nunca cargados a ningún servidor.",
+    "trust_fast": "Procesamiento más rápido, sin límites de tamaño"
   },
   "Header": {
     "merge": "UNIR PDF",

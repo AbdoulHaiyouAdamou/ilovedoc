@@ -10,7 +10,11 @@
     "select_file": "Выберите файл PDF",
     "or_drop": "или перетащите PDF сюда",
     "download_file": "Скачать файл",
-    "process_another": "Обработать другой"
+    "process_another": "Обработать другой",
+    "trust_private": "100% Private",
+    "trust_local": "Проверывается локально",
+    "trust_no_upload": "Файлы неверозвладаны в коммуникам серверам",
+    "trust_fast": "Производительное провержение, без \\u043eграница ограница проверка"
   },
   "Header": {
     "merge": "ОБЪЕДИНИТЬ PDF",

@@ -10,7 +10,11 @@
     "select_file": "选择PDF文件",
     "or_drop": "或将PDF文件拖放到这里",
     "download_file": "下载文件",
-    "process_another": "处理另一个文件"
+    "process_another": "处理另一个文件",
+    "trust_private": "等约统计",
+    "trust_local": "有可代理中国统计",
+    "trust_no_upload": "四统计不发软为一维管理器",
+    "trust_fast": "很统计为索引统计为索引统计"
   },
   "Header": {
     "merge": "合并PDF",

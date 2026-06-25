@@ -10,7 +10,11 @@
     "select_file": "Roghnaigh comhad PDF",
     "or_drop": "nó scaoil PDF anseo",
     "download_file": "Íoslódáil comhad",
-    "process_another": "Próiseáil ceann eile"
+    "process_another": "Próiseáil ceann eile",
+    "trust_private": "100% Príobháideach",
+    "trust_local": "Próiseáilte go háitiúil",
+    "trust_no_upload": "Comhaid nár uaslódáladh riamh chuig aon fhreastalaí",
+    "trust_fast": "Próiseáil níos tapúla, gan aon teorainneacha méide"
   },
   "Header": {
     "merge": "CUMASC PDF",

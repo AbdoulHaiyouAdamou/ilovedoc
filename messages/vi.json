@@ -10,7 +10,11 @@
     "select_file": "Chọn tệp PDF",
     "or_drop": "hoặc thả PDF tại đây",
     "download_file": "Tải tập tin",
-    "process_another": "Xử lý tệp khác"
+    "process_another": "Xử lý tệp khác",
+    "trust_private": "100% Private",
+    "trust_local": "Xử lý Locally",
+    "trust_no_upload": "Files không bao giờ được tải lên bất kỳ máy chủ nào",
+    "trust_fast": "Xử lý nhanh hơn, không có giới hạn kích thước"
   },
   "Header": {
     "merge": "NHẬP PDF",

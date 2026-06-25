@@ -10,7 +10,11 @@
     "select_file": "Sélectionner le fichier PDF",
     "or_drop": "ou déposez le PDF ici",
     "download_file": "Télécharger le fichier",
-    "process_another": "Traiter un autre document"
+    "process_another": "Traiter un autre document",
+    "trust_private": "100% Privé",
+    "trust_local": "Traitement Local",
+    "trust_no_upload": "Les fichiers ne sont jamais envoyés sur un serveur",
+    "trust_fast": "Traitement plus rapide, sans limite de taille"
   },
   "Header": {
     "merge": "FUSIONNER PDF",

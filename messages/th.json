@@ -10,7 +10,11 @@
     "select_file": "เลือกไฟล์ PDF",
     "or_drop": "หรือวางไฟล์ PDF ที่นี่",
     "download_file": "ดาวน์โหลดไฟล์",
-    "process_another": "ประมวลผลอีกครั้ง"
+    "process_another": "ประมวลผลอีกครั้ง",
+    "trust_private": "สวัสยับรัสยับเป้า",
+    "trust_local": "สวัสยับรัสยับเป้าสับเป้า",
+    "trust_no_upload": "สวัสยับรัสยับเป้าสับเป้าเป้าสับเป้า",
+    "trust_fast": "สวัสยับรัสยับเป้าเป้าเป้าสับเป้า"
   },
   "Header": {
     "merge": "รวม PDF",

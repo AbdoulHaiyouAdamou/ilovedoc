@@ -10,7 +10,11 @@
     "select_file": "Velg PDF-fil",
     "or_drop": "eller slipp PDF her",
     "download_file": "Last ned fil",
-    "process_another": "Behandle en annen"
+    "process_another": "Behandle en annen",
+    "trust_private": "100% privat",
+    "trust_local": "Behandles lokalt",
+    "trust_no_upload": "Filene blir aldri lastet opp på noen server",
+    "trust_fast": "Raskere behandling, ingen størrelsesgrenser"
   },
   "Header": {
     "merge": "SLÅ SAMMEN PDF",

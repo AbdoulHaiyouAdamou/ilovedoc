@@ -10,7 +10,11 @@
     "select_file": "حدد ملف PDF",
     "or_drop": "أو ضع ملف PDF هنا",
     "download_file": "تحميل الملف",
-    "process_another": "معالجة ملف آخر"
+    "process_another": "معالجة ملف آخر",
+    "trust_private": "خاص 100%",
+    "trust_local": "معالجتها محليا",
+    "trust_no_upload": "لم يتم تحميل الملفات مطلقًا على أي خادم",
+    "trust_fast": "معالجة أسرع، لا حدود للحجم"
   },
   "Header": {
     "merge": "دمج PDF",

@@ -13,8 +13,8 @@ const siteName = 'iLoveDoc';
 // Explicit SEO data for primary high-traffic tools
 const customSEOData: Record<string, Omit<SEOInfo, 'keywords'>> = {
   'merge-pdf': {
-    title: 'Fusionner PDF en Ligne - Gratuit & Rapide',
-    description: 'Fusionnez et combinez plusieurs fichiers PDF en un seul document en ligne. Traitement 100% sécurisé et local dans votre navigateur.',
+    title: 'Fusionner PDF en Ligne - 100% Privé & Gratuit',
+    description: 'Fusionnez et combinez plusieurs fichiers PDF en un seul document en ligne. Traitement local sans aucun upload sur serveur pour une vie privée garantie.',
     faq: [
       {
         question: 'Comment fusionner plusieurs fichiers PDF ?',
@@ -505,15 +505,15 @@ export function getSEOData(slug: string): SEOInfo {
 
   // Smart fallback generator for other tools
   // Respecting Title <= 60 chars and Description <= 155 chars
-  let generatedTitle = `${toolName} en Ligne - Gratuit & Sécurisé`;
+  let generatedTitle = `${toolName} - 100% Privé & Gratuit`;
   if (generatedTitle.length > 50) {
-    generatedTitle = `${toolName} en Ligne - Gratuit`;
+    generatedTitle = `${toolName} - Privé & Gratuit`;
   }
   generatedTitle = `${generatedTitle} | ${siteName}`;
 
-  let generatedDesc = `${toolDesc} Outil en ligne 100% gratuit, rapide et sécurisé. Vos documents restent locaux.`;
+  let generatedDesc = `${toolDesc} Outil en ligne 100% gratuit et privé. Traitement local sans upload sur nos serveurs.`;
   if (generatedDesc.length > 155) {
-    generatedDesc = `${toolDesc} Gratuit, rapide et sécurisé dans votre navigateur.`;
+    generatedDesc = `${toolDesc} Gratuit et 100% privé dans votre navigateur.`;
   }
   if (generatedDesc.length > 155) {
     generatedDesc = generatedDesc.substring(0, 152) + '...';

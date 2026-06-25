@@ -10,7 +10,11 @@
     "select_file": "Selecciona l'arxiu PDF",
     "or_drop": "o deixa anar el PDF aquí",
     "download_file": "Descarregar fitxer",
-    "process_another": "Processar un altre"
+    "process_another": "Processar un altre",
+    "trust_private": "100% Privat",
+    "trust_local": "Processat localment",
+    "trust_no_upload": "Els fitxers no s'han penjat mai a cap servidor",
+    "trust_fast": "Processament més ràpid, sense límits de mida"
   },
   "Header": {
     "merge": "FUSIONAR PDF",

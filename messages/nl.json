@@ -10,7 +10,11 @@
     "select_file": "Selecteer het PDF-bestand",
     "or_drop": "of sleep het PDF-bestand hier neer",
     "download_file": "Bestand downloaden",
-    "process_another": "Nog een verwerken"
+    "process_another": "Nog een verwerken",
+    "trust_private": "100% Privé",
+    "trust_local": "Verwerkt Lokal",
+    "trust_no_upload": "Bestanden worden nooit geüpload naar enige server",
+    "trust_fast": "Snellere verwerking, geen groottebeperkingen"
   },
   "Header": {
     "merge": "PDF-BESTANDEN SAMENVOEGEN",

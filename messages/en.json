@@ -10,7 +10,11 @@
     "select_file": "Select PDF file",
     "or_drop": "or drop PDF here",
     "download_file": "Download file",
-    "process_another": "Process another"
+    "process_another": "Process another",
+    "trust_private": "100% Private",
+    "trust_local": "Processed Locally",
+    "trust_no_upload": "Files never uploaded to any server",
+    "trust_fast": "Faster processing, no size limits"
   },
   "Header": {
     "merge": "MERGE PDF",

@@ -10,7 +10,11 @@
     "select_file": "Vyberte PDF súbor",
     "or_drop": "alebo sem presuňte PDF",
     "download_file": "Stiahnuť súbor",
-    "process_another": "Spracovať ďalší"
+    "process_another": "Spracovať ďalší",
+    "trust_private": "Úplne súkromné",
+    "trust_local": "Zpracovanie lokálne",
+    "trust_no_upload": "Súbory sa nikdy neuploadujú na žiadny server",
+    "trust_fast": "Rýchlejšie zpracovanie, žiadne veľkosti limitov"
   },
   "Header": {
     "merge": "ZLÚČIŤ PDF",

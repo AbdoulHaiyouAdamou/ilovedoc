@@ -10,7 +10,11 @@
     "select_file": "Izberite PDF datoteko",
     "or_drop": "ali spustite PDF sem",
     "download_file": "Prenesi datoteko",
-    "process_another": "Obdelaj drugo"
+    "process_another": "Obdelaj drugo",
+    "trust_private": "Popolnoma zasebna",
+    "trust_local": "Obdelano lokalno",
+    "trust_no_upload": "Datoteke se nikoli ne naložijo na noben server",
+    "trust_fast": "Hitrejša obdelava, ni velikosti omejitev"
   },
   "Header": {
     "merge": "ZDRUŽI PDF",

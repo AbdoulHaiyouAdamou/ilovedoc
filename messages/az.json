@@ -10,7 +10,11 @@
     "select_file": "PDF faylını seçin",
     "or_drop": "və ya PDF-i buraya atın",
     "download_file": "Faylı yüklə",
-    "process_another": "Başqa birini işlə"
+    "process_another": "Başqa birini işlə",
+    "trust_private": "100% Şəxsi",
+    "trust_local": "Yerli emal olunur",
+    "trust_no_upload": "Fayllar heç vaxt heç bir serverə yüklənməyib",
+    "trust_fast": "Daha sürətli emal, ölçü məhdudiyyəti yoxdur"
   },
   "Header": {
     "merge": "PDF-ləri Birləşdir",

@@ -10,7 +10,11 @@
     "select_file": "Selectați fișierul PDF",
     "or_drop": "sau trageți PDF-ul aici",
     "download_file": "Descărcați fișierul",
-    "process_another": "Procesați altul"
+    "process_another": "Procesați altul",
+    "trust_private": "100% Private",
+    "trust_local": "Procesat Local",
+    "trust_no_upload": "Fisierele niciodată nu sunt încărcate pe niciun server",
+    "trust_fast": "Procesare mai rapidă, fără limite de dimensiune"
   },
   "Header": {
     "merge": "UNEȘTE PDF",

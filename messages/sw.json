@@ -10,7 +10,11 @@
     "select_file": "Chagua faili ya PDF",
     "or_drop": "au weka PDF hapa",
     "download_file": "Pakua faili",
-    "process_another": "Chakata nyingine"
+    "process_another": "Chakata nyingine",
+    "trust_private": "100% Private",
+    "trust_local": "Processed Locally",
+    "trust_no_upload": "Files never uploaded to any server",
+    "trust_fast": "Faster processing, no size limits"
   },
   "Header": {
     "merge": "CHANGANYA PDF",

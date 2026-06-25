@@ -10,7 +10,11 @@
     "select_file": "فایل PDF را انتخاب کنید",
     "or_drop": "یا PDF را اینجا رها کنید",
     "download_file": "دانلود فایل",
-    "process_another": "پردازش یکی دیگر"
+    "process_another": "پردازش یکی دیگر",
+    "trust_private": "100% خصوصی",
+    "trust_local": "به صورت محلی پردازش شده است",
+    "trust_no_upload": "فایل ها هرگز روی هیچ سروری آپلود نمی شوند",
+    "trust_fast": "پردازش سریع تر، بدون محدودیت اندازه"
   },
   "Header": {
     "merge": "ادغام PDF",

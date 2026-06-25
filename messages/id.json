@@ -10,7 +10,11 @@
     "select_file": "Pilih File PDF",
     "or_drop": "atau letakkan PDF di sini",
     "download_file": "Unduh file",
-    "process_another": "Proses yang lain"
+    "process_another": "Proses yang lain",
+    "trust_private": "100% Pribadi",
+    "trust_local": "Diproses Secara Lokal",
+    "trust_no_upload": "File tidak pernah diunggah ke server mana pun",
+    "trust_fast": "Pemrosesan lebih cepat, tidak ada batasan ukuran"
   },
   "Header": {
     "merge": "GABUNGKAN PDF",

@@ -2,7 +2,8 @@
 
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { Upload } from 'lucide-react';
+import { Upload, ShieldCheck, Cpu } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface FileDropzoneProps {
   accentColor: string;
@@ -25,6 +26,8 @@ export default function FileDropzone({
   accept = { 'application/pdf': ['.pdf'] },
   maxFiles = 1,
 }: FileDropzoneProps) {
+  const tCommon = useTranslations('Common');
+
   const onDropCallback = useCallback(
     (acceptedFiles: File[]) => {
       if (acceptedFiles.length > 0) onDrop(acceptedFiles);
@@ -86,6 +89,30 @@ export default function FileDropzone({
             {dropLabel}
           </p>
         )}
+      </div>
+
+      <div style={{
+        marginTop: '3rem',
+        display: 'flex',
+        gap: '2rem',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        opacity: 0.85
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <ShieldCheck size={18} color="#10b981" />
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 600, color: 'var(--color-text-primary)' }}>{tCommon('trust_private')}</span>
+            <span>{tCommon('trust_no_upload')}</span>
+          </div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <Cpu size={18} color={accentColor} />
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 600, color: 'var(--color-text-primary)' }}>{tCommon('trust_local')}</span>
+            <span>{tCommon('trust_fast')}</span>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,16 +1,17 @@
 import React from 'react';
 import { getToolBySlug } from '@/config/tools';
-import { getSEOData } from '@/config/seoData';
+import { useTranslations } from 'next-intl';
 
 interface SEOProps {
   slug: string;
 }
 
 export default function SEO({ slug }: SEOProps) {
+  const tCommon = useTranslations('Common');
+  const tTools = useTranslations('Tools');
   const tool = getToolBySlug(slug);
   if (!tool) return null;
 
-  const seo = getSEOData(slug);
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ilove-doc.com';
   const toolUrl = `${baseUrl}/${slug}`;
 
@@ -22,8 +23,8 @@ export default function SEO({ slug }: SEOProps) {
       {
         '@type': 'SoftwareApplication',
         '@id': `${toolUrl}#software`,
-        'name': tool.name,
-        'description': seo.description,
+        'name': tTools(`${slug}.name`),
+        'description': tTools(`${slug}.description`),
         'applicationCategory': 'UtilitiesApplication',
         'operatingSystem': 'All',
         'offers': {
@@ -31,22 +32,15 @@ export default function SEO({ slug }: SEOProps) {
           'price': '0',
           'priceCurrency': 'EUR',
         },
+        'featureList': [
+          tCommon('trust_private'),
+          tCommon('trust_no_upload'),
+          tCommon('trust_local'),
+          tCommon('trust_fast')
+        ],
         'browserRequirements': 'Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.',
       },
-      // 2. FAQPage
-      {
-        '@type': 'FAQPage',
-        '@id': `${toolUrl}#faq`,
-        'mainEntity': seo.faq.map((item) => ({
-          '@type': 'Question',
-          'name': item.question,
-          'acceptedAnswer': {
-            '@type': 'Answer',
-            'text': item.answer,
-          },
-        })),
-      },
-      // 3. BreadcrumbList
+      // 2. BreadcrumbList
       {
         '@type': 'BreadcrumbList',
         '@id': `${toolUrl}#breadcrumb`,
@@ -54,57 +48,24 @@ export default function SEO({ slug }: SEOProps) {
           {
             '@type': 'ListItem',
             'position': 1,
-            'name': 'Accueil',
+            'name': 'iLoveDoc',
             'item': baseUrl,
           },
           {
             '@type': 'ListItem',
             'position': 2,
-            'name': tool.name,
+            'name': tTools(`${slug}.name`),
             'item': toolUrl,
           },
         ],
-      },
-      // 4. HowTo
-      {
-        '@type': 'HowTo',
-        '@id': `${toolUrl}#howto`,
-        'name': `Comment utiliser ${tool.name} en ligne`,
-        'description': seo.description,
-        'step': seo.steps.map((step, index) => ({
-          '@type': 'HowToStep',
-          'position': index + 1,
-          'name': step.name,
-          'text': step.text,
-          'url': `${toolUrl}#step-${index + 1}`,
-        })),
       },
     ],
   };
 
   return (
-    <>
-      <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
-      <meta name="keywords" content={seo.keywords.join(', ')} />
-      
-      {/* OpenGraph & Twitter tags */}
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:description" content={seo.description} />
-      <meta property="og:url" content={toolUrl} />
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:description" content={seo.description} />
-      
-      {/* Canonical Link */}
-      <link rel="canonical" href={toolUrl} />
-      
-      {/* Structured Data script */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
-      />
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+    />
   );
 }

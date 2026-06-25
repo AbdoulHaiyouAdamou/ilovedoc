@@ -10,7 +10,11 @@
     "select_file": "PDF fitxategia hautatu",
     "or_drop": "edo utzi PDF hemen",
     "download_file": "Deskargatu fitxategia",
-    "process_another": "Prozesatu beste bat"
+    "process_another": "Prozesatu beste bat",
+    "trust_private": "%100 pribatua",
+    "trust_local": "Lokalean prozesatua",
+    "trust_no_upload": "Fitxategiak ez dira inoiz zerbitzarietara igo",
+    "trust_fast": "Prozesatu azkarragoa, tamaina mugarik gabe"
   },
   "Header": {
     "merge": "BATU PDF",
