@@ -4,7 +4,7 @@ import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { addPageNumbersToPDF, PageNumberPosition, PageNumberFormat } from '@/features/pdf/pageNumbers';
 import { getPdfPageCount } from '@/features/pdf/split';
-import { ArrowRight } from 'lucide-react';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const ACCENT = '#8b5cf6';

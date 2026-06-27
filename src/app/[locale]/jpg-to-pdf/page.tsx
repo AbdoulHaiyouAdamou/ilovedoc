@@ -4,7 +4,9 @@ import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useDropzone } from 'react-dropzone';
 import { imagesToPdf } from '@/features/pdf/jpgToPdf';
-import { Image as ImageIcon, GripVertical, X } from 'lucide-react';
+import ImageIcon from 'lucide-react/dist/esm/icons/image';
+import GripVertical from 'lucide-react/dist/esm/icons/grip-vertical';
+import X from 'lucide-react/dist/esm/icons/x';
 import { ToolLayout } from '@/components/tools';
 
 const ACCENT = '#f59e0b';

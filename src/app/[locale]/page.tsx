@@ -1,5 +1,7 @@
 import { Link } from '@/i18n/routing';
-import { Shield, Zap, Unlock } from 'lucide-react';
+import Shield from 'lucide-react/dist/esm/icons/shield';
+import Zap from 'lucide-react/dist/esm/icons/zap';
+import Unlock from 'lucide-react/dist/esm/icons/unlock';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import ToolCard from '@/components/common/ToolCard';

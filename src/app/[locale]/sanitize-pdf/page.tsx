@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { sanitizePdf, SanitizeOptions } from '@/features/pdf/sanitize';
-import { ShieldCheck } from 'lucide-react';
+import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#10b981';

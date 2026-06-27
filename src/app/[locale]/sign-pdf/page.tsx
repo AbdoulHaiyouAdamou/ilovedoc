@@ -4,7 +4,9 @@ import React, { useState, useCallback, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { signPDF } from '@/features/pdf/sign';
 import { getPdfPageCount } from '@/features/pdf/split';
-import { PenTool, ArrowRight, Trash2 } from 'lucide-react';
+import PenTool from 'lucide-react/dist/esm/icons/pen-tool';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const ACCENT = '#4f46e5';

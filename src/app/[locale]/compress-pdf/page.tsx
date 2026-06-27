@@ -2,7 +2,8 @@
 
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { Minimize, FileText } from 'lucide-react';
+import Minimize from 'lucide-react/dist/esm/icons/minimize';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { compressPdf } from '@/features/pdf/compress';
 import { ToolLayout, useToolState } from '@/components/tools';
 

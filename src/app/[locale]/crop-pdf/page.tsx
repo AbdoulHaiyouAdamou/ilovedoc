@@ -4,7 +4,7 @@ import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { cropPDF } from '@/features/pdf/crop';
 import { getPdfPageCount } from '@/features/pdf/split';
-import { Crop } from 'lucide-react';
+import Crop from 'lucide-react/dist/esm/icons/crop';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#f43f5e';

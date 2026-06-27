@@ -2,7 +2,10 @@
 
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { Lock, Unlock, ArrowRight, KeyRound } from 'lucide-react';
+import Lock from 'lucide-react/dist/esm/icons/lock';
+import Unlock from 'lucide-react/dist/esm/icons/unlock';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import KeyRound from 'lucide-react/dist/esm/icons/key-round';
 import { unlockPDF } from '@/features/pdf/unlock';
 import { getPdfPageCount } from '@/features/pdf/split';
 import { ToolLayout, useToolState } from '@/components/tools';

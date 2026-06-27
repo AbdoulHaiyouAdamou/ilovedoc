@@ -3,7 +3,8 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { convertExcelToPdf } from '@/features/pdf/office';
-import { FileSpreadsheet, Info } from 'lucide-react';
+import FileSpreadsheet from 'lucide-react/dist/esm/icons/file-spreadsheet';
+import Info from 'lucide-react/dist/esm/icons/info';
 import { ToolLayout, useToolState } from '@/components/tools';
 import AdUnit from '@/components/common/AdUnit';
 

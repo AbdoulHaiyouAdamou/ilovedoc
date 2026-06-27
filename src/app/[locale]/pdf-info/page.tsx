@@ -2,7 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { FileText, Lock, Unlock } from 'lucide-react';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Lock from 'lucide-react/dist/esm/icons/lock';
+import Unlock from 'lucide-react/dist/esm/icons/unlock';
 import { getPdfInfo, PdfInfo } from '@/features/pdf/pdfInfo';
 import { ToolLayout, useToolState } from '@/components/tools';
 

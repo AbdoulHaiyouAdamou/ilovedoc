@@ -4,7 +4,17 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import AdUnit from '@/components/common/AdUnit';
 import { extractTextFromPDF } from '@/utils/pdfTextExtractor';
-import { Bot, ArrowRight, Settings, FileText, Send, Sparkles, Copy, Download, ZoomIn, ZoomOut, MessageSquare } from 'lucide-react';
+import Bot from 'lucide-react/dist/esm/icons/bot';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import Settings from 'lucide-react/dist/esm/icons/settings';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Send from 'lucide-react/dist/esm/icons/send';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
+import Copy from 'lucide-react/dist/esm/icons/copy';
+import Download from 'lucide-react/dist/esm/icons/download';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
+import MessageSquare from 'lucide-react/dist/esm/icons/message-square';
 import { ToolLayout } from '@/components/tools';
 
 // Simple regex-based markdown parser to avoid external dependencies

@@ -1,14 +1,49 @@
-import {
-  Link, Scissors, Trash2, FileOutput, Rows3,
-  Minimize, Wrench, Layers, FileText, Table,
-  Projector, Image as ImageIcon, Palette, Globe, Archive,
-  BookOpen, FileSpreadsheet, MonitorPlay,
-  Type, RefreshCw, Hash, Droplet, PenTool, FormInput,
-  EyeOff, Crop, Lock, Unlock, ScanText, GitCompare,
-  Bot, MessageSquare, Languages, FolderOpen, Zap, Import, Download,
-  Info, Stamp, Paperclip, ImageDown, ImageOff, LayoutGrid,
-  Copy, ShieldCheck, FileX
-} from 'lucide-react';
+import Link from 'lucide-react/dist/esm/icons/link';
+import Scissors from 'lucide-react/dist/esm/icons/scissors';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
+import FileOutput from 'lucide-react/dist/esm/icons/file-output';
+import Rows3 from 'lucide-react/dist/esm/icons/rows-3';
+import Minimize from 'lucide-react/dist/esm/icons/minimize';
+import Wrench from 'lucide-react/dist/esm/icons/wrench';
+import Layers from 'lucide-react/dist/esm/icons/layers';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Table from 'lucide-react/dist/esm/icons/table';
+import Projector from 'lucide-react/dist/esm/icons/projector';
+import ImageIcon from 'lucide-react/dist/esm/icons/image';
+import Palette from 'lucide-react/dist/esm/icons/palette';
+import Globe from 'lucide-react/dist/esm/icons/globe';
+import Archive from 'lucide-react/dist/esm/icons/archive';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import FileSpreadsheet from 'lucide-react/dist/esm/icons/file-spreadsheet';
+import MonitorPlay from 'lucide-react/dist/esm/icons/monitor-play';
+import Type from 'lucide-react/dist/esm/icons/type';
+import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
+import Hash from 'lucide-react/dist/esm/icons/hash';
+import Droplet from 'lucide-react/dist/esm/icons/droplet';
+import PenTool from 'lucide-react/dist/esm/icons/pen-tool';
+import FormInput from 'lucide-react/dist/esm/icons/form-input';
+import EyeOff from 'lucide-react/dist/esm/icons/eye-off';
+import Crop from 'lucide-react/dist/esm/icons/crop';
+import Lock from 'lucide-react/dist/esm/icons/lock';
+import Unlock from 'lucide-react/dist/esm/icons/unlock';
+import ScanText from 'lucide-react/dist/esm/icons/scan-text';
+import GitCompare from 'lucide-react/dist/esm/icons/git-compare';
+import Bot from 'lucide-react/dist/esm/icons/bot';
+import MessageSquare from 'lucide-react/dist/esm/icons/message-square';
+import Languages from 'lucide-react/dist/esm/icons/languages';
+import FolderOpen from 'lucide-react/dist/esm/icons/folder-open';
+import Zap from 'lucide-react/dist/esm/icons/zap';
+import Import from 'lucide-react/dist/esm/icons/import';
+import Download from 'lucide-react/dist/esm/icons/download';
+import Info from 'lucide-react/dist/esm/icons/info';
+import Stamp from 'lucide-react/dist/esm/icons/stamp';
+import Paperclip from 'lucide-react/dist/esm/icons/paperclip';
+import ImageDown from 'lucide-react/dist/esm/icons/image-down';
+import ImageOff from 'lucide-react/dist/esm/icons/image-off';
+import LayoutGrid from 'lucide-react/dist/esm/icons/layout-grid';
+import Copy from 'lucide-react/dist/esm/icons/copy';
+import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check';
+import FileX from 'lucide-react/dist/esm/icons/file-x';
 
 export type ToolCategory =
   | 'organize'

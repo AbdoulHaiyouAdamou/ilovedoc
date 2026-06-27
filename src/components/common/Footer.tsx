@@ -2,7 +2,14 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { AtSign, Code, Briefcase, Video, Heart, Globe, ChevronUp, Check } from 'lucide-react';
+import AtSign from 'lucide-react/dist/esm/icons/at-sign';
+import Code from 'lucide-react/dist/esm/icons/code';
+import Briefcase from 'lucide-react/dist/esm/icons/briefcase';
+import Video from 'lucide-react/dist/esm/icons/video';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import Globe from 'lucide-react/dist/esm/icons/globe';
+import ChevronUp from 'lucide-react/dist/esm/icons/chevron-up';
+import Check from 'lucide-react/dist/esm/icons/check';
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
 

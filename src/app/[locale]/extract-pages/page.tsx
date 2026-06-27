@@ -4,7 +4,9 @@ import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { extractPagesFromPDF } from '@/features/pdf/extract';
 import { getPdfPageCount } from '@/features/pdf/split';
-import { Check, CheckSquare, RotateCcw } from 'lucide-react';
+import Check from 'lucide-react/dist/esm/icons/check';
+import CheckSquare from 'lucide-react/dist/esm/icons/check-square';
+import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const ACCENT = '#8b5cf6';

@@ -4,7 +4,7 @@ import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { useDropzone } from 'react-dropzone';
 import { overlayPdfs, OverlayMode } from '@/features/pdf/overlay';
-import { Copy } from 'lucide-react';
+import Copy from 'lucide-react/dist/esm/icons/copy';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#a855f7';

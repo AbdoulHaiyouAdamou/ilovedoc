@@ -2,7 +2,7 @@
 
 import React, { useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { ImageOff } from 'lucide-react';
+import ImageOff from 'lucide-react/dist/esm/icons/image-off';
 import { removeImagesFromPdf } from '@/features/pdf/removeImages';
 import { ToolLayout, useToolState } from '@/components/tools';
 

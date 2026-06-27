@@ -4,7 +4,17 @@ import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { addWatermarkToPDF } from '@/features/pdf/watermark';
 import { getPdfPageCount } from '@/features/pdf/split';
-import { Type, Image as ImageIcon, ArrowRight, Bold, Italic, Underline, Trash2, Plus, ChevronDown, Layers, ArrowDownToLine } from 'lucide-react';
+import Type from 'lucide-react/dist/esm/icons/type';
+import ImageIcon from 'lucide-react/dist/esm/icons/image';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import Bold from 'lucide-react/dist/esm/icons/bold';
+import Italic from 'lucide-react/dist/esm/icons/italic';
+import Underline from 'lucide-react/dist/esm/icons/underline';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import Layers from 'lucide-react/dist/esm/icons/layers';
+import ArrowDownToLine from 'lucide-react/dist/esm/icons/arrow-down-to-line';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const ACCENT = '#06b6d4';

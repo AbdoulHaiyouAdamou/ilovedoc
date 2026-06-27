@@ -2,7 +2,9 @@
 
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { Upload, ShieldCheck, Cpu } from 'lucide-react';
+import Upload from 'lucide-react/dist/esm/icons/upload';
+import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check';
+import Cpu from 'lucide-react/dist/esm/icons/cpu';
 import { useTranslations } from 'next-intl';
 
 interface FileDropzoneProps {

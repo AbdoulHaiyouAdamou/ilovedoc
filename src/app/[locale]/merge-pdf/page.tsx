@@ -4,7 +4,10 @@ import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { useDropzone } from 'react-dropzone';
 import { mergePDFs } from '@/features/pdf/merge';
-import { FileUp, ArrowUp, ArrowDown, X } from 'lucide-react';
+import FileUp from 'lucide-react/dist/esm/icons/file-up';
+import ArrowUp from 'lucide-react/dist/esm/icons/arrow-up';
+import ArrowDown from 'lucide-react/dist/esm/icons/arrow-down';
+import X from 'lucide-react/dist/esm/icons/x';
 import { ToolLayout } from '@/components/tools';
 import type { ToolPhase } from '@/components/tools/ToolLayout';
 

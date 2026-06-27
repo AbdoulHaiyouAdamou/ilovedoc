@@ -3,7 +3,12 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { applyEditAnnotations, PDFAnnotation } from '@/features/pdf/edit';
-import { Type, ChevronLeft, ChevronRight, Plus, Trash2, FileText } from 'lucide-react';
+import Type from 'lucide-react/dist/esm/icons/type';
+import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 import AdUnit from '@/components/common/AdUnit';
 

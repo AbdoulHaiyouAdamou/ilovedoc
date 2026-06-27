@@ -2,7 +2,7 @@
 
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { FileX } from 'lucide-react';
+import FileX from 'lucide-react/dist/esm/icons/file-x';
 import { removeBlankPages } from '@/features/pdf/removeBlanks';
 import { ToolLayout, useToolState } from '@/components/tools';
 

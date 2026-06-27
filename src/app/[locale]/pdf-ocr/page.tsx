@@ -3,7 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { runOcrOnPdf } from '@/features/pdf/ocr';
-import { ScanText, CheckCircle, Copy, Download, Info, FileText } from 'lucide-react';
+import ScanText from 'lucide-react/dist/esm/icons/scan-text';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import Copy from 'lucide-react/dist/esm/icons/copy';
+import Download from 'lucide-react/dist/esm/icons/download';
+import Info from 'lucide-react/dist/esm/icons/info';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 import AdUnit from '@/components/common/AdUnit';
 import Script from 'next/script';

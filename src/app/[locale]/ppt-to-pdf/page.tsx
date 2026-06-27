@@ -3,7 +3,8 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { convertPptToPdf } from '@/features/pdf/office';
-import { MonitorPlay, Info } from 'lucide-react';
+import MonitorPlay from 'lucide-react/dist/esm/icons/monitor-play';
+import Info from 'lucide-react/dist/esm/icons/info';
 import { ToolLayout, useToolState } from '@/components/tools';
 import AdUnit from '@/components/common/AdUnit';
 

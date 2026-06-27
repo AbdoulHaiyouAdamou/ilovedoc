@@ -3,7 +3,8 @@
 import React, { useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { convertPdfToWord } from '@/features/pdf/office';
-import { FileText, Info } from 'lucide-react';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Info from 'lucide-react/dist/esm/icons/info';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#2563eb';

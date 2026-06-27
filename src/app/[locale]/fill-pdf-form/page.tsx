@@ -3,7 +3,9 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { extractPdfFields, fillPdfFields, PdfFieldInfo } from '@/features/pdf/fillForm';
-import { FormInput, FileText, Type } from 'lucide-react';
+import FormInput from 'lucide-react/dist/esm/icons/form-input';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Type from 'lucide-react/dist/esm/icons/type';
 import { getToolBySlug } from '@/config/tools';
 import { ToolLayout, useToolState } from '@/components/tools';
 

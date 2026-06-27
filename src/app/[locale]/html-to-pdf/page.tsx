@@ -2,7 +2,9 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { Globe, AlertCircle, ChevronRight } from 'lucide-react';
+import Globe from 'lucide-react/dist/esm/icons/globe';
+import AlertCircle from 'lucide-react/dist/esm/icons/alert-circle';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
 import { getToolBySlug } from '@/config/tools';
 import Script from 'next/script';
 import AdUnit from '@/components/common/AdUnit';

@@ -3,7 +3,9 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { convertWordToPdf } from '@/features/pdf/office';
-import { BookOpen, Info, FileText } from 'lucide-react';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Info from 'lucide-react/dist/esm/icons/info';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 import AdUnit from '@/components/common/AdUnit';
 

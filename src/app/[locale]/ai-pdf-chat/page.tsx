@@ -4,7 +4,13 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import AdUnit from '@/components/common/AdUnit';
 import { extractTextFromPDF } from '@/utils/pdfTextExtractor';
-import { MessageSquare, ArrowRight, Bot, Send, ZoomIn, ZoomOut, Download } from 'lucide-react';
+import MessageSquare from 'lucide-react/dist/esm/icons/message-square';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import Bot from 'lucide-react/dist/esm/icons/bot';
+import Send from 'lucide-react/dist/esm/icons/send';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
+import Download from 'lucide-react/dist/esm/icons/download';
 import { ToolLayout } from '@/components/tools';
 
 function renderMarkdown(md: string) {

@@ -2,7 +2,11 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { Lock, Eye, EyeOff, ChevronRight, AlertCircle } from 'lucide-react';
+import Lock from 'lucide-react/dist/esm/icons/lock';
+import Eye from 'lucide-react/dist/esm/icons/eye';
+import EyeOff from 'lucide-react/dist/esm/icons/eye-off';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import AlertCircle from 'lucide-react/dist/esm/icons/alert-circle';
 import { encryptPDF } from '@pdfsmaller/pdf-encrypt-lite';
 import { ToolLayout, useToolState } from '@/components/tools';
 

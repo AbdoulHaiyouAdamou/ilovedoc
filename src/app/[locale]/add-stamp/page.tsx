@@ -3,7 +3,8 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { addStampToPdf, StampOptions } from '@/features/pdf/stamp';
-import { Stamp, FileText } from 'lucide-react';
+import Stamp from 'lucide-react/dist/esm/icons/stamp';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#f59e0b';

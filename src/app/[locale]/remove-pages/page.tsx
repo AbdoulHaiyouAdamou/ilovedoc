@@ -2,7 +2,10 @@
 
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { FileMinus, Trash2, ArrowRight, RotateCcw } from 'lucide-react';
+import FileMinus from 'lucide-react/dist/esm/icons/file-minus';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
 import { removePagesFromPDF } from '@/features/pdf/remove';
 import { getPdfPageCount } from '@/features/pdf/split';
 import { ToolLayout, useToolState } from '@/components/tools';

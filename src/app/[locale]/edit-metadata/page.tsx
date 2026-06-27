@@ -3,7 +3,8 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { readPdfMetadata, writePdfMetadata, PdfMetadata } from '@/features/pdf/metadata';
-import { Info, Trash2 } from 'lucide-react';
+import Info from 'lucide-react/dist/esm/icons/info';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#0ea5e9';

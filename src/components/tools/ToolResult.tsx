@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { CheckCircle, Download } from 'lucide-react';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import Download from 'lucide-react/dist/esm/icons/download';
 import { useTranslations } from 'next-intl';
 
 interface ToolResultProps {

@@ -3,7 +3,9 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { convertToPdfa } from '@/features/pdf/toPdfa';
-import { Settings, Info, FileText } from 'lucide-react';
+import Settings from 'lucide-react/dist/esm/icons/settings';
+import Info from 'lucide-react/dist/esm/icons/info';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#0d9488'; // Teal for PDF/A

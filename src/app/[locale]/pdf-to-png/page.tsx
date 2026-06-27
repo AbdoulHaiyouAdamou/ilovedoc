@@ -3,7 +3,9 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { convertPdfToImages } from '@/features/pdf/pdfToImage';
-import { Palette, FilePlus, CheckCircle2 } from 'lucide-react';
+import Palette from 'lucide-react/dist/esm/icons/palette';
+import FilePlus from 'lucide-react/dist/esm/icons/file-plus';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#3b82f6'; // Blue for PNG

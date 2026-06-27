@@ -3,7 +3,11 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { redactPDF, RedactionRect } from '@/features/pdf/redact';
-import { EyeOff, Trash2, Search, ZoomIn, ZoomOut } from 'lucide-react';
+import EyeOff from 'lucide-react/dist/esm/icons/eye-off';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
+import Search from 'lucide-react/dist/esm/icons/search';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
 import { ToolLayout, useToolState } from '@/components/tools';
 import AdUnit from '@/components/common/AdUnit';
 

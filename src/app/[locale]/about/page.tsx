@@ -5,7 +5,13 @@ import { getTranslations } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './about.module.css';
-import { Gift, Lock, Zap, UserX, FileText, Globe, CheckCircle } from 'lucide-react';
+import Gift from 'lucide-react/dist/esm/icons/gift';
+import Lock from 'lucide-react/dist/esm/icons/lock';
+import Zap from 'lucide-react/dist/esm/icons/zap';
+import UserX from 'lucide-react/dist/esm/icons/user-x';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Globe from 'lucide-react/dist/esm/icons/globe';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;

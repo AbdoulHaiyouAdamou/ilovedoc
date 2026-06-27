@@ -3,7 +3,9 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { convertPdfToImages } from '@/features/pdf/pdfToImage';
-import { ImageIcon, FilePlus, CheckCircle2 } from 'lucide-react';
+import ImageIcon from 'lucide-react/dist/esm/icons/image-icon';
+import FilePlus from 'lucide-react/dist/esm/icons/file-plus';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#eab308'; // Yellow for JPG

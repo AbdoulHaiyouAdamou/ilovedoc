@@ -3,7 +3,9 @@
 import React, { useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { convertPdfToPpt } from '@/features/pdf/office';
-import { Projector, Info, FileText } from 'lucide-react';
+import Projector from 'lucide-react/dist/esm/icons/projector';
+import Info from 'lucide-react/dist/esm/icons/info';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#ea580c'; // Orange for PPT

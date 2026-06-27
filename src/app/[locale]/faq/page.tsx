@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './faq.module.css';
-import { ChevronDown } from 'lucide-react';
+import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
 
 export default function FAQPage() {
   const tFooter = useTranslations('Footer');

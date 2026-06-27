@@ -2,7 +2,11 @@
 
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { RotateCw, RotateCcw, ArrowRight, RefreshCw, Info } from 'lucide-react';
+import RotateCw from 'lucide-react/dist/esm/icons/rotate-cw';
+import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
+import Info from 'lucide-react/dist/esm/icons/info';
 import { rotatePDFPages, PageRotationMap, RotationDegrees } from '@/features/pdf/rotate';
 import { getPdfPageCount } from '@/features/pdf/split';
 import { ToolLayout, useToolState } from '@/components/tools';

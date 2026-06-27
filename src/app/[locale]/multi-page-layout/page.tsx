@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { multiPageLayout, LayoutMode } from '@/features/pdf/multiPageLayout';
-import { LayoutGrid } from 'lucide-react';
+import LayoutGrid from 'lucide-react/dist/esm/icons/layout-grid';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#14b8a6';

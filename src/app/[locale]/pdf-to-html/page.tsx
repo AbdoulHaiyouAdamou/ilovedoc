@@ -3,7 +3,9 @@
 import React, { useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import Script from 'next/script';
-import { Globe, Info, FileText } from 'lucide-react';
+import Globe from 'lucide-react/dist/esm/icons/globe';
+import Info from 'lucide-react/dist/esm/icons/info';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#f97316'; // Orange HTML

@@ -6,7 +6,9 @@ import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { blogPosts, getPostBySlug } from '@/config/blog';
 import styles from '../blog.module.css';
-import { ArrowLeft, Calendar, Clock } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import Calendar from 'lucide-react/dist/esm/icons/calendar';
+import Clock from 'lucide-react/dist/esm/icons/clock';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 

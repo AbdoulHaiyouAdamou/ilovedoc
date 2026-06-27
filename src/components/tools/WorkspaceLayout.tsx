@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
 import AdUnit from '@/components/common/AdUnit';
 
 interface WorkspaceLayoutProps {

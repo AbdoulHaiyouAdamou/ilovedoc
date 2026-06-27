@@ -3,7 +3,8 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { splitPDFAdvanced, getPdfPageCount, SplitInterval } from '@/features/pdf/split';
-import { Plus, X } from 'lucide-react';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import X from 'lucide-react/dist/esm/icons/x';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#7c3aed';

@@ -3,7 +3,9 @@
 import React, { useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { convertPdfToExcel } from '@/features/pdf/office';
-import { Table, Info, FileText } from 'lucide-react';
+import Table from 'lucide-react/dist/esm/icons/table';
+import Info from 'lucide-react/dist/esm/icons/info';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#16a34a'; // Green for Excel

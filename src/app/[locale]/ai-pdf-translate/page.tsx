@@ -5,7 +5,15 @@ import { useTranslations } from 'next-intl';
 import AdUnit from '@/components/common/AdUnit';
 import { extractTextFromPDF } from '@/utils/pdfTextExtractor';
 import { translatePDFLayout } from '@/features/pdf/translate';
-import { Languages, ArrowRight, Settings, Bot, Copy, Download, ZoomIn, ZoomOut, CheckCircle } from 'lucide-react';
+import Languages from 'lucide-react/dist/esm/icons/languages';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import Settings from 'lucide-react/dist/esm/icons/settings';
+import Bot from 'lucide-react/dist/esm/icons/bot';
+import Copy from 'lucide-react/dist/esm/icons/copy';
+import Download from 'lucide-react/dist/esm/icons/download';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
 import { ToolLayout } from '@/components/tools';
 
 function renderMarkdown(md: string) {

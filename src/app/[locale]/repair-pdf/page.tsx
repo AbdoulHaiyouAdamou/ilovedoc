@@ -2,7 +2,8 @@
 
 import React, { useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { FileText, Wrench } from 'lucide-react';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Wrench from 'lucide-react/dist/esm/icons/wrench';
 import { repairPDF } from '@/features/pdf/repair';
 import { ToolLayout, useToolState } from '@/components/tools';
 

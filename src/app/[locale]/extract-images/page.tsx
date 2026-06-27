@@ -3,7 +3,8 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { extractImagesFromPdf, ExtractedImage } from '@/features/pdf/extractImages';
-import { ImageDown, Download } from 'lucide-react';
+import ImageDown from 'lucide-react/dist/esm/icons/image-down';
+import Download from 'lucide-react/dist/esm/icons/download';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#ec4899';

@@ -4,7 +4,10 @@ import React, { useState, useCallback, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { reorderPDFPages } from '@/features/pdf/organize';
 import { getPdfPageCount } from '@/features/pdf/split';
-import { GripVertical, RotateCcw, ArrowDownNarrowWide, X } from 'lucide-react';
+import GripVertical from 'lucide-react/dist/esm/icons/grip-vertical';
+import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
+import ArrowDownNarrowWide from 'lucide-react/dist/esm/icons/arrow-down-narrow-wide';
+import X from 'lucide-react/dist/esm/icons/x';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#a78bfa';

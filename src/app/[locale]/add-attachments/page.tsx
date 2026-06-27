@@ -3,7 +3,8 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { addAttachmentsToPdf } from '@/features/pdf/attachments';
-import { Paperclip, X } from 'lucide-react';
+import Paperclip from 'lucide-react/dist/esm/icons/paperclip';
+import X from 'lucide-react/dist/esm/icons/x';
 import { ToolLayout, useToolState } from '@/components/tools';
 
 const TOOL_COLOR = '#8b5cf6';

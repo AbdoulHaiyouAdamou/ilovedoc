@@ -5,7 +5,12 @@ import { useDropzone } from 'react-dropzone';
 import { useTranslations } from 'next-intl';
 import AdUnit from '@/components/common/AdUnit';
 import { getPdfPageCount } from '@/features/pdf/split';
-import { GitCompare, ArrowRight, Upload, AlignLeft, Layers, Search } from 'lucide-react';
+import GitCompare from 'lucide-react/dist/esm/icons/git-compare';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import Upload from 'lucide-react/dist/esm/icons/upload';
+import AlignLeft from 'lucide-react/dist/esm/icons/align-left';
+import Layers from 'lucide-react/dist/esm/icons/layers';
+import Search from 'lucide-react/dist/esm/icons/search';
 import type { DiffChange } from '@/features/pdf/compare';
 import { ToolLayout } from '@/components/tools';
 

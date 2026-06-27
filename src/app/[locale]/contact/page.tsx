@@ -8,7 +8,8 @@ import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './contact.module.css';
 
-import { Mail, Clock } from 'lucide-react';
+import Mail from 'lucide-react/dist/esm/icons/mail';
+import Clock from 'lucide-react/dist/esm/icons/clock';
 
 interface FormData {
   name: string;

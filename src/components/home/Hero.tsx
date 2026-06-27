@@ -1,5 +1,7 @@
 import React from 'react';
-import { Sparkles, Lock, Cpu } from 'lucide-react';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
+import Lock from 'lucide-react/dist/esm/icons/lock';
+import Cpu from 'lucide-react/dist/esm/icons/cpu';
 import { useTranslations } from 'next-intl';
 
 const filesData = [
