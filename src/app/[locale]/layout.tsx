@@ -13,7 +13,7 @@ import '../workspace.css';
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'block', // Prevent font flash (FOUT)
+  display: 'swap', // Better for LCP and avoids blocking render
   variable: '--font-inter',
   weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
@@ -238,13 +238,15 @@ function JsonLd({ description }: { description: string }) {
 }
 
 
+import Script from 'next/script';
+
 function GoogleAdSense() {
   const publisherId = process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-4390649114589142';
   if (!publisherId) return null;
 
   return (
-    <script
-      async
+    <Script
+      strategy="lazyOnload"
       src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${publisherId}`}
       crossOrigin="anonymous"
     />
