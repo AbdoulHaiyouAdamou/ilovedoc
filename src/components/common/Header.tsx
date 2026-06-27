@@ -467,6 +467,7 @@ export default function Header() {
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 16 }}>
           <button
             onClick={() => setMobileMenuOpen(false)}
+            aria-label="Fermer le menu"
             style={{
               background: 'none',
               border: 'none',

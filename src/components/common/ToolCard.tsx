@@ -72,7 +72,7 @@ export default function ToolCard({ slug }: ToolCardProps) {
         <tool.icon size={26} color={primaryColor} />
       </div>
 
-      <h3
+      <h2
         style={{
           position: 'relative',
           zIndex: 1,
@@ -84,7 +84,7 @@ export default function ToolCard({ slug }: ToolCardProps) {
         }}
       >
         {tTools(`${tool.slug}.name`)}
-      </h3>
+      </h2>
 
       <p
         style={{

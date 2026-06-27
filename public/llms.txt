@@ -1,0 +1,31 @@
+# iLoveDoc - Your Private PDF Swiss Army Knife
+
+Welcome to the `llms.txt` file for iLoveDoc. This file provides AI agents and LLMs with context about the website.
+
+iLoveDoc is a fully client-side web application offering over 50 tools to manipulate, convert, and manage PDF documents directly in the browser using WebAssembly. This ensures maximum privacy, security, and speed, as files never leave the user's device.
+
+## Key Features
+- **Local Processing**: 100% of PDF processing happens locally. No server uploads.
+- **Privacy First**: Secure by design. Your files remain on your computer.
+- **Lightning Fast**: No waiting for uploads or downloads.
+- **Free without Registration**: No limits, no sign-ups required.
+
+## Core Tools
+Here are some of the primary tools available on iLoveDoc:
+- [Merge PDF](https://ilove-doc.com/merge-pdf): Combine multiple PDF files into one.
+- [Split PDF](https://ilove-doc.com/split-pdf): Separate one page or a whole set for easy conversion into independent PDF files.
+- [Compress PDF](https://ilove-doc.com/compress-pdf): Reduce file size while optimizing for maximal PDF quality.
+- [PDF to Word](https://ilove-doc.com/pdf-to-word): Easily convert your PDF files into easy to edit DOC and DOCX documents.
+- [Word to PDF](https://ilove-doc.com/word-to-pdf): Make DOC and DOCX files easy to read by converting them to PDF.
+- [AI PDF Chat](https://ilove-doc.com/ai-pdf-chat): Chat with your PDF documents locally.
+
+## Architecture
+iLoveDoc is built using:
+- Next.js (App Router)
+- React
+- PDF-Lib and PDF.js for document manipulation
+- WebAssembly (WASM) for heavy lifting
+- Static Site Generation (SSG) for high performance and low server cost.
+
+## Contact
+For any inquiries, please visit our [Contact Page](https://ilove-doc.com/contact).
