@@ -150,7 +150,7 @@ export default function Header() {
           }}
         >
           {/* ---- Logo ---- */}
-          <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 2 }}>
+          <Link prefetch={false} href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 2 }}>
             <span
               style={{
                 fontSize: 26,
@@ -175,13 +175,13 @@ export default function Header() {
             }}
             className="header-desktop-nav"
           >
-            <Link href="/merge-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
+            <Link prefetch={false} href="/merge-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
               {tHeader('merge')}
             </Link>
-            <Link href="/split-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
+            <Link prefetch={false} href="/split-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
               {tHeader('split')}
             </Link>
-            <Link href="/compress-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
+            <Link prefetch={false} href="/compress-pdf" className="header-nav-link" style={{ textDecoration: 'none', fontSize: 13, fontWeight: 600, color: 'var(--color-text-secondary)', padding: '8px 14px', borderRadius: 8, transition: 'color .2s, background .2s', letterSpacing: '0.02em' }}>
               {tHeader('compress')}
             </Link>
 
@@ -480,9 +480,9 @@ export default function Header() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <Link href="/merge-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('merge')}</Link>
-          <Link href="/split-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('split')}</Link>
-          <Link href="/compress-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('compress')}</Link>
+          <Link prefetch={false} href="/merge-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('merge')}</Link>
+          <Link prefetch={false} href="/split-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('split')}</Link>
+          <Link prefetch={false} href="/compress-pdf" onClick={() => setMobileMenuOpen(false)} style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-text)', textDecoration: 'none' }}>{tHeader('compress')}</Link>
 
           {Object.entries(toolCategories).map(([key, cat]) => {
             const catTools = getToolsByCategory(key as any);

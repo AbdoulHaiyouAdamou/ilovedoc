@@ -208,7 +208,7 @@ export default function Footer() {
         >
           {/* Brand column */}
           <div>
-            <Link href="/" style={{ textDecoration: 'none' }}>
+            <Link prefetch={false} href="/" style={{ textDecoration: 'none' }}>
               <span
                 style={{
                   fontSize: 28,
