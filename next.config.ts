@@ -16,7 +16,7 @@ const cspDirectives = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.gstatic.com",
   "img-src 'self' data: blob: https:",
   "font-src 'self' https://fonts.gstatic.com data:",
-  "connect-src 'self' https://api.groq.com https://cdnjs.cloudflare.com https://translate.googleapis.com https://*.googlesyndication.com",
+  "connect-src 'self' https://api.groq.com https://cdnjs.cloudflare.com https://translate.googleapis.com https://*.googlesyndication.com https://*.google.com",
   "worker-src 'self' blob: https://cdnjs.cloudflare.com",
   "frame-src https://googleads.g.doubleclick.net https://*.google.com",
   "object-src 'none'",
