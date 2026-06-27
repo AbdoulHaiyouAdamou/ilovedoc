@@ -19,10 +19,13 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
   };
 }
 
-import { useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 
-export default function Home() {
-  const tHome = useTranslations('Home');
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  
+  const tHome = await getTranslations({ locale, namespace: 'Home' });
   const faqData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

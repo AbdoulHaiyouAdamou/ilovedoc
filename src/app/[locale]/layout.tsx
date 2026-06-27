@@ -103,6 +103,10 @@ const defaultSeo = seoData.fr;
 
 import { routing } from '@/i18n/routing';
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const baseUrl = 'https://ilove-doc.com';
@@ -261,12 +265,10 @@ export default async function RootLayout({
   console.log("RootLayout params:", resolvedParams);
   const { locale } = resolvedParams;
   setRequestLocale(locale);
-  const cookieStore = await cookies();
-  const theme = cookieStore.get('ilovedoc-theme')?.value || '';
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${theme}`} suppressHydrationWarning>
+    <html lang={locale} className={`${inter.variable}`} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
