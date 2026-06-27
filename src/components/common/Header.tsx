@@ -2,12 +2,7 @@
 
 import { Link } from '@/i18n/routing';
 import { useState, useEffect, useRef } from 'react';
-import Heart from 'lucide-react/dist/esm/icons/heart';
-import Sun from 'lucide-react/dist/esm/icons/sun';
-import Moon from 'lucide-react/dist/esm/icons/moon';
-import Menu from 'lucide-react/dist/esm/icons/menu';
-import X from 'lucide-react/dist/esm/icons/x';
-import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import { Heart, Sun, Moon, Menu, X, ChevronDown } from 'lucide-react';
 import { tools, toolCategories, getToolsByCategory } from '@/config/tools';
 import { useTranslations } from 'next-intl';
 

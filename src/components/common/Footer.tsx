@@ -2,23 +2,16 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import AtSign from 'lucide-react/dist/esm/icons/at-sign';
-import Code from 'lucide-react/dist/esm/icons/code';
-import Briefcase from 'lucide-react/dist/esm/icons/briefcase';
-import Video from 'lucide-react/dist/esm/icons/video';
-import Heart from 'lucide-react/dist/esm/icons/heart';
-import Globe from 'lucide-react/dist/esm/icons/globe';
-import ChevronUp from 'lucide-react/dist/esm/icons/chevron-up';
-import Check from 'lucide-react/dist/esm/icons/check';
+import { Heart, Globe, ChevronUp, Check, AtSign, Code, Briefcase, Video } from 'lucide-react';
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
 
 // Columns array moved inside the component to access translations
 const socials = [
-  { label: 'Twitter / X', icon: <AtSign size={18} />, href: 'https://x.com' },
-  { label: 'GitHub', icon: <Code size={18} />, href: 'https://github.com' },
-  { label: 'LinkedIn', icon: <Briefcase size={18} />, href: 'https://linkedin.com' },
-  { label: 'YouTube', icon: <Video size={18} />, href: 'https://youtube.com' },
+  { label: 'Twitter / X', icon: <AtSign size={18} />, href: 'https://x.com/ilovedoc' },
+  { label: 'GitHub', icon: <Code size={18} />, href: 'https://github.com/ilovedoc' },
+  { label: 'LinkedIn', icon: <Briefcase size={18} />, href: 'https://linkedin.com/company/ilovedoc' },
+  { label: 'YouTube', icon: <Video size={18} />, href: 'https://youtube.com/@ilovedoc' },
 ];
 
 const LANGUAGES = [
@@ -250,6 +243,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
+                  className="footer-social-btn"
                   style={{
                     width: 36,
                     height: 36,
@@ -261,7 +255,7 @@ export default function Footer() {
                     fontSize: 16,
                     color: '#a78bfa',
                     textDecoration: 'none',
-                    transition: 'background .2s, border-color .2s, transform .2s',
+                    transition: 'background .2s, border-color .2s, transform .2s, color .2s',
                   }}
                 >
                   {s.icon}
@@ -460,6 +454,14 @@ export default function Footer() {
           </span>
         </div>
       </div>
+      <style jsx>{`
+        .footer-social-btn:hover {
+          color: #fff !important;
+          background: rgba(167,139,250,0.15) !important;
+          border-color: rgba(167,139,250,0.4) !important;
+          transform: translateY(-3px);
+        }
+      `}</style>
     </footer>
   );
 }
