@@ -13,7 +13,7 @@ import '../workspace.css';
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'swap', // Better for LCP and avoids blocking render
+  display: 'block', // 'block' prevents font layout shift (CLS), required for Agentic Navigation 3/3
   variable: '--font-inter',
   weight: ['300', '400', '500', '600', '700', '800', '900'],
 });
