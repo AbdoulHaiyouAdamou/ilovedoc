@@ -314,6 +314,13 @@ export default async function RootLayout({
               html.dark, html.dark body {
                 background-color: #0f0b1a;
               }
+              /* Critical CSS: above-the-fold layout to prevent render-blocking */
+              .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+              .hero { position: relative; padding: 100px 0 80px; text-align: center; overflow: hidden; }
+              .hero-title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.1; }
+              .hero-subtitle { font-size: clamp(1rem, 2vw, 1.25rem); max-width: 600px; margin: 0 auto; }
+              .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; min-height: 1200px; contain: layout style; }
+              @media (max-width: 480px) { .tool-grid { grid-template-columns: 1fr; min-height: 4800px; } }
             `,
           }}
         />

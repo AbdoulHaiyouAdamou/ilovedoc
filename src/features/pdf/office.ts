@@ -1,8 +1,7 @@
 import { PDFDocument, rgb, StandardFonts } from 'pdf-lib';
-import { Document, Packer, Paragraph, TextRun } from 'docx';
-import * as XLSX from 'xlsx';
-import pptxgen from 'pptxgenjs';
-import mammoth from 'mammoth';
+// Heavy libraries loaded dynamically inside each function to avoid
+// bundling ~440 KiB into a shared chunk that loads on every page.
+// docx, xlsx, pptxgenjs, mammoth are imported via await import() below.
 import JSZip from 'jszip';
 
 // Clean text for PDF rendering
@@ -27,6 +26,7 @@ function cleanForPdf(str: string): string {
 
 // 1. Convert PDF to Word (.docx)
 export async function convertPdfToWord(file: File, onProgress?: (p: number) => void): Promise<Uint8Array> {
+  const { Document, Packer, Paragraph, TextRun } = await import('docx');
   const pdfjsLib = (window as any).pdfjsLib;
   if (!pdfjsLib) throw new Error("La bibliothèque pdf.js n'est pas chargée.");
 
@@ -64,6 +64,7 @@ export async function convertPdfToWord(file: File, onProgress?: (p: number) => v
 
 // 2. Convert PDF to Excel (.xlsx)
 export async function convertPdfToExcel(file: File, onProgress?: (p: number) => void): Promise<Uint8Array> {
+  const XLSX = await import('xlsx');
   const pdfjsLib = (window as any).pdfjsLib;
   if (!pdfjsLib) throw new Error("La bibliothèque pdf.js n'est pas chargée.");
 
@@ -113,6 +114,8 @@ export async function convertPdfToExcel(file: File, onProgress?: (p: number) => 
 
 // 3. Convert PDF to PowerPoint (.pptx)
 export async function convertPdfToPpt(file: File, onProgress?: (p: number) => void): Promise<Uint8Array> {
+  const pptxgenModule = await import('pptxgenjs');
+  const pptxgen = pptxgenModule.default;
   const pdfjsLib = (window as any).pdfjsLib;
   if (!pdfjsLib) throw new Error("La bibliothèque pdf.js n'est pas chargée.");
 
@@ -143,6 +146,8 @@ export async function convertPdfToPpt(file: File, onProgress?: (p: number) => vo
 
 // 4. Convert Word (.docx) to PDF
 export async function convertWordToPdf(file: File, onProgress?: (p: number) => void): Promise<Uint8Array> {
+  const mammothModule = await import('mammoth');
+  const mammoth = mammothModule.default;
   if (onProgress) onProgress(20);
   const arrayBuffer = await file.arrayBuffer();
   
@@ -208,6 +213,7 @@ export async function convertWordToPdf(file: File, onProgress?: (p: number) => v
 
 // 5. Convert Excel (.xlsx) to PDF
 export async function convertExcelToPdf(file: File, onProgress?: (p: number) => void): Promise<Uint8Array> {
+  const XLSX = await import('xlsx');
   if (onProgress) onProgress(20);
   const arrayBuffer = await file.arrayBuffer();
   

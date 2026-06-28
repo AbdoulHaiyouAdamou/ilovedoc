@@ -12,7 +12,7 @@ import type { NextConfig } from "next";
  */
 const cspDirectives = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://translate.google.com https://translate.googleapis.com https://cdnjs.cloudflare.com https://*.google.com",
+  "script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://translate.google.com https://translate.googleapis.com https://cdnjs.cloudflare.com https://*.google.com https://ep2.adtrafficquality.google",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.gstatic.com",
   "img-src 'self' data: blob: https:",
   "font-src 'self' https://fonts.gstatic.com data:",
