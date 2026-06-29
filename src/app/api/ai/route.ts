@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 import { kv } from '@vercel/kv';
 
+export const runtime = 'edge';
+
 /* ── Rate Limiter (KV or Fallback) ───────────────────────── */
 const WINDOW_MS = 60_000; // 1 minute
 const MAX_REQUESTS = 10;  // 10 requests per minute per IP
