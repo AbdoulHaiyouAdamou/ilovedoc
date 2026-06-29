@@ -21,7 +21,7 @@ export default async function middleware(req: NextRequest) {
     // Edge Rate Limiting via KV
     if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
       try {
-        const ip = req.headers.get('x-forwarded-for') || req.ip || 'unknown';
+        const ip = req.headers.get('x-forwarded-for') || 'unknown';
         const key = `ratelimit:edge:${ip}`;
         const count = await kv.incr(key);
         if (count === 1) {
