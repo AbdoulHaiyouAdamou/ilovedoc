@@ -1,7 +1,7 @@
 import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
-import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import styles from './about.module.css';
@@ -31,12 +31,20 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     alternates: {
       canonical: `https://ilove-doc.com/${locale}/about`,
     },
-  };
+};
 }
 
-export default function AboutPage() {
-  const tFooter = useTranslations('Footer');
-  const tAbout = useTranslations('About');
+import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const tFooter = await getTranslations({ locale, namespace: 'Footer' });
+  const tAbout = await getTranslations({ locale, namespace: 'About' });
   return (
     <>
       <Header />

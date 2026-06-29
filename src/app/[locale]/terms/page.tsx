@@ -1,7 +1,7 @@
 import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
-import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import styles from '../privacy/legal.module.css';
 
@@ -26,9 +26,17 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
   };
 }
 
-export default function TermsPage() {
-  const tFooter = useTranslations('Footer');
-  const tTerms = useTranslations('Terms');
+import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const tFooter = await getTranslations({ locale, namespace: 'Footer' });
+  const tTerms = await getTranslations({ locale, namespace: 'Terms' });
   return (
     <>
       <Header />

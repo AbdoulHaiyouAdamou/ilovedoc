@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Link } from '@/i18n/routing';
 import Header from '@/components/common/Header';
 import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Footer from '@/components/common/Footer';
 import AdUnit from '@/components/common/AdUnit';
 import { blogPosts } from '@/config/blog';
@@ -35,11 +35,19 @@ export async function generateMetadata({
   };
 }
 
-export default function BlogPage() {
-  const tFooter = useTranslations('Footer');
-  const tCommon = useTranslations('Common');
-  const tBlog = useTranslations('Blog');
-  const tBlogPosts = useTranslations('BlogPosts');
+import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const tFooter = await getTranslations({ locale, namespace: 'Footer' });
+  const tCommon = await getTranslations({ locale, namespace: 'Common' });
+  const tBlog = await getTranslations({ locale, namespace: 'Blog' });
+  const tBlogPosts = await getTranslations({ locale, namespace: 'BlogPosts' });
 
   const featuredPost = blogPosts[0];
   const gridPosts = blogPosts.slice(1);
