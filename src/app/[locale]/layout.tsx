@@ -141,7 +141,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL(baseUrl),
     icons: {
       icon: '/icon.svg',
-      shortcut: '/favicon.ico',
+      shortcut: '/icon.svg',
     },
     alternates: {
       canonical: locale === routing.defaultLocale ? '/' : `/${locale}`,
