@@ -75,6 +75,14 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: '/favicon.ico',
+        destination: '/icon.svg',
+      },
+    ];
+  },
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
