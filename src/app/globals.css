@@ -688,7 +688,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-title {
   font-size: var(--font-size-5xl);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.03em;
   margin-bottom: var(--space-4);
   position: relative;
