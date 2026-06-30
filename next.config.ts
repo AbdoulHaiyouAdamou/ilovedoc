@@ -72,17 +72,6 @@ const nextConfig: NextConfig = {
             value: "max-age=63072000; includeSubDomains; preload",
           },
         ],
-      },
-    ];
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/favicon.ico',
-        destination: '/icon.svg',
-      },
-    ];
-  },
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
