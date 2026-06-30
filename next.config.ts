@@ -72,6 +72,9 @@ const nextConfig: NextConfig = {
             value: "max-age=63072000; includeSubDomains; preload",
           },
         ],
+      },
+    ];
+  },
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
