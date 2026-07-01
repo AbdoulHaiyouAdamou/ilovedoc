@@ -92,7 +92,7 @@ export default function RemovePagesPage() {
   }, [file, deletedPages, totalPages, startProcessing, finishProcessing, failProcessing, setProgress]);
 
   const workspacePreview = file && (
-    <div style={{ padding: '2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '2rem', alignContent: 'start' }}>
+    <div style={{ padding: '2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '2rem', alignContent: 'start', width: '100%' }}>
       {Array.from({ length: totalPages }).map((_, i) => {
         const isDeleted = deletedPages.includes(i);
         return (

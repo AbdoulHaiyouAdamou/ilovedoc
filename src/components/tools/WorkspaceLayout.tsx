@@ -42,9 +42,9 @@ export default function WorkspaceLayout({
         style={{
           padding: '2rem',
           display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
           flexDirection: 'column',
+          alignItems: 'stretch',
+          width: '100%',
           gap: '2rem',
         }}
       >
