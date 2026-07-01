@@ -17,7 +17,7 @@
     "trust_fast": "Processamento mais rápido, sem limites de tamanho"
   },
   "Header": {
-    "merge": "MESCLAR PDF",
+    "merge": "JUNTAR PDF",
     "split": "DIVIDIR PDF",
     "compress": "COMPACTAR PDF",
     "convert": "CONVERTER PDF",
@@ -39,7 +39,7 @@
   },
   "Tools": {
     "merge-pdf": {
-      "name": "Mesclar PDF",
+      "name": "Juntar PDF",
       "description": "Combine vários arquivos PDF em um único documento."
     },
     "split-pdf": {
